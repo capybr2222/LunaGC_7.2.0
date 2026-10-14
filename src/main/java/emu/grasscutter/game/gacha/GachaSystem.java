@@ -32,6 +32,7 @@ public class GachaSystem extends BaseGameSystem {
     private static final int starglitterId = 221;
     private static final int stardustId = 222;
     private final Int2ObjectMap<GachaBanner> gachaBanners;
+    private String latestVersion;
     private WatchService watchService;
 
     public GachaSystem(GameServer server) {
@@ -43,6 +44,38 @@ public class GachaSystem extends BaseGameSystem {
 
     public Int2ObjectMap<GachaBanner> getGachaBanners() {
         return gachaBanners;
+    }
+
+    public List<String> getVersions() {
+        Set<String> versions = new HashSet<>();
+        for (GachaBanner banner : this.gachaBanners.values()) {
+            versions.addAll(Arrays.asList(banner.getVersions()));
+        }
+        List<String> sorted = new ArrayList<>(versions);
+        sorted.sort(
+                Comparator.comparing(
+                        (String v) -> Arrays.stream(v.split("\\.")).mapToInt(Integer::parseInt).toArray(),
+                        Arrays::compare));
+        return sorted;
+    }
+
+    public String getLatestVersion() {
+        return this.latestVersion;
+    }
+
+    public String getShownVersion(Player player) {
+        String focus = player.getGachaInfo().getBannerFocus();
+        return focus != null ? focus : this.getLatestVersion();
+    }
+
+    public boolean isShown(GachaBanner banner, Player player) {
+        if (banner.getVersions().length == 0) return true;
+        String shown = this.getShownVersion(player);
+        return shown == null || banner.isFromVersion(shown);
+    }
+
+    public long countBannersFromVersion(String version) {
+        return this.gachaBanners.values().stream().filter(b -> b.isFromVersion(version)).count();
     }
 
     public int randomRange(int min, int max) {
@@ -78,6 +111,8 @@ public class GachaSystem extends BaseGameSystem {
                         getGachaBanners().put(banner.scheduleId, banner);
                     }
                 }
+                List<String> versions = this.getVersions();
+                this.latestVersion = versions.isEmpty() ? null : versions.get(versions.size() - 1);
                 Grasscutter.getLogger().debug("Banners successfully loaded.");
             } else {
                 Grasscutter.getLogger().error("Unable to load banners. Banners size is 0.");
@@ -275,7 +310,7 @@ public class GachaSystem extends BaseGameSystem {
         }
 
         GachaBanner banner = this.getGachaBanners().get(scheduleId);
-        if (banner == null) {
+        if (banner == null || !this.isShown(banner, player)) {
             player.sendPacket(new PacketDoGachaRsp());
             return;
         }
@@ -504,6 +539,7 @@ public class GachaSystem extends BaseGameSystem {
         long currentTime = System.currentTimeMillis() / 1000L;
 
         for (GachaBanner banner : getGachaBanners().values()) {
+            if (!this.isShown(banner, player)) continue;
             boolean timeOk = banner.getEndTime() >= currentTime && banner.getBeginTime() <= currentTime;
             boolean isStandard = banner.getBannerType() == BannerType.STANDARD;
             if (timeOk || isStandard) {

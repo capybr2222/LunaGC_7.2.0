@@ -47,6 +47,7 @@ public class GachaBanner {
     @Getter private int gachaTimesLimit = Integer.MAX_VALUE;
     @Getter private int[] rateUpItems4 = {};
     @Getter private int[] rateUpItems5 = {};
+    @Getter private String[] versions = {};
     @Getter private BannerType bannerType = BannerType.STANDARD;
     @Getter
     private int[] fallbackItems3 = {
@@ -148,6 +149,13 @@ public class GachaBanner {
 
     public boolean hasEpitomized() {
         return bannerType.equals(BannerType.WEAPON) || bannerType.equals(BannerType.CHRONICLE);
+    }
+
+    public boolean isFromVersion(String version) {
+        for (String v : this.versions) {
+            if (v.equals(version) || v.startsWith(version + ".")) return true;
+        }
+        return false;
     }
 
     public int getWeight(int rarity, int pity) {
