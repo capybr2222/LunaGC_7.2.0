@@ -203,10 +203,10 @@ public class GachaSystem extends BaseGameSystem {
             GachaBanner banner,
             PlayerGachaBannerInfo gachaInfo) {
         int itemId = 0;
-        boolean epitomized =
-                (banner.hasEpitomized()) && (rarity == 5) && (gachaInfo.getWishItemId() != 0);
+        int wishItemId = gachaInfo.getWishItemId(banner);
+        boolean epitomized = (rarity == 5) && (wishItemId != 0);
         boolean pityEpitomized =
-                (gachaInfo.getFailedChosenItemPulls()
+                (gachaInfo.getWishProgress(banner)
                         >= banner.getWishMaxProgress());
         boolean pityFeatured =
                 (gachaInfo.getFailedFeaturedItemPulls(rarity) >= 1);
@@ -228,7 +228,7 @@ public class GachaSystem extends BaseGameSystem {
         if (epitomized && pityEpitomized) {
             gachaInfo.setFailedFeaturedItemPulls(
                     rarity, 0);
-            itemId = gachaInfo.getWishItemId();
+            itemId = wishItemId;
         } else {
             if (pullFeatured && (featured.length > 0)) {
                 gachaInfo.setFailedFeaturedItemPulls(rarity, 0);
@@ -247,10 +247,10 @@ public class GachaSystem extends BaseGameSystem {
         }
 
         if (epitomized) {
-            if (itemId == gachaInfo.getWishItemId()) {
-                gachaInfo.setFailedChosenItemPulls(0);
+            if (itemId == wishItemId) {
+                gachaInfo.setWishProgress(banner, 0);
             } else {
-                gachaInfo.addFailedChosenItemPulls(1);
+                gachaInfo.setWishProgress(banner, gachaInfo.getWishProgress(banner) + 1);
             }
         }
         return new PullResult(itemId, captured);
@@ -326,7 +326,7 @@ public class GachaSystem extends BaseGameSystem {
                                 gachaInfo.getPity4(),
                                 gachaInfo.getFailedFeaturedItemPulls(4) > 0,
                                 banner.hasEpitomized()
-                                        ? gachaInfo.getFailedChosenItemPulls() >= banner.getWishMaxProgress()
+                                        ? gachaInfo.getWishProgress(banner) >= banner.getWishMaxProgress()
                                         : gachaInfo.getFailedFeaturedItemPulls(5) > 0));
         if (!event.call()) {
             player.sendPacket(new PacketDoGachaRsp(Retcode.RET_SVR_ERROR));

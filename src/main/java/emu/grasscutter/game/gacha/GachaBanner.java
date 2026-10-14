@@ -250,8 +250,8 @@ public class GachaBanner {
                         .setIsNewWish(true);
 
         if (hasEpitomized()) {
-            info.setWishItemId(gachaInfo.getWishItemId())
-                    .setWishProgress(gachaInfo.getFailedChosenItemPulls())
+            info.setWishItemId(gachaInfo.getWishItemId(this))
+                    .setWishProgress(gachaInfo.getWishProgress(this))
                     .setWishMaxProgress(this.getWishMaxProgress());
         }
 

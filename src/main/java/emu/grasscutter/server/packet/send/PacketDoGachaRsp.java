@@ -39,8 +39,8 @@ public class PacketDoGachaRsp extends BasePacket {
                         .setIsCapturingRadiance(list.stream().anyMatch(GachaItem::getIsFlashCard));
 
         if (banner.hasEpitomized()) {
-            rsp.setWishItemId(gachaInfo.getWishItemId())
-                    .setWishProgress(gachaInfo.getFailedChosenItemPulls())
+            rsp.setWishItemId(gachaInfo.getWishItemId(banner))
+                    .setWishProgress(gachaInfo.getWishProgress(banner))
                     .setWishMaxProgress(banner.getWishMaxProgress());
         }
 

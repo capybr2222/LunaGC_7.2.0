@@ -1,6 +1,9 @@
 package emu.grasscutter.game.gacha;
 
 import dev.morphia.annotations.Entity;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import lombok.*;
 
 @Entity
@@ -15,8 +18,10 @@ public class PlayerGachaBannerInfo {
     private int pity4Pool1 = 0;
     private int pity4Pool2 = 0;
 
-    @Getter @Setter private int failedChosenItemPulls = 0;
-    @Getter @Setter private int wishItemId = 0;
+    private int failedChosenItemPulls = 0;
+    private int wishItemId = 0;
+    private Map<Integer, Integer> wishItems = new HashMap<>();
+    private Map<Integer, Integer> wishProgress = new HashMap<>();
 
     @Getter @Setter private int capturingRadianceCounter = 1;
 
@@ -32,8 +37,43 @@ public class PlayerGachaBannerInfo {
         this.pity4 += amount;
     }
 
-    public void addFailedChosenItemPulls(int amount) {
-        failedChosenItemPulls += amount;
+    private void migrateLegacyWish(GachaBanner banner) {
+        if (this.wishItems == null) this.wishItems = new HashMap<>();
+        if (this.wishProgress == null) this.wishProgress = new HashMap<>();
+        if (this.wishItemId != 0
+                && Arrays.stream(banner.getRateUpItems5()).anyMatch(id -> id == this.wishItemId)) {
+            this.wishItems.putIfAbsent(banner.getScheduleId(), this.wishItemId);
+            this.wishProgress.putIfAbsent(banner.getScheduleId(), this.failedChosenItemPulls);
+            this.wishItemId = 0;
+            this.failedChosenItemPulls = 0;
+        }
+    }
+
+    public int getWishItemId(GachaBanner banner) {
+        if (!banner.hasEpitomized()) return 0;
+        this.migrateLegacyWish(banner);
+        return this.wishItems.getOrDefault(banner.getScheduleId(), 0);
+    }
+
+    public int getWishProgress(GachaBanner banner) {
+        if (this.getWishItemId(banner) == 0) return 0;
+        return this.wishProgress.getOrDefault(banner.getScheduleId(), 0);
+    }
+
+    public void setWishItemId(GachaBanner banner, int itemId) {
+        if (this.getWishItemId(banner) == itemId) return;
+        if (itemId == 0) {
+            this.wishItems.remove(banner.getScheduleId());
+            this.wishProgress.remove(banner.getScheduleId());
+        } else {
+            this.wishItems.put(banner.getScheduleId(), itemId);
+            this.wishProgress.put(banner.getScheduleId(), 0);
+        }
+    }
+
+    public void setWishProgress(GachaBanner banner, int progress) {
+        this.migrateLegacyWish(banner);
+        this.wishProgress.put(banner.getScheduleId(), progress);
     }
 
     public void onFiftyFifty(boolean won, boolean captured, int max) {

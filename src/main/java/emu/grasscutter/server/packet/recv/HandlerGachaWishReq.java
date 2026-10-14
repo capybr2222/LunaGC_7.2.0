@@ -30,17 +30,14 @@ public class HandlerGachaWishReq extends PacketHandler {
 
         PlayerGachaBannerInfo gachaInfo = session.getPlayer().getGachaInfo().getBannerInfo(banner);
 
-        if (gachaInfo.getWishItemId() != req.getItemId()) {
-            gachaInfo.setFailedChosenItemPulls(0);
-            gachaInfo.setWishItemId(req.getItemId());
-        }
+        gachaInfo.setWishItemId(banner, req.getItemId());
 
         session.send(
                 new PacketGachaWishRsp(
                         req.getGachaType(),
                         req.getGachaScheduleId(),
-                        gachaInfo.getWishItemId(),
-                        gachaInfo.getFailedChosenItemPulls(),
+                        gachaInfo.getWishItemId(banner),
+                        gachaInfo.getWishProgress(banner),
                         banner.getWishMaxProgress()));
     }
 }

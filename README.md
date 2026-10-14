@@ -1,7 +1,7 @@
 # LunaGC-7.1.0 WIP
 
 ## Note from the maintainer
-This is a fork from girluh's [LunaGC](https://github.com/girluh/LunaGC). Very early update, so expect many bugs.
+Base 6.7 from girluh's [LunaGC](https://github.com/girluh/LunaGC). The server is more stable now, but still expect many bugs.
 
 ![Vesna](image/vesna.png)
 
@@ -79,6 +79,10 @@ Contribute if you want/can...
 ```shell
 ./gradlew generateHandbook
 ```
+
+## Gacha
+
+All banners from 1.0 to 7.1 are supported. To change the banners, use the `/banner` command (use `/banner list` to list all the supported banner versions).
 
 ## Artifact shop
 
