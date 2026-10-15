@@ -49,27 +49,35 @@ public class InventorySystem extends BaseGameSystem {
         super(server);
     }
 
-    public static synchronized int checkPlayerAvatarConstellationLevel(Player player, int id) {
-        int avatarId = 0;
+    private static int resolveAvatarId(int id) {
         if (GameData.getAvatarDataMap().containsKey(id)) {
-            avatarId = id;
-        } else {
-            avatarId =
-                    Optional.ofNullable(GameData.getItemDataMap().get(id))
-                            .map(itemData -> itemData.getItemUseActions())
-                            .flatMap(
-                                    actions ->
-                                            actions.stream()
-                                                    .filter(action -> action.getItemUseOp() == ItemUseOp.ITEM_USE_GAIN_AVATAR)
-                                                    .map(
-                                                            action ->
-                                                                    ((emu.grasscutter.game.props.ItemUseAction.ItemUseGainAvatar)
-                                                                                    action)
-                                                                            .getI())
-                                                    .findFirst())
-                            .orElse(0);
+            return id;
         }
+        return Optional.ofNullable(GameData.getItemDataMap().get(id))
+                .map(itemData -> itemData.getItemUseActions())
+                .flatMap(
+                        actions ->
+                                actions.stream()
+                                        .filter(action -> action.getItemUseOp() == ItemUseOp.ITEM_USE_GAIN_AVATAR)
+                                        .map(
+                                                action ->
+                                                        ((emu.grasscutter.game.props.ItemUseAction.ItemUseGainAvatar)
+                                                                        action)
+                                                                .getI())
+                                        .findFirst())
+                .orElse(0);
+    }
 
+    public static int getAvatarConstItemId(Player player, int id) {
+        int avatarId = resolveAvatarId(id);
+        if (avatarId == 0) return 0;
+        Avatar avatar = player.getAvatars().getAvatarById(avatarId);
+        if (avatar == null || avatar.getSkillDepot() == null) return 0;
+        return avatar.getSkillDepot().getTalentCostItemId();
+    }
+
+    public static synchronized int checkPlayerAvatarConstellationLevel(Player player, int id) {
+        int avatarId = resolveAvatarId(id);
         if (avatarId == 0) return -2;
 
         Avatar avatar = player.getAvatars().getAvatarById(avatarId);

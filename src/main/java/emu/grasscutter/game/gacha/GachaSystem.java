@@ -418,8 +418,7 @@ public class GachaSystem extends BaseGameSystem {
                             pools.removeFromAllPools(new int[] {itemId});
                         }
                         addStarglitter = (itemData.getRankLevel() == 5) ? 10 : 2;
-                        int constItemId =
-                                itemId + 100;
+                        int constItemId = InventorySystem.getAvatarConstItemId(player, itemId);
                         boolean haveConstItem =
                                 inventory.getInventoryTab(ItemType.ITEM_MATERIAL).getItemById(constItemId) == null;
                         gachaItem.addTransferItems(
