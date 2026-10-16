@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+option java_outer_classname = "PPPAJBNFBOOOuterClass";
+
+import "ShopGoods.proto";
+
+message PPPAJBNFBOO {
+	repeated ShopGoods goods_list = 15;
+	uint32 hcoin = 2;
+	int32 retcode = 4;
+	uint32 buy_count = 14;
+	uint32 shop_type = 3;
+	uint32 mcoin_cost = 9;
+}
