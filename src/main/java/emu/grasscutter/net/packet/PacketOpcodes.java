@@ -415,7 +415,7 @@ public final class PacketOpcodes {
     public static final int TakeoffEquipRsp = 28988;
     public static final int SetBattlePassViewedReq = 23538;
     public static final int SetBattlePassViewedRsp = 20;
-    public static final int TowerAllDataReq = -87;
+    public static final int TowerAllDataReq = 27826;
     public static final int TowerAllDataRsp = 21818;
     public static final int TowerCurLevelRecordChangeNotify = 9479;
     public static final int EnterTrialAvatarActivityDungeonReq = 6473;
@@ -485,7 +485,7 @@ public final class PacketOpcodes {
     public static final int GetFriendShowAvatarInfoRsp = 22730;
     public static final int FurnitureCurModuleArrangeCountNotify = 4138;
     public static final int CodexDataFullNotify = 3723;
-    public static final int GetAllMailNotify = -101;
+    public static final int GetAllMailNotify = 28960;
     public static final int PlayerApplyEnterMpResultNotify = 28155;
     public static final int PlayerApplyEnterMpNotify = 6425;
     public static final int PlayerApplyEnterMpReq = -102;
@@ -572,7 +572,7 @@ public final class PacketOpcodes {
     public static final int ActivityTakeWatcherRewardReq = -135;
     public static final int ActivityTakeWatcherRewardRsp = 3087;
     public static final int ActivityUpdateWatcherNotify = 27458;
-    public static final int AvatarExpeditionAllDataReq = -136;
+    public static final int AvatarExpeditionAllDataReq = 26769;
     public static final int AvatarExpeditionAllDataRsp = 8748;
     public static final int AvatarExpeditionCallBackReq = 4859;
     public static final int AvatarExpeditionCallBackRsp = 22659;
