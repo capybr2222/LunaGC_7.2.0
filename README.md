@@ -113,3 +113,7 @@ Terax for nt
 # Note
 
 If you use code from this project, please credit [capyb2222](https://github.com/capyb2222) somewhere in your project.
+
+# Support
+
+If you like the project, you can support me on [Ko-fi](https://ko-fi.com/capyb2222).
