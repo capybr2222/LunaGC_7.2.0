@@ -230,6 +230,21 @@ public class Avatar {
         return Objects.requireNonNull(this.getWeapon(), "Avatar does not have a weapon.");
     }
 
+    public List<Integer> getSpecialProudSkillList() {
+        var skillDepot = GameData.getAvatarSkillDepotDataMap().get(this.getSkillDepotId());
+        if (skillDepot == null) return List.of();
+        return skillDepot.getQuestProudSkillGroupIds().intStream()
+                .map(groupId -> (groupId * 100) + 1)
+                .filter(proudSkillId -> GameData.getProudSkillDataMap().containsKey(proudSkillId))
+                .boxed()
+                .toList();
+    }
+
+    public List<Integer> getInherentProudSkillList() {
+        var special = this.getSpecialProudSkillList();
+        return this.getProudSkillList().stream().filter(id -> !special.contains(id)).toList();
+    }
+
     protected void setSkillDepot(AvatarSkillDepotData skillDepot) {
         if (this.skillDepot != null) return;
         this.skillDepot = skillDepot;
@@ -1002,7 +1017,8 @@ public class Avatar {
                         .setSkillDepotId(this.getSkillDepotId())
                         .setCoreProudSkillLevel(this.getCoreProudSkillLevel())
                         .putAllSkillLevelMap(this.getSkillLevelMap())
-                        .addAllInherentProudSkillList(this.getProudSkillList())
+                        .addAllInherentProudSkillList(this.getInherentProudSkillList())
+                        .addAllSpecialProudSkillList(this.getSpecialProudSkillList())
                         .putAllProudSkillExtraLevelMap(this.getProudSkillBonusMap())
                         .setAvatarType(this.getAvatarType())
                         .setBornTime(this.getBornTime())
@@ -1053,7 +1069,8 @@ public class Avatar {
                         .putAllFightPropMap(this.getFightProperties())
                         .setSkillDepotId(this.getSkillDepotId())
                         .setCoreProudSkillLevel(this.getCoreProudSkillLevel())
-                        .addAllInherentProudSkillList(this.getProudSkillList())
+                        .addAllInherentProudSkillList(this.getInherentProudSkillList())
+                        .addAllSpecialProudSkillList(this.getSpecialProudSkillList())
                         .putAllSkillLevelMap(this.getSkillLevelMap())
                         .putAllProudSkillExtraLevelMap(this.getProudSkillBonusMap())
                         .setFetterInfo(avatarFetter)

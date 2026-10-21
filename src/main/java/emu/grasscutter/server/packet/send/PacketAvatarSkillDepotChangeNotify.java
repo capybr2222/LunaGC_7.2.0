@@ -16,7 +16,8 @@ public class PacketAvatarSkillDepotChangeNotify extends BasePacket {
                         .setSkillDepotId(avatar.getSkillDepotId())
                         .setCoreProudSkillLevel(avatar.getCoreProudSkillLevel())
                         .addAllTalentIdList(avatar.getTalentIdList())
-                        .addAllProudSkillList(avatar.getProudSkillList())
+                        .addAllProudSkillList(avatar.getInherentProudSkillList())
+                        .addAllSpecialProudSkillList(avatar.getSpecialProudSkillList())
                         .putAllSkillLevelMap(avatar.getSkillLevelMap())
                         .putAllProudSkillExtraLevelMap(avatar.getProudSkillBonusMap())
                         .build();
