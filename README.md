@@ -26,7 +26,7 @@ Contribute if you want/can...
 - Get game version REL7.1.0
 - Make sure to install java and set the environment variables.
 - Build the server (refer to "Compile the actual server" in this guide.)
-- Download the [Resources](https://github.com/capyb2222/LunaGC-Resources), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
+- Download the [Resources](https://github.com/capyb22222/LunaGC-Resources), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
 - Set useEncryption, Questing and useInRouting to false (it should be false by default, if not then change it)
 - [Patch the game](#patching-the-game)
 - Start the server (you can use Cultivation or Fiddler) and the game (the client), make sure to also create an account in the LunaGC console (otherwise you cannot log in)!
@@ -34,7 +34,7 @@ Contribute if you want/can...
 
 ### Patching the game
 - Install [**Rust**](https://rust-lang.org/learn/get-started/) and **Cargo** (comes with rustup)
-- Go to the `patch/` folder (make sure you have cloned this repository with the `--recurse-submodules` flag). If that folder is empty, run `git submodule update --init` or clone [animegamepatch](https://github.com/capyb2222/animegamepatch) yourself
+- Go to the `patch/` folder (make sure you have cloned this repository with the `--recurse-submodules` flag). If that folder is empty, run `git submodule update --init` or clone [animegamepatch](https://github.com/capyb22222/animegamepatch) yourself
 - Run `cargo build --release` to build the DLL `ext.dll` at `target/release`
 - Inject the DLL into the game. You can do this by renaming the patch to `Astrolabe.dll` and putting it in the game folder, next to `GenshinImpact.exe`.
 
@@ -43,7 +43,7 @@ Contribute if you want/can...
 - Clone the repository (install [Git](https://git-scm.com) first )
 
   ```
-  git clone --recurse-submodules https://github.com/capyb2222/LunaGC.git
+  git clone --recurse-submodules https://github.com/capyb22222/LunaGC_7.1.0.git
   ```
 
 - Now you can continue with the steps below.
@@ -104,7 +104,7 @@ The odds are now close to the official server, so the stats should be more accur
 
 girluh's [LunaGC](https://github.com/girluh/LunaGC)
 
-kitkat's [patch](https://github.com/capyb2222/animegamepatch)
+kitkat's [patch](https://github.com/capyb22222/animegamepatch)
 
 kitkat's [proto](https://gitlab.com/kitkat-multiverse/genshin-protocol)
 
