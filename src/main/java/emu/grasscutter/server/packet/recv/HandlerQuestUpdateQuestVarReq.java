@@ -30,7 +30,6 @@ public class HandlerQuestUpdateQuestVarReq extends PacketHandler {
             return;
         }
 
-
         session.send(new PacketQuestUpdateQuestVarRsp(req));
     }
 }

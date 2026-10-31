@@ -77,6 +77,9 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
         player.setSceneLoadState(SceneLoadState.LOADING);
         player.setEnterSceneToken(Utils.randomRange(1000, 99999));
 
+        var targetWorld = target.getWorld();
+        int worldLevel = targetWorld != null ? targetWorld.getWorldLevel() : 0;
+
         long currentTime = System.currentTimeMillis();
 
         var proto =
@@ -89,7 +92,7 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
                         .setType(teleportProperties.getEnterType())
                         .setTargetUid((target.getUid() - 30259) ^ 4145)
                         .setEnterSceneToken((player.getEnterSceneToken() ^ 57361) - 22665)
-                        .setWorldLevel((target.getWorld().getWorldLevel() ^ 31579) + 19873)
+                        .setWorldLevel((worldLevel ^ 31579) + 19873)
 
                         .setSceneTransaction(
                                 teleportProperties.getSceneId()

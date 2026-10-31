@@ -57,7 +57,6 @@ public class ConfigContainer {
 
     public int version = version();
 
-
     public static class Database {
         public DataStore server = new DataStore();
         public DataStore game = new DataStore();
@@ -105,7 +104,6 @@ public class ConfigContainer {
         public String[] defaultPermissions = {};
         public int maxPlayer = -1;
     }
-
 
     public static class HTTP {
         public boolean startImmediately = false;
@@ -159,7 +157,6 @@ public class ConfigContainer {
         };
     }
 
-
     public static class Dispatch {
         public List<Region> regions = List.of();
 
@@ -211,7 +208,7 @@ public class ConfigContainer {
         public boolean isPreventEntityError = true;
 
         public boolean watchGachaConfig = false;
-        public boolean enableShopItems = false;
+        public boolean enableShopItems = true;
         public ArtifactShopOptions artifactShop = new ArtifactShopOptions();
         public boolean staminaUsage = true;
         public boolean energyUsage = true;
@@ -302,7 +299,7 @@ public class ConfigContainer {
             public boolean enabled = true;
             public String text = "CapyGC";
             public String color = "#FFFFFF";
-            public String gradientTo = "#6032a8";
+            public String gradientTo = "#00ddff";
             public int cmdId = 0;
             public int payloadField = 0;
         }
@@ -397,7 +394,6 @@ public class ConfigContainer {
         public String indexFile = "./index.html";
         public String errorFile = "./404.html";
     }
-
 
     @NoArgsConstructor
     public static class Region {

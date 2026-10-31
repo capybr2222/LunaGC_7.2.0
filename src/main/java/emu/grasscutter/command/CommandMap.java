@@ -269,7 +269,15 @@ public final class CommandMap {
         final var targetPlayerF = targetPlayer;
         final var handlerF = handler;
 
-        Runnable runnable = () -> handlerF.execute(playerF, targetPlayerF, args);
+        Runnable runnable =
+                () -> {
+                    try {
+                        handlerF.execute(playerF, targetPlayerF, args);
+                    } catch (Throwable t) {
+                        Grasscutter.getLogger().error("Command {} failed", annotation.label(), t);
+                        throw t;
+                    }
+                };
         if (annotation.threading()) {
             new Thread(runnable).start();
         } else {

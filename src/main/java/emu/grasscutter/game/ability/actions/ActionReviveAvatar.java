@@ -32,7 +32,7 @@ public final class ActionReviveAvatar extends AbilityActionHandler {
                 var value = owner.getFightProperty(property);
                 properties.put(name, value);
             }
-    
+
         properties.putAll(ability.getAbilitySpecials());
 
         float ratio = action.amountByTargetMaxHPRatio.get(properties, 0.0f);

@@ -66,22 +66,22 @@ public final class AuthenticationHandler implements Router {
 
     private static void maPassportLogin(Context ctx) {
         Grasscutter.getLogger().info("Ma-passport login request from: " + Utils.address(ctx));
-        
+
         try {
             String rawBodyData = ctx.body();
             Grasscutter.getLogger().debug("Ma-passport request body: " + rawBodyData);
-            
+
             var request = JsonUtils.decode(rawBodyData, LoginByPasswordRequestJson.class);
             if (request == null) {
                 Grasscutter.getLogger().warn("Failed to parse Ma-Passport login request");
                 ctx.status(400).result("{\"retcode\":-1,\"message\":\"Invalid Request\",\"data\":null}");
                 return;
             }
-            
+
             var response = MaPassportAuthenticator.appLoginByPassword(request);
-            
+
             ctx.json(response);
-            
+
         } catch (Exception e) {
             Grasscutter.getLogger().error("Error in Ma-Passport login", e);
             e.printStackTrace();
@@ -91,11 +91,11 @@ public final class AuthenticationHandler implements Router {
 
     private static void maPassportVerify(Context ctx) {
         Grasscutter.getLogger().info("Ma-passport token verify request from: " + Utils.address(ctx));
-        
+
         try {
             String rawBodyData = ctx.body();
             Grasscutter.getLogger().debug("Ma-passport verify body: " + rawBodyData);
-            
+
             var request = JsonUtils.decode(rawBodyData, VerifySTokenRequestJson.class);
             if (request == null) {
                 Grasscutter.getLogger().warn("Failed to parse Ma-Passport verify request");
@@ -106,7 +106,7 @@ public final class AuthenticationHandler implements Router {
             var response = MaPassportAuthenticator.verifySToken(request);
 
             ctx.json(response);
-            
+
         } catch (Exception e) {
             Grasscutter.getLogger().error("Error in Ma-Passport verify", e);
             e.printStackTrace();

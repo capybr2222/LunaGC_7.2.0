@@ -15,7 +15,6 @@ public class PacketCardProductRewardNotify extends BasePacket {
                         .setRemainDays(remainsDay)
                         .build();
 
-
         this.setData(proto);
     }
 }

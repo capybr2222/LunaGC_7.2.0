@@ -11,6 +11,7 @@ import emu.grasscutter.scripts.constants.EventType;
 import emu.grasscutter.scripts.data.*;
 import emu.grasscutter.server.packet.send.*;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import lombok.*;
 
@@ -105,10 +106,20 @@ public class WorldChallenge {
                                                     String.valueOf(this.getChallengeId())));
         }
 
-        scriptManager.callEvent(
-                new ScriptArgs(this.getGroup().id, EventType.EVENT_CHALLENGE_SUCCESS)
-                        .setParam2(finishedTime)
-                        .setEventSource(this.getChallengeIndex()));
+        var challengeSuccess =
+                scriptManager.callEvent(
+                        new ScriptArgs(this.getGroup().id, EventType.EVENT_CHALLENGE_SUCCESS)
+                                .setParam2(finishedTime)
+                                .setEventSource(this.getChallengeIndex()));
+
+        if (dungeonManager != null && dungeonManager.isTowerDungeon() && challengeSuccess != null) {
+            try {
+                challengeSuccess.get(5, TimeUnit.SECONDS);
+            } catch (Exception exception) {
+                Grasscutter.getLogger()
+                        .warn("Tower waited for EVENT_CHALLENGE_SUCCESS in vain: {}", exception.toString());
+            }
+        }
 
         this.getScene()
                 .triggerDungeonEvent(

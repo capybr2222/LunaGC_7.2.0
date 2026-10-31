@@ -428,11 +428,12 @@ public class AbilityModifier implements Serializable {
         public DynamicFloat writtenValue() {
             return this.ratio == DynamicFloat.ONE ? DynamicFloat.ZERO : this.ratio;
         }
+        @SerializedName(value = "determineType", alternate = "DHDDHBBIHEJ")
         public String determineType;
         public int configID;
 
-        public DynamicFloat valueRangeMin;
-        public DynamicFloat valueRangeMax;
+        public DynamicFloat valueRangeMin = DynamicFloat.ZERO;
+        public DynamicFloat valueRangeMax = DynamicFloat.ZERO;
         public String overrideMapKey;
 
         public int paramNum;

@@ -15,6 +15,10 @@ public class PacketDungeonChallengeBeginNotify extends BasePacket {
                         .setChallengeIndex(challenge.getChallengeIndex())
                         .setGroupId(challenge.getGroup().id)
                         .addAllParamList(challenge.getParamList())
+                        .addAllUidList(
+                                challenge.getScene().getPlayers().stream()
+                                        .map(player -> player.getUid())
+                                        .toList())
                         .build();
 
         this.setData(proto);

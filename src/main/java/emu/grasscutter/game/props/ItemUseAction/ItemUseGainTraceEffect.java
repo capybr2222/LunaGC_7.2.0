@@ -24,4 +24,3 @@ extends ItemUseInt {
         return true;
     }
 }
-

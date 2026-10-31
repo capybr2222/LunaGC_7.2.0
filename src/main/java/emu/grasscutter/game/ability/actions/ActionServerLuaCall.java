@@ -48,7 +48,6 @@ public final class ActionServerLuaCall extends AbilityActionHandler {
                 var controller = target.getEntityController();
                 if (controller == null || functionName.isBlank()) yield false;
 
-
                 yield true;
             }
         };

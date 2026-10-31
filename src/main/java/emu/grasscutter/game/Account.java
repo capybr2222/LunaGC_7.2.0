@@ -135,7 +135,7 @@ public class Account {
         this.save();
         return this.sessionKey;
     }
-    
+
     public boolean verifyPassword(String password) {
         if (this.password == null || this.password.isEmpty()) {
             return true;

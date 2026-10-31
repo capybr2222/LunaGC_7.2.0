@@ -42,7 +42,6 @@ public class ItemUseOpenRandomChest extends ItemUseInt {
             rewardItems.add(new GameItem(reliquaryItems.get(new Random().nextInt(reliquaryItems.size()))));
         }
 
-
         if (!rewardItems.isEmpty()) {
             params.player.getInventory().addItems(rewardItems, ActionReason.Shop);
         }

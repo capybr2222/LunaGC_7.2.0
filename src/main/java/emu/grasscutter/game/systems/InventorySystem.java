@@ -119,7 +119,6 @@ public class InventorySystem extends BaseGameSystem {
         player.sendPacket(new PacketSetEquipLockStateRsp(equip));
     }
 
-
     public void upgradeRelic(
             Player player, long targetGuid, List<Long> foodRelicList, List<ItemParam> list) {
         GameItem relic = player.getInventory().getItemByGuid(targetGuid);
@@ -736,7 +735,6 @@ public class InventorySystem extends BaseGameSystem {
         avatar.setExp(exp);
         avatar.recalcStats();
         avatar.save();
-
 
         player.sendPacket(new PacketAvatarPropNotify(avatar));
         player.sendPacket(new PacketAvatarUpgradeRsp(avatar, oldLevel, oldPropMap));

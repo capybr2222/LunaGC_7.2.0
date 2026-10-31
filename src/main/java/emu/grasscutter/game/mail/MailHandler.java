@@ -20,7 +20,6 @@ public class MailHandler extends BasePlayerManager {
         return mail;
     }
 
-
     public void sendMail(Mail message) {
         PlayerReceiveMailEvent event = new PlayerReceiveMailEvent(this.getPlayer(), message);
         event.call();
@@ -98,7 +97,7 @@ public class MailHandler extends BasePlayerManager {
 
 		return this.mail.get(index);
 	}
-	
+
 	public int toClientMailId(int internalIndex) {
 		if (internalIndex < 0) {
 			return 0;

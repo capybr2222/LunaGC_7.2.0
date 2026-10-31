@@ -19,6 +19,7 @@ public class HandlerAvatarExpeditionStartReq extends PacketHandler {
                     info.getAvatarGuid(), info.getExpId(), info.getHourTime(), startTime);
         }
         player.save();
-        session.send(new PacketAvatarExpeditionStartRsp(player.getExpeditionInfo()));
+        session.send(
+                new PacketAvatarExpeditionStartRsp(player.getExpeditionInfo(), req.getBasicInfoListList()));
     }
 }

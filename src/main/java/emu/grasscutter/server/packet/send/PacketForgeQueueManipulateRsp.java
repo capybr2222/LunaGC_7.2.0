@@ -23,7 +23,6 @@ public class PacketForgeQueueManipulateRsp extends BasePacket {
                         .setRetcode(retcode.getNumber())
                         .setManipulateType(type);
 
-
         this.setData(builder.build());
     }
 }

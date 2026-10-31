@@ -12,7 +12,7 @@ public class NoFogCommand implements CommandHandler
 {
     @Override
     public void execute(final Player sender, final Player targetPlayer, final List<String> args) {
-		
+
 		String path = "fog";
 		targetPlayer.sendPacket(new PacketWindy(path));
     CommandHandler.sendMessage(sender, "Successfully executed No Fog script.");

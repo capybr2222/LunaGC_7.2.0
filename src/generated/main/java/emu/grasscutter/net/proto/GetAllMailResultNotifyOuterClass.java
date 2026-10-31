@@ -67,13 +67,13 @@ public final class GetAllMailResultNotifyOuterClass {
         getTransactionBytes();
 
     /**
-     * <code>uint32 page_index = 50000;</code>
+     * <code>uint32 page_index = 12;</code>
      * @return The pageIndex.
      */
     int getPageIndex();
 
     /**
-     * <code>uint32 total_page_count = 50001;</code>
+     * <code>uint32 total_page_count = 5;</code>
      * @return The totalPageCount.
      */
     int getTotalPageCount();
@@ -136,6 +136,11 @@ public final class GetAllMailResultNotifyOuterClass {
               isCollected_ = input.readBool();
               break;
             }
+            case 40: {
+
+              totalPageCount_ = input.readUInt32();
+              break;
+            }
             case 74: {
               java.lang.String s = input.readStringRequireUtf8();
 
@@ -151,14 +156,9 @@ public final class GetAllMailResultNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.MailDataOuterClass.MailData.parser(), extensionRegistry));
               break;
             }
-            case 400000: {
+            case 96: {
 
               pageIndex_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              totalPageCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -296,10 +296,10 @@ public final class GetAllMailResultNotifyOuterClass {
       }
     }
 
-    public static final int PAGE_INDEX_FIELD_NUMBER = 50000;
+    public static final int PAGE_INDEX_FIELD_NUMBER = 12;
     private int pageIndex_;
     /**
-     * <code>uint32 page_index = 50000;</code>
+     * <code>uint32 page_index = 12;</code>
      * @return The pageIndex.
      */
     @java.lang.Override
@@ -307,10 +307,10 @@ public final class GetAllMailResultNotifyOuterClass {
       return pageIndex_;
     }
 
-    public static final int TOTAL_PAGE_COUNT_FIELD_NUMBER = 50001;
+    public static final int TOTAL_PAGE_COUNT_FIELD_NUMBER = 5;
     private int totalPageCount_;
     /**
-     * <code>uint32 total_page_count = 50001;</code>
+     * <code>uint32 total_page_count = 5;</code>
      * @return The totalPageCount.
      */
     @java.lang.Override
@@ -338,6 +338,9 @@ public final class GetAllMailResultNotifyOuterClass {
       if (isCollected_ != false) {
         output.writeBool(3, isCollected_);
       }
+      if (totalPageCount_ != 0) {
+        output.writeUInt32(5, totalPageCount_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 9, transaction_);
       }
@@ -345,10 +348,7 @@ public final class GetAllMailResultNotifyOuterClass {
         output.writeMessage(10, mailList_.get(i));
       }
       if (pageIndex_ != 0) {
-        output.writeUInt32(50000, pageIndex_);
-      }
-      if (totalPageCount_ != 0) {
-        output.writeUInt32(50001, totalPageCount_);
+        output.writeUInt32(12, pageIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -367,6 +367,10 @@ public final class GetAllMailResultNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(3, isCollected_);
       }
+      if (totalPageCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, totalPageCount_);
+      }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(transaction_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, transaction_);
       }
@@ -376,11 +380,7 @@ public final class GetAllMailResultNotifyOuterClass {
       }
       if (pageIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, pageIndex_);
-      }
-      if (totalPageCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, totalPageCount_);
+          .computeUInt32Size(12, pageIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1126,7 +1126,7 @@ public final class GetAllMailResultNotifyOuterClass {
 
       private int pageIndex_ ;
       /**
-       * <code>uint32 page_index = 50000;</code>
+       * <code>uint32 page_index = 12;</code>
        * @return The pageIndex.
        */
       @java.lang.Override
@@ -1134,7 +1134,7 @@ public final class GetAllMailResultNotifyOuterClass {
         return pageIndex_;
       }
       /**
-       * <code>uint32 page_index = 50000;</code>
+       * <code>uint32 page_index = 12;</code>
        * @param value The pageIndex to set.
        * @return This builder for chaining.
        */
@@ -1145,7 +1145,7 @@ public final class GetAllMailResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 page_index = 50000;</code>
+       * <code>uint32 page_index = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearPageIndex() {
@@ -1157,7 +1157,7 @@ public final class GetAllMailResultNotifyOuterClass {
 
       private int totalPageCount_ ;
       /**
-       * <code>uint32 total_page_count = 50001;</code>
+       * <code>uint32 total_page_count = 5;</code>
        * @return The totalPageCount.
        */
       @java.lang.Override
@@ -1165,7 +1165,7 @@ public final class GetAllMailResultNotifyOuterClass {
         return totalPageCount_;
       }
       /**
-       * <code>uint32 total_page_count = 50001;</code>
+       * <code>uint32 total_page_count = 5;</code>
        * @param value The totalPageCount to set.
        * @return This builder for chaining.
        */
@@ -1176,7 +1176,7 @@ public final class GetAllMailResultNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_page_count = 50001;</code>
+       * <code>uint32 total_page_count = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalPageCount() {
@@ -1253,13 +1253,12 @@ public final class GetAllMailResultNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GetAllMailResultNotify.proto\032\016MailData" +
-      ".proto\"\244\001\n\026GetAllMailResultNotify\022\024\n\014is_" +
+      ".proto\"\240\001\n\026GetAllMailResultNotify\022\024\n\014is_" +
       "collected\030\003 \001(\010\022\034\n\tmail_list\030\n \003(\0132\t.Mai" +
       "lData\022\017\n\007retcode\030\002 \001(\005\022\023\n\013transaction\030\t " +
-      "\001(\t\022\024\n\npage_index\030\320\206\003 \001(\r\022\032\n\020total_page_" +
-      "count\030\321\206\003 \001(\rB=\n\031emu.grasscutter.net.pro" +
-      "toB GetAllMailResultNotifyOuterClassb\006pr" +
-      "oto3"
+      "\001(\t\022\022\n\npage_index\030\014 \001(\r\022\030\n\020total_page_co" +
+      "unt\030\005 \001(\rB=\n\031emu.grasscutter.net.protoB " +
+      "GetAllMailResultNotifyOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

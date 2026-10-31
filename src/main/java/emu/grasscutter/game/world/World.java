@@ -299,6 +299,14 @@ public class World implements Iterable<Player> {
                         () -> {
                             try {
                                 Thread.sleep(delayMs);
+
+                                if (player.getWorld() != this) {
+                                    Grasscutter.getLogger()
+                                            .debug(
+                                                    "queueTransferPlayerToScene: uid {} is no longer in this world, skipping teleport to {}",
+                                                    player.getUid(), sceneId);
+                                    return;
+                                }
                                 transferPlayerToScene(player, sceneId, pos);
                             } catch (InterruptedException e) {
                                 Grasscutter.getLogger()
@@ -307,6 +315,37 @@ public class World implements Iterable<Player> {
                             } catch (Throwable e) {
                                 Grasscutter.getLogger()
                                         .error("Queued teleport to scene {} failed.", sceneId, e);
+                            }
+                        }));
+    }
+
+    public void queueTransferPlayerToScene(
+            Player player, TeleportProperties teleportProperties, int delayMs) {
+        player.setQueuedTeleport(
+                eventExecutor.submit(
+                        () -> {
+                            try {
+                                Thread.sleep(delayMs);
+                                if (player.getWorld() != this) {
+                                    Grasscutter.getLogger()
+                                            .debug(
+                                                    "queueTransferPlayerToScene: uid {} is no longer in this world, skipping teleport to {}",
+                                                    player.getUid(),
+                                                    teleportProperties.getSceneId());
+                                    return;
+                                }
+                                transferPlayerToScene(player, teleportProperties);
+                            } catch (InterruptedException e) {
+                                Grasscutter.getLogger()
+                                        .trace(
+                                                "queueTransferPlayerToScene: teleport to scene {} is interrupted",
+                                                teleportProperties.getSceneId());
+                            } catch (Throwable e) {
+                                Grasscutter.getLogger()
+                                        .error(
+                                                "Queued teleport to scene {} failed.",
+                                                teleportProperties.getSceneId(),
+                                                e);
                             }
                         }));
     }
@@ -446,6 +485,10 @@ public class World implements Iterable<Player> {
         if (oldScene != null && newScene != null && newScene != oldScene) {
             newScene.setPrevScenePoint(oldScene.getPrevScenePoint());
             oldScene.setDontDestroyWhenEmpty(false);
+        }
+
+        if (oldScene != null && newScene == oldScene) {
+            newScene.setDontDestroyWhenEmpty(false);
         }
 
         player.sendPacket(new PacketPlayerEnterSceneNotify(player, teleportProperties));

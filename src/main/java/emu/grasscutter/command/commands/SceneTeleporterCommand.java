@@ -13,16 +13,14 @@ import emu.grasscutter.command.Command.TargetRequirement;
 
 import java.util.List;
 
-
 @Command(
     label = "sceneteleporter",
     aliases = {"sc","scene","sceneteleport","sceneteleporter"},
-    usage = "/scene /sceneteleport /sceneteleporter [SceneID] \n\ndescription: teleports you to the scene you want \n\nto leave domains use only this command (do not exit via the prompt)", 
-    permission = "player.teleport", 
+    usage = "/scene /sceneteleport /sceneteleporter [SceneID] \n\ndescription: teleports you to the scene you want \n\nto leave domains use only this command (do not exit via the prompt)",
+    permission = "player.teleport",
     permissionTargeted = "player.teleport.others",
     targetRequirement = TargetRequirement.NONE)
 public final class SceneTeleporterCommand implements CommandHandler {
-
 
     @Override
     public void execute(Player sender, Player targetPlayer, List<String> args) {
@@ -44,14 +42,14 @@ public final class SceneTeleporterCommand implements CommandHandler {
         }
 
         if (targetPlayer.getWorld().getSceneById(sceneId) == null) {
-            CommandHandler.sendMessage(sender,"teleportation failed! wrong or non-existent sceneID (error: sceneid is null)");  
+            CommandHandler.sendMessage(sender,"teleportation failed! wrong or non-existent sceneID (error: sceneid is null)");
         } else {
 
         Scene newScene = targetPlayer.getWorld().getSceneById(sceneId);
         SceneConfig config = newScene.getScriptManager().getConfig();
 
         if (config == null) {
-            CommandHandler.sendMessage(sender,"teleportation failed! teleportation positions do not exist in the corresponding scene file! cannot teleport to scene (try manually with /tp instead)");  
+            CommandHandler.sendMessage(sender,"teleportation failed! teleportation positions do not exist in the corresponding scene file! cannot teleport to scene (try manually with /tp instead)");
         } else {
 
         Position pos = config.born_pos;
@@ -64,7 +62,7 @@ public final class SceneTeleporterCommand implements CommandHandler {
         } else {
             Position teleportedpos = targetPlayer.getPosition();
             Position teleportedrot = targetPlayer.getRotation();
-            
+
             CommandHandler.sendMessage(sender, "teleportation was successful!" );
             CommandHandler.sendTranslatedMessage(sender, "commands.position.success",
             teleportedpos.getX(), teleportedpos.getY(), teleportedpos.getZ(), teleportedrot.getX(), teleportedrot.getY(), teleportedrot.getZ(), targetPlayer.getSceneId());

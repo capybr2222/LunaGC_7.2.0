@@ -4,12 +4,14 @@ import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.*;
+import emu.grasscutter.data.excels.dungeon.DungeonData;
 import emu.grasscutter.data.excels.tower.TowerScheduleData;
 import emu.grasscutter.server.game.*;
 import emu.grasscutter.utils.FileUtils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class TowerSystem extends BaseGameSystem {
 
@@ -20,6 +22,8 @@ public class TowerSystem extends BaseGameSystem {
     private List<Integer> playableSchedules;
 
     private final Map<Integer, Boolean> scriptedScenes = new HashMap<>();
+
+    private Set<Integer> towerSceneIds;
 
     public TowerSystem(GameServer server) {
         super(server);
@@ -38,6 +42,18 @@ public class TowerSystem extends BaseGameSystem {
         return towerScheduleConfig;
     }
 
+    public Set<Integer> getTowerSceneIds() {
+        if (towerSceneIds != null) return towerSceneIds;
+
+        towerSceneIds =
+                GameData.getTowerLevelDataMap().values().stream()
+                        .map(level -> GameData.getDungeonDataMap().get(level.getDungeonId()))
+                        .filter(Objects::nonNull)
+                        .map(DungeonData::getSceneId)
+                        .filter(sceneId -> sceneId > 0)
+                        .collect(Collectors.toUnmodifiableSet());
+        return towerSceneIds;
+    }
 
     private boolean isScripted(int sceneId) {
         return scriptedScenes.computeIfAbsent(
@@ -178,7 +194,6 @@ public class TowerSystem extends BaseGameSystem {
         if (!isRotating()) return towerScheduleConfig.getNextScheduleChangeTime();
         return periodEnd(periodStart(new Date())).getTime();
     }
-
 
     public TowerScheduleData getCurrentTowerScheduleData() {
         int pinned = GAME_OPTIONS.tower.scheduleId;

@@ -25,7 +25,6 @@ public class HandlerEnterSceneDoneReq extends PacketHandler {
 
         player.setSceneLoadState(SceneLoadState.LOADED);
 
-
         session.send(new PacketPlayerTimeNotify(player));
 
         player.getScene().spawnPlayer(player);

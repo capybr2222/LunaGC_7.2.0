@@ -88,13 +88,15 @@ public final class PlayerBuffManager extends BasePlayerManager {
             duration = buffData.getTime();
         }
 
-        if (duration <= 0) {
+        boolean permanent = duration < 0f;
+        if (!permanent && duration <= 0f) {
             return success;
         }
 
         this.removeBuff(buffData.getGroupId());
 
-        PlayerBuff buff = new PlayerBuff(getNextBuffUid(), buffData, duration);
+        PlayerBuff buff =
+                new PlayerBuff(getNextBuffUid(), buffData, permanent ? -1f : duration);
         this.buffs.put(buff.getGroupId(), buff);
 
         getPlayer()
@@ -153,7 +155,10 @@ public final class PlayerBuffManager extends BasePlayerManager {
         public PlayerBuff(int uid, BuffData buffData, float duration) {
             this.uid = uid;
             this.buffData = buffData;
-            this.endTime = System.currentTimeMillis() + ((long) duration * 1000);
+            this.endTime =
+                    duration < 0f
+                            ? Long.MAX_VALUE
+                            : System.currentTimeMillis() + ((long) duration * 1000);
         }
 
         public int getGroupId() {

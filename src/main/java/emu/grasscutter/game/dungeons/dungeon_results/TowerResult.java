@@ -4,7 +4,7 @@ import emu.grasscutter.data.excels.dungeon.DungeonData;
 import emu.grasscutter.game.dungeons.DungeonEndStats;
 import emu.grasscutter.game.dungeons.challenge.WorldChallenge;
 import emu.grasscutter.game.tower.TowerManager;
-import emu.grasscutter.net.proto.*;
+import emu.grasscutter.net.proto.DungeonSettleNotifyOuterClass;
 import emu.grasscutter.net.proto.TowerLevelEndNotifyOuterClass.TowerLevelEndNotify;
 
 public class TowerResult extends BaseDungeonResult {
@@ -34,8 +34,10 @@ public class TowerResult extends BaseDungeonResult {
 
     @Override
     protected void onProto(DungeonSettleNotifyOuterClass.DungeonSettleNotify.Builder builder) {
+        boolean success = challenge != null && challenge.isSuccess();
+
         var continueStatus = CONTINUE_STATE_CAN_NOT_CONTINUE;
-        if (challenge != null && challenge.isSuccess()) {
+        if (success) {
             if (hasNextLevel) {
                 continueStatus = CONTINUE_STATE_CAN_ENTER_NEXT_LEVEL;
             } else if (canJump) {
@@ -45,10 +47,8 @@ public class TowerResult extends BaseDungeonResult {
 
         var towerLevelEndNotify =
                 TowerLevelEndNotify.newBuilder()
-                        .setIsSuccess(challenge.isSuccess())
-                        .setContinueState(continueStatus)
-                        .addRewardItemList(
-                                ItemParamOuterClass.ItemParam.newBuilder().setItemId(201).setCount(1000));
+                        .setIsSuccess(success)
+                        .setContinueState(continueStatus);
 
         for (int i = 1; i <= currentStars; i++) {
             towerLevelEndNotify.addFinishedStarCondList(i);

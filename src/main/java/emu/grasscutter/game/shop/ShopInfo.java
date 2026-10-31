@@ -37,8 +37,10 @@ public class ShopInfo {
         this.hcoin = sgd.getCostHcoin();
         this.buyLimit = sgd.getBuyLimit();
 
-        this.minLevel = sgd.getMinPlayerLevel();
-        this.maxLevel = sgd.getMaxPlayerLevel();
+        if (sgd.getMinPlayerLevel() > 0) this.minLevel = sgd.getMinPlayerLevel();
+        if (sgd.getMaxPlayerLevel() > 0) this.maxLevel = sgd.getMaxPlayerLevel();
+        if (sgd.getBeginTimestamp() > 0) this.beginTime = sgd.getBeginTimestamp();
+        if (sgd.getEndTimestamp() > 0) this.endTime = sgd.getEndTimestamp();
         var costItems = sgd.getCostItems();
         this.costItemList =
                 costItems == null

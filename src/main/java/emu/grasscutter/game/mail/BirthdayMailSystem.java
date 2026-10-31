@@ -16,10 +16,10 @@ import java.util.List;
 
 public final class BirthdayMailSystem {
     private BirthdayMailSystem() {}
-	
+
 	public static void checkAndSend(Player player) {
 		checkAndSend(player, LocalDate.now(ZoneId.systemDefault()));
-	}	
+	}
 
     public static void checkAndSend(Player player, LocalDate today) {
         var options = GAME_OPTIONS.birthdayMail;

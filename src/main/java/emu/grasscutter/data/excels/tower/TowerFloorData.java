@@ -13,6 +13,10 @@ public class TowerFloorData extends GameResource {
     private int teamNum;
     private int floorLevelConfigId;
 
+    private int rewardIdThreeStars;
+    private int rewardIdSixStars;
+    private int rewardIdNineStars;
+
     @Override
     public int getId() {
         return this.floorId;

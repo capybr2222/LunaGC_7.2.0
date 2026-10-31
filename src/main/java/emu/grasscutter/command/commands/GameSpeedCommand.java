@@ -12,7 +12,7 @@ public class GameSpeedCommand implements CommandHandler
 {
     @Override
     public void execute(final Player sender, final Player targetPlayer, final List<String> args) {
-		
+
 		String path = "GameSpeed/speed" + args.get(0);
 		targetPlayer.sendPacket(new PacketWindy(path));
         CommandHandler.sendMessage(sender, "GameSpeed changed to " + args.get(0) + " successfully!");

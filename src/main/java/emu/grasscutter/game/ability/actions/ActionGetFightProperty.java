@@ -26,7 +26,7 @@ public final class ActionGetFightProperty extends AbilityActionHandler {
         properties.putAll(ability.getAbilitySpecials());
 
         float fightPropertyValue = action.fightProp.get(properties, 0f);
-        
+
         target.getGlobalAbilityValues().put(action.globalValueKey, fightPropertyValue);
 
         return true;

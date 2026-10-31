@@ -48,7 +48,6 @@ public class BaseDungeonResult {
             }
         }
 
-
         onProto(builder);
 
         return builder;

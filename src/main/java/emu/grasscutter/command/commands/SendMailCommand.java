@@ -40,8 +40,14 @@ public final class SendMailCommand implements CommandHandler {
                         }
                         case "all" -> mailBuilder = new MailBuilder(true, new Mail());
                         default -> {
-                            if (DatabaseHelper.getPlayerByUid(Integer.parseInt(args.get(0))) != null) {
-                                mailBuilder = new MailBuilder(Integer.parseInt(args.get(0)), new Mail());
+                            int recipient;
+                            try {
+                                recipient = Integer.parseInt(args.get(0));
+                            } catch (NumberFormatException e) {
+                                recipient = -1;
+                            }
+                            if (recipient > 0 && DatabaseHelper.getPlayerByUid(recipient) != null) {
+                                mailBuilder = new MailBuilder(recipient, new Mail());
                             } else {
                                 CommandHandler.sendMessage(
                                         sender, translate(sender, "commands.sendMail.user_not_exist", args.get(0)));

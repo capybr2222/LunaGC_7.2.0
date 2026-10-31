@@ -58,6 +58,7 @@ public class EntityMonster extends GameEntity {
 
     @Getter private List<Player> playerOnBattle;
     @Nullable @Getter @Setter private SceneMonster metaMonster;
+    private boolean liveEventSent;
 
     public EntityMonster(
             Scene scene, MonsterData monsterData, Position pos, Position rot, int level) {
@@ -215,8 +216,11 @@ public class EntityMonster extends GameEntity {
     }
 
     @Override
-    public void onTick(int sceneTime) {
-        super.onTick(sceneTime);
+    public void onCreate() {
+        super.onCreate();
+
+        if (this.liveEventSent) return;
+        this.liveEventSent = true;
 
         getScene()
                 .getScriptManager()
@@ -360,11 +364,14 @@ public class EntityMonster extends GameEntity {
         var towerManager = players.isEmpty() ? null : players.get(0).getTowerManager();
         if (dungeonManager != null && dungeonManager.isTowerDungeon() && towerManager != null) {
             var floor = towerManager.getCurrentFloorNumber();
+
             float additionalScaleFactor = 0f;
             if (floor >= 12) {
-                additionalScaleFactor = 1.5f;
+                additionalScaleFactor = 3.75f;
+            } else if (floor >= 11) {
+                additionalScaleFactor = 2f;
             } else if (floor >= 8) {
-                additionalScaleFactor = 1.f;
+                additionalScaleFactor = 1f;
             } else if (floor >= 3) {
                 additionalScaleFactor = .5f;
             }
@@ -377,6 +384,14 @@ public class EntityMonster extends GameEntity {
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP,
                 this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) * hpPercent);
+    }
+
+    private boolean isElite() {
+        if (this.metaMonster != null && this.metaMonster.isElite) {
+            return true;
+        }
+        return this.getMonsterData() != null
+                && this.getMonsterData().getType() == MonsterType.MONSTER_BOSS;
     }
 
     @Override
@@ -422,6 +437,7 @@ public class EntityMonster extends GameEntity {
                         .setGroupId(this.getGroupId())
                         .setConfigId(this.getConfigId())
                         .addAllAffixList(data.getAffix())
+                        .setIsElite(isElite())
                         .setAuthorityPeerId(this.getWorld().getHostPeerId())
                         .setPoseId(this.getPoseId())
                         .setBlockId(this.getScene().getId())
@@ -436,9 +452,17 @@ public class EntityMonster extends GameEntity {
                         .setTitleId(this.metaMonster.title_id)
                         .setSpecialNameId(this.metaMonster.special_name_id);
             } else if (data.getDescribeData() != null) {
-                monsterInfo
-                        .setTitleId(data.getDescribeData().getTitleId())
-                        .setSpecialNameId(data.getSpecialNameId());
+
+                var describeData = data.getDescribeData();
+                int specialNameId =
+                        data.getSpecialNameId() > 0
+                                ? data.getSpecialNameId()
+                                : describeData.getSpecialNameLabId();
+
+                monsterInfo.setTitleId(describeData.getTitleId());
+                if (specialNameId > 0) {
+                    monsterInfo.setSpecialNameId(specialNameId);
+                }
             }
         }
 

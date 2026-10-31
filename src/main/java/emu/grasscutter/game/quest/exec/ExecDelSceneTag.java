@@ -13,7 +13,7 @@ public final class ExecDelSceneTag extends QuestExecHandler {
         var param =
                 Arrays.stream(paramStr).filter(i -> !i.isBlank()).mapToInt(Integer::parseInt).toArray();
 		quest.getOwner().getProgressManager().delSceneTag(param[0], param[1]);
-		
+
         return true;
     }
 }

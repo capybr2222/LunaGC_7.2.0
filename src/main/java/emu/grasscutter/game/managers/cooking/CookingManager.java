@@ -69,6 +69,7 @@ public class CookingManager extends BasePlayerManager {
                 player.getInventory().payItems(recipeData.getInputVec(), count, ActionReason.Cook);
         if (!success) {
             this.player.sendPacket(new PacketPlayerCookRsp(Retcode.RET_FAIL));
+            return;
         }
 
         int qualityIndex = quality == 0 ? 2 : quality - 1;

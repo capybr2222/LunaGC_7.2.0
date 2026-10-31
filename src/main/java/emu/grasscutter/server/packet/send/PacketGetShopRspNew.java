@@ -6,7 +6,7 @@ import emu.grasscutter.net.proto.GetShopRspNewOuterClass.GetShopRspNew;
 import java.util.*;
 
 public class PacketGetShopRspNew extends BasePacket {
-    
+
     private static final List<Integer> AVAILABLE_SHOPS = Arrays.asList(
         900,
         100000,
@@ -15,10 +15,10 @@ public class PacketGetShopRspNew extends BasePacket {
         902,
         102000,
         1001,
-        103000, 
+        103000,
         903
     );
-    
+
     public PacketGetShopRspNew(int param) {
         super(PacketOpcodes.GetShopRspNew);
 
@@ -30,7 +30,7 @@ public class PacketGetShopRspNew extends BasePacket {
 
         this.setData(rsp.build());
     }
-    
+
     public PacketGetShopRspNew(int param, List<Integer> availableShops) {
         super(PacketOpcodes.GetShopRspNew);
 

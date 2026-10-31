@@ -85,7 +85,7 @@ public final class TeamManager extends BasePlayerDataManager {
         int embryoId = 0;
 
         if (Arrays.stream(GameConstants.DEFAULT_TEAM_ABILITY_STRINGS).count() > 0) {
-            boolean inNatlan = player.getScene() != null && player.getScene().getId() == 101;
+            boolean inNatlan = player.isInNatlan();
             List<String> teamAbilties =
                 Arrays.stream(GameConstants.DEFAULT_TEAM_ABILITY_STRINGS).toList();
             for (String skill : teamAbilties) {
@@ -494,11 +494,10 @@ public final class TeamManager extends BasePlayerDataManager {
             return;
         }
 
-        List<Integer> team = new ArrayList<>();
-        team.add(teamId);
-
-        TeamInfo teamInfo = this.getTeams().get(team.size());
+        TeamInfo teamInfo = this.getTeams().get(teamId);
         if (teamInfo == null) {
+            Grasscutter.getLogger()
+                    .warn("Team setup for {} named team {}, which does not exist.", this.getPlayer().getUid(), teamId);
             return;
         }
 
@@ -743,6 +742,22 @@ public final class TeamManager extends BasePlayerDataManager {
         }
 
         scene.spawnPlayer(this.getPlayer());
+    }
+
+    public int getTemporaryTeamCount() {
+        return this.temporaryTeam == null ? 0 : this.temporaryTeam.size();
+    }
+
+    public void forceActiveCharacter(int index) {
+        if (index < 0 || index >= this.getActiveTeam().size()) return;
+
+        var oldEntity = this.getCurrentAvatarEntity();
+        this.setCurrentCharacterIndex(index);
+        var newEntity = this.getActiveTeam().get(index);
+
+        if (oldEntity != null && oldEntity != newEntity && this.getPlayer().getScene() != null) {
+            this.getPlayer().getScene().replaceEntity(oldEntity, newEntity);
+        }
     }
 
     public boolean cleanTemporaryTeam() {

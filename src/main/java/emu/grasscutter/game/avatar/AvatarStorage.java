@@ -105,7 +105,6 @@ public class AvatarStorage extends BasePlayerManager implements Iterable<Avatar>
             return false;
         }
 
-
         avatar.setCostume(costumeId);
         avatar.save();
 
@@ -138,10 +137,9 @@ public class AvatarStorage extends BasePlayerManager implements Iterable<Avatar>
             getPlayer().getWorld().broadcastPacket(new PacketAvatarTraceEffectChangeNotify(entity));
         } else {
             getPlayer().getWorld().broadcastPacket(new PacketAvatarTraceEffectChangeNotify(entity));
-        } 
+        }
         return true;
     }
-
 
     public void loadFromDatabase() {
         if (this.isLoaded()) return;

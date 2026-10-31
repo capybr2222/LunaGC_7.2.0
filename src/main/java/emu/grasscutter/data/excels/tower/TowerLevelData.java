@@ -14,6 +14,7 @@ public class TowerLevelData extends GameResource {
     private int dungeonId;
     private List<TowerLevelCond> conds;
     private int monsterLevel;
+    private List<String> towerBuffConfigStrList;
 
     public static class TowerLevelCond {
         private TowerCondType towerCondType;

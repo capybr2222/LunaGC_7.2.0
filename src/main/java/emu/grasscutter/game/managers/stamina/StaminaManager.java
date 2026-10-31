@@ -153,7 +153,6 @@ public class StaminaManager extends BasePlayerManager {
     public static void initialize() {
     }
 
-
     public void setSkillCast(int skillId, int skillCasterId) {
         lastSkillFirstTick = true;
         lastSkillId = skillId;
@@ -347,8 +346,6 @@ public class StaminaManager extends BasePlayerManager {
         }
     }
 
-
-
     public void handleEvtDoSkillSuccNotify(GameSession session, int skillId, int casterId) {
         if (casterId != player.getTeamManager().getCurrentAvatarEntity().getId()) {
             return;
@@ -399,7 +396,6 @@ public class StaminaManager extends BasePlayerManager {
             this.vehicleId = -1;
         }
     }
-
 
     private void handleImmediateStamina(GameSession session, @NotNull MotionState motionState) {
         if (previousState == currentState) {
@@ -498,8 +494,6 @@ public class StaminaManager extends BasePlayerManager {
         }
     }
 
-
-
     public Consumption getFightConsumption(int skillCasting) {
         if (TalentMovements.contains(skillCasting)) {
             return getTalentMovingSustainedCost(skillCasting);
@@ -581,7 +575,6 @@ public class StaminaManager extends BasePlayerManager {
             default -> new Consumption();
         };
     }
-
 
     private float getTalentCostReductionFactor(HashMap<Integer, Float> talentReductionMap) {
         float reduction = 1;

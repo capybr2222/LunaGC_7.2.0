@@ -12,7 +12,7 @@ public class RemoveCensorshipCommand implements CommandHandler
 {
     @Override
     public void execute(final Player sender, final Player targetPlayer, final List<String> args) {
-		
+
 		String path = "RemoveCensorship";
 		targetPlayer.sendPacket(new PacketWindy(path));
     CommandHandler.sendMessage(sender, "Censhorship removed successfully.");

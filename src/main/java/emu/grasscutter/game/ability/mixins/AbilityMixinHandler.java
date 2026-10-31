@@ -14,4 +14,3 @@ public abstract class AbilityMixinHandler {
                 return AbilityActionHandler.resolveTarget(ability, entity, target);
             }
         }
-        

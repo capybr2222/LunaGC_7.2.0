@@ -11,7 +11,6 @@ public class PacketAllWidgetDataNotify extends BasePacket {
     public PacketAllWidgetDataNotify(Player player) {
         super(PacketOpcodes.AllWidgetDataNotify);
 
-
         AllWidgetDataNotify.Builder proto =
                 AllWidgetDataNotify.newBuilder()
                         .setLunchBoxData(LunchBoxDataOuterClass.LunchBoxData.newBuilder().build())

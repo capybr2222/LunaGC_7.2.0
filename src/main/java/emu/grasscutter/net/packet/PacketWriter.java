@@ -13,7 +13,6 @@ public class PacketWriter {
         return baos.toByteArray();
     }
 
-
     public void writeEmpty(int i) {
         while (i > 0) {
             baos.write(0);

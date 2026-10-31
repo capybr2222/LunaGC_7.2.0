@@ -12,7 +12,7 @@ public class HideUICommand implements CommandHandler
 {
     @Override
     public void execute(final Player sender, final Player targetPlayer, final List<String> args) {
-		
+
 		String path = "HideUI";
 		targetPlayer.sendPacket(new PacketWindy(path));
         CommandHandler.sendMessage(sender, "UI hidden successfully.");

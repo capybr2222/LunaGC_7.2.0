@@ -63,7 +63,7 @@ public enum PlayerProperty {
             10049, 0, 10000),
     PROP_DIVE_CUR_STAMINA(
         10050, 0, 10000),
-        PROP_PHLOGISTON_ENABLE(10052, 0, 1), 
+        PROP_PHLOGISTON_ENABLE(10052, 0, 1),
         PROP_PHLOGISTON_MAX_VALUE(
                 10053, 0, 10000),
                 PROP_CUR_PHLOGISTON(10054),

@@ -19,7 +19,7 @@ public final class TowerLevelStarCondDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 star_cond_index = 50000;</code>
+     * <code>uint32 star_cond_index = 5;</code>
      * @return The starCondIndex.
      */
     int getStarCondIndex();
@@ -37,7 +37,7 @@ public final class TowerLevelStarCondDataOuterClass {
     boolean getIsFail();
 
     /**
-     * <code>uint32 cond_value = 50001;</code>
+     * <code>uint32 cond_value = 8;</code>
      * @return The condValue.
      */
     int getCondValue();
@@ -87,6 +87,11 @@ public final class TowerLevelStarCondDataOuterClass {
             case 0:
               done = true;
               break;
+            case 40: {
+
+              starCondIndex_ = input.readUInt32();
+              break;
+            }
             case 48: {
 
               isPause_ = input.readBool();
@@ -97,12 +102,7 @@ public final class TowerLevelStarCondDataOuterClass {
               isFail_ = input.readBool();
               break;
             }
-            case 400000: {
-
-              starCondIndex_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
+            case 64: {
 
               condValue_ = input.readUInt32();
               break;
@@ -139,10 +139,10 @@ public final class TowerLevelStarCondDataOuterClass {
               emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.class, emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.Builder.class);
     }
 
-    public static final int STAR_COND_INDEX_FIELD_NUMBER = 50000;
+    public static final int STAR_COND_INDEX_FIELD_NUMBER = 5;
     private int starCondIndex_;
     /**
-     * <code>uint32 star_cond_index = 50000;</code>
+     * <code>uint32 star_cond_index = 5;</code>
      * @return The starCondIndex.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class TowerLevelStarCondDataOuterClass {
       return isFail_;
     }
 
-    public static final int COND_VALUE_FIELD_NUMBER = 50001;
+    public static final int COND_VALUE_FIELD_NUMBER = 8;
     private int condValue_;
     /**
-     * <code>uint32 cond_value = 50001;</code>
+     * <code>uint32 cond_value = 8;</code>
      * @return The condValue.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class TowerLevelStarCondDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (starCondIndex_ != 0) {
+        output.writeUInt32(5, starCondIndex_);
+      }
       if (isPause_ != false) {
         output.writeBool(6, isPause_);
       }
       if (isFail_ != false) {
         output.writeBool(7, isFail_);
       }
-      if (starCondIndex_ != 0) {
-        output.writeUInt32(50000, starCondIndex_);
-      }
       if (condValue_ != 0) {
-        output.writeUInt32(50001, condValue_);
+        output.writeUInt32(8, condValue_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,6 +218,10 @@ public final class TowerLevelStarCondDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (starCondIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, starCondIndex_);
+      }
       if (isPause_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(6, isPause_);
@@ -226,13 +230,9 @@ public final class TowerLevelStarCondDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(7, isFail_);
       }
-      if (starCondIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, starCondIndex_);
-      }
       if (condValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, condValue_);
+          .computeUInt32Size(8, condValue_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class TowerLevelStarCondDataOuterClass {
 
       private int starCondIndex_ ;
       /**
-       * <code>uint32 star_cond_index = 50000;</code>
+       * <code>uint32 star_cond_index = 5;</code>
        * @return The starCondIndex.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return starCondIndex_;
       }
       /**
-       * <code>uint32 star_cond_index = 50000;</code>
+       * <code>uint32 star_cond_index = 5;</code>
        * @param value The starCondIndex to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 star_cond_index = 50000;</code>
+       * <code>uint32 star_cond_index = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearStarCondIndex() {
@@ -633,7 +633,7 @@ public final class TowerLevelStarCondDataOuterClass {
 
       private int condValue_ ;
       /**
-       * <code>uint32 cond_value = 50001;</code>
+       * <code>uint32 cond_value = 8;</code>
        * @return The condValue.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return condValue_;
       }
       /**
-       * <code>uint32 cond_value = 50001;</code>
+       * <code>uint32 cond_value = 8;</code>
        * @param value The condValue to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cond_value = 50001;</code>
+       * <code>uint32 cond_value = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCondValue() {
@@ -728,12 +728,12 @@ public final class TowerLevelStarCondDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TowerLevelStarCondData.proto\"l\n\026TowerL" +
-      "evelStarCondData\022\031\n\017star_cond_index\030\320\206\003 " +
-      "\001(\r\022\020\n\010is_pause\030\006 \001(\010\022\017\n\007is_fail\030\007 \001(\010\022\024" +
-      "\n\ncond_value\030\321\206\003 \001(\rB=\n\031emu.grasscutter." +
-      "net.protoB TowerLevelStarCondDataOuterCl" +
-      "assb\006proto3"
+      "\n\034TowerLevelStarCondData.proto\"h\n\026TowerL" +
+      "evelStarCondData\022\027\n\017star_cond_index\030\005 \001(" +
+      "\r\022\020\n\010is_pause\030\006 \001(\010\022\017\n\007is_fail\030\007 \001(\010\022\022\n\n" +
+      "cond_value\030\010 \001(\rB=\n\031emu.grasscutter.net." +
+      "protoB TowerLevelStarCondDataOuterClassb" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -40,7 +40,6 @@ public class HandlerCombatInvocationsNotify extends PacketHandler {
                             && player.getScene().getEntityById(attackResult.getDefenseId())
                                     instanceof EntityAvatar) break;
 
-
                     player.getAttackResults().add(attackResult);
                     player.getEnergyManager().handleAttackHit(hitInfo);
                 }

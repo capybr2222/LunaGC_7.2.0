@@ -36,10 +36,10 @@ public final class TowerCurLevelRecordOuterClass {
     int getBuffIdList(int index);
 
     /**
-     * <code>uint32 cur_level_index = 50000;</code>
-     * @return The curLevelIndex.
+     * <code>uint32 cur_floor_id = 9;</code>
+     * @return The curFloorId.
      */
-    int getCurLevelIndex();
+    int getCurFloorId();
 
     /**
      * <code>repeated .TowerTeam tower_team_list = 6;</code>
@@ -66,16 +66,21 @@ public final class TowerCurLevelRecordOuterClass {
         int index);
 
     /**
-     * <code>bool is_upper_part = 3;</code>
+     * <code>optional bool is_upper_part = 3;</code>
+     * @return Whether the isUpperPart field is set.
+     */
+    boolean hasIsUpperPart();
+    /**
+     * <code>optional bool is_upper_part = 3;</code>
      * @return The isUpperPart.
      */
     boolean getIsUpperPart();
 
     /**
-     * <code>uint32 cur_floor_id = 50001;</code>
-     * @return The curFloorId.
+     * <code>uint32 cur_level_index = 10;</code>
+     * @return The curLevelIndex.
      */
-    int getCurFloorId();
+    int getCurLevelIndex();
 
     /**
      * <code>bool is_empty = 11;</code>
@@ -132,7 +137,7 @@ public final class TowerCurLevelRecordOuterClass {
               done = true;
               break;
             case 24: {
-
+              bitField0_ |= 0x00000001;
               isUpperPart_ = input.readBool();
               break;
             }
@@ -166,19 +171,19 @@ public final class TowerCurLevelRecordOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
+            case 72: {
 
-              isEmpty_ = input.readBool();
+              curFloorId_ = input.readUInt32();
               break;
             }
-            case 400000: {
+            case 80: {
 
               curLevelIndex_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 88: {
 
-              curFloorId_ = input.readUInt32();
+              isEmpty_ = input.readBool();
               break;
             }
             default: {
@@ -219,6 +224,7 @@ public final class TowerCurLevelRecordOuterClass {
               emu.grasscutter.net.proto.TowerCurLevelRecordOuterClass.TowerCurLevelRecord.class, emu.grasscutter.net.proto.TowerCurLevelRecordOuterClass.TowerCurLevelRecord.Builder.class);
     }
 
+    private int bitField0_;
     public static final int BUFF_ID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList buffIdList_;
     /**
@@ -247,15 +253,15 @@ public final class TowerCurLevelRecordOuterClass {
     }
     private int buffIdListMemoizedSerializedSize = -1;
 
-    public static final int CUR_LEVEL_INDEX_FIELD_NUMBER = 50000;
-    private int curLevelIndex_;
+    public static final int CUR_FLOOR_ID_FIELD_NUMBER = 9;
+    private int curFloorId_;
     /**
-     * <code>uint32 cur_level_index = 50000;</code>
-     * @return The curLevelIndex.
+     * <code>uint32 cur_floor_id = 9;</code>
+     * @return The curFloorId.
      */
     @java.lang.Override
-    public int getCurLevelIndex() {
-      return curLevelIndex_;
+    public int getCurFloorId() {
+      return curFloorId_;
     }
 
     public static final int TOWER_TEAM_LIST_FIELD_NUMBER = 6;
@@ -301,7 +307,15 @@ public final class TowerCurLevelRecordOuterClass {
     public static final int IS_UPPER_PART_FIELD_NUMBER = 3;
     private boolean isUpperPart_;
     /**
-     * <code>bool is_upper_part = 3;</code>
+     * <code>optional bool is_upper_part = 3;</code>
+     * @return Whether the isUpperPart field is set.
+     */
+    @java.lang.Override
+    public boolean hasIsUpperPart() {
+      return ((bitField0_ & 0x00000001) != 0);
+    }
+    /**
+     * <code>optional bool is_upper_part = 3;</code>
      * @return The isUpperPart.
      */
     @java.lang.Override
@@ -309,15 +323,15 @@ public final class TowerCurLevelRecordOuterClass {
       return isUpperPart_;
     }
 
-    public static final int CUR_FLOOR_ID_FIELD_NUMBER = 50001;
-    private int curFloorId_;
+    public static final int CUR_LEVEL_INDEX_FIELD_NUMBER = 10;
+    private int curLevelIndex_;
     /**
-     * <code>uint32 cur_floor_id = 50001;</code>
-     * @return The curFloorId.
+     * <code>uint32 cur_level_index = 10;</code>
+     * @return The curLevelIndex.
      */
     @java.lang.Override
-    public int getCurFloorId() {
-      return curFloorId_;
+    public int getCurLevelIndex() {
+      return curLevelIndex_;
     }
 
     public static final int IS_EMPTY_FIELD_NUMBER = 11;
@@ -346,7 +360,7 @@ public final class TowerCurLevelRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isUpperPart_ != false) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         output.writeBool(3, isUpperPart_);
       }
       for (int i = 0; i < towerTeamList_.size(); i++) {
@@ -359,14 +373,14 @@ public final class TowerCurLevelRecordOuterClass {
       for (int i = 0; i < buffIdList_.size(); i++) {
         output.writeUInt32NoTag(buffIdList_.getInt(i));
       }
-      if (isEmpty_ != false) {
-        output.writeBool(11, isEmpty_);
+      if (curFloorId_ != 0) {
+        output.writeUInt32(9, curFloorId_);
       }
       if (curLevelIndex_ != 0) {
-        output.writeUInt32(50000, curLevelIndex_);
+        output.writeUInt32(10, curLevelIndex_);
       }
-      if (curFloorId_ != 0) {
-        output.writeUInt32(50001, curFloorId_);
+      if (isEmpty_ != false) {
+        output.writeBool(11, isEmpty_);
       }
       unknownFields.writeTo(output);
     }
@@ -377,7 +391,7 @@ public final class TowerCurLevelRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isUpperPart_ != false) {
+      if (((bitField0_ & 0x00000001) != 0)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(3, isUpperPart_);
       }
@@ -399,17 +413,17 @@ public final class TowerCurLevelRecordOuterClass {
         }
         buffIdListMemoizedSerializedSize = dataSize;
       }
-      if (isEmpty_ != false) {
+      if (curFloorId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isEmpty_);
+          .computeUInt32Size(9, curFloorId_);
       }
       if (curLevelIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, curLevelIndex_);
+          .computeUInt32Size(10, curLevelIndex_);
       }
-      if (curFloorId_ != 0) {
+      if (isEmpty_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, curFloorId_);
+          .computeBoolSize(11, isEmpty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -428,14 +442,17 @@ public final class TowerCurLevelRecordOuterClass {
 
       if (!getBuffIdListList()
           .equals(other.getBuffIdListList())) return false;
-      if (getCurLevelIndex()
-          != other.getCurLevelIndex()) return false;
-      if (!getTowerTeamListList()
-          .equals(other.getTowerTeamListList())) return false;
-      if (getIsUpperPart()
-          != other.getIsUpperPart()) return false;
       if (getCurFloorId()
           != other.getCurFloorId()) return false;
+      if (!getTowerTeamListList()
+          .equals(other.getTowerTeamListList())) return false;
+      if (hasIsUpperPart() != other.hasIsUpperPart()) return false;
+      if (hasIsUpperPart()) {
+        if (getIsUpperPart()
+            != other.getIsUpperPart()) return false;
+      }
+      if (getCurLevelIndex()
+          != other.getCurLevelIndex()) return false;
       if (getIsEmpty()
           != other.getIsEmpty()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -453,17 +470,19 @@ public final class TowerCurLevelRecordOuterClass {
         hash = (37 * hash) + BUFF_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getBuffIdListList().hashCode();
       }
-      hash = (37 * hash) + CUR_LEVEL_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getCurLevelIndex();
+      hash = (37 * hash) + CUR_FLOOR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCurFloorId();
       if (getTowerTeamListCount() > 0) {
         hash = (37 * hash) + TOWER_TEAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTowerTeamListList().hashCode();
       }
-      hash = (37 * hash) + IS_UPPER_PART_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsUpperPart());
-      hash = (37 * hash) + CUR_FLOOR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCurFloorId();
+      if (hasIsUpperPart()) {
+        hash = (37 * hash) + IS_UPPER_PART_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getIsUpperPart());
+      }
+      hash = (37 * hash) + CUR_LEVEL_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getCurLevelIndex();
       hash = (37 * hash) + IS_EMPTY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEmpty());
@@ -603,7 +622,7 @@ public final class TowerCurLevelRecordOuterClass {
         super.clear();
         buffIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        curLevelIndex_ = 0;
+        curFloorId_ = 0;
 
         if (towerTeamListBuilder_ == null) {
           towerTeamList_ = java.util.Collections.emptyList();
@@ -612,8 +631,8 @@ public final class TowerCurLevelRecordOuterClass {
           towerTeamListBuilder_.clear();
         }
         isUpperPart_ = false;
-
-        curFloorId_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        curLevelIndex_ = 0;
 
         isEmpty_ = false;
 
@@ -644,12 +663,13 @@ public final class TowerCurLevelRecordOuterClass {
       public emu.grasscutter.net.proto.TowerCurLevelRecordOuterClass.TowerCurLevelRecord buildPartial() {
         emu.grasscutter.net.proto.TowerCurLevelRecordOuterClass.TowerCurLevelRecord result = new emu.grasscutter.net.proto.TowerCurLevelRecordOuterClass.TowerCurLevelRecord(this);
         int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         if (((bitField0_ & 0x00000001) != 0)) {
           buffIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.buffIdList_ = buffIdList_;
-        result.curLevelIndex_ = curLevelIndex_;
+        result.curFloorId_ = curFloorId_;
         if (towerTeamListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             towerTeamList_ = java.util.Collections.unmodifiableList(towerTeamList_);
@@ -659,9 +679,13 @@ public final class TowerCurLevelRecordOuterClass {
         } else {
           result.towerTeamList_ = towerTeamListBuilder_.build();
         }
-        result.isUpperPart_ = isUpperPart_;
-        result.curFloorId_ = curFloorId_;
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.isUpperPart_ = isUpperPart_;
+          to_bitField0_ |= 0x00000001;
+        }
+        result.curLevelIndex_ = curLevelIndex_;
         result.isEmpty_ = isEmpty_;
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -720,8 +744,8 @@ public final class TowerCurLevelRecordOuterClass {
           }
           onChanged();
         }
-        if (other.getCurLevelIndex() != 0) {
-          setCurLevelIndex(other.getCurLevelIndex());
+        if (other.getCurFloorId() != 0) {
+          setCurFloorId(other.getCurFloorId());
         }
         if (towerTeamListBuilder_ == null) {
           if (!other.towerTeamList_.isEmpty()) {
@@ -749,11 +773,11 @@ public final class TowerCurLevelRecordOuterClass {
             }
           }
         }
-        if (other.getIsUpperPart() != false) {
+        if (other.hasIsUpperPart()) {
           setIsUpperPart(other.getIsUpperPart());
         }
-        if (other.getCurFloorId() != 0) {
-          setCurFloorId(other.getCurFloorId());
+        if (other.getCurLevelIndex() != 0) {
+          setCurLevelIndex(other.getCurLevelIndex());
         }
         if (other.getIsEmpty() != false) {
           setIsEmpty(other.getIsEmpty());
@@ -867,33 +891,33 @@ public final class TowerCurLevelRecordOuterClass {
         return this;
       }
 
-      private int curLevelIndex_ ;
+      private int curFloorId_ ;
       /**
-       * <code>uint32 cur_level_index = 50000;</code>
-       * @return The curLevelIndex.
+       * <code>uint32 cur_floor_id = 9;</code>
+       * @return The curFloorId.
        */
       @java.lang.Override
-      public int getCurLevelIndex() {
-        return curLevelIndex_;
+      public int getCurFloorId() {
+        return curFloorId_;
       }
       /**
-       * <code>uint32 cur_level_index = 50000;</code>
-       * @param value The curLevelIndex to set.
+       * <code>uint32 cur_floor_id = 9;</code>
+       * @param value The curFloorId to set.
        * @return This builder for chaining.
        */
-      public Builder setCurLevelIndex(int value) {
+      public Builder setCurFloorId(int value) {
         
-        curLevelIndex_ = value;
+        curFloorId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_level_index = 50000;</code>
+       * <code>uint32 cur_floor_id = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurLevelIndex() {
+      public Builder clearCurFloorId() {
         
-        curLevelIndex_ = 0;
+        curFloorId_ = 0;
         onChanged();
         return this;
       }
@@ -1140,7 +1164,15 @@ public final class TowerCurLevelRecordOuterClass {
 
       private boolean isUpperPart_ ;
       /**
-       * <code>bool is_upper_part = 3;</code>
+       * <code>optional bool is_upper_part = 3;</code>
+       * @return Whether the isUpperPart field is set.
+       */
+      @java.lang.Override
+      public boolean hasIsUpperPart() {
+        return ((bitField0_ & 0x00000004) != 0);
+      }
+      /**
+       * <code>optional bool is_upper_part = 3;</code>
        * @return The isUpperPart.
        */
       @java.lang.Override
@@ -1148,54 +1180,54 @@ public final class TowerCurLevelRecordOuterClass {
         return isUpperPart_;
       }
       /**
-       * <code>bool is_upper_part = 3;</code>
+       * <code>optional bool is_upper_part = 3;</code>
        * @param value The isUpperPart to set.
        * @return This builder for chaining.
        */
       public Builder setIsUpperPart(boolean value) {
-        
+        bitField0_ |= 0x00000004;
         isUpperPart_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_upper_part = 3;</code>
+       * <code>optional bool is_upper_part = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUpperPart() {
-        
+        bitField0_ = (bitField0_ & ~0x00000004);
         isUpperPart_ = false;
         onChanged();
         return this;
       }
 
-      private int curFloorId_ ;
+      private int curLevelIndex_ ;
       /**
-       * <code>uint32 cur_floor_id = 50001;</code>
-       * @return The curFloorId.
+       * <code>uint32 cur_level_index = 10;</code>
+       * @return The curLevelIndex.
        */
       @java.lang.Override
-      public int getCurFloorId() {
-        return curFloorId_;
+      public int getCurLevelIndex() {
+        return curLevelIndex_;
       }
       /**
-       * <code>uint32 cur_floor_id = 50001;</code>
-       * @param value The curFloorId to set.
+       * <code>uint32 cur_level_index = 10;</code>
+       * @param value The curLevelIndex to set.
        * @return This builder for chaining.
        */
-      public Builder setCurFloorId(int value) {
+      public Builder setCurLevelIndex(int value) {
         
-        curFloorId_ = value;
+        curLevelIndex_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 cur_floor_id = 50001;</code>
+       * <code>uint32 cur_level_index = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCurFloorId() {
+      public Builder clearCurLevelIndex() {
         
-        curFloorId_ = 0;
+        curLevelIndex_ = 0;
         onChanged();
         return this;
       }
@@ -1298,13 +1330,13 @@ public final class TowerCurLevelRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031TowerCurLevelRecord.proto\032\017TowerTeam.p" +
-      "roto\"\254\001\n\023TowerCurLevelRecord\022\024\n\014buff_id_" +
-      "list\030\010 \003(\r\022\031\n\017cur_level_index\030\320\206\003 \001(\r\022#\n" +
-      "\017tower_team_list\030\006 \003(\0132\n.TowerTeam\022\025\n\ris" +
-      "_upper_part\030\003 \001(\010\022\026\n\014cur_floor_id\030\321\206\003 \001(" +
-      "\r\022\020\n\010is_empty\030\013 \001(\010B:\n\031emu.grasscutter.n" +
-      "et.protoB\035TowerCurLevelRecordOuterClassb" +
-      "\006proto3"
+      "roto\"\277\001\n\023TowerCurLevelRecord\022\024\n\014buff_id_" +
+      "list\030\010 \003(\r\022\024\n\014cur_floor_id\030\t \001(\r\022#\n\017towe" +
+      "r_team_list\030\006 \003(\0132\n.TowerTeam\022\032\n\ris_uppe" +
+      "r_part\030\003 \001(\010H\000\210\001\001\022\027\n\017cur_level_index\030\n \001" +
+      "(\r\022\020\n\010is_empty\030\013 \001(\010B\020\n\016_is_upper_partB:" +
+      "\n\031emu.grasscutter.net.protoB\035TowerCurLev" +
+      "elRecordOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1316,7 +1348,7 @@ public final class TowerCurLevelRecordOuterClass {
     internal_static_TowerCurLevelRecord_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerCurLevelRecord_descriptor,
-        new java.lang.String[] { "BuffIdList", "CurLevelIndex", "TowerTeamList", "IsUpperPart", "CurFloorId", "IsEmpty", });
+        new java.lang.String[] { "BuffIdList", "CurFloorId", "TowerTeamList", "IsUpperPart", "CurLevelIndex", "IsEmpty", "IsUpperPart", });
     emu.grasscutter.net.proto.TowerTeamOuterClass.getDescriptor();
   }
 

@@ -110,10 +110,10 @@ public class AbilityMixinData implements Serializable {
     public AbilityModifierAction[] onTriggerUltimateSkill;
 
     public AbilityModifierAction[] IOKPLLOKGGJ;
-    
+
     @SerializedName("onKill")
     public AbilityModifierAction[] onKill;
-    
+
     @SerializedName("successActions")
     public AbilityModifierAction[] successActions;
 
@@ -135,7 +135,6 @@ public class AbilityMixinData implements Serializable {
     public Type type;
 
     public JsonElement modifierName;
-
 
     public DynamicFloat speed = DynamicFloat.ZERO;
     public DynamicFloat costStaminaDelta = DynamicFloat.ZERO;

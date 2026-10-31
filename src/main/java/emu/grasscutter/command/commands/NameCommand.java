@@ -68,9 +68,6 @@ public final class NameCommand implements CommandHandler {
         apply(sender, targetPlayer, RichTextUtils.gradient(text, start, end));
     }
 
-
-
-
     private void apply(Player sender, Player targetPlayer, String nickname) {
         if (nickname.isBlank()) {
             sendUsageMessage(sender);

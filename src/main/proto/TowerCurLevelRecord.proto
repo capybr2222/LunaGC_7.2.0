@@ -7,9 +7,9 @@ import "TowerTeam.proto";
 
 message TowerCurLevelRecord {
 	repeated uint32 buff_id_list = 8;
-	uint32 cur_level_index = 50000;
+	uint32 cur_floor_id = 9;
 	repeated TowerTeam tower_team_list = 6;
-	bool is_upper_part = 3;
-	uint32 cur_floor_id = 50001;
+	optional bool is_upper_part = 3;
+	uint32 cur_level_index = 10;
 	bool is_empty = 11;
 }

@@ -13,11 +13,11 @@ public final class BarrierCommand implements CommandHandler {
 	@Override
 	public void execute(Player sender, Player targetPlayer, List<String> args) {
 		String state = "";
-		
+
 		if (targetPlayer == null) {
 			targetPlayer = sender;
 		}
-		
+
 		switch (args.size()) {
             case 1:
                 state = args.get(0);
@@ -26,7 +26,7 @@ public final class BarrierCommand implements CommandHandler {
                 CommandHandler.sendMessage(sender, "No state mentioned, assuming off");
 				state = "off";
         }
-		
+
 		if (state.equals("on") || state.equals("1")) {
 			targetPlayer.sendPacket(new PacketOpenStateChangeNotify(48,0));
 			CommandHandler.sendMessage(sender, "Restored barrier");

@@ -20,8 +20,10 @@ public class ActionSetRandomOverrideMapValue extends AbilityActionHandler {
         }
 
         float value = valueProto.getRandomValue();
-        float valueRangeMin = action.valueRangeMin.get(ability);
-        float valueRangeMax = action.valueRangeMax.get(ability);
+        float first = action.valueRangeMin.get(ability);
+        float second = action.valueRangeMax.get(ability);
+        float valueRangeMin = Math.min(first, second);
+        float valueRangeMax = Math.max(first, second);
 
         if (value < valueRangeMin || value > valueRangeMax) {
             Grasscutter.getLogger()

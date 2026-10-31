@@ -17,7 +17,7 @@ public abstract class AbilityActionHandler {
     public abstract boolean execute(
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target);
             protected AbilityManager abilityManager;
-          
+
             public AbilityActionHandler setManager(AbilityManager mgr) {
                 this.abilityManager = mgr;
                 return this;

@@ -3212,57 +3212,6 @@ public final class PacketOpcodes {
     public static final int _WeaponAwakenPointReq = 21891;
     public static final int _WeaponAwakenPointRsp = 4399;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static final HashSet<Integer> BANNED_PACKETS = new HashSet<>() {
         {
             add(PacketOpcodes.WorldOwnerBlossomScheduleInfoNotify);

@@ -33,6 +33,8 @@ public class ShopGoodsData extends GameResource {
     private transient ShopInfo.ShopRefreshType refreshTypeEnum;
 
     private int refreshParam;
+    private String beginTime;
+    private String endTime;
 
     @Override
     public void onLoad() {
@@ -77,6 +79,25 @@ public class ShopGoodsData extends GameResource {
 
     public int getCostHcoin() {
         return costHcoin;
+    }
+
+    public int getBeginTimestamp() {
+        return toTimestamp(this.beginTime);
+    }
+
+    public int getEndTimestamp() {
+        return toTimestamp(this.endTime);
+    }
+
+    private static int toTimestamp(String time) {
+        if (time == null || time.isBlank()) return 0;
+        try {
+            return (int)
+                    java.time.LocalDateTime.parse(time.trim().replace(' ', 'T'))
+                            .toEpochSecond(java.time.ZoneOffset.UTC);
+        } catch (java.time.format.DateTimeParseException e) {
+            return 0;
+        }
     }
 
     public int getCostMcoin() {

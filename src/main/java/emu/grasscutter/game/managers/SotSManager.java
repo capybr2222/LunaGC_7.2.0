@@ -17,7 +17,6 @@ import java.util.*;
 
 public class SotSManager extends BasePlayerManager {
 
-
     public static final int GlobalMaximumSpringVolume =
             PlayerProperty.PROP_MAX_SPRING_VOLUME.getMax();
     private final Logger logger = Grasscutter.getLogger();

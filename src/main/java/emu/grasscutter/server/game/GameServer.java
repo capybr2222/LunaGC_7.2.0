@@ -145,7 +145,7 @@ public final class GameServer extends KcpServer implements Iterable<Player> {
         this.packetHandler = new GameServerPacketHandler(PacketHandler.class);
         this.dispatchClient = new DispatchClient(GameServer.getDispatchUrl());
         this.players = new ConcurrentHashMap<>();
-        this.worlds = Collections.synchronizedSet(new HashSet<>());
+        this.worlds = java.util.concurrent.ConcurrentHashMap.newKeySet();
         this.homeWorlds = Int2ObjectMaps.synchronize(new Int2ObjectOpenHashMap<>());
 
         this.scheduler = new ServerTaskScheduler();

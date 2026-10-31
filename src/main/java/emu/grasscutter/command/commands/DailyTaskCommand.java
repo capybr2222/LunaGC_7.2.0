@@ -81,7 +81,7 @@ public final class DailyTaskCommand implements CommandHandler {
                                             groups));
                 }
             }
-			
+
 			case "load" -> {
 				if (targetPlayer.getScene() == null) {
 					CommandHandler.sendMessage(

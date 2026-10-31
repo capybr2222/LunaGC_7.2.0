@@ -52,7 +52,7 @@ public class DailyTaskManager {
 
     private static final String SUPPORTED_FINISH_TYPE =
             "DAILY_FINISH_MONSTER_NUM";
-			
+
 	private static final ConcurrentMap<Integer, Boolean> GROUP_RESOURCE_SUPPORT_CACHE =
         new ConcurrentHashMap<>();
 
@@ -69,7 +69,7 @@ public class DailyTaskManager {
     private int cityId = DEFAULT_CITY_ID;
 
     private boolean scoreRewardTaken;
-	
+
 	private int lastGenerationDate;
 
     public DailyTaskManager() {}

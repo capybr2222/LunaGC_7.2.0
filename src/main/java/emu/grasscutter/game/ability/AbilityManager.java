@@ -388,6 +388,7 @@ public final class AbilityManager extends BasePlayerManager {
 
             default -> {
                 int typeVal = invoke.getArgumentTypeValue();
+                if (UNHANDLED_INVOKE_SEEN.add(typeVal)) Grasscutter.getLogger().info("[special-energy] unhandled invoke type {} ({}) size={}", invoke.getArgumentType(), typeVal, invoke.getAbilityData().size());
                 if (typeVal > 100) {
                     Grasscutter.getLogger().trace("UnknownAbilityInvoke: type={} entityId={} dataSize={}",
                         typeVal, invoke.getEntityId(), invoke.getAbilityData().size());
@@ -435,6 +436,8 @@ public final class AbilityManager extends BasePlayerManager {
         entity.onAbilityValueUpdate();
     }
 
+    private static final java.util.Set<Integer> UNHANDLED_INVOKE_SEEN = java.util.concurrent.ConcurrentHashMap.newKeySet();
+
     private void handleAddSpecialEnergy(AbilityInvokeEntry invoke) throws InvalidProtocolBufferException {
         var head = invoke.getHead();
         AbilityMetaSpecialEnergyOuterClass.AbilityMetaSpecialEnergy abilityMetaSpecialEnergy = AbilityMetaSpecialEnergyOuterClass.AbilityMetaSpecialEnergy.parseFrom(invoke.getAbilityData());
@@ -446,6 +449,7 @@ public final class AbilityManager extends BasePlayerManager {
         var target = this.player.getScene().getEntityById(head.getTargetId());
         if (target == null) target = entity;
         float specialEnergyAdd = abilityMetaSpecialEnergy.getValue();
+        Grasscutter.getLogger().info("[special-energy] invoke entity={} target={} add={} cur={} max={}", invoke.getEntityId(), head.getTargetId(), specialEnergyAdd, target.getFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY), target.getFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY));
         target.addSpecialEnergy(specialEnergyAdd);
     }
 
@@ -1320,12 +1324,37 @@ public final class AbilityManager extends BasePlayerManager {
         return referenced;
     }
 
+    public void syncPhlogistonAvatarAbility(EntityAvatar avatar, boolean inNatlan) {
+        var abilities = avatar.getInstancedAbilities();
+        if (abilities.isEmpty()) return;
+        var base = avatar.getAvatar().getAvatarData().getAbilities();
+        int index = base == null ? 0 : base.size();
+        int phlogistonHash = emu.grasscutter.utils.Utils.abilityHash("DynamicAbility_Phlogiston");
+        for (int hash : emu.grasscutter.GameConstants.DEFAULT_ABILITY_HASHES) {
+            if (hash == phlogistonHash) break;
+            index++;
+        }
+        if (index > abilities.size()) return;
+        var current = index < abilities.size() ? abilities.get(index) : null;
+        boolean present =
+                current != null
+                        && current.getData() != null
+                        && "DynamicAbility_Phlogiston".equals(current.getData().abilityName);
+        if (inNatlan && !present) {
+            var name = GameData.getAbilityHashes().get(phlogistonHash);
+            var data = name == null ? null : GameData.getAbilityData(name);
+            abilities.add(index, data == null ? null : new Ability(data, avatar, player));
+        } else if (!inNatlan && present) {
+            abilities.remove(index);
+        }
+    }
+
     private void initializeEntityAbilities(EntityAvatar avatar) {
         var avatarData = avatar.getAvatar().getAvatarData();
         if (avatarData.getAbilities() != null) {
             for (int hash : avatarData.getAbilities()) addAbilityByHash(avatar, hash);
         }
-        boolean inNatlan = player.getScene() != null && player.getScene().getId() == 101;
+        boolean inNatlan = player.isInNatlan();
         int phlogistonHash = emu.grasscutter.utils.Utils.abilityHash("DynamicAbility_Phlogiston");
         for (int hash : emu.grasscutter.GameConstants.DEFAULT_ABILITY_HASHES) {
             if (hash == phlogistonHash && !inNatlan) continue;

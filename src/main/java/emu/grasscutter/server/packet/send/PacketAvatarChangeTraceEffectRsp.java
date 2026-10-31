@@ -19,4 +19,3 @@ extends BasePacket {
         this.setData(proto);
     }
 }
-

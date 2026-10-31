@@ -58,7 +58,6 @@ public class PacketEntityFightPropChangeReasonNotify extends BasePacket {
                 .build();
         }
 
-
         var proto =
                 EntityFightPropChangeReasonNotify.newBuilder()
                         .setEntityId(entity.getId())
@@ -89,7 +88,6 @@ public class PacketEntityFightPropChangeReasonNotify extends BasePacket {
     public PacketEntityFightPropChangeReasonNotify(
             GameEntity entity, FightProperty prop, Float value, ChangeEnergyReason reason) {
         super(PacketOpcodes.EntityFightPropChangeReasonNotify);
-
 
         EntityFightPropChangeReasonNotify proto =
                 EntityFightPropChangeReasonNotify.newBuilder()
@@ -127,7 +125,6 @@ public class PacketEntityFightPropChangeReasonNotify extends BasePacket {
                         .build();
         this.setData(proto);
     }
-
 
     public PacketEntityFightPropChangeReasonNotify(
         GameEntity entity, FightProperty prop, Float value, PropChangeReason reason, ChangeEnergyReason energyReason) {

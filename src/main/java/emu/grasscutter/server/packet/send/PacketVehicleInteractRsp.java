@@ -1,6 +1,5 @@
 package emu.grasscutter.server.packet.send;
 
-
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.player.Player;

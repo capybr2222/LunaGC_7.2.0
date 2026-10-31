@@ -37,7 +37,7 @@ public class HandlerSetPlayerBirthdayReq extends PacketHandler {
 		session.send(new PacketSetPlayerBirthdayRsp(player));
 
 		session.send(new PacketGetPlayerSocialDetailRsp(detail));
-		
+
 		BirthdayMailSystem.checkAndSend(player);
     }
 

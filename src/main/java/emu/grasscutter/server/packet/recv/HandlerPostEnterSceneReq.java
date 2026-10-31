@@ -15,7 +15,7 @@ public class HandlerPostEnterSceneReq extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
         PostEnterSceneReq req = PostEnterSceneReq.parseFrom(payload);
-                
+
         var player = session.getPlayer();
         var scene = player.getScene();
         var questManager = player.getQuestManager();

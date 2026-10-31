@@ -14,7 +14,6 @@ public class PacketVehiclePhlogistonPointsNotify extends BasePacket {
                 .setEntityId(vehicle.getId())
                 .build();
 
-
         this.setData(notify);
     }
 }

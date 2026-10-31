@@ -18,7 +18,7 @@ public enum Element {
         this.boyId = boyId;
         this.girlId = girlId;
     }
-    
+
     public int getSkillRepoId(int avatarId) {
         return avatarId == GameConstants.MAIN_CHARACTER_MALE ? boyId : girlId;
     }

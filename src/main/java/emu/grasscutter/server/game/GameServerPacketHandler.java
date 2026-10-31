@@ -49,12 +49,13 @@ public final class GameServerPacketHandler {
     public void handle(GameSession session, int opcode, byte[] header, byte[] payload) {
         PacketHandler handler = this.handlers.get(opcode);
 
-
         if (handler == null && unannounced.add(opcode)) {
             String fields;
             try {
+
                 fields =
-                        com.google.protobuf.UnknownFieldSet.parseFrom(payload).asMap().keySet().toString();
+                        com.google.protobuf.TextFormat.printer()
+                                .shortDebugString(com.google.protobuf.UnknownFieldSet.parseFrom(payload));
             } catch (Exception e) {
                 fields = "<unparsed>";
             }

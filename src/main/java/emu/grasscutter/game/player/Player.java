@@ -444,9 +444,44 @@ public class Player implements PlayerHook, FieldFetch {
         this.session.send(new PacketSceneAreaWeatherNotify(this));
     }
 
+    public boolean isInNatlan() {
+        return this.scene != null
+                && PhlogistonRegion.contains(this.scene.getId(), this.areaId, this.areaType);
+    }
+
+    private void refreshPhlogistonRegion(boolean inNatlan) {
+        if (this.scene == null || this.session == null || this.teamManager == null) return;
+        for (var avatar : this.teamManager.getActiveTeam()) {
+            if (avatar == null) continue;
+            this.abilityManager.syncPhlogistonAvatarAbility(avatar, inNatlan);
+            this.sendPacket(new PacketAbilityChangeNotify(avatar));
+        }
+        var teamEntity = this.teamManager.getEntity();
+        if (teamEntity != null) {
+            this.sendPacket(
+                    new PacketAbilityChangeNotify(
+                            teamEntity.getId(), this.teamManager.getAbilityControlBlock()));
+            if (inNatlan) {
+                this.sendPacket(
+                        new PacketServerGlobalValueChangeNotify(
+                                teamEntity.getId(), Phlogiston.TEAM_KEY, this.getPhlogistonValue()));
+            }
+        }
+    }
+
     public void setArea(int areaId, int areaType) {
+        boolean wasInNatlan = this.isInNatlan();
         this.areaId = areaId;
         this.areaType = areaType;
+        boolean inNatlan = this.isInNatlan();
+        if (wasInNatlan != inNatlan) {
+            this.refreshPhlogistonRegion(inNatlan);
+            if (inNatlan && this.weatherId == 0) {
+                this.setWeather(PhlogistonRegion.NATLAN_WEATHER);
+            } else if (!inNatlan && this.weatherId == PhlogistonRegion.NATLAN_WEATHER) {
+                this.setWeather(0, ClimateType.CLIMATE_SUNNY);
+            }
+        }
 
         var event = new PlayerEnterAreaEvent(this);
         event.call();
@@ -1416,6 +1451,14 @@ public class Player implements PlayerHook, FieldFetch {
             this.position.set(pos);
         }
 
+        if (this.getTowerManager().isInAbyssScene(this.getSceneId())) {
+            this.getTowerManager().clearInterruptedRun();
+            this.setSceneId(3);
+            this.setPrevScene(3);
+            this.position.set(TowerManager.abyssEntrancePosition());
+            this.rotation.set(TowerManager.abyssEntranceRotation());
+        }
+
         World world = new World(this);
         world.addPlayer(this);
 
@@ -1444,6 +1487,7 @@ public class Player implements PlayerHook, FieldFetch {
             emu.grasscutter.game.quest.ForcedQuests.notify(this, this.forcedFinishedQuests);
         }
         session.send(new PacketBattlePassAllDataNotify(this));
+        session.send(new PacketBeyondBattlePassAllDataNotify(this));
         session.send(new PacketQuestListNotify(this));
         session.send(new PacketQuestGlobalVarNotify(this));
         session.send(new PacketCodexDataFullNotify(this));
@@ -1467,6 +1511,7 @@ public class Player implements PlayerHook, FieldFetch {
         this.furnitureManager.onLogin();
 
         var homeWorld = this.getServer().getHomeWorldOrCreate(this);
+
         homeWorld.setHost(this);
         this.home = homeWorld.getHome();
         this.setCurHomeWorld(homeWorld);

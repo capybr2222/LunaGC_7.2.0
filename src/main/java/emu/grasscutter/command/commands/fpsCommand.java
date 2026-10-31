@@ -12,7 +12,7 @@ public class fpsCommand implements CommandHandler
 {
     @Override
     public void execute(final Player sender, final Player targetPlayer, final List<String> args) {
-		
+
 		String path = "fps" ;
 		targetPlayer.sendPacket(new PacketWindy(path));
     }

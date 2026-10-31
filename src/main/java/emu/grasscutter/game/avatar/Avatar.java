@@ -336,7 +336,6 @@ public class Avatar {
         }
     }
 
-
     public void setFightProperty(FightProperty prop, float value) {
         this.getFightProperties().put(prop.getId(), value);
     }
@@ -726,8 +725,6 @@ public class Avatar {
                 FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
                 hpDebt);
 
-
-
         if (getPlayer() != null && getPlayer().hasSentLoginPackets()) {
             getPlayer().sendPacket(new PacketAvatarFightPropNotify(this));
             EntityAvatar entity = this.getAsEntity();
@@ -1056,7 +1053,6 @@ public class Avatar {
 
         return avatarInfo.build();
     }
-
 
     public ShowAvatarInfo toShowAvatarInfoProto() {
         AvatarFetterInfo.Builder avatarFetter =

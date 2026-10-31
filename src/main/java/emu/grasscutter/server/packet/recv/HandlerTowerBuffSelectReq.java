@@ -1,0 +1,18 @@
+package emu.grasscutter.server.packet.recv;
+
+import emu.grasscutter.net.packet.*;
+import emu.grasscutter.net.proto.TowerBuffSelectReqOuterClass.TowerBuffSelectReq;
+import emu.grasscutter.server.game.GameSession;
+import emu.grasscutter.server.packet.send.PacketTowerBuffSelectRsp;
+
+@Opcodes(PacketOpcodes.TowerBuffSelectReq)
+public class HandlerTowerBuffSelectReq extends PacketHandler {
+
+    @Override
+    public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
+        TowerBuffSelectReq req = TowerBuffSelectReq.parseFrom(payload);
+
+        boolean accepted = session.getPlayer().getTowerManager().selectTowerBuff(req.getTowerBuffId());
+        session.send(new PacketTowerBuffSelectRsp(req.getTowerBuffId(), accepted ? 0 : 1));
+    }
+}

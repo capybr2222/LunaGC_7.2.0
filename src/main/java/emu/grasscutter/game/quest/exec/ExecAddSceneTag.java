@@ -14,7 +14,7 @@ public final class ExecAddSceneTag extends QuestExecHandler {
         var param =
                 Arrays.stream(paramStr).filter(i -> !i.isBlank()).mapToInt(Integer::parseInt).toArray();
 		quest.getOwner().getProgressManager().addSceneTag(param[0], param[1]);
-		
+
         return true;
     }
 }

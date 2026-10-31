@@ -29,6 +29,7 @@ import emu.grasscutter.data.excels.reliquary.ReliquaryLevelData;
 import emu.grasscutter.data.excels.reliquary.ReliquaryMainPropData;
 import emu.grasscutter.data.excels.reliquary.ReliquarySetData;
 import emu.grasscutter.data.excels.scene.*;
+import emu.grasscutter.data.excels.tower.TowerBuffData;
 import emu.grasscutter.data.excels.tower.TowerFloorData;
 import emu.grasscutter.data.excels.tps.*;
 import emu.grasscutter.data.excels.tower.TowerLevelData;
@@ -345,6 +346,14 @@ public final class GameData {
             new Int2ObjectOpenHashMap<>();
 
     @Getter
+    private static final Int2ObjectMap<BeyondBattlePassScheduleData> beyondBattlePassScheduleDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<BeyondBattlePassMissionData> beyondBattlePassMissionDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
     private static final Int2ObjectMap<BattlePassRewardPlanData> battlePassRewardPlanDataMap =
             new Int2ObjectOpenHashMap<>();
 
@@ -461,6 +470,10 @@ public final class GameData {
             new Int2ObjectOpenHashMap<>();
 
     @Getter
+    private static final Int2ObjectMap<TowerBuffData> towerBuffDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
     private static final Int2ObjectMap<TowerLevelData> towerLevelDataMap =
             new Int2ObjectOpenHashMap<>();
 
@@ -539,6 +552,7 @@ public final class GameData {
     @Getter
     private static final Int2ObjectMap<AvatarExtraLevelData> avatarExtraLevelDataMap =
             new Int2ObjectOpenHashMap<>();
+
     private static final Int2ObjectMap<FetterData> fetterDataMap = new Int2ObjectOpenHashMap<>();
     private static final Int2ObjectMap<ReliquaryLevelData> reliquaryLevelDataMap =
             new Int2ObjectOpenHashMap<>();

@@ -78,7 +78,7 @@ public final class MissingDomainFallbackManager {
 							new int[][] {
 									{1001}
 							})),
-							
+
 			Map.entry(
 					40764,
 					FallbackDomainConfig.acceptAnyDungeonId(
@@ -117,7 +117,7 @@ public final class MissingDomainFallbackManager {
 									{1001, 1002, 1003},
 									{1004, 1005, 1006}
 							})),
-			
+
 			Map.entry(
 					40767,
 					FallbackDomainConfig.acceptAnyDungeonId(
@@ -129,7 +129,7 @@ public final class MissingDomainFallbackManager {
 							new int[][] {
 									{1001, 1002}
 							})),
-			
+
 			Map.entry(
 					40792,
 					FallbackDomainConfig.exactDungeonIds(
@@ -143,7 +143,7 @@ public final class MissingDomainFallbackManager {
 									{1001, 1002, 1003, 1004},
 									{1005, 1006, 1007}
 							})),
-			
+
 			Map.entry(
 					40793,
 					FallbackDomainConfig.exactDungeonIds(
@@ -184,7 +184,7 @@ public final class MissingDomainFallbackManager {
 							new int[][] {
 									{1001, 1002, 1003}
 							})),
-			
+
             Map.entry(
                     40796,
                     FallbackDomainConfig.exactDungeonIds(
@@ -239,7 +239,7 @@ public final class MissingDomainFallbackManager {
                             new int[][] {
                                     {1001}
                             })),
-			
+
 			Map.entry(
 					40780,
 					FallbackDomainConfig.acceptAnyDungeonId(
@@ -291,7 +291,7 @@ public final class MissingDomainFallbackManager {
 									{1001, 1002, 1003},
 									{1004, 1005}
 							})),
-			
+
 			Map.entry(
 					40788,
 					FallbackDomainConfig.acceptAnyDungeonId(
@@ -343,7 +343,7 @@ public final class MissingDomainFallbackManager {
 									{1001, 1002},
 									{1003, 1004, 1005}
 							})),
-			
+
 			Map.entry(
 					40784,
 					FallbackDomainConfig.exactDungeonIds(
@@ -399,7 +399,7 @@ public final class MissingDomainFallbackManager {
 									{1001, 1002, 1003, 1004},
 									{1005, 1006}
 							})),
-							
+
 			Map.entry(
 					40760,
 					FallbackDomainConfig.acceptAnyDungeonId(
@@ -449,7 +449,7 @@ public final class MissingDomainFallbackManager {
 							new int[][] {
 									{1001, 1002}
 							})),
-			
+
 			Map.entry(
 					40770,
 					FallbackDomainConfig.acceptAnyDungeonId(
@@ -501,7 +501,7 @@ public final class MissingDomainFallbackManager {
 											{1001, 1002, 1003},
 											{1004, 1005}
 							})),
-			
+
 			Map.entry(
 					40664,
 					FallbackDomainConfig.exactDungeonIds(
@@ -666,7 +666,7 @@ public final class MissingDomainFallbackManager {
                                     {1001, 1002, 1003},
                                     {1004, 1005, 1006}
                             })),
-							
+
             Map.entry(
                     40824,
                     FallbackDomainConfig.exactDungeonIds(
@@ -719,7 +719,7 @@ public final class MissingDomainFallbackManager {
                             new int[][] {
                                     {1001, 1002}
                             })),
-							
+
             Map.entry(
                     40704,
                     FallbackDomainConfig.exactDungeonIds(
@@ -848,8 +848,6 @@ public final class MissingDomainFallbackManager {
 			default -> 0;
 		};
 	}
-
-
 
     public static void install(Scene scene, DungeonData dungeonData) {
         if (scene == null || dungeonData == null) {

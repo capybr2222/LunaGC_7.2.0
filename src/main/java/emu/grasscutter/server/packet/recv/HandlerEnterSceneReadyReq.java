@@ -9,7 +9,11 @@ public class HandlerEnterSceneReadyReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) {
-        session.send(new PacketEnterScenePeerNotify(session.getPlayer()));
-        session.send(new PacketEnterSceneReadyRsp(session.getPlayer()));
+        var player = session.getPlayer();
+
+        session.send(new PacketEnterScenePeerNotify(player));
+        session.send(new PacketEnterSceneReadyRsp(player));
+
+        player.getTowerManager().onChamberReady();
     }
 }

@@ -17,14 +17,14 @@ public final class ActionSetOverrideMapValue extends AbilityActionHandler {
             var properties = new Object2FloatOpenHashMap<String>();
 
             for (var property : FightProperty.values()) {
-      
+
        var name = property.name();
                 var value = owner.getFightProperty(property);
                 properties.put(name, value);
             }
-        
+
             properties.putAll(ability.getAbilitySpecials());
-        
+
             String overrideMapKey = action.overrideMapKey;
             float ratio = action.ratio.get(properties, 0f);
         ability.getAbilitySpecials().put(overrideMapKey, ratio);

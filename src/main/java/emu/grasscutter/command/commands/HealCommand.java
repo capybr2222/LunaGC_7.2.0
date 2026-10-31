@@ -49,7 +49,6 @@ public final class HealCommand implements CommandHandler {
                                             new PacketAvatarFightPropUpdateNotify(
                                                     entity.getAvatar(), FightProperty.FIGHT_PROP_CUR_HP));
 
-
                             if (!isAlive) {
                                 entity
                                         .getWorld()

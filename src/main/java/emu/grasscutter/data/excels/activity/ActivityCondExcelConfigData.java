@@ -18,7 +18,7 @@ public class ActivityCondExcelConfigData extends GameResource {
     public static class ActivityConfigCondition {
         @Getter private ActivityConditions type;
         @Getter private List<String> param;
-    
+
         public int[] paramArray() {
             return param.stream()
                 .filter(s -> s.matches("\\d+"))
