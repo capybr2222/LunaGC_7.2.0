@@ -19,41 +19,41 @@ public final class BlessingActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HLGJOMHPMDA = 10;</code>
+     * <code>uint32 HLGJOMHPMDA = 20002;</code>
      * @return The hLGJOMHPMDA.
      */
     int getHLGJOMHPMDA();
 
     /**
-     * <code>bool is_content_closed = 5;</code>
+     * <code>bool is_content_closed = 2;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>uint32 next_refresh_time = 13;</code>
+     * <code>uint32 next_refresh_time = 7;</code>
      * @return The nextRefreshTime.
      */
     int getNextRefreshTime();
 
     /**
-     * <code>uint32 ppbchanjknf = 3;</code>
+     * <code>uint32 ppbchanjknf = 50001;</code>
      * @return The ppbchanjknf.
      */
     int getPpbchanjknf();
 
     /**
-     * <code>bool is_activated = 15;</code>
+     * <code>bool is_activated = 1;</code>
      * @return The isActivated.
      */
     boolean getIsActivated();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
     int getPicNumMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
     boolean containsPicNumMap(
         int key);
@@ -64,26 +64,26 @@ public final class BlessingActivityDetailInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPicNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getPicNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
 
     int getPicNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
 
     int getPicNumMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 DKHOJDNIKGN = 7;</code>
+     * <code>uint32 DKHOJDNIKGN = 20000;</code>
      * @return The dKHOJDNIKGN.
      */
     int getDKHOJDNIKGN();
@@ -140,7 +140,17 @@ public final class BlessingActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 8: {
+
+              isActivated_ = input.readBool();
+              break;
+            }
+            case 16: {
+
+              isContentClosed_ = input.readBool();
+              break;
+            }
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 picNumMap_ = com.google.protobuf.MapField.newMapField(
                     PicNumMapDefaultEntryHolder.defaultEntry);
@@ -153,19 +163,9 @@ public final class BlessingActivityDetailInfoOuterClass {
                   picNumMap__.getKey(), picNumMap__.getValue());
               break;
             }
-            case 24: {
-
-              ppbchanjknf_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              isContentClosed_ = input.readBool();
-              break;
-            }
             case 56: {
 
-              dKHOJDNIKGN_ = input.readUInt32();
+              nextRefreshTime_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -173,19 +173,19 @@ public final class BlessingActivityDetailInfoOuterClass {
               contentCloseTime_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 160000: {
+
+              dKHOJDNIKGN_ = input.readUInt32();
+              break;
+            }
+            case 160016: {
 
               hLGJOMHPMDA_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 400008: {
 
-              nextRefreshTime_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              isActivated_ = input.readBool();
+              ppbchanjknf_ = input.readUInt32();
               break;
             }
             default: {
@@ -217,7 +217,7 @@ public final class BlessingActivityDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
+        case 5:
           return internalGetPicNumMap();
         default:
           throw new RuntimeException(
@@ -232,10 +232,10 @@ public final class BlessingActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo.class, emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo.Builder.class);
     }
 
-    public static final int HLGJOMHPMDA_FIELD_NUMBER = 10;
+    public static final int HLGJOMHPMDA_FIELD_NUMBER = 20002;
     private int hLGJOMHPMDA_;
     /**
-     * <code>uint32 HLGJOMHPMDA = 10;</code>
+     * <code>uint32 HLGJOMHPMDA = 20002;</code>
      * @return The hLGJOMHPMDA.
      */
     @java.lang.Override
@@ -243,10 +243,10 @@ public final class BlessingActivityDetailInfoOuterClass {
       return hLGJOMHPMDA_;
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 5;
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 2;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 5;</code>
+     * <code>bool is_content_closed = 2;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -254,10 +254,10 @@ public final class BlessingActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 13;
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 7;
     private int nextRefreshTime_;
     /**
-     * <code>uint32 next_refresh_time = 13;</code>
+     * <code>uint32 next_refresh_time = 7;</code>
      * @return The nextRefreshTime.
      */
     @java.lang.Override
@@ -265,10 +265,10 @@ public final class BlessingActivityDetailInfoOuterClass {
       return nextRefreshTime_;
     }
 
-    public static final int PPBCHANJKNF_FIELD_NUMBER = 3;
+    public static final int PPBCHANJKNF_FIELD_NUMBER = 50001;
     private int ppbchanjknf_;
     /**
-     * <code>uint32 ppbchanjknf = 3;</code>
+     * <code>uint32 ppbchanjknf = 50001;</code>
      * @return The ppbchanjknf.
      */
     @java.lang.Override
@@ -276,10 +276,10 @@ public final class BlessingActivityDetailInfoOuterClass {
       return ppbchanjknf_;
     }
 
-    public static final int IS_ACTIVATED_FIELD_NUMBER = 15;
+    public static final int IS_ACTIVATED_FIELD_NUMBER = 1;
     private boolean isActivated_;
     /**
-     * <code>bool is_activated = 15;</code>
+     * <code>bool is_activated = 1;</code>
      * @return The isActivated.
      */
     @java.lang.Override
@@ -287,7 +287,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return isActivated_;
     }
 
-    public static final int PIC_NUM_MAP_FIELD_NUMBER = 2;
+    public static final int PIC_NUM_MAP_FIELD_NUMBER = 5;
     private static final class PicNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -314,7 +314,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return internalGetPicNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
 
     @java.lang.Override
@@ -332,7 +332,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return getPicNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
     @java.lang.Override
 
@@ -340,7 +340,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return internalGetPicNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
     @java.lang.Override
 
@@ -353,7 +353,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+     * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
      */
     @java.lang.Override
 
@@ -368,10 +368,10 @@ public final class BlessingActivityDetailInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int DKHOJDNIKGN_FIELD_NUMBER = 7;
+    public static final int DKHOJDNIKGN_FIELD_NUMBER = 20000;
     private int dKHOJDNIKGN_;
     /**
-     * <code>uint32 DKHOJDNIKGN = 7;</code>
+     * <code>uint32 DKHOJDNIKGN = 20000;</code>
      * @return The dKHOJDNIKGN.
      */
     @java.lang.Override
@@ -404,32 +404,32 @@ public final class BlessingActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isActivated_ != false) {
+        output.writeBool(1, isActivated_);
+      }
+      if (isContentClosed_ != false) {
+        output.writeBool(2, isContentClosed_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetPicNumMap(),
           PicNumMapDefaultEntryHolder.defaultEntry,
-          2);
-      if (ppbchanjknf_ != 0) {
-        output.writeUInt32(3, ppbchanjknf_);
-      }
-      if (isContentClosed_ != false) {
-        output.writeBool(5, isContentClosed_);
-      }
-      if (dKHOJDNIKGN_ != 0) {
-        output.writeUInt32(7, dKHOJDNIKGN_);
+          5);
+      if (nextRefreshTime_ != 0) {
+        output.writeUInt32(7, nextRefreshTime_);
       }
       if (contentCloseTime_ != 0) {
         output.writeUInt32(8, contentCloseTime_);
       }
+      if (dKHOJDNIKGN_ != 0) {
+        output.writeUInt32(20000, dKHOJDNIKGN_);
+      }
       if (hLGJOMHPMDA_ != 0) {
-        output.writeUInt32(10, hLGJOMHPMDA_);
+        output.writeUInt32(20002, hLGJOMHPMDA_);
       }
-      if (nextRefreshTime_ != 0) {
-        output.writeUInt32(13, nextRefreshTime_);
-      }
-      if (isActivated_ != false) {
-        output.writeBool(15, isActivated_);
+      if (ppbchanjknf_ != 0) {
+        output.writeUInt32(50001, ppbchanjknf_);
       }
       unknownFields.writeTo(output);
     }
@@ -440,6 +440,14 @@ public final class BlessingActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isActivated_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isActivated_);
+      }
+      if (isContentClosed_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isContentClosed_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetPicNumMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -448,35 +456,27 @@ public final class BlessingActivityDetailInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, picNumMap__);
+            .computeMessageSize(5, picNumMap__);
       }
-      if (ppbchanjknf_ != 0) {
+      if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, ppbchanjknf_);
-      }
-      if (isContentClosed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isContentClosed_);
-      }
-      if (dKHOJDNIKGN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, dKHOJDNIKGN_);
+          .computeUInt32Size(7, nextRefreshTime_);
       }
       if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, contentCloseTime_);
       }
+      if (dKHOJDNIKGN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20000, dKHOJDNIKGN_);
+      }
       if (hLGJOMHPMDA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, hLGJOMHPMDA_);
+          .computeUInt32Size(20002, hLGJOMHPMDA_);
       }
-      if (nextRefreshTime_ != 0) {
+      if (ppbchanjknf_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, nextRefreshTime_);
-      }
-      if (isActivated_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isActivated_);
+          .computeUInt32Size(50001, ppbchanjknf_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -651,7 +651,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 5:
             return internalGetPicNumMap();
           default:
             throw new RuntimeException(
@@ -662,7 +662,7 @@ public final class BlessingActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 5:
             return internalGetMutablePicNumMap();
           default:
             throw new RuntimeException(
@@ -849,7 +849,7 @@ public final class BlessingActivityDetailInfoOuterClass {
 
       private int hLGJOMHPMDA_ ;
       /**
-       * <code>uint32 HLGJOMHPMDA = 10;</code>
+       * <code>uint32 HLGJOMHPMDA = 20002;</code>
        * @return The hLGJOMHPMDA.
        */
       @java.lang.Override
@@ -857,7 +857,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return hLGJOMHPMDA_;
       }
       /**
-       * <code>uint32 HLGJOMHPMDA = 10;</code>
+       * <code>uint32 HLGJOMHPMDA = 20002;</code>
        * @param value The hLGJOMHPMDA to set.
        * @return This builder for chaining.
        */
@@ -868,7 +868,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 HLGJOMHPMDA = 10;</code>
+       * <code>uint32 HLGJOMHPMDA = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearHLGJOMHPMDA() {
@@ -880,7 +880,7 @@ public final class BlessingActivityDetailInfoOuterClass {
 
       private boolean isContentClosed_ ;
       /**
-       * <code>bool is_content_closed = 5;</code>
+       * <code>bool is_content_closed = 2;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -888,7 +888,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return isContentClosed_;
       }
       /**
-       * <code>bool is_content_closed = 5;</code>
+       * <code>bool is_content_closed = 2;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -899,7 +899,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_content_closed = 5;</code>
+       * <code>bool is_content_closed = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
@@ -911,7 +911,7 @@ public final class BlessingActivityDetailInfoOuterClass {
 
       private int nextRefreshTime_ ;
       /**
-       * <code>uint32 next_refresh_time = 13;</code>
+       * <code>uint32 next_refresh_time = 7;</code>
        * @return The nextRefreshTime.
        */
       @java.lang.Override
@@ -919,7 +919,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return nextRefreshTime_;
       }
       /**
-       * <code>uint32 next_refresh_time = 13;</code>
+       * <code>uint32 next_refresh_time = 7;</code>
        * @param value The nextRefreshTime to set.
        * @return This builder for chaining.
        */
@@ -930,7 +930,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 next_refresh_time = 13;</code>
+       * <code>uint32 next_refresh_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearNextRefreshTime() {
@@ -942,7 +942,7 @@ public final class BlessingActivityDetailInfoOuterClass {
 
       private int ppbchanjknf_ ;
       /**
-       * <code>uint32 ppbchanjknf = 3;</code>
+       * <code>uint32 ppbchanjknf = 50001;</code>
        * @return The ppbchanjknf.
        */
       @java.lang.Override
@@ -950,7 +950,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return ppbchanjknf_;
       }
       /**
-       * <code>uint32 ppbchanjknf = 3;</code>
+       * <code>uint32 ppbchanjknf = 50001;</code>
        * @param value The ppbchanjknf to set.
        * @return This builder for chaining.
        */
@@ -961,7 +961,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ppbchanjknf = 3;</code>
+       * <code>uint32 ppbchanjknf = 50001;</code>
        * @return This builder for chaining.
        */
       public Builder clearPpbchanjknf() {
@@ -973,7 +973,7 @@ public final class BlessingActivityDetailInfoOuterClass {
 
       private boolean isActivated_ ;
       /**
-       * <code>bool is_activated = 15;</code>
+       * <code>bool is_activated = 1;</code>
        * @return The isActivated.
        */
       @java.lang.Override
@@ -981,7 +981,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return isActivated_;
       }
       /**
-       * <code>bool is_activated = 15;</code>
+       * <code>bool is_activated = 1;</code>
        * @param value The isActivated to set.
        * @return This builder for chaining.
        */
@@ -992,7 +992,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_activated = 15;</code>
+       * <code>bool is_activated = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsActivated() {
@@ -1029,7 +1029,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return internalGetPicNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
        */
 
       @java.lang.Override
@@ -1047,7 +1047,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return getPicNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
        */
       @java.lang.Override
 
@@ -1055,7 +1055,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return internalGetPicNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
        */
       @java.lang.Override
 
@@ -1068,7 +1068,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
        */
       @java.lang.Override
 
@@ -1089,7 +1089,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
        */
 
       public Builder removePicNumMap(
@@ -1108,7 +1108,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return internalGetMutablePicNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
        */
       public Builder putPicNumMap(
           int key,
@@ -1120,7 +1120,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 2;</code>
+       * <code>map&lt;uint32, uint32&gt; pic_num_map = 5;</code>
        */
 
       public Builder putAllPicNumMap(
@@ -1132,7 +1132,7 @@ public final class BlessingActivityDetailInfoOuterClass {
 
       private int dKHOJDNIKGN_ ;
       /**
-       * <code>uint32 DKHOJDNIKGN = 7;</code>
+       * <code>uint32 DKHOJDNIKGN = 20000;</code>
        * @return The dKHOJDNIKGN.
        */
       @java.lang.Override
@@ -1140,7 +1140,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return dKHOJDNIKGN_;
       }
       /**
-       * <code>uint32 DKHOJDNIKGN = 7;</code>
+       * <code>uint32 DKHOJDNIKGN = 20000;</code>
        * @param value The dKHOJDNIKGN to set.
        * @return This builder for chaining.
        */
@@ -1151,7 +1151,7 @@ public final class BlessingActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 DKHOJDNIKGN = 7;</code>
+       * <code>uint32 DKHOJDNIKGN = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearDKHOJDNIKGN() {
@@ -1263,17 +1263,17 @@ public final class BlessingActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n BlessingActivityDetailInfo.proto\"\266\002\n\032B" +
-      "lessingActivityDetailInfo\022\023\n\013HLGJOMHPMDA" +
-      "\030\n \001(\r\022\031\n\021is_content_closed\030\005 \001(\010\022\031\n\021nex" +
-      "t_refresh_time\030\r \001(\r\022\023\n\013ppbchanjknf\030\003 \001(" +
-      "\r\022\024\n\014is_activated\030\017 \001(\010\022?\n\013pic_num_map\030\002" +
-      " \003(\0132*.BlessingActivityDetailInfo.PicNum" +
-      "MapEntry\022\023\n\013DKHOJDNIKGN\030\007 \001(\r\022\032\n\022content" +
-      "_close_time\030\010 \001(\r\0320\n\016PicNumMapEntry\022\013\n\003k" +
-      "ey\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001BA\n\031emu.grass" +
-      "cutter.net.protoB$BlessingActivityDetail" +
-      "InfoOuterClassb\006proto3"
+      "\n BlessingActivityDetailInfo.proto\"\274\002\n\032B" +
+      "lessingActivityDetailInfo\022\025\n\013HLGJOMHPMDA" +
+      "\030\242\234\001 \001(\r\022\031\n\021is_content_closed\030\002 \001(\010\022\031\n\021n" +
+      "ext_refresh_time\030\007 \001(\r\022\025\n\013ppbchanjknf\030\321\206" +
+      "\003 \001(\r\022\024\n\014is_activated\030\001 \001(\010\022?\n\013pic_num_m" +
+      "ap\030\005 \003(\0132*.BlessingActivityDetailInfo.Pi" +
+      "cNumMapEntry\022\025\n\013DKHOJDNIKGN\030\240\234\001 \001(\r\022\032\n\022c" +
+      "ontent_close_time\030\010 \001(\r\0320\n\016PicNumMapEntr" +
+      "y\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001BA\n\031emu" +
+      ".grasscutter.net.protoB$BlessingActivity" +
+      "DetailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

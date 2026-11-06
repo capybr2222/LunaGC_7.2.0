@@ -19,25 +19,25 @@ public final class IKJLKLMCEHMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_finish = 1;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_open = 11;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 4;</code>
      * @return The score.
      */
     int getScore();
@@ -89,22 +89,22 @@ public final class IKJLKLMCEHMOuterClass {
               break;
             case 8: {
 
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 24: {
+
               isFinish_ = input.readBool();
               break;
             }
             case 32: {
 
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
-
               score_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class IKJLKLMCEHMOuterClass {
               emu.grasscutter.net.proto.IKJLKLMCEHMOuterClass.IKJLKLMCEHM.class, emu.grasscutter.net.proto.IKJLKLMCEHMOuterClass.IKJLKLMCEHM.Builder.class);
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 1;
+    public static final int IS_FINISH_FIELD_NUMBER = 3;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 1;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class IKJLKLMCEHMOuterClass {
       return isFinish_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class IKJLKLMCEHMOuterClass {
       return levelId_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 11;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 11;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class IKJLKLMCEHMOuterClass {
       return isOpen_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 10;
+    public static final int SCORE_FIELD_NUMBER = 4;
     private int score_;
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 4;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class IKJLKLMCEHMOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinish_ != false) {
-        output.writeBool(1, isFinish_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(4, levelId_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(10, score_);
+        output.writeUInt32(1, levelId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(11, isOpen_);
+        output.writeBool(2, isOpen_);
+      }
+      if (isFinish_ != false) {
+        output.writeBool(3, isFinish_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(4, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class IKJLKLMCEHMOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isFinish_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, levelId_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, score_);
+          .computeUInt32Size(1, levelId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isOpen_);
+          .computeBoolSize(2, isOpen_);
+      }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isFinish_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class IKJLKLMCEHMOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 1;</code>
+       * <code>bool is_finish = 3;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class IKJLKLMCEHMOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 1;</code>
+       * <code>bool is_finish = 3;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class IKJLKLMCEHMOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 1;</code>
+       * <code>bool is_finish = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -571,7 +571,7 @@ public final class IKJLKLMCEHMOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class IKJLKLMCEHMOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class IKJLKLMCEHMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -602,7 +602,7 @@ public final class IKJLKLMCEHMOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class IKJLKLMCEHMOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class IKJLKLMCEHMOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -633,7 +633,7 @@ public final class IKJLKLMCEHMOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 4;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class IKJLKLMCEHMOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 4;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class IKJLKLMCEHMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -729,8 +729,8 @@ public final class IKJLKLMCEHMOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021IKJLKLMCEHM.proto\"R\n\013IKJLKLMCEHM\022\021\n\tis" +
-      "_finish\030\001 \001(\010\022\020\n\010level_id\030\004 \001(\r\022\017\n\007is_op" +
-      "en\030\013 \001(\010\022\r\n\005score\030\n \001(\rB2\n\031emu.grasscutt" +
+      "_finish\030\003 \001(\010\022\020\n\010level_id\030\001 \001(\r\022\017\n\007is_op" +
+      "en\030\002 \001(\010\022\r\n\005score\030\004 \001(\rB2\n\031emu.grasscutt" +
       "er.net.protoB\025IKJLKLMCEHMOuterClassb\006pro" +
       "to3"
     };

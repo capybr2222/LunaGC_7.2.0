@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "HomeSceneJumpReqOuterClass";
 
 message HomeSceneJumpReq {
-	bool is_enter_room_scene = 11;
+	bool is_enter_room_scene = 9;
 }

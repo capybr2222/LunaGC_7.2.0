@@ -34,7 +34,7 @@ public final class LOAAPGCPMIOOuterClass {
     emu.grasscutter.net.proto.DACMDDCLPNHOuterClass.DACMDDCLPNHOrBuilder getJJFAGNLJDMNOrBuilder();
 
     /**
-     * <code>uint32 DEMNDDHDDKF = 2;</code>
+     * <code>uint32 DEMNDDHDDKF = 14;</code>
      * @return The dEMNDDHDDKF.
      */
     int getDEMNDDHDDKF();
@@ -61,7 +61,7 @@ public final class LOAAPGCPMIOOuterClass {
     int getProgress();
 
     /**
-     * <code>uint32 NJIAIJLAFEI = 14;</code>
+     * <code>uint32 NJIAIJLAFEI = 2;</code>
      * @return The nJIAIJLAFEI.
      */
     int getNJIAIJLAFEI();
@@ -119,7 +119,7 @@ public final class LOAAPGCPMIOOuterClass {
               break;
             case 16: {
 
-              dEMNDDHDDKF_ = input.readUInt32();
+              nJIAIJLAFEI_ = input.readUInt32();
               break;
             }
             case 32: {
@@ -160,7 +160,7 @@ public final class LOAAPGCPMIOOuterClass {
             }
             case 112: {
 
-              nJIAIJLAFEI_ = input.readUInt32();
+              dEMNDDHDDKF_ = input.readUInt32();
               break;
             }
             default: {
@@ -221,10 +221,10 @@ public final class LOAAPGCPMIOOuterClass {
       return getJJFAGNLJDMN();
     }
 
-    public static final int DEMNDDHDDKF_FIELD_NUMBER = 2;
+    public static final int DEMNDDHDDKF_FIELD_NUMBER = 14;
     private int dEMNDDHDDKF_;
     /**
-     * <code>uint32 DEMNDDHDDKF = 2;</code>
+     * <code>uint32 DEMNDDHDDKF = 14;</code>
      * @return The dEMNDDHDDKF.
      */
     @java.lang.Override
@@ -269,10 +269,10 @@ public final class LOAAPGCPMIOOuterClass {
       return progress_;
     }
 
-    public static final int NJIAIJLAFEI_FIELD_NUMBER = 14;
+    public static final int NJIAIJLAFEI_FIELD_NUMBER = 2;
     private int nJIAIJLAFEI_;
     /**
-     * <code>uint32 NJIAIJLAFEI = 14;</code>
+     * <code>uint32 NJIAIJLAFEI = 2;</code>
      * @return The nJIAIJLAFEI.
      */
     @java.lang.Override
@@ -305,8 +305,8 @@ public final class LOAAPGCPMIOOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dEMNDDHDDKF_ != 0) {
-        output.writeUInt32(2, dEMNDDHDDKF_);
+      if (nJIAIJLAFEI_ != 0) {
+        output.writeUInt32(2, nJIAIJLAFEI_);
       }
       if (progress_ != 0) {
         output.writeUInt32(4, progress_);
@@ -320,8 +320,8 @@ public final class LOAAPGCPMIOOuterClass {
       if (jJFAGNLJDMN_ != null) {
         output.writeMessage(7, getJJFAGNLJDMN());
       }
-      if (nJIAIJLAFEI_ != 0) {
-        output.writeUInt32(14, nJIAIJLAFEI_);
+      if (dEMNDDHDDKF_ != 0) {
+        output.writeUInt32(14, dEMNDDHDDKF_);
       }
       unknownFields.writeTo(output);
     }
@@ -332,9 +332,9 @@ public final class LOAAPGCPMIOOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dEMNDDHDDKF_ != 0) {
+      if (nJIAIJLAFEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dEMNDDHDDKF_);
+          .computeUInt32Size(2, nJIAIJLAFEI_);
       }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -352,9 +352,9 @@ public final class LOAAPGCPMIOOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, getJJFAGNLJDMN());
       }
-      if (nJIAIJLAFEI_ != 0) {
+      if (dEMNDDHDDKF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, nJIAIJLAFEI_);
+          .computeUInt32Size(14, dEMNDDHDDKF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -826,7 +826,7 @@ public final class LOAAPGCPMIOOuterClass {
 
       private int dEMNDDHDDKF_ ;
       /**
-       * <code>uint32 DEMNDDHDDKF = 2;</code>
+       * <code>uint32 DEMNDDHDDKF = 14;</code>
        * @return The dEMNDDHDDKF.
        */
       @java.lang.Override
@@ -834,7 +834,7 @@ public final class LOAAPGCPMIOOuterClass {
         return dEMNDDHDDKF_;
       }
       /**
-       * <code>uint32 DEMNDDHDDKF = 2;</code>
+       * <code>uint32 DEMNDDHDDKF = 14;</code>
        * @param value The dEMNDDHDDKF to set.
        * @return This builder for chaining.
        */
@@ -845,7 +845,7 @@ public final class LOAAPGCPMIOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 DEMNDDHDDKF = 2;</code>
+       * <code>uint32 DEMNDDHDDKF = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDEMNDDHDDKF() {
@@ -1007,7 +1007,7 @@ public final class LOAAPGCPMIOOuterClass {
 
       private int nJIAIJLAFEI_ ;
       /**
-       * <code>uint32 NJIAIJLAFEI = 14;</code>
+       * <code>uint32 NJIAIJLAFEI = 2;</code>
        * @return The nJIAIJLAFEI.
        */
       @java.lang.Override
@@ -1015,7 +1015,7 @@ public final class LOAAPGCPMIOOuterClass {
         return nJIAIJLAFEI_;
       }
       /**
-       * <code>uint32 NJIAIJLAFEI = 14;</code>
+       * <code>uint32 NJIAIJLAFEI = 2;</code>
        * @param value The nJIAIJLAFEI to set.
        * @return This builder for chaining.
        */
@@ -1026,7 +1026,7 @@ public final class LOAAPGCPMIOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NJIAIJLAFEI = 14;</code>
+       * <code>uint32 NJIAIJLAFEI = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearNJIAIJLAFEI() {
@@ -1136,8 +1136,8 @@ public final class LOAAPGCPMIOOuterClass {
       "\n\021LOAAPGCPMIO.proto\032\021DACMDDCLPNH.proto\032\021" +
       "MHJHCJJGOAD.proto\"\242\001\n\013LOAAPGCPMIO\022!\n\013JJF" +
       "AGNLJDMN\030\007 \001(\0132\014.DACMDDCLPNH\022\023\n\013DEMNDDHD" +
-      "DKF\030\002 \001(\r\022!\n\013OIIIOAEMICJ\030\005 \001(\0132\014.MHJHCJJ" +
-      "GOAD\022\020\n\010progress\030\004 \001(\r\022\023\n\013NJIAIJLAFEI\030\016 " +
+      "DKF\030\016 \001(\r\022!\n\013OIIIOAEMICJ\030\005 \001(\0132\014.MHJHCJJ" +
+      "GOAD\022\020\n\010progress\030\004 \001(\r\022\023\n\013NJIAIJLAFEI\030\002 " +
       "\001(\r\022\021\n\tis_accept\030\006 \001(\010B2\n\031emu.grasscutte" +
       "r.net.protoB\025LOAAPGCPMIOOuterClassb\006prot" +
       "o3"

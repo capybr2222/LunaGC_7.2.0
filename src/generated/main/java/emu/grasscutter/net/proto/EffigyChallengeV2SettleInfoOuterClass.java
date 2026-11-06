@@ -19,37 +19,37 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool CIKPIBCMPMB = 50000;</code>
+     * <code>bool CIKPIBCMPMB = 20004;</code>
      * @return The cIKPIBCMPMB.
      */
     boolean getCIKPIBCMPMB();
 
     /**
-     * <code>uint32 EEKKHPMNEJO = 50001;</code>
+     * <code>uint32 EEKKHPMNEJO = 20000;</code>
      * @return The eEKKHPMNEJO.
      */
     int getEEKKHPMNEJO();
 
     /**
-     * <code>uint32 MMBMGOKCLJI = 50002;</code>
+     * <code>uint32 MMBMGOKCLJI = 20002;</code>
      * @return The mMBMGOKCLJI.
      */
     int getMMBMGOKCLJI();
 
     /**
-     * <code>uint32 JGOODOMJLLJ = 50003;</code>
+     * <code>uint32 JGOODOMJLLJ = 20001;</code>
      * @return The jGOODOMJLLJ.
      */
     int getJGOODOMJLLJ();
 
     /**
-     * <code>bool DACBILBGHCK = 50004;</code>
+     * <code>bool DACBILBGHCK = 20003;</code>
      * @return The dACBILBGHCK.
      */
     boolean getDACBILBGHCK();
 
     /**
-     * <code>uint32 challenge_mode_difficulty = 7;</code>
+     * <code>uint32 challenge_mode_difficulty = 20005;</code>
      * @return The challengeModeDifficulty.
      */
     int getChallengeModeDifficulty();
@@ -99,34 +99,34 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              challengeModeDifficulty_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
-
-              cIKPIBCMPMB_ = input.readBool();
-              break;
-            }
-            case 400008: {
+            case 160000: {
 
               eEKKHPMNEJO_ = input.readUInt32();
               break;
             }
-            case 400016: {
-
-              mMBMGOKCLJI_ = input.readUInt32();
-              break;
-            }
-            case 400024: {
+            case 160008: {
 
               jGOODOMJLLJ_ = input.readUInt32();
               break;
             }
-            case 400032: {
+            case 160016: {
+
+              mMBMGOKCLJI_ = input.readUInt32();
+              break;
+            }
+            case 160024: {
 
               dACBILBGHCK_ = input.readBool();
+              break;
+            }
+            case 160032: {
+
+              cIKPIBCMPMB_ = input.readBool();
+              break;
+            }
+            case 160040: {
+
+              challengeModeDifficulty_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,10 +161,10 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
               emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.class, emu.grasscutter.net.proto.EffigyChallengeV2SettleInfoOuterClass.EffigyChallengeV2SettleInfo.Builder.class);
     }
 
-    public static final int CIKPIBCMPMB_FIELD_NUMBER = 50000;
+    public static final int CIKPIBCMPMB_FIELD_NUMBER = 20004;
     private boolean cIKPIBCMPMB_;
     /**
-     * <code>bool CIKPIBCMPMB = 50000;</code>
+     * <code>bool CIKPIBCMPMB = 20004;</code>
      * @return The cIKPIBCMPMB.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       return cIKPIBCMPMB_;
     }
 
-    public static final int EEKKHPMNEJO_FIELD_NUMBER = 50001;
+    public static final int EEKKHPMNEJO_FIELD_NUMBER = 20000;
     private int eEKKHPMNEJO_;
     /**
-     * <code>uint32 EEKKHPMNEJO = 50001;</code>
+     * <code>uint32 EEKKHPMNEJO = 20000;</code>
      * @return The eEKKHPMNEJO.
      */
     @java.lang.Override
@@ -183,10 +183,10 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       return eEKKHPMNEJO_;
     }
 
-    public static final int MMBMGOKCLJI_FIELD_NUMBER = 50002;
+    public static final int MMBMGOKCLJI_FIELD_NUMBER = 20002;
     private int mMBMGOKCLJI_;
     /**
-     * <code>uint32 MMBMGOKCLJI = 50002;</code>
+     * <code>uint32 MMBMGOKCLJI = 20002;</code>
      * @return The mMBMGOKCLJI.
      */
     @java.lang.Override
@@ -194,10 +194,10 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       return mMBMGOKCLJI_;
     }
 
-    public static final int JGOODOMJLLJ_FIELD_NUMBER = 50003;
+    public static final int JGOODOMJLLJ_FIELD_NUMBER = 20001;
     private int jGOODOMJLLJ_;
     /**
-     * <code>uint32 JGOODOMJLLJ = 50003;</code>
+     * <code>uint32 JGOODOMJLLJ = 20001;</code>
      * @return The jGOODOMJLLJ.
      */
     @java.lang.Override
@@ -205,10 +205,10 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       return jGOODOMJLLJ_;
     }
 
-    public static final int DACBILBGHCK_FIELD_NUMBER = 50004;
+    public static final int DACBILBGHCK_FIELD_NUMBER = 20003;
     private boolean dACBILBGHCK_;
     /**
-     * <code>bool DACBILBGHCK = 50004;</code>
+     * <code>bool DACBILBGHCK = 20003;</code>
      * @return The dACBILBGHCK.
      */
     @java.lang.Override
@@ -216,10 +216,10 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       return dACBILBGHCK_;
     }
 
-    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 7;
+    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 20005;
     private int challengeModeDifficulty_;
     /**
-     * <code>uint32 challenge_mode_difficulty = 7;</code>
+     * <code>uint32 challenge_mode_difficulty = 20005;</code>
      * @return The challengeModeDifficulty.
      */
     @java.lang.Override
@@ -241,23 +241,23 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (challengeModeDifficulty_ != 0) {
-        output.writeUInt32(7, challengeModeDifficulty_);
-      }
-      if (cIKPIBCMPMB_ != false) {
-        output.writeBool(50000, cIKPIBCMPMB_);
-      }
       if (eEKKHPMNEJO_ != 0) {
-        output.writeUInt32(50001, eEKKHPMNEJO_);
-      }
-      if (mMBMGOKCLJI_ != 0) {
-        output.writeUInt32(50002, mMBMGOKCLJI_);
+        output.writeUInt32(20000, eEKKHPMNEJO_);
       }
       if (jGOODOMJLLJ_ != 0) {
-        output.writeUInt32(50003, jGOODOMJLLJ_);
+        output.writeUInt32(20001, jGOODOMJLLJ_);
+      }
+      if (mMBMGOKCLJI_ != 0) {
+        output.writeUInt32(20002, mMBMGOKCLJI_);
       }
       if (dACBILBGHCK_ != false) {
-        output.writeBool(50004, dACBILBGHCK_);
+        output.writeBool(20003, dACBILBGHCK_);
+      }
+      if (cIKPIBCMPMB_ != false) {
+        output.writeBool(20004, cIKPIBCMPMB_);
+      }
+      if (challengeModeDifficulty_ != 0) {
+        output.writeUInt32(20005, challengeModeDifficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -268,29 +268,29 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (challengeModeDifficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, challengeModeDifficulty_);
-      }
-      if (cIKPIBCMPMB_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50000, cIKPIBCMPMB_);
-      }
       if (eEKKHPMNEJO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, eEKKHPMNEJO_);
-      }
-      if (mMBMGOKCLJI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50002, mMBMGOKCLJI_);
+          .computeUInt32Size(20000, eEKKHPMNEJO_);
       }
       if (jGOODOMJLLJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50003, jGOODOMJLLJ_);
+          .computeUInt32Size(20001, jGOODOMJLLJ_);
+      }
+      if (mMBMGOKCLJI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20002, mMBMGOKCLJI_);
       }
       if (dACBILBGHCK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50004, dACBILBGHCK_);
+          .computeBoolSize(20003, dACBILBGHCK_);
+      }
+      if (cIKPIBCMPMB_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(20004, cIKPIBCMPMB_);
+      }
+      if (challengeModeDifficulty_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20005, challengeModeDifficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -618,7 +618,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
 
       private boolean cIKPIBCMPMB_ ;
       /**
-       * <code>bool CIKPIBCMPMB = 50000;</code>
+       * <code>bool CIKPIBCMPMB = 20004;</code>
        * @return The cIKPIBCMPMB.
        */
       @java.lang.Override
@@ -626,7 +626,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return cIKPIBCMPMB_;
       }
       /**
-       * <code>bool CIKPIBCMPMB = 50000;</code>
+       * <code>bool CIKPIBCMPMB = 20004;</code>
        * @param value The cIKPIBCMPMB to set.
        * @return This builder for chaining.
        */
@@ -637,7 +637,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool CIKPIBCMPMB = 50000;</code>
+       * <code>bool CIKPIBCMPMB = 20004;</code>
        * @return This builder for chaining.
        */
       public Builder clearCIKPIBCMPMB() {
@@ -649,7 +649,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
 
       private int eEKKHPMNEJO_ ;
       /**
-       * <code>uint32 EEKKHPMNEJO = 50001;</code>
+       * <code>uint32 EEKKHPMNEJO = 20000;</code>
        * @return The eEKKHPMNEJO.
        */
       @java.lang.Override
@@ -657,7 +657,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return eEKKHPMNEJO_;
       }
       /**
-       * <code>uint32 EEKKHPMNEJO = 50001;</code>
+       * <code>uint32 EEKKHPMNEJO = 20000;</code>
        * @param value The eEKKHPMNEJO to set.
        * @return This builder for chaining.
        */
@@ -668,7 +668,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 EEKKHPMNEJO = 50001;</code>
+       * <code>uint32 EEKKHPMNEJO = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearEEKKHPMNEJO() {
@@ -680,7 +680,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
 
       private int mMBMGOKCLJI_ ;
       /**
-       * <code>uint32 MMBMGOKCLJI = 50002;</code>
+       * <code>uint32 MMBMGOKCLJI = 20002;</code>
        * @return The mMBMGOKCLJI.
        */
       @java.lang.Override
@@ -688,7 +688,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return mMBMGOKCLJI_;
       }
       /**
-       * <code>uint32 MMBMGOKCLJI = 50002;</code>
+       * <code>uint32 MMBMGOKCLJI = 20002;</code>
        * @param value The mMBMGOKCLJI to set.
        * @return This builder for chaining.
        */
@@ -699,7 +699,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MMBMGOKCLJI = 50002;</code>
+       * <code>uint32 MMBMGOKCLJI = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearMMBMGOKCLJI() {
@@ -711,7 +711,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
 
       private int jGOODOMJLLJ_ ;
       /**
-       * <code>uint32 JGOODOMJLLJ = 50003;</code>
+       * <code>uint32 JGOODOMJLLJ = 20001;</code>
        * @return The jGOODOMJLLJ.
        */
       @java.lang.Override
@@ -719,7 +719,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return jGOODOMJLLJ_;
       }
       /**
-       * <code>uint32 JGOODOMJLLJ = 50003;</code>
+       * <code>uint32 JGOODOMJLLJ = 20001;</code>
        * @param value The jGOODOMJLLJ to set.
        * @return This builder for chaining.
        */
@@ -730,7 +730,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 JGOODOMJLLJ = 50003;</code>
+       * <code>uint32 JGOODOMJLLJ = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearJGOODOMJLLJ() {
@@ -742,7 +742,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
 
       private boolean dACBILBGHCK_ ;
       /**
-       * <code>bool DACBILBGHCK = 50004;</code>
+       * <code>bool DACBILBGHCK = 20003;</code>
        * @return The dACBILBGHCK.
        */
       @java.lang.Override
@@ -750,7 +750,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return dACBILBGHCK_;
       }
       /**
-       * <code>bool DACBILBGHCK = 50004;</code>
+       * <code>bool DACBILBGHCK = 20003;</code>
        * @param value The dACBILBGHCK to set.
        * @return This builder for chaining.
        */
@@ -761,7 +761,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool DACBILBGHCK = 50004;</code>
+       * <code>bool DACBILBGHCK = 20003;</code>
        * @return This builder for chaining.
        */
       public Builder clearDACBILBGHCK() {
@@ -773,7 +773,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
 
       private int challengeModeDifficulty_ ;
       /**
-       * <code>uint32 challenge_mode_difficulty = 7;</code>
+       * <code>uint32 challenge_mode_difficulty = 20005;</code>
        * @return The challengeModeDifficulty.
        */
       @java.lang.Override
@@ -781,7 +781,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return challengeModeDifficulty_;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 7;</code>
+       * <code>uint32 challenge_mode_difficulty = 20005;</code>
        * @param value The challengeModeDifficulty to set.
        * @return This builder for chaining.
        */
@@ -792,7 +792,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 7;</code>
+       * <code>uint32 challenge_mode_difficulty = 20005;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeModeDifficulty() {
@@ -868,14 +868,14 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!EffigyChallengeV2SettleInfo.proto\"\263\001\n\033" +
+      "\n!EffigyChallengeV2SettleInfo.proto\"\265\001\n\033" +
       "EffigyChallengeV2SettleInfo\022\025\n\013CIKPIBCMP" +
-      "MB\030\320\206\003 \001(\010\022\025\n\013EEKKHPMNEJO\030\321\206\003 \001(\r\022\025\n\013MMB" +
-      "MGOKCLJI\030\322\206\003 \001(\r\022\025\n\013JGOODOMJLLJ\030\323\206\003 \001(\r\022" +
-      "\025\n\013DACBILBGHCK\030\324\206\003 \001(\010\022!\n\031challenge_mode" +
-      "_difficulty\030\007 \001(\rBB\n\031emu.grasscutter.net" +
-      ".protoB%EffigyChallengeV2SettleInfoOuter" +
-      "Classb\006proto3"
+      "MB\030\244\234\001 \001(\010\022\025\n\013EEKKHPMNEJO\030\240\234\001 \001(\r\022\025\n\013MMB" +
+      "MGOKCLJI\030\242\234\001 \001(\r\022\025\n\013JGOODOMJLLJ\030\241\234\001 \001(\r\022" +
+      "\025\n\013DACBILBGHCK\030\243\234\001 \001(\010\022#\n\031challenge_mode" +
+      "_difficulty\030\245\234\001 \001(\rBB\n\031emu.grasscutter.n" +
+      "et.protoB%EffigyChallengeV2SettleInfoOut" +
+      "erClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

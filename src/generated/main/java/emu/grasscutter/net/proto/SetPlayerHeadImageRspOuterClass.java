@@ -19,7 +19,7 @@ public final class SetPlayerHeadImageRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -84,7 +84,7 @@ public final class SetPlayerHeadImageRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 48: {
 
               retcode_ = input.readInt32();
               break;
@@ -134,10 +134,10 @@ public final class SetPlayerHeadImageRspOuterClass {
               emu.grasscutter.net.proto.SetPlayerHeadImageRspOuterClass.SetPlayerHeadImageRsp.class, emu.grasscutter.net.proto.SetPlayerHeadImageRspOuterClass.SetPlayerHeadImageRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -186,7 +186,7 @@ public final class SetPlayerHeadImageRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(6, retcode_);
       }
       if (profilePicture_ != null) {
         output.writeMessage(14, getProfilePicture());
@@ -202,7 +202,7 @@ public final class SetPlayerHeadImageRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(6, retcode_);
       }
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -505,7 +505,7 @@ public final class SetPlayerHeadImageRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -513,7 +513,7 @@ public final class SetPlayerHeadImageRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -524,7 +524,7 @@ public final class SetPlayerHeadImageRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -721,7 +721,7 @@ public final class SetPlayerHeadImageRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033SetPlayerHeadImageRsp.proto\032\024ProfilePi" +
       "cture.proto\"R\n\025SetPlayerHeadImageRsp\022\017\n\007" +
-      "retcode\030\005 \001(\005\022(\n\017profile_picture\030\016 \001(\0132\017" +
+      "retcode\030\006 \001(\005\022(\n\017profile_picture\030\016 \001(\0132\017" +
       ".ProfilePictureB<\n\031emu.grasscutter.net.p" +
       "rotoB\037SetPlayerHeadImageRspOuterClassb\006p" +
       "roto3"

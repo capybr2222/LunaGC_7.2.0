@@ -8,7 +8,7 @@ import "MHENKMCEHHJ.proto";
 import "PDKKLGIEJCN.proto";
 
 message CeremonyDetailInfo {
-	MHENKMCEHHJ battle_info = 2;
+	MHENKMCEHHJ battle_info = 12;
 	PDKKLGIEJCN PMPNJDABMKM = 50000;
 	EJIGDIIFDBI MFNFNCFKEHO = 50001;
 }

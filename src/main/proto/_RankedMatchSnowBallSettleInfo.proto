@@ -6,9 +6,9 @@ option java_outer_classname = "_RankedMatchSnowBallSettleInfoOuterClass";
 import "GalleryStopReason.proto";
 
 message _RankedMatchSnowBallSettleInfo {
-	bool is_new_record = 10;
-	GalleryStopReason reason = 8;
-	uint32 score = 4;
-	uint32 level_id = 11;
-	uint32 item_num = 12;
+	bool is_new_record = 8;
+	GalleryStopReason reason = 5;
+	uint32 score = 3;
+	uint32 level_id = 2;
+	uint32 item_num = 10;
 }

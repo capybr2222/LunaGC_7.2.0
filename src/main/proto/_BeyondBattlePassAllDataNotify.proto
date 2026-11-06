@@ -7,7 +7,7 @@ import "_BeyondBattlePassMission.proto";
 import "_BeyondBattlePassSchedule.proto";
 
 message _BeyondBattlePassAllDataNotify {
-	_BeyondBattlePassSchedule cur_schedule = 4;
-	bool _have_cur_beyond_schedule = 1;
-	repeated _BeyondBattlePassMission mission_list = 7;
+	_BeyondBattlePassSchedule cur_schedule = 15;
+	bool _have_cur_beyond_schedule = 8;
+	repeated _BeyondBattlePassMission mission_list = 2;
 }

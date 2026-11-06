@@ -19,25 +19,25 @@ public final class AvatarUnlockTalentNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_guid = 5;</code>
+     * <code>uint64 avatar_guid = 11;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>uint32 talent_id = 13;</code>
+     * <code>uint32 talent_id = 1;</code>
      * @return The talentId.
      */
     int getTalentId();
 
     /**
-     * <code>uint32 entity_id = 7;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 skill_depot_id = 15;</code>
+     * <code>uint32 skill_depot_id = 7;</code>
      * @return The skillDepotId.
      */
     int getSkillDepotId();
@@ -87,24 +87,24 @@ public final class AvatarUnlockTalentNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 56: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 8: {
 
               talentId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 24: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
 
               skillDepotId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              avatarGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class AvatarUnlockTalentNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarUnlockTalentNotifyOuterClass.AvatarUnlockTalentNotify.class, emu.grasscutter.net.proto.AvatarUnlockTalentNotifyOuterClass.AvatarUnlockTalentNotify.Builder.class);
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 5;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 11;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 5;</code>
+     * <code>uint64 avatar_guid = 11;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class AvatarUnlockTalentNotifyOuterClass {
       return avatarGuid_;
     }
 
-    public static final int TALENT_ID_FIELD_NUMBER = 13;
+    public static final int TALENT_ID_FIELD_NUMBER = 1;
     private int talentId_;
     /**
-     * <code>uint32 talent_id = 13;</code>
+     * <code>uint32 talent_id = 1;</code>
      * @return The talentId.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class AvatarUnlockTalentNotifyOuterClass {
       return talentId_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 7;
+    public static final int ENTITY_ID_FIELD_NUMBER = 3;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 7;</code>
+     * <code>uint32 entity_id = 3;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class AvatarUnlockTalentNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 15;
+    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 7;
     private int skillDepotId_;
     /**
-     * <code>uint32 skill_depot_id = 15;</code>
+     * <code>uint32 skill_depot_id = 7;</code>
      * @return The skillDepotId.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class AvatarUnlockTalentNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarGuid_ != 0L) {
-        output.writeUInt64(5, avatarGuid_);
+      if (talentId_ != 0) {
+        output.writeUInt32(1, talentId_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(7, entityId_);
-      }
-      if (talentId_ != 0) {
-        output.writeUInt32(13, talentId_);
+        output.writeUInt32(3, entityId_);
       }
       if (skillDepotId_ != 0) {
-        output.writeUInt32(15, skillDepotId_);
+        output.writeUInt32(7, skillDepotId_);
+      }
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(11, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class AvatarUnlockTalentNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarGuid_ != 0L) {
+      if (talentId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, avatarGuid_);
+          .computeUInt32Size(1, talentId_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, entityId_);
-      }
-      if (talentId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, talentId_);
+          .computeUInt32Size(3, entityId_);
       }
       if (skillDepotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, skillDepotId_);
+          .computeUInt32Size(7, skillDepotId_);
+      }
+      if (avatarGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(11, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 11;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 11;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -570,7 +570,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
 
       private int talentId_ ;
       /**
-       * <code>uint32 talent_id = 13;</code>
+       * <code>uint32 talent_id = 1;</code>
        * @return The talentId.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
         return talentId_;
       }
       /**
-       * <code>uint32 talent_id = 13;</code>
+       * <code>uint32 talent_id = 1;</code>
        * @param value The talentId to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 talent_id = 13;</code>
+       * <code>uint32 talent_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTalentId() {
@@ -601,7 +601,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -632,7 +632,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
 
       private int skillDepotId_ ;
       /**
-       * <code>uint32 skill_depot_id = 15;</code>
+       * <code>uint32 skill_depot_id = 7;</code>
        * @return The skillDepotId.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
         return skillDepotId_;
       }
       /**
-       * <code>uint32 skill_depot_id = 15;</code>
+       * <code>uint32 skill_depot_id = 7;</code>
        * @param value The skillDepotId to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class AvatarUnlockTalentNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_depot_id = 15;</code>
+       * <code>uint32 skill_depot_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillDepotId() {
@@ -728,9 +728,9 @@ public final class AvatarUnlockTalentNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036AvatarUnlockTalentNotify.proto\"m\n\030Avat" +
-      "arUnlockTalentNotify\022\023\n\013avatar_guid\030\005 \001(" +
-      "\004\022\021\n\ttalent_id\030\r \001(\r\022\021\n\tentity_id\030\007 \001(\r\022" +
-      "\026\n\016skill_depot_id\030\017 \001(\rB?\n\031emu.grasscutt" +
+      "arUnlockTalentNotify\022\023\n\013avatar_guid\030\013 \001(" +
+      "\004\022\021\n\ttalent_id\030\001 \001(\r\022\021\n\tentity_id\030\003 \001(\r\022" +
+      "\026\n\016skill_depot_id\030\007 \001(\rB?\n\031emu.grasscutt" +
       "er.net.protoB\"AvatarUnlockTalentNotifyOu" +
       "terClassb\006proto3"
     };

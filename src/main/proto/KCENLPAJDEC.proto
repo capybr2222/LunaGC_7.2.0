@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "KCENLPAJDECOuterClass";
 
 message KCENLPAJDEC {
-	uint32 level_id = 2;
-	bool is_open = 13;
-	bool is_finish = 15;
+	uint32 level_id = 6;
+	bool is_open = 5;
+	bool is_finish = 9;
 }

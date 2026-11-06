@@ -6,7 +6,7 @@ option java_outer_classname = "BuyGoodsReqOuterClass";
 import "ShopGoods.proto";
 
 message BuyGoodsReq {
-	uint32 shop_type = 1;
-	uint32 buy_count = 13;
-	ShopGoods goods = 8;
+	uint32 shop_type = 12;
+	uint32 buy_count = 2;
+	ShopGoods goods = 5;
 }

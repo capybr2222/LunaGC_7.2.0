@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ReceivedTrialAvatarActivityRewardRspOuterClass";
 
 message ReceivedTrialAvatarActivityRewardRsp {
-	uint32 activity_id = 2;
-	uint32 trial_avatar_index_id = 5;
-	int32 retcode = 15;
+	uint32 activity_id = 8;
+	uint32 trial_avatar_index_id = 10;
+	int32 retcode = 5;
 }

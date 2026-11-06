@@ -7,6 +7,6 @@ import "FPFLLDHMCIB.proto";
 import "_DiversityBattleSocialBrief.proto";
 
 message _DiversityBattleLevelInfo {
-	_DiversityBattleSocialBrief _record_social_brief = 3;
-	repeated FPFLLDHMCIB team_list = 10;
+	_DiversityBattleSocialBrief _record_social_brief = 7;
+	repeated FPFLLDHMCIB team_list = 13;
 }

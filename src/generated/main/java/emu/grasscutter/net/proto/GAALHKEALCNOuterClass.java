@@ -19,131 +19,131 @@ public final class GAALHKEALCNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 EGGHBMLGLHC = 7;</code>
+     * <code>uint32 EGGHBMLGLHC = 20005;</code>
      * @return The eGGHBMLGLHC.
      */
     int getEGGHBMLGLHC();
 
     /**
-     * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+     * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
      * @return A list containing the oDGDINNDMGE.
      */
     java.util.List<java.lang.Integer> getODGDINNDMGEList();
     /**
-     * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+     * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
      * @return The count of oDGDINNDMGE.
      */
     int getODGDINNDMGECount();
     /**
-     * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+     * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
      * @param index The index of the element to return.
      * @return The oDGDINNDMGE at the given index.
      */
     int getODGDINNDMGE(int index);
 
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     java.util.List<emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA> 
         getEPLCNHFNDPAList();
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA getEPLCNHFNDPA(int index);
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     int getEPLCNHFNDPACount();
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMAOrBuilder> 
         getEPLCNHFNDPAOrBuilderList();
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMAOrBuilder getEPLCNHFNDPAOrBuilder(
         int index);
 
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo> 
         getShowAvatarInfoListList();
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo getShowAvatarInfoList(int index);
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     int getShowAvatarInfoListCount();
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfoOrBuilder> 
         getShowAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfoOrBuilder getShowAvatarInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 DEADDOKKEHM = 2;</code>
+     * <code>uint32 DEADDOKKEHM = 4;</code>
      * @return The dEADDOKKEHM.
      */
     int getDEADDOKKEHM();
 
     /**
-     * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+     * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
      * @return A list containing the aGFGCHIHNEE.
      */
     java.util.List<java.lang.Integer> getAGFGCHIHNEEList();
     /**
-     * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+     * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
      * @return The count of aGFGCHIHNEE.
      */
     int getAGFGCHIHNEECount();
     /**
-     * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+     * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
      * @param index The index of the element to return.
      * @return The aGFGCHIHNEE at the given index.
      */
     int getAGFGCHIHNEE(int index);
 
     /**
-     * <code>bool is_finish = 11;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 cost_time = 13;</code>
+     * <code>uint32 cost_time = 6;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <code>bool OGBLPLNCKIF = 6;</code>
+     * <code>bool OGBLPLNCKIF = 20004;</code>
      * @return The oGBLPLNCKIF.
      */
     boolean getOGBLPLNCKIF();
 
     /**
-     * <code>bool is_open = 12;</code>
+     * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 AKCPFFADDOP = 1;</code>
+     * <code>uint32 AKCPFFADDOP = 15;</code>
      * @return The aKCPFFADDOP.
      */
     int getAKCPFFADDOP();
@@ -198,17 +198,46 @@ public final class GAALHKEALCNOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              aKCPFFADDOP_ = input.readUInt32();
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                showAvatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo>();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              showAvatarInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.parser(), extensionRegistry));
               break;
             }
-            case 16: {
+            case 24: {
+
+              isFinish_ = input.readBool();
+              break;
+            }
+            case 32: {
 
               dEADDOKKEHM_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 48: {
+
+              costTime_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              aKCPFFADDOP_ = input.readUInt32();
+              break;
+            }
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 oDGDINNDMGE_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -216,7 +245,7 @@ public final class GAALHKEALCNOuterClass {
               oDGDINNDMGE_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -229,12 +258,7 @@ public final class GAALHKEALCNOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 32: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 160008: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 aGFGCHIHNEE_ = newIntList();
                 mutable_bitField0_ |= 0x00000008;
@@ -242,7 +266,7 @@ public final class GAALHKEALCNOuterClass {
               aGFGCHIHNEE_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 160010: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
@@ -255,17 +279,7 @@ public final class GAALHKEALCNOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 48: {
-
-              oGBLPLNCKIF_ = input.readBool();
-              break;
-            }
-            case 56: {
-
-              eGGHBMLGLHC_ = input.readUInt32();
-              break;
-            }
-            case 66: {
+            case 160018: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 ePLCNHFNDPA_ = new java.util.ArrayList<emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA>();
                 mutable_bitField0_ |= 0x00000002;
@@ -274,28 +288,14 @@ public final class GAALHKEALCNOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.parser(), extensionRegistry));
               break;
             }
-            case 74: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                showAvatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo>();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              showAvatarInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.parser(), extensionRegistry));
+            case 160032: {
+
+              oGBLPLNCKIF_ = input.readBool();
               break;
             }
-            case 88: {
+            case 160040: {
 
-              isFinish_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 104: {
-
-              costTime_ = input.readUInt32();
+              eGGHBMLGLHC_ = input.readUInt32();
               break;
             }
             default: {
@@ -313,6 +313,9 @@ public final class GAALHKEALCNOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          showAvatarInfoList_ = java.util.Collections.unmodifiableList(showAvatarInfoList_);
+        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           oDGDINNDMGE_.makeImmutable(); // C
         }
@@ -321,9 +324,6 @@ public final class GAALHKEALCNOuterClass {
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           ePLCNHFNDPA_ = java.util.Collections.unmodifiableList(ePLCNHFNDPA_);
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          showAvatarInfoList_ = java.util.Collections.unmodifiableList(showAvatarInfoList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -342,10 +342,10 @@ public final class GAALHKEALCNOuterClass {
               emu.grasscutter.net.proto.GAALHKEALCNOuterClass.GAALHKEALCN.class, emu.grasscutter.net.proto.GAALHKEALCNOuterClass.GAALHKEALCN.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -353,10 +353,10 @@ public final class GAALHKEALCNOuterClass {
       return levelId_;
     }
 
-    public static final int EGGHBMLGLHC_FIELD_NUMBER = 7;
+    public static final int EGGHBMLGLHC_FIELD_NUMBER = 20005;
     private int eGGHBMLGLHC_;
     /**
-     * <code>uint32 EGGHBMLGLHC = 7;</code>
+     * <code>uint32 EGGHBMLGLHC = 20005;</code>
      * @return The eGGHBMLGLHC.
      */
     @java.lang.Override
@@ -364,10 +364,10 @@ public final class GAALHKEALCNOuterClass {
       return eGGHBMLGLHC_;
     }
 
-    public static final int ODGDINNDMGE_FIELD_NUMBER = 3;
+    public static final int ODGDINNDMGE_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList oDGDINNDMGE_;
     /**
-     * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+     * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
      * @return A list containing the oDGDINNDMGE.
      */
     @java.lang.Override
@@ -376,14 +376,14 @@ public final class GAALHKEALCNOuterClass {
       return oDGDINNDMGE_;
     }
     /**
-     * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+     * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
      * @return The count of oDGDINNDMGE.
      */
     public int getODGDINNDMGECount() {
       return oDGDINNDMGE_.size();
     }
     /**
-     * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+     * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
      * @param index The index of the element to return.
      * @return The oDGDINNDMGE at the given index.
      */
@@ -392,17 +392,17 @@ public final class GAALHKEALCNOuterClass {
     }
     private int oDGDINNDMGEMemoizedSerializedSize = -1;
 
-    public static final int EPLCNHFNDPA_FIELD_NUMBER = 8;
+    public static final int EPLCNHFNDPA_FIELD_NUMBER = 20002;
     private java.util.List<emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA> ePLCNHFNDPA_;
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA> getEPLCNHFNDPAList() {
       return ePLCNHFNDPA_;
     }
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMAOrBuilder> 
@@ -410,21 +410,21 @@ public final class GAALHKEALCNOuterClass {
       return ePLCNHFNDPA_;
     }
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     @java.lang.Override
     public int getEPLCNHFNDPACount() {
       return ePLCNHFNDPA_.size();
     }
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA getEPLCNHFNDPA(int index) {
       return ePLCNHFNDPA_.get(index);
     }
     /**
-     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+     * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMAOrBuilder getEPLCNHFNDPAOrBuilder(
@@ -432,17 +432,17 @@ public final class GAALHKEALCNOuterClass {
       return ePLCNHFNDPA_.get(index);
     }
 
-    public static final int SHOW_AVATAR_INFO_LIST_FIELD_NUMBER = 9;
+    public static final int SHOW_AVATAR_INFO_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo> showAvatarInfoList_;
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo> getShowAvatarInfoListList() {
       return showAvatarInfoList_;
     }
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfoOrBuilder> 
@@ -450,21 +450,21 @@ public final class GAALHKEALCNOuterClass {
       return showAvatarInfoList_;
     }
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     @java.lang.Override
     public int getShowAvatarInfoListCount() {
       return showAvatarInfoList_.size();
     }
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo getShowAvatarInfoList(int index) {
       return showAvatarInfoList_.get(index);
     }
     /**
-     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+     * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfoOrBuilder getShowAvatarInfoListOrBuilder(
@@ -472,10 +472,10 @@ public final class GAALHKEALCNOuterClass {
       return showAvatarInfoList_.get(index);
     }
 
-    public static final int DEADDOKKEHM_FIELD_NUMBER = 2;
+    public static final int DEADDOKKEHM_FIELD_NUMBER = 4;
     private int dEADDOKKEHM_;
     /**
-     * <code>uint32 DEADDOKKEHM = 2;</code>
+     * <code>uint32 DEADDOKKEHM = 4;</code>
      * @return The dEADDOKKEHM.
      */
     @java.lang.Override
@@ -483,10 +483,10 @@ public final class GAALHKEALCNOuterClass {
       return dEADDOKKEHM_;
     }
 
-    public static final int AGFGCHIHNEE_FIELD_NUMBER = 5;
+    public static final int AGFGCHIHNEE_FIELD_NUMBER = 20001;
     private com.google.protobuf.Internal.IntList aGFGCHIHNEE_;
     /**
-     * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+     * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
      * @return A list containing the aGFGCHIHNEE.
      */
     @java.lang.Override
@@ -495,14 +495,14 @@ public final class GAALHKEALCNOuterClass {
       return aGFGCHIHNEE_;
     }
     /**
-     * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+     * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
      * @return The count of aGFGCHIHNEE.
      */
     public int getAGFGCHIHNEECount() {
       return aGFGCHIHNEE_.size();
     }
     /**
-     * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+     * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
      * @param index The index of the element to return.
      * @return The aGFGCHIHNEE at the given index.
      */
@@ -511,10 +511,10 @@ public final class GAALHKEALCNOuterClass {
     }
     private int aGFGCHIHNEEMemoizedSerializedSize = -1;
 
-    public static final int IS_FINISH_FIELD_NUMBER = 11;
+    public static final int IS_FINISH_FIELD_NUMBER = 3;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 11;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -522,10 +522,10 @@ public final class GAALHKEALCNOuterClass {
       return isFinish_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 13;
+    public static final int COST_TIME_FIELD_NUMBER = 6;
     private int costTime_;
     /**
-     * <code>uint32 cost_time = 13;</code>
+     * <code>uint32 cost_time = 6;</code>
      * @return The costTime.
      */
     @java.lang.Override
@@ -533,10 +533,10 @@ public final class GAALHKEALCNOuterClass {
       return costTime_;
     }
 
-    public static final int OGBLPLNCKIF_FIELD_NUMBER = 6;
+    public static final int OGBLPLNCKIF_FIELD_NUMBER = 20004;
     private boolean oGBLPLNCKIF_;
     /**
-     * <code>bool OGBLPLNCKIF = 6;</code>
+     * <code>bool OGBLPLNCKIF = 20004;</code>
      * @return The oGBLPLNCKIF.
      */
     @java.lang.Override
@@ -544,10 +544,10 @@ public final class GAALHKEALCNOuterClass {
       return oGBLPLNCKIF_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 12;
+    public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 12;</code>
+     * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -555,10 +555,10 @@ public final class GAALHKEALCNOuterClass {
       return isOpen_;
     }
 
-    public static final int AKCPFFADDOP_FIELD_NUMBER = 1;
+    public static final int AKCPFFADDOP_FIELD_NUMBER = 15;
     private int aKCPFFADDOP_;
     /**
-     * <code>uint32 AKCPFFADDOP = 1;</code>
+     * <code>uint32 AKCPFFADDOP = 15;</code>
      * @return The aKCPFFADDOP.
      */
     @java.lang.Override
@@ -581,49 +581,49 @@ public final class GAALHKEALCNOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (aKCPFFADDOP_ != 0) {
-        output.writeUInt32(1, aKCPFFADDOP_);
+      for (int i = 0; i < showAvatarInfoList_.size(); i++) {
+        output.writeMessage(1, showAvatarInfoList_.get(i));
+      }
+      if (isFinish_ != false) {
+        output.writeBool(3, isFinish_);
       }
       if (dEADDOKKEHM_ != 0) {
-        output.writeUInt32(2, dEADDOKKEHM_);
+        output.writeUInt32(4, dEADDOKKEHM_);
+      }
+      if (costTime_ != 0) {
+        output.writeUInt32(6, costTime_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(8, isOpen_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(10, levelId_);
+      }
+      if (aKCPFFADDOP_ != 0) {
+        output.writeUInt32(15, aKCPFFADDOP_);
       }
       if (getODGDINNDMGEList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(oDGDINNDMGEMemoizedSerializedSize);
       }
       for (int i = 0; i < oDGDINNDMGE_.size(); i++) {
         output.writeUInt32NoTag(oDGDINNDMGE_.getInt(i));
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(4, levelId_);
-      }
       if (getAGFGCHIHNEEList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(160010);
         output.writeUInt32NoTag(aGFGCHIHNEEMemoizedSerializedSize);
       }
       for (int i = 0; i < aGFGCHIHNEE_.size(); i++) {
         output.writeUInt32NoTag(aGFGCHIHNEE_.getInt(i));
       }
+      for (int i = 0; i < ePLCNHFNDPA_.size(); i++) {
+        output.writeMessage(20002, ePLCNHFNDPA_.get(i));
+      }
       if (oGBLPLNCKIF_ != false) {
-        output.writeBool(6, oGBLPLNCKIF_);
+        output.writeBool(20004, oGBLPLNCKIF_);
       }
       if (eGGHBMLGLHC_ != 0) {
-        output.writeUInt32(7, eGGHBMLGLHC_);
-      }
-      for (int i = 0; i < ePLCNHFNDPA_.size(); i++) {
-        output.writeMessage(8, ePLCNHFNDPA_.get(i));
-      }
-      for (int i = 0; i < showAvatarInfoList_.size(); i++) {
-        output.writeMessage(9, showAvatarInfoList_.get(i));
-      }
-      if (isFinish_ != false) {
-        output.writeBool(11, isFinish_);
-      }
-      if (isOpen_ != false) {
-        output.writeBool(12, isOpen_);
-      }
-      if (costTime_ != 0) {
-        output.writeUInt32(13, costTime_);
+        output.writeUInt32(20005, eGGHBMLGLHC_);
       }
       unknownFields.writeTo(output);
     }
@@ -634,13 +634,33 @@ public final class GAALHKEALCNOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aKCPFFADDOP_ != 0) {
+      for (int i = 0; i < showAvatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, aKCPFFADDOP_);
+          .computeMessageSize(1, showAvatarInfoList_.get(i));
+      }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isFinish_);
       }
       if (dEADDOKKEHM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, dEADDOKKEHM_);
+          .computeUInt32Size(4, dEADDOKKEHM_);
+      }
+      if (costTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, costTime_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isOpen_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, levelId_);
+      }
+      if (aKCPFFADDOP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, aKCPFFADDOP_);
       }
       {
         int dataSize = 0;
@@ -650,15 +670,11 @@ public final class GAALHKEALCNOuterClass {
         }
         size += dataSize;
         if (!getODGDINNDMGEList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
         oDGDINNDMGEMemoizedSerializedSize = dataSize;
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, levelId_);
       }
       {
         int dataSize = 0;
@@ -668,39 +684,23 @@ public final class GAALHKEALCNOuterClass {
         }
         size += dataSize;
         if (!getAGFGCHIHNEEList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
         aGFGCHIHNEEMemoizedSerializedSize = dataSize;
       }
+      for (int i = 0; i < ePLCNHFNDPA_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20002, ePLCNHFNDPA_.get(i));
+      }
       if (oGBLPLNCKIF_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, oGBLPLNCKIF_);
+          .computeBoolSize(20004, oGBLPLNCKIF_);
       }
       if (eGGHBMLGLHC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, eGGHBMLGLHC_);
-      }
-      for (int i = 0; i < ePLCNHFNDPA_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, ePLCNHFNDPA_.get(i));
-      }
-      for (int i = 0; i < showAvatarInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, showAvatarInfoList_.get(i));
-      }
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isFinish_);
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isOpen_);
-      }
-      if (costTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, costTime_);
+          .computeUInt32Size(20005, eGGHBMLGLHC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1193,7 +1193,7 @@ public final class GAALHKEALCNOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -1201,7 +1201,7 @@ public final class GAALHKEALCNOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -1212,7 +1212,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -1224,7 +1224,7 @@ public final class GAALHKEALCNOuterClass {
 
       private int eGGHBMLGLHC_ ;
       /**
-       * <code>uint32 EGGHBMLGLHC = 7;</code>
+       * <code>uint32 EGGHBMLGLHC = 20005;</code>
        * @return The eGGHBMLGLHC.
        */
       @java.lang.Override
@@ -1232,7 +1232,7 @@ public final class GAALHKEALCNOuterClass {
         return eGGHBMLGLHC_;
       }
       /**
-       * <code>uint32 EGGHBMLGLHC = 7;</code>
+       * <code>uint32 EGGHBMLGLHC = 20005;</code>
        * @param value The eGGHBMLGLHC to set.
        * @return This builder for chaining.
        */
@@ -1243,7 +1243,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 EGGHBMLGLHC = 7;</code>
+       * <code>uint32 EGGHBMLGLHC = 20005;</code>
        * @return This builder for chaining.
        */
       public Builder clearEGGHBMLGLHC() {
@@ -1261,7 +1261,7 @@ public final class GAALHKEALCNOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+       * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
        * @return A list containing the oDGDINNDMGE.
        */
       public java.util.List<java.lang.Integer>
@@ -1270,14 +1270,14 @@ public final class GAALHKEALCNOuterClass {
                  java.util.Collections.unmodifiableList(oDGDINNDMGE_) : oDGDINNDMGE_;
       }
       /**
-       * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+       * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
        * @return The count of oDGDINNDMGE.
        */
       public int getODGDINNDMGECount() {
         return oDGDINNDMGE_.size();
       }
       /**
-       * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+       * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
        * @param index The index of the element to return.
        * @return The oDGDINNDMGE at the given index.
        */
@@ -1285,7 +1285,7 @@ public final class GAALHKEALCNOuterClass {
         return oDGDINNDMGE_.getInt(index);
       }
       /**
-       * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+       * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
        * @param index The index to set the value at.
        * @param value The oDGDINNDMGE to set.
        * @return This builder for chaining.
@@ -1298,7 +1298,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+       * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
        * @param value The oDGDINNDMGE to add.
        * @return This builder for chaining.
        */
@@ -1309,7 +1309,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+       * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
        * @param values The oDGDINNDMGE to add.
        * @return This builder for chaining.
        */
@@ -1322,7 +1322,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 ODGDINNDMGE = 3;</code>
+       * <code>repeated uint32 ODGDINNDMGE = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearODGDINNDMGE() {
@@ -1345,7 +1345,7 @@ public final class GAALHKEALCNOuterClass {
           emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA, emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.Builder, emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMAOrBuilder> ePLCNHFNDPABuilder_;
 
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA> getEPLCNHFNDPAList() {
         if (ePLCNHFNDPABuilder_ == null) {
@@ -1355,7 +1355,7 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public int getEPLCNHFNDPACount() {
         if (ePLCNHFNDPABuilder_ == null) {
@@ -1365,7 +1365,7 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA getEPLCNHFNDPA(int index) {
         if (ePLCNHFNDPABuilder_ == null) {
@@ -1375,7 +1375,7 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder setEPLCNHFNDPA(
           int index, emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA value) {
@@ -1392,7 +1392,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder setEPLCNHFNDPA(
           int index, emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.Builder builderForValue) {
@@ -1406,7 +1406,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder addEPLCNHFNDPA(emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA value) {
         if (ePLCNHFNDPABuilder_ == null) {
@@ -1422,7 +1422,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder addEPLCNHFNDPA(
           int index, emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA value) {
@@ -1439,7 +1439,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder addEPLCNHFNDPA(
           emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.Builder builderForValue) {
@@ -1453,7 +1453,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder addEPLCNHFNDPA(
           int index, emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.Builder builderForValue) {
@@ -1467,7 +1467,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder addAllEPLCNHFNDPA(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA> values) {
@@ -1482,7 +1482,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder clearEPLCNHFNDPA() {
         if (ePLCNHFNDPABuilder_ == null) {
@@ -1495,7 +1495,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public Builder removeEPLCNHFNDPA(int index) {
         if (ePLCNHFNDPABuilder_ == null) {
@@ -1508,14 +1508,14 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.Builder getEPLCNHFNDPABuilder(
           int index) {
         return getEPLCNHFNDPAFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMAOrBuilder getEPLCNHFNDPAOrBuilder(
           int index) {
@@ -1525,7 +1525,7 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMAOrBuilder> 
            getEPLCNHFNDPAOrBuilderList() {
@@ -1536,14 +1536,14 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.Builder addEPLCNHFNDPABuilder() {
         return getEPLCNHFNDPAFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.getDefaultInstance());
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.Builder addEPLCNHFNDPABuilder(
           int index) {
@@ -1551,7 +1551,7 @@ public final class GAALHKEALCNOuterClass {
             index, emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.getDefaultInstance());
       }
       /**
-       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 8;</code>
+       * <code>repeated .NMPMEMFEOMA EPLCNHFNDPA = 20002;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.NMPMEMFEOMAOuterClass.NMPMEMFEOMA.Builder> 
            getEPLCNHFNDPABuilderList() {
@@ -1585,7 +1585,7 @@ public final class GAALHKEALCNOuterClass {
           emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo, emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.Builder, emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfoOrBuilder> showAvatarInfoListBuilder_;
 
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo> getShowAvatarInfoListList() {
         if (showAvatarInfoListBuilder_ == null) {
@@ -1595,7 +1595,7 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public int getShowAvatarInfoListCount() {
         if (showAvatarInfoListBuilder_ == null) {
@@ -1605,7 +1605,7 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo getShowAvatarInfoList(int index) {
         if (showAvatarInfoListBuilder_ == null) {
@@ -1615,7 +1615,7 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder setShowAvatarInfoList(
           int index, emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo value) {
@@ -1632,7 +1632,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder setShowAvatarInfoList(
           int index, emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.Builder builderForValue) {
@@ -1646,7 +1646,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder addShowAvatarInfoList(emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo value) {
         if (showAvatarInfoListBuilder_ == null) {
@@ -1662,7 +1662,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder addShowAvatarInfoList(
           int index, emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo value) {
@@ -1679,7 +1679,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder addShowAvatarInfoList(
           emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.Builder builderForValue) {
@@ -1693,7 +1693,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder addShowAvatarInfoList(
           int index, emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.Builder builderForValue) {
@@ -1707,7 +1707,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder addAllShowAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo> values) {
@@ -1722,7 +1722,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder clearShowAvatarInfoList() {
         if (showAvatarInfoListBuilder_ == null) {
@@ -1735,7 +1735,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public Builder removeShowAvatarInfoList(int index) {
         if (showAvatarInfoListBuilder_ == null) {
@@ -1748,14 +1748,14 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.Builder getShowAvatarInfoListBuilder(
           int index) {
         return getShowAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfoOrBuilder getShowAvatarInfoListOrBuilder(
           int index) {
@@ -1765,7 +1765,7 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfoOrBuilder> 
            getShowAvatarInfoListOrBuilderList() {
@@ -1776,14 +1776,14 @@ public final class GAALHKEALCNOuterClass {
         }
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.Builder addShowAvatarInfoListBuilder() {
         return getShowAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.Builder addShowAvatarInfoListBuilder(
           int index) {
@@ -1791,7 +1791,7 @@ public final class GAALHKEALCNOuterClass {
             index, emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 9;</code>
+       * <code>repeated .ShowAvatarInfo show_avatar_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ShowAvatarInfoOuterClass.ShowAvatarInfo.Builder> 
            getShowAvatarInfoListBuilderList() {
@@ -1814,7 +1814,7 @@ public final class GAALHKEALCNOuterClass {
 
       private int dEADDOKKEHM_ ;
       /**
-       * <code>uint32 DEADDOKKEHM = 2;</code>
+       * <code>uint32 DEADDOKKEHM = 4;</code>
        * @return The dEADDOKKEHM.
        */
       @java.lang.Override
@@ -1822,7 +1822,7 @@ public final class GAALHKEALCNOuterClass {
         return dEADDOKKEHM_;
       }
       /**
-       * <code>uint32 DEADDOKKEHM = 2;</code>
+       * <code>uint32 DEADDOKKEHM = 4;</code>
        * @param value The dEADDOKKEHM to set.
        * @return This builder for chaining.
        */
@@ -1833,7 +1833,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 DEADDOKKEHM = 2;</code>
+       * <code>uint32 DEADDOKKEHM = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDEADDOKKEHM() {
@@ -1851,7 +1851,7 @@ public final class GAALHKEALCNOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+       * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
        * @return A list containing the aGFGCHIHNEE.
        */
       public java.util.List<java.lang.Integer>
@@ -1860,14 +1860,14 @@ public final class GAALHKEALCNOuterClass {
                  java.util.Collections.unmodifiableList(aGFGCHIHNEE_) : aGFGCHIHNEE_;
       }
       /**
-       * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+       * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
        * @return The count of aGFGCHIHNEE.
        */
       public int getAGFGCHIHNEECount() {
         return aGFGCHIHNEE_.size();
       }
       /**
-       * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+       * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
        * @param index The index of the element to return.
        * @return The aGFGCHIHNEE at the given index.
        */
@@ -1875,7 +1875,7 @@ public final class GAALHKEALCNOuterClass {
         return aGFGCHIHNEE_.getInt(index);
       }
       /**
-       * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+       * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
        * @param index The index to set the value at.
        * @param value The aGFGCHIHNEE to set.
        * @return This builder for chaining.
@@ -1888,7 +1888,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+       * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
        * @param value The aGFGCHIHNEE to add.
        * @return This builder for chaining.
        */
@@ -1899,7 +1899,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+       * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
        * @param values The aGFGCHIHNEE to add.
        * @return This builder for chaining.
        */
@@ -1912,7 +1912,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AGFGCHIHNEE = 5;</code>
+       * <code>repeated uint32 AGFGCHIHNEE = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearAGFGCHIHNEE() {
@@ -1924,7 +1924,7 @@ public final class GAALHKEALCNOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 11;</code>
+       * <code>bool is_finish = 3;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -1932,7 +1932,7 @@ public final class GAALHKEALCNOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 11;</code>
+       * <code>bool is_finish = 3;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -1943,7 +1943,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 11;</code>
+       * <code>bool is_finish = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -1955,7 +1955,7 @@ public final class GAALHKEALCNOuterClass {
 
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 13;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -1963,7 +1963,7 @@ public final class GAALHKEALCNOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 13;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -1974,7 +1974,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 13;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
@@ -1986,7 +1986,7 @@ public final class GAALHKEALCNOuterClass {
 
       private boolean oGBLPLNCKIF_ ;
       /**
-       * <code>bool OGBLPLNCKIF = 6;</code>
+       * <code>bool OGBLPLNCKIF = 20004;</code>
        * @return The oGBLPLNCKIF.
        */
       @java.lang.Override
@@ -1994,7 +1994,7 @@ public final class GAALHKEALCNOuterClass {
         return oGBLPLNCKIF_;
       }
       /**
-       * <code>bool OGBLPLNCKIF = 6;</code>
+       * <code>bool OGBLPLNCKIF = 20004;</code>
        * @param value The oGBLPLNCKIF to set.
        * @return This builder for chaining.
        */
@@ -2005,7 +2005,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>bool OGBLPLNCKIF = 6;</code>
+       * <code>bool OGBLPLNCKIF = 20004;</code>
        * @return This builder for chaining.
        */
       public Builder clearOGBLPLNCKIF() {
@@ -2017,7 +2017,7 @@ public final class GAALHKEALCNOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 8;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -2025,7 +2025,7 @@ public final class GAALHKEALCNOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 8;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -2036,7 +2036,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -2048,7 +2048,7 @@ public final class GAALHKEALCNOuterClass {
 
       private int aKCPFFADDOP_ ;
       /**
-       * <code>uint32 AKCPFFADDOP = 1;</code>
+       * <code>uint32 AKCPFFADDOP = 15;</code>
        * @return The aKCPFFADDOP.
        */
       @java.lang.Override
@@ -2056,7 +2056,7 @@ public final class GAALHKEALCNOuterClass {
         return aKCPFFADDOP_;
       }
       /**
-       * <code>uint32 AKCPFFADDOP = 1;</code>
+       * <code>uint32 AKCPFFADDOP = 15;</code>
        * @param value The aKCPFFADDOP to set.
        * @return This builder for chaining.
        */
@@ -2067,7 +2067,7 @@ public final class GAALHKEALCNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 AKCPFFADDOP = 1;</code>
+       * <code>uint32 AKCPFFADDOP = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAKCPFFADDOP() {
@@ -2144,16 +2144,16 @@ public final class GAALHKEALCNOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021GAALHKEALCN.proto\032\021NMPMEMFEOMA.proto\032\024" +
-      "ShowAvatarInfo.proto\"\247\002\n\013GAALHKEALCN\022\020\n\010" +
-      "level_id\030\004 \001(\r\022\023\n\013EGGHBMLGLHC\030\007 \001(\r\022\023\n\013O" +
-      "DGDINNDMGE\030\003 \003(\r\022!\n\013EPLCNHFNDPA\030\010 \003(\0132\014." +
-      "NMPMEMFEOMA\022.\n\025show_avatar_info_list\030\t \003" +
-      "(\0132\017.ShowAvatarInfo\022\023\n\013DEADDOKKEHM\030\002 \001(\r" +
-      "\022\023\n\013AGFGCHIHNEE\030\005 \003(\r\022\021\n\tis_finish\030\013 \001(\010" +
-      "\022\021\n\tcost_time\030\r \001(\r\022\023\n\013OGBLPLNCKIF\030\006 \001(\010" +
-      "\022\017\n\007is_open\030\014 \001(\010\022\023\n\013AKCPFFADDOP\030\001 \001(\rB2" +
-      "\n\031emu.grasscutter.net.protoB\025GAALHKEALCN" +
-      "OuterClassb\006proto3"
+      "ShowAvatarInfo.proto\"\261\002\n\013GAALHKEALCN\022\020\n\010" +
+      "level_id\030\n \001(\r\022\025\n\013EGGHBMLGLHC\030\245\234\001 \001(\r\022\025\n" +
+      "\013ODGDINNDMGE\030\240\234\001 \003(\r\022#\n\013EPLCNHFNDPA\030\242\234\001 " +
+      "\003(\0132\014.NMPMEMFEOMA\022.\n\025show_avatar_info_li" +
+      "st\030\001 \003(\0132\017.ShowAvatarInfo\022\023\n\013DEADDOKKEHM" +
+      "\030\004 \001(\r\022\025\n\013AGFGCHIHNEE\030\241\234\001 \003(\r\022\021\n\tis_fini" +
+      "sh\030\003 \001(\010\022\021\n\tcost_time\030\006 \001(\r\022\025\n\013OGBLPLNCK" +
+      "IF\030\244\234\001 \001(\010\022\017\n\007is_open\030\010 \001(\010\022\023\n\013AKCPFFADD" +
+      "OP\030\017 \001(\rB2\n\031emu.grasscutter.net.protoB\025G" +
+      "AALHKEALCNOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

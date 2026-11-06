@@ -13,6 +13,7 @@ public final class GadgetData extends GameResource {
 
     private EntityType type;
     private String jsonName;
+    @SerializedName(value = "isInteractive", alternate = {"CANGAJIPNAH"})
     private boolean isInteractive;
     private String[] tags;
     private String itemJsonName;

@@ -19,13 +19,13 @@ public final class AOACBHIACPAOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 APGDMMNLIGP = 7;</code>
+     * <code>uint32 APGDMMNLIGP = 15;</code>
      * @return The aPGDMMNLIGP.
      */
     int getAPGDMMNLIGP();
 
     /**
-     * <code>uint32 furniture_id = 9;</code>
+     * <code>uint32 furniture_id = 6;</code>
      * @return The furnitureId.
      */
     int getFurnitureId();
@@ -75,14 +75,14 @@ public final class AOACBHIACPAOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              aPGDMMNLIGP_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 48: {
 
               furnitureId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              aPGDMMNLIGP_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class AOACBHIACPAOuterClass {
               emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.class, emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder.class);
     }
 
-    public static final int APGDMMNLIGP_FIELD_NUMBER = 7;
+    public static final int APGDMMNLIGP_FIELD_NUMBER = 15;
     private int aPGDMMNLIGP_;
     /**
-     * <code>uint32 APGDMMNLIGP = 7;</code>
+     * <code>uint32 APGDMMNLIGP = 15;</code>
      * @return The aPGDMMNLIGP.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class AOACBHIACPAOuterClass {
       return aPGDMMNLIGP_;
     }
 
-    public static final int FURNITURE_ID_FIELD_NUMBER = 9;
+    public static final int FURNITURE_ID_FIELD_NUMBER = 6;
     private int furnitureId_;
     /**
-     * <code>uint32 furniture_id = 9;</code>
+     * <code>uint32 furniture_id = 6;</code>
      * @return The furnitureId.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class AOACBHIACPAOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aPGDMMNLIGP_ != 0) {
-        output.writeUInt32(7, aPGDMMNLIGP_);
-      }
       if (furnitureId_ != 0) {
-        output.writeUInt32(9, furnitureId_);
+        output.writeUInt32(6, furnitureId_);
+      }
+      if (aPGDMMNLIGP_ != 0) {
+        output.writeUInt32(15, aPGDMMNLIGP_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class AOACBHIACPAOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aPGDMMNLIGP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, aPGDMMNLIGP_);
-      }
       if (furnitureId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, furnitureId_);
+          .computeUInt32Size(6, furnitureId_);
+      }
+      if (aPGDMMNLIGP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, aPGDMMNLIGP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class AOACBHIACPAOuterClass {
 
       private int aPGDMMNLIGP_ ;
       /**
-       * <code>uint32 APGDMMNLIGP = 7;</code>
+       * <code>uint32 APGDMMNLIGP = 15;</code>
        * @return The aPGDMMNLIGP.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class AOACBHIACPAOuterClass {
         return aPGDMMNLIGP_;
       }
       /**
-       * <code>uint32 APGDMMNLIGP = 7;</code>
+       * <code>uint32 APGDMMNLIGP = 15;</code>
        * @param value The aPGDMMNLIGP to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class AOACBHIACPAOuterClass {
         return this;
       }
       /**
-       * <code>uint32 APGDMMNLIGP = 7;</code>
+       * <code>uint32 APGDMMNLIGP = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAPGDMMNLIGP() {
@@ -491,7 +491,7 @@ public final class AOACBHIACPAOuterClass {
 
       private int furnitureId_ ;
       /**
-       * <code>uint32 furniture_id = 9;</code>
+       * <code>uint32 furniture_id = 6;</code>
        * @return The furnitureId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class AOACBHIACPAOuterClass {
         return furnitureId_;
       }
       /**
-       * <code>uint32 furniture_id = 9;</code>
+       * <code>uint32 furniture_id = 6;</code>
        * @param value The furnitureId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class AOACBHIACPAOuterClass {
         return this;
       }
       /**
-       * <code>uint32 furniture_id = 9;</code>
+       * <code>uint32 furniture_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearFurnitureId() {
@@ -587,7 +587,7 @@ public final class AOACBHIACPAOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021AOACBHIACPA.proto\"8\n\013AOACBHIACPA\022\023\n\013AP" +
-      "GDMMNLIGP\030\007 \001(\r\022\024\n\014furniture_id\030\t \001(\rB2\n" +
+      "GDMMNLIGP\030\017 \001(\r\022\024\n\014furniture_id\030\006 \001(\rB2\n" +
       "\031emu.grasscutter.net.protoB\025AOACBHIACPAO" +
       "uterClassb\006proto3"
     };

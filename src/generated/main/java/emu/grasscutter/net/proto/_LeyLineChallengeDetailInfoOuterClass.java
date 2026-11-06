@@ -19,28 +19,28 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool OFBDHIJICPL = 6;</code>
+     * <code>bool OFBDHIJICPL = 20006;</code>
      * @return The oFBDHIJICPL.
      */
     boolean getOFBDHIJICPL();
 
     /**
-     * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+     * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
      * @return Whether the fKGDIAPACDB field is set.
      */
     boolean hasFKGDIAPACDB();
     /**
-     * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+     * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
      * @return The fKGDIAPACDB.
      */
     emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM getFKGDIAPACDB();
     /**
-     * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+     * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
      */
     emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getFKGDIAPACDBOrBuilder();
 
     /**
-     * <code>uint32 PIJLAHENJEP = 50001;</code>
+     * <code>uint32 PIJLAHENJEP = 20005;</code>
      * @return The pIJLAHENJEP.
      */
     int getPIJLAHENJEP();
@@ -52,32 +52,32 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
     boolean getLBCGNOOJDIC();
 
     /**
-     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
      * @return Whether the aLJFGLAPKKM field is set.
      */
     boolean hasALJFGLAPKKM();
     /**
-     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
      * @return The aLJFGLAPKKM.
      */
     emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE getALJFGLAPKKM();
     /**
-     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
      */
     emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIEOrBuilder getALJFGLAPKKMOrBuilder();
 
     /**
-     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
      * @return Whether the iDIHOMKNMHE field is set.
      */
     boolean hasIDIHOMKNMHE();
     /**
-     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
      * @return The iDIHOMKNMHE.
      */
     emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM getIDIHOMKNMHE();
     /**
-     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
      */
     emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getIDIHOMKNMHEOrBuilder();
 
@@ -88,79 +88,79 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
     long getLEEHFFLICIK();
 
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM> 
         getHDAKHICDPPNList();
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM getHDAKHICDPPN(int index);
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     int getHDAKHICDPPNCount();
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder> 
         getHDAKHICDPPNOrBuilderList();
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getHDAKHICDPPNOrBuilder(
         int index);
 
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI> 
         getAKLPNJCALKOList();
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI getAKLPNJCALKO(int index);
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     int getAKLPNJCALKOCount();
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKIOrBuilder> 
         getAKLPNJCALKOOrBuilderList();
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKIOrBuilder getAKLPNJCALKOOrBuilder(
         int index);
 
     /**
-     * <code>uint32 GCONANDBHMP = 50003;</code>
+     * <code>uint32 GCONANDBHMP = 20009;</code>
      * @return The gCONANDBHMP.
      */
     int getGCONANDBHMP();
 
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH> 
         getDifficultyInfoListList();
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH getDifficultyInfoList(int index);
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     int getDifficultyInfoListCount();
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKHOrBuilder> 
         getDifficultyInfoListOrBuilderList();
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKHOrBuilder getDifficultyInfoListOrBuilder(
         int index);
@@ -214,18 +214,13 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                hDAKHICDPPN_ = new java.util.ArrayList<emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM>();
-                mutable_bitField0_ |= 0x00000001;
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                difficultyInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH>();
+                mutable_bitField0_ |= 0x00000004;
               }
-              hDAKHICDPPN_.add(
-                  input.readMessage(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.parser(), extensionRegistry));
-              break;
-            }
-            case 48: {
-
-              oFBDHIJICPL_ = input.readBool();
+              difficultyInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.parser(), extensionRegistry));
               break;
             }
             case 56: {
@@ -238,20 +233,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
               lBCGNOOJDIC_ = input.readBool();
               break;
             }
-            case 90: {
-              emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.Builder subBuilder = null;
-              if (aLJFGLAPKKM_ != null) {
-                subBuilder = aLJFGLAPKKM_.toBuilder();
-              }
-              aLJFGLAPKKM_ = input.readMessage(emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(aLJFGLAPKKM_);
-                aLJFGLAPKKM_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 106: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 aKLPNJCALKO_ = new java.util.ArrayList<emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI>();
                 mutable_bitField0_ |= 0x00000002;
@@ -260,34 +242,16 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.parser(), extensionRegistry));
               break;
             }
-            case 114: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                difficultyInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH>();
-                mutable_bitField0_ |= 0x00000004;
+            case 160010: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                hDAKHICDPPN_ = new java.util.ArrayList<emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              difficultyInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.parser(), extensionRegistry));
+              hDAKHICDPPN_.add(
+                  input.readMessage(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.parser(), extensionRegistry));
               break;
             }
-            case 400002: {
-              emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder subBuilder = null;
-              if (fKGDIAPACDB_ != null) {
-                subBuilder = fKGDIAPACDB_.toBuilder();
-              }
-              fKGDIAPACDB_ = input.readMessage(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(fKGDIAPACDB_);
-                fKGDIAPACDB_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 400008: {
-
-              pIJLAHENJEP_ = input.readUInt32();
-              break;
-            }
-            case 400018: {
+            case 160018: {
               emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder subBuilder = null;
               if (iDIHOMKNMHE_ != null) {
                 subBuilder = iDIHOMKNMHE_.toBuilder();
@@ -300,7 +264,43 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
 
               break;
             }
-            case 400024: {
+            case 160026: {
+              emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder subBuilder = null;
+              if (fKGDIAPACDB_ != null) {
+                subBuilder = fKGDIAPACDB_.toBuilder();
+              }
+              fKGDIAPACDB_ = input.readMessage(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(fKGDIAPACDB_);
+                fKGDIAPACDB_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 160034: {
+              emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.Builder subBuilder = null;
+              if (aLJFGLAPKKM_ != null) {
+                subBuilder = aLJFGLAPKKM_.toBuilder();
+              }
+              aLJFGLAPKKM_ = input.readMessage(emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(aLJFGLAPKKM_);
+                aLJFGLAPKKM_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 160040: {
+
+              pIJLAHENJEP_ = input.readUInt32();
+              break;
+            }
+            case 160048: {
+
+              oFBDHIJICPL_ = input.readBool();
+              break;
+            }
+            case 160072: {
 
               gCONANDBHMP_ = input.readUInt32();
               break;
@@ -320,14 +320,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          hDAKHICDPPN_ = java.util.Collections.unmodifiableList(hDAKHICDPPN_);
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          difficultyInfoList_ = java.util.Collections.unmodifiableList(difficultyInfoList_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           aKLPNJCALKO_ = java.util.Collections.unmodifiableList(aKLPNJCALKO_);
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          difficultyInfoList_ = java.util.Collections.unmodifiableList(difficultyInfoList_);
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          hDAKHICDPPN_ = java.util.Collections.unmodifiableList(hDAKHICDPPN_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -346,10 +346,10 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
               emu.grasscutter.net.proto._LeyLineChallengeDetailInfoOuterClass._LeyLineChallengeDetailInfo.class, emu.grasscutter.net.proto._LeyLineChallengeDetailInfoOuterClass._LeyLineChallengeDetailInfo.Builder.class);
     }
 
-    public static final int OFBDHIJICPL_FIELD_NUMBER = 6;
+    public static final int OFBDHIJICPL_FIELD_NUMBER = 20006;
     private boolean oFBDHIJICPL_;
     /**
-     * <code>bool OFBDHIJICPL = 6;</code>
+     * <code>bool OFBDHIJICPL = 20006;</code>
      * @return The oFBDHIJICPL.
      */
     @java.lang.Override
@@ -357,10 +357,10 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return oFBDHIJICPL_;
     }
 
-    public static final int FKGDIAPACDB_FIELD_NUMBER = 50000;
+    public static final int FKGDIAPACDB_FIELD_NUMBER = 20003;
     private emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM fKGDIAPACDB_;
     /**
-     * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+     * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
      * @return Whether the fKGDIAPACDB field is set.
      */
     @java.lang.Override
@@ -368,7 +368,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return fKGDIAPACDB_ != null;
     }
     /**
-     * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+     * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
      * @return The fKGDIAPACDB.
      */
     @java.lang.Override
@@ -376,17 +376,17 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return fKGDIAPACDB_ == null ? emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.getDefaultInstance() : fKGDIAPACDB_;
     }
     /**
-     * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+     * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getFKGDIAPACDBOrBuilder() {
       return getFKGDIAPACDB();
     }
 
-    public static final int PIJLAHENJEP_FIELD_NUMBER = 50001;
+    public static final int PIJLAHENJEP_FIELD_NUMBER = 20005;
     private int pIJLAHENJEP_;
     /**
-     * <code>uint32 PIJLAHENJEP = 50001;</code>
+     * <code>uint32 PIJLAHENJEP = 20005;</code>
      * @return The pIJLAHENJEP.
      */
     @java.lang.Override
@@ -405,10 +405,10 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return lBCGNOOJDIC_;
     }
 
-    public static final int ALJFGLAPKKM_FIELD_NUMBER = 11;
+    public static final int ALJFGLAPKKM_FIELD_NUMBER = 20004;
     private emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE aLJFGLAPKKM_;
     /**
-     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
      * @return Whether the aLJFGLAPKKM field is set.
      */
     @java.lang.Override
@@ -416,7 +416,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return aLJFGLAPKKM_ != null;
     }
     /**
-     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
      * @return The aLJFGLAPKKM.
      */
     @java.lang.Override
@@ -424,17 +424,17 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return aLJFGLAPKKM_ == null ? emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.getDefaultInstance() : aLJFGLAPKKM_;
     }
     /**
-     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+     * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIEOrBuilder getALJFGLAPKKMOrBuilder() {
       return getALJFGLAPKKM();
     }
 
-    public static final int IDIHOMKNMHE_FIELD_NUMBER = 50002;
+    public static final int IDIHOMKNMHE_FIELD_NUMBER = 20002;
     private emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM iDIHOMKNMHE_;
     /**
-     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
      * @return Whether the iDIHOMKNMHE field is set.
      */
     @java.lang.Override
@@ -442,7 +442,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return iDIHOMKNMHE_ != null;
     }
     /**
-     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
      * @return The iDIHOMKNMHE.
      */
     @java.lang.Override
@@ -450,7 +450,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return iDIHOMKNMHE_ == null ? emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.getDefaultInstance() : iDIHOMKNMHE_;
     }
     /**
-     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+     * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getIDIHOMKNMHEOrBuilder() {
@@ -468,17 +468,17 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return lEEHFFLICIK_;
     }
 
-    public static final int HDAKHICDPPN_FIELD_NUMBER = 5;
+    public static final int HDAKHICDPPN_FIELD_NUMBER = 20001;
     private java.util.List<emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM> hDAKHICDPPN_;
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM> getHDAKHICDPPNList() {
       return hDAKHICDPPN_;
     }
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder> 
@@ -486,21 +486,21 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return hDAKHICDPPN_;
     }
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     @java.lang.Override
     public int getHDAKHICDPPNCount() {
       return hDAKHICDPPN_.size();
     }
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM getHDAKHICDPPN(int index) {
       return hDAKHICDPPN_.get(index);
     }
     /**
-     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+     * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getHDAKHICDPPNOrBuilder(
@@ -508,17 +508,17 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return hDAKHICDPPN_.get(index);
     }
 
-    public static final int AKLPNJCALKO_FIELD_NUMBER = 13;
+    public static final int AKLPNJCALKO_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI> aKLPNJCALKO_;
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI> getAKLPNJCALKOList() {
       return aKLPNJCALKO_;
     }
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKIOrBuilder> 
@@ -526,21 +526,21 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return aKLPNJCALKO_;
     }
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     @java.lang.Override
     public int getAKLPNJCALKOCount() {
       return aKLPNJCALKO_.size();
     }
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI getAKLPNJCALKO(int index) {
       return aKLPNJCALKO_.get(index);
     }
     /**
-     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+     * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKIOrBuilder getAKLPNJCALKOOrBuilder(
@@ -548,10 +548,10 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return aKLPNJCALKO_.get(index);
     }
 
-    public static final int GCONANDBHMP_FIELD_NUMBER = 50003;
+    public static final int GCONANDBHMP_FIELD_NUMBER = 20009;
     private int gCONANDBHMP_;
     /**
-     * <code>uint32 GCONANDBHMP = 50003;</code>
+     * <code>uint32 GCONANDBHMP = 20009;</code>
      * @return The gCONANDBHMP.
      */
     @java.lang.Override
@@ -559,17 +559,17 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return gCONANDBHMP_;
     }
 
-    public static final int DIFFICULTY_INFO_LIST_FIELD_NUMBER = 14;
+    public static final int DIFFICULTY_INFO_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH> difficultyInfoList_;
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH> getDifficultyInfoListList() {
       return difficultyInfoList_;
     }
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKHOrBuilder> 
@@ -577,21 +577,21 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       return difficultyInfoList_;
     }
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     @java.lang.Override
     public int getDifficultyInfoListCount() {
       return difficultyInfoList_.size();
     }
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH getDifficultyInfoList(int index) {
       return difficultyInfoList_.get(index);
     }
     /**
-     * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+     * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKHOrBuilder getDifficultyInfoListOrBuilder(
@@ -613,11 +613,8 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < hDAKHICDPPN_.size(); i++) {
-        output.writeMessage(5, hDAKHICDPPN_.get(i));
-      }
-      if (oFBDHIJICPL_ != false) {
-        output.writeBool(6, oFBDHIJICPL_);
+      for (int i = 0; i < difficultyInfoList_.size(); i++) {
+        output.writeMessage(3, difficultyInfoList_.get(i));
       }
       if (lEEHFFLICIK_ != 0L) {
         output.writeUInt64(7, lEEHFFLICIK_);
@@ -625,26 +622,29 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       if (lBCGNOOJDIC_ != false) {
         output.writeBool(9, lBCGNOOJDIC_);
       }
-      if (aLJFGLAPKKM_ != null) {
-        output.writeMessage(11, getALJFGLAPKKM());
-      }
       for (int i = 0; i < aKLPNJCALKO_.size(); i++) {
-        output.writeMessage(13, aKLPNJCALKO_.get(i));
+        output.writeMessage(20000, aKLPNJCALKO_.get(i));
       }
-      for (int i = 0; i < difficultyInfoList_.size(); i++) {
-        output.writeMessage(14, difficultyInfoList_.get(i));
-      }
-      if (fKGDIAPACDB_ != null) {
-        output.writeMessage(50000, getFKGDIAPACDB());
-      }
-      if (pIJLAHENJEP_ != 0) {
-        output.writeUInt32(50001, pIJLAHENJEP_);
+      for (int i = 0; i < hDAKHICDPPN_.size(); i++) {
+        output.writeMessage(20001, hDAKHICDPPN_.get(i));
       }
       if (iDIHOMKNMHE_ != null) {
-        output.writeMessage(50002, getIDIHOMKNMHE());
+        output.writeMessage(20002, getIDIHOMKNMHE());
+      }
+      if (fKGDIAPACDB_ != null) {
+        output.writeMessage(20003, getFKGDIAPACDB());
+      }
+      if (aLJFGLAPKKM_ != null) {
+        output.writeMessage(20004, getALJFGLAPKKM());
+      }
+      if (pIJLAHENJEP_ != 0) {
+        output.writeUInt32(20005, pIJLAHENJEP_);
+      }
+      if (oFBDHIJICPL_ != false) {
+        output.writeBool(20006, oFBDHIJICPL_);
       }
       if (gCONANDBHMP_ != 0) {
-        output.writeUInt32(50003, gCONANDBHMP_);
+        output.writeUInt32(20009, gCONANDBHMP_);
       }
       unknownFields.writeTo(output);
     }
@@ -655,13 +655,9 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < hDAKHICDPPN_.size(); i++) {
+      for (int i = 0; i < difficultyInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, hDAKHICDPPN_.get(i));
-      }
-      if (oFBDHIJICPL_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, oFBDHIJICPL_);
+          .computeMessageSize(3, difficultyInfoList_.get(i));
       }
       if (lEEHFFLICIK_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
@@ -671,33 +667,37 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(9, lBCGNOOJDIC_);
       }
-      if (aLJFGLAPKKM_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getALJFGLAPKKM());
-      }
       for (int i = 0; i < aKLPNJCALKO_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, aKLPNJCALKO_.get(i));
+          .computeMessageSize(20000, aKLPNJCALKO_.get(i));
       }
-      for (int i = 0; i < difficultyInfoList_.size(); i++) {
+      for (int i = 0; i < hDAKHICDPPN_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, difficultyInfoList_.get(i));
-      }
-      if (fKGDIAPACDB_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(50000, getFKGDIAPACDB());
-      }
-      if (pIJLAHENJEP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, pIJLAHENJEP_);
+          .computeMessageSize(20001, hDAKHICDPPN_.get(i));
       }
       if (iDIHOMKNMHE_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(50002, getIDIHOMKNMHE());
+          .computeMessageSize(20002, getIDIHOMKNMHE());
+      }
+      if (fKGDIAPACDB_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20003, getFKGDIAPACDB());
+      }
+      if (aLJFGLAPKKM_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20004, getALJFGLAPKKM());
+      }
+      if (pIJLAHENJEP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20005, pIJLAHENJEP_);
+      }
+      if (oFBDHIJICPL_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(20006, oFBDHIJICPL_);
       }
       if (gCONANDBHMP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50003, gCONANDBHMP_);
+          .computeUInt32Size(20009, gCONANDBHMP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1231,7 +1231,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
 
       private boolean oFBDHIJICPL_ ;
       /**
-       * <code>bool OFBDHIJICPL = 6;</code>
+       * <code>bool OFBDHIJICPL = 20006;</code>
        * @return The oFBDHIJICPL.
        */
       @java.lang.Override
@@ -1239,7 +1239,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return oFBDHIJICPL_;
       }
       /**
-       * <code>bool OFBDHIJICPL = 6;</code>
+       * <code>bool OFBDHIJICPL = 20006;</code>
        * @param value The oFBDHIJICPL to set.
        * @return This builder for chaining.
        */
@@ -1250,7 +1250,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool OFBDHIJICPL = 6;</code>
+       * <code>bool OFBDHIJICPL = 20006;</code>
        * @return This builder for chaining.
        */
       public Builder clearOFBDHIJICPL() {
@@ -1264,14 +1264,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder> fKGDIAPACDBBuilder_;
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        * @return Whether the fKGDIAPACDB field is set.
        */
       public boolean hasFKGDIAPACDB() {
         return fKGDIAPACDBBuilder_ != null || fKGDIAPACDB_ != null;
       }
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        * @return The fKGDIAPACDB.
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM getFKGDIAPACDB() {
@@ -1282,7 +1282,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        */
       public Builder setFKGDIAPACDB(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM value) {
         if (fKGDIAPACDBBuilder_ == null) {
@@ -1298,7 +1298,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        */
       public Builder setFKGDIAPACDB(
           emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder builderForValue) {
@@ -1312,7 +1312,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        */
       public Builder mergeFKGDIAPACDB(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM value) {
         if (fKGDIAPACDBBuilder_ == null) {
@@ -1330,7 +1330,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        */
       public Builder clearFKGDIAPACDB() {
         if (fKGDIAPACDBBuilder_ == null) {
@@ -1344,7 +1344,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder getFKGDIAPACDBBuilder() {
         
@@ -1352,7 +1352,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return getFKGDIAPACDBFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getFKGDIAPACDBOrBuilder() {
         if (fKGDIAPACDBBuilder_ != null) {
@@ -1363,7 +1363,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.HDHLLCCCLJM FKGDIAPACDB = 50000;</code>
+       * <code>.HDHLLCCCLJM FKGDIAPACDB = 20003;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder> 
@@ -1381,7 +1381,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
 
       private int pIJLAHENJEP_ ;
       /**
-       * <code>uint32 PIJLAHENJEP = 50001;</code>
+       * <code>uint32 PIJLAHENJEP = 20005;</code>
        * @return The pIJLAHENJEP.
        */
       @java.lang.Override
@@ -1389,7 +1389,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return pIJLAHENJEP_;
       }
       /**
-       * <code>uint32 PIJLAHENJEP = 50001;</code>
+       * <code>uint32 PIJLAHENJEP = 20005;</code>
        * @param value The pIJLAHENJEP to set.
        * @return This builder for chaining.
        */
@@ -1400,7 +1400,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 PIJLAHENJEP = 50001;</code>
+       * <code>uint32 PIJLAHENJEP = 20005;</code>
        * @return This builder for chaining.
        */
       public Builder clearPIJLAHENJEP() {
@@ -1445,14 +1445,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE, emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.Builder, emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIEOrBuilder> aLJFGLAPKKMBuilder_;
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        * @return Whether the aLJFGLAPKKM field is set.
        */
       public boolean hasALJFGLAPKKM() {
         return aLJFGLAPKKMBuilder_ != null || aLJFGLAPKKM_ != null;
       }
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        * @return The aLJFGLAPKKM.
        */
       public emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE getALJFGLAPKKM() {
@@ -1463,7 +1463,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        */
       public Builder setALJFGLAPKKM(emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE value) {
         if (aLJFGLAPKKMBuilder_ == null) {
@@ -1479,7 +1479,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        */
       public Builder setALJFGLAPKKM(
           emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.Builder builderForValue) {
@@ -1493,7 +1493,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        */
       public Builder mergeALJFGLAPKKM(emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE value) {
         if (aLJFGLAPKKMBuilder_ == null) {
@@ -1511,7 +1511,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        */
       public Builder clearALJFGLAPKKM() {
         if (aLJFGLAPKKMBuilder_ == null) {
@@ -1525,7 +1525,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        */
       public emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.Builder getALJFGLAPKKMBuilder() {
         
@@ -1533,7 +1533,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return getALJFGLAPKKMFieldBuilder().getBuilder();
       }
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        */
       public emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIEOrBuilder getALJFGLAPKKMOrBuilder() {
         if (aLJFGLAPKKMBuilder_ != null) {
@@ -1544,7 +1544,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 11;</code>
+       * <code>.JJKBEPPIFIE ALJFGLAPKKM = 20004;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE, emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIE.Builder, emu.grasscutter.net.proto.JJKBEPPIFIEOuterClass.JJKBEPPIFIEOrBuilder> 
@@ -1564,14 +1564,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder> iDIHOMKNMHEBuilder_;
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        * @return Whether the iDIHOMKNMHE field is set.
        */
       public boolean hasIDIHOMKNMHE() {
         return iDIHOMKNMHEBuilder_ != null || iDIHOMKNMHE_ != null;
       }
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        * @return The iDIHOMKNMHE.
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM getIDIHOMKNMHE() {
@@ -1582,7 +1582,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        */
       public Builder setIDIHOMKNMHE(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM value) {
         if (iDIHOMKNMHEBuilder_ == null) {
@@ -1598,7 +1598,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        */
       public Builder setIDIHOMKNMHE(
           emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder builderForValue) {
@@ -1612,7 +1612,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        */
       public Builder mergeIDIHOMKNMHE(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM value) {
         if (iDIHOMKNMHEBuilder_ == null) {
@@ -1630,7 +1630,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        */
       public Builder clearIDIHOMKNMHE() {
         if (iDIHOMKNMHEBuilder_ == null) {
@@ -1644,7 +1644,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder getIDIHOMKNMHEBuilder() {
         
@@ -1652,7 +1652,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return getIDIHOMKNMHEFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getIDIHOMKNMHEOrBuilder() {
         if (iDIHOMKNMHEBuilder_ != null) {
@@ -1663,7 +1663,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 50002;</code>
+       * <code>.HDHLLCCCLJM IDIHOMKNMHE = 20002;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder> 
@@ -1723,7 +1723,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
           emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder> hDAKHICDPPNBuilder_;
 
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM> getHDAKHICDPPNList() {
         if (hDAKHICDPPNBuilder_ == null) {
@@ -1733,7 +1733,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public int getHDAKHICDPPNCount() {
         if (hDAKHICDPPNBuilder_ == null) {
@@ -1743,7 +1743,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM getHDAKHICDPPN(int index) {
         if (hDAKHICDPPNBuilder_ == null) {
@@ -1753,7 +1753,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder setHDAKHICDPPN(
           int index, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM value) {
@@ -1770,7 +1770,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder setHDAKHICDPPN(
           int index, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder builderForValue) {
@@ -1784,7 +1784,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder addHDAKHICDPPN(emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM value) {
         if (hDAKHICDPPNBuilder_ == null) {
@@ -1800,7 +1800,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder addHDAKHICDPPN(
           int index, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM value) {
@@ -1817,7 +1817,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder addHDAKHICDPPN(
           emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder builderForValue) {
@@ -1831,7 +1831,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder addHDAKHICDPPN(
           int index, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder builderForValue) {
@@ -1845,7 +1845,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder addAllHDAKHICDPPN(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM> values) {
@@ -1860,7 +1860,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder clearHDAKHICDPPN() {
         if (hDAKHICDPPNBuilder_ == null) {
@@ -1873,7 +1873,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public Builder removeHDAKHICDPPN(int index) {
         if (hDAKHICDPPNBuilder_ == null) {
@@ -1886,14 +1886,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder getHDAKHICDPPNBuilder(
           int index) {
         return getHDAKHICDPPNFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder getHDAKHICDPPNOrBuilder(
           int index) {
@@ -1903,7 +1903,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJMOrBuilder> 
            getHDAKHICDPPNOrBuilderList() {
@@ -1914,14 +1914,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder addHDAKHICDPPNBuilder() {
         return getHDAKHICDPPNFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.getDefaultInstance());
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder addHDAKHICDPPNBuilder(
           int index) {
@@ -1929,7 +1929,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.getDefaultInstance());
       }
       /**
-       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 5;</code>
+       * <code>repeated .HDHLLCCCLJM HDAKHICDPPN = 20001;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HDHLLCCCLJMOuterClass.HDHLLCCCLJM.Builder> 
            getHDAKHICDPPNBuilderList() {
@@ -1963,7 +1963,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
           emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI, emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.Builder, emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKIOrBuilder> aKLPNJCALKOBuilder_;
 
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI> getAKLPNJCALKOList() {
         if (aKLPNJCALKOBuilder_ == null) {
@@ -1973,7 +1973,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public int getAKLPNJCALKOCount() {
         if (aKLPNJCALKOBuilder_ == null) {
@@ -1983,7 +1983,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI getAKLPNJCALKO(int index) {
         if (aKLPNJCALKOBuilder_ == null) {
@@ -1993,7 +1993,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder setAKLPNJCALKO(
           int index, emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI value) {
@@ -2010,7 +2010,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder setAKLPNJCALKO(
           int index, emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.Builder builderForValue) {
@@ -2024,7 +2024,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder addAKLPNJCALKO(emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI value) {
         if (aKLPNJCALKOBuilder_ == null) {
@@ -2040,7 +2040,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder addAKLPNJCALKO(
           int index, emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI value) {
@@ -2057,7 +2057,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder addAKLPNJCALKO(
           emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.Builder builderForValue) {
@@ -2071,7 +2071,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder addAKLPNJCALKO(
           int index, emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.Builder builderForValue) {
@@ -2085,7 +2085,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder addAllAKLPNJCALKO(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI> values) {
@@ -2100,7 +2100,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder clearAKLPNJCALKO() {
         if (aKLPNJCALKOBuilder_ == null) {
@@ -2113,7 +2113,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public Builder removeAKLPNJCALKO(int index) {
         if (aKLPNJCALKOBuilder_ == null) {
@@ -2126,14 +2126,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.Builder getAKLPNJCALKOBuilder(
           int index) {
         return getAKLPNJCALKOFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKIOrBuilder getAKLPNJCALKOOrBuilder(
           int index) {
@@ -2143,7 +2143,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKIOrBuilder> 
            getAKLPNJCALKOOrBuilderList() {
@@ -2154,14 +2154,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.Builder addAKLPNJCALKOBuilder() {
         return getAKLPNJCALKOFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.getDefaultInstance());
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.Builder addAKLPNJCALKOBuilder(
           int index) {
@@ -2169,7 +2169,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.getDefaultInstance());
       }
       /**
-       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 13;</code>
+       * <code>repeated .FAAOMPMEBKI AKLPNJCALKO = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FAAOMPMEBKIOuterClass.FAAOMPMEBKI.Builder> 
            getAKLPNJCALKOBuilderList() {
@@ -2192,7 +2192,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
 
       private int gCONANDBHMP_ ;
       /**
-       * <code>uint32 GCONANDBHMP = 50003;</code>
+       * <code>uint32 GCONANDBHMP = 20009;</code>
        * @return The gCONANDBHMP.
        */
       @java.lang.Override
@@ -2200,7 +2200,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return gCONANDBHMP_;
       }
       /**
-       * <code>uint32 GCONANDBHMP = 50003;</code>
+       * <code>uint32 GCONANDBHMP = 20009;</code>
        * @param value The gCONANDBHMP to set.
        * @return This builder for chaining.
        */
@@ -2211,7 +2211,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 GCONANDBHMP = 50003;</code>
+       * <code>uint32 GCONANDBHMP = 20009;</code>
        * @return This builder for chaining.
        */
       public Builder clearGCONANDBHMP() {
@@ -2234,7 +2234,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
           emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH, emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder, emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKHOrBuilder> difficultyInfoListBuilder_;
 
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH> getDifficultyInfoListList() {
         if (difficultyInfoListBuilder_ == null) {
@@ -2244,7 +2244,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public int getDifficultyInfoListCount() {
         if (difficultyInfoListBuilder_ == null) {
@@ -2254,7 +2254,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH getDifficultyInfoList(int index) {
         if (difficultyInfoListBuilder_ == null) {
@@ -2264,7 +2264,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder setDifficultyInfoList(
           int index, emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH value) {
@@ -2281,7 +2281,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder setDifficultyInfoList(
           int index, emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder builderForValue) {
@@ -2295,7 +2295,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder addDifficultyInfoList(emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH value) {
         if (difficultyInfoListBuilder_ == null) {
@@ -2311,7 +2311,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder addDifficultyInfoList(
           int index, emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH value) {
@@ -2328,7 +2328,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder addDifficultyInfoList(
           emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder builderForValue) {
@@ -2342,7 +2342,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder addDifficultyInfoList(
           int index, emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder builderForValue) {
@@ -2356,7 +2356,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder addAllDifficultyInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH> values) {
@@ -2371,7 +2371,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder clearDifficultyInfoList() {
         if (difficultyInfoListBuilder_ == null) {
@@ -2384,7 +2384,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public Builder removeDifficultyInfoList(int index) {
         if (difficultyInfoListBuilder_ == null) {
@@ -2397,14 +2397,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder getDifficultyInfoListBuilder(
           int index) {
         return getDifficultyInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKHOrBuilder getDifficultyInfoListOrBuilder(
           int index) {
@@ -2414,7 +2414,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKHOrBuilder> 
            getDifficultyInfoListOrBuilderList() {
@@ -2425,14 +2425,14 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder addDifficultyInfoListBuilder() {
         return getDifficultyInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.getDefaultInstance());
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder addDifficultyInfoListBuilder(
           int index) {
@@ -2440,7 +2440,7 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.getDefaultInstance());
       }
       /**
-       * <code>repeated .MKADIBABGKH difficulty_info_list = 14;</code>
+       * <code>repeated .MKADIBABGKH difficulty_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder> 
            getDifficultyInfoListBuilderList() {
@@ -2529,18 +2529,18 @@ public final class _LeyLineChallengeDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n!_LeyLineChallengeDetailInfo.proto\032\021FAA" +
       "OMPMEBKI.proto\032\021HDHLLCCCLJM.proto\032\021JJKBE" +
-      "PPIFIE.proto\032\021MKADIBABGKH.proto\"\351\002\n\033_Ley" +
-      "LineChallengeDetailInfo\022\023\n\013OFBDHIJICPL\030\006" +
-      " \001(\010\022#\n\013FKGDIAPACDB\030\320\206\003 \001(\0132\014.HDHLLCCCLJ" +
-      "M\022\025\n\013PIJLAHENJEP\030\321\206\003 \001(\r\022\023\n\013LBCGNOOJDIC\030" +
-      "\t \001(\010\022!\n\013ALJFGLAPKKM\030\013 \001(\0132\014.JJKBEPPIFIE" +
-      "\022#\n\013IDIHOMKNMHE\030\322\206\003 \001(\0132\014.HDHLLCCCLJM\022\023\n" +
-      "\013LEEHFFLICIK\030\007 \001(\004\022!\n\013HDAKHICDPPN\030\005 \003(\0132" +
-      "\014.HDHLLCCCLJM\022!\n\013AKLPNJCALKO\030\r \003(\0132\014.FAA" +
-      "OMPMEBKI\022\025\n\013GCONANDBHMP\030\323\206\003 \001(\r\022*\n\024diffi" +
-      "culty_info_list\030\016 \003(\0132\014.MKADIBABGKHBB\n\031e" +
-      "mu.grasscutter.net.protoB%_LeyLineChalle" +
-      "ngeDetailInfoOuterClassb\006proto3"
+      "PPIFIE.proto\032\021MKADIBABGKH.proto\"\361\002\n\033_Ley" +
+      "LineChallengeDetailInfo\022\025\n\013OFBDHIJICPL\030\246" +
+      "\234\001 \001(\010\022#\n\013FKGDIAPACDB\030\243\234\001 \001(\0132\014.HDHLLCCC" +
+      "LJM\022\025\n\013PIJLAHENJEP\030\245\234\001 \001(\r\022\023\n\013LBCGNOOJDI" +
+      "C\030\t \001(\010\022#\n\013ALJFGLAPKKM\030\244\234\001 \001(\0132\014.JJKBEPP" +
+      "IFIE\022#\n\013IDIHOMKNMHE\030\242\234\001 \001(\0132\014.HDHLLCCCLJ" +
+      "M\022\023\n\013LEEHFFLICIK\030\007 \001(\004\022#\n\013HDAKHICDPPN\030\241\234" +
+      "\001 \003(\0132\014.HDHLLCCCLJM\022#\n\013AKLPNJCALKO\030\240\234\001 \003" +
+      "(\0132\014.FAAOMPMEBKI\022\025\n\013GCONANDBHMP\030\251\234\001 \001(\r\022" +
+      "*\n\024difficulty_info_list\030\003 \003(\0132\014.MKADIBAB" +
+      "GKHBB\n\031emu.grasscutter.net.protoB%_LeyLi" +
+      "neChallengeDetailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

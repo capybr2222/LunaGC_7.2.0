@@ -49,17 +49,17 @@ public final class NahidaBirthDetailInfoOuterClass {
     emu.grasscutter.net.proto.BBIBJKCJINFOuterClass.BBIBJKCJINFOrBuilder getPOKCBHFGDLEOrBuilder();
 
     /**
-     * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+     * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
      * @return Whether the mEDJFGIIACB field is set.
      */
     boolean hasMEDJFGIIACB();
     /**
-     * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+     * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
      * @return The mEDJFGIIACB.
      */
     emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF getMEDJFGIIACB();
     /**
-     * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+     * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
      */
     emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCFOrBuilder getMEDJFGIIACBOrBuilder();
   }
@@ -108,19 +108,6 @@ public final class NahidaBirthDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
-              emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.Builder subBuilder = null;
-              if (mEDJFGIIACB_ != null) {
-                subBuilder = mEDJFGIIACB_.toBuilder();
-              }
-              mEDJFGIIACB_ = input.readMessage(emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(mEDJFGIIACB_);
-                mEDJFGIIACB_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
             case 400002: {
               emu.grasscutter.net.proto.HFNONNBFKOEOuterClass.HFNONNBFKOE.Builder subBuilder = null;
               if (pHGKJLCIBMG_ != null) {
@@ -143,6 +130,19 @@ public final class NahidaBirthDetailInfoOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(pOKCBHFGDLE_);
                 pOKCBHFGDLE_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 400018: {
+              emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.Builder subBuilder = null;
+              if (mEDJFGIIACB_ != null) {
+                subBuilder = mEDJFGIIACB_.toBuilder();
+              }
+              mEDJFGIIACB_ = input.readMessage(emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(mEDJFGIIACB_);
+                mEDJFGIIACB_ = subBuilder.buildPartial();
               }
 
               break;
@@ -231,10 +231,10 @@ public final class NahidaBirthDetailInfoOuterClass {
       return getPOKCBHFGDLE();
     }
 
-    public static final int MEDJFGIIACB_FIELD_NUMBER = 13;
+    public static final int MEDJFGIIACB_FIELD_NUMBER = 50002;
     private emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF mEDJFGIIACB_;
     /**
-     * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+     * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
      * @return Whether the mEDJFGIIACB field is set.
      */
     @java.lang.Override
@@ -242,7 +242,7 @@ public final class NahidaBirthDetailInfoOuterClass {
       return mEDJFGIIACB_ != null;
     }
     /**
-     * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+     * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
      * @return The mEDJFGIIACB.
      */
     @java.lang.Override
@@ -250,7 +250,7 @@ public final class NahidaBirthDetailInfoOuterClass {
       return mEDJFGIIACB_ == null ? emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.getDefaultInstance() : mEDJFGIIACB_;
     }
     /**
-     * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+     * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCFOrBuilder getMEDJFGIIACBOrBuilder() {
@@ -271,14 +271,14 @@ public final class NahidaBirthDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mEDJFGIIACB_ != null) {
-        output.writeMessage(13, getMEDJFGIIACB());
-      }
       if (pHGKJLCIBMG_ != null) {
         output.writeMessage(50000, getPHGKJLCIBMG());
       }
       if (pOKCBHFGDLE_ != null) {
         output.writeMessage(50001, getPOKCBHFGDLE());
+      }
+      if (mEDJFGIIACB_ != null) {
+        output.writeMessage(50002, getMEDJFGIIACB());
       }
       unknownFields.writeTo(output);
     }
@@ -289,10 +289,6 @@ public final class NahidaBirthDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mEDJFGIIACB_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getMEDJFGIIACB());
-      }
       if (pHGKJLCIBMG_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(50000, getPHGKJLCIBMG());
@@ -300,6 +296,10 @@ public final class NahidaBirthDetailInfoOuterClass {
       if (pOKCBHFGDLE_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(50001, getPOKCBHFGDLE());
+      }
+      if (mEDJFGIIACB_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(50002, getMEDJFGIIACB());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -874,14 +874,14 @@ public final class NahidaBirthDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF, emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.Builder, emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCFOrBuilder> mEDJFGIIACBBuilder_;
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        * @return Whether the mEDJFGIIACB field is set.
        */
       public boolean hasMEDJFGIIACB() {
         return mEDJFGIIACBBuilder_ != null || mEDJFGIIACB_ != null;
       }
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        * @return The mEDJFGIIACB.
        */
       public emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF getMEDJFGIIACB() {
@@ -892,7 +892,7 @@ public final class NahidaBirthDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        */
       public Builder setMEDJFGIIACB(emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF value) {
         if (mEDJFGIIACBBuilder_ == null) {
@@ -908,7 +908,7 @@ public final class NahidaBirthDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        */
       public Builder setMEDJFGIIACB(
           emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.Builder builderForValue) {
@@ -922,7 +922,7 @@ public final class NahidaBirthDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        */
       public Builder mergeMEDJFGIIACB(emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF value) {
         if (mEDJFGIIACBBuilder_ == null) {
@@ -940,7 +940,7 @@ public final class NahidaBirthDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        */
       public Builder clearMEDJFGIIACB() {
         if (mEDJFGIIACBBuilder_ == null) {
@@ -954,7 +954,7 @@ public final class NahidaBirthDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        */
       public emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.Builder getMEDJFGIIACBBuilder() {
         
@@ -962,7 +962,7 @@ public final class NahidaBirthDetailInfoOuterClass {
         return getMEDJFGIIACBFieldBuilder().getBuilder();
       }
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        */
       public emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCFOrBuilder getMEDJFGIIACBOrBuilder() {
         if (mEDJFGIIACBBuilder_ != null) {
@@ -973,7 +973,7 @@ public final class NahidaBirthDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.LLINKLDMOCF MEDJFGIIACB = 13;</code>
+       * <code>.LLINKLDMOCF MEDJFGIIACB = 50002;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF, emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCF.Builder, emu.grasscutter.net.proto.LLINKLDMOCFOuterClass.LLINKLDMOCFOrBuilder> 
@@ -1057,12 +1057,12 @@ public final class NahidaBirthDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033NahidaBirthDetailInfo.proto\032\021BBIBJKCJI" +
       "NF.proto\032\021HFNONNBFKOE.proto\032\021LLINKLDMOCF" +
-      ".proto\"\204\001\n\025NahidaBirthDetailInfo\022#\n\013PHGK" +
+      ".proto\"\206\001\n\025NahidaBirthDetailInfo\022#\n\013PHGK" +
       "JLCIBMG\030\320\206\003 \001(\0132\014.HFNONNBFKOE\022#\n\013POKCBHF" +
-      "GDLE\030\321\206\003 \001(\0132\014.BBIBJKCJINF\022!\n\013MEDJFGIIAC" +
-      "B\030\r \001(\0132\014.LLINKLDMOCFB<\n\031emu.grasscutter" +
-      ".net.protoB\037NahidaBirthDetailInfoOuterCl" +
-      "assb\006proto3"
+      "GDLE\030\321\206\003 \001(\0132\014.BBIBJKCJINF\022#\n\013MEDJFGIIAC" +
+      "B\030\322\206\003 \001(\0132\014.LLINKLDMOCFB<\n\031emu.grasscutt" +
+      "er.net.protoB\037NahidaBirthDetailInfoOuter" +
+      "Classb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

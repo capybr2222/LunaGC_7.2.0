@@ -6,11 +6,11 @@ option java_outer_classname = "_NatlanDrillBattleLevelInfoOuterClass";
 import "IPHFKFLNBGH.proto";
 
 message _NatlanDrillBattleLevelInfo {
-	uint32 KECOPPMCKBN = 50000;
-	uint32 MOLLHFILBFO = 50001;
-	uint32 DHIFGDJPNCH = 50002;
-	IPHFKFLNBGH IANMIFHGOMJ = 50003;
-	uint32 DEADDOKKEHM = 9;
-	bool is_finished = 3;
-	uint32 LGKKNHDOBHE = 50004;
+	uint32 KECOPPMCKBN = 20004;
+	uint32 MOLLHFILBFO = 20001;
+	uint32 DHIFGDJPNCH = 20003;
+	IPHFKFLNBGH IANMIFHGOMJ = 20000;
+	uint32 DEADDOKKEHM = 7;
+	bool is_finished = 4;
+	uint32 LGKKNHDOBHE = 20005;
 }

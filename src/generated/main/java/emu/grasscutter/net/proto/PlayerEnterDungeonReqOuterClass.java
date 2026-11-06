@@ -19,46 +19,46 @@ public final class PlayerEnterDungeonReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BAEJLCIOPMI = 50000;</code>
+     * <code>uint32 BAEJLCIOPMI = 20000;</code>
      * @return The bAEJLCIOPMI.
      */
     int getBAEJLCIOPMI();
 
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
      * @return Whether the enterPosInfo field is set.
      */
     boolean hasEnterPosInfo();
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
      * @return The enterPosInfo.
      */
     emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo getEnterPosInfo();
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
      */
     emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder getEnterPosInfoOrBuilder();
 
     /**
-     * <code>uint32 CCIOMCLOGDK = 50001;</code>
+     * <code>uint32 CCIOMCLOGDK = 20001;</code>
      * @return The cCIOMCLOGDK.
      */
     int getCCIOMCLOGDK();
 
     /**
-     * <code>uint32 point_id = 5;</code>
+     * <code>uint32 point_id = 14;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>uint32 dungeon_id = 14;</code>
+     * <code>uint32 dungeon_id = 1;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>bool _is_continue = 10;</code>
+     * <code>bool _is_continue = 13;</code>
      * @return The isContinue.
      */
     boolean getIsContinue();
@@ -108,17 +108,12 @@ public final class PlayerEnterDungeonReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 8: {
 
-              pointId_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
-            case 80: {
-
-              IsContinue_ = input.readBool();
-              break;
-            }
-            case 90: {
+            case 82: {
               emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder subBuilder = null;
               if (enterPosInfo_ != null) {
                 subBuilder = enterPosInfo_.toBuilder();
@@ -131,17 +126,22 @@ public final class PlayerEnterDungeonReqOuterClass {
 
               break;
             }
-            case 112: {
+            case 104: {
 
-              dungeonId_ = input.readUInt32();
+              IsContinue_ = input.readBool();
               break;
             }
-            case 400000: {
+            case 112: {
+
+              pointId_ = input.readUInt32();
+              break;
+            }
+            case 160000: {
 
               bAEJLCIOPMI_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 160008: {
 
               cCIOMCLOGDK_ = input.readUInt32();
               break;
@@ -178,10 +178,10 @@ public final class PlayerEnterDungeonReqOuterClass {
               emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq.class, emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq.Builder.class);
     }
 
-    public static final int BAEJLCIOPMI_FIELD_NUMBER = 50000;
+    public static final int BAEJLCIOPMI_FIELD_NUMBER = 20000;
     private int bAEJLCIOPMI_;
     /**
-     * <code>uint32 BAEJLCIOPMI = 50000;</code>
+     * <code>uint32 BAEJLCIOPMI = 20000;</code>
      * @return The bAEJLCIOPMI.
      */
     @java.lang.Override
@@ -189,10 +189,10 @@ public final class PlayerEnterDungeonReqOuterClass {
       return bAEJLCIOPMI_;
     }
 
-    public static final int ENTER_POS_INFO_FIELD_NUMBER = 11;
+    public static final int ENTER_POS_INFO_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo enterPosInfo_;
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
      * @return Whether the enterPosInfo field is set.
      */
     @java.lang.Override
@@ -200,7 +200,7 @@ public final class PlayerEnterDungeonReqOuterClass {
       return enterPosInfo_ != null;
     }
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
      * @return The enterPosInfo.
      */
     @java.lang.Override
@@ -208,17 +208,17 @@ public final class PlayerEnterDungeonReqOuterClass {
       return enterPosInfo_ == null ? emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.getDefaultInstance() : enterPosInfo_;
     }
     /**
-     * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+     * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder getEnterPosInfoOrBuilder() {
       return getEnterPosInfo();
     }
 
-    public static final int CCIOMCLOGDK_FIELD_NUMBER = 50001;
+    public static final int CCIOMCLOGDK_FIELD_NUMBER = 20001;
     private int cCIOMCLOGDK_;
     /**
-     * <code>uint32 CCIOMCLOGDK = 50001;</code>
+     * <code>uint32 CCIOMCLOGDK = 20001;</code>
      * @return The cCIOMCLOGDK.
      */
     @java.lang.Override
@@ -226,10 +226,10 @@ public final class PlayerEnterDungeonReqOuterClass {
       return cCIOMCLOGDK_;
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 5;
+    public static final int POINT_ID_FIELD_NUMBER = 14;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 5;</code>
+     * <code>uint32 point_id = 14;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -237,10 +237,10 @@ public final class PlayerEnterDungeonReqOuterClass {
       return pointId_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 14;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 1;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 14;</code>
+     * <code>uint32 dungeon_id = 1;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -248,10 +248,10 @@ public final class PlayerEnterDungeonReqOuterClass {
       return dungeonId_;
     }
 
-    public static final int _IS_CONTINUE_FIELD_NUMBER = 10;
+    public static final int _IS_CONTINUE_FIELD_NUMBER = 13;
     private boolean IsContinue_;
     /**
-     * <code>bool _is_continue = 10;</code>
+     * <code>bool _is_continue = 13;</code>
      * @return The isContinue.
      */
     @java.lang.Override
@@ -273,23 +273,23 @@ public final class PlayerEnterDungeonReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pointId_ != 0) {
-        output.writeUInt32(5, pointId_);
-      }
-      if (IsContinue_ != false) {
-        output.writeBool(10, IsContinue_);
+      if (dungeonId_ != 0) {
+        output.writeUInt32(1, dungeonId_);
       }
       if (enterPosInfo_ != null) {
-        output.writeMessage(11, getEnterPosInfo());
+        output.writeMessage(10, getEnterPosInfo());
       }
-      if (dungeonId_ != 0) {
-        output.writeUInt32(14, dungeonId_);
+      if (IsContinue_ != false) {
+        output.writeBool(13, IsContinue_);
+      }
+      if (pointId_ != 0) {
+        output.writeUInt32(14, pointId_);
       }
       if (bAEJLCIOPMI_ != 0) {
-        output.writeUInt32(50000, bAEJLCIOPMI_);
+        output.writeUInt32(20000, bAEJLCIOPMI_);
       }
       if (cCIOMCLOGDK_ != 0) {
-        output.writeUInt32(50001, cCIOMCLOGDK_);
+        output.writeUInt32(20001, cCIOMCLOGDK_);
       }
       unknownFields.writeTo(output);
     }
@@ -300,29 +300,29 @@ public final class PlayerEnterDungeonReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pointId_ != 0) {
+      if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, pointId_);
-      }
-      if (IsContinue_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, IsContinue_);
+          .computeUInt32Size(1, dungeonId_);
       }
       if (enterPosInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getEnterPosInfo());
+          .computeMessageSize(10, getEnterPosInfo());
       }
-      if (dungeonId_ != 0) {
+      if (IsContinue_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, dungeonId_);
+          .computeBoolSize(13, IsContinue_);
+      }
+      if (pointId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, pointId_);
       }
       if (bAEJLCIOPMI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, bAEJLCIOPMI_);
+          .computeUInt32Size(20000, bAEJLCIOPMI_);
       }
       if (cCIOMCLOGDK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, cCIOMCLOGDK_);
+          .computeUInt32Size(20001, cCIOMCLOGDK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -662,7 +662,7 @@ public final class PlayerEnterDungeonReqOuterClass {
 
       private int bAEJLCIOPMI_ ;
       /**
-       * <code>uint32 BAEJLCIOPMI = 50000;</code>
+       * <code>uint32 BAEJLCIOPMI = 20000;</code>
        * @return The bAEJLCIOPMI.
        */
       @java.lang.Override
@@ -670,7 +670,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return bAEJLCIOPMI_;
       }
       /**
-       * <code>uint32 BAEJLCIOPMI = 50000;</code>
+       * <code>uint32 BAEJLCIOPMI = 20000;</code>
        * @param value The bAEJLCIOPMI to set.
        * @return This builder for chaining.
        */
@@ -681,7 +681,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BAEJLCIOPMI = 50000;</code>
+       * <code>uint32 BAEJLCIOPMI = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearBAEJLCIOPMI() {
@@ -695,14 +695,14 @@ public final class PlayerEnterDungeonReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder> enterPosInfoBuilder_;
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        * @return Whether the enterPosInfo field is set.
        */
       public boolean hasEnterPosInfo() {
         return enterPosInfoBuilder_ != null || enterPosInfo_ != null;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        * @return The enterPosInfo.
        */
       public emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo getEnterPosInfo() {
@@ -713,7 +713,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        */
       public Builder setEnterPosInfo(emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo value) {
         if (enterPosInfoBuilder_ == null) {
@@ -729,7 +729,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        */
       public Builder setEnterPosInfo(
           emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder builderForValue) {
@@ -743,7 +743,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        */
       public Builder mergeEnterPosInfo(emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo value) {
         if (enterPosInfoBuilder_ == null) {
@@ -761,7 +761,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        */
       public Builder clearEnterPosInfo() {
         if (enterPosInfoBuilder_ == null) {
@@ -775,7 +775,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        */
       public emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder getEnterPosInfoBuilder() {
         
@@ -783,7 +783,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return getEnterPosInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        */
       public emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder getEnterPosInfoOrBuilder() {
         if (enterPosInfoBuilder_ != null) {
@@ -794,7 +794,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         }
       }
       /**
-       * <code>.DungeonEnterPosInfo enter_pos_info = 11;</code>
+       * <code>.DungeonEnterPosInfo enter_pos_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfoOrBuilder> 
@@ -812,7 +812,7 @@ public final class PlayerEnterDungeonReqOuterClass {
 
       private int cCIOMCLOGDK_ ;
       /**
-       * <code>uint32 CCIOMCLOGDK = 50001;</code>
+       * <code>uint32 CCIOMCLOGDK = 20001;</code>
        * @return The cCIOMCLOGDK.
        */
       @java.lang.Override
@@ -820,7 +820,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return cCIOMCLOGDK_;
       }
       /**
-       * <code>uint32 CCIOMCLOGDK = 50001;</code>
+       * <code>uint32 CCIOMCLOGDK = 20001;</code>
        * @param value The cCIOMCLOGDK to set.
        * @return This builder for chaining.
        */
@@ -831,7 +831,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 CCIOMCLOGDK = 50001;</code>
+       * <code>uint32 CCIOMCLOGDK = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearCCIOMCLOGDK() {
@@ -843,7 +843,7 @@ public final class PlayerEnterDungeonReqOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 5;</code>
+       * <code>uint32 point_id = 14;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -851,7 +851,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 5;</code>
+       * <code>uint32 point_id = 14;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -862,7 +862,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 5;</code>
+       * <code>uint32 point_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -874,7 +874,7 @@ public final class PlayerEnterDungeonReqOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 14;</code>
+       * <code>uint32 dungeon_id = 1;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -882,7 +882,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 14;</code>
+       * <code>uint32 dungeon_id = 1;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -893,7 +893,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 14;</code>
+       * <code>uint32 dungeon_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -905,7 +905,7 @@ public final class PlayerEnterDungeonReqOuterClass {
 
       private boolean IsContinue_ ;
       /**
-       * <code>bool _is_continue = 10;</code>
+       * <code>bool _is_continue = 13;</code>
        * @return The isContinue.
        */
       @java.lang.Override
@@ -913,7 +913,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return IsContinue_;
       }
       /**
-       * <code>bool _is_continue = 10;</code>
+       * <code>bool _is_continue = 13;</code>
        * @param value The isContinue to set.
        * @return This builder for chaining.
        */
@@ -924,7 +924,7 @@ public final class PlayerEnterDungeonReqOuterClass {
         return this;
       }
       /**
-       * <code>bool _is_continue = 10;</code>
+       * <code>bool _is_continue = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContinue() {
@@ -1002,10 +1002,10 @@ public final class PlayerEnterDungeonReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033PlayerEnterDungeonReq.proto\032\031DungeonEn" +
       "terPosInfo.proto\"\257\001\n\025PlayerEnterDungeonR" +
-      "eq\022\025\n\013BAEJLCIOPMI\030\320\206\003 \001(\r\022,\n\016enter_pos_i" +
-      "nfo\030\013 \001(\0132\024.DungeonEnterPosInfo\022\025\n\013CCIOM" +
-      "CLOGDK\030\321\206\003 \001(\r\022\020\n\010point_id\030\005 \001(\r\022\022\n\ndung" +
-      "eon_id\030\016 \001(\r\022\024\n\014_is_continue\030\n \001(\010B<\n\031em" +
+      "eq\022\025\n\013BAEJLCIOPMI\030\240\234\001 \001(\r\022,\n\016enter_pos_i" +
+      "nfo\030\n \001(\0132\024.DungeonEnterPosInfo\022\025\n\013CCIOM" +
+      "CLOGDK\030\241\234\001 \001(\r\022\020\n\010point_id\030\016 \001(\r\022\022\n\ndung" +
+      "eon_id\030\001 \001(\r\022\024\n\014_is_continue\030\r \001(\010B<\n\031em" +
       "u.grasscutter.net.protoB\037PlayerEnterDung" +
       "eonReqOuterClassb\006proto3"
     };

@@ -19,47 +19,47 @@ public final class FleurFairV2DetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
      * @return Whether the hNHIEBFPFIM field is set.
      */
     boolean hasHNHIEBFPFIM();
     /**
-     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
      * @return The hNHIEBFPFIM.
      */
     emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA getHNHIEBFPFIM();
     /**
-     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
      */
     emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBAOrBuilder getHNHIEBFPFIMOrBuilder();
 
     /**
-     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
      * @return Whether the cCHNHMPAMIH field is set.
      */
     boolean hasCCHNHMPAMIH();
     /**
-     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
      * @return The cCHNHMPAMIH.
      */
     emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN getCCHNHMPAMIH();
     /**
-     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
      */
     emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMNOrBuilder getCCHNHMPAMIHOrBuilder();
 
     /**
-     * <code>.GIMDACMEMIB photo_info = 12;</code>
+     * <code>.GIMDACMEMIB photo_info = 1;</code>
      * @return Whether the photoInfo field is set.
      */
     boolean hasPhotoInfo();
     /**
-     * <code>.GIMDACMEMIB photo_info = 12;</code>
+     * <code>.GIMDACMEMIB photo_info = 1;</code>
      * @return The photoInfo.
      */
     emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB getPhotoInfo();
     /**
-     * <code>.GIMDACMEMIB photo_info = 12;</code>
+     * <code>.GIMDACMEMIB photo_info = 1;</code>
      */
     emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIBOrBuilder getPhotoInfoOrBuilder();
   }
@@ -108,20 +108,20 @@ public final class FleurFairV2DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
-              emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.Builder subBuilder = null;
-              if (cCHNHMPAMIH_ != null) {
-                subBuilder = cCHNHMPAMIH_.toBuilder();
+            case 10: {
+              emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.Builder subBuilder = null;
+              if (photoInfo_ != null) {
+                subBuilder = photoInfo_.toBuilder();
               }
-              cCHNHMPAMIH_ = input.readMessage(emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.parser(), extensionRegistry);
+              photoInfo_ = input.readMessage(emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(cCHNHMPAMIH_);
-                cCHNHMPAMIH_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(photoInfo_);
+                photoInfo_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 58: {
+            case 400002: {
               emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA.Builder subBuilder = null;
               if (hNHIEBFPFIM_ != null) {
                 subBuilder = hNHIEBFPFIM_.toBuilder();
@@ -134,15 +134,15 @@ public final class FleurFairV2DetailInfoOuterClass {
 
               break;
             }
-            case 98: {
-              emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.Builder subBuilder = null;
-              if (photoInfo_ != null) {
-                subBuilder = photoInfo_.toBuilder();
+            case 400010: {
+              emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.Builder subBuilder = null;
+              if (cCHNHMPAMIH_ != null) {
+                subBuilder = cCHNHMPAMIH_.toBuilder();
               }
-              photoInfo_ = input.readMessage(emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.parser(), extensionRegistry);
+              cCHNHMPAMIH_ = input.readMessage(emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(photoInfo_);
-                photoInfo_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(cCHNHMPAMIH_);
+                cCHNHMPAMIH_ = subBuilder.buildPartial();
               }
 
               break;
@@ -179,10 +179,10 @@ public final class FleurFairV2DetailInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairV2DetailInfoOuterClass.FleurFairV2DetailInfo.class, emu.grasscutter.net.proto.FleurFairV2DetailInfoOuterClass.FleurFairV2DetailInfo.Builder.class);
     }
 
-    public static final int HNHIEBFPFIM_FIELD_NUMBER = 7;
+    public static final int HNHIEBFPFIM_FIELD_NUMBER = 50000;
     private emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA hNHIEBFPFIM_;
     /**
-     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
      * @return Whether the hNHIEBFPFIM field is set.
      */
     @java.lang.Override
@@ -190,7 +190,7 @@ public final class FleurFairV2DetailInfoOuterClass {
       return hNHIEBFPFIM_ != null;
     }
     /**
-     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
      * @return The hNHIEBFPFIM.
      */
     @java.lang.Override
@@ -198,17 +198,17 @@ public final class FleurFairV2DetailInfoOuterClass {
       return hNHIEBFPFIM_ == null ? emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA.getDefaultInstance() : hNHIEBFPFIM_;
     }
     /**
-     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+     * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBAOrBuilder getHNHIEBFPFIMOrBuilder() {
       return getHNHIEBFPFIM();
     }
 
-    public static final int CCHNHMPAMIH_FIELD_NUMBER = 3;
+    public static final int CCHNHMPAMIH_FIELD_NUMBER = 50001;
     private emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN cCHNHMPAMIH_;
     /**
-     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
      * @return Whether the cCHNHMPAMIH field is set.
      */
     @java.lang.Override
@@ -216,7 +216,7 @@ public final class FleurFairV2DetailInfoOuterClass {
       return cCHNHMPAMIH_ != null;
     }
     /**
-     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
      * @return The cCHNHMPAMIH.
      */
     @java.lang.Override
@@ -224,17 +224,17 @@ public final class FleurFairV2DetailInfoOuterClass {
       return cCHNHMPAMIH_ == null ? emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.getDefaultInstance() : cCHNHMPAMIH_;
     }
     /**
-     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+     * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMNOrBuilder getCCHNHMPAMIHOrBuilder() {
       return getCCHNHMPAMIH();
     }
 
-    public static final int PHOTO_INFO_FIELD_NUMBER = 12;
+    public static final int PHOTO_INFO_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB photoInfo_;
     /**
-     * <code>.GIMDACMEMIB photo_info = 12;</code>
+     * <code>.GIMDACMEMIB photo_info = 1;</code>
      * @return Whether the photoInfo field is set.
      */
     @java.lang.Override
@@ -242,7 +242,7 @@ public final class FleurFairV2DetailInfoOuterClass {
       return photoInfo_ != null;
     }
     /**
-     * <code>.GIMDACMEMIB photo_info = 12;</code>
+     * <code>.GIMDACMEMIB photo_info = 1;</code>
      * @return The photoInfo.
      */
     @java.lang.Override
@@ -250,7 +250,7 @@ public final class FleurFairV2DetailInfoOuterClass {
       return photoInfo_ == null ? emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.getDefaultInstance() : photoInfo_;
     }
     /**
-     * <code>.GIMDACMEMIB photo_info = 12;</code>
+     * <code>.GIMDACMEMIB photo_info = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIBOrBuilder getPhotoInfoOrBuilder() {
@@ -271,14 +271,14 @@ public final class FleurFairV2DetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (cCHNHMPAMIH_ != null) {
-        output.writeMessage(3, getCCHNHMPAMIH());
+      if (photoInfo_ != null) {
+        output.writeMessage(1, getPhotoInfo());
       }
       if (hNHIEBFPFIM_ != null) {
-        output.writeMessage(7, getHNHIEBFPFIM());
+        output.writeMessage(50000, getHNHIEBFPFIM());
       }
-      if (photoInfo_ != null) {
-        output.writeMessage(12, getPhotoInfo());
+      if (cCHNHMPAMIH_ != null) {
+        output.writeMessage(50001, getCCHNHMPAMIH());
       }
       unknownFields.writeTo(output);
     }
@@ -289,17 +289,17 @@ public final class FleurFairV2DetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (cCHNHMPAMIH_ != null) {
+      if (photoInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getCCHNHMPAMIH());
+          .computeMessageSize(1, getPhotoInfo());
       }
       if (hNHIEBFPFIM_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getHNHIEBFPFIM());
+          .computeMessageSize(50000, getHNHIEBFPFIM());
       }
-      if (photoInfo_ != null) {
+      if (cCHNHMPAMIH_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getPhotoInfo());
+          .computeMessageSize(50001, getCCHNHMPAMIH());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -636,14 +636,14 @@ public final class FleurFairV2DetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA, emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA.Builder, emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBAOrBuilder> hNHIEBFPFIMBuilder_;
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        * @return Whether the hNHIEBFPFIM field is set.
        */
       public boolean hasHNHIEBFPFIM() {
         return hNHIEBFPFIMBuilder_ != null || hNHIEBFPFIM_ != null;
       }
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        * @return The hNHIEBFPFIM.
        */
       public emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA getHNHIEBFPFIM() {
@@ -654,7 +654,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        */
       public Builder setHNHIEBFPFIM(emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA value) {
         if (hNHIEBFPFIMBuilder_ == null) {
@@ -670,7 +670,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        */
       public Builder setHNHIEBFPFIM(
           emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA.Builder builderForValue) {
@@ -684,7 +684,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        */
       public Builder mergeHNHIEBFPFIM(emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA value) {
         if (hNHIEBFPFIMBuilder_ == null) {
@@ -702,7 +702,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        */
       public Builder clearHNHIEBFPFIM() {
         if (hNHIEBFPFIMBuilder_ == null) {
@@ -716,7 +716,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        */
       public emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA.Builder getHNHIEBFPFIMBuilder() {
         
@@ -724,7 +724,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return getHNHIEBFPFIMFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        */
       public emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBAOrBuilder getHNHIEBFPFIMOrBuilder() {
         if (hNHIEBFPFIMBuilder_ != null) {
@@ -735,7 +735,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 7;</code>
+       * <code>.HGBCEHMPOBA HNHIEBFPFIM = 50000;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA, emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBA.Builder, emu.grasscutter.net.proto.HGBCEHMPOBAOuterClass.HGBCEHMPOBAOrBuilder> 
@@ -755,14 +755,14 @@ public final class FleurFairV2DetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN, emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.Builder, emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMNOrBuilder> cCHNHMPAMIHBuilder_;
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        * @return Whether the cCHNHMPAMIH field is set.
        */
       public boolean hasCCHNHMPAMIH() {
         return cCHNHMPAMIHBuilder_ != null || cCHNHMPAMIH_ != null;
       }
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        * @return The cCHNHMPAMIH.
        */
       public emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN getCCHNHMPAMIH() {
@@ -773,7 +773,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        */
       public Builder setCCHNHMPAMIH(emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN value) {
         if (cCHNHMPAMIHBuilder_ == null) {
@@ -789,7 +789,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        */
       public Builder setCCHNHMPAMIH(
           emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.Builder builderForValue) {
@@ -803,7 +803,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        */
       public Builder mergeCCHNHMPAMIH(emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN value) {
         if (cCHNHMPAMIHBuilder_ == null) {
@@ -821,7 +821,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        */
       public Builder clearCCHNHMPAMIH() {
         if (cCHNHMPAMIHBuilder_ == null) {
@@ -835,7 +835,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        */
       public emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.Builder getCCHNHMPAMIHBuilder() {
         
@@ -843,7 +843,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return getCCHNHMPAMIHFieldBuilder().getBuilder();
       }
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        */
       public emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMNOrBuilder getCCHNHMPAMIHOrBuilder() {
         if (cCHNHMPAMIHBuilder_ != null) {
@@ -854,7 +854,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 3;</code>
+       * <code>.KGIPKNLNOMN CCHNHMPAMIH = 50001;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN, emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMN.Builder, emu.grasscutter.net.proto.KGIPKNLNOMNOuterClass.KGIPKNLNOMNOrBuilder> 
@@ -874,14 +874,14 @@ public final class FleurFairV2DetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB, emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.Builder, emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIBOrBuilder> photoInfoBuilder_;
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        * @return Whether the photoInfo field is set.
        */
       public boolean hasPhotoInfo() {
         return photoInfoBuilder_ != null || photoInfo_ != null;
       }
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        * @return The photoInfo.
        */
       public emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB getPhotoInfo() {
@@ -892,7 +892,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        */
       public Builder setPhotoInfo(emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB value) {
         if (photoInfoBuilder_ == null) {
@@ -908,7 +908,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        */
       public Builder setPhotoInfo(
           emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.Builder builderForValue) {
@@ -922,7 +922,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        */
       public Builder mergePhotoInfo(emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB value) {
         if (photoInfoBuilder_ == null) {
@@ -940,7 +940,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        */
       public Builder clearPhotoInfo() {
         if (photoInfoBuilder_ == null) {
@@ -954,7 +954,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        */
       public emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.Builder getPhotoInfoBuilder() {
         
@@ -962,7 +962,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         return getPhotoInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        */
       public emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIBOrBuilder getPhotoInfoOrBuilder() {
         if (photoInfoBuilder_ != null) {
@@ -973,7 +973,7 @@ public final class FleurFairV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.GIMDACMEMIB photo_info = 12;</code>
+       * <code>.GIMDACMEMIB photo_info = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB, emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIB.Builder, emu.grasscutter.net.proto.GIMDACMEMIBOuterClass.GIMDACMEMIBOrBuilder> 
@@ -1057,12 +1057,12 @@ public final class FleurFairV2DetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033FleurFairV2DetailInfo.proto\032\021GIMDACMEM" +
       "IB.proto\032\021HGBCEHMPOBA.proto\032\021KGIPKNLNOMN" +
-      ".proto\"\177\n\025FleurFairV2DetailInfo\022!\n\013HNHIE" +
-      "BFPFIM\030\007 \001(\0132\014.HGBCEHMPOBA\022!\n\013CCHNHMPAMI" +
-      "H\030\003 \001(\0132\014.KGIPKNLNOMN\022 \n\nphoto_info\030\014 \001(" +
-      "\0132\014.GIMDACMEMIBB<\n\031emu.grasscutter.net.p" +
-      "rotoB\037FleurFairV2DetailInfoOuterClassb\006p" +
-      "roto3"
+      ".proto\"\203\001\n\025FleurFairV2DetailInfo\022#\n\013HNHI" +
+      "EBFPFIM\030\320\206\003 \001(\0132\014.HGBCEHMPOBA\022#\n\013CCHNHMP" +
+      "AMIH\030\321\206\003 \001(\0132\014.KGIPKNLNOMN\022 \n\nphoto_info" +
+      "\030\001 \001(\0132\014.GIMDACMEMIBB<\n\031emu.grasscutter." +
+      "net.protoB\037FleurFairV2DetailInfoOuterCla" +
+      "ssb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

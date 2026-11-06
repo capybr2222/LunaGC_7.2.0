@@ -19,25 +19,25 @@ public final class _SubSwitchCompOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM> 
         getGFIDKBINAGHList();
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM getGFIDKBINAGH(int index);
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     int getGFIDKBINAGHCount();
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJMOrBuilder> 
         getGFIDKBINAGHOrBuilderList();
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJMOrBuilder getGFIDKBINAGHOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class _SubSwitchCompOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 gFIDKBINAGH_ = new java.util.ArrayList<emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class _SubSwitchCompOuterClass {
               emu.grasscutter.net.proto._SubSwitchCompOuterClass._SubSwitchComp.class, emu.grasscutter.net.proto._SubSwitchCompOuterClass._SubSwitchComp.Builder.class);
     }
 
-    public static final int GFIDKBINAGH_FIELD_NUMBER = 1;
+    public static final int GFIDKBINAGH_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM> gFIDKBINAGH_;
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM> getGFIDKBINAGHList() {
       return gFIDKBINAGH_;
     }
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJMOrBuilder> 
@@ -151,21 +151,21 @@ public final class _SubSwitchCompOuterClass {
       return gFIDKBINAGH_;
     }
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     @java.lang.Override
     public int getGFIDKBINAGHCount() {
       return gFIDKBINAGH_.size();
     }
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM getGFIDKBINAGH(int index) {
       return gFIDKBINAGH_.get(index);
     }
     /**
-     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+     * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJMOrBuilder getGFIDKBINAGHOrBuilder(
@@ -188,7 +188,7 @@ public final class _SubSwitchCompOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < gFIDKBINAGH_.size(); i++) {
-        output.writeMessage(1, gFIDKBINAGH_.get(i));
+        output.writeMessage(20000, gFIDKBINAGH_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class _SubSwitchCompOuterClass {
       size = 0;
       for (int i = 0; i < gFIDKBINAGH_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, gFIDKBINAGH_.get(i));
+          .computeMessageSize(20000, gFIDKBINAGH_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class _SubSwitchCompOuterClass {
           emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM, emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.Builder, emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJMOrBuilder> gFIDKBINAGHBuilder_;
 
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM> getGFIDKBINAGHList() {
         if (gFIDKBINAGHBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class _SubSwitchCompOuterClass {
         }
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public int getGFIDKBINAGHCount() {
         if (gFIDKBINAGHBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class _SubSwitchCompOuterClass {
         }
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM getGFIDKBINAGH(int index) {
         if (gFIDKBINAGHBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class _SubSwitchCompOuterClass {
         }
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder setGFIDKBINAGH(
           int index, emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM value) {
@@ -575,7 +575,7 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder setGFIDKBINAGH(
           int index, emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder addGFIDKBINAGH(emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM value) {
         if (gFIDKBINAGHBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder addGFIDKBINAGH(
           int index, emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM value) {
@@ -622,7 +622,7 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder addGFIDKBINAGH(
           emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder addGFIDKBINAGH(
           int index, emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder addAllGFIDKBINAGH(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM> values) {
@@ -665,7 +665,7 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder clearGFIDKBINAGH() {
         if (gFIDKBINAGHBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public Builder removeGFIDKBINAGH(int index) {
         if (gFIDKBINAGHBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class _SubSwitchCompOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.Builder getGFIDKBINAGHBuilder(
           int index) {
         return getGFIDKBINAGHFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJMOrBuilder getGFIDKBINAGHOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class _SubSwitchCompOuterClass {
         }
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJMOrBuilder> 
            getGFIDKBINAGHOrBuilderList() {
@@ -719,14 +719,14 @@ public final class _SubSwitchCompOuterClass {
         }
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.Builder addGFIDKBINAGHBuilder() {
         return getGFIDKBINAGHFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.getDefaultInstance());
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.Builder addGFIDKBINAGHBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class _SubSwitchCompOuterClass {
             index, emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.getDefaultInstance());
       }
       /**
-       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 1;</code>
+       * <code>repeated .EMMIEIAAMJM GFIDKBINAGH = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EMMIEIAAMJMOuterClass.EMMIEIAAMJM.Builder> 
            getGFIDKBINAGHBuilderList() {
@@ -822,9 +822,9 @@ public final class _SubSwitchCompOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024_SubSwitchComp.proto\032\021EMMIEIAAMJM.prot" +
-      "o\"3\n\016_SubSwitchComp\022!\n\013GFIDKBINAGH\030\001 \003(\013" +
-      "2\014.EMMIEIAAMJMB5\n\031emu.grasscutter.net.pr" +
-      "otoB\030_SubSwitchCompOuterClassb\006proto3"
+      "o\"5\n\016_SubSwitchComp\022#\n\013GFIDKBINAGH\030\240\234\001 \003" +
+      "(\0132\014.EMMIEIAAMJMB5\n\031emu.grasscutter.net." +
+      "protoB\030_SubSwitchCompOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

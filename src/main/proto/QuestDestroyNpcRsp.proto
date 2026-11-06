@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "QuestDestroyNpcRspOuterClass";
 
 message QuestDestroyNpcRsp {
-	uint32 parent_quest_id = 13;
-	int32 retcode = 15;
-	uint32 npc_id = 9;
+	uint32 parent_quest_id = 10;
+	int32 retcode = 14;
+	uint32 npc_id = 8;
 }

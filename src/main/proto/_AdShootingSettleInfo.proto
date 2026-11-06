@@ -8,12 +8,12 @@ import "NBKIIACAEDE.proto";
 import "Uint32Pair.proto";
 
 message _AdShootingSettleInfo {
-	bool AAPHBOOLCJJ = 50000;
-	bool JDOMINLKBJH = 50001;
-	repeated Uint32Pair BGKNOBGMOIP = 12;
-	FriendBrief _friend_brief = 6;
-	NBKIIACAEDE type = 13;
-	uint32 score = 4;
-	bool AIMJHJLEPEM = 50002;
-	uint32 level_id = 11;
+	bool AAPHBOOLCJJ = 20001;
+	bool JDOMINLKBJH = 20003;
+	repeated Uint32Pair BGKNOBGMOIP = 15;
+	FriendBrief _friend_brief = 1;
+	NBKIIACAEDE type = 8;
+	uint32 score = 5;
+	bool AIMJHJLEPEM = 20002;
+	uint32 level_id = 14;
 }

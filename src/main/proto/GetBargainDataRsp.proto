@@ -6,7 +6,7 @@ option java_outer_classname = "GetBargainDataRspOuterClass";
 import "BargainSnapshot.proto";
 
 message GetBargainDataRsp {
-	uint32 bargain_id = 8;
-	BargainSnapshot snapshot = 15;
-	int32 retcode = 14;
+	uint32 bargain_id = 14;
+	BargainSnapshot snapshot = 13;
+	int32 retcode = 1;
 }

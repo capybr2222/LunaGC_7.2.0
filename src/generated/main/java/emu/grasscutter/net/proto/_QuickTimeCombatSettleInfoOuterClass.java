@@ -19,41 +19,41 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 3;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 total_score = 13;</code>
+     * <code>uint32 total_score = 4;</code>
      * @return The totalScore.
      */
     int getTotalScore();
 
     /**
-     * <code>bool is_new_record = 11;</code>
+     * <code>bool is_new_record = 5;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 difficulty = 1;</code>
+     * <code>uint32 difficulty = 2;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+     * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
      * @return A list containing the kKBGBCAOLAP.
      */
     java.util.List<java.lang.Integer> getKKBGBCAOLAPList();
     /**
-     * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+     * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
      * @return The count of kKBGBCAOLAP.
      */
     int getKKBGBCAOLAPCount();
     /**
-     * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+     * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
      * @param index The index of the element to return.
      * @return The kKBGBCAOLAP at the given index.
      */
@@ -108,15 +108,15 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
               break;
             case 8: {
 
+              stageId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
               difficulty_ = input.readUInt32();
               break;
             }
             case 24: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 kKBGBCAOLAP_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -124,7 +124,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
               kKBGBCAOLAP_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -137,14 +137,14 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 104: {
+            case 32: {
 
               totalScore_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             default: {
@@ -182,10 +182,10 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
               emu.grasscutter.net.proto._QuickTimeCombatSettleInfoOuterClass._QuickTimeCombatSettleInfo.class, emu.grasscutter.net.proto._QuickTimeCombatSettleInfoOuterClass._QuickTimeCombatSettleInfo.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 3;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 3;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -193,10 +193,10 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
       return stageId_;
     }
 
-    public static final int TOTAL_SCORE_FIELD_NUMBER = 13;
+    public static final int TOTAL_SCORE_FIELD_NUMBER = 4;
     private int totalScore_;
     /**
-     * <code>uint32 total_score = 13;</code>
+     * <code>uint32 total_score = 4;</code>
      * @return The totalScore.
      */
     @java.lang.Override
@@ -204,10 +204,10 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
       return totalScore_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 11;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 5;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 11;</code>
+     * <code>bool is_new_record = 5;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -215,10 +215,10 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 1;
+    public static final int DIFFICULTY_FIELD_NUMBER = 2;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 1;</code>
+     * <code>uint32 difficulty = 2;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -226,10 +226,10 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int KKBGBCAOLAP_FIELD_NUMBER = 9;
+    public static final int KKBGBCAOLAP_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList kKBGBCAOLAP_;
     /**
-     * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+     * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
      * @return A list containing the kKBGBCAOLAP.
      */
     @java.lang.Override
@@ -238,14 +238,14 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
       return kKBGBCAOLAP_;
     }
     /**
-     * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+     * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
      * @return The count of kKBGBCAOLAP.
      */
     public int getKKBGBCAOLAPCount() {
       return kKBGBCAOLAP_.size();
     }
     /**
-     * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+     * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
      * @param index The index of the element to return.
      * @return The kKBGBCAOLAP at the given index.
      */
@@ -269,24 +269,24 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (difficulty_ != 0) {
-        output.writeUInt32(1, difficulty_);
-      }
       if (stageId_ != 0) {
-        output.writeUInt32(3, stageId_);
+        output.writeUInt32(1, stageId_);
+      }
+      if (difficulty_ != 0) {
+        output.writeUInt32(2, difficulty_);
       }
       if (getKKBGBCAOLAPList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(kKBGBCAOLAPMemoizedSerializedSize);
       }
       for (int i = 0; i < kKBGBCAOLAP_.size(); i++) {
         output.writeUInt32NoTag(kKBGBCAOLAP_.getInt(i));
       }
-      if (isNewRecord_ != false) {
-        output.writeBool(11, isNewRecord_);
-      }
       if (totalScore_ != 0) {
-        output.writeUInt32(13, totalScore_);
+        output.writeUInt32(4, totalScore_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(5, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -297,13 +297,13 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (difficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, difficulty_);
-      }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, stageId_);
+          .computeUInt32Size(1, stageId_);
+      }
+      if (difficulty_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, difficulty_);
       }
       {
         int dataSize = 0;
@@ -319,13 +319,13 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         }
         kKBGBCAOLAPMemoizedSerializedSize = dataSize;
       }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isNewRecord_);
-      }
       if (totalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, totalScore_);
+          .computeUInt32Size(4, totalScore_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(5, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -657,7 +657,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 3;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -665,7 +665,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 3;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -676,7 +676,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 3;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -688,7 +688,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
 
       private int totalScore_ ;
       /**
-       * <code>uint32 total_score = 13;</code>
+       * <code>uint32 total_score = 4;</code>
        * @return The totalScore.
        */
       @java.lang.Override
@@ -696,7 +696,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return totalScore_;
       }
       /**
-       * <code>uint32 total_score = 13;</code>
+       * <code>uint32 total_score = 4;</code>
        * @param value The totalScore to set.
        * @return This builder for chaining.
        */
@@ -707,7 +707,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_score = 13;</code>
+       * <code>uint32 total_score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalScore() {
@@ -719,7 +719,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 11;</code>
+       * <code>bool is_new_record = 5;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -727,7 +727,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 11;</code>
+       * <code>bool is_new_record = 5;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -738,7 +738,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 11;</code>
+       * <code>bool is_new_record = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -750,7 +750,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 1;</code>
+       * <code>uint32 difficulty = 2;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -758,7 +758,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 1;</code>
+       * <code>uint32 difficulty = 2;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -769,7 +769,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 1;</code>
+       * <code>uint32 difficulty = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -787,7 +787,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+       * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
        * @return A list containing the kKBGBCAOLAP.
        */
       public java.util.List<java.lang.Integer>
@@ -796,14 +796,14 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
                  java.util.Collections.unmodifiableList(kKBGBCAOLAP_) : kKBGBCAOLAP_;
       }
       /**
-       * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+       * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
        * @return The count of kKBGBCAOLAP.
        */
       public int getKKBGBCAOLAPCount() {
         return kKBGBCAOLAP_.size();
       }
       /**
-       * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+       * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
        * @param index The index of the element to return.
        * @return The kKBGBCAOLAP at the given index.
        */
@@ -811,7 +811,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return kKBGBCAOLAP_.getInt(index);
       }
       /**
-       * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+       * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
        * @param index The index to set the value at.
        * @param value The kKBGBCAOLAP to set.
        * @return This builder for chaining.
@@ -824,7 +824,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+       * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
        * @param value The kKBGBCAOLAP to add.
        * @return This builder for chaining.
        */
@@ -835,7 +835,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+       * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
        * @param values The kKBGBCAOLAP to add.
        * @return This builder for chaining.
        */
@@ -848,7 +848,7 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 KKBGBCAOLAP = 9;</code>
+       * <code>repeated uint32 KKBGBCAOLAP = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearKKBGBCAOLAP() {
@@ -925,10 +925,10 @@ public final class _QuickTimeCombatSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n _QuickTimeCombatSettleInfo.proto\"\203\001\n\032_" +
-      "QuickTimeCombatSettleInfo\022\020\n\010stage_id\030\003 " +
-      "\001(\r\022\023\n\013total_score\030\r \001(\r\022\025\n\ris_new_recor" +
-      "d\030\013 \001(\010\022\022\n\ndifficulty\030\001 \001(\r\022\023\n\013KKBGBCAOL" +
-      "AP\030\t \003(\rBA\n\031emu.grasscutter.net.protoB$_" +
+      "QuickTimeCombatSettleInfo\022\020\n\010stage_id\030\001 " +
+      "\001(\r\022\023\n\013total_score\030\004 \001(\r\022\025\n\ris_new_recor" +
+      "d\030\005 \001(\010\022\022\n\ndifficulty\030\002 \001(\r\022\023\n\013KKBGBCAOL" +
+      "AP\030\003 \003(\rBA\n\031emu.grasscutter.net.protoB$_" +
       "QuickTimeCombatSettleInfoOuterClassb\006pro" +
       "to3"
     };

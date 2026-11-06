@@ -6,5 +6,5 @@ option java_outer_classname = "_TemplateTextOuterClass";
 import "ODFACIIAFJM.proto";
 
 message _TemplateText {
-	repeated ODFACIIAFJM AABINJFFLHE = 1;
+	repeated ODFACIIAFJM AABINJFFLHE = 20000;
 }

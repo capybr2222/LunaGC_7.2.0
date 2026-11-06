@@ -7,12 +7,12 @@ import "ChallengeBrief.proto";
 import "CustomDungeonFinishType.proto";
 
 message CustomDungeonResultInfo {
-	uint32 time_cost = 13;
-	bool is_arrive_finish = 3;
-	repeated ChallengeBrief child_challenge_list = 14;
-	bool is_liked = 1;
-	CustomDungeonFinishType finish_type = 2;
-	uint64 dungeon_guid = 4;
-	uint32 got_coin_num = 9;
-	bool is_stored = 7;
+	uint32 time_cost = 10;
+	bool is_arrive_finish = 7;
+	repeated ChallengeBrief child_challenge_list = 1;
+	bool is_liked = 3;
+	CustomDungeonFinishType finish_type = 15;
+	uint64 dungeon_guid = 13;
+	uint32 got_coin_num = 4;
+	bool is_stored = 2;
 }

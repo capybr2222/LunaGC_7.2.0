@@ -36,7 +36,7 @@ public final class DelMailRspOuterClass {
     int getMailIdList(int index);
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -88,7 +88,7 @@ public final class DelMailRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 16: {
 
               retcode_ = input.readInt32();
               break;
@@ -177,10 +177,10 @@ public final class DelMailRspOuterClass {
     }
     private int mailIdListMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -204,7 +204,7 @@ public final class DelMailRspOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(2, retcode_);
       }
       if (getMailIdListList().size() > 0) {
         output.writeUInt32NoTag(114);
@@ -224,7 +224,7 @@ public final class DelMailRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(2, retcode_);
       }
       {
         int dataSize = 0;
@@ -618,7 +618,7 @@ public final class DelMailRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -626,7 +626,7 @@ public final class DelMailRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -637,7 +637,7 @@ public final class DelMailRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -714,7 +714,7 @@ public final class DelMailRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020DelMailRsp.proto\"3\n\nDelMailRsp\022\024\n\014mail" +
-      "_id_list\030\016 \003(\r\022\017\n\007retcode\030\t \001(\005B1\n\031emu.g" +
+      "_id_list\030\016 \003(\r\022\017\n\007retcode\030\002 \001(\005B1\n\031emu.g" +
       "rasscutter.net.protoB\024DelMailRspOuterCla" +
       "ssb\006proto3"
     };

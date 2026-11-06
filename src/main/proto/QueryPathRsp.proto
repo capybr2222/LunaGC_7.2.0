@@ -12,10 +12,10 @@ message QueryPathRsp {
 		PathStatusType_STATUS_SUCC = 1;
 		PathStatusType_STATUS_PARTIAL = 2;
 	}
-	PathStatusType query_status = 10;
-	int32 retcode = 14;
-	int32 query_id = 6;
-	int32 FBLCJIHADLH = 15;
-	repeated BEIKOGGHFHD INAAJKIFKIF = 2;
-	repeated Vector corners = 3;
+	PathStatusType query_status = 13;
+	int32 retcode = 15;
+	int32 query_id = 8;
+	int32 FBLCJIHADLH = 3;
+	repeated BEIKOGGHFHD INAAJKIFKIF = 20000;
+	repeated Vector corners = 4;
 }

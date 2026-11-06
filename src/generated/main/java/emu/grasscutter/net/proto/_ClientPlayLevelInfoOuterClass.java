@@ -19,7 +19,7 @@ public final class _ClientPlayLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -31,29 +31,29 @@ public final class _ClientPlayLevelInfoOuterClass {
     int getILGIBAJDEBD();
 
     /**
-     * <code>uint32 best_record = 9;</code>
+     * <code>uint32 best_record = 14;</code>
      * @return The bestRecord.
      */
     int getBestRecord();
 
     /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+     * <code>._ClientPlayDetailInfo detail_info = 13;</code>
      * @return Whether the detailInfo field is set.
      */
     boolean hasDetailInfo();
     /**
-     * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+     * <code>._ClientPlayDetailInfo detail_info = 13;</code>
      * @return The detailInfo.
      */
     emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo getDetailInfo();
     /**
-     * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+     * <code>._ClientPlayDetailInfo detail_info = 13;</code>
      */
     emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfoOrBuilder getDetailInfoOrBuilder();
 
@@ -108,22 +108,12 @@ public final class _ClientPlayLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              bestRecord_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 40: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 122: {
+            case 106: {
               emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo.Builder subBuilder = null;
               if (detailInfo_ != null) {
                 subBuilder = detailInfo_.toBuilder();
@@ -134,6 +124,16 @@ public final class _ClientPlayLevelInfoOuterClass {
                 detailInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 112: {
+
+              bestRecord_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             case 400000: {
@@ -178,10 +178,10 @@ public final class _ClientPlayLevelInfoOuterClass {
               emu.grasscutter.net.proto._ClientPlayLevelInfoOuterClass._ClientPlayLevelInfo.class, emu.grasscutter.net.proto._ClientPlayLevelInfoOuterClass._ClientPlayLevelInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -200,10 +200,10 @@ public final class _ClientPlayLevelInfoOuterClass {
       return iLGIBAJDEBD_;
     }
 
-    public static final int BEST_RECORD_FIELD_NUMBER = 9;
+    public static final int BEST_RECORD_FIELD_NUMBER = 14;
     private int bestRecord_;
     /**
-     * <code>uint32 best_record = 9;</code>
+     * <code>uint32 best_record = 14;</code>
      * @return The bestRecord.
      */
     @java.lang.Override
@@ -211,10 +211,10 @@ public final class _ClientPlayLevelInfoOuterClass {
       return bestRecord_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 14;
+    public static final int IS_OPEN_FIELD_NUMBER = 5;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 5;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -222,10 +222,10 @@ public final class _ClientPlayLevelInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int DETAIL_INFO_FIELD_NUMBER = 15;
+    public static final int DETAIL_INFO_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo detailInfo_;
     /**
-     * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+     * <code>._ClientPlayDetailInfo detail_info = 13;</code>
      * @return Whether the detailInfo field is set.
      */
     @java.lang.Override
@@ -233,7 +233,7 @@ public final class _ClientPlayLevelInfoOuterClass {
       return detailInfo_ != null;
     }
     /**
-     * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+     * <code>._ClientPlayDetailInfo detail_info = 13;</code>
      * @return The detailInfo.
      */
     @java.lang.Override
@@ -241,7 +241,7 @@ public final class _ClientPlayLevelInfoOuterClass {
       return detailInfo_ == null ? emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo.getDefaultInstance() : detailInfo_;
     }
     /**
-     * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+     * <code>._ClientPlayDetailInfo detail_info = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfoOrBuilder getDetailInfoOrBuilder() {
@@ -273,17 +273,17 @@ public final class _ClientPlayLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
-      }
-      if (bestRecord_ != 0) {
-        output.writeUInt32(9, bestRecord_);
-      }
       if (isOpen_ != false) {
-        output.writeBool(14, isOpen_);
+        output.writeBool(5, isOpen_);
       }
       if (detailInfo_ != null) {
-        output.writeMessage(15, getDetailInfo());
+        output.writeMessage(13, getDetailInfo());
+      }
+      if (bestRecord_ != 0) {
+        output.writeUInt32(14, bestRecord_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(15, levelId_);
       }
       if (iLGIBAJDEBD_ != 0) {
         output.writeUInt32(50000, iLGIBAJDEBD_);
@@ -300,21 +300,21 @@ public final class _ClientPlayLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
-      }
-      if (bestRecord_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, bestRecord_);
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isOpen_);
+          .computeBoolSize(5, isOpen_);
       }
       if (detailInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getDetailInfo());
+          .computeMessageSize(13, getDetailInfo());
+      }
+      if (bestRecord_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, bestRecord_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, levelId_);
       }
       if (iLGIBAJDEBD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -662,7 +662,7 @@ public final class _ClientPlayLevelInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -670,7 +670,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -681,7 +681,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -724,7 +724,7 @@ public final class _ClientPlayLevelInfoOuterClass {
 
       private int bestRecord_ ;
       /**
-       * <code>uint32 best_record = 9;</code>
+       * <code>uint32 best_record = 14;</code>
        * @return The bestRecord.
        */
       @java.lang.Override
@@ -732,7 +732,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return bestRecord_;
       }
       /**
-       * <code>uint32 best_record = 9;</code>
+       * <code>uint32 best_record = 14;</code>
        * @param value The bestRecord to set.
        * @return This builder for chaining.
        */
@@ -743,7 +743,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_record = 9;</code>
+       * <code>uint32 best_record = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestRecord() {
@@ -755,7 +755,7 @@ public final class _ClientPlayLevelInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 5;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -763,7 +763,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 5;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -774,7 +774,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -788,14 +788,14 @@ public final class _ClientPlayLevelInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo, emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo.Builder, emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfoOrBuilder> detailInfoBuilder_;
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        * @return Whether the detailInfo field is set.
        */
       public boolean hasDetailInfo() {
         return detailInfoBuilder_ != null || detailInfo_ != null;
       }
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        * @return The detailInfo.
        */
       public emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo getDetailInfo() {
@@ -806,7 +806,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         }
       }
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        */
       public Builder setDetailInfo(emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo value) {
         if (detailInfoBuilder_ == null) {
@@ -822,7 +822,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        */
       public Builder setDetailInfo(
           emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo.Builder builderForValue) {
@@ -836,7 +836,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        */
       public Builder mergeDetailInfo(emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo value) {
         if (detailInfoBuilder_ == null) {
@@ -854,7 +854,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        */
       public Builder clearDetailInfo() {
         if (detailInfoBuilder_ == null) {
@@ -868,7 +868,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        */
       public emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo.Builder getDetailInfoBuilder() {
         
@@ -876,7 +876,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         return getDetailInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        */
       public emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfoOrBuilder getDetailInfoOrBuilder() {
         if (detailInfoBuilder_ != null) {
@@ -887,7 +887,7 @@ public final class _ClientPlayLevelInfoOuterClass {
         }
       }
       /**
-       * <code>._ClientPlayDetailInfo detail_info = 15;</code>
+       * <code>._ClientPlayDetailInfo detail_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo, emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfo.Builder, emu.grasscutter.net.proto._ClientPlayDetailInfoOuterClass._ClientPlayDetailInfoOrBuilder> 
@@ -1002,9 +1002,9 @@ public final class _ClientPlayLevelInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032_ClientPlayLevelInfo.proto\032\033_ClientPla" +
       "yDetailInfo.proto\"\251\001\n\024_ClientPlayLevelIn" +
-      "fo\022\020\n\010level_id\030\002 \001(\r\022\025\n\013ILGIBAJDEBD\030\320\206\003 " +
-      "\001(\r\022\023\n\013best_record\030\t \001(\r\022\017\n\007is_open\030\016 \001(" +
-      "\010\022+\n\013detail_info\030\017 \001(\0132\026._ClientPlayDeta" +
+      "fo\022\020\n\010level_id\030\017 \001(\r\022\025\n\013ILGIBAJDEBD\030\320\206\003 " +
+      "\001(\r\022\023\n\013best_record\030\016 \001(\r\022\017\n\007is_open\030\005 \001(" +
+      "\010\022+\n\013detail_info\030\r \001(\0132\026._ClientPlayDeta" +
       "ilInfo\022\025\n\013PKBFAOEKLDP\030\321\206\003 \001(\rB;\n\031emu.gra" +
       "sscutter.net.protoB\036_ClientPlayLevelInfo" +
       "OuterClassb\006proto3"

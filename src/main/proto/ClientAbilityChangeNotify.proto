@@ -7,6 +7,6 @@ import "AbilityInvokeEntry.proto";
 
 message ClientAbilityChangeNotify {
 	bool is_init_hash = 8;
-	repeated AbilityInvokeEntry invokes = 13;
-	uint32 entity_id = 15;
+	repeated AbilityInvokeEntry invokes = 12;
+	uint32 entity_id = 2;
 }

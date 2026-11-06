@@ -6,6 +6,6 @@ option java_outer_classname = "AvatarAddNotifyOuterClass";
 import "AvatarInfo.proto";
 
 message AvatarAddNotify {
-	bool is_in_team = 10;
-	AvatarInfo avatar = 11;
+	bool is_in_team = 6;
+	AvatarInfo avatar = 4;
 }

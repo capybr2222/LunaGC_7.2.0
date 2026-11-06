@@ -19,7 +19,7 @@ public final class _BeyondWorldInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 OBONBLEEHBK = 1;</code>
+     * <code>uint32 OBONBLEEHBK = 20001;</code>
      * @return The oBONBLEEHBK.
      */
     int getOBONBLEEHBK();
@@ -88,11 +88,6 @@ public final class _BeyondWorldInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              oBONBLEEHBK_ = input.readUInt32();
-              break;
-            }
             case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 aIFEJOGBAKK_ = newLongList();
@@ -112,6 +107,11 @@ public final class _BeyondWorldInfoOuterClass {
                 aIFEJOGBAKK_.addLong(input.readUInt64());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 160008: {
+
+              oBONBLEEHBK_ = input.readUInt32();
               break;
             }
             default: {
@@ -149,10 +149,10 @@ public final class _BeyondWorldInfoOuterClass {
               emu.grasscutter.net.proto._BeyondWorldInfoOuterClass._BeyondWorldInfo.class, emu.grasscutter.net.proto._BeyondWorldInfoOuterClass._BeyondWorldInfo.Builder.class);
     }
 
-    public static final int OBONBLEEHBK_FIELD_NUMBER = 1;
+    public static final int OBONBLEEHBK_FIELD_NUMBER = 20001;
     private int oBONBLEEHBK_;
     /**
-     * <code>uint32 OBONBLEEHBK = 1;</code>
+     * <code>uint32 OBONBLEEHBK = 20001;</code>
      * @return The oBONBLEEHBK.
      */
     @java.lang.Override
@@ -203,15 +203,15 @@ public final class _BeyondWorldInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (oBONBLEEHBK_ != 0) {
-        output.writeUInt32(1, oBONBLEEHBK_);
-      }
       if (getAIFEJOGBAKKList().size() > 0) {
         output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(aIFEJOGBAKKMemoizedSerializedSize);
       }
       for (int i = 0; i < aIFEJOGBAKK_.size(); i++) {
         output.writeUInt64NoTag(aIFEJOGBAKK_.getLong(i));
+      }
+      if (oBONBLEEHBK_ != 0) {
+        output.writeUInt32(20001, oBONBLEEHBK_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,10 +222,6 @@ public final class _BeyondWorldInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (oBONBLEEHBK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, oBONBLEEHBK_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < aIFEJOGBAKK_.size(); i++) {
@@ -239,6 +235,10 @@ public final class _BeyondWorldInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         aIFEJOGBAKKMemoizedSerializedSize = dataSize;
+      }
+      if (oBONBLEEHBK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20001, oBONBLEEHBK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class _BeyondWorldInfoOuterClass {
 
       private int oBONBLEEHBK_ ;
       /**
-       * <code>uint32 OBONBLEEHBK = 1;</code>
+       * <code>uint32 OBONBLEEHBK = 20001;</code>
        * @return The oBONBLEEHBK.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class _BeyondWorldInfoOuterClass {
         return oBONBLEEHBK_;
       }
       /**
-       * <code>uint32 OBONBLEEHBK = 1;</code>
+       * <code>uint32 OBONBLEEHBK = 20001;</code>
        * @param value The oBONBLEEHBK to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class _BeyondWorldInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 OBONBLEEHBK = 1;</code>
+       * <code>uint32 OBONBLEEHBK = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearOBONBLEEHBK() {
@@ -713,10 +713,10 @@ public final class _BeyondWorldInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026_BeyondWorldInfo.proto\"<\n\020_BeyondWorld" +
-      "Info\022\023\n\013OBONBLEEHBK\030\001 \001(\r\022\023\n\013AIFEJOGBAKK" +
-      "\030\002 \003(\004B7\n\031emu.grasscutter.net.protoB\032_Be" +
-      "yondWorldInfoOuterClassb\006proto3"
+      "\n\026_BeyondWorldInfo.proto\">\n\020_BeyondWorld" +
+      "Info\022\025\n\013OBONBLEEHBK\030\241\234\001 \001(\r\022\023\n\013AIFEJOGBA" +
+      "KK\030\002 \003(\004B7\n\031emu.grasscutter.net.protoB\032_" +
+      "BeyondWorldInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

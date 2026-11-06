@@ -19,19 +19,19 @@ public final class GMBNGIKAPMNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 15;</code>
+     * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_finish = 9;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
@@ -81,19 +81,19 @@ public final class GMBNGIKAPMNOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 24: {
 
               isFinish_ = input.readBool();
               break;
             }
-            case 112: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 64: {
 
               isOpen_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class GMBNGIKAPMNOuterClass {
               emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.class, emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 15;
+    public static final int IS_OPEN_FIELD_NUMBER = 8;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 15;</code>
+     * <code>bool is_open = 8;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class GMBNGIKAPMNOuterClass {
       return isOpen_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 14;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class GMBNGIKAPMNOuterClass {
       return levelId_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 9;
+    public static final int IS_FINISH_FIELD_NUMBER = 3;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 9;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -176,13 +176,13 @@ public final class GMBNGIKAPMNOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isFinish_ != false) {
-        output.writeBool(9, isFinish_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(14, levelId_);
+        output.writeBool(3, isFinish_);
       }
       if (isOpen_ != false) {
-        output.writeBool(15, isOpen_);
+        output.writeBool(8, isOpen_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(10, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +195,15 @@ public final class GMBNGIKAPMNOuterClass {
       size = 0;
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isFinish_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, levelId_);
+          .computeBoolSize(3, isFinish_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isOpen_);
+          .computeBoolSize(8, isOpen_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -501,7 +501,7 @@ public final class GMBNGIKAPMNOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 15;</code>
+       * <code>bool is_open = 8;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class GMBNGIKAPMNOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 15;</code>
+       * <code>bool is_open = 8;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class GMBNGIKAPMNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 15;</code>
+       * <code>bool is_open = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -532,7 +532,7 @@ public final class GMBNGIKAPMNOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -540,7 +540,7 @@ public final class GMBNGIKAPMNOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -551,7 +551,7 @@ public final class GMBNGIKAPMNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -563,7 +563,7 @@ public final class GMBNGIKAPMNOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 9;</code>
+       * <code>bool is_finish = 3;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -571,7 +571,7 @@ public final class GMBNGIKAPMNOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 9;</code>
+       * <code>bool is_finish = 3;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -582,7 +582,7 @@ public final class GMBNGIKAPMNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 9;</code>
+       * <code>bool is_finish = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -659,8 +659,8 @@ public final class GMBNGIKAPMNOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021GMBNGIKAPMN.proto\"C\n\013GMBNGIKAPMN\022\017\n\007is" +
-      "_open\030\017 \001(\010\022\020\n\010level_id\030\016 \001(\r\022\021\n\tis_fini" +
-      "sh\030\t \001(\010B2\n\031emu.grasscutter.net.protoB\025G" +
+      "_open\030\010 \001(\010\022\020\n\010level_id\030\n \001(\r\022\021\n\tis_fini" +
+      "sh\030\003 \001(\010B2\n\031emu.grasscutter.net.protoB\025G" +
       "MBNGIKAPMNOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

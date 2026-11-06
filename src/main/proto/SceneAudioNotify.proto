@@ -8,10 +8,10 @@ message SceneAudioNotify {
 		NORMAL = 0;
 		INSTRUMENT_WIDGET = 1;
 	}
-	uint32 source_uid = 4;
-	int32 type = 8;
-	_SceneAudioBusinessType business_type = 12;
+	uint32 source_uid = 8;
+	int32 type = 9;
+	_SceneAudioBusinessType business_type = 1;
 	repeated string param3 = 2;
-	repeated float param2 = 13;
+	repeated float param2 = 10;
 	repeated uint32 param1 = 3;
 }

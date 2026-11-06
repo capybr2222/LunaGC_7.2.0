@@ -5,7 +5,7 @@ option java_outer_classname = "TowerMonthlyBriefOuterClass";
 
 message TowerMonthlyBrief {
 	uint32 best_floor_index = 8;
-	uint32 best_level_index = 5;
-	uint32 total_star_count = 13;
-	uint32 tower_schedule_id = 9;
+	uint32 best_level_index = 7;
+	uint32 total_star_count = 14;
+	uint32 tower_schedule_id = 11;
 }

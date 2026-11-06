@@ -9,6 +9,6 @@ message CoopReward {
 		STATE_LOCK = 1;
 		STATE_TAKEN = 2;
 	}
-	uint32 id = 10;
-	State state = 13;
+	uint32 id = 3;
+	State state = 5;
 }

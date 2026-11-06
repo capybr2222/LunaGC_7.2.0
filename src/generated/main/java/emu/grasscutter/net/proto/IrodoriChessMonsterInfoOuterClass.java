@@ -19,36 +19,36 @@ public final class IrodoriChessMonsterInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 11;</code>
+     * <code>uint32 level = 2;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 grant_points = 1;</code>
+     * <code>uint32 grant_points = 4;</code>
      * @return The grantPoints.
      */
     int getGrantPoints();
 
     /**
-     * <code>repeated uint32 affix_list = 8;</code>
+     * <code>repeated uint32 affix_list = 3;</code>
      * @return A list containing the affixList.
      */
     java.util.List<java.lang.Integer> getAffixListList();
     /**
-     * <code>repeated uint32 affix_list = 8;</code>
+     * <code>repeated uint32 affix_list = 3;</code>
      * @return The count of affixList.
      */
     int getAffixListCount();
     /**
-     * <code>repeated uint32 affix_list = 8;</code>
+     * <code>repeated uint32 affix_list = 3;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
      */
     int getAffixList(int index);
 
     /**
-     * <code>uint32 monster_id = 2;</code>
+     * <code>uint32 monster_id = 1;</code>
      * @return The monsterId.
      */
     int getMonsterId();
@@ -102,15 +102,15 @@ public final class IrodoriChessMonsterInfoOuterClass {
               break;
             case 8: {
 
-              grantPoints_ = input.readUInt32();
+              monsterId_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              monsterId_ = input.readUInt32();
+              level_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 affixList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -118,7 +118,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
               affixList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -131,9 +131,9 @@ public final class IrodoriChessMonsterInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
+            case 32: {
 
-              level_ = input.readUInt32();
+              grantPoints_ = input.readUInt32();
               break;
             }
             default: {
@@ -171,10 +171,10 @@ public final class IrodoriChessMonsterInfoOuterClass {
               emu.grasscutter.net.proto.IrodoriChessMonsterInfoOuterClass.IrodoriChessMonsterInfo.class, emu.grasscutter.net.proto.IrodoriChessMonsterInfoOuterClass.IrodoriChessMonsterInfo.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 11;
+    public static final int LEVEL_FIELD_NUMBER = 2;
     private int level_;
     /**
-     * <code>uint32 level = 11;</code>
+     * <code>uint32 level = 2;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -182,10 +182,10 @@ public final class IrodoriChessMonsterInfoOuterClass {
       return level_;
     }
 
-    public static final int GRANT_POINTS_FIELD_NUMBER = 1;
+    public static final int GRANT_POINTS_FIELD_NUMBER = 4;
     private int grantPoints_;
     /**
-     * <code>uint32 grant_points = 1;</code>
+     * <code>uint32 grant_points = 4;</code>
      * @return The grantPoints.
      */
     @java.lang.Override
@@ -193,10 +193,10 @@ public final class IrodoriChessMonsterInfoOuterClass {
       return grantPoints_;
     }
 
-    public static final int AFFIX_LIST_FIELD_NUMBER = 8;
+    public static final int AFFIX_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList affixList_;
     /**
-     * <code>repeated uint32 affix_list = 8;</code>
+     * <code>repeated uint32 affix_list = 3;</code>
      * @return A list containing the affixList.
      */
     @java.lang.Override
@@ -205,14 +205,14 @@ public final class IrodoriChessMonsterInfoOuterClass {
       return affixList_;
     }
     /**
-     * <code>repeated uint32 affix_list = 8;</code>
+     * <code>repeated uint32 affix_list = 3;</code>
      * @return The count of affixList.
      */
     public int getAffixListCount() {
       return affixList_.size();
     }
     /**
-     * <code>repeated uint32 affix_list = 8;</code>
+     * <code>repeated uint32 affix_list = 3;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
      */
@@ -221,10 +221,10 @@ public final class IrodoriChessMonsterInfoOuterClass {
     }
     private int affixListMemoizedSerializedSize = -1;
 
-    public static final int MONSTER_ID_FIELD_NUMBER = 2;
+    public static final int MONSTER_ID_FIELD_NUMBER = 1;
     private int monsterId_;
     /**
-     * <code>uint32 monster_id = 2;</code>
+     * <code>uint32 monster_id = 1;</code>
      * @return The monsterId.
      */
     @java.lang.Override
@@ -247,21 +247,21 @@ public final class IrodoriChessMonsterInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (grantPoints_ != 0) {
-        output.writeUInt32(1, grantPoints_);
-      }
       if (monsterId_ != 0) {
-        output.writeUInt32(2, monsterId_);
+        output.writeUInt32(1, monsterId_);
+      }
+      if (level_ != 0) {
+        output.writeUInt32(2, level_);
       }
       if (getAffixListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(affixListMemoizedSerializedSize);
       }
       for (int i = 0; i < affixList_.size(); i++) {
         output.writeUInt32NoTag(affixList_.getInt(i));
       }
-      if (level_ != 0) {
-        output.writeUInt32(11, level_);
+      if (grantPoints_ != 0) {
+        output.writeUInt32(4, grantPoints_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,13 +272,13 @@ public final class IrodoriChessMonsterInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (grantPoints_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, grantPoints_);
-      }
       if (monsterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, monsterId_);
+          .computeUInt32Size(1, monsterId_);
+      }
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, level_);
       }
       {
         int dataSize = 0;
@@ -294,9 +294,9 @@ public final class IrodoriChessMonsterInfoOuterClass {
         }
         affixListMemoizedSerializedSize = dataSize;
       }
-      if (level_ != 0) {
+      if (grantPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, level_);
+          .computeUInt32Size(4, grantPoints_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -617,7 +617,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 2;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -625,7 +625,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 2;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -636,7 +636,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 11;</code>
+       * <code>uint32 level = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -648,7 +648,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
 
       private int grantPoints_ ;
       /**
-       * <code>uint32 grant_points = 1;</code>
+       * <code>uint32 grant_points = 4;</code>
        * @return The grantPoints.
        */
       @java.lang.Override
@@ -656,7 +656,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return grantPoints_;
       }
       /**
-       * <code>uint32 grant_points = 1;</code>
+       * <code>uint32 grant_points = 4;</code>
        * @param value The grantPoints to set.
        * @return This builder for chaining.
        */
@@ -667,7 +667,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 grant_points = 1;</code>
+       * <code>uint32 grant_points = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearGrantPoints() {
@@ -685,7 +685,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 affix_list = 8;</code>
+       * <code>repeated uint32 affix_list = 3;</code>
        * @return A list containing the affixList.
        */
       public java.util.List<java.lang.Integer>
@@ -694,14 +694,14 @@ public final class IrodoriChessMonsterInfoOuterClass {
                  java.util.Collections.unmodifiableList(affixList_) : affixList_;
       }
       /**
-       * <code>repeated uint32 affix_list = 8;</code>
+       * <code>repeated uint32 affix_list = 3;</code>
        * @return The count of affixList.
        */
       public int getAffixListCount() {
         return affixList_.size();
       }
       /**
-       * <code>repeated uint32 affix_list = 8;</code>
+       * <code>repeated uint32 affix_list = 3;</code>
        * @param index The index of the element to return.
        * @return The affixList at the given index.
        */
@@ -709,7 +709,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return affixList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 affix_list = 8;</code>
+       * <code>repeated uint32 affix_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The affixList to set.
        * @return This builder for chaining.
@@ -722,7 +722,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affix_list = 8;</code>
+       * <code>repeated uint32 affix_list = 3;</code>
        * @param value The affixList to add.
        * @return This builder for chaining.
        */
@@ -733,7 +733,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affix_list = 8;</code>
+       * <code>repeated uint32 affix_list = 3;</code>
        * @param values The affixList to add.
        * @return This builder for chaining.
        */
@@ -746,7 +746,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affix_list = 8;</code>
+       * <code>repeated uint32 affix_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearAffixList() {
@@ -758,7 +758,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
 
       private int monsterId_ ;
       /**
-       * <code>uint32 monster_id = 2;</code>
+       * <code>uint32 monster_id = 1;</code>
        * @return The monsterId.
        */
       @java.lang.Override
@@ -766,7 +766,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return monsterId_;
       }
       /**
-       * <code>uint32 monster_id = 2;</code>
+       * <code>uint32 monster_id = 1;</code>
        * @param value The monsterId to set.
        * @return This builder for chaining.
        */
@@ -777,7 +777,7 @@ public final class IrodoriChessMonsterInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 monster_id = 2;</code>
+       * <code>uint32 monster_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterId() {
@@ -854,9 +854,9 @@ public final class IrodoriChessMonsterInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035IrodoriChessMonsterInfo.proto\"f\n\027Irodo" +
-      "riChessMonsterInfo\022\r\n\005level\030\013 \001(\r\022\024\n\014gra" +
-      "nt_points\030\001 \001(\r\022\022\n\naffix_list\030\010 \003(\r\022\022\n\nm" +
-      "onster_id\030\002 \001(\rB>\n\031emu.grasscutter.net.p" +
+      "riChessMonsterInfo\022\r\n\005level\030\002 \001(\r\022\024\n\014gra" +
+      "nt_points\030\004 \001(\r\022\022\n\naffix_list\030\003 \003(\r\022\022\n\nm" +
+      "onster_id\030\001 \001(\rB>\n\031emu.grasscutter.net.p" +
       "rotoB!IrodoriChessMonsterInfoOuterClassb" +
       "\006proto3"
     };

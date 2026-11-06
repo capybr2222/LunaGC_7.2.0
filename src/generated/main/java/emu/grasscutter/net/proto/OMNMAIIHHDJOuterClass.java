@@ -55,13 +55,13 @@ public final class OMNMAIIHHDJOuterClass {
         int index);
 
     /**
-     * <code>uint32 PDDGCIDOLBL = 50000;</code>
+     * <code>uint32 PDDGCIDOLBL = 7;</code>
      * @return The pDDGCIDOLBL.
      */
     int getPDDGCIDOLBL();
 
     /**
-     * <code>uint32 IKADJGPFNOI = 50001;</code>
+     * <code>uint32 IKADJGPFNOI = 12;</code>
      * @return The iKADJGPFNOI.
      */
     int getIKADJGPFNOI();
@@ -228,6 +228,11 @@ public final class OMNMAIIHHDJOuterClass {
               hALOGJLKGLB_ = input.readUInt64();
               break;
             }
+            case 56: {
+
+              pDDGCIDOLBL_ = input.readUInt32();
+              break;
+            }
             case 66: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 pDNALAKIIKL_ = new java.util.ArrayList<emu.grasscutter.net.proto.OLNDJCHOPMCOuterClass.OLNDJCHOPMC>();
@@ -246,6 +251,11 @@ public final class OMNMAIIHHDJOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
+            case 96: {
+
+              iKADJGPFNOI_ = input.readUInt32();
+              break;
+            }
             case 104: {
 
               isOpen_ = input.readBool();
@@ -254,16 +264,6 @@ public final class OMNMAIIHHDJOuterClass {
             case 120: {
 
               hBCLKADPLED_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
-
-              pDDGCIDOLBL_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              iKADJGPFNOI_ = input.readUInt32();
               break;
             }
             default: {
@@ -372,10 +372,10 @@ public final class OMNMAIIHHDJOuterClass {
       return recordList_.get(index);
     }
 
-    public static final int PDDGCIDOLBL_FIELD_NUMBER = 50000;
+    public static final int PDDGCIDOLBL_FIELD_NUMBER = 7;
     private int pDDGCIDOLBL_;
     /**
-     * <code>uint32 PDDGCIDOLBL = 50000;</code>
+     * <code>uint32 PDDGCIDOLBL = 7;</code>
      * @return The pDDGCIDOLBL.
      */
     @java.lang.Override
@@ -383,10 +383,10 @@ public final class OMNMAIIHHDJOuterClass {
       return pDDGCIDOLBL_;
     }
 
-    public static final int IKADJGPFNOI_FIELD_NUMBER = 50001;
+    public static final int IKADJGPFNOI_FIELD_NUMBER = 12;
     private int iKADJGPFNOI_;
     /**
-     * <code>uint32 IKADJGPFNOI = 50001;</code>
+     * <code>uint32 IKADJGPFNOI = 12;</code>
      * @return The iKADJGPFNOI.
      */
     @java.lang.Override
@@ -562,23 +562,23 @@ public final class OMNMAIIHHDJOuterClass {
       if (hALOGJLKGLB_ != 0L) {
         output.writeUInt64(6, hALOGJLKGLB_);
       }
+      if (pDDGCIDOLBL_ != 0) {
+        output.writeUInt32(7, pDDGCIDOLBL_);
+      }
       for (int i = 0; i < pDNALAKIIKL_.size(); i++) {
         output.writeMessage(8, pDNALAKIIKL_.get(i));
       }
       for (int i = 0; i < aABFCMMGMKE_.size(); i++) {
         output.writeMessage(9, aABFCMMGMKE_.get(i));
       }
+      if (iKADJGPFNOI_ != 0) {
+        output.writeUInt32(12, iKADJGPFNOI_);
+      }
       if (isOpen_ != false) {
         output.writeBool(13, isOpen_);
       }
       if (hBCLKADPLED_ != 0) {
         output.writeUInt32(15, hBCLKADPLED_);
-      }
-      if (pDDGCIDOLBL_ != 0) {
-        output.writeUInt32(50000, pDDGCIDOLBL_);
-      }
-      if (iKADJGPFNOI_ != 0) {
-        output.writeUInt32(50001, iKADJGPFNOI_);
       }
       unknownFields.writeTo(output);
     }
@@ -605,6 +605,10 @@ public final class OMNMAIIHHDJOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(6, hALOGJLKGLB_);
       }
+      if (pDDGCIDOLBL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, pDDGCIDOLBL_);
+      }
       for (int i = 0; i < pDNALAKIIKL_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, pDNALAKIIKL_.get(i));
@@ -613,6 +617,10 @@ public final class OMNMAIIHHDJOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, aABFCMMGMKE_.get(i));
       }
+      if (iKADJGPFNOI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, iKADJGPFNOI_);
+      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(13, isOpen_);
@@ -620,14 +628,6 @@ public final class OMNMAIIHHDJOuterClass {
       if (hBCLKADPLED_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, hBCLKADPLED_);
-      }
-      if (pDDGCIDOLBL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, pDDGCIDOLBL_);
-      }
-      if (iKADJGPFNOI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, iKADJGPFNOI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1452,7 +1452,7 @@ public final class OMNMAIIHHDJOuterClass {
 
       private int pDDGCIDOLBL_ ;
       /**
-       * <code>uint32 PDDGCIDOLBL = 50000;</code>
+       * <code>uint32 PDDGCIDOLBL = 7;</code>
        * @return The pDDGCIDOLBL.
        */
       @java.lang.Override
@@ -1460,7 +1460,7 @@ public final class OMNMAIIHHDJOuterClass {
         return pDDGCIDOLBL_;
       }
       /**
-       * <code>uint32 PDDGCIDOLBL = 50000;</code>
+       * <code>uint32 PDDGCIDOLBL = 7;</code>
        * @param value The pDDGCIDOLBL to set.
        * @return This builder for chaining.
        */
@@ -1471,7 +1471,7 @@ public final class OMNMAIIHHDJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 PDDGCIDOLBL = 50000;</code>
+       * <code>uint32 PDDGCIDOLBL = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearPDDGCIDOLBL() {
@@ -1483,7 +1483,7 @@ public final class OMNMAIIHHDJOuterClass {
 
       private int iKADJGPFNOI_ ;
       /**
-       * <code>uint32 IKADJGPFNOI = 50001;</code>
+       * <code>uint32 IKADJGPFNOI = 12;</code>
        * @return The iKADJGPFNOI.
        */
       @java.lang.Override
@@ -1491,7 +1491,7 @@ public final class OMNMAIIHHDJOuterClass {
         return iKADJGPFNOI_;
       }
       /**
-       * <code>uint32 IKADJGPFNOI = 50001;</code>
+       * <code>uint32 IKADJGPFNOI = 12;</code>
        * @param value The iKADJGPFNOI to set.
        * @return This builder for chaining.
        */
@@ -1502,7 +1502,7 @@ public final class OMNMAIIHHDJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 IKADJGPFNOI = 50001;</code>
+       * <code>uint32 IKADJGPFNOI = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIKADJGPFNOI() {
@@ -2361,16 +2361,16 @@ public final class OMNMAIIHHDJOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021OMNMAIIHHDJ.proto\032\021FIIHDNCNDHH.proto\032\021" +
-      "OLNDJCHOPMC.proto\032\020Uint32Pair.proto\"\225\002\n\013" +
+      "OLNDJCHOPMC.proto\032\020Uint32Pair.proto\"\221\002\n\013" +
       "OMNMAIIHHDJ\022\023\n\013FHIOEKBKAJF\030\001 \001(\010\022\023\n\013HALO" +
       "GJLKGLB\030\006 \001(\004\022!\n\013record_list\030\002 \003(\0132\014.FII" +
-      "HDNCNDHH\022\025\n\013PDDGCIDOLBL\030\320\206\003 \001(\r\022\025\n\013IKADJ" +
-      "GPFNOI\030\321\206\003 \001(\r\022 \n\013KEJAEGGMIBJ\030\005 \003(\0132\013.Ui" +
-      "nt32Pair\022 \n\013AABFCMMGMKE\030\t \003(\0132\013.Uint32Pa" +
-      "ir\022\017\n\007is_open\030\r \001(\010\022\023\n\013HBCLKADPLED\030\017 \001(\r" +
-      "\022!\n\013PDNALAKIIKL\030\010 \003(\0132\014.OLNDJCHOPMCB2\n\031e" +
-      "mu.grasscutter.net.protoB\025OMNMAIIHHDJOut" +
-      "erClassb\006proto3"
+      "HDNCNDHH\022\023\n\013PDDGCIDOLBL\030\007 \001(\r\022\023\n\013IKADJGP" +
+      "FNOI\030\014 \001(\r\022 \n\013KEJAEGGMIBJ\030\005 \003(\0132\013.Uint32" +
+      "Pair\022 \n\013AABFCMMGMKE\030\t \003(\0132\013.Uint32Pair\022\017" +
+      "\n\007is_open\030\r \001(\010\022\023\n\013HBCLKADPLED\030\017 \001(\r\022!\n\013" +
+      "PDNALAKIIKL\030\010 \003(\0132\014.OLNDJCHOPMCB2\n\031emu.g" +
+      "rasscutter.net.protoB\025OMNMAIIHHDJOuterCl" +
+      "assb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -4,9 +4,9 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "_UgcV2OfficialLevelDataOuterClass";
 
 message _UgcV2OfficialLevelData {
-	uint32 level_id = 15;
-	bool is_level_open = 14;
-	bool is_finished = 12;
-	uint32 best_score = 3;
-	uint64 _level_guid = 11;
+	uint32 level_id = 1;
+	bool is_level_open = 3;
+	bool is_finished = 4;
+	uint32 best_score = 2;
+	uint64 _level_guid = 5;
 }

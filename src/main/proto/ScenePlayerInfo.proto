@@ -6,10 +6,10 @@ option java_outer_classname = "ScenePlayerInfoOuterClass";
 import "OnlinePlayerInfo.proto";
 
 message ScenePlayerInfo {
-	uint32 scene_id = 6;
-	OnlinePlayerInfo online_player_info = 7;
-	uint32 peer_id = 8;
+	uint32 scene_id = 13;
+	OnlinePlayerInfo online_player_info = 4;
+	uint32 peer_id = 6;
 	uint32 uid = 9;
-	string name = 11;
-	bool is_connected = 2;
+	string name = 3;
+	bool is_connected = 7;
 }

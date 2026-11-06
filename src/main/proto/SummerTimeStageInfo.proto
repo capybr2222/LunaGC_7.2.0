@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "SummerTimeStageInfoOuterClass";
 
 message SummerTimeStageInfo {
-	bool is_open = 14;
-	uint32 stage_id = 13;
-	uint32 open_time = 12;
+	bool is_open = 2;
+	uint32 stage_id = 1;
+	uint32 open_time = 3;
 }

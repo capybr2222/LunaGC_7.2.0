@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ALCMFKHLGHGOuterClass";
 
 message ALCMFKHLGHG {
-	uint32 level_id = 9;
-	bool is_open = 11;
-	repeated uint32 PMAGDGDGAJO = 12;
+	uint32 level_id = 12;
+	bool is_open = 7;
+	repeated uint32 PMAGDGDGAJO = 11;
 }

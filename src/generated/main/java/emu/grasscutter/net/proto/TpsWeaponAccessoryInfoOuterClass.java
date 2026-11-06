@@ -19,13 +19,13 @@ public final class TpsWeaponAccessoryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ammunition_type = 7;</code>
+     * <code>uint32 ammunition_type = 6;</code>
      * @return The ammunitionType.
      */
     int getAmmunitionType();
 
     /**
-     * <code>uint32 ammunition_config_id = 11;</code>
+     * <code>uint32 ammunition_config_id = 20001;</code>
      * @return The ammunitionConfigId.
      */
     int getAmmunitionConfigId();
@@ -87,14 +87,9 @@ public final class TpsWeaponAccessoryInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 48: {
 
               ammunitionType_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              ammunitionConfigId_ = input.readUInt32();
               break;
             }
             case 96: {
@@ -105,6 +100,11 @@ public final class TpsWeaponAccessoryInfoOuterClass {
             case 112: {
 
               currentAmmunition_ = input.readUInt32();
+              break;
+            }
+            case 160008: {
+
+              ammunitionConfigId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class TpsWeaponAccessoryInfoOuterClass {
               emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.class, emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder.class);
     }
 
-    public static final int AMMUNITION_TYPE_FIELD_NUMBER = 7;
+    public static final int AMMUNITION_TYPE_FIELD_NUMBER = 6;
     private int ammunitionType_;
     /**
-     * <code>uint32 ammunition_type = 7;</code>
+     * <code>uint32 ammunition_type = 6;</code>
      * @return The ammunitionType.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class TpsWeaponAccessoryInfoOuterClass {
       return ammunitionType_;
     }
 
-    public static final int AMMUNITION_CONFIG_ID_FIELD_NUMBER = 11;
+    public static final int AMMUNITION_CONFIG_ID_FIELD_NUMBER = 20001;
     private int ammunitionConfigId_;
     /**
-     * <code>uint32 ammunition_config_id = 11;</code>
+     * <code>uint32 ammunition_config_id = 20001;</code>
      * @return The ammunitionConfigId.
      */
     @java.lang.Override
@@ -198,16 +198,16 @@ public final class TpsWeaponAccessoryInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ammunitionType_ != 0) {
-        output.writeUInt32(7, ammunitionType_);
-      }
-      if (ammunitionConfigId_ != 0) {
-        output.writeUInt32(11, ammunitionConfigId_);
+        output.writeUInt32(6, ammunitionType_);
       }
       if (weaponEntityId_ != 0) {
         output.writeUInt32(12, weaponEntityId_);
       }
       if (currentAmmunition_ != 0) {
         output.writeUInt32(14, currentAmmunition_);
+      }
+      if (ammunitionConfigId_ != 0) {
+        output.writeUInt32(20001, ammunitionConfigId_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,11 +220,7 @@ public final class TpsWeaponAccessoryInfoOuterClass {
       size = 0;
       if (ammunitionType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, ammunitionType_);
-      }
-      if (ammunitionConfigId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, ammunitionConfigId_);
+          .computeUInt32Size(6, ammunitionType_);
       }
       if (weaponEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -233,6 +229,10 @@ public final class TpsWeaponAccessoryInfoOuterClass {
       if (currentAmmunition_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, currentAmmunition_);
+      }
+      if (ammunitionConfigId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20001, ammunitionConfigId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -538,7 +538,7 @@ public final class TpsWeaponAccessoryInfoOuterClass {
 
       private int ammunitionType_ ;
       /**
-       * <code>uint32 ammunition_type = 7;</code>
+       * <code>uint32 ammunition_type = 6;</code>
        * @return The ammunitionType.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class TpsWeaponAccessoryInfoOuterClass {
         return ammunitionType_;
       }
       /**
-       * <code>uint32 ammunition_type = 7;</code>
+       * <code>uint32 ammunition_type = 6;</code>
        * @param value The ammunitionType to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class TpsWeaponAccessoryInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ammunition_type = 7;</code>
+       * <code>uint32 ammunition_type = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearAmmunitionType() {
@@ -569,7 +569,7 @@ public final class TpsWeaponAccessoryInfoOuterClass {
 
       private int ammunitionConfigId_ ;
       /**
-       * <code>uint32 ammunition_config_id = 11;</code>
+       * <code>uint32 ammunition_config_id = 20001;</code>
        * @return The ammunitionConfigId.
        */
       @java.lang.Override
@@ -577,7 +577,7 @@ public final class TpsWeaponAccessoryInfoOuterClass {
         return ammunitionConfigId_;
       }
       /**
-       * <code>uint32 ammunition_config_id = 11;</code>
+       * <code>uint32 ammunition_config_id = 20001;</code>
        * @param value The ammunitionConfigId to set.
        * @return This builder for chaining.
        */
@@ -588,7 +588,7 @@ public final class TpsWeaponAccessoryInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ammunition_config_id = 11;</code>
+       * <code>uint32 ammunition_config_id = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearAmmunitionConfigId() {
@@ -726,12 +726,12 @@ public final class TpsWeaponAccessoryInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TpsWeaponAccessoryInfo.proto\"\205\001\n\026TpsWe" +
-      "aponAccessoryInfo\022\027\n\017ammunition_type\030\007 \001" +
-      "(\r\022\034\n\024ammunition_config_id\030\013 \001(\r\022\030\n\020weap" +
-      "on_entity_id\030\014 \001(\r\022\032\n\022current_ammunition" +
-      "\030\016 \001(\rB=\n\031emu.grasscutter.net.protoB Tps" +
-      "WeaponAccessoryInfoOuterClassb\006proto3"
+      "\n\034TpsWeaponAccessoryInfo.proto\"\207\001\n\026TpsWe" +
+      "aponAccessoryInfo\022\027\n\017ammunition_type\030\006 \001" +
+      "(\r\022\036\n\024ammunition_config_id\030\241\234\001 \001(\r\022\030\n\020we" +
+      "apon_entity_id\030\014 \001(\r\022\032\n\022current_ammuniti" +
+      "on\030\016 \001(\rB=\n\031emu.grasscutter.net.protoB T" +
+      "psWeaponAccessoryInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

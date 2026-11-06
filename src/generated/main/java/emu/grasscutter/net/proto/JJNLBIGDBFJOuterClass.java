@@ -19,25 +19,25 @@ public final class JJNLBIGDBFJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_open = 5;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finish = 6;</code>
+     * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 use_time = 7;</code>
+     * <code>uint32 use_time = 14;</code>
      * @return The useTime.
      */
     int getUseTime();
@@ -87,24 +87,24 @@ public final class JJNLBIGDBFJOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
             case 40: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 48: {
 
               isFinish_ = input.readBool();
               break;
             }
-            case 56: {
+            case 48: {
+
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 112: {
 
               useTime_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class JJNLBIGDBFJOuterClass {
               emu.grasscutter.net.proto.JJNLBIGDBFJOuterClass.JJNLBIGDBFJ.class, emu.grasscutter.net.proto.JJNLBIGDBFJOuterClass.JJNLBIGDBFJ.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class JJNLBIGDBFJOuterClass {
       return levelId_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 5;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 5;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class JJNLBIGDBFJOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 6;
+    public static final int IS_FINISH_FIELD_NUMBER = 5;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 6;</code>
+     * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class JJNLBIGDBFJOuterClass {
       return isFinish_;
     }
 
-    public static final int USE_TIME_FIELD_NUMBER = 7;
+    public static final int USE_TIME_FIELD_NUMBER = 14;
     private int useTime_;
     /**
-     * <code>uint32 use_time = 7;</code>
+     * <code>uint32 use_time = 14;</code>
      * @return The useTime.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class JJNLBIGDBFJOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
+      if (isFinish_ != false) {
+        output.writeBool(5, isFinish_);
       }
       if (isOpen_ != false) {
-        output.writeBool(5, isOpen_);
-      }
-      if (isFinish_ != false) {
-        output.writeBool(6, isFinish_);
+        output.writeBool(6, isOpen_);
       }
       if (useTime_ != 0) {
-        output.writeUInt32(7, useTime_);
+        output.writeUInt32(14, useTime_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class JJNLBIGDBFJOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
+      if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
+          .computeBoolSize(5, isFinish_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isOpen_);
-      }
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isFinish_);
+          .computeBoolSize(6, isOpen_);
       }
       if (useTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, useTime_);
+          .computeUInt32Size(14, useTime_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class JJNLBIGDBFJOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class JJNLBIGDBFJOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class JJNLBIGDBFJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -571,7 +571,7 @@ public final class JJNLBIGDBFJOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 5;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class JJNLBIGDBFJOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 5;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class JJNLBIGDBFJOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 5;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -602,7 +602,7 @@ public final class JJNLBIGDBFJOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 5;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class JJNLBIGDBFJOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 5;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class JJNLBIGDBFJOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -633,7 +633,7 @@ public final class JJNLBIGDBFJOuterClass {
 
       private int useTime_ ;
       /**
-       * <code>uint32 use_time = 7;</code>
+       * <code>uint32 use_time = 14;</code>
        * @return The useTime.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class JJNLBIGDBFJOuterClass {
         return useTime_;
       }
       /**
-       * <code>uint32 use_time = 7;</code>
+       * <code>uint32 use_time = 14;</code>
        * @param value The useTime to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class JJNLBIGDBFJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 use_time = 7;</code>
+       * <code>uint32 use_time = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearUseTime() {
@@ -729,8 +729,8 @@ public final class JJNLBIGDBFJOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021JJNLBIGDBFJ.proto\"U\n\013JJNLBIGDBFJ\022\020\n\010le" +
-      "vel_id\030\001 \001(\r\022\017\n\007is_open\030\005 \001(\010\022\021\n\tis_fini" +
-      "sh\030\006 \001(\010\022\020\n\010use_time\030\007 \001(\rB2\n\031emu.grassc" +
+      "vel_id\030\017 \001(\r\022\017\n\007is_open\030\006 \001(\010\022\021\n\tis_fini" +
+      "sh\030\005 \001(\010\022\020\n\010use_time\030\016 \001(\rB2\n\031emu.grassc" +
       "utter.net.protoB\025JJNLBIGDBFJOuterClassb\006" +
       "proto3"
     };

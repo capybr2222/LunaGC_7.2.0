@@ -271,7 +271,8 @@ public class EntityAvatar extends GameEntity {
                         .setWearingFlycloakId(avatar.getFlyCloak())
                         .setCostumeId(avatar.getCostume())
                         .setTraceEffectId(avatar.getTraceEffect())
-                        .setBornTime(avatar.getBornTime());
+                        .setBornTime(avatar.getBornTime())
+                        .setExcelInfo(avatar.getExcelInfo());
 
         for (GameItem item : avatar.getEquips().values()) {
             if (item.getItemData().getEquipType() == EquipType.EQUIP_WEAPON) {
@@ -347,7 +348,7 @@ public class EntityAvatar extends GameEntity {
 
         boolean inNatlan = this.getPlayer().isInNatlan();
         int phlogistonHash = Utils.abilityHash("DynamicAbility_Phlogiston");
-        for (int id : GameConstants.DEFAULT_ABILITY_HASHES) {
+        for (int id : GameConstants.defaultAbilityHashes()) {
             if (id == phlogistonHash && !inNatlan) continue;
             AbilityEmbryo emb =
                     AbilityEmbryo.newBuilder()

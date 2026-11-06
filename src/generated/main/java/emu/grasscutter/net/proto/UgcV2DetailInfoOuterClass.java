@@ -25,25 +25,25 @@ public final class UgcV2DetailInfoOuterClass {
     boolean getAIKDBBNMIJB();
 
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData> 
         getOfficialLevelDataListList();
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData getOfficialLevelDataList(int index);
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     int getOfficialLevelDataListCount();
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelDataOrBuilder> 
         getOfficialLevelDataListOrBuilderList();
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelDataOrBuilder getOfficialLevelDataListOrBuilder(
         int index);
@@ -101,7 +101,7 @@ public final class UgcV2DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 OfficialLevelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -166,17 +166,17 @@ public final class UgcV2DetailInfoOuterClass {
       return aIKDBBNMIJB_;
     }
 
-    public static final int _OFFICIAL_LEVEL_DATA_LIST_FIELD_NUMBER = 3;
+    public static final int _OFFICIAL_LEVEL_DATA_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData> OfficialLevelDataList_;
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData> getOfficialLevelDataListList() {
       return OfficialLevelDataList_;
     }
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelDataOrBuilder> 
@@ -184,21 +184,21 @@ public final class UgcV2DetailInfoOuterClass {
       return OfficialLevelDataList_;
     }
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     @java.lang.Override
     public int getOfficialLevelDataListCount() {
       return OfficialLevelDataList_.size();
     }
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData getOfficialLevelDataList(int index) {
       return OfficialLevelDataList_.get(index);
     }
     /**
-     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+     * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelDataOrBuilder getOfficialLevelDataListOrBuilder(
@@ -232,7 +232,7 @@ public final class UgcV2DetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < OfficialLevelDataList_.size(); i++) {
-        output.writeMessage(3, OfficialLevelDataList_.get(i));
+        output.writeMessage(2, OfficialLevelDataList_.get(i));
       }
       if (aIKDBBNMIJB_ != false) {
         output.writeBool(50000, aIKDBBNMIJB_);
@@ -251,7 +251,7 @@ public final class UgcV2DetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < OfficialLevelDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, OfficialLevelDataList_.get(i));
+          .computeMessageSize(2, OfficialLevelDataList_.get(i));
       }
       if (aIKDBBNMIJB_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -639,7 +639,7 @@ public final class UgcV2DetailInfoOuterClass {
           emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData, emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder, emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelDataOrBuilder> OfficialLevelDataListBuilder_;
 
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData> getOfficialLevelDataListList() {
         if (OfficialLevelDataListBuilder_ == null) {
@@ -649,7 +649,7 @@ public final class UgcV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public int getOfficialLevelDataListCount() {
         if (OfficialLevelDataListBuilder_ == null) {
@@ -659,7 +659,7 @@ public final class UgcV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData getOfficialLevelDataList(int index) {
         if (OfficialLevelDataListBuilder_ == null) {
@@ -669,7 +669,7 @@ public final class UgcV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder setOfficialLevelDataList(
           int index, emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData value) {
@@ -686,7 +686,7 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder setOfficialLevelDataList(
           int index, emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder builderForValue) {
@@ -700,7 +700,7 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder addOfficialLevelDataList(emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData value) {
         if (OfficialLevelDataListBuilder_ == null) {
@@ -716,7 +716,7 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder addOfficialLevelDataList(
           int index, emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData value) {
@@ -733,7 +733,7 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder addOfficialLevelDataList(
           emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder builderForValue) {
@@ -747,7 +747,7 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder addOfficialLevelDataList(
           int index, emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder builderForValue) {
@@ -761,7 +761,7 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder addAllOfficialLevelDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData> values) {
@@ -776,7 +776,7 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder clearOfficialLevelDataList() {
         if (OfficialLevelDataListBuilder_ == null) {
@@ -789,7 +789,7 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public Builder removeOfficialLevelDataList(int index) {
         if (OfficialLevelDataListBuilder_ == null) {
@@ -802,14 +802,14 @@ public final class UgcV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder getOfficialLevelDataListBuilder(
           int index) {
         return getOfficialLevelDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelDataOrBuilder getOfficialLevelDataListOrBuilder(
           int index) {
@@ -819,7 +819,7 @@ public final class UgcV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelDataOrBuilder> 
            getOfficialLevelDataListOrBuilderList() {
@@ -830,14 +830,14 @@ public final class UgcV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder addOfficialLevelDataListBuilder() {
         return getOfficialLevelDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.getDefaultInstance());
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder addOfficialLevelDataListBuilder(
           int index) {
@@ -845,7 +845,7 @@ public final class UgcV2DetailInfoOuterClass {
             index, emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.getDefaultInstance());
       }
       /**
-       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 3;</code>
+       * <code>repeated ._UgcV2OfficialLevelData _official_level_data_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder> 
            getOfficialLevelDataListBuilderList() {
@@ -966,7 +966,7 @@ public final class UgcV2DetailInfoOuterClass {
       "\n\025UgcV2DetailInfo.proto\032\035_UgcV2OfficialL" +
       "evelData.proto\"|\n\017UgcV2DetailInfo\022\025\n\013AIK" +
       "DBBNMIJB\030\320\206\003 \001(\010\022;\n\031_official_level_data" +
-      "_list\030\003 \003(\0132\030._UgcV2OfficialLevelData\022\025\n" +
+      "_list\030\002 \003(\0132\030._UgcV2OfficialLevelData\022\025\n" +
       "\013IEIJBECPIKD\030\321\206\003 \001(\010B6\n\031emu.grasscutter." +
       "net.protoB\031UgcV2DetailInfoOuterClassb\006pr" +
       "oto3"

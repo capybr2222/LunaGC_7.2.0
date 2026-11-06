@@ -19,34 +19,34 @@ public final class _DrawPlayInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+     * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
      * @return A list containing the cBHPBBCOPPE.
      */
     java.util.List<java.lang.Integer> getCBHPBBCOPPEList();
     /**
-     * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+     * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
      * @return The count of cBHPBBCOPPE.
      */
     int getCBHPBBCOPPECount();
     /**
-     * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+     * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
      * @param index The index of the element to return.
      * @return The cBHPBBCOPPE at the given index.
      */
     int getCBHPBBCOPPE(int index);
 
     /**
-     * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+     * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
      * @return A list containing the fEIANMMFPJC.
      */
     java.util.List<java.lang.Integer> getFEIANMMFPJCList();
     /**
-     * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+     * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
      * @return The count of fEIANMMFPJC.
      */
     int getFEIANMMFPJCCount();
     /**
-     * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+     * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
      * @param index The index of the element to return.
      * @return The fEIANMMFPJC at the given index.
      */
@@ -100,7 +100,7 @@ public final class _DrawPlayInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 cBHPBBCOPPE_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -108,7 +108,7 @@ public final class _DrawPlayInfoOuterClass {
               cBHPBBCOPPE_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -121,7 +121,7 @@ public final class _DrawPlayInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 16: {
+            case 160008: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 fEIANMMFPJC_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -129,7 +129,7 @@ public final class _DrawPlayInfoOuterClass {
               fEIANMMFPJC_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 160010: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -180,10 +180,10 @@ public final class _DrawPlayInfoOuterClass {
               emu.grasscutter.net.proto._DrawPlayInfoOuterClass._DrawPlayInfo.class, emu.grasscutter.net.proto._DrawPlayInfoOuterClass._DrawPlayInfo.Builder.class);
     }
 
-    public static final int CBHPBBCOPPE_FIELD_NUMBER = 1;
+    public static final int CBHPBBCOPPE_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList cBHPBBCOPPE_;
     /**
-     * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+     * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
      * @return A list containing the cBHPBBCOPPE.
      */
     @java.lang.Override
@@ -192,14 +192,14 @@ public final class _DrawPlayInfoOuterClass {
       return cBHPBBCOPPE_;
     }
     /**
-     * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+     * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
      * @return The count of cBHPBBCOPPE.
      */
     public int getCBHPBBCOPPECount() {
       return cBHPBBCOPPE_.size();
     }
     /**
-     * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+     * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
      * @param index The index of the element to return.
      * @return The cBHPBBCOPPE at the given index.
      */
@@ -208,10 +208,10 @@ public final class _DrawPlayInfoOuterClass {
     }
     private int cBHPBBCOPPEMemoizedSerializedSize = -1;
 
-    public static final int FEIANMMFPJC_FIELD_NUMBER = 2;
+    public static final int FEIANMMFPJC_FIELD_NUMBER = 20001;
     private com.google.protobuf.Internal.IntList fEIANMMFPJC_;
     /**
-     * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+     * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
      * @return A list containing the fEIANMMFPJC.
      */
     @java.lang.Override
@@ -220,14 +220,14 @@ public final class _DrawPlayInfoOuterClass {
       return fEIANMMFPJC_;
     }
     /**
-     * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+     * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
      * @return The count of fEIANMMFPJC.
      */
     public int getFEIANMMFPJCCount() {
       return fEIANMMFPJC_.size();
     }
     /**
-     * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+     * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
      * @param index The index of the element to return.
      * @return The fEIANMMFPJC at the given index.
      */
@@ -252,14 +252,14 @@ public final class _DrawPlayInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getCBHPBBCOPPEList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(cBHPBBCOPPEMemoizedSerializedSize);
       }
       for (int i = 0; i < cBHPBBCOPPE_.size(); i++) {
         output.writeUInt32NoTag(cBHPBBCOPPE_.getInt(i));
       }
       if (getFEIANMMFPJCList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(160010);
         output.writeUInt32NoTag(fEIANMMFPJCMemoizedSerializedSize);
       }
       for (int i = 0; i < fEIANMMFPJC_.size(); i++) {
@@ -282,7 +282,7 @@ public final class _DrawPlayInfoOuterClass {
         }
         size += dataSize;
         if (!getCBHPBBCOPPEList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
@@ -296,7 +296,7 @@ public final class _DrawPlayInfoOuterClass {
         }
         size += dataSize;
         if (!getFEIANMMFPJCList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
@@ -620,7 +620,7 @@ public final class _DrawPlayInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+       * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
        * @return A list containing the cBHPBBCOPPE.
        */
       public java.util.List<java.lang.Integer>
@@ -629,14 +629,14 @@ public final class _DrawPlayInfoOuterClass {
                  java.util.Collections.unmodifiableList(cBHPBBCOPPE_) : cBHPBBCOPPE_;
       }
       /**
-       * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+       * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
        * @return The count of cBHPBBCOPPE.
        */
       public int getCBHPBBCOPPECount() {
         return cBHPBBCOPPE_.size();
       }
       /**
-       * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+       * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
        * @param index The index of the element to return.
        * @return The cBHPBBCOPPE at the given index.
        */
@@ -644,7 +644,7 @@ public final class _DrawPlayInfoOuterClass {
         return cBHPBBCOPPE_.getInt(index);
       }
       /**
-       * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+       * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
        * @param index The index to set the value at.
        * @param value The cBHPBBCOPPE to set.
        * @return This builder for chaining.
@@ -657,7 +657,7 @@ public final class _DrawPlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+       * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
        * @param value The cBHPBBCOPPE to add.
        * @return This builder for chaining.
        */
@@ -668,7 +668,7 @@ public final class _DrawPlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+       * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
        * @param values The cBHPBBCOPPE to add.
        * @return This builder for chaining.
        */
@@ -681,7 +681,7 @@ public final class _DrawPlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CBHPBBCOPPE = 1;</code>
+       * <code>repeated uint32 CBHPBBCOPPE = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearCBHPBBCOPPE() {
@@ -699,7 +699,7 @@ public final class _DrawPlayInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+       * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
        * @return A list containing the fEIANMMFPJC.
        */
       public java.util.List<java.lang.Integer>
@@ -708,14 +708,14 @@ public final class _DrawPlayInfoOuterClass {
                  java.util.Collections.unmodifiableList(fEIANMMFPJC_) : fEIANMMFPJC_;
       }
       /**
-       * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+       * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
        * @return The count of fEIANMMFPJC.
        */
       public int getFEIANMMFPJCCount() {
         return fEIANMMFPJC_.size();
       }
       /**
-       * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+       * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
        * @param index The index of the element to return.
        * @return The fEIANMMFPJC at the given index.
        */
@@ -723,7 +723,7 @@ public final class _DrawPlayInfoOuterClass {
         return fEIANMMFPJC_.getInt(index);
       }
       /**
-       * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+       * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
        * @param index The index to set the value at.
        * @param value The fEIANMMFPJC to set.
        * @return This builder for chaining.
@@ -736,7 +736,7 @@ public final class _DrawPlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+       * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
        * @param value The fEIANMMFPJC to add.
        * @return This builder for chaining.
        */
@@ -747,7 +747,7 @@ public final class _DrawPlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+       * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
        * @param values The fEIANMMFPJC to add.
        * @return This builder for chaining.
        */
@@ -760,7 +760,7 @@ public final class _DrawPlayInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 FEIANMMFPJC = 2;</code>
+       * <code>repeated uint32 FEIANMMFPJC = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearFEIANMMFPJC() {
@@ -836,10 +836,10 @@ public final class _DrawPlayInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023_DrawPlayInfo.proto\"9\n\r_DrawPlayInfo\022\023" +
-      "\n\013CBHPBBCOPPE\030\001 \003(\r\022\023\n\013FEIANMMFPJC\030\002 \003(\r" +
-      "B4\n\031emu.grasscutter.net.protoB\027_DrawPlay" +
-      "InfoOuterClassb\006proto3"
+      "\n\023_DrawPlayInfo.proto\"=\n\r_DrawPlayInfo\022\025" +
+      "\n\013CBHPBBCOPPE\030\240\234\001 \003(\r\022\025\n\013FEIANMMFPJC\030\241\234\001" +
+      " \003(\rB4\n\031emu.grasscutter.net.protoB\027_Draw" +
+      "PlayInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

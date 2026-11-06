@@ -19,13 +19,13 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 skill_id = 2;</code>
+     * <code>uint32 skill_id = 15;</code>
      * @return The skillId.
      */
     int getSkillId();
 
     /**
-     * <code>uint32 max_charge_count = 11;</code>
+     * <code>uint32 max_charge_count = 12;</code>
      * @return The maxChargeCount.
      */
     int getMaxChargeCount();
@@ -81,19 +81,19 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              skillId_ = input.readUInt32();
-              break;
-            }
             case 48: {
 
               avatarGuid_ = input.readUInt64();
               break;
             }
-            case 88: {
+            case 96: {
 
               maxChargeCount_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              skillId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarSkillMaxChargeCountNotifyOuterClass.AvatarSkillMaxChargeCountNotify.class, emu.grasscutter.net.proto.AvatarSkillMaxChargeCountNotifyOuterClass.AvatarSkillMaxChargeCountNotify.Builder.class);
     }
 
-    public static final int SKILL_ID_FIELD_NUMBER = 2;
+    public static final int SKILL_ID_FIELD_NUMBER = 15;
     private int skillId_;
     /**
-     * <code>uint32 skill_id = 2;</code>
+     * <code>uint32 skill_id = 15;</code>
      * @return The skillId.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
       return skillId_;
     }
 
-    public static final int MAX_CHARGE_COUNT_FIELD_NUMBER = 11;
+    public static final int MAX_CHARGE_COUNT_FIELD_NUMBER = 12;
     private int maxChargeCount_;
     /**
-     * <code>uint32 max_charge_count = 11;</code>
+     * <code>uint32 max_charge_count = 12;</code>
      * @return The maxChargeCount.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (skillId_ != 0) {
-        output.writeUInt32(2, skillId_);
-      }
       if (avatarGuid_ != 0L) {
         output.writeUInt64(6, avatarGuid_);
       }
       if (maxChargeCount_ != 0) {
-        output.writeUInt32(11, maxChargeCount_);
+        output.writeUInt32(12, maxChargeCount_);
+      }
+      if (skillId_ != 0) {
+        output.writeUInt32(15, skillId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (skillId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, skillId_);
-      }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(6, avatarGuid_);
       }
       if (maxChargeCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, maxChargeCount_);
+          .computeUInt32Size(12, maxChargeCount_);
+      }
+      if (skillId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, skillId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -500,7 +500,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
 
       private int skillId_ ;
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 15;</code>
        * @return The skillId.
        */
       @java.lang.Override
@@ -508,7 +508,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return skillId_;
       }
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 15;</code>
        * @param value The skillId to set.
        * @return This builder for chaining.
        */
@@ -519,7 +519,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 skill_id = 2;</code>
+       * <code>uint32 skill_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearSkillId() {
@@ -531,7 +531,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
 
       private int maxChargeCount_ ;
       /**
-       * <code>uint32 max_charge_count = 11;</code>
+       * <code>uint32 max_charge_count = 12;</code>
        * @return The maxChargeCount.
        */
       @java.lang.Override
@@ -539,7 +539,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return maxChargeCount_;
       }
       /**
-       * <code>uint32 max_charge_count = 11;</code>
+       * <code>uint32 max_charge_count = 12;</code>
        * @param value The maxChargeCount to set.
        * @return This builder for chaining.
        */
@@ -550,7 +550,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_charge_count = 11;</code>
+       * <code>uint32 max_charge_count = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxChargeCount() {
@@ -659,7 +659,7 @@ public final class AvatarSkillMaxChargeCountNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%AvatarSkillMaxChargeCountNotify.proto\"" +
       "b\n\037AvatarSkillMaxChargeCountNotify\022\020\n\010sk" +
-      "ill_id\030\002 \001(\r\022\030\n\020max_charge_count\030\013 \001(\r\022\023" +
+      "ill_id\030\017 \001(\r\022\030\n\020max_charge_count\030\014 \001(\r\022\023" +
       "\n\013avatar_guid\030\006 \001(\004BF\n\031emu.grasscutter.n" +
       "et.protoB)AvatarSkillMaxChargeCountNotif" +
       "yOuterClassb\006proto3"

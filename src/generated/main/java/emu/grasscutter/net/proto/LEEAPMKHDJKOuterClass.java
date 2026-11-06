@@ -19,19 +19,19 @@ public final class LEEAPMKHDJKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 MEBODADIOBO = 7;</code>
+     * <code>uint32 MEBODADIOBO = 50000;</code>
      * @return The mEBODADIOBO.
      */
     int getMEBODADIOBO();
 
     /**
-     * <code>uint32 OOFPCLDDCCL = 50000;</code>
+     * <code>uint32 OOFPCLDDCCL = 2;</code>
      * @return The oOFPCLDDCCL.
      */
     int getOOFPCLDDCCL();
 
     /**
-     * <code>uint32 HANJNFCBFCJ = 50001;</code>
+     * <code>uint32 HANJNFCBFCJ = 1;</code>
      * @return The hANJNFCBFCJ.
      */
     int getHANJNFCBFCJ();
@@ -107,6 +107,16 @@ public final class LEEAPMKHDJKOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              hANJNFCBFCJ_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
+              oOFPCLDDCCL_ = input.readUInt32();
+              break;
+            }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EBPIBIFOEFFOuterClass.EBPIBIFOEFF>();
@@ -116,19 +126,9 @@ public final class LEEAPMKHDJKOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.EBPIBIFOEFFOuterClass.EBPIBIFOEFF.parser(), extensionRegistry));
               break;
             }
-            case 56: {
-
-              mEBODADIOBO_ = input.readUInt32();
-              break;
-            }
             case 400000: {
 
-              oOFPCLDDCCL_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              hANJNFCBFCJ_ = input.readUInt32();
+              mEBODADIOBO_ = input.readUInt32();
               break;
             }
             default: {
@@ -166,10 +166,10 @@ public final class LEEAPMKHDJKOuterClass {
               emu.grasscutter.net.proto.LEEAPMKHDJKOuterClass.LEEAPMKHDJK.class, emu.grasscutter.net.proto.LEEAPMKHDJKOuterClass.LEEAPMKHDJK.Builder.class);
     }
 
-    public static final int MEBODADIOBO_FIELD_NUMBER = 7;
+    public static final int MEBODADIOBO_FIELD_NUMBER = 50000;
     private int mEBODADIOBO_;
     /**
-     * <code>uint32 MEBODADIOBO = 7;</code>
+     * <code>uint32 MEBODADIOBO = 50000;</code>
      * @return The mEBODADIOBO.
      */
     @java.lang.Override
@@ -177,10 +177,10 @@ public final class LEEAPMKHDJKOuterClass {
       return mEBODADIOBO_;
     }
 
-    public static final int OOFPCLDDCCL_FIELD_NUMBER = 50000;
+    public static final int OOFPCLDDCCL_FIELD_NUMBER = 2;
     private int oOFPCLDDCCL_;
     /**
-     * <code>uint32 OOFPCLDDCCL = 50000;</code>
+     * <code>uint32 OOFPCLDDCCL = 2;</code>
      * @return The oOFPCLDDCCL.
      */
     @java.lang.Override
@@ -188,10 +188,10 @@ public final class LEEAPMKHDJKOuterClass {
       return oOFPCLDDCCL_;
     }
 
-    public static final int HANJNFCBFCJ_FIELD_NUMBER = 50001;
+    public static final int HANJNFCBFCJ_FIELD_NUMBER = 1;
     private int hANJNFCBFCJ_;
     /**
-     * <code>uint32 HANJNFCBFCJ = 50001;</code>
+     * <code>uint32 HANJNFCBFCJ = 1;</code>
      * @return The hANJNFCBFCJ.
      */
     @java.lang.Override
@@ -253,17 +253,17 @@ public final class LEEAPMKHDJKOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (hANJNFCBFCJ_ != 0) {
+        output.writeUInt32(1, hANJNFCBFCJ_);
+      }
+      if (oOFPCLDDCCL_ != 0) {
+        output.writeUInt32(2, oOFPCLDDCCL_);
+      }
       for (int i = 0; i < avatarList_.size(); i++) {
         output.writeMessage(3, avatarList_.get(i));
       }
       if (mEBODADIOBO_ != 0) {
-        output.writeUInt32(7, mEBODADIOBO_);
-      }
-      if (oOFPCLDDCCL_ != 0) {
-        output.writeUInt32(50000, oOFPCLDDCCL_);
-      }
-      if (hANJNFCBFCJ_ != 0) {
-        output.writeUInt32(50001, hANJNFCBFCJ_);
+        output.writeUInt32(50000, mEBODADIOBO_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,21 +274,21 @@ public final class LEEAPMKHDJKOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (hANJNFCBFCJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, hANJNFCBFCJ_);
+      }
+      if (oOFPCLDDCCL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, oOFPCLDDCCL_);
+      }
       for (int i = 0; i < avatarList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, avatarList_.get(i));
       }
       if (mEBODADIOBO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, mEBODADIOBO_);
-      }
-      if (oOFPCLDDCCL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, oOFPCLDDCCL_);
-      }
-      if (hANJNFCBFCJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, hANJNFCBFCJ_);
+          .computeUInt32Size(50000, mEBODADIOBO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -634,7 +634,7 @@ public final class LEEAPMKHDJKOuterClass {
 
       private int mEBODADIOBO_ ;
       /**
-       * <code>uint32 MEBODADIOBO = 7;</code>
+       * <code>uint32 MEBODADIOBO = 50000;</code>
        * @return The mEBODADIOBO.
        */
       @java.lang.Override
@@ -642,7 +642,7 @@ public final class LEEAPMKHDJKOuterClass {
         return mEBODADIOBO_;
       }
       /**
-       * <code>uint32 MEBODADIOBO = 7;</code>
+       * <code>uint32 MEBODADIOBO = 50000;</code>
        * @param value The mEBODADIOBO to set.
        * @return This builder for chaining.
        */
@@ -653,7 +653,7 @@ public final class LEEAPMKHDJKOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MEBODADIOBO = 7;</code>
+       * <code>uint32 MEBODADIOBO = 50000;</code>
        * @return This builder for chaining.
        */
       public Builder clearMEBODADIOBO() {
@@ -665,7 +665,7 @@ public final class LEEAPMKHDJKOuterClass {
 
       private int oOFPCLDDCCL_ ;
       /**
-       * <code>uint32 OOFPCLDDCCL = 50000;</code>
+       * <code>uint32 OOFPCLDDCCL = 2;</code>
        * @return The oOFPCLDDCCL.
        */
       @java.lang.Override
@@ -673,7 +673,7 @@ public final class LEEAPMKHDJKOuterClass {
         return oOFPCLDDCCL_;
       }
       /**
-       * <code>uint32 OOFPCLDDCCL = 50000;</code>
+       * <code>uint32 OOFPCLDDCCL = 2;</code>
        * @param value The oOFPCLDDCCL to set.
        * @return This builder for chaining.
        */
@@ -684,7 +684,7 @@ public final class LEEAPMKHDJKOuterClass {
         return this;
       }
       /**
-       * <code>uint32 OOFPCLDDCCL = 50000;</code>
+       * <code>uint32 OOFPCLDDCCL = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOOFPCLDDCCL() {
@@ -696,7 +696,7 @@ public final class LEEAPMKHDJKOuterClass {
 
       private int hANJNFCBFCJ_ ;
       /**
-       * <code>uint32 HANJNFCBFCJ = 50001;</code>
+       * <code>uint32 HANJNFCBFCJ = 1;</code>
        * @return The hANJNFCBFCJ.
        */
       @java.lang.Override
@@ -704,7 +704,7 @@ public final class LEEAPMKHDJKOuterClass {
         return hANJNFCBFCJ_;
       }
       /**
-       * <code>uint32 HANJNFCBFCJ = 50001;</code>
+       * <code>uint32 HANJNFCBFCJ = 1;</code>
        * @param value The hANJNFCBFCJ to set.
        * @return This builder for chaining.
        */
@@ -715,7 +715,7 @@ public final class LEEAPMKHDJKOuterClass {
         return this;
       }
       /**
-       * <code>uint32 HANJNFCBFCJ = 50001;</code>
+       * <code>uint32 HANJNFCBFCJ = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearHANJNFCBFCJ() {
@@ -1031,12 +1031,12 @@ public final class LEEAPMKHDJKOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021LEEAPMKHDJK.proto\032\021EBPIBIFOEFF.proto\"s" +
-      "\n\013LEEAPMKHDJK\022\023\n\013MEBODADIOBO\030\007 \001(\r\022\025\n\013OO" +
-      "FPCLDDCCL\030\320\206\003 \001(\r\022\025\n\013HANJNFCBFCJ\030\321\206\003 \001(\r" +
-      "\022!\n\013avatar_list\030\003 \003(\0132\014.EBPIBIFOEFFB2\n\031e" +
-      "mu.grasscutter.net.protoB\025LEEAPMKHDJKOut" +
-      "erClassb\006proto3"
+      "\n\021LEEAPMKHDJK.proto\032\021EBPIBIFOEFF.proto\"q" +
+      "\n\013LEEAPMKHDJK\022\025\n\013MEBODADIOBO\030\320\206\003 \001(\r\022\023\n\013" +
+      "OOFPCLDDCCL\030\002 \001(\r\022\023\n\013HANJNFCBFCJ\030\001 \001(\r\022!" +
+      "\n\013avatar_list\030\003 \003(\0132\014.EBPIBIFOEFFB2\n\031emu" +
+      ".grasscutter.net.protoB\025LEEAPMKHDJKOuter" +
+      "Classb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

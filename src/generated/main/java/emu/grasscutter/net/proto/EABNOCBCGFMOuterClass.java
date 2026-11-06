@@ -19,7 +19,7 @@ public final class EABNOCBCGFMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 PHDOCOKGBOF = 50000;</code>
+     * <code>uint32 PHDOCOKGBOF = 13;</code>
      * @return The pHDOCOKGBOF.
      */
     int getPHDOCOKGBOF();
@@ -46,7 +46,7 @@ public final class EABNOCBCGFMOuterClass {
     emu.grasscutter.net.proto.AFCJANIEJKCOuterClass.AFCJANIEJKCOrBuilder getEJGAEGAPEBAOrBuilder();
 
     /**
-     * <code>uint32 GEPHOFOGHJC = 50001;</code>
+     * <code>uint32 GEPHOFOGHJC = 10;</code>
      * @return The gEPHOFOGHJC.
      */
     int getGEPHOFOGHJC();
@@ -124,6 +124,16 @@ public final class EABNOCBCGFMOuterClass {
 
               break;
             }
+            case 80: {
+
+              gEPHOFOGHJC_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              pHDOCOKGBOF_ = input.readUInt32();
+              break;
+            }
             case 112: {
 
               round_ = input.readUInt32();
@@ -140,16 +150,6 @@ public final class EABNOCBCGFMOuterClass {
                 eJGAEGAPEBA_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 400000: {
-
-              pHDOCOKGBOF_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              gEPHOFOGHJC_ = input.readUInt32();
               break;
             }
             default: {
@@ -184,10 +184,10 @@ public final class EABNOCBCGFMOuterClass {
               emu.grasscutter.net.proto.EABNOCBCGFMOuterClass.EABNOCBCGFM.class, emu.grasscutter.net.proto.EABNOCBCGFMOuterClass.EABNOCBCGFM.Builder.class);
     }
 
-    public static final int PHDOCOKGBOF_FIELD_NUMBER = 50000;
+    public static final int PHDOCOKGBOF_FIELD_NUMBER = 13;
     private int pHDOCOKGBOF_;
     /**
-     * <code>uint32 PHDOCOKGBOF = 50000;</code>
+     * <code>uint32 PHDOCOKGBOF = 13;</code>
      * @return The pHDOCOKGBOF.
      */
     @java.lang.Override
@@ -232,10 +232,10 @@ public final class EABNOCBCGFMOuterClass {
       return getEJGAEGAPEBA();
     }
 
-    public static final int GEPHOFOGHJC_FIELD_NUMBER = 50001;
+    public static final int GEPHOFOGHJC_FIELD_NUMBER = 10;
     private int gEPHOFOGHJC_;
     /**
-     * <code>uint32 GEPHOFOGHJC = 50001;</code>
+     * <code>uint32 GEPHOFOGHJC = 10;</code>
      * @return The gEPHOFOGHJC.
      */
     @java.lang.Override
@@ -286,17 +286,17 @@ public final class EABNOCBCGFMOuterClass {
       if (fOHNJKCKKPC_ != null) {
         output.writeMessage(3, getFOHNJKCKKPC());
       }
+      if (gEPHOFOGHJC_ != 0) {
+        output.writeUInt32(10, gEPHOFOGHJC_);
+      }
+      if (pHDOCOKGBOF_ != 0) {
+        output.writeUInt32(13, pHDOCOKGBOF_);
+      }
       if (round_ != 0) {
         output.writeUInt32(14, round_);
       }
       if (eJGAEGAPEBA_ != null) {
         output.writeMessage(15, getEJGAEGAPEBA());
-      }
-      if (pHDOCOKGBOF_ != 0) {
-        output.writeUInt32(50000, pHDOCOKGBOF_);
-      }
-      if (gEPHOFOGHJC_ != 0) {
-        output.writeUInt32(50001, gEPHOFOGHJC_);
       }
       unknownFields.writeTo(output);
     }
@@ -311,6 +311,14 @@ public final class EABNOCBCGFMOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getFOHNJKCKKPC());
       }
+      if (gEPHOFOGHJC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, gEPHOFOGHJC_);
+      }
+      if (pHDOCOKGBOF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, pHDOCOKGBOF_);
+      }
       if (round_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, round_);
@@ -318,14 +326,6 @@ public final class EABNOCBCGFMOuterClass {
       if (eJGAEGAPEBA_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(15, getEJGAEGAPEBA());
-      }
-      if (pHDOCOKGBOF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, pHDOCOKGBOF_);
-      }
-      if (gEPHOFOGHJC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, gEPHOFOGHJC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -667,7 +667,7 @@ public final class EABNOCBCGFMOuterClass {
 
       private int pHDOCOKGBOF_ ;
       /**
-       * <code>uint32 PHDOCOKGBOF = 50000;</code>
+       * <code>uint32 PHDOCOKGBOF = 13;</code>
        * @return The pHDOCOKGBOF.
        */
       @java.lang.Override
@@ -675,7 +675,7 @@ public final class EABNOCBCGFMOuterClass {
         return pHDOCOKGBOF_;
       }
       /**
-       * <code>uint32 PHDOCOKGBOF = 50000;</code>
+       * <code>uint32 PHDOCOKGBOF = 13;</code>
        * @param value The pHDOCOKGBOF to set.
        * @return This builder for chaining.
        */
@@ -686,7 +686,7 @@ public final class EABNOCBCGFMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 PHDOCOKGBOF = 50000;</code>
+       * <code>uint32 PHDOCOKGBOF = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearPHDOCOKGBOF() {
@@ -848,7 +848,7 @@ public final class EABNOCBCGFMOuterClass {
 
       private int gEPHOFOGHJC_ ;
       /**
-       * <code>uint32 GEPHOFOGHJC = 50001;</code>
+       * <code>uint32 GEPHOFOGHJC = 10;</code>
        * @return The gEPHOFOGHJC.
        */
       @java.lang.Override
@@ -856,7 +856,7 @@ public final class EABNOCBCGFMOuterClass {
         return gEPHOFOGHJC_;
       }
       /**
-       * <code>uint32 GEPHOFOGHJC = 50001;</code>
+       * <code>uint32 GEPHOFOGHJC = 10;</code>
        * @param value The gEPHOFOGHJC to set.
        * @return This builder for chaining.
        */
@@ -867,7 +867,7 @@ public final class EABNOCBCGFMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 GEPHOFOGHJC = 50001;</code>
+       * <code>uint32 GEPHOFOGHJC = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGEPHOFOGHJC() {
@@ -1063,12 +1063,12 @@ public final class EABNOCBCGFMOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021EABNOCBCGFM.proto\032\021AFCJANIEJKC.proto\032\021" +
-      "EEEPOOPKBPC.proto\"\220\001\n\013EABNOCBCGFM\022\025\n\013PHD" +
-      "OCOKGBOF\030\320\206\003 \001(\r\022\r\n\005round\030\016 \001(\r\022!\n\013EJGAE" +
-      "GAPEBA\030\017 \001(\0132\014.AFCJANIEJKC\022\025\n\013GEPHOFOGHJ" +
-      "C\030\321\206\003 \001(\r\022!\n\013FOHNJKCKKPC\030\003 \001(\0132\014.EEEPOOP" +
-      "KBPCB2\n\031emu.grasscutter.net.protoB\025EABNO" +
-      "CBCGFMOuterClassb\006proto3"
+      "EEEPOOPKBPC.proto\"\214\001\n\013EABNOCBCGFM\022\023\n\013PHD" +
+      "OCOKGBOF\030\r \001(\r\022\r\n\005round\030\016 \001(\r\022!\n\013EJGAEGA" +
+      "PEBA\030\017 \001(\0132\014.AFCJANIEJKC\022\023\n\013GEPHOFOGHJC\030" +
+      "\n \001(\r\022!\n\013FOHNJKCKKPC\030\003 \001(\0132\014.EEEPOOPKBPC" +
+      "B2\n\031emu.grasscutter.net.protoB\025EABNOCBCG" +
+      "FMOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

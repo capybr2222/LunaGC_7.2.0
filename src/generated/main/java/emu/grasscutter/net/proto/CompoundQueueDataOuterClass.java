@@ -31,7 +31,7 @@ public final class CompoundQueueDataOuterClass {
     int getLINALGNMBCF();
 
     /**
-     * <code>uint32 compound_id = 10;</code>
+     * <code>uint32 compound_id = 1;</code>
      * @return The compoundId.
      */
     int getCompoundId();
@@ -87,7 +87,7 @@ public final class CompoundQueueDataOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 8: {
 
               compoundId_ = input.readUInt32();
               break;
@@ -161,10 +161,10 @@ public final class CompoundQueueDataOuterClass {
       return lINALGNMBCF_;
     }
 
-    public static final int COMPOUND_ID_FIELD_NUMBER = 10;
+    public static final int COMPOUND_ID_FIELD_NUMBER = 1;
     private int compoundId_;
     /**
-     * <code>uint32 compound_id = 10;</code>
+     * <code>uint32 compound_id = 1;</code>
      * @return The compoundId.
      */
     @java.lang.Override
@@ -198,7 +198,7 @@ public final class CompoundQueueDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (compoundId_ != 0) {
-        output.writeUInt32(10, compoundId_);
+        output.writeUInt32(1, compoundId_);
       }
       if (eCICJPBDGOC_ != 0) {
         output.writeUInt32(50000, eCICJPBDGOC_);
@@ -220,7 +220,7 @@ public final class CompoundQueueDataOuterClass {
       size = 0;
       if (compoundId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, compoundId_);
+          .computeUInt32Size(1, compoundId_);
       }
       if (eCICJPBDGOC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -600,7 +600,7 @@ public final class CompoundQueueDataOuterClass {
 
       private int compoundId_ ;
       /**
-       * <code>uint32 compound_id = 10;</code>
+       * <code>uint32 compound_id = 1;</code>
        * @return The compoundId.
        */
       @java.lang.Override
@@ -608,7 +608,7 @@ public final class CompoundQueueDataOuterClass {
         return compoundId_;
       }
       /**
-       * <code>uint32 compound_id = 10;</code>
+       * <code>uint32 compound_id = 1;</code>
        * @param value The compoundId to set.
        * @return This builder for chaining.
        */
@@ -619,7 +619,7 @@ public final class CompoundQueueDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 compound_id = 10;</code>
+       * <code>uint32 compound_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCompoundId() {
@@ -728,7 +728,7 @@ public final class CompoundQueueDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027CompoundQueueData.proto\"k\n\021CompoundQue" +
       "ueData\022\025\n\013ECICJPBDGOC\030\320\206\003 \001(\r\022\025\n\013LINALGN" +
-      "MBCF\030\321\206\003 \001(\r\022\023\n\013compound_id\030\n \001(\r\022\023\n\twai" +
+      "MBCF\030\321\206\003 \001(\r\022\023\n\013compound_id\030\001 \001(\r\022\023\n\twai" +
       "tCount\030\322\206\003 \001(\rB8\n\031emu.grasscutter.net.pr" +
       "otoB\033CompoundQueueDataOuterClassb\006proto3"
     };

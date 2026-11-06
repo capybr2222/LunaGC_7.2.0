@@ -19,46 +19,46 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+     * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
      * @return Whether the curSchedule field is set.
      */
     boolean hasCurSchedule();
     /**
-     * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+     * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
      * @return The curSchedule.
      */
     emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule getCurSchedule();
     /**
-     * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+     * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
      */
     emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassScheduleOrBuilder getCurScheduleOrBuilder();
 
     /**
-     * <code>bool _have_cur_beyond_schedule = 1;</code>
+     * <code>bool _have_cur_beyond_schedule = 8;</code>
      * @return The haveCurBeyondSchedule.
      */
     boolean getHaveCurBeyondSchedule();
 
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission> 
         getMissionListList();
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission getMissionList(int index);
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     int getMissionListCount();
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMissionOrBuilder> 
         getMissionListOrBuilderList();
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMissionOrBuilder getMissionListOrBuilder(
         int index);
@@ -110,12 +110,21 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                missionList_ = new java.util.ArrayList<emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              missionList_.add(
+                  input.readMessage(emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.parser(), extensionRegistry));
+              break;
+            }
+            case 64: {
 
               HaveCurBeyondSchedule_ = input.readBool();
               break;
             }
-            case 34: {
+            case 122: {
               emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule.Builder subBuilder = null;
               if (curSchedule_ != null) {
                 subBuilder = curSchedule_.toBuilder();
@@ -126,15 +135,6 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
                 curSchedule_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                missionList_ = new java.util.ArrayList<emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              missionList_.add(
-                  input.readMessage(emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -172,10 +172,10 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
               emu.grasscutter.net.proto._BeyondBattlePassAllDataNotifyOuterClass._BeyondBattlePassAllDataNotify.class, emu.grasscutter.net.proto._BeyondBattlePassAllDataNotifyOuterClass._BeyondBattlePassAllDataNotify.Builder.class);
     }
 
-    public static final int CUR_SCHEDULE_FIELD_NUMBER = 4;
+    public static final int CUR_SCHEDULE_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule curSchedule_;
     /**
-     * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+     * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
      * @return Whether the curSchedule field is set.
      */
     @java.lang.Override
@@ -183,7 +183,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
       return curSchedule_ != null;
     }
     /**
-     * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+     * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
      * @return The curSchedule.
      */
     @java.lang.Override
@@ -191,17 +191,17 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
       return curSchedule_ == null ? emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule.getDefaultInstance() : curSchedule_;
     }
     /**
-     * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+     * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassScheduleOrBuilder getCurScheduleOrBuilder() {
       return getCurSchedule();
     }
 
-    public static final int _HAVE_CUR_BEYOND_SCHEDULE_FIELD_NUMBER = 1;
+    public static final int _HAVE_CUR_BEYOND_SCHEDULE_FIELD_NUMBER = 8;
     private boolean HaveCurBeyondSchedule_;
     /**
-     * <code>bool _have_cur_beyond_schedule = 1;</code>
+     * <code>bool _have_cur_beyond_schedule = 8;</code>
      * @return The haveCurBeyondSchedule.
      */
     @java.lang.Override
@@ -209,17 +209,17 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
       return HaveCurBeyondSchedule_;
     }
 
-    public static final int MISSION_LIST_FIELD_NUMBER = 7;
+    public static final int MISSION_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission> missionList_;
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission> getMissionListList() {
       return missionList_;
     }
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMissionOrBuilder> 
@@ -227,21 +227,21 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
       return missionList_;
     }
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     @java.lang.Override
     public int getMissionListCount() {
       return missionList_.size();
     }
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission getMissionList(int index) {
       return missionList_.get(index);
     }
     /**
-     * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+     * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMissionOrBuilder getMissionListOrBuilder(
@@ -263,14 +263,14 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      for (int i = 0; i < missionList_.size(); i++) {
+        output.writeMessage(2, missionList_.get(i));
+      }
       if (HaveCurBeyondSchedule_ != false) {
-        output.writeBool(1, HaveCurBeyondSchedule_);
+        output.writeBool(8, HaveCurBeyondSchedule_);
       }
       if (curSchedule_ != null) {
-        output.writeMessage(4, getCurSchedule());
-      }
-      for (int i = 0; i < missionList_.size(); i++) {
-        output.writeMessage(7, missionList_.get(i));
+        output.writeMessage(15, getCurSchedule());
       }
       unknownFields.writeTo(output);
     }
@@ -281,17 +281,17 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < missionList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, missionList_.get(i));
+      }
       if (HaveCurBeyondSchedule_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, HaveCurBeyondSchedule_);
+          .computeBoolSize(8, HaveCurBeyondSchedule_);
       }
       if (curSchedule_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getCurSchedule());
-      }
-      for (int i = 0; i < missionList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, missionList_.get(i));
+          .computeMessageSize(15, getCurSchedule());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -643,14 +643,14 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule, emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule.Builder, emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassScheduleOrBuilder> curScheduleBuilder_;
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        * @return Whether the curSchedule field is set.
        */
       public boolean hasCurSchedule() {
         return curScheduleBuilder_ != null || curSchedule_ != null;
       }
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        * @return The curSchedule.
        */
       public emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule getCurSchedule() {
@@ -661,7 +661,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        */
       public Builder setCurSchedule(emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule value) {
         if (curScheduleBuilder_ == null) {
@@ -677,7 +677,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        */
       public Builder setCurSchedule(
           emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule.Builder builderForValue) {
@@ -691,7 +691,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        */
       public Builder mergeCurSchedule(emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule value) {
         if (curScheduleBuilder_ == null) {
@@ -709,7 +709,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        */
       public Builder clearCurSchedule() {
         if (curScheduleBuilder_ == null) {
@@ -723,7 +723,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        */
       public emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule.Builder getCurScheduleBuilder() {
         
@@ -731,7 +731,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return getCurScheduleFieldBuilder().getBuilder();
       }
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        */
       public emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassScheduleOrBuilder getCurScheduleOrBuilder() {
         if (curScheduleBuilder_ != null) {
@@ -742,7 +742,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>._BeyondBattlePassSchedule cur_schedule = 4;</code>
+       * <code>._BeyondBattlePassSchedule cur_schedule = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule, emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassSchedule.Builder, emu.grasscutter.net.proto._BeyondBattlePassScheduleOuterClass._BeyondBattlePassScheduleOrBuilder> 
@@ -760,7 +760,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
 
       private boolean HaveCurBeyondSchedule_ ;
       /**
-       * <code>bool _have_cur_beyond_schedule = 1;</code>
+       * <code>bool _have_cur_beyond_schedule = 8;</code>
        * @return The haveCurBeyondSchedule.
        */
       @java.lang.Override
@@ -768,7 +768,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return HaveCurBeyondSchedule_;
       }
       /**
-       * <code>bool _have_cur_beyond_schedule = 1;</code>
+       * <code>bool _have_cur_beyond_schedule = 8;</code>
        * @param value The haveCurBeyondSchedule to set.
        * @return This builder for chaining.
        */
@@ -779,7 +779,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool _have_cur_beyond_schedule = 1;</code>
+       * <code>bool _have_cur_beyond_schedule = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearHaveCurBeyondSchedule() {
@@ -802,7 +802,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
           emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission, emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.Builder, emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMissionOrBuilder> missionListBuilder_;
 
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission> getMissionListList() {
         if (missionListBuilder_ == null) {
@@ -812,7 +812,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public int getMissionListCount() {
         if (missionListBuilder_ == null) {
@@ -822,7 +822,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission getMissionList(int index) {
         if (missionListBuilder_ == null) {
@@ -832,7 +832,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder setMissionList(
           int index, emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission value) {
@@ -849,7 +849,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder setMissionList(
           int index, emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.Builder builderForValue) {
@@ -863,7 +863,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder addMissionList(emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission value) {
         if (missionListBuilder_ == null) {
@@ -879,7 +879,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder addMissionList(
           int index, emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission value) {
@@ -896,7 +896,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder addMissionList(
           emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.Builder builderForValue) {
@@ -910,7 +910,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder addMissionList(
           int index, emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.Builder builderForValue) {
@@ -924,7 +924,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder addAllMissionList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission> values) {
@@ -939,7 +939,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder clearMissionList() {
         if (missionListBuilder_ == null) {
@@ -952,7 +952,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public Builder removeMissionList(int index) {
         if (missionListBuilder_ == null) {
@@ -965,14 +965,14 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.Builder getMissionListBuilder(
           int index) {
         return getMissionListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMissionOrBuilder getMissionListOrBuilder(
           int index) {
@@ -982,7 +982,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMissionOrBuilder> 
            getMissionListOrBuilderList() {
@@ -993,14 +993,14 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.Builder addMissionListBuilder() {
         return getMissionListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.getDefaultInstance());
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.Builder addMissionListBuilder(
           int index) {
@@ -1008,7 +1008,7 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
             index, emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.getDefaultInstance());
       }
       /**
-       * <code>repeated ._BeyondBattlePassMission mission_list = 7;</code>
+       * <code>repeated ._BeyondBattlePassMission mission_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._BeyondBattlePassMissionOuterClass._BeyondBattlePassMission.Builder> 
            getMissionListBuilderList() {
@@ -1098,10 +1098,10 @@ public final class _BeyondBattlePassAllDataNotifyOuterClass {
       "\n$_BeyondBattlePassAllDataNotify.proto\032\036" +
       "_BeyondBattlePassMission.proto\032\037_BeyondB" +
       "attlePassSchedule.proto\"\246\001\n\036_BeyondBattl" +
-      "ePassAllDataNotify\0220\n\014cur_schedule\030\004 \001(\013" +
+      "ePassAllDataNotify\0220\n\014cur_schedule\030\017 \001(\013" +
       "2\032._BeyondBattlePassSchedule\022!\n\031_have_cu" +
-      "r_beyond_schedule\030\001 \001(\010\022/\n\014mission_list\030" +
-      "\007 \003(\0132\031._BeyondBattlePassMissionBE\n\031emu." +
+      "r_beyond_schedule\030\010 \001(\010\022/\n\014mission_list\030" +
+      "\002 \003(\0132\031._BeyondBattlePassMissionBE\n\031emu." +
       "grasscutter.net.protoB(_BeyondBattlePass" +
       "AllDataNotifyOuterClassb\006proto3"
     };

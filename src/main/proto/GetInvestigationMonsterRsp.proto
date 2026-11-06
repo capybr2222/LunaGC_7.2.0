@@ -6,7 +6,7 @@ option java_outer_classname = "GetInvestigationMonsterRspOuterClass";
 import "InvestigationMonster.proto";
 
 message GetInvestigationMonsterRsp {
-	int32 retcode = 6;
-	bool is_for_mark = 14;
-	repeated InvestigationMonster monster_list = 1;
+	int32 retcode = 4;
+	bool is_for_mark = 9;
+	repeated InvestigationMonster monster_list = 5;
 }

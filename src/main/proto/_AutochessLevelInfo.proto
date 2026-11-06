@@ -8,9 +8,9 @@ import "Uint32Pair.proto";
 import "_AutochessRecordSocialBrief.proto";
 
 message _AutochessLevelInfo {
-	repeated _AutochessRecordSocialBrief record_list = 12;
-	KLCNKCBIENB HGLPHFNBEDC = 3;
-	Uint32Pair ONNMHEPKCIL = 6;
-	_AutochessRecordSocialBrief best_record = 7;
-	uint32 JMGKOJGILKC = 4;
+	repeated _AutochessRecordSocialBrief record_list = 10;
+	KLCNKCBIENB HGLPHFNBEDC = 20000;
+	Uint32Pair ONNMHEPKCIL = 20001;
+	_AutochessRecordSocialBrief best_record = 9;
+	uint32 JMGKOJGILKC = 11;
 }

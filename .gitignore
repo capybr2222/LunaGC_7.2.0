@@ -94,17 +94,10 @@ patches/*.patch
 *.asc
 
 
-animegamedata2/
-YuanShenResources/
-
-/7.1-Resources/
-/*-Resources/
-
-/resources-*/
+/resources/
 
 /local/
 
-/LunaGC/
-/LunaGC-Resources/
-
 /tools/
+
+/dist/

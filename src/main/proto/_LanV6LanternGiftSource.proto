@@ -8,9 +8,9 @@ import "FIEHCAPFKFI.proto";
 
 message _LanV6LanternGiftSource {
 	oneof detail {
-		FIEHCAPFKFI npc = 1187;
-		EDLMACJNHGP player = 150;
+		FIEHCAPFKFI npc = 173;
+		EDLMACJNHGP player = 550;
 	}
-	fixed32 timestamp = 15;
-	fixed32 BNBMJMEHPLJ = 1;
+	fixed32 timestamp = 9;
+	fixed32 BNBMJMEHPLJ = 7;
 }

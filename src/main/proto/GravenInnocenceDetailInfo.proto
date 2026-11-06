@@ -9,9 +9,9 @@ import "GravenInnocencePhotoInfo.proto";
 import "GravenInnocenceRaceInfo.proto";
 
 message GravenInnocenceDetailInfo {
-	bool is_content_closed = 7;
-	GravenInnocenceCarveInfo carve_info = 8;
-	GravenInnocencePhotoInfo photo_info = 2;
-	GravenInnocenceRaceInfo race_info = 10;
-	GravenInnocenceCampInfo camp_info = 11;
+	bool is_content_closed = 5;
+	GravenInnocenceCarveInfo carve_info = 4;
+	GravenInnocencePhotoInfo photo_info = 1;
+	GravenInnocenceRaceInfo race_info = 3;
+	GravenInnocenceCampInfo camp_info = 2;
 }

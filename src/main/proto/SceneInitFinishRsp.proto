@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "SceneInitFinishRspOuterClass";
 
 message SceneInitFinishRsp {
-	int32 retcode = 5;
-	uint32 enter_scene_token = 14;
+	int32 retcode = 7;
+	uint32 enter_scene_token = 1;
 }

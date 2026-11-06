@@ -5,5 +5,5 @@ option java_outer_classname = "WindSeedType1NotifyOuterClass";
 
 message WindSeedType1Notify {
 	uint32 config_id = 10;
-	bytes _payload = 5;
+	bytes _payload = 15;
 }

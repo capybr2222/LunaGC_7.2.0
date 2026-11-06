@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "BCMGBIKCCFBOuterClass";
 
 message BCMGBIKCCFB {
-	uint32 config_id = 13;
+	uint32 config_id = 14;
 }

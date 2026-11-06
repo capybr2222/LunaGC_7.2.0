@@ -19,25 +19,25 @@ public final class DungeonEntryPointInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 recommend_dungeon_id = 9;</code>
+     * <code>uint32 recommend_dungeon_id = 7;</code>
      * @return The recommendDungeonId.
      */
     int getRecommendDungeonId();
 
     /**
-     * <code>uint32 point_id = 14;</code>
+     * <code>uint32 point_id = 5;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>uint32 _first_pass_reward_status = 8;</code>
+     * <code>uint32 _first_pass_reward_status = 2;</code>
      * @return The firstPassRewardStatus.
      */
     int getFirstPassRewardStatus();
 
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <code>uint32 scene_id = 4;</code>
      * @return The sceneId.
      */
     int getSceneId();
@@ -113,6 +113,11 @@ public final class DungeonEntryPointInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              FirstPassRewardStatus_ = input.readUInt32();
+              break;
+            }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 dungeonEntryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo>();
@@ -122,24 +127,19 @@ public final class DungeonEntryPointInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.parser(), extensionRegistry));
               break;
             }
-            case 64: {
-
-              FirstPassRewardStatus_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              recommendDungeonId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 32: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 40: {
 
               pointId_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              recommendDungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -177,10 +177,10 @@ public final class DungeonEntryPointInfoOuterClass {
               emu.grasscutter.net.proto.DungeonEntryPointInfoOuterClass.DungeonEntryPointInfo.class, emu.grasscutter.net.proto.DungeonEntryPointInfoOuterClass.DungeonEntryPointInfo.Builder.class);
     }
 
-    public static final int RECOMMEND_DUNGEON_ID_FIELD_NUMBER = 9;
+    public static final int RECOMMEND_DUNGEON_ID_FIELD_NUMBER = 7;
     private int recommendDungeonId_;
     /**
-     * <code>uint32 recommend_dungeon_id = 9;</code>
+     * <code>uint32 recommend_dungeon_id = 7;</code>
      * @return The recommendDungeonId.
      */
     @java.lang.Override
@@ -188,10 +188,10 @@ public final class DungeonEntryPointInfoOuterClass {
       return recommendDungeonId_;
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 14;
+    public static final int POINT_ID_FIELD_NUMBER = 5;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 14;</code>
+     * <code>uint32 point_id = 5;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -199,10 +199,10 @@ public final class DungeonEntryPointInfoOuterClass {
       return pointId_;
     }
 
-    public static final int _FIRST_PASS_REWARD_STATUS_FIELD_NUMBER = 8;
+    public static final int _FIRST_PASS_REWARD_STATUS_FIELD_NUMBER = 2;
     private int FirstPassRewardStatus_;
     /**
-     * <code>uint32 _first_pass_reward_status = 8;</code>
+     * <code>uint32 _first_pass_reward_status = 2;</code>
      * @return The firstPassRewardStatus.
      */
     @java.lang.Override
@@ -210,10 +210,10 @@ public final class DungeonEntryPointInfoOuterClass {
       return FirstPassRewardStatus_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 10;
+    public static final int SCENE_ID_FIELD_NUMBER = 4;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <code>uint32 scene_id = 4;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -275,20 +275,20 @@ public final class DungeonEntryPointInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (FirstPassRewardStatus_ != 0) {
+        output.writeUInt32(2, FirstPassRewardStatus_);
+      }
       for (int i = 0; i < dungeonEntryList_.size(); i++) {
         output.writeMessage(3, dungeonEntryList_.get(i));
       }
-      if (FirstPassRewardStatus_ != 0) {
-        output.writeUInt32(8, FirstPassRewardStatus_);
-      }
-      if (recommendDungeonId_ != 0) {
-        output.writeUInt32(9, recommendDungeonId_);
-      }
       if (sceneId_ != 0) {
-        output.writeUInt32(10, sceneId_);
+        output.writeUInt32(4, sceneId_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(14, pointId_);
+        output.writeUInt32(5, pointId_);
+      }
+      if (recommendDungeonId_ != 0) {
+        output.writeUInt32(7, recommendDungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,25 +299,25 @@ public final class DungeonEntryPointInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (FirstPassRewardStatus_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, FirstPassRewardStatus_);
+      }
       for (int i = 0; i < dungeonEntryList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, dungeonEntryList_.get(i));
       }
-      if (FirstPassRewardStatus_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, FirstPassRewardStatus_);
-      }
-      if (recommendDungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, recommendDungeonId_);
-      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, sceneId_);
+          .computeUInt32Size(4, sceneId_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, pointId_);
+          .computeUInt32Size(5, pointId_);
+      }
+      if (recommendDungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, recommendDungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -673,7 +673,7 @@ public final class DungeonEntryPointInfoOuterClass {
 
       private int recommendDungeonId_ ;
       /**
-       * <code>uint32 recommend_dungeon_id = 9;</code>
+       * <code>uint32 recommend_dungeon_id = 7;</code>
        * @return The recommendDungeonId.
        */
       @java.lang.Override
@@ -681,7 +681,7 @@ public final class DungeonEntryPointInfoOuterClass {
         return recommendDungeonId_;
       }
       /**
-       * <code>uint32 recommend_dungeon_id = 9;</code>
+       * <code>uint32 recommend_dungeon_id = 7;</code>
        * @param value The recommendDungeonId to set.
        * @return This builder for chaining.
        */
@@ -692,7 +692,7 @@ public final class DungeonEntryPointInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 recommend_dungeon_id = 9;</code>
+       * <code>uint32 recommend_dungeon_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearRecommendDungeonId() {
@@ -704,7 +704,7 @@ public final class DungeonEntryPointInfoOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 14;</code>
+       * <code>uint32 point_id = 5;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -712,7 +712,7 @@ public final class DungeonEntryPointInfoOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 14;</code>
+       * <code>uint32 point_id = 5;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -723,7 +723,7 @@ public final class DungeonEntryPointInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 14;</code>
+       * <code>uint32 point_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -735,7 +735,7 @@ public final class DungeonEntryPointInfoOuterClass {
 
       private int FirstPassRewardStatus_ ;
       /**
-       * <code>uint32 _first_pass_reward_status = 8;</code>
+       * <code>uint32 _first_pass_reward_status = 2;</code>
        * @return The firstPassRewardStatus.
        */
       @java.lang.Override
@@ -743,7 +743,7 @@ public final class DungeonEntryPointInfoOuterClass {
         return FirstPassRewardStatus_;
       }
       /**
-       * <code>uint32 _first_pass_reward_status = 8;</code>
+       * <code>uint32 _first_pass_reward_status = 2;</code>
        * @param value The firstPassRewardStatus to set.
        * @return This builder for chaining.
        */
@@ -754,7 +754,7 @@ public final class DungeonEntryPointInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 _first_pass_reward_status = 8;</code>
+       * <code>uint32 _first_pass_reward_status = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearFirstPassRewardStatus() {
@@ -766,7 +766,7 @@ public final class DungeonEntryPointInfoOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 4;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -774,7 +774,7 @@ public final class DungeonEntryPointInfoOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 4;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -785,7 +785,7 @@ public final class DungeonEntryPointInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -1103,9 +1103,9 @@ public final class DungeonEntryPointInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033DungeonEntryPointInfo.proto\032\026DungeonEn" +
       "tryInfo.proto\"\253\001\n\025DungeonEntryPointInfo\022" +
-      "\034\n\024recommend_dungeon_id\030\t \001(\r\022\020\n\010point_i" +
-      "d\030\016 \001(\r\022!\n\031_first_pass_reward_status\030\010 \001" +
-      "(\r\022\020\n\010scene_id\030\n \001(\r\022-\n\022dungeon_entry_li" +
+      "\034\n\024recommend_dungeon_id\030\007 \001(\r\022\020\n\010point_i" +
+      "d\030\005 \001(\r\022!\n\031_first_pass_reward_status\030\002 \001" +
+      "(\r\022\020\n\010scene_id\030\004 \001(\r\022-\n\022dungeon_entry_li" +
       "st\030\003 \003(\0132\021.DungeonEntryInfoB<\n\031emu.grass" +
       "cutter.net.protoB\037DungeonEntryPointInfoO" +
       "uterClassb\006proto3"

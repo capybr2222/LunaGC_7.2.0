@@ -6,5 +6,5 @@ option java_outer_classname = "OAKCNCLBBMIOuterClass";
 import "ALCMFKHLGHG.proto";
 
 message OAKCNCLBBMI {
-	repeated ALCMFKHLGHG level_info_list = 13;
+	repeated ALCMFKHLGHG level_info_list = 4;
 }

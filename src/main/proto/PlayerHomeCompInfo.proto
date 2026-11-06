@@ -6,8 +6,8 @@ option java_outer_classname = "PlayerHomeCompInfoOuterClass";
 import "FriendEnterHomeOption.proto";
 
 message PlayerHomeCompInfo {
-	repeated uint32 unlocked_module_id_list = 50000;
-	repeated uint32 seen_module_id_list = 6;
-	FriendEnterHomeOption friend_enter_home_option = 10;
-	repeated uint32 levelup_reward_got_level_list = 50001;
+	repeated uint32 unlocked_module_id_list = 15;
+	repeated uint32 seen_module_id_list = 13;
+	FriendEnterHomeOption friend_enter_home_option = 14;
+	repeated uint32 levelup_reward_got_level_list = 2;
 }

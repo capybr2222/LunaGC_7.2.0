@@ -6,7 +6,7 @@ option java_outer_classname = "PlatformStopRouteNotifyOuterClass";
 import "PlatformInfo.proto";
 
 message PlatformStopRouteNotify {
-	uint32 entity_id = 3;
-	uint32 scene_time = 8;
+	uint32 entity_id = 5;
+	uint32 scene_time = 14;
 	PlatformInfo platform = 12;
 }

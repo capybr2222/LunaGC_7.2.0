@@ -6,11 +6,11 @@ option java_outer_classname = "_RankedMatchTrainSettleInfoOuterClass";
 import "GalleryStopReason.proto";
 
 message _RankedMatchTrainSettleInfo {
-	uint32 score = 12;
+	uint32 score = 13;
 	uint32 DPFLJBCLGDJ = 11;
-	uint32 use_time = 13;
-	bool is_new_record = 3;
-	GalleryStopReason reason = 5;
-	uint32 item_num = 1;
-	uint32 level_id = 2;
+	uint32 use_time = 9;
+	bool is_new_record = 2;
+	GalleryStopReason reason = 4;
+	uint32 item_num = 5;
+	uint32 level_id = 7;
 }

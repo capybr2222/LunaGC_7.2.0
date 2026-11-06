@@ -6,7 +6,7 @@ option java_outer_classname = "HomeAvatarRewardEventNotifyOuterClass";
 import "HomeAvatarRewardEventInfo.proto";
 
 message HomeAvatarRewardEventNotify {
-	bool is_event_trigger = 2;
-	repeated HomeAvatarRewardEventInfo pending_list = 5;
-	HomeAvatarRewardEventInfo reward_event = 9;
+	bool is_event_trigger = 3;
+	repeated HomeAvatarRewardEventInfo pending_list = 12;
+	HomeAvatarRewardEventInfo reward_event = 15;
 }

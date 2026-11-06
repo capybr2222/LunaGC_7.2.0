@@ -6,5 +6,5 @@ option java_outer_classname = "DailyTaskProgressNotifyOuterClass";
 import "DailyTaskInfo.proto";
 
 message DailyTaskProgressNotify {
-	DailyTaskInfo info = 5;
+	DailyTaskInfo info = 2;
 }

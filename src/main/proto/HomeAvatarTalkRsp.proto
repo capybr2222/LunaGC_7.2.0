@@ -6,6 +6,6 @@ option java_outer_classname = "HomeAvatarTalkRspOuterClass";
 import "HomeAvatarTalkFinishInfo.proto";
 
 message HomeAvatarTalkRsp {
-	int32 retcode = 8;
-	HomeAvatarTalkFinishInfo avatar_talk_info = 2;
+	int32 retcode = 13;
+	HomeAvatarTalkFinishInfo avatar_talk_info = 14;
 }

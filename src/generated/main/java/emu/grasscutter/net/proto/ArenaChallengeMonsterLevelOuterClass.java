@@ -19,13 +19,13 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BLCPLGCJEBJ = 8;</code>
+     * <code>uint32 BLCPLGCJEBJ = 2;</code>
      * @return The bLCPLGCJEBJ.
      */
     int getBLCPLGCJEBJ();
 
     /**
-     * <code>uint32 KHJHFLNMNPC = 2;</code>
+     * <code>uint32 KHJHFLNMNPC = 1;</code>
      * @return The kHJHFLNMNPC.
      */
     int getKHJHFLNMNPC();
@@ -75,12 +75,12 @@ public final class ArenaChallengeMonsterLevelOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               kHJHFLNMNPC_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 16: {
 
               bLCPLGCJEBJ_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class ArenaChallengeMonsterLevelOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.class, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder.class);
     }
 
-    public static final int BLCPLGCJEBJ_FIELD_NUMBER = 8;
+    public static final int BLCPLGCJEBJ_FIELD_NUMBER = 2;
     private int bLCPLGCJEBJ_;
     /**
-     * <code>uint32 BLCPLGCJEBJ = 8;</code>
+     * <code>uint32 BLCPLGCJEBJ = 2;</code>
      * @return The bLCPLGCJEBJ.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       return bLCPLGCJEBJ_;
     }
 
-    public static final int KHJHFLNMNPC_FIELD_NUMBER = 2;
+    public static final int KHJHFLNMNPC_FIELD_NUMBER = 1;
     private int kHJHFLNMNPC_;
     /**
-     * <code>uint32 KHJHFLNMNPC = 2;</code>
+     * <code>uint32 KHJHFLNMNPC = 1;</code>
      * @return The kHJHFLNMNPC.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class ArenaChallengeMonsterLevelOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (kHJHFLNMNPC_ != 0) {
-        output.writeUInt32(2, kHJHFLNMNPC_);
+        output.writeUInt32(1, kHJHFLNMNPC_);
       }
       if (bLCPLGCJEBJ_ != 0) {
-        output.writeUInt32(8, bLCPLGCJEBJ_);
+        output.writeUInt32(2, bLCPLGCJEBJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class ArenaChallengeMonsterLevelOuterClass {
       size = 0;
       if (kHJHFLNMNPC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, kHJHFLNMNPC_);
+          .computeUInt32Size(1, kHJHFLNMNPC_);
       }
       if (bLCPLGCJEBJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, bLCPLGCJEBJ_);
+          .computeUInt32Size(2, bLCPLGCJEBJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
 
       private int bLCPLGCJEBJ_ ;
       /**
-       * <code>uint32 BLCPLGCJEBJ = 8;</code>
+       * <code>uint32 BLCPLGCJEBJ = 2;</code>
        * @return The bLCPLGCJEBJ.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
         return bLCPLGCJEBJ_;
       }
       /**
-       * <code>uint32 BLCPLGCJEBJ = 8;</code>
+       * <code>uint32 BLCPLGCJEBJ = 2;</code>
        * @param value The bLCPLGCJEBJ to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BLCPLGCJEBJ = 8;</code>
+       * <code>uint32 BLCPLGCJEBJ = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearBLCPLGCJEBJ() {
@@ -491,7 +491,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
 
       private int kHJHFLNMNPC_ ;
       /**
-       * <code>uint32 KHJHFLNMNPC = 2;</code>
+       * <code>uint32 KHJHFLNMNPC = 1;</code>
        * @return The kHJHFLNMNPC.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
         return kHJHFLNMNPC_;
       }
       /**
-       * <code>uint32 KHJHFLNMNPC = 2;</code>
+       * <code>uint32 KHJHFLNMNPC = 1;</code>
        * @param value The kHJHFLNMNPC to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
         return this;
       }
       /**
-       * <code>uint32 KHJHFLNMNPC = 2;</code>
+       * <code>uint32 KHJHFLNMNPC = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearKHJHFLNMNPC() {
@@ -588,7 +588,7 @@ public final class ArenaChallengeMonsterLevelOuterClass {
     java.lang.String[] descriptorData = {
       "\n ArenaChallengeMonsterLevel.proto\"F\n\032Ar" +
       "enaChallengeMonsterLevel\022\023\n\013BLCPLGCJEBJ\030" +
-      "\010 \001(\r\022\023\n\013KHJHFLNMNPC\030\002 \001(\rBA\n\031emu.grassc" +
+      "\002 \001(\r\022\023\n\013KHJHFLNMNPC\030\001 \001(\rBA\n\031emu.grassc" +
       "utter.net.protoB$ArenaChallengeMonsterLe" +
       "velOuterClassb\006proto3"
     };

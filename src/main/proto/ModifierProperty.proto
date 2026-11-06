@@ -6,6 +6,6 @@ option java_outer_classname = "ModifierPropertyOuterClass";
 import "AbilityString.proto";
 
 message ModifierProperty {
-	float value = 12;
-	AbilityString key = 10;
+	float value = 13;
+	AbilityString key = 11;
 }

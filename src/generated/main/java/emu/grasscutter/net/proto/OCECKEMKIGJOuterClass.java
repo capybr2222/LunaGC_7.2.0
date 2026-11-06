@@ -19,60 +19,60 @@ public final class OCECKEMKIGJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 6;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_played = 10;</code>
+     * <code>bool is_played = 3;</code>
      * @return The isPlayed.
      */
     boolean getIsPlayed();
 
     /**
-     * <code>bool is_finished = 12;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>uint32 IFFKFLBCHHL = 50000;</code>
+     * <code>uint32 IFFKFLBCHHL = 20001;</code>
      * @return The iFFKFLBCHHL.
      */
     int getIFFKFLBCHHL();
 
     /**
-     * <code>uint32 ALNHCONFHHO = 50001;</code>
+     * <code>uint32 ALNHCONFHHO = 20002;</code>
      * @return The aLNHCONFHHO.
      */
     int getALNHCONFHHO();
 
     /**
-     * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+     * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
      * @return A list containing the eGCJHEIONKK.
      */
     java.util.List<java.lang.Integer> getEGCJHEIONKKList();
     /**
-     * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+     * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
      * @return The count of eGCJHEIONKK.
      */
     int getEGCJHEIONKKCount();
     /**
-     * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+     * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
      * @param index The index of the element to return.
      * @return The eGCJHEIONKK at the given index.
      */
     int getEGCJHEIONKK(int index);
 
     /**
-     * <code>bool is_unlock = 9;</code>
+     * <code>bool is_unlock = 2;</code>
      * @return The isUnlock.
      */
     boolean getIsUnlock();
 
     /**
-     * <code>uint32 JPBOIPOIGNH = 50002;</code>
+     * <code>uint32 JPBOIPOIGNH = 20003;</code>
      * @return The jPBOIPOIGNH.
      */
     int getJPBOIPOIGNH();
@@ -124,7 +124,27 @@ public final class OCECKEMKIGJOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
+              isUnlock_ = input.readBool();
+              break;
+            }
             case 24: {
+
+              isPlayed_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              isFinished_ = input.readBool();
+              break;
+            }
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 eGCJHEIONKK_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -132,7 +152,7 @@ public final class OCECKEMKIGJOuterClass {
               eGCJHEIONKK_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -145,37 +165,17 @@ public final class OCECKEMKIGJOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 48: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              isUnlock_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              isPlayed_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 400000: {
+            case 160008: {
 
               iFFKFLBCHHL_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 160016: {
 
               aLNHCONFHHO_ = input.readUInt32();
               break;
             }
-            case 400016: {
+            case 160024: {
 
               jPBOIPOIGNH_ = input.readUInt32();
               break;
@@ -215,10 +215,10 @@ public final class OCECKEMKIGJOuterClass {
               emu.grasscutter.net.proto.OCECKEMKIGJOuterClass.OCECKEMKIGJ.class, emu.grasscutter.net.proto.OCECKEMKIGJOuterClass.OCECKEMKIGJ.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 6;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 6;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -226,10 +226,10 @@ public final class OCECKEMKIGJOuterClass {
       return levelId_;
     }
 
-    public static final int IS_PLAYED_FIELD_NUMBER = 10;
+    public static final int IS_PLAYED_FIELD_NUMBER = 3;
     private boolean isPlayed_;
     /**
-     * <code>bool is_played = 10;</code>
+     * <code>bool is_played = 3;</code>
      * @return The isPlayed.
      */
     @java.lang.Override
@@ -237,10 +237,10 @@ public final class OCECKEMKIGJOuterClass {
       return isPlayed_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 12;
+    public static final int IS_FINISHED_FIELD_NUMBER = 4;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 12;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -248,10 +248,10 @@ public final class OCECKEMKIGJOuterClass {
       return isFinished_;
     }
 
-    public static final int IFFKFLBCHHL_FIELD_NUMBER = 50000;
+    public static final int IFFKFLBCHHL_FIELD_NUMBER = 20001;
     private int iFFKFLBCHHL_;
     /**
-     * <code>uint32 IFFKFLBCHHL = 50000;</code>
+     * <code>uint32 IFFKFLBCHHL = 20001;</code>
      * @return The iFFKFLBCHHL.
      */
     @java.lang.Override
@@ -259,10 +259,10 @@ public final class OCECKEMKIGJOuterClass {
       return iFFKFLBCHHL_;
     }
 
-    public static final int ALNHCONFHHO_FIELD_NUMBER = 50001;
+    public static final int ALNHCONFHHO_FIELD_NUMBER = 20002;
     private int aLNHCONFHHO_;
     /**
-     * <code>uint32 ALNHCONFHHO = 50001;</code>
+     * <code>uint32 ALNHCONFHHO = 20002;</code>
      * @return The aLNHCONFHHO.
      */
     @java.lang.Override
@@ -270,10 +270,10 @@ public final class OCECKEMKIGJOuterClass {
       return aLNHCONFHHO_;
     }
 
-    public static final int EGCJHEIONKK_FIELD_NUMBER = 3;
+    public static final int EGCJHEIONKK_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList eGCJHEIONKK_;
     /**
-     * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+     * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
      * @return A list containing the eGCJHEIONKK.
      */
     @java.lang.Override
@@ -282,14 +282,14 @@ public final class OCECKEMKIGJOuterClass {
       return eGCJHEIONKK_;
     }
     /**
-     * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+     * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
      * @return The count of eGCJHEIONKK.
      */
     public int getEGCJHEIONKKCount() {
       return eGCJHEIONKK_.size();
     }
     /**
-     * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+     * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
      * @param index The index of the element to return.
      * @return The eGCJHEIONKK at the given index.
      */
@@ -298,10 +298,10 @@ public final class OCECKEMKIGJOuterClass {
     }
     private int eGCJHEIONKKMemoizedSerializedSize = -1;
 
-    public static final int IS_UNLOCK_FIELD_NUMBER = 9;
+    public static final int IS_UNLOCK_FIELD_NUMBER = 2;
     private boolean isUnlock_;
     /**
-     * <code>bool is_unlock = 9;</code>
+     * <code>bool is_unlock = 2;</code>
      * @return The isUnlock.
      */
     @java.lang.Override
@@ -309,10 +309,10 @@ public final class OCECKEMKIGJOuterClass {
       return isUnlock_;
     }
 
-    public static final int JPBOIPOIGNH_FIELD_NUMBER = 50002;
+    public static final int JPBOIPOIGNH_FIELD_NUMBER = 20003;
     private int jPBOIPOIGNH_;
     /**
-     * <code>uint32 JPBOIPOIGNH = 50002;</code>
+     * <code>uint32 JPBOIPOIGNH = 20003;</code>
      * @return The jPBOIPOIGNH.
      */
     @java.lang.Override
@@ -335,33 +335,33 @@ public final class OCECKEMKIGJOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (levelId_ != 0) {
+        output.writeUInt32(1, levelId_);
+      }
+      if (isUnlock_ != false) {
+        output.writeBool(2, isUnlock_);
+      }
+      if (isPlayed_ != false) {
+        output.writeBool(3, isPlayed_);
+      }
+      if (isFinished_ != false) {
+        output.writeBool(4, isFinished_);
+      }
       if (getEGCJHEIONKKList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(eGCJHEIONKKMemoizedSerializedSize);
       }
       for (int i = 0; i < eGCJHEIONKK_.size(); i++) {
         output.writeUInt32NoTag(eGCJHEIONKK_.getInt(i));
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(6, levelId_);
-      }
-      if (isUnlock_ != false) {
-        output.writeBool(9, isUnlock_);
-      }
-      if (isPlayed_ != false) {
-        output.writeBool(10, isPlayed_);
-      }
-      if (isFinished_ != false) {
-        output.writeBool(12, isFinished_);
-      }
       if (iFFKFLBCHHL_ != 0) {
-        output.writeUInt32(50000, iFFKFLBCHHL_);
+        output.writeUInt32(20001, iFFKFLBCHHL_);
       }
       if (aLNHCONFHHO_ != 0) {
-        output.writeUInt32(50001, aLNHCONFHHO_);
+        output.writeUInt32(20002, aLNHCONFHHO_);
       }
       if (jPBOIPOIGNH_ != 0) {
-        output.writeUInt32(50002, jPBOIPOIGNH_);
+        output.writeUInt32(20003, jPBOIPOIGNH_);
       }
       unknownFields.writeTo(output);
     }
@@ -372,6 +372,22 @@ public final class OCECKEMKIGJOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, levelId_);
+      }
+      if (isUnlock_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isUnlock_);
+      }
+      if (isPlayed_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isPlayed_);
+      }
+      if (isFinished_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isFinished_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < eGCJHEIONKK_.size(); i++) {
@@ -380,39 +396,23 @@ public final class OCECKEMKIGJOuterClass {
         }
         size += dataSize;
         if (!getEGCJHEIONKKList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
         eGCJHEIONKKMemoizedSerializedSize = dataSize;
       }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, levelId_);
-      }
-      if (isUnlock_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isUnlock_);
-      }
-      if (isPlayed_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isPlayed_);
-      }
-      if (isFinished_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isFinished_);
-      }
       if (iFFKFLBCHHL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, iFFKFLBCHHL_);
+          .computeUInt32Size(20001, iFFKFLBCHHL_);
       }
       if (aLNHCONFHHO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, aLNHCONFHHO_);
+          .computeUInt32Size(20002, aLNHCONFHHO_);
       }
       if (jPBOIPOIGNH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50002, jPBOIPOIGNH_);
+          .computeUInt32Size(20003, jPBOIPOIGNH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -776,7 +776,7 @@ public final class OCECKEMKIGJOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -784,7 +784,7 @@ public final class OCECKEMKIGJOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -795,7 +795,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -807,7 +807,7 @@ public final class OCECKEMKIGJOuterClass {
 
       private boolean isPlayed_ ;
       /**
-       * <code>bool is_played = 10;</code>
+       * <code>bool is_played = 3;</code>
        * @return The isPlayed.
        */
       @java.lang.Override
@@ -815,7 +815,7 @@ public final class OCECKEMKIGJOuterClass {
         return isPlayed_;
       }
       /**
-       * <code>bool is_played = 10;</code>
+       * <code>bool is_played = 3;</code>
        * @param value The isPlayed to set.
        * @return This builder for chaining.
        */
@@ -826,7 +826,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>bool is_played = 10;</code>
+       * <code>bool is_played = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsPlayed() {
@@ -838,7 +838,7 @@ public final class OCECKEMKIGJOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 12;</code>
+       * <code>bool is_finished = 4;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -846,7 +846,7 @@ public final class OCECKEMKIGJOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 12;</code>
+       * <code>bool is_finished = 4;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -857,7 +857,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 12;</code>
+       * <code>bool is_finished = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -869,7 +869,7 @@ public final class OCECKEMKIGJOuterClass {
 
       private int iFFKFLBCHHL_ ;
       /**
-       * <code>uint32 IFFKFLBCHHL = 50000;</code>
+       * <code>uint32 IFFKFLBCHHL = 20001;</code>
        * @return The iFFKFLBCHHL.
        */
       @java.lang.Override
@@ -877,7 +877,7 @@ public final class OCECKEMKIGJOuterClass {
         return iFFKFLBCHHL_;
       }
       /**
-       * <code>uint32 IFFKFLBCHHL = 50000;</code>
+       * <code>uint32 IFFKFLBCHHL = 20001;</code>
        * @param value The iFFKFLBCHHL to set.
        * @return This builder for chaining.
        */
@@ -888,7 +888,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 IFFKFLBCHHL = 50000;</code>
+       * <code>uint32 IFFKFLBCHHL = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearIFFKFLBCHHL() {
@@ -900,7 +900,7 @@ public final class OCECKEMKIGJOuterClass {
 
       private int aLNHCONFHHO_ ;
       /**
-       * <code>uint32 ALNHCONFHHO = 50001;</code>
+       * <code>uint32 ALNHCONFHHO = 20002;</code>
        * @return The aLNHCONFHHO.
        */
       @java.lang.Override
@@ -908,7 +908,7 @@ public final class OCECKEMKIGJOuterClass {
         return aLNHCONFHHO_;
       }
       /**
-       * <code>uint32 ALNHCONFHHO = 50001;</code>
+       * <code>uint32 ALNHCONFHHO = 20002;</code>
        * @param value The aLNHCONFHHO to set.
        * @return This builder for chaining.
        */
@@ -919,7 +919,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ALNHCONFHHO = 50001;</code>
+       * <code>uint32 ALNHCONFHHO = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearALNHCONFHHO() {
@@ -937,7 +937,7 @@ public final class OCECKEMKIGJOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+       * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
        * @return A list containing the eGCJHEIONKK.
        */
       public java.util.List<java.lang.Integer>
@@ -946,14 +946,14 @@ public final class OCECKEMKIGJOuterClass {
                  java.util.Collections.unmodifiableList(eGCJHEIONKK_) : eGCJHEIONKK_;
       }
       /**
-       * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+       * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
        * @return The count of eGCJHEIONKK.
        */
       public int getEGCJHEIONKKCount() {
         return eGCJHEIONKK_.size();
       }
       /**
-       * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+       * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
        * @param index The index of the element to return.
        * @return The eGCJHEIONKK at the given index.
        */
@@ -961,7 +961,7 @@ public final class OCECKEMKIGJOuterClass {
         return eGCJHEIONKK_.getInt(index);
       }
       /**
-       * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+       * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
        * @param index The index to set the value at.
        * @param value The eGCJHEIONKK to set.
        * @return This builder for chaining.
@@ -974,7 +974,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+       * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
        * @param value The eGCJHEIONKK to add.
        * @return This builder for chaining.
        */
@@ -985,7 +985,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+       * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
        * @param values The eGCJHEIONKK to add.
        * @return This builder for chaining.
        */
@@ -998,7 +998,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EGCJHEIONKK = 3;</code>
+       * <code>repeated uint32 EGCJHEIONKK = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearEGCJHEIONKK() {
@@ -1010,7 +1010,7 @@ public final class OCECKEMKIGJOuterClass {
 
       private boolean isUnlock_ ;
       /**
-       * <code>bool is_unlock = 9;</code>
+       * <code>bool is_unlock = 2;</code>
        * @return The isUnlock.
        */
       @java.lang.Override
@@ -1018,7 +1018,7 @@ public final class OCECKEMKIGJOuterClass {
         return isUnlock_;
       }
       /**
-       * <code>bool is_unlock = 9;</code>
+       * <code>bool is_unlock = 2;</code>
        * @param value The isUnlock to set.
        * @return This builder for chaining.
        */
@@ -1029,7 +1029,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>bool is_unlock = 9;</code>
+       * <code>bool is_unlock = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsUnlock() {
@@ -1041,7 +1041,7 @@ public final class OCECKEMKIGJOuterClass {
 
       private int jPBOIPOIGNH_ ;
       /**
-       * <code>uint32 JPBOIPOIGNH = 50002;</code>
+       * <code>uint32 JPBOIPOIGNH = 20003;</code>
        * @return The jPBOIPOIGNH.
        */
       @java.lang.Override
@@ -1049,7 +1049,7 @@ public final class OCECKEMKIGJOuterClass {
         return jPBOIPOIGNH_;
       }
       /**
-       * <code>uint32 JPBOIPOIGNH = 50002;</code>
+       * <code>uint32 JPBOIPOIGNH = 20003;</code>
        * @param value The jPBOIPOIGNH to set.
        * @return This builder for chaining.
        */
@@ -1060,7 +1060,7 @@ public final class OCECKEMKIGJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 JPBOIPOIGNH = 50002;</code>
+       * <code>uint32 JPBOIPOIGNH = 20003;</code>
        * @return This builder for chaining.
        */
       public Builder clearJPBOIPOIGNH() {
@@ -1136,13 +1136,13 @@ public final class OCECKEMKIGJOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021OCECKEMKIGJ.proto\"\264\001\n\013OCECKEMKIGJ\022\020\n\010l" +
-      "evel_id\030\006 \001(\r\022\021\n\tis_played\030\n \001(\010\022\023\n\013is_f" +
-      "inished\030\014 \001(\010\022\025\n\013IFFKFLBCHHL\030\320\206\003 \001(\r\022\025\n\013" +
-      "ALNHCONFHHO\030\321\206\003 \001(\r\022\023\n\013EGCJHEIONKK\030\003 \003(\r" +
-      "\022\021\n\tis_unlock\030\t \001(\010\022\025\n\013JPBOIPOIGNH\030\322\206\003 \001" +
-      "(\rB2\n\031emu.grasscutter.net.protoB\025OCECKEM" +
-      "KIGJOuterClassb\006proto3"
+      "\n\021OCECKEMKIGJ.proto\"\266\001\n\013OCECKEMKIGJ\022\020\n\010l" +
+      "evel_id\030\001 \001(\r\022\021\n\tis_played\030\003 \001(\010\022\023\n\013is_f" +
+      "inished\030\004 \001(\010\022\025\n\013IFFKFLBCHHL\030\241\234\001 \001(\r\022\025\n\013" +
+      "ALNHCONFHHO\030\242\234\001 \001(\r\022\025\n\013EGCJHEIONKK\030\240\234\001 \003" +
+      "(\r\022\021\n\tis_unlock\030\002 \001(\010\022\025\n\013JPBOIPOIGNH\030\243\234\001" +
+      " \001(\rB2\n\031emu.grasscutter.net.protoB\025OCECK" +
+      "EMKIGJOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

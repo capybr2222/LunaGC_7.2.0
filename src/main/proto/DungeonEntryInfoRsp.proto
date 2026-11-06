@@ -7,11 +7,11 @@ import "DungeonEntryInfo.proto";
 import "DungeonEntryPointInfo.proto";
 
 message DungeonEntryInfoRsp {
-	int32 retcode = 12;
-	uint32 point_id = 6;
-	uint32 recommend_dungeon_id = 3;
-	repeated DungeonEntryInfo dungeon_entry_list = 7;
-	uint32 _first_pass_reward_status = 8;
-	bool jpmdjmadpil = 2;
-	repeated DungeonEntryPointInfo dungeon_entry_point_list = 1;
+	int32 retcode = 14;
+	uint32 point_id = 12;
+	uint32 recommend_dungeon_id = 7;
+	repeated DungeonEntryInfo dungeon_entry_list = 13;
+	uint32 _first_pass_reward_status = 10;
+	bool jpmdjmadpil = 9;
+	repeated DungeonEntryPointInfo dungeon_entry_point_list = 4;
 }

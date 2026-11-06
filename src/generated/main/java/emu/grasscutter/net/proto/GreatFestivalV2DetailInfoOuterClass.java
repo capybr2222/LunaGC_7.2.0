@@ -49,32 +49,32 @@ public final class GreatFestivalV2DetailInfoOuterClass {
     emu.grasscutter.net.proto.OAKCNCLBBMIOuterClass.OAKCNCLBBMIOrBuilder getCLHOGMFANFJOrBuilder();
 
     /**
-     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
      * @return Whether the hNHIEBFPFIM field is set.
      */
     boolean hasHNHIEBFPFIM();
     /**
-     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
      * @return The hNHIEBFPFIM.
      */
     emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH getHNHIEBFPFIM();
     /**
-     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
      */
     emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJHOrBuilder getHNHIEBFPFIMOrBuilder();
 
     /**
-     * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+     * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
      * @return Whether the mdppmahkpfi field is set.
      */
     boolean hasMdppmahkpfi();
     /**
-     * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+     * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
      * @return The mdppmahkpfi.
      */
     emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC getMdppmahkpfi();
     /**
-     * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+     * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
      */
     emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMCOrBuilder getMdppmahkpfiOrBuilder();
   }
@@ -123,19 +123,6 @@ public final class GreatFestivalV2DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
-              emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.Builder subBuilder = null;
-              if (hNHIEBFPFIM_ != null) {
-                subBuilder = hNHIEBFPFIM_.toBuilder();
-              }
-              hNHIEBFPFIM_ = input.readMessage(emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(hNHIEBFPFIM_);
-                hNHIEBFPFIM_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
             case 400002: {
               emu.grasscutter.net.proto.IPPDBOLOOIBOuterClass.IPPDBOLOOIB.Builder subBuilder = null;
               if (gOFMMGFEDBI_ != null) {
@@ -163,6 +150,19 @@ public final class GreatFestivalV2DetailInfoOuterClass {
               break;
             }
             case 400018: {
+              emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.Builder subBuilder = null;
+              if (hNHIEBFPFIM_ != null) {
+                subBuilder = hNHIEBFPFIM_.toBuilder();
+              }
+              hNHIEBFPFIM_ = input.readMessage(emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(hNHIEBFPFIM_);
+                hNHIEBFPFIM_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 400026: {
               emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC.Builder subBuilder = null;
               if (mdppmahkpfi_ != null) {
                 subBuilder = mdppmahkpfi_.toBuilder();
@@ -259,10 +259,10 @@ public final class GreatFestivalV2DetailInfoOuterClass {
       return getCLHOGMFANFJ();
     }
 
-    public static final int HNHIEBFPFIM_FIELD_NUMBER = 7;
+    public static final int HNHIEBFPFIM_FIELD_NUMBER = 50002;
     private emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH hNHIEBFPFIM_;
     /**
-     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
      * @return Whether the hNHIEBFPFIM field is set.
      */
     @java.lang.Override
@@ -270,7 +270,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
       return hNHIEBFPFIM_ != null;
     }
     /**
-     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
      * @return The hNHIEBFPFIM.
      */
     @java.lang.Override
@@ -278,17 +278,17 @@ public final class GreatFestivalV2DetailInfoOuterClass {
       return hNHIEBFPFIM_ == null ? emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.getDefaultInstance() : hNHIEBFPFIM_;
     }
     /**
-     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+     * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJHOrBuilder getHNHIEBFPFIMOrBuilder() {
       return getHNHIEBFPFIM();
     }
 
-    public static final int MDPPMAHKPFI_FIELD_NUMBER = 50002;
+    public static final int MDPPMAHKPFI_FIELD_NUMBER = 50003;
     private emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC mdppmahkpfi_;
     /**
-     * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+     * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
      * @return Whether the mdppmahkpfi field is set.
      */
     @java.lang.Override
@@ -296,7 +296,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
       return mdppmahkpfi_ != null;
     }
     /**
-     * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+     * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
      * @return The mdppmahkpfi.
      */
     @java.lang.Override
@@ -304,7 +304,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
       return mdppmahkpfi_ == null ? emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC.getDefaultInstance() : mdppmahkpfi_;
     }
     /**
-     * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+     * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMCOrBuilder getMdppmahkpfiOrBuilder() {
@@ -325,17 +325,17 @@ public final class GreatFestivalV2DetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hNHIEBFPFIM_ != null) {
-        output.writeMessage(7, getHNHIEBFPFIM());
-      }
       if (gOFMMGFEDBI_ != null) {
         output.writeMessage(50000, getGOFMMGFEDBI());
       }
       if (cLHOGMFANFJ_ != null) {
         output.writeMessage(50001, getCLHOGMFANFJ());
       }
+      if (hNHIEBFPFIM_ != null) {
+        output.writeMessage(50002, getHNHIEBFPFIM());
+      }
       if (mdppmahkpfi_ != null) {
-        output.writeMessage(50002, getMdppmahkpfi());
+        output.writeMessage(50003, getMdppmahkpfi());
       }
       unknownFields.writeTo(output);
     }
@@ -346,10 +346,6 @@ public final class GreatFestivalV2DetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hNHIEBFPFIM_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getHNHIEBFPFIM());
-      }
       if (gOFMMGFEDBI_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(50000, getGOFMMGFEDBI());
@@ -358,9 +354,13 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(50001, getCLHOGMFANFJ());
       }
+      if (hNHIEBFPFIM_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(50002, getHNHIEBFPFIM());
+      }
       if (mdppmahkpfi_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(50002, getMdppmahkpfi());
+          .computeMessageSize(50003, getMdppmahkpfi());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -958,14 +958,14 @@ public final class GreatFestivalV2DetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH, emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.Builder, emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJHOrBuilder> hNHIEBFPFIMBuilder_;
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        * @return Whether the hNHIEBFPFIM field is set.
        */
       public boolean hasHNHIEBFPFIM() {
         return hNHIEBFPFIMBuilder_ != null || hNHIEBFPFIM_ != null;
       }
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        * @return The hNHIEBFPFIM.
        */
       public emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH getHNHIEBFPFIM() {
@@ -976,7 +976,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        */
       public Builder setHNHIEBFPFIM(emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH value) {
         if (hNHIEBFPFIMBuilder_ == null) {
@@ -992,7 +992,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        */
       public Builder setHNHIEBFPFIM(
           emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.Builder builderForValue) {
@@ -1006,7 +1006,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        */
       public Builder mergeHNHIEBFPFIM(emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH value) {
         if (hNHIEBFPFIMBuilder_ == null) {
@@ -1024,7 +1024,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        */
       public Builder clearHNHIEBFPFIM() {
         if (hNHIEBFPFIMBuilder_ == null) {
@@ -1038,7 +1038,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        */
       public emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.Builder getHNHIEBFPFIMBuilder() {
         
@@ -1046,7 +1046,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return getHNHIEBFPFIMFieldBuilder().getBuilder();
       }
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        */
       public emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJHOrBuilder getHNHIEBFPFIMOrBuilder() {
         if (hNHIEBFPFIMBuilder_ != null) {
@@ -1057,7 +1057,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 7;</code>
+       * <code>.IJNAPHNIHJH HNHIEBFPFIM = 50002;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH, emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJH.Builder, emu.grasscutter.net.proto.IJNAPHNIHJHOuterClass.IJNAPHNIHJHOrBuilder> 
@@ -1077,14 +1077,14 @@ public final class GreatFestivalV2DetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC, emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC.Builder, emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMCOrBuilder> mdppmahkpfiBuilder_;
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        * @return Whether the mdppmahkpfi field is set.
        */
       public boolean hasMdppmahkpfi() {
         return mdppmahkpfiBuilder_ != null || mdppmahkpfi_ != null;
       }
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        * @return The mdppmahkpfi.
        */
       public emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC getMdppmahkpfi() {
@@ -1095,7 +1095,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        */
       public Builder setMdppmahkpfi(emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC value) {
         if (mdppmahkpfiBuilder_ == null) {
@@ -1111,7 +1111,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        */
       public Builder setMdppmahkpfi(
           emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC.Builder builderForValue) {
@@ -1125,7 +1125,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        */
       public Builder mergeMdppmahkpfi(emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC value) {
         if (mdppmahkpfiBuilder_ == null) {
@@ -1143,7 +1143,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        */
       public Builder clearMdppmahkpfi() {
         if (mdppmahkpfiBuilder_ == null) {
@@ -1157,7 +1157,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        */
       public emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC.Builder getMdppmahkpfiBuilder() {
         
@@ -1165,7 +1165,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         return getMdppmahkpfiFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        */
       public emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMCOrBuilder getMdppmahkpfiOrBuilder() {
         if (mdppmahkpfiBuilder_ != null) {
@@ -1176,7 +1176,7 @@ public final class GreatFestivalV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>.OPDOPCHKCMC mdppmahkpfi = 50002;</code>
+       * <code>.OPDOPCHKCMC mdppmahkpfi = 50003;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC, emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMC.Builder, emu.grasscutter.net.proto.OPDOPCHKCMCOuterClass.OPDOPCHKCMCOrBuilder> 
@@ -1260,13 +1260,14 @@ public final class GreatFestivalV2DetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037GreatFestivalV2DetailInfo.proto\032\021IJNAP" +
       "HNIHJH.proto\032\021IPPDBOLOOIB.proto\032\021OAKCNCL" +
-      "BBMI.proto\032\021OPDOPCHKCMC.proto\"\255\001\n\031GreatF" +
+      "BBMI.proto\032\021OPDOPCHKCMC.proto\"\257\001\n\031GreatF" +
       "estivalV2DetailInfo\022#\n\013GOFMMGFEDBI\030\320\206\003 \001" +
       "(\0132\014.IPPDBOLOOIB\022#\n\013CLHOGMFANFJ\030\321\206\003 \001(\0132" +
-      "\014.OAKCNCLBBMI\022!\n\013HNHIEBFPFIM\030\007 \001(\0132\014.IJN" +
-      "APHNIHJH\022#\n\013mdppmahkpfi\030\322\206\003 \001(\0132\014.OPDOPC" +
-      "HKCMCB@\n\031emu.grasscutter.net.protoB#Grea" +
-      "tFestivalV2DetailInfoOuterClassb\006proto3"
+      "\014.OAKCNCLBBMI\022#\n\013HNHIEBFPFIM\030\322\206\003 \001(\0132\014.I" +
+      "JNAPHNIHJH\022#\n\013mdppmahkpfi\030\323\206\003 \001(\0132\014.OPDO" +
+      "PCHKCMCB@\n\031emu.grasscutter.net.protoB#Gr" +
+      "eatFestivalV2DetailInfoOuterClassb\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ShowCommonTipsNotifyOuterClass";
 
 message ShowCommonTipsNotify {
-	string title = 1;
-	string content = 7;
-	uint32 close_time = 8;
+	string title = 7;
+	string content = 13;
+	uint32 close_time = 14;
 }

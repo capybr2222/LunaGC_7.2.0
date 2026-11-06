@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels;
 
+import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import java.util.List;
 import lombok.*;
@@ -18,6 +19,7 @@ public class HomeWorldLevelData extends GameResource {
     int furnitureMakeSlotCount;
     int outdoorUnlockBlockCount;
     int freeUnlockModuleCount;
+    @SerializedName(value = "deployNpcCount", alternate = {"MOJLHFEFMBB"})
     int deployNpcCount;
     int limitShopGoodsCount;
     List<String> levelFuncs;

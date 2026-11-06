@@ -7,8 +7,8 @@ import "RogueDiaryProgress.proto";
 import "RogueDiaryStageInfo.proto";
 
 message RogueDiaryActivityDetailInfo {
-	bool is_content_closed = 5;
-	bool is_have_progress = 9;
-	repeated RogueDiaryStageInfo stage_list = 3;
+	bool is_content_closed = 1;
+	bool is_have_progress = 3;
+	repeated RogueDiaryStageInfo stage_list = 2;
 	RogueDiaryProgress cur_progress = 4;
 }

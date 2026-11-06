@@ -19,89 +19,89 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IKLNEBCKENF = 4;</code>
+     * <code>uint32 IKLNEBCKENF = 3;</code>
      * @return The iKLNEBCKENF.
      */
     int getIKLNEBCKENF();
 
     /**
-     * <code>uint32 difficulty_id = 13;</code>
+     * <code>uint32 difficulty_id = 6;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
 
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ> 
         getSettleListList();
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ getSettleList(int index);
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     int getSettleListCount();
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJOrBuilder> 
         getSettleListOrBuilderList();
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJOrBuilder getSettleListOrBuilder(
         int index);
 
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB> 
         getGMNBBBOLHDHList();
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB getGMNBBBOLHDH(int index);
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     int getGMNBBBOLHDHCount();
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMBOrBuilder> 
         getGMNBBBOLHDHOrBuilderList();
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMBOrBuilder getGMNBBBOLHDHOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+     * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
      * @return A list containing the mIFCBDAIKNH.
      */
     java.util.List<java.lang.Integer> getMIFCBDAIKNHList();
     /**
-     * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+     * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
      * @return The count of mIFCBDAIKNH.
      */
     int getMIFCBDAIKNHCount();
     /**
-     * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+     * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
      * @param index The index of the element to return.
      * @return The mIFCBDAIKNH at the given index.
      */
     int getMIFCBDAIKNH(int index);
 
     /**
-     * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+     * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
      * @return The enum numeric value on the wire for eBGPHJCLGKC.
      */
     int getEBGPHJCLGKCValue();
     /**
-     * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+     * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
      * @return The eBGPHJCLGKC.
      */
     emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.EACPNCPOKGE getEBGPHJCLGKC();
@@ -156,7 +156,12 @@ public final class _CooperateChallengeSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 24: {
+
+              iKLNEBCKENF_ = input.readUInt32();
+              break;
+            }
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 SettleList_ = new java.util.ArrayList<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ>();
                 mutable_bitField0_ |= 0x00000001;
@@ -165,21 +170,12 @@ public final class _CooperateChallengeSettleInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.parser(), extensionRegistry));
               break;
             }
-            case 26: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                gMNBBBOLHDH_ = new java.util.ArrayList<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              gMNBBBOLHDH_.add(
-                  input.readMessage(emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.parser(), extensionRegistry));
-              break;
-            }
-            case 32: {
+            case 48: {
 
-              iKLNEBCKENF_ = input.readUInt32();
+              difficultyId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 64: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 mIFCBDAIKNH_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
@@ -187,7 +183,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
               mIFCBDAIKNH_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 66: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
@@ -200,12 +196,16 @@ public final class _CooperateChallengeSettleInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 104: {
-
-              difficultyId_ = input.readUInt32();
+            case 160002: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                gMNBBBOLHDH_ = new java.util.ArrayList<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              gMNBBBOLHDH_.add(
+                  input.readMessage(emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.parser(), extensionRegistry));
               break;
             }
-            case 112: {
+            case 160016: {
               int rawValue = input.readEnum();
 
               eBGPHJCLGKC_ = rawValue;
@@ -229,11 +229,11 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           SettleList_ = java.util.Collections.unmodifiableList(SettleList_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          gMNBBBOLHDH_ = java.util.Collections.unmodifiableList(gMNBBBOLHDH_);
-        }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           mIFCBDAIKNH_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          gMNBBBOLHDH_ = java.util.Collections.unmodifiableList(gMNBBBOLHDH_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -2974,10 +2974,10 @@ public final class _CooperateChallengeSettleInfoOuterClass {
 
     }
 
-    public static final int IKLNEBCKENF_FIELD_NUMBER = 4;
+    public static final int IKLNEBCKENF_FIELD_NUMBER = 3;
     private int iKLNEBCKENF_;
     /**
-     * <code>uint32 IKLNEBCKENF = 4;</code>
+     * <code>uint32 IKLNEBCKENF = 3;</code>
      * @return The iKLNEBCKENF.
      */
     @java.lang.Override
@@ -2985,10 +2985,10 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       return iKLNEBCKENF_;
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 13;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 6;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 13;</code>
+     * <code>uint32 difficulty_id = 6;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -2996,17 +2996,17 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       return difficultyId_;
     }
 
-    public static final int _SETTLE_LIST_FIELD_NUMBER = 2;
+    public static final int _SETTLE_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ> SettleList_;
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ> getSettleListList() {
       return SettleList_;
     }
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJOrBuilder> 
@@ -3014,21 +3014,21 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       return SettleList_;
     }
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     @java.lang.Override
     public int getSettleListCount() {
       return SettleList_.size();
     }
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ getSettleList(int index) {
       return SettleList_.get(index);
     }
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJOrBuilder getSettleListOrBuilder(
@@ -3036,17 +3036,17 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       return SettleList_.get(index);
     }
 
-    public static final int GMNBBBOLHDH_FIELD_NUMBER = 3;
+    public static final int GMNBBBOLHDH_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB> gMNBBBOLHDH_;
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB> getGMNBBBOLHDHList() {
       return gMNBBBOLHDH_;
     }
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMBOrBuilder> 
@@ -3054,21 +3054,21 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       return gMNBBBOLHDH_;
     }
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     @java.lang.Override
     public int getGMNBBBOLHDHCount() {
       return gMNBBBOLHDH_.size();
     }
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB getGMNBBBOLHDH(int index) {
       return gMNBBBOLHDH_.get(index);
     }
     /**
-     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+     * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMBOrBuilder getGMNBBBOLHDHOrBuilder(
@@ -3076,10 +3076,10 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       return gMNBBBOLHDH_.get(index);
     }
 
-    public static final int MIFCBDAIKNH_FIELD_NUMBER = 5;
+    public static final int MIFCBDAIKNH_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList mIFCBDAIKNH_;
     /**
-     * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+     * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
      * @return A list containing the mIFCBDAIKNH.
      */
     @java.lang.Override
@@ -3088,14 +3088,14 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       return mIFCBDAIKNH_;
     }
     /**
-     * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+     * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
      * @return The count of mIFCBDAIKNH.
      */
     public int getMIFCBDAIKNHCount() {
       return mIFCBDAIKNH_.size();
     }
     /**
-     * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+     * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
      * @param index The index of the element to return.
      * @return The mIFCBDAIKNH at the given index.
      */
@@ -3104,17 +3104,17 @@ public final class _CooperateChallengeSettleInfoOuterClass {
     }
     private int mIFCBDAIKNHMemoizedSerializedSize = -1;
 
-    public static final int EBGPHJCLGKC_FIELD_NUMBER = 14;
+    public static final int EBGPHJCLGKC_FIELD_NUMBER = 20002;
     private int eBGPHJCLGKC_;
     /**
-     * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+     * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
      * @return The enum numeric value on the wire for eBGPHJCLGKC.
      */
     @java.lang.Override public int getEBGPHJCLGKCValue() {
       return eBGPHJCLGKC_;
     }
     /**
-     * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+     * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
      * @return The eBGPHJCLGKC.
      */
     @java.lang.Override public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.EACPNCPOKGE getEBGPHJCLGKC() {
@@ -3138,27 +3138,27 @@ public final class _CooperateChallengeSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < SettleList_.size(); i++) {
-        output.writeMessage(2, SettleList_.get(i));
-      }
-      for (int i = 0; i < gMNBBBOLHDH_.size(); i++) {
-        output.writeMessage(3, gMNBBBOLHDH_.get(i));
-      }
       if (iKLNEBCKENF_ != 0) {
-        output.writeUInt32(4, iKLNEBCKENF_);
+        output.writeUInt32(3, iKLNEBCKENF_);
+      }
+      for (int i = 0; i < SettleList_.size(); i++) {
+        output.writeMessage(5, SettleList_.get(i));
+      }
+      if (difficultyId_ != 0) {
+        output.writeUInt32(6, difficultyId_);
       }
       if (getMIFCBDAIKNHList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(66);
         output.writeUInt32NoTag(mIFCBDAIKNHMemoizedSerializedSize);
       }
       for (int i = 0; i < mIFCBDAIKNH_.size(); i++) {
         output.writeUInt32NoTag(mIFCBDAIKNH_.getInt(i));
       }
-      if (difficultyId_ != 0) {
-        output.writeUInt32(13, difficultyId_);
+      for (int i = 0; i < gMNBBBOLHDH_.size(); i++) {
+        output.writeMessage(20000, gMNBBBOLHDH_.get(i));
       }
       if (eBGPHJCLGKC_ != emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.EACPNCPOKGE.EACPNCPOKGE_SETTLE_REASON_NONE.getNumber()) {
-        output.writeEnum(14, eBGPHJCLGKC_);
+        output.writeEnum(20002, eBGPHJCLGKC_);
       }
       unknownFields.writeTo(output);
     }
@@ -3169,17 +3169,17 @@ public final class _CooperateChallengeSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < SettleList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, SettleList_.get(i));
-      }
-      for (int i = 0; i < gMNBBBOLHDH_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, gMNBBBOLHDH_.get(i));
-      }
       if (iKLNEBCKENF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, iKLNEBCKENF_);
+          .computeUInt32Size(3, iKLNEBCKENF_);
+      }
+      for (int i = 0; i < SettleList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, SettleList_.get(i));
+      }
+      if (difficultyId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, difficultyId_);
       }
       {
         int dataSize = 0;
@@ -3195,13 +3195,13 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
         mIFCBDAIKNHMemoizedSerializedSize = dataSize;
       }
-      if (difficultyId_ != 0) {
+      for (int i = 0; i < gMNBBBOLHDH_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, difficultyId_);
+          .computeMessageSize(20000, gMNBBBOLHDH_.get(i));
       }
       if (eBGPHJCLGKC_ != emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.EACPNCPOKGE.EACPNCPOKGE_SETTLE_REASON_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(14, eBGPHJCLGKC_);
+          .computeEnumSize(20002, eBGPHJCLGKC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3617,7 +3617,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
 
       private int iKLNEBCKENF_ ;
       /**
-       * <code>uint32 IKLNEBCKENF = 4;</code>
+       * <code>uint32 IKLNEBCKENF = 3;</code>
        * @return The iKLNEBCKENF.
        */
       @java.lang.Override
@@ -3625,7 +3625,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return iKLNEBCKENF_;
       }
       /**
-       * <code>uint32 IKLNEBCKENF = 4;</code>
+       * <code>uint32 IKLNEBCKENF = 3;</code>
        * @param value The iKLNEBCKENF to set.
        * @return This builder for chaining.
        */
@@ -3636,7 +3636,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 IKLNEBCKENF = 4;</code>
+       * <code>uint32 IKLNEBCKENF = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIKLNEBCKENF() {
@@ -3648,7 +3648,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 13;</code>
+       * <code>uint32 difficulty_id = 6;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -3656,7 +3656,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 13;</code>
+       * <code>uint32 difficulty_id = 6;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -3667,7 +3667,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 13;</code>
+       * <code>uint32 difficulty_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -3690,7 +3690,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
           emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.Builder, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJOrBuilder> SettleListBuilder_;
 
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ> getSettleListList() {
         if (SettleListBuilder_ == null) {
@@ -3700,7 +3700,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public int getSettleListCount() {
         if (SettleListBuilder_ == null) {
@@ -3710,7 +3710,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ getSettleList(int index) {
         if (SettleListBuilder_ == null) {
@@ -3720,7 +3720,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder setSettleList(
           int index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ value) {
@@ -3737,7 +3737,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder setSettleList(
           int index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.Builder builderForValue) {
@@ -3751,7 +3751,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder addSettleList(emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ value) {
         if (SettleListBuilder_ == null) {
@@ -3767,7 +3767,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder addSettleList(
           int index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ value) {
@@ -3784,7 +3784,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder addSettleList(
           emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.Builder builderForValue) {
@@ -3798,7 +3798,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder addSettleList(
           int index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.Builder builderForValue) {
@@ -3812,7 +3812,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder addAllSettleList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ> values) {
@@ -3827,7 +3827,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder clearSettleList() {
         if (SettleListBuilder_ == null) {
@@ -3840,7 +3840,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public Builder removeSettleList(int index) {
         if (SettleListBuilder_ == null) {
@@ -3853,14 +3853,14 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.Builder getSettleListBuilder(
           int index) {
         return getSettleListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJOrBuilder getSettleListOrBuilder(
           int index) {
@@ -3870,7 +3870,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJOrBuilder> 
            getSettleListOrBuilderList() {
@@ -3881,14 +3881,14 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.Builder addSettleListBuilder() {
         return getSettleListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.getDefaultInstance());
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.Builder addSettleListBuilder(
           int index) {
@@ -3896,7 +3896,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
             index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.getDefaultInstance());
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 2;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.JOPDICINNLJ _settle_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.JOPDICINNLJ.Builder> 
            getSettleListBuilderList() {
@@ -3930,7 +3930,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
           emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.Builder, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMBOrBuilder> gMNBBBOLHDHBuilder_;
 
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB> getGMNBBBOLHDHList() {
         if (gMNBBBOLHDHBuilder_ == null) {
@@ -3940,7 +3940,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public int getGMNBBBOLHDHCount() {
         if (gMNBBBOLHDHBuilder_ == null) {
@@ -3950,7 +3950,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB getGMNBBBOLHDH(int index) {
         if (gMNBBBOLHDHBuilder_ == null) {
@@ -3960,7 +3960,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder setGMNBBBOLHDH(
           int index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB value) {
@@ -3977,7 +3977,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder setGMNBBBOLHDH(
           int index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.Builder builderForValue) {
@@ -3991,7 +3991,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder addGMNBBBOLHDH(emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB value) {
         if (gMNBBBOLHDHBuilder_ == null) {
@@ -4007,7 +4007,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder addGMNBBBOLHDH(
           int index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB value) {
@@ -4024,7 +4024,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder addGMNBBBOLHDH(
           emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.Builder builderForValue) {
@@ -4038,7 +4038,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder addGMNBBBOLHDH(
           int index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.Builder builderForValue) {
@@ -4052,7 +4052,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder addAllGMNBBBOLHDH(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB> values) {
@@ -4067,7 +4067,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder clearGMNBBBOLHDH() {
         if (gMNBBBOLHDHBuilder_ == null) {
@@ -4080,7 +4080,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public Builder removeGMNBBBOLHDH(int index) {
         if (gMNBBBOLHDHBuilder_ == null) {
@@ -4093,14 +4093,14 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.Builder getGMNBBBOLHDHBuilder(
           int index) {
         return getGMNBBBOLHDHFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMBOrBuilder getGMNBBBOLHDHOrBuilder(
           int index) {
@@ -4110,7 +4110,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMBOrBuilder> 
            getGMNBBBOLHDHOrBuilderList() {
@@ -4121,14 +4121,14 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.Builder addGMNBBBOLHDHBuilder() {
         return getGMNBBBOLHDHFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.getDefaultInstance());
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.Builder addGMNBBBOLHDHBuilder(
           int index) {
@@ -4136,7 +4136,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
             index, emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.getDefaultInstance());
       }
       /**
-       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 3;</code>
+       * <code>repeated ._CooperateChallengeSettleInfo.FGCJMIDEKMB GMNBBBOLHDH = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.FGCJMIDEKMB.Builder> 
            getGMNBBBOLHDHBuilderList() {
@@ -4165,7 +4165,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+       * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
        * @return A list containing the mIFCBDAIKNH.
        */
       public java.util.List<java.lang.Integer>
@@ -4174,14 +4174,14 @@ public final class _CooperateChallengeSettleInfoOuterClass {
                  java.util.Collections.unmodifiableList(mIFCBDAIKNH_) : mIFCBDAIKNH_;
       }
       /**
-       * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+       * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
        * @return The count of mIFCBDAIKNH.
        */
       public int getMIFCBDAIKNHCount() {
         return mIFCBDAIKNH_.size();
       }
       /**
-       * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+       * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
        * @param index The index of the element to return.
        * @return The mIFCBDAIKNH at the given index.
        */
@@ -4189,7 +4189,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return mIFCBDAIKNH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+       * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
        * @param index The index to set the value at.
        * @param value The mIFCBDAIKNH to set.
        * @return This builder for chaining.
@@ -4202,7 +4202,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+       * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
        * @param value The mIFCBDAIKNH to add.
        * @return This builder for chaining.
        */
@@ -4213,7 +4213,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+       * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
        * @param values The mIFCBDAIKNH to add.
        * @return This builder for chaining.
        */
@@ -4226,7 +4226,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 MIFCBDAIKNH = 5;</code>
+       * <code>repeated uint32 MIFCBDAIKNH = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMIFCBDAIKNH() {
@@ -4238,14 +4238,14 @@ public final class _CooperateChallengeSettleInfoOuterClass {
 
       private int eBGPHJCLGKC_ = 0;
       /**
-       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
        * @return The enum numeric value on the wire for eBGPHJCLGKC.
        */
       @java.lang.Override public int getEBGPHJCLGKCValue() {
         return eBGPHJCLGKC_;
       }
       /**
-       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
        * @param value The enum numeric value on the wire for eBGPHJCLGKC to set.
        * @return This builder for chaining.
        */
@@ -4256,7 +4256,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
        * @return The eBGPHJCLGKC.
        */
       @java.lang.Override
@@ -4266,7 +4266,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto._CooperateChallengeSettleInfoOuterClass._CooperateChallengeSettleInfo.EACPNCPOKGE.UNRECOGNIZED : result;
       }
       /**
-       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
        * @param value The eBGPHJCLGKC to set.
        * @return This builder for chaining.
        */
@@ -4280,7 +4280,7 @@ public final class _CooperateChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 14;</code>
+       * <code>._CooperateChallengeSettleInfo.EACPNCPOKGE EBGPHJCLGKC = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearEBGPHJCLGKC() {
@@ -4368,27 +4368,27 @@ public final class _CooperateChallengeSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n#_CooperateChallengeSettleInfo.proto\032\033E" +
       "xhibitionDisplayInfo.proto\032\024ProfilePictu" +
-      "re.proto\"\336\005\n\035_CooperateChallengeSettleIn" +
-      "fo\022\023\n\013IKLNEBCKENF\030\004 \001(\r\022\025\n\rdifficulty_id" +
-      "\030\r \001(\r\022@\n\014_settle_list\030\002 \003(\0132*._Cooperat" +
-      "eChallengeSettleInfo.JOPDICINNLJ\022?\n\013GMNB" +
-      "BBOLHDH\030\003 \003(\0132*._CooperateChallengeSettl" +
-      "eInfo.FGCJMIDEKMB\022\023\n\013MIFCBDAIKNH\030\005 \003(\r\022?" +
-      "\n\013EBGPHJCLGKC\030\016 \001(\0162*._CooperateChalleng" +
-      "eSettleInfo.EACPNCPOKGE\032I\n\013FGCJMIDEKMB\022\020" +
-      "\n\010uid_list\030\013 \003(\r\022\023\n\013FAFDNMIEMEL\030\r \001(\r\022\023\n" +
-      "\013EOAFEBOFEJB\030\014 \001(\005\032\343\001\n\013JOPDICINNLJ\022\013\n\003ui" +
-      "d\030\014 \001(\r\022\021\n\tonline_id\030\007 \001(\t\022(\n\017profile_pi" +
-      "cture\030\002 \001(\0132\017.ProfilePicture\022\021\n\tadd_scor" +
-      "e\030\001 \001(\r\022\026\n\016_xbox_gamertag\030\t \001(\t\022\023\n\013OFEHC" +
-      "JOPEIG\030\n \003(\r\022\r\n\005score\030\003 \001(\r\022\020\n\010nickname\030" +
-      "\016 \001(\t\022)\n\tcard_list\030\013 \003(\0132\026.ExhibitionDis" +
-      "playInfo\"\206\001\n\013EACPNCPOKGE\022\"\n\036EACPNCPOKGE_" +
-      "SETTLE_REASON_NONE\020\000\022\"\n\036EACPNCPOKGE_SETT" +
-      "LE_REASON_SUCC\020\001\022/\n+EACPNCPOKGE_SETTLE_R" +
-      "EASON_PLAYER_NOT_ENOUGH\020\002BD\n\031emu.grasscu" +
-      "tter.net.protoB\'_CooperateChallengeSettl" +
-      "eInfoOuterClassb\006proto3"
+      "re.proto\"\342\005\n\035_CooperateChallengeSettleIn" +
+      "fo\022\023\n\013IKLNEBCKENF\030\003 \001(\r\022\025\n\rdifficulty_id" +
+      "\030\006 \001(\r\022@\n\014_settle_list\030\005 \003(\0132*._Cooperat" +
+      "eChallengeSettleInfo.JOPDICINNLJ\022A\n\013GMNB" +
+      "BBOLHDH\030\240\234\001 \003(\0132*._CooperateChallengeSet" +
+      "tleInfo.FGCJMIDEKMB\022\023\n\013MIFCBDAIKNH\030\010 \003(\r" +
+      "\022A\n\013EBGPHJCLGKC\030\242\234\001 \001(\0162*._CooperateChal" +
+      "lengeSettleInfo.EACPNCPOKGE\032I\n\013FGCJMIDEK" +
+      "MB\022\020\n\010uid_list\030\013 \003(\r\022\023\n\013FAFDNMIEMEL\030\r \001(" +
+      "\r\022\023\n\013EOAFEBOFEJB\030\014 \001(\005\032\343\001\n\013JOPDICINNLJ\022\013" +
+      "\n\003uid\030\014 \001(\r\022\021\n\tonline_id\030\007 \001(\t\022(\n\017profil" +
+      "e_picture\030\002 \001(\0132\017.ProfilePicture\022\021\n\tadd_" +
+      "score\030\001 \001(\r\022\026\n\016_xbox_gamertag\030\t \001(\t\022\023\n\013O" +
+      "FEHCJOPEIG\030\n \003(\r\022\r\n\005score\030\003 \001(\r\022\020\n\010nickn" +
+      "ame\030\016 \001(\t\022)\n\tcard_list\030\013 \003(\0132\026.Exhibitio" +
+      "nDisplayInfo\"\206\001\n\013EACPNCPOKGE\022\"\n\036EACPNCPO" +
+      "KGE_SETTLE_REASON_NONE\020\000\022\"\n\036EACPNCPOKGE_" +
+      "SETTLE_REASON_SUCC\020\001\022/\n+EACPNCPOKGE_SETT" +
+      "LE_REASON_PLAYER_NOT_ENOUGH\020\002BD\n\031emu.gra" +
+      "sscutter.net.protoB\'_CooperateChallengeS" +
+      "ettleInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

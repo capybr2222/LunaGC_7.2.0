@@ -19,75 +19,75 @@ public final class BrickBreakerLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+     * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
      * @return A list containing the cFMEKCCEEPD.
      */
     java.util.List<java.lang.Integer> getCFMEKCCEEPDList();
     /**
-     * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+     * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
      * @return The count of cFMEKCCEEPD.
      */
     int getCFMEKCCEEPDCount();
     /**
-     * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+     * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
      * @param index The index of the element to return.
      * @return The cFMEKCCEEPD at the given index.
      */
     int getCFMEKCCEEPD(int index);
 
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+     * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
      * @return A list containing the dDKLHHHMMFJ.
      */
     java.util.List<java.lang.Integer> getDDKLHHHMMFJList();
     /**
-     * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+     * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
      * @return The count of dDKLHHHMMFJ.
      */
     int getDDKLHHHMMFJCount();
     /**
-     * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+     * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
      * @param index The index of the element to return.
      * @return The dDKLHHHMMFJ at the given index.
      */
     int getDDKLHHHMMFJ(int index);
 
     /**
-     * <code>bool is_finish = 5;</code>
+     * <code>bool is_finish = 2;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 max_score = 7;</code>
+     * <code>uint32 max_score = 5;</code>
      * @return The maxScore.
      */
     int getMaxScore();
 
     /**
-     * <code>bool is_can_start = 4;</code>
+     * <code>bool is_can_start = 6;</code>
      * @return The isCanStart.
      */
     boolean getIsCanStart();
 
     /**
-     * <code>repeated uint32 chosen_avatar_list = 14;</code>
+     * <code>repeated uint32 chosen_avatar_list = 3;</code>
      * @return A list containing the chosenAvatarList.
      */
     java.util.List<java.lang.Integer> getChosenAvatarListList();
     /**
-     * <code>repeated uint32 chosen_avatar_list = 14;</code>
+     * <code>repeated uint32 chosen_avatar_list = 3;</code>
      * @return The count of chosenAvatarList.
      */
     int getChosenAvatarListCount();
     /**
-     * <code>repeated uint32 chosen_avatar_list = 14;</code>
+     * <code>repeated uint32 chosen_avatar_list = 3;</code>
      * @param index The index of the element to return.
      * @return The chosenAvatarList at the given index.
      */
@@ -142,27 +142,48 @@ public final class BrickBreakerLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 32: {
-
-              isCanStart_ = input.readBool();
-              break;
-            }
-            case 40: {
+            case 16: {
 
               isFinish_ = input.readBool();
               break;
             }
-            case 56: {
+            case 24: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                chosenAvatarList_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              chosenAvatarList_.addInt(input.readUInt32());
+              break;
+            }
+            case 26: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+                chosenAvatarList_ = newIntList();
+                mutable_bitField0_ |= 0x00000004;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                chosenAvatarList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 40: {
 
               maxScore_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 48: {
+
+              isCanStart_ = input.readBool();
+              break;
+            }
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 cFMEKCCEEPD_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -170,7 +191,7 @@ public final class BrickBreakerLevelInfoOuterClass {
               cFMEKCCEEPD_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -183,7 +204,7 @@ public final class BrickBreakerLevelInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 80: {
+            case 400008: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 dDKLHHHMMFJ_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -191,7 +212,7 @@ public final class BrickBreakerLevelInfoOuterClass {
               dDKLHHHMMFJ_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 400010: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -200,27 +221,6 @@ public final class BrickBreakerLevelInfoOuterClass {
               }
               while (input.getBytesUntilLimit() > 0) {
                 dDKLHHHMMFJ_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 112: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                chosenAvatarList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              chosenAvatarList_.addInt(input.readUInt32());
-              break;
-            }
-            case 114: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                chosenAvatarList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                chosenAvatarList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -240,14 +240,14 @@ public final class BrickBreakerLevelInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          chosenAvatarList_.makeImmutable(); // C
+        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           cFMEKCCEEPD_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           dDKLHHHMMFJ_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          chosenAvatarList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -266,10 +266,10 @@ public final class BrickBreakerLevelInfoOuterClass {
               emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo.class, emu.grasscutter.net.proto.BrickBreakerLevelInfoOuterClass.BrickBreakerLevelInfo.Builder.class);
     }
 
-    public static final int CFMEKCCEEPD_FIELD_NUMBER = 9;
+    public static final int CFMEKCCEEPD_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList cFMEKCCEEPD_;
     /**
-     * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+     * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
      * @return A list containing the cFMEKCCEEPD.
      */
     @java.lang.Override
@@ -278,14 +278,14 @@ public final class BrickBreakerLevelInfoOuterClass {
       return cFMEKCCEEPD_;
     }
     /**
-     * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+     * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
      * @return The count of cFMEKCCEEPD.
      */
     public int getCFMEKCCEEPDCount() {
       return cFMEKCCEEPD_.size();
     }
     /**
-     * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+     * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
      * @param index The index of the element to return.
      * @return The cFMEKCCEEPD at the given index.
      */
@@ -294,10 +294,10 @@ public final class BrickBreakerLevelInfoOuterClass {
     }
     private int cFMEKCCEEPDMemoizedSerializedSize = -1;
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -305,10 +305,10 @@ public final class BrickBreakerLevelInfoOuterClass {
       return levelId_;
     }
 
-    public static final int DDKLHHHMMFJ_FIELD_NUMBER = 10;
+    public static final int DDKLHHHMMFJ_FIELD_NUMBER = 50001;
     private com.google.protobuf.Internal.IntList dDKLHHHMMFJ_;
     /**
-     * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+     * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
      * @return A list containing the dDKLHHHMMFJ.
      */
     @java.lang.Override
@@ -317,14 +317,14 @@ public final class BrickBreakerLevelInfoOuterClass {
       return dDKLHHHMMFJ_;
     }
     /**
-     * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+     * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
      * @return The count of dDKLHHHMMFJ.
      */
     public int getDDKLHHHMMFJCount() {
       return dDKLHHHMMFJ_.size();
     }
     /**
-     * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+     * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
      * @param index The index of the element to return.
      * @return The dDKLHHHMMFJ at the given index.
      */
@@ -333,10 +333,10 @@ public final class BrickBreakerLevelInfoOuterClass {
     }
     private int dDKLHHHMMFJMemoizedSerializedSize = -1;
 
-    public static final int IS_FINISH_FIELD_NUMBER = 5;
+    public static final int IS_FINISH_FIELD_NUMBER = 2;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 5;</code>
+     * <code>bool is_finish = 2;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -344,10 +344,10 @@ public final class BrickBreakerLevelInfoOuterClass {
       return isFinish_;
     }
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 7;
+    public static final int MAX_SCORE_FIELD_NUMBER = 5;
     private int maxScore_;
     /**
-     * <code>uint32 max_score = 7;</code>
+     * <code>uint32 max_score = 5;</code>
      * @return The maxScore.
      */
     @java.lang.Override
@@ -355,10 +355,10 @@ public final class BrickBreakerLevelInfoOuterClass {
       return maxScore_;
     }
 
-    public static final int IS_CAN_START_FIELD_NUMBER = 4;
+    public static final int IS_CAN_START_FIELD_NUMBER = 6;
     private boolean isCanStart_;
     /**
-     * <code>bool is_can_start = 4;</code>
+     * <code>bool is_can_start = 6;</code>
      * @return The isCanStart.
      */
     @java.lang.Override
@@ -366,10 +366,10 @@ public final class BrickBreakerLevelInfoOuterClass {
       return isCanStart_;
     }
 
-    public static final int CHOSEN_AVATAR_LIST_FIELD_NUMBER = 14;
+    public static final int CHOSEN_AVATAR_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList chosenAvatarList_;
     /**
-     * <code>repeated uint32 chosen_avatar_list = 14;</code>
+     * <code>repeated uint32 chosen_avatar_list = 3;</code>
      * @return A list containing the chosenAvatarList.
      */
     @java.lang.Override
@@ -378,14 +378,14 @@ public final class BrickBreakerLevelInfoOuterClass {
       return chosenAvatarList_;
     }
     /**
-     * <code>repeated uint32 chosen_avatar_list = 14;</code>
+     * <code>repeated uint32 chosen_avatar_list = 3;</code>
      * @return The count of chosenAvatarList.
      */
     public int getChosenAvatarListCount() {
       return chosenAvatarList_.size();
     }
     /**
-     * <code>repeated uint32 chosen_avatar_list = 14;</code>
+     * <code>repeated uint32 chosen_avatar_list = 3;</code>
      * @param index The index of the element to return.
      * @return The chosenAvatarList at the given index.
      */
@@ -410,37 +410,37 @@ public final class BrickBreakerLevelInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
-      }
-      if (isCanStart_ != false) {
-        output.writeBool(4, isCanStart_);
+        output.writeUInt32(1, levelId_);
       }
       if (isFinish_ != false) {
-        output.writeBool(5, isFinish_);
+        output.writeBool(2, isFinish_);
+      }
+      if (getChosenAvatarListList().size() > 0) {
+        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(chosenAvatarListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < chosenAvatarList_.size(); i++) {
+        output.writeUInt32NoTag(chosenAvatarList_.getInt(i));
       }
       if (maxScore_ != 0) {
-        output.writeUInt32(7, maxScore_);
+        output.writeUInt32(5, maxScore_);
+      }
+      if (isCanStart_ != false) {
+        output.writeBool(6, isCanStart_);
       }
       if (getCFMEKCCEEPDList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(cFMEKCCEEPDMemoizedSerializedSize);
       }
       for (int i = 0; i < cFMEKCCEEPD_.size(); i++) {
         output.writeUInt32NoTag(cFMEKCCEEPD_.getInt(i));
       }
       if (getDDKLHHHMMFJList().size() > 0) {
-        output.writeUInt32NoTag(82);
+        output.writeUInt32NoTag(400010);
         output.writeUInt32NoTag(dDKLHHHMMFJMemoizedSerializedSize);
       }
       for (int i = 0; i < dDKLHHHMMFJ_.size(); i++) {
         output.writeUInt32NoTag(dDKLHHHMMFJ_.getInt(i));
-      }
-      if (getChosenAvatarListList().size() > 0) {
-        output.writeUInt32NoTag(114);
-        output.writeUInt32NoTag(chosenAvatarListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < chosenAvatarList_.size(); i++) {
-        output.writeUInt32NoTag(chosenAvatarList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -453,19 +453,33 @@ public final class BrickBreakerLevelInfoOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
-      }
-      if (isCanStart_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isCanStart_);
+          .computeUInt32Size(1, levelId_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isFinish_);
+          .computeBoolSize(2, isFinish_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < chosenAvatarList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(chosenAvatarList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getChosenAvatarListList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        chosenAvatarListMemoizedSerializedSize = dataSize;
       }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, maxScore_);
+          .computeUInt32Size(5, maxScore_);
+      }
+      if (isCanStart_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, isCanStart_);
       }
       {
         int dataSize = 0;
@@ -489,25 +503,11 @@ public final class BrickBreakerLevelInfoOuterClass {
         }
         size += dataSize;
         if (!getDDKLHHHMMFJList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
         dDKLHHHMMFJMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < chosenAvatarList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(chosenAvatarList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getChosenAvatarListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        chosenAvatarListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -892,7 +892,7 @@ public final class BrickBreakerLevelInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+       * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
        * @return A list containing the cFMEKCCEEPD.
        */
       public java.util.List<java.lang.Integer>
@@ -901,14 +901,14 @@ public final class BrickBreakerLevelInfoOuterClass {
                  java.util.Collections.unmodifiableList(cFMEKCCEEPD_) : cFMEKCCEEPD_;
       }
       /**
-       * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+       * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
        * @return The count of cFMEKCCEEPD.
        */
       public int getCFMEKCCEEPDCount() {
         return cFMEKCCEEPD_.size();
       }
       /**
-       * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+       * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
        * @param index The index of the element to return.
        * @return The cFMEKCCEEPD at the given index.
        */
@@ -916,7 +916,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return cFMEKCCEEPD_.getInt(index);
       }
       /**
-       * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+       * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
        * @param index The index to set the value at.
        * @param value The cFMEKCCEEPD to set.
        * @return This builder for chaining.
@@ -929,7 +929,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+       * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
        * @param value The cFMEKCCEEPD to add.
        * @return This builder for chaining.
        */
@@ -940,7 +940,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+       * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
        * @param values The cFMEKCCEEPD to add.
        * @return This builder for chaining.
        */
@@ -953,7 +953,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CFMEKCCEEPD = 9;</code>
+       * <code>repeated uint32 CFMEKCCEEPD = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCFMEKCCEEPD() {
@@ -965,7 +965,7 @@ public final class BrickBreakerLevelInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -973,7 +973,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -984,7 +984,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -1002,7 +1002,7 @@ public final class BrickBreakerLevelInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+       * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
        * @return A list containing the dDKLHHHMMFJ.
        */
       public java.util.List<java.lang.Integer>
@@ -1011,14 +1011,14 @@ public final class BrickBreakerLevelInfoOuterClass {
                  java.util.Collections.unmodifiableList(dDKLHHHMMFJ_) : dDKLHHHMMFJ_;
       }
       /**
-       * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+       * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
        * @return The count of dDKLHHHMMFJ.
        */
       public int getDDKLHHHMMFJCount() {
         return dDKLHHHMMFJ_.size();
       }
       /**
-       * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+       * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
        * @param index The index of the element to return.
        * @return The dDKLHHHMMFJ at the given index.
        */
@@ -1026,7 +1026,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return dDKLHHHMMFJ_.getInt(index);
       }
       /**
-       * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+       * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
        * @param index The index to set the value at.
        * @param value The dDKLHHHMMFJ to set.
        * @return This builder for chaining.
@@ -1039,7 +1039,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+       * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
        * @param value The dDKLHHHMMFJ to add.
        * @return This builder for chaining.
        */
@@ -1050,7 +1050,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+       * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
        * @param values The dDKLHHHMMFJ to add.
        * @return This builder for chaining.
        */
@@ -1063,7 +1063,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DDKLHHHMMFJ = 10;</code>
+       * <code>repeated uint32 DDKLHHHMMFJ = 50001;</code>
        * @return This builder for chaining.
        */
       public Builder clearDDKLHHHMMFJ() {
@@ -1075,7 +1075,7 @@ public final class BrickBreakerLevelInfoOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 5;</code>
+       * <code>bool is_finish = 2;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -1083,7 +1083,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 5;</code>
+       * <code>bool is_finish = 2;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -1094,7 +1094,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 5;</code>
+       * <code>bool is_finish = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -1106,7 +1106,7 @@ public final class BrickBreakerLevelInfoOuterClass {
 
       private int maxScore_ ;
       /**
-       * <code>uint32 max_score = 7;</code>
+       * <code>uint32 max_score = 5;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -1114,7 +1114,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 max_score = 7;</code>
+       * <code>uint32 max_score = 5;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -1125,7 +1125,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_score = 7;</code>
+       * <code>uint32 max_score = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
@@ -1137,7 +1137,7 @@ public final class BrickBreakerLevelInfoOuterClass {
 
       private boolean isCanStart_ ;
       /**
-       * <code>bool is_can_start = 4;</code>
+       * <code>bool is_can_start = 6;</code>
        * @return The isCanStart.
        */
       @java.lang.Override
@@ -1145,7 +1145,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return isCanStart_;
       }
       /**
-       * <code>bool is_can_start = 4;</code>
+       * <code>bool is_can_start = 6;</code>
        * @param value The isCanStart to set.
        * @return This builder for chaining.
        */
@@ -1156,7 +1156,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_can_start = 4;</code>
+       * <code>bool is_can_start = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsCanStart() {
@@ -1174,7 +1174,7 @@ public final class BrickBreakerLevelInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 14;</code>
+       * <code>repeated uint32 chosen_avatar_list = 3;</code>
        * @return A list containing the chosenAvatarList.
        */
       public java.util.List<java.lang.Integer>
@@ -1183,14 +1183,14 @@ public final class BrickBreakerLevelInfoOuterClass {
                  java.util.Collections.unmodifiableList(chosenAvatarList_) : chosenAvatarList_;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 14;</code>
+       * <code>repeated uint32 chosen_avatar_list = 3;</code>
        * @return The count of chosenAvatarList.
        */
       public int getChosenAvatarListCount() {
         return chosenAvatarList_.size();
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 14;</code>
+       * <code>repeated uint32 chosen_avatar_list = 3;</code>
        * @param index The index of the element to return.
        * @return The chosenAvatarList at the given index.
        */
@@ -1198,7 +1198,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return chosenAvatarList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 14;</code>
+       * <code>repeated uint32 chosen_avatar_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The chosenAvatarList to set.
        * @return This builder for chaining.
@@ -1211,7 +1211,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 14;</code>
+       * <code>repeated uint32 chosen_avatar_list = 3;</code>
        * @param value The chosenAvatarList to add.
        * @return This builder for chaining.
        */
@@ -1222,7 +1222,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 14;</code>
+       * <code>repeated uint32 chosen_avatar_list = 3;</code>
        * @param values The chosenAvatarList to add.
        * @return This builder for chaining.
        */
@@ -1235,7 +1235,7 @@ public final class BrickBreakerLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 chosen_avatar_list = 14;</code>
+       * <code>repeated uint32 chosen_avatar_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearChosenAvatarList() {
@@ -1311,13 +1311,13 @@ public final class BrickBreakerLevelInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033BrickBreakerLevelInfo.proto\"\253\001\n\025BrickB" +
-      "reakerLevelInfo\022\023\n\013CFMEKCCEEPD\030\t \003(\r\022\020\n\010" +
-      "level_id\030\003 \001(\r\022\023\n\013DDKLHHHMMFJ\030\n \003(\r\022\021\n\ti" +
-      "s_finish\030\005 \001(\010\022\021\n\tmax_score\030\007 \001(\r\022\024\n\014is_" +
-      "can_start\030\004 \001(\010\022\032\n\022chosen_avatar_list\030\016 " +
-      "\003(\rB<\n\031emu.grasscutter.net.protoB\037BrickB" +
-      "reakerLevelInfoOuterClassb\006proto3"
+      "\n\033BrickBreakerLevelInfo.proto\"\255\001\n\025BrickB" +
+      "reakerLevelInfo\022\023\n\013CFMEKCCEEPD\030\007 \003(\r\022\020\n\010" +
+      "level_id\030\001 \001(\r\022\025\n\013DDKLHHHMMFJ\030\321\206\003 \003(\r\022\021\n" +
+      "\tis_finish\030\002 \001(\010\022\021\n\tmax_score\030\005 \001(\r\022\024\n\014i" +
+      "s_can_start\030\006 \001(\010\022\032\n\022chosen_avatar_list\030" +
+      "\003 \003(\rB<\n\031emu.grasscutter.net.protoB\037Bric" +
+      "kBreakerLevelInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

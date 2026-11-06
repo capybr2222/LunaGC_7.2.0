@@ -7,6 +7,6 @@ import "CPAPGLMOHIO.proto";
 
 message BirdBallDetailInfo {
 	repeated CPAPGLMOHIO micfncjpgim = 50000;
-	uint32 ibhhmnemdlk = 8;
+	uint32 ibhhmnemdlk = 3;
 	repeated CPAPGLMOHIO inhailmbbld = 50001;
 }

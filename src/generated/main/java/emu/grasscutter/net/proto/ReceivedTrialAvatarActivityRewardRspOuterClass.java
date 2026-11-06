@@ -19,19 +19,19 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_id = 2;</code>
+     * <code>uint32 activity_id = 8;</code>
      * @return The activityId.
      */
     int getActivityId();
 
     /**
-     * <code>uint32 trial_avatar_index_id = 5;</code>
+     * <code>uint32 trial_avatar_index_id = 10;</code>
      * @return The trialAvatarIndexId.
      */
     int getTrialAvatarIndexId();
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -81,19 +81,19 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 64: {
 
               activityId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 80: {
 
               trialAvatarIndexId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
               emu.grasscutter.net.proto.ReceivedTrialAvatarActivityRewardRspOuterClass.ReceivedTrialAvatarActivityRewardRsp.class, emu.grasscutter.net.proto.ReceivedTrialAvatarActivityRewardRspOuterClass.ReceivedTrialAvatarActivityRewardRsp.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 2;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 8;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 2;</code>
+     * <code>uint32 activity_id = 8;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
       return activityId_;
     }
 
-    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 5;
+    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 10;
     private int trialAvatarIndexId_;
     /**
-     * <code>uint32 trial_avatar_index_id = 5;</code>
+     * <code>uint32 trial_avatar_index_id = 10;</code>
      * @return The trialAvatarIndexId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
       return trialAvatarIndexId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
+      }
       if (activityId_ != 0) {
-        output.writeUInt32(2, activityId_);
+        output.writeUInt32(8, activityId_);
       }
       if (trialAvatarIndexId_ != 0) {
-        output.writeUInt32(5, trialAvatarIndexId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeUInt32(10, trialAvatarIndexId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
+      }
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, activityId_);
+          .computeUInt32Size(8, activityId_);
       }
       if (trialAvatarIndexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, trialAvatarIndexId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeUInt32Size(10, trialAvatarIndexId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -499,7 +499,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 2;</code>
+       * <code>uint32 activity_id = 8;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 2;</code>
+       * <code>uint32 activity_id = 8;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 2;</code>
+       * <code>uint32 activity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -530,7 +530,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
 
       private int trialAvatarIndexId_ ;
       /**
-       * <code>uint32 trial_avatar_index_id = 5;</code>
+       * <code>uint32 trial_avatar_index_id = 10;</code>
        * @return The trialAvatarIndexId.
        */
       @java.lang.Override
@@ -538,7 +538,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
         return trialAvatarIndexId_;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 5;</code>
+       * <code>uint32 trial_avatar_index_id = 10;</code>
        * @param value The trialAvatarIndexId to set.
        * @return This builder for chaining.
        */
@@ -549,7 +549,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 5;</code>
+       * <code>uint32 trial_avatar_index_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialAvatarIndexId() {
@@ -561,7 +561,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -569,7 +569,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -580,7 +580,7 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -658,8 +658,8 @@ public final class ReceivedTrialAvatarActivityRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n*ReceivedTrialAvatarActivityRewardRsp.p" +
       "roto\"k\n$ReceivedTrialAvatarActivityRewar" +
-      "dRsp\022\023\n\013activity_id\030\002 \001(\r\022\035\n\025trial_avata" +
-      "r_index_id\030\005 \001(\r\022\017\n\007retcode\030\017 \001(\005BK\n\031emu" +
+      "dRsp\022\023\n\013activity_id\030\010 \001(\r\022\035\n\025trial_avata" +
+      "r_index_id\030\n \001(\r\022\017\n\007retcode\030\005 \001(\005BK\n\031emu" +
       ".grasscutter.net.protoB.ReceivedTrialAva" +
       "tarActivityRewardRspOuterClassb\006proto3"
     };

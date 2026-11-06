@@ -31,13 +31,13 @@ public final class KDHFFAMFLKCOuterClass {
     int getRotation();
 
     /**
-     * <code>uint32 LAPJDMHDDIP = 50000;</code>
+     * <code>uint32 LAPJDMHDDIP = 12;</code>
      * @return The lAPJDMHDDIP.
      */
     int getLAPJDMHDDIP();
 
     /**
-     * <code>uint32 MHFDNNEMNJB = 50001;</code>
+     * <code>uint32 MHFDNNEMNJB = 1;</code>
      * @return The mHFDNNEMNJB.
      */
     int getMHFDNNEMNJB();
@@ -87,24 +87,24 @@ public final class KDHFFAMFLKCOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              mHFDNNEMNJB_ = input.readUInt32();
+              break;
+            }
             case 32: {
 
               dNIBBKLBBJE_ = input.readUInt32();
               break;
             }
-            case 112: {
-
-              rotation_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
+            case 96: {
 
               lAPJDMHDDIP_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 112: {
 
-              mHFDNNEMNJB_ = input.readUInt32();
+              rotation_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,10 +161,10 @@ public final class KDHFFAMFLKCOuterClass {
       return rotation_;
     }
 
-    public static final int LAPJDMHDDIP_FIELD_NUMBER = 50000;
+    public static final int LAPJDMHDDIP_FIELD_NUMBER = 12;
     private int lAPJDMHDDIP_;
     /**
-     * <code>uint32 LAPJDMHDDIP = 50000;</code>
+     * <code>uint32 LAPJDMHDDIP = 12;</code>
      * @return The lAPJDMHDDIP.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class KDHFFAMFLKCOuterClass {
       return lAPJDMHDDIP_;
     }
 
-    public static final int MHFDNNEMNJB_FIELD_NUMBER = 50001;
+    public static final int MHFDNNEMNJB_FIELD_NUMBER = 1;
     private int mHFDNNEMNJB_;
     /**
-     * <code>uint32 MHFDNNEMNJB = 50001;</code>
+     * <code>uint32 MHFDNNEMNJB = 1;</code>
      * @return The mHFDNNEMNJB.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class KDHFFAMFLKCOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (mHFDNNEMNJB_ != 0) {
+        output.writeUInt32(1, mHFDNNEMNJB_);
+      }
       if (dNIBBKLBBJE_ != 0) {
         output.writeUInt32(4, dNIBBKLBBJE_);
       }
+      if (lAPJDMHDDIP_ != 0) {
+        output.writeUInt32(12, lAPJDMHDDIP_);
+      }
       if (rotation_ != 0) {
         output.writeUInt32(14, rotation_);
-      }
-      if (lAPJDMHDDIP_ != 0) {
-        output.writeUInt32(50000, lAPJDMHDDIP_);
-      }
-      if (mHFDNNEMNJB_ != 0) {
-        output.writeUInt32(50001, mHFDNNEMNJB_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class KDHFFAMFLKCOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (mHFDNNEMNJB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, mHFDNNEMNJB_);
+      }
       if (dNIBBKLBBJE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, dNIBBKLBBJE_);
       }
+      if (lAPJDMHDDIP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, lAPJDMHDDIP_);
+      }
       if (rotation_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, rotation_);
-      }
-      if (lAPJDMHDDIP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, lAPJDMHDDIP_);
-      }
-      if (mHFDNNEMNJB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, mHFDNNEMNJB_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -600,7 +600,7 @@ public final class KDHFFAMFLKCOuterClass {
 
       private int lAPJDMHDDIP_ ;
       /**
-       * <code>uint32 LAPJDMHDDIP = 50000;</code>
+       * <code>uint32 LAPJDMHDDIP = 12;</code>
        * @return The lAPJDMHDDIP.
        */
       @java.lang.Override
@@ -608,7 +608,7 @@ public final class KDHFFAMFLKCOuterClass {
         return lAPJDMHDDIP_;
       }
       /**
-       * <code>uint32 LAPJDMHDDIP = 50000;</code>
+       * <code>uint32 LAPJDMHDDIP = 12;</code>
        * @param value The lAPJDMHDDIP to set.
        * @return This builder for chaining.
        */
@@ -619,7 +619,7 @@ public final class KDHFFAMFLKCOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LAPJDMHDDIP = 50000;</code>
+       * <code>uint32 LAPJDMHDDIP = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLAPJDMHDDIP() {
@@ -631,7 +631,7 @@ public final class KDHFFAMFLKCOuterClass {
 
       private int mHFDNNEMNJB_ ;
       /**
-       * <code>uint32 MHFDNNEMNJB = 50001;</code>
+       * <code>uint32 MHFDNNEMNJB = 1;</code>
        * @return The mHFDNNEMNJB.
        */
       @java.lang.Override
@@ -639,7 +639,7 @@ public final class KDHFFAMFLKCOuterClass {
         return mHFDNNEMNJB_;
       }
       /**
-       * <code>uint32 MHFDNNEMNJB = 50001;</code>
+       * <code>uint32 MHFDNNEMNJB = 1;</code>
        * @param value The mHFDNNEMNJB to set.
        * @return This builder for chaining.
        */
@@ -650,7 +650,7 @@ public final class KDHFFAMFLKCOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MHFDNNEMNJB = 50001;</code>
+       * <code>uint32 MHFDNNEMNJB = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMHFDNNEMNJB() {
@@ -726,11 +726,11 @@ public final class KDHFFAMFLKCOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021KDHFFAMFLKC.proto\"b\n\013KDHFFAMFLKC\022\023\n\013DN" +
-      "IBBKLBBJE\030\004 \001(\r\022\020\n\010rotation\030\016 \001(\r\022\025\n\013LAP" +
-      "JDMHDDIP\030\320\206\003 \001(\r\022\025\n\013MHFDNNEMNJB\030\321\206\003 \001(\rB" +
-      "2\n\031emu.grasscutter.net.protoB\025KDHFFAMFLK" +
-      "COuterClassb\006proto3"
+      "\n\021KDHFFAMFLKC.proto\"^\n\013KDHFFAMFLKC\022\023\n\013DN" +
+      "IBBKLBBJE\030\004 \001(\r\022\020\n\010rotation\030\016 \001(\r\022\023\n\013LAP" +
+      "JDMHDDIP\030\014 \001(\r\022\023\n\013MHFDNNEMNJB\030\001 \001(\rB2\n\031e" +
+      "mu.grasscutter.net.protoB\025KDHFFAMFLKCOut" +
+      "erClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

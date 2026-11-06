@@ -19,36 +19,36 @@ public final class ClientScriptEventNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated int32 param_list = 2;</code>
+     * <code>repeated int32 param_list = 6;</code>
      * @return A list containing the paramList.
      */
     java.util.List<java.lang.Integer> getParamListList();
     /**
-     * <code>repeated int32 param_list = 2;</code>
+     * <code>repeated int32 param_list = 6;</code>
      * @return The count of paramList.
      */
     int getParamListCount();
     /**
-     * <code>repeated int32 param_list = 2;</code>
+     * <code>repeated int32 param_list = 6;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
     int getParamList(int index);
 
     /**
-     * <code>uint32 source_entity_id = 13;</code>
+     * <code>uint32 source_entity_id = 1;</code>
      * @return The sourceEntityId.
      */
     int getSourceEntityId();
 
     /**
-     * <code>uint32 event_type = 3;</code>
+     * <code>uint32 event_type = 8;</code>
      * @return The eventType.
      */
     int getEventType();
 
     /**
-     * <code>uint32 target_entity_id = 15;</code>
+     * <code>uint32 target_entity_id = 5;</code>
      * @return The targetEntityId.
      */
     int getTargetEntityId();
@@ -100,7 +100,17 @@ public final class ClientScriptEventNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
+
+              sourceEntityId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              targetEntityId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 paramList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -108,7 +118,7 @@ public final class ClientScriptEventNotifyOuterClass {
               paramList_.addInt(input.readInt32());
               break;
             }
-            case 18: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -121,19 +131,9 @@ public final class ClientScriptEventNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 24: {
+            case 64: {
 
               eventType_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              sourceEntityId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              targetEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -171,10 +171,10 @@ public final class ClientScriptEventNotifyOuterClass {
               emu.grasscutter.net.proto.ClientScriptEventNotifyOuterClass.ClientScriptEventNotify.class, emu.grasscutter.net.proto.ClientScriptEventNotifyOuterClass.ClientScriptEventNotify.Builder.class);
     }
 
-    public static final int PARAM_LIST_FIELD_NUMBER = 2;
+    public static final int PARAM_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList paramList_;
     /**
-     * <code>repeated int32 param_list = 2;</code>
+     * <code>repeated int32 param_list = 6;</code>
      * @return A list containing the paramList.
      */
     @java.lang.Override
@@ -183,14 +183,14 @@ public final class ClientScriptEventNotifyOuterClass {
       return paramList_;
     }
     /**
-     * <code>repeated int32 param_list = 2;</code>
+     * <code>repeated int32 param_list = 6;</code>
      * @return The count of paramList.
      */
     public int getParamListCount() {
       return paramList_.size();
     }
     /**
-     * <code>repeated int32 param_list = 2;</code>
+     * <code>repeated int32 param_list = 6;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
@@ -199,10 +199,10 @@ public final class ClientScriptEventNotifyOuterClass {
     }
     private int paramListMemoizedSerializedSize = -1;
 
-    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 13;
+    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 1;
     private int sourceEntityId_;
     /**
-     * <code>uint32 source_entity_id = 13;</code>
+     * <code>uint32 source_entity_id = 1;</code>
      * @return The sourceEntityId.
      */
     @java.lang.Override
@@ -210,10 +210,10 @@ public final class ClientScriptEventNotifyOuterClass {
       return sourceEntityId_;
     }
 
-    public static final int EVENT_TYPE_FIELD_NUMBER = 3;
+    public static final int EVENT_TYPE_FIELD_NUMBER = 8;
     private int eventType_;
     /**
-     * <code>uint32 event_type = 3;</code>
+     * <code>uint32 event_type = 8;</code>
      * @return The eventType.
      */
     @java.lang.Override
@@ -221,10 +221,10 @@ public final class ClientScriptEventNotifyOuterClass {
       return eventType_;
     }
 
-    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 15;
+    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 5;
     private int targetEntityId_;
     /**
-     * <code>uint32 target_entity_id = 15;</code>
+     * <code>uint32 target_entity_id = 5;</code>
      * @return The targetEntityId.
      */
     @java.lang.Override
@@ -247,21 +247,21 @@ public final class ClientScriptEventNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (sourceEntityId_ != 0) {
+        output.writeUInt32(1, sourceEntityId_);
+      }
+      if (targetEntityId_ != 0) {
+        output.writeUInt32(5, targetEntityId_);
+      }
       if (getParamListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(paramListMemoizedSerializedSize);
       }
       for (int i = 0; i < paramList_.size(); i++) {
         output.writeInt32NoTag(paramList_.getInt(i));
       }
       if (eventType_ != 0) {
-        output.writeUInt32(3, eventType_);
-      }
-      if (sourceEntityId_ != 0) {
-        output.writeUInt32(13, sourceEntityId_);
-      }
-      if (targetEntityId_ != 0) {
-        output.writeUInt32(15, targetEntityId_);
+        output.writeUInt32(8, eventType_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,6 +272,14 @@ public final class ClientScriptEventNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (sourceEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, sourceEntityId_);
+      }
+      if (targetEntityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, targetEntityId_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < paramList_.size(); i++) {
@@ -288,15 +296,7 @@ public final class ClientScriptEventNotifyOuterClass {
       }
       if (eventType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, eventType_);
-      }
-      if (sourceEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, sourceEntityId_);
-      }
-      if (targetEntityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, targetEntityId_);
+          .computeUInt32Size(8, eventType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -623,7 +623,7 @@ public final class ClientScriptEventNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated int32 param_list = 2;</code>
+       * <code>repeated int32 param_list = 6;</code>
        * @return A list containing the paramList.
        */
       public java.util.List<java.lang.Integer>
@@ -632,14 +632,14 @@ public final class ClientScriptEventNotifyOuterClass {
                  java.util.Collections.unmodifiableList(paramList_) : paramList_;
       }
       /**
-       * <code>repeated int32 param_list = 2;</code>
+       * <code>repeated int32 param_list = 6;</code>
        * @return The count of paramList.
        */
       public int getParamListCount() {
         return paramList_.size();
       }
       /**
-       * <code>repeated int32 param_list = 2;</code>
+       * <code>repeated int32 param_list = 6;</code>
        * @param index The index of the element to return.
        * @return The paramList at the given index.
        */
@@ -647,7 +647,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return paramList_.getInt(index);
       }
       /**
-       * <code>repeated int32 param_list = 2;</code>
+       * <code>repeated int32 param_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The paramList to set.
        * @return This builder for chaining.
@@ -660,7 +660,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 param_list = 2;</code>
+       * <code>repeated int32 param_list = 6;</code>
        * @param value The paramList to add.
        * @return This builder for chaining.
        */
@@ -671,7 +671,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 param_list = 2;</code>
+       * <code>repeated int32 param_list = 6;</code>
        * @param values The paramList to add.
        * @return This builder for chaining.
        */
@@ -684,7 +684,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated int32 param_list = 2;</code>
+       * <code>repeated int32 param_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearParamList() {
@@ -696,7 +696,7 @@ public final class ClientScriptEventNotifyOuterClass {
 
       private int sourceEntityId_ ;
       /**
-       * <code>uint32 source_entity_id = 13;</code>
+       * <code>uint32 source_entity_id = 1;</code>
        * @return The sourceEntityId.
        */
       @java.lang.Override
@@ -704,7 +704,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return sourceEntityId_;
       }
       /**
-       * <code>uint32 source_entity_id = 13;</code>
+       * <code>uint32 source_entity_id = 1;</code>
        * @param value The sourceEntityId to set.
        * @return This builder for chaining.
        */
@@ -715,7 +715,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 source_entity_id = 13;</code>
+       * <code>uint32 source_entity_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearSourceEntityId() {
@@ -727,7 +727,7 @@ public final class ClientScriptEventNotifyOuterClass {
 
       private int eventType_ ;
       /**
-       * <code>uint32 event_type = 3;</code>
+       * <code>uint32 event_type = 8;</code>
        * @return The eventType.
        */
       @java.lang.Override
@@ -735,7 +735,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return eventType_;
       }
       /**
-       * <code>uint32 event_type = 3;</code>
+       * <code>uint32 event_type = 8;</code>
        * @param value The eventType to set.
        * @return This builder for chaining.
        */
@@ -746,7 +746,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 event_type = 3;</code>
+       * <code>uint32 event_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventType() {
@@ -758,7 +758,7 @@ public final class ClientScriptEventNotifyOuterClass {
 
       private int targetEntityId_ ;
       /**
-       * <code>uint32 target_entity_id = 15;</code>
+       * <code>uint32 target_entity_id = 5;</code>
        * @return The targetEntityId.
        */
       @java.lang.Override
@@ -766,7 +766,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return targetEntityId_;
       }
       /**
-       * <code>uint32 target_entity_id = 15;</code>
+       * <code>uint32 target_entity_id = 5;</code>
        * @param value The targetEntityId to set.
        * @return This builder for chaining.
        */
@@ -777,7 +777,7 @@ public final class ClientScriptEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_entity_id = 15;</code>
+       * <code>uint32 target_entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetEntityId() {
@@ -854,9 +854,9 @@ public final class ClientScriptEventNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035ClientScriptEventNotify.proto\"u\n\027Clien" +
-      "tScriptEventNotify\022\022\n\nparam_list\030\002 \003(\005\022\030" +
-      "\n\020source_entity_id\030\r \001(\r\022\022\n\nevent_type\030\003" +
-      " \001(\r\022\030\n\020target_entity_id\030\017 \001(\rB>\n\031emu.gr" +
+      "tScriptEventNotify\022\022\n\nparam_list\030\006 \003(\005\022\030" +
+      "\n\020source_entity_id\030\001 \001(\r\022\022\n\nevent_type\030\010" +
+      " \001(\r\022\030\n\020target_entity_id\030\005 \001(\rB>\n\031emu.gr" +
       "asscutter.net.protoB!ClientScriptEventNo" +
       "tifyOuterClassb\006proto3"
     };

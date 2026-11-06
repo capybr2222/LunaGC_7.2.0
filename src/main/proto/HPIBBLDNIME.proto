@@ -6,11 +6,11 @@ option java_outer_classname = "HPIBBLDNIMEOuterClass";
 import "_ActivityAvatarInfo.proto";
 
 message HPIBBLDNIME {
-	uint32 OKBGFHDDKCJ = 15;
+	uint32 OKBGFHDDKCJ = 20001;
 	uint32 BOAKDOGPPPG = 5;
-	repeated _ActivityAvatarInfo IHPPKPMKLHN = 1;
-	bool is_open = 3;
-	bool is_finish = 13;
-	uint32 best_score = 12;
-	uint32 level_id = 8;
+	repeated _ActivityAvatarInfo IHPPKPMKLHN = 20000;
+	bool is_open = 1;
+	bool is_finish = 3;
+	uint32 best_score = 14;
+	uint32 level_id = 11;
 }

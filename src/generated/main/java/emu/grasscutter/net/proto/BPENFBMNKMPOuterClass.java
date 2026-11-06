@@ -19,25 +19,25 @@ public final class BPENFBMNKMPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 NHEFNKONPEI = 7;</code>
+     * <code>uint32 NHEFNKONPEI = 2;</code>
      * @return The nHEFNKONPEI.
      */
     int getNHEFNKONPEI();
 
     /**
-     * <code>bool is_level_open = 15;</code>
+     * <code>bool is_level_open = 3;</code>
      * @return The isLevelOpen.
      */
     boolean getIsLevelOpen();
 
     /**
-     * <code>bool is_finished = 1;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
@@ -89,22 +89,22 @@ public final class BPENFBMNKMPOuterClass {
               break;
             case 8: {
 
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 32: {
-
               levelId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 16: {
 
               nHEFNKONPEI_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 24: {
 
               isLevelOpen_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              isFinished_ = input.readBool();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class BPENFBMNKMPOuterClass {
               emu.grasscutter.net.proto.BPENFBMNKMPOuterClass.BPENFBMNKMP.class, emu.grasscutter.net.proto.BPENFBMNKMPOuterClass.BPENFBMNKMP.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class BPENFBMNKMPOuterClass {
       return levelId_;
     }
 
-    public static final int NHEFNKONPEI_FIELD_NUMBER = 7;
+    public static final int NHEFNKONPEI_FIELD_NUMBER = 2;
     private int nHEFNKONPEI_;
     /**
-     * <code>uint32 NHEFNKONPEI = 7;</code>
+     * <code>uint32 NHEFNKONPEI = 2;</code>
      * @return The nHEFNKONPEI.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class BPENFBMNKMPOuterClass {
       return nHEFNKONPEI_;
     }
 
-    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 15;
+    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 3;
     private boolean isLevelOpen_;
     /**
-     * <code>bool is_level_open = 15;</code>
+     * <code>bool is_level_open = 3;</code>
      * @return The isLevelOpen.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class BPENFBMNKMPOuterClass {
       return isLevelOpen_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 1;
+    public static final int IS_FINISHED_FIELD_NUMBER = 4;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 1;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class BPENFBMNKMPOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinished_ != false) {
-        output.writeBool(1, isFinished_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(4, levelId_);
+        output.writeUInt32(1, levelId_);
       }
       if (nHEFNKONPEI_ != 0) {
-        output.writeUInt32(7, nHEFNKONPEI_);
+        output.writeUInt32(2, nHEFNKONPEI_);
       }
       if (isLevelOpen_ != false) {
-        output.writeBool(15, isLevelOpen_);
+        output.writeBool(3, isLevelOpen_);
+      }
+      if (isFinished_ != false) {
+        output.writeBool(4, isFinished_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class BPENFBMNKMPOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinished_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isFinished_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, levelId_);
+          .computeUInt32Size(1, levelId_);
       }
       if (nHEFNKONPEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, nHEFNKONPEI_);
+          .computeUInt32Size(2, nHEFNKONPEI_);
       }
       if (isLevelOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isLevelOpen_);
+          .computeBoolSize(3, isLevelOpen_);
+      }
+      if (isFinished_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isFinished_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class BPENFBMNKMPOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class BPENFBMNKMPOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class BPENFBMNKMPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -571,7 +571,7 @@ public final class BPENFBMNKMPOuterClass {
 
       private int nHEFNKONPEI_ ;
       /**
-       * <code>uint32 NHEFNKONPEI = 7;</code>
+       * <code>uint32 NHEFNKONPEI = 2;</code>
        * @return The nHEFNKONPEI.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class BPENFBMNKMPOuterClass {
         return nHEFNKONPEI_;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 7;</code>
+       * <code>uint32 NHEFNKONPEI = 2;</code>
        * @param value The nHEFNKONPEI to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class BPENFBMNKMPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 7;</code>
+       * <code>uint32 NHEFNKONPEI = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearNHEFNKONPEI() {
@@ -602,7 +602,7 @@ public final class BPENFBMNKMPOuterClass {
 
       private boolean isLevelOpen_ ;
       /**
-       * <code>bool is_level_open = 15;</code>
+       * <code>bool is_level_open = 3;</code>
        * @return The isLevelOpen.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class BPENFBMNKMPOuterClass {
         return isLevelOpen_;
       }
       /**
-       * <code>bool is_level_open = 15;</code>
+       * <code>bool is_level_open = 3;</code>
        * @param value The isLevelOpen to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class BPENFBMNKMPOuterClass {
         return this;
       }
       /**
-       * <code>bool is_level_open = 15;</code>
+       * <code>bool is_level_open = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLevelOpen() {
@@ -633,7 +633,7 @@ public final class BPENFBMNKMPOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 1;</code>
+       * <code>bool is_finished = 4;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class BPENFBMNKMPOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 1;</code>
+       * <code>bool is_finished = 4;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class BPENFBMNKMPOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 1;</code>
+       * <code>bool is_finished = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -729,8 +729,8 @@ public final class BPENFBMNKMPOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021BPENFBMNKMP.proto\"`\n\013BPENFBMNKMP\022\020\n\010le" +
-      "vel_id\030\004 \001(\r\022\023\n\013NHEFNKONPEI\030\007 \001(\r\022\025\n\ris_" +
-      "level_open\030\017 \001(\010\022\023\n\013is_finished\030\001 \001(\010B2\n" +
+      "vel_id\030\001 \001(\r\022\023\n\013NHEFNKONPEI\030\002 \001(\r\022\025\n\ris_" +
+      "level_open\030\003 \001(\010\022\023\n\013is_finished\030\004 \001(\010B2\n" +
       "\031emu.grasscutter.net.protoB\025BPENFBMNKMPO" +
       "uterClassb\006proto3"
     };

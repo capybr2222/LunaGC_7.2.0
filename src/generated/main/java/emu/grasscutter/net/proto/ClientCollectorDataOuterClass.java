@@ -19,19 +19,19 @@ public final class ClientCollectorDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 max_points = 50000;</code>
+     * <code>uint32 max_points = 2;</code>
      * @return The maxPoints.
      */
     int getMaxPoints();
 
     /**
-     * <code>uint32 material_id = 15;</code>
+     * <code>uint32 material_id = 7;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>uint32 curr_points = 50001;</code>
+     * <code>uint32 curr_points = 4;</code>
      * @return The currPoints.
      */
     int getCurrPoints();
@@ -81,19 +81,19 @@ public final class ClientCollectorDataOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
-
-              materialId_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
+            case 16: {
 
               maxPoints_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 32: {
 
               currPoints_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              materialId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class ClientCollectorDataOuterClass {
               emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.class, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder.class);
     }
 
-    public static final int MAX_POINTS_FIELD_NUMBER = 50000;
+    public static final int MAX_POINTS_FIELD_NUMBER = 2;
     private int maxPoints_;
     /**
-     * <code>uint32 max_points = 50000;</code>
+     * <code>uint32 max_points = 2;</code>
      * @return The maxPoints.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class ClientCollectorDataOuterClass {
       return maxPoints_;
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 15;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 7;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 15;</code>
+     * <code>uint32 material_id = 7;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class ClientCollectorDataOuterClass {
       return materialId_;
     }
 
-    public static final int CURR_POINTS_FIELD_NUMBER = 50001;
+    public static final int CURR_POINTS_FIELD_NUMBER = 4;
     private int currPoints_;
     /**
-     * <code>uint32 curr_points = 50001;</code>
+     * <code>uint32 curr_points = 4;</code>
      * @return The currPoints.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class ClientCollectorDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (materialId_ != 0) {
-        output.writeUInt32(15, materialId_);
-      }
       if (maxPoints_ != 0) {
-        output.writeUInt32(50000, maxPoints_);
+        output.writeUInt32(2, maxPoints_);
       }
       if (currPoints_ != 0) {
-        output.writeUInt32(50001, currPoints_);
+        output.writeUInt32(4, currPoints_);
+      }
+      if (materialId_ != 0) {
+        output.writeUInt32(7, materialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class ClientCollectorDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (materialId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, materialId_);
-      }
       if (maxPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, maxPoints_);
+          .computeUInt32Size(2, maxPoints_);
       }
       if (currPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, currPoints_);
+          .computeUInt32Size(4, currPoints_);
+      }
+      if (materialId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, materialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -499,7 +499,7 @@ public final class ClientCollectorDataOuterClass {
 
       private int maxPoints_ ;
       /**
-       * <code>uint32 max_points = 50000;</code>
+       * <code>uint32 max_points = 2;</code>
        * @return The maxPoints.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class ClientCollectorDataOuterClass {
         return maxPoints_;
       }
       /**
-       * <code>uint32 max_points = 50000;</code>
+       * <code>uint32 max_points = 2;</code>
        * @param value The maxPoints to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class ClientCollectorDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_points = 50000;</code>
+       * <code>uint32 max_points = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxPoints() {
@@ -530,7 +530,7 @@ public final class ClientCollectorDataOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 15;</code>
+       * <code>uint32 material_id = 7;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -538,7 +538,7 @@ public final class ClientCollectorDataOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 15;</code>
+       * <code>uint32 material_id = 7;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -549,7 +549,7 @@ public final class ClientCollectorDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 15;</code>
+       * <code>uint32 material_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -561,7 +561,7 @@ public final class ClientCollectorDataOuterClass {
 
       private int currPoints_ ;
       /**
-       * <code>uint32 curr_points = 50001;</code>
+       * <code>uint32 curr_points = 4;</code>
        * @return The currPoints.
        */
       @java.lang.Override
@@ -569,7 +569,7 @@ public final class ClientCollectorDataOuterClass {
         return currPoints_;
       }
       /**
-       * <code>uint32 curr_points = 50001;</code>
+       * <code>uint32 curr_points = 4;</code>
        * @param value The currPoints to set.
        * @return This builder for chaining.
        */
@@ -580,7 +580,7 @@ public final class ClientCollectorDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 curr_points = 50001;</code>
+       * <code>uint32 curr_points = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurrPoints() {
@@ -656,11 +656,11 @@ public final class ClientCollectorDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031ClientCollectorData.proto\"W\n\023ClientCol" +
-      "lectorData\022\024\n\nmax_points\030\320\206\003 \001(\r\022\023\n\013mate" +
-      "rial_id\030\017 \001(\r\022\025\n\013curr_points\030\321\206\003 \001(\rB:\n\031" +
-      "emu.grasscutter.net.protoB\035ClientCollect" +
-      "orDataOuterClassb\006proto3"
+      "\n\031ClientCollectorData.proto\"S\n\023ClientCol" +
+      "lectorData\022\022\n\nmax_points\030\002 \001(\r\022\023\n\013materi" +
+      "al_id\030\007 \001(\r\022\023\n\013curr_points\030\004 \001(\rB:\n\031emu." +
+      "grasscutter.net.protoB\035ClientCollectorDa" +
+      "taOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

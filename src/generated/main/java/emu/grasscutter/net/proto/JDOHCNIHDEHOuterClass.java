@@ -19,49 +19,49 @@ public final class JDOHCNIHDEHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 13;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_open = 3;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool HLPAFFCCGLF = 8;</code>
+     * <code>bool HLPAFFCCGLF = 20001;</code>
      * @return The hLPAFFCCGLF.
      */
     boolean getHLPAFFCCGLF();
 
     /**
-     * <code>bool is_finish = 4;</code>
+     * <code>bool is_finish = 13;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA> 
         getFECHNEFCAACList();
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA getFECHNEFCAAC(int index);
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     int getFECHNEFCAACCount();
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBAOrBuilder> 
         getFECHNEFCAACOrBuilderList();
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBAOrBuilder getFECHNEFCAACOrBuilder(
         int index);
@@ -113,33 +113,33 @@ public final class JDOHCNIHDEHOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 48: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 32: {
+            case 104: {
 
               isFinish_ = input.readBool();
               break;
             }
-            case 64: {
-
-              hLPAFFCCGLF_ = input.readBool();
-              break;
-            }
-            case 104: {
+            case 120: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fECHNEFCAAC_ = new java.util.ArrayList<emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA>();
                 mutable_bitField0_ |= 0x00000001;
               }
               fECHNEFCAAC_.add(
                   input.readMessage(emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.parser(), extensionRegistry));
+              break;
+            }
+            case 160008: {
+
+              hLPAFFCCGLF_ = input.readBool();
               break;
             }
             default: {
@@ -177,10 +177,10 @@ public final class JDOHCNIHDEHOuterClass {
               emu.grasscutter.net.proto.JDOHCNIHDEHOuterClass.JDOHCNIHDEH.class, emu.grasscutter.net.proto.JDOHCNIHDEHOuterClass.JDOHCNIHDEH.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 13;
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 13;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -188,10 +188,10 @@ public final class JDOHCNIHDEHOuterClass {
       return levelId_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 3;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 3;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -199,10 +199,10 @@ public final class JDOHCNIHDEHOuterClass {
       return isOpen_;
     }
 
-    public static final int HLPAFFCCGLF_FIELD_NUMBER = 8;
+    public static final int HLPAFFCCGLF_FIELD_NUMBER = 20001;
     private boolean hLPAFFCCGLF_;
     /**
-     * <code>bool HLPAFFCCGLF = 8;</code>
+     * <code>bool HLPAFFCCGLF = 20001;</code>
      * @return The hLPAFFCCGLF.
      */
     @java.lang.Override
@@ -210,10 +210,10 @@ public final class JDOHCNIHDEHOuterClass {
       return hLPAFFCCGLF_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 4;
+    public static final int IS_FINISH_FIELD_NUMBER = 13;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 4;</code>
+     * <code>bool is_finish = 13;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -221,17 +221,17 @@ public final class JDOHCNIHDEHOuterClass {
       return isFinish_;
     }
 
-    public static final int FECHNEFCAAC_FIELD_NUMBER = 15;
+    public static final int FECHNEFCAAC_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA> fECHNEFCAAC_;
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA> getFECHNEFCAACList() {
       return fECHNEFCAAC_;
     }
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBAOrBuilder> 
@@ -239,21 +239,21 @@ public final class JDOHCNIHDEHOuterClass {
       return fECHNEFCAAC_;
     }
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     @java.lang.Override
     public int getFECHNEFCAACCount() {
       return fECHNEFCAAC_.size();
     }
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA getFECHNEFCAAC(int index) {
       return fECHNEFCAAC_.get(index);
     }
     /**
-     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+     * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBAOrBuilder getFECHNEFCAACOrBuilder(
@@ -276,19 +276,19 @@ public final class JDOHCNIHDEHOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isOpen_ != false) {
-        output.writeBool(3, isOpen_);
+        output.writeBool(6, isOpen_);
       }
       if (isFinish_ != false) {
-        output.writeBool(4, isFinish_);
-      }
-      if (hLPAFFCCGLF_ != false) {
-        output.writeBool(8, hLPAFFCCGLF_);
+        output.writeBool(13, isFinish_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(13, levelId_);
+        output.writeUInt32(15, levelId_);
       }
       for (int i = 0; i < fECHNEFCAAC_.size(); i++) {
-        output.writeMessage(15, fECHNEFCAAC_.get(i));
+        output.writeMessage(20000, fECHNEFCAAC_.get(i));
+      }
+      if (hLPAFFCCGLF_ != false) {
+        output.writeBool(20001, hLPAFFCCGLF_);
       }
       unknownFields.writeTo(output);
     }
@@ -301,23 +301,23 @@ public final class JDOHCNIHDEHOuterClass {
       size = 0;
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isOpen_);
+          .computeBoolSize(6, isOpen_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isFinish_);
-      }
-      if (hLPAFFCCGLF_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, hLPAFFCCGLF_);
+          .computeBoolSize(13, isFinish_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, levelId_);
+          .computeUInt32Size(15, levelId_);
       }
       for (int i = 0; i < fECHNEFCAAC_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, fECHNEFCAAC_.get(i));
+          .computeMessageSize(20000, fECHNEFCAAC_.get(i));
+      }
+      if (hLPAFFCCGLF_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(20001, hLPAFFCCGLF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -676,7 +676,7 @@ public final class JDOHCNIHDEHOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -684,7 +684,7 @@ public final class JDOHCNIHDEHOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -695,7 +695,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 13;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -707,7 +707,7 @@ public final class JDOHCNIHDEHOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 3;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -715,7 +715,7 @@ public final class JDOHCNIHDEHOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 3;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -726,7 +726,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 3;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -738,7 +738,7 @@ public final class JDOHCNIHDEHOuterClass {
 
       private boolean hLPAFFCCGLF_ ;
       /**
-       * <code>bool HLPAFFCCGLF = 8;</code>
+       * <code>bool HLPAFFCCGLF = 20001;</code>
        * @return The hLPAFFCCGLF.
        */
       @java.lang.Override
@@ -746,7 +746,7 @@ public final class JDOHCNIHDEHOuterClass {
         return hLPAFFCCGLF_;
       }
       /**
-       * <code>bool HLPAFFCCGLF = 8;</code>
+       * <code>bool HLPAFFCCGLF = 20001;</code>
        * @param value The hLPAFFCCGLF to set.
        * @return This builder for chaining.
        */
@@ -757,7 +757,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>bool HLPAFFCCGLF = 8;</code>
+       * <code>bool HLPAFFCCGLF = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearHLPAFFCCGLF() {
@@ -769,7 +769,7 @@ public final class JDOHCNIHDEHOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 4;</code>
+       * <code>bool is_finish = 13;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -777,7 +777,7 @@ public final class JDOHCNIHDEHOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 4;</code>
+       * <code>bool is_finish = 13;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -788,7 +788,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 4;</code>
+       * <code>bool is_finish = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -811,7 +811,7 @@ public final class JDOHCNIHDEHOuterClass {
           emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA, emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.Builder, emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBAOrBuilder> fECHNEFCAACBuilder_;
 
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA> getFECHNEFCAACList() {
         if (fECHNEFCAACBuilder_ == null) {
@@ -821,7 +821,7 @@ public final class JDOHCNIHDEHOuterClass {
         }
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public int getFECHNEFCAACCount() {
         if (fECHNEFCAACBuilder_ == null) {
@@ -831,7 +831,7 @@ public final class JDOHCNIHDEHOuterClass {
         }
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA getFECHNEFCAAC(int index) {
         if (fECHNEFCAACBuilder_ == null) {
@@ -841,7 +841,7 @@ public final class JDOHCNIHDEHOuterClass {
         }
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder setFECHNEFCAAC(
           int index, emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA value) {
@@ -858,7 +858,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder setFECHNEFCAAC(
           int index, emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.Builder builderForValue) {
@@ -872,7 +872,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder addFECHNEFCAAC(emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA value) {
         if (fECHNEFCAACBuilder_ == null) {
@@ -888,7 +888,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder addFECHNEFCAAC(
           int index, emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA value) {
@@ -905,7 +905,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder addFECHNEFCAAC(
           emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.Builder builderForValue) {
@@ -919,7 +919,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder addFECHNEFCAAC(
           int index, emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.Builder builderForValue) {
@@ -933,7 +933,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder addAllFECHNEFCAAC(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA> values) {
@@ -948,7 +948,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder clearFECHNEFCAAC() {
         if (fECHNEFCAACBuilder_ == null) {
@@ -961,7 +961,7 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public Builder removeFECHNEFCAAC(int index) {
         if (fECHNEFCAACBuilder_ == null) {
@@ -974,14 +974,14 @@ public final class JDOHCNIHDEHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.Builder getFECHNEFCAACBuilder(
           int index) {
         return getFECHNEFCAACFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBAOrBuilder getFECHNEFCAACOrBuilder(
           int index) {
@@ -991,7 +991,7 @@ public final class JDOHCNIHDEHOuterClass {
         }
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBAOrBuilder> 
            getFECHNEFCAACOrBuilderList() {
@@ -1002,14 +1002,14 @@ public final class JDOHCNIHDEHOuterClass {
         }
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.Builder addFECHNEFCAACBuilder() {
         return getFECHNEFCAACFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.getDefaultInstance());
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.Builder addFECHNEFCAACBuilder(
           int index) {
@@ -1017,7 +1017,7 @@ public final class JDOHCNIHDEHOuterClass {
             index, emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.getDefaultInstance());
       }
       /**
-       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 15;</code>
+       * <code>repeated .EAOEICFJOBA FECHNEFCAAC = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EAOEICFJOBAOuterClass.EAOEICFJOBA.Builder> 
            getFECHNEFCAACBuilderList() {
@@ -1104,12 +1104,12 @@ public final class JDOHCNIHDEHOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021JDOHCNIHDEH.proto\032\021EAOEICFJOBA.proto\"{" +
-      "\n\013JDOHCNIHDEH\022\020\n\010level_id\030\r \001(\r\022\017\n\007is_op" +
-      "en\030\003 \001(\010\022\023\n\013HLPAFFCCGLF\030\010 \001(\010\022\021\n\tis_fini" +
-      "sh\030\004 \001(\010\022!\n\013FECHNEFCAAC\030\017 \003(\0132\014.EAOEICFJ" +
-      "OBAB2\n\031emu.grasscutter.net.protoB\025JDOHCN" +
-      "IHDEHOuterClassb\006proto3"
+      "\n\021JDOHCNIHDEH.proto\032\021EAOEICFJOBA.proto\"\177" +
+      "\n\013JDOHCNIHDEH\022\020\n\010level_id\030\017 \001(\r\022\017\n\007is_op" +
+      "en\030\006 \001(\010\022\025\n\013HLPAFFCCGLF\030\241\234\001 \001(\010\022\021\n\tis_fi" +
+      "nish\030\r \001(\010\022#\n\013FECHNEFCAAC\030\240\234\001 \003(\0132\014.EAOE" +
+      "ICFJOBAB2\n\031emu.grasscutter.net.protoB\025JD" +
+      "OHCNIHDEHOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

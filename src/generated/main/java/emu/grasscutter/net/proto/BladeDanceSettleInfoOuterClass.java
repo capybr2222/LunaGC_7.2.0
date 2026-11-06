@@ -19,25 +19,25 @@ public final class BladeDanceSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 cost_time = 6;</code>
+     * <code>uint32 cost_time = 2;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 kill_monster_num = 12;</code>
+     * <code>uint32 kill_monster_num = 4;</code>
      * @return The killMonsterNum.
      */
     int getKillMonsterNum();
@@ -87,24 +87,24 @@ public final class BladeDanceSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
 
               costTime_ = input.readUInt32();
               break;
             }
-            case 96: {
-
-              killMonsterNum_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 24: {
 
               isNewRecord_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              killMonsterNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class BladeDanceSettleInfoOuterClass {
               emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.class, emu.grasscutter.net.proto.BladeDanceSettleInfoOuterClass.BladeDanceSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class BladeDanceSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 6;
+    public static final int COST_TIME_FIELD_NUMBER = 2;
     private int costTime_;
     /**
-     * <code>uint32 cost_time = 6;</code>
+     * <code>uint32 cost_time = 2;</code>
      * @return The costTime.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class BladeDanceSettleInfoOuterClass {
       return costTime_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class BladeDanceSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int KILL_MONSTER_NUM_FIELD_NUMBER = 12;
+    public static final int KILL_MONSTER_NUM_FIELD_NUMBER = 4;
     private int killMonsterNum_;
     /**
-     * <code>uint32 kill_monster_num = 12;</code>
+     * <code>uint32 kill_monster_num = 4;</code>
      * @return The killMonsterNum.
      */
     @java.lang.Override
@@ -198,16 +198,16 @@ public final class BladeDanceSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
+        output.writeUInt32(1, levelId_);
       }
       if (costTime_ != 0) {
-        output.writeUInt32(6, costTime_);
-      }
-      if (killMonsterNum_ != 0) {
-        output.writeUInt32(12, killMonsterNum_);
+        output.writeUInt32(2, costTime_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(14, isNewRecord_);
+        output.writeBool(3, isNewRecord_);
+      }
+      if (killMonsterNum_ != 0) {
+        output.writeUInt32(4, killMonsterNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,19 +220,19 @@ public final class BladeDanceSettleInfoOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
+          .computeUInt32Size(1, levelId_);
       }
       if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, costTime_);
-      }
-      if (killMonsterNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, killMonsterNum_);
+          .computeUInt32Size(2, costTime_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isNewRecord_);
+          .computeBoolSize(3, isNewRecord_);
+      }
+      if (killMonsterNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, killMonsterNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class BladeDanceSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class BladeDanceSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 3;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class BladeDanceSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -570,7 +570,7 @@ public final class BladeDanceSettleInfoOuterClass {
 
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 6;</code>
+       * <code>uint32 cost_time = 2;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class BladeDanceSettleInfoOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 6;</code>
+       * <code>uint32 cost_time = 2;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class BladeDanceSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 6;</code>
+       * <code>uint32 cost_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
@@ -601,7 +601,7 @@ public final class BladeDanceSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class BladeDanceSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class BladeDanceSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -632,7 +632,7 @@ public final class BladeDanceSettleInfoOuterClass {
 
       private int killMonsterNum_ ;
       /**
-       * <code>uint32 kill_monster_num = 12;</code>
+       * <code>uint32 kill_monster_num = 4;</code>
        * @return The killMonsterNum.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class BladeDanceSettleInfoOuterClass {
         return killMonsterNum_;
       }
       /**
-       * <code>uint32 kill_monster_num = 12;</code>
+       * <code>uint32 kill_monster_num = 4;</code>
        * @param value The killMonsterNum to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class BladeDanceSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 kill_monster_num = 12;</code>
+       * <code>uint32 kill_monster_num = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearKillMonsterNum() {
@@ -728,9 +728,9 @@ public final class BladeDanceSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032BladeDanceSettleInfo.proto\"l\n\024BladeDan" +
-      "ceSettleInfo\022\025\n\ris_new_record\030\016 \001(\010\022\021\n\tc" +
-      "ost_time\030\006 \001(\r\022\020\n\010level_id\030\003 \001(\r\022\030\n\020kill" +
-      "_monster_num\030\014 \001(\rB;\n\031emu.grasscutter.ne" +
+      "ceSettleInfo\022\025\n\ris_new_record\030\003 \001(\010\022\021\n\tc" +
+      "ost_time\030\002 \001(\r\022\020\n\010level_id\030\001 \001(\r\022\030\n\020kill" +
+      "_monster_num\030\004 \001(\rB;\n\031emu.grasscutter.ne" +
       "t.protoB\036BladeDanceSettleInfoOuterClassb" +
       "\006proto3"
     };

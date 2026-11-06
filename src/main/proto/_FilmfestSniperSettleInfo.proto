@@ -5,6 +5,6 @@ option java_outer_classname = "_FilmfestSniperSettleInfoOuterClass";
 
 message _FilmfestSniperSettleInfo {
 	uint32 PAGGBIOEHOO = 2;
-	float CJFPPKKJLMK = 9;
-	uint32 level_id = 13;
+	float CJFPPKKJLMK = 3;
+	uint32 level_id = 1;
 }

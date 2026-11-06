@@ -19,13 +19,13 @@ public final class MKLDDPJAEOLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 best_score = 2;</code>
+     * <code>uint32 best_score = 14;</code>
      * @return The bestScore.
      */
     int getBestScore();
 
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -37,7 +37,7 @@ public final class MKLDDPJAEOLOuterClass {
     boolean getIsFinish();
 
     /**
-     * <code>bool is_open = 12;</code>
+     * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
@@ -87,12 +87,12 @@ public final class MKLDDPJAEOLOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 56: {
 
-              bestScore_ = input.readUInt32();
+              isOpen_ = input.readBool();
               break;
             }
-            case 32: {
+            case 72: {
 
               levelId_ = input.readUInt32();
               break;
@@ -102,9 +102,9 @@ public final class MKLDDPJAEOLOuterClass {
               isFinish_ = input.readBool();
               break;
             }
-            case 96: {
+            case 112: {
 
-              isOpen_ = input.readBool();
+              bestScore_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class MKLDDPJAEOLOuterClass {
               emu.grasscutter.net.proto.MKLDDPJAEOLOuterClass.MKLDDPJAEOL.class, emu.grasscutter.net.proto.MKLDDPJAEOLOuterClass.MKLDDPJAEOL.Builder.class);
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 2;
+    public static final int BEST_SCORE_FIELD_NUMBER = 14;
     private int bestScore_;
     /**
-     * <code>uint32 best_score = 2;</code>
+     * <code>uint32 best_score = 14;</code>
      * @return The bestScore.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class MKLDDPJAEOLOuterClass {
       return bestScore_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class MKLDDPJAEOLOuterClass {
       return isFinish_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 12;
+    public static final int IS_OPEN_FIELD_NUMBER = 7;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 12;</code>
+     * <code>bool is_open = 7;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class MKLDDPJAEOLOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bestScore_ != 0) {
-        output.writeUInt32(2, bestScore_);
+      if (isOpen_ != false) {
+        output.writeBool(7, isOpen_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(4, levelId_);
+        output.writeUInt32(9, levelId_);
       }
       if (isFinish_ != false) {
         output.writeBool(10, isFinish_);
       }
-      if (isOpen_ != false) {
-        output.writeBool(12, isOpen_);
+      if (bestScore_ != 0) {
+        output.writeUInt32(14, bestScore_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class MKLDDPJAEOLOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bestScore_ != 0) {
+      if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, bestScore_);
+          .computeBoolSize(7, isOpen_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, levelId_);
+          .computeUInt32Size(9, levelId_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(10, isFinish_);
       }
-      if (isOpen_ != false) {
+      if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isOpen_);
+          .computeUInt32Size(14, bestScore_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class MKLDDPJAEOLOuterClass {
 
       private int bestScore_ ;
       /**
-       * <code>uint32 best_score = 2;</code>
+       * <code>uint32 best_score = 14;</code>
        * @return The bestScore.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class MKLDDPJAEOLOuterClass {
         return bestScore_;
       }
       /**
-       * <code>uint32 best_score = 2;</code>
+       * <code>uint32 best_score = 14;</code>
        * @param value The bestScore to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class MKLDDPJAEOLOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_score = 2;</code>
+       * <code>uint32 best_score = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestScore() {
@@ -571,7 +571,7 @@ public final class MKLDDPJAEOLOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class MKLDDPJAEOLOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class MKLDDPJAEOLOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -633,7 +633,7 @@ public final class MKLDDPJAEOLOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 7;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class MKLDDPJAEOLOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 7;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class MKLDDPJAEOLOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -729,8 +729,8 @@ public final class MKLDDPJAEOLOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021MKLDDPJAEOL.proto\"W\n\013MKLDDPJAEOL\022\022\n\nbe" +
-      "st_score\030\002 \001(\r\022\020\n\010level_id\030\004 \001(\r\022\021\n\tis_f" +
-      "inish\030\n \001(\010\022\017\n\007is_open\030\014 \001(\010B2\n\031emu.gras" +
+      "st_score\030\016 \001(\r\022\020\n\010level_id\030\t \001(\r\022\021\n\tis_f" +
+      "inish\030\n \001(\010\022\017\n\007is_open\030\007 \001(\010B2\n\031emu.gras" +
       "scutter.net.protoB\025MKLDDPJAEOLOuterClass" +
       "b\006proto3"
     };

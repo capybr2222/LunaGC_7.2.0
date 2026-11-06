@@ -25,13 +25,13 @@ public final class FMNPNEKAICIOuterClass {
     int getLevelId();
 
     /**
-     * <code>bool ODDFFNIOBLN = 50000;</code>
+     * <code>bool ODDFFNIOBLN = 10;</code>
      * @return The oDDFFNIOBLN.
      */
     boolean getODDFFNIOBLN();
 
     /**
-     * <code>bool KLGNBKEEEIE = 50001;</code>
+     * <code>bool KLGNBKEEEIE = 3;</code>
      * @return The kLGNBKEEEIE.
      */
     boolean getKLGNBKEEEIE();
@@ -87,6 +87,11 @@ public final class FMNPNEKAICIOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              kLGNBKEEEIE_ = input.readBool();
+              break;
+            }
             case 32: {
 
               bestScore_ = input.readUInt32();
@@ -97,14 +102,9 @@ public final class FMNPNEKAICIOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 400000: {
+            case 80: {
 
               oDDFFNIOBLN_ = input.readBool();
-              break;
-            }
-            case 400008: {
-
-              kLGNBKEEEIE_ = input.readBool();
               break;
             }
             default: {
@@ -150,10 +150,10 @@ public final class FMNPNEKAICIOuterClass {
       return levelId_;
     }
 
-    public static final int ODDFFNIOBLN_FIELD_NUMBER = 50000;
+    public static final int ODDFFNIOBLN_FIELD_NUMBER = 10;
     private boolean oDDFFNIOBLN_;
     /**
-     * <code>bool ODDFFNIOBLN = 50000;</code>
+     * <code>bool ODDFFNIOBLN = 10;</code>
      * @return The oDDFFNIOBLN.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class FMNPNEKAICIOuterClass {
       return oDDFFNIOBLN_;
     }
 
-    public static final int KLGNBKEEEIE_FIELD_NUMBER = 50001;
+    public static final int KLGNBKEEEIE_FIELD_NUMBER = 3;
     private boolean kLGNBKEEEIE_;
     /**
-     * <code>bool KLGNBKEEEIE = 50001;</code>
+     * <code>bool KLGNBKEEEIE = 3;</code>
      * @return The kLGNBKEEEIE.
      */
     @java.lang.Override
@@ -197,6 +197,9 @@ public final class FMNPNEKAICIOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (kLGNBKEEEIE_ != false) {
+        output.writeBool(3, kLGNBKEEEIE_);
+      }
       if (bestScore_ != 0) {
         output.writeUInt32(4, bestScore_);
       }
@@ -204,10 +207,7 @@ public final class FMNPNEKAICIOuterClass {
         output.writeUInt32(7, levelId_);
       }
       if (oDDFFNIOBLN_ != false) {
-        output.writeBool(50000, oDDFFNIOBLN_);
-      }
-      if (kLGNBKEEEIE_ != false) {
-        output.writeBool(50001, kLGNBKEEEIE_);
+        output.writeBool(10, oDDFFNIOBLN_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,6 +218,10 @@ public final class FMNPNEKAICIOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (kLGNBKEEEIE_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, kLGNBKEEEIE_);
+      }
       if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, bestScore_);
@@ -228,11 +232,7 @@ public final class FMNPNEKAICIOuterClass {
       }
       if (oDDFFNIOBLN_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50000, oDDFFNIOBLN_);
-      }
-      if (kLGNBKEEEIE_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50001, kLGNBKEEEIE_);
+          .computeBoolSize(10, oDDFFNIOBLN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -571,7 +571,7 @@ public final class FMNPNEKAICIOuterClass {
 
       private boolean oDDFFNIOBLN_ ;
       /**
-       * <code>bool ODDFFNIOBLN = 50000;</code>
+       * <code>bool ODDFFNIOBLN = 10;</code>
        * @return The oDDFFNIOBLN.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class FMNPNEKAICIOuterClass {
         return oDDFFNIOBLN_;
       }
       /**
-       * <code>bool ODDFFNIOBLN = 50000;</code>
+       * <code>bool ODDFFNIOBLN = 10;</code>
        * @param value The oDDFFNIOBLN to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class FMNPNEKAICIOuterClass {
         return this;
       }
       /**
-       * <code>bool ODDFFNIOBLN = 50000;</code>
+       * <code>bool ODDFFNIOBLN = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearODDFFNIOBLN() {
@@ -602,7 +602,7 @@ public final class FMNPNEKAICIOuterClass {
 
       private boolean kLGNBKEEEIE_ ;
       /**
-       * <code>bool KLGNBKEEEIE = 50001;</code>
+       * <code>bool KLGNBKEEEIE = 3;</code>
        * @return The kLGNBKEEEIE.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class FMNPNEKAICIOuterClass {
         return kLGNBKEEEIE_;
       }
       /**
-       * <code>bool KLGNBKEEEIE = 50001;</code>
+       * <code>bool KLGNBKEEEIE = 3;</code>
        * @param value The kLGNBKEEEIE to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class FMNPNEKAICIOuterClass {
         return this;
       }
       /**
-       * <code>bool KLGNBKEEEIE = 50001;</code>
+       * <code>bool KLGNBKEEEIE = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearKLGNBKEEEIE() {
@@ -728,11 +728,11 @@ public final class FMNPNEKAICIOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021FMNPNEKAICI.proto\"a\n\013FMNPNEKAICI\022\020\n\010le" +
-      "vel_id\030\007 \001(\r\022\025\n\013ODDFFNIOBLN\030\320\206\003 \001(\010\022\025\n\013K" +
-      "LGNBKEEEIE\030\321\206\003 \001(\010\022\022\n\nbest_score\030\004 \001(\rB2" +
-      "\n\031emu.grasscutter.net.protoB\025FMNPNEKAICI" +
-      "OuterClassb\006proto3"
+      "\n\021FMNPNEKAICI.proto\"]\n\013FMNPNEKAICI\022\020\n\010le" +
+      "vel_id\030\007 \001(\r\022\023\n\013ODDFFNIOBLN\030\n \001(\010\022\023\n\013KLG" +
+      "NBKEEEIE\030\003 \001(\010\022\022\n\nbest_score\030\004 \001(\rB2\n\031em" +
+      "u.grasscutter.net.protoB\025FMNPNEKAICIOute" +
+      "rClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

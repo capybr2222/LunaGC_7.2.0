@@ -7,9 +7,9 @@ import "GachaInfo.proto";
 
 message GetGachaInfoRsp {
 	bool is_under_general_restrict = 50000;
-	uint32 gacha_random = 11;
+	uint32 gacha_random = 15;
 	bool is_under_minors_restrict = 50001;
-	repeated GachaInfo gacha_info_list = 14;
-	uint32 daily_gacha_times = 1;
-	int32 retcode = 13;
+	repeated GachaInfo gacha_info_list = 2;
+	uint32 daily_gacha_times = 9;
+	int32 retcode = 12;
 }

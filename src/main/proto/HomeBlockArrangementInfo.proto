@@ -14,17 +14,17 @@ import "HomeNpcData.proto";
 import "WeekendDjinnInfo.proto";
 
 message HomeBlockArrangementInfo {
-	repeated HomeFurnitureData persistent_furniture_list = 50000;
-	repeated HomeFurnitureGroupData furniture_group_list = 11;
-	repeated WeekendDjinnInfo weekend_djinn_info_list = 1;
-	repeated HomeNpcData deploy_npc_list = 5;
-	repeated HomeFurnitureSuiteData furniture_suite_list = 13;
-	repeated HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;
-	bool is_unlocked = 4;
-	uint32 comfort_value = 3;
-	repeated HomeBlockFieldData field_list = 12;
-	repeated HomeBlockDotPattern dot_pattern_list = 6;
-	repeated HomeAnimalData deploy_animal_list = 9;
-	repeated HomeFurnitureData deploy_furniure_list = 50001;
-	uint32 block_id = 15;
+	repeated HomeFurnitureData persistent_furniture_list = 20001;
+	repeated HomeFurnitureGroupData furniture_group_list = 3;
+	repeated WeekendDjinnInfo weekend_djinn_info_list = 7;
+	repeated HomeNpcData deploy_npc_list = 12;
+	repeated HomeFurnitureSuiteData furniture_suite_list = 14;
+	repeated HomeFurnitureCustomSuiteData furniture_custom_suite_list = 2;
+	bool is_unlocked = 5;
+	uint32 comfort_value = 15;
+	repeated HomeBlockFieldData field_list = 6;
+	repeated HomeBlockDotPattern dot_pattern_list = 11;
+	repeated HomeAnimalData deploy_animal_list = 8;
+	repeated HomeFurnitureData deploy_furniure_list = 20000;
+	uint32 block_id = 4;
 }

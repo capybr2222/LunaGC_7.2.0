@@ -25,7 +25,7 @@ public final class WindSeedType1NotifyOuterClass {
     int getConfigId();
 
     /**
-     * <code>bytes _payload = 5;</code>
+     * <code>bytes _payload = 15;</code>
      * @return The payload.
      */
     com.google.protobuf.ByteString getPayload();
@@ -76,14 +76,14 @@ public final class WindSeedType1NotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
-
-              Payload_ = input.readBytes();
-              break;
-            }
             case 80: {
 
               configId_ = input.readUInt32();
+              break;
+            }
+            case 122: {
+
+              Payload_ = input.readBytes();
               break;
             }
             default: {
@@ -129,10 +129,10 @@ public final class WindSeedType1NotifyOuterClass {
       return configId_;
     }
 
-    public static final int _PAYLOAD_FIELD_NUMBER = 5;
+    public static final int _PAYLOAD_FIELD_NUMBER = 15;
     private com.google.protobuf.ByteString Payload_;
     /**
-     * <code>bytes _payload = 5;</code>
+     * <code>bytes _payload = 15;</code>
      * @return The payload.
      */
     @java.lang.Override
@@ -154,11 +154,11 @@ public final class WindSeedType1NotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!Payload_.isEmpty()) {
-        output.writeBytes(5, Payload_);
-      }
       if (configId_ != 0) {
         output.writeUInt32(10, configId_);
+      }
+      if (!Payload_.isEmpty()) {
+        output.writeBytes(15, Payload_);
       }
       unknownFields.writeTo(output);
     }
@@ -169,13 +169,13 @@ public final class WindSeedType1NotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!Payload_.isEmpty()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, Payload_);
-      }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, configId_);
+      }
+      if (!Payload_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(15, Payload_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -492,7 +492,7 @@ public final class WindSeedType1NotifyOuterClass {
 
       private com.google.protobuf.ByteString Payload_ = com.google.protobuf.ByteString.EMPTY;
       /**
-       * <code>bytes _payload = 5;</code>
+       * <code>bytes _payload = 15;</code>
        * @return The payload.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class WindSeedType1NotifyOuterClass {
         return Payload_;
       }
       /**
-       * <code>bytes _payload = 5;</code>
+       * <code>bytes _payload = 15;</code>
        * @param value The payload to set.
        * @return This builder for chaining.
        */
@@ -514,7 +514,7 @@ public final class WindSeedType1NotifyOuterClass {
         return this;
       }
       /**
-       * <code>bytes _payload = 5;</code>
+       * <code>bytes _payload = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearPayload() {
@@ -592,7 +592,7 @@ public final class WindSeedType1NotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031WindSeedType1Notify.proto\":\n\023WindSeedT" +
       "ype1Notify\022\021\n\tconfig_id\030\n \001(\r\022\020\n\010_payloa" +
-      "d\030\005 \001(\014B:\n\031emu.grasscutter.net.protoB\035Wi" +
+      "d\030\017 \001(\014B:\n\031emu.grasscutter.net.protoB\035Wi" +
       "ndSeedType1NotifyOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

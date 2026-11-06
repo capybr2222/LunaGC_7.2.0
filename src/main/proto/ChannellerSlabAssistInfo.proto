@@ -5,6 +5,6 @@ option java_outer_classname = "ChannellerSlabAssistInfoOuterClass";
 
 message ChannellerSlabAssistInfo {
 	uint32 avatar_level = 3;
-	uint32 avatar_id = 14;
+	uint32 avatar_id = 2;
 	uint32 uid = 1;
 }

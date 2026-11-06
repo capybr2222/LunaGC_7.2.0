@@ -19,7 +19,7 @@ public final class OPOHILFOCHPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 IAMHNPDGKNA = 12;</code>
+     * <code>uint32 IAMHNPDGKNA = 15;</code>
      * @return The iAMHNPDGKNA.
      */
     int getIAMHNPDGKNA();
@@ -66,7 +66,7 @@ public final class OPOHILFOCHPOuterClass {
         int index);
 
     /**
-     * <code>uint32 HMJDEIANCKN = 15;</code>
+     * <code>uint32 HMJDEIANCKN = 12;</code>
      * @return The hMJDEIANCKN.
      */
     int getHMJDEIANCKN();
@@ -157,7 +157,7 @@ public final class OPOHILFOCHPOuterClass {
             }
             case 96: {
 
-              iAMHNPDGKNA_ = input.readUInt32();
+              hMJDEIANCKN_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -167,7 +167,7 @@ public final class OPOHILFOCHPOuterClass {
             }
             case 120: {
 
-              hMJDEIANCKN_ = input.readUInt32();
+              iAMHNPDGKNA_ = input.readUInt32();
               break;
             }
             default: {
@@ -208,10 +208,10 @@ public final class OPOHILFOCHPOuterClass {
               emu.grasscutter.net.proto.OPOHILFOCHPOuterClass.OPOHILFOCHP.class, emu.grasscutter.net.proto.OPOHILFOCHPOuterClass.OPOHILFOCHP.Builder.class);
     }
 
-    public static final int IAMHNPDGKNA_FIELD_NUMBER = 12;
+    public static final int IAMHNPDGKNA_FIELD_NUMBER = 15;
     private int iAMHNPDGKNA_;
     /**
-     * <code>uint32 IAMHNPDGKNA = 12;</code>
+     * <code>uint32 IAMHNPDGKNA = 15;</code>
      * @return The iAMHNPDGKNA.
      */
     @java.lang.Override
@@ -287,10 +287,10 @@ public final class OPOHILFOCHPOuterClass {
       return levelInfoList_.get(index);
     }
 
-    public static final int HMJDEIANCKN_FIELD_NUMBER = 15;
+    public static final int HMJDEIANCKN_FIELD_NUMBER = 12;
     private int hMJDEIANCKN_;
     /**
-     * <code>uint32 HMJDEIANCKN = 15;</code>
+     * <code>uint32 HMJDEIANCKN = 12;</code>
      * @return The hMJDEIANCKN.
      */
     @java.lang.Override
@@ -334,14 +334,14 @@ public final class OPOHILFOCHPOuterClass {
       for (int i = 0; i < cNIPLLIJAFD_.size(); i++) {
         output.writeUInt32NoTag(cNIPLLIJAFD_.getInt(i));
       }
-      if (iAMHNPDGKNA_ != 0) {
-        output.writeUInt32(12, iAMHNPDGKNA_);
+      if (hMJDEIANCKN_ != 0) {
+        output.writeUInt32(12, hMJDEIANCKN_);
       }
       if (WinCount_ != 0) {
         output.writeUInt32(14, WinCount_);
       }
-      if (hMJDEIANCKN_ != 0) {
-        output.writeUInt32(15, hMJDEIANCKN_);
+      if (iAMHNPDGKNA_ != 0) {
+        output.writeUInt32(15, iAMHNPDGKNA_);
       }
       unknownFields.writeTo(output);
     }
@@ -370,17 +370,17 @@ public final class OPOHILFOCHPOuterClass {
         }
         cNIPLLIJAFDMemoizedSerializedSize = dataSize;
       }
-      if (iAMHNPDGKNA_ != 0) {
+      if (hMJDEIANCKN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, iAMHNPDGKNA_);
+          .computeUInt32Size(12, hMJDEIANCKN_);
       }
       if (WinCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, WinCount_);
       }
-      if (hMJDEIANCKN_ != 0) {
+      if (iAMHNPDGKNA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, hMJDEIANCKN_);
+          .computeUInt32Size(15, iAMHNPDGKNA_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -749,7 +749,7 @@ public final class OPOHILFOCHPOuterClass {
 
       private int iAMHNPDGKNA_ ;
       /**
-       * <code>uint32 IAMHNPDGKNA = 12;</code>
+       * <code>uint32 IAMHNPDGKNA = 15;</code>
        * @return The iAMHNPDGKNA.
        */
       @java.lang.Override
@@ -757,7 +757,7 @@ public final class OPOHILFOCHPOuterClass {
         return iAMHNPDGKNA_;
       }
       /**
-       * <code>uint32 IAMHNPDGKNA = 12;</code>
+       * <code>uint32 IAMHNPDGKNA = 15;</code>
        * @param value The iAMHNPDGKNA to set.
        * @return This builder for chaining.
        */
@@ -768,7 +768,7 @@ public final class OPOHILFOCHPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 IAMHNPDGKNA = 12;</code>
+       * <code>uint32 IAMHNPDGKNA = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIAMHNPDGKNA() {
@@ -1099,7 +1099,7 @@ public final class OPOHILFOCHPOuterClass {
 
       private int hMJDEIANCKN_ ;
       /**
-       * <code>uint32 HMJDEIANCKN = 15;</code>
+       * <code>uint32 HMJDEIANCKN = 12;</code>
        * @return The hMJDEIANCKN.
        */
       @java.lang.Override
@@ -1107,7 +1107,7 @@ public final class OPOHILFOCHPOuterClass {
         return hMJDEIANCKN_;
       }
       /**
-       * <code>uint32 HMJDEIANCKN = 15;</code>
+       * <code>uint32 HMJDEIANCKN = 12;</code>
        * @param value The hMJDEIANCKN to set.
        * @return This builder for chaining.
        */
@@ -1118,7 +1118,7 @@ public final class OPOHILFOCHPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 HMJDEIANCKN = 15;</code>
+       * <code>uint32 HMJDEIANCKN = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearHMJDEIANCKN() {
@@ -1226,9 +1226,9 @@ public final class OPOHILFOCHPOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021OPOHILFOCHP.proto\032\021OJMLCFIPPAM.proto\"\207" +
-      "\001\n\013OPOHILFOCHP\022\023\n\013IAMHNPDGKNA\030\014 \001(\r\022\023\n\013C" +
+      "\001\n\013OPOHILFOCHP\022\023\n\013IAMHNPDGKNA\030\017 \001(\r\022\023\n\013C" +
       "NIPLLIJAFD\030\010 \003(\r\022%\n\017level_info_list\030\006 \003(" +
-      "\0132\014.OJMLCFIPPAM\022\023\n\013HMJDEIANCKN\030\017 \001(\r\022\022\n\n" +
+      "\0132\014.OJMLCFIPPAM\022\023\n\013HMJDEIANCKN\030\014 \001(\r\022\022\n\n" +
       "_win_count\030\016 \001(\rB2\n\031emu.grasscutter.net." +
       "protoB\025OPOHILFOCHPOuterClassb\006proto3"
     };

@@ -7,17 +7,17 @@ import "InterOpType.proto";
 import "ResinCostType.proto";
 
 message GadgetInteractReq {
-	bool AJDBEGMCGKD = 13;
-	ResinCostType resin_cost_type = 7;
-	uint32 EBEELPIEKEL = 14;
-	bool HDJABIODGCI = 50000;
-	bool DOGHJJCHDLF = 50001;
+	bool AJDBEGMCGKD = 8;
+	ResinCostType resin_cost_type = 6;
+	uint32 EBEELPIEKEL = 20006;
+	bool HDJABIODGCI = 20005;
+	bool DOGHJJCHDLF = 20000;
 	uint32 gadget_entity_id = 11;
-	bool LPCDPGNKGFL = 50002;
-	uint32 gadget_id = 4;
-	uint32 CJIPKAIPCIB = 10;
-	bool IKMNHOHNBKJ = 50003;
-	bool IKDIFBEOEKM = 50004;
-	InterOpType op_type = 9;
-	uint32 ALLPOOBNNPH = 12;
+	bool LPCDPGNKGFL = 20002;
+	uint32 gadget_id = 7;
+	uint32 CJIPKAIPCIB = 12;
+	bool IKMNHOHNBKJ = 20001;
+	bool IKDIFBEOEKM = 20003;
+	InterOpType op_type = 5;
+	uint32 ALLPOOBNNPH = 20007;
 }

@@ -19,18 +19,18 @@ public final class SetWidgetSlotReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.WidgetSlotOp op = 2;</code>
+     * <code>.WidgetSlotOp op = 4;</code>
      * @return The enum numeric value on the wire for op.
      */
     int getOpValue();
     /**
-     * <code>.WidgetSlotOp op = 2;</code>
+     * <code>.WidgetSlotOp op = 4;</code>
      * @return The op.
      */
     emu.grasscutter.net.proto.WidgetSlotOpOuterClass.WidgetSlotOp getOp();
 
     /**
-     * <code>uint32 material_id = 12;</code>
+     * <code>uint32 material_id = 5;</code>
      * @return The materialId.
      */
     int getMaterialId();
@@ -81,13 +81,13 @@ public final class SetWidgetSlotReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 32: {
               int rawValue = input.readEnum();
 
               op_ = rawValue;
               break;
             }
-            case 96: {
+            case 40: {
 
               materialId_ = input.readUInt32();
               break;
@@ -124,17 +124,17 @@ public final class SetWidgetSlotReqOuterClass {
               emu.grasscutter.net.proto.SetWidgetSlotReqOuterClass.SetWidgetSlotReq.class, emu.grasscutter.net.proto.SetWidgetSlotReqOuterClass.SetWidgetSlotReq.Builder.class);
     }
 
-    public static final int OP_FIELD_NUMBER = 2;
+    public static final int OP_FIELD_NUMBER = 4;
     private int op_;
     /**
-     * <code>.WidgetSlotOp op = 2;</code>
+     * <code>.WidgetSlotOp op = 4;</code>
      * @return The enum numeric value on the wire for op.
      */
     @java.lang.Override public int getOpValue() {
       return op_;
     }
     /**
-     * <code>.WidgetSlotOp op = 2;</code>
+     * <code>.WidgetSlotOp op = 4;</code>
      * @return The op.
      */
     @java.lang.Override public emu.grasscutter.net.proto.WidgetSlotOpOuterClass.WidgetSlotOp getOp() {
@@ -143,10 +143,10 @@ public final class SetWidgetSlotReqOuterClass {
       return result == null ? emu.grasscutter.net.proto.WidgetSlotOpOuterClass.WidgetSlotOp.UNRECOGNIZED : result;
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 12;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 5;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 12;</code>
+     * <code>uint32 material_id = 5;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -169,10 +169,10 @@ public final class SetWidgetSlotReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (op_ != emu.grasscutter.net.proto.WidgetSlotOpOuterClass.WidgetSlotOp.WidgetSlotOp_ATTACH.getNumber()) {
-        output.writeEnum(2, op_);
+        output.writeEnum(4, op_);
       }
       if (materialId_ != 0) {
-        output.writeUInt32(12, materialId_);
+        output.writeUInt32(5, materialId_);
       }
       unknownFields.writeTo(output);
     }
@@ -185,11 +185,11 @@ public final class SetWidgetSlotReqOuterClass {
       size = 0;
       if (op_ != emu.grasscutter.net.proto.WidgetSlotOpOuterClass.WidgetSlotOp.WidgetSlotOp_ATTACH.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, op_);
+          .computeEnumSize(4, op_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, materialId_);
+          .computeUInt32Size(5, materialId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -474,14 +474,14 @@ public final class SetWidgetSlotReqOuterClass {
 
       private int op_ = 0;
       /**
-       * <code>.WidgetSlotOp op = 2;</code>
+       * <code>.WidgetSlotOp op = 4;</code>
        * @return The enum numeric value on the wire for op.
        */
       @java.lang.Override public int getOpValue() {
         return op_;
       }
       /**
-       * <code>.WidgetSlotOp op = 2;</code>
+       * <code>.WidgetSlotOp op = 4;</code>
        * @param value The enum numeric value on the wire for op to set.
        * @return This builder for chaining.
        */
@@ -492,7 +492,7 @@ public final class SetWidgetSlotReqOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetSlotOp op = 2;</code>
+       * <code>.WidgetSlotOp op = 4;</code>
        * @return The op.
        */
       @java.lang.Override
@@ -502,7 +502,7 @@ public final class SetWidgetSlotReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.WidgetSlotOpOuterClass.WidgetSlotOp.UNRECOGNIZED : result;
       }
       /**
-       * <code>.WidgetSlotOp op = 2;</code>
+       * <code>.WidgetSlotOp op = 4;</code>
        * @param value The op to set.
        * @return This builder for chaining.
        */
@@ -516,7 +516,7 @@ public final class SetWidgetSlotReqOuterClass {
         return this;
       }
       /**
-       * <code>.WidgetSlotOp op = 2;</code>
+       * <code>.WidgetSlotOp op = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearOp() {
@@ -528,7 +528,7 @@ public final class SetWidgetSlotReqOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 12;</code>
+       * <code>uint32 material_id = 5;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -536,7 +536,7 @@ public final class SetWidgetSlotReqOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 12;</code>
+       * <code>uint32 material_id = 5;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -547,7 +547,7 @@ public final class SetWidgetSlotReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 12;</code>
+       * <code>uint32 material_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -624,8 +624,8 @@ public final class SetWidgetSlotReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SetWidgetSlotReq.proto\032\022WidgetSlotOp.p" +
-      "roto\"B\n\020SetWidgetSlotReq\022\031\n\002op\030\002 \001(\0162\r.W" +
-      "idgetSlotOp\022\023\n\013material_id\030\014 \001(\rB7\n\031emu." +
+      "roto\"B\n\020SetWidgetSlotReq\022\031\n\002op\030\004 \001(\0162\r.W" +
+      "idgetSlotOp\022\023\n\013material_id\030\005 \001(\rB7\n\031emu." +
       "grasscutter.net.protoB\032SetWidgetSlotReqO" +
       "uterClassb\006proto3"
     };

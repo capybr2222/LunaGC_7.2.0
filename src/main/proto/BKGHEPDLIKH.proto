@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "BKGHEPDLIKHOuterClass";
 
 message BKGHEPDLIKH {
-	bool is_open = 7;
-	uint32 level_id = 11;
+	bool is_open = 2;
+	uint32 level_id = 1;
 }

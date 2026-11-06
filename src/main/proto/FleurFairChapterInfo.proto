@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "FleurFairChapterInfoOuterClass";
 
 message FleurFairChapterInfo {
-	uint32 open_time = 1;
-	uint32 chapter_id = 5;
+	uint32 open_time = 2;
+	uint32 chapter_id = 1;
 }

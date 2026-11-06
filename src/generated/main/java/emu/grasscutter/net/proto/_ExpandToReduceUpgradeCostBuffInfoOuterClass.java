@@ -19,13 +19,13 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool NHLOILJDDIP = 5;</code>
+     * <code>bool NHLOILJDDIP = 13;</code>
      * @return The nHLOILJDDIP.
      */
     boolean getNHLOILJDDIP();
 
     /**
-     * <code>uint32 MPPNKBJHBOK = 12;</code>
+     * <code>uint32 MPPNKBJHBOK = 11;</code>
      * @return The mPPNKBJHBOK.
      */
     int getMPPNKBJHBOK();
@@ -75,14 +75,14 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              nHLOILJDDIP_ = input.readBool();
-              break;
-            }
-            case 96: {
+            case 88: {
 
               mPPNKBJHBOK_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              nHLOILJDDIP_ = input.readBool();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
               emu.grasscutter.net.proto._ExpandToReduceUpgradeCostBuffInfoOuterClass._ExpandToReduceUpgradeCostBuffInfo.class, emu.grasscutter.net.proto._ExpandToReduceUpgradeCostBuffInfoOuterClass._ExpandToReduceUpgradeCostBuffInfo.Builder.class);
     }
 
-    public static final int NHLOILJDDIP_FIELD_NUMBER = 5;
+    public static final int NHLOILJDDIP_FIELD_NUMBER = 13;
     private boolean nHLOILJDDIP_;
     /**
-     * <code>bool NHLOILJDDIP = 5;</code>
+     * <code>bool NHLOILJDDIP = 13;</code>
      * @return The nHLOILJDDIP.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
       return nHLOILJDDIP_;
     }
 
-    public static final int MPPNKBJHBOK_FIELD_NUMBER = 12;
+    public static final int MPPNKBJHBOK_FIELD_NUMBER = 11;
     private int mPPNKBJHBOK_;
     /**
-     * <code>uint32 MPPNKBJHBOK = 12;</code>
+     * <code>uint32 MPPNKBJHBOK = 11;</code>
      * @return The mPPNKBJHBOK.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (nHLOILJDDIP_ != false) {
-        output.writeBool(5, nHLOILJDDIP_);
-      }
       if (mPPNKBJHBOK_ != 0) {
-        output.writeUInt32(12, mPPNKBJHBOK_);
+        output.writeUInt32(11, mPPNKBJHBOK_);
+      }
+      if (nHLOILJDDIP_ != false) {
+        output.writeBool(13, nHLOILJDDIP_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nHLOILJDDIP_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, nHLOILJDDIP_);
-      }
       if (mPPNKBJHBOK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, mPPNKBJHBOK_);
+          .computeUInt32Size(11, mPPNKBJHBOK_);
+      }
+      if (nHLOILJDDIP_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, nHLOILJDDIP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
 
       private boolean nHLOILJDDIP_ ;
       /**
-       * <code>bool NHLOILJDDIP = 5;</code>
+       * <code>bool NHLOILJDDIP = 13;</code>
        * @return The nHLOILJDDIP.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
         return nHLOILJDDIP_;
       }
       /**
-       * <code>bool NHLOILJDDIP = 5;</code>
+       * <code>bool NHLOILJDDIP = 13;</code>
        * @param value The nHLOILJDDIP to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool NHLOILJDDIP = 5;</code>
+       * <code>bool NHLOILJDDIP = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearNHLOILJDDIP() {
@@ -492,7 +492,7 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
 
       private int mPPNKBJHBOK_ ;
       /**
-       * <code>uint32 MPPNKBJHBOK = 12;</code>
+       * <code>uint32 MPPNKBJHBOK = 11;</code>
        * @return The mPPNKBJHBOK.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
         return mPPNKBJHBOK_;
       }
       /**
-       * <code>uint32 MPPNKBJHBOK = 12;</code>
+       * <code>uint32 MPPNKBJHBOK = 11;</code>
        * @param value The mPPNKBJHBOK to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MPPNKBJHBOK = 12;</code>
+       * <code>uint32 MPPNKBJHBOK = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearMPPNKBJHBOK() {
@@ -589,7 +589,7 @@ public final class _ExpandToReduceUpgradeCostBuffInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n(_ExpandToReduceUpgradeCostBuffInfo.pro" +
       "to\"N\n\"_ExpandToReduceUpgradeCostBuffInfo" +
-      "\022\023\n\013NHLOILJDDIP\030\005 \001(\010\022\023\n\013MPPNKBJHBOK\030\014 \001" +
+      "\022\023\n\013NHLOILJDDIP\030\r \001(\010\022\023\n\013MPPNKBJHBOK\030\013 \001" +
       "(\rBI\n\031emu.grasscutter.net.protoB,_Expand" +
       "ToReduceUpgradeCostBuffInfoOuterClassb\006p" +
       "roto3"

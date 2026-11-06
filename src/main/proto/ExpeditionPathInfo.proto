@@ -6,14 +6,14 @@ option java_outer_classname = "ExpeditionPathInfoOuterClass";
 import "ExpeditionState.proto";
 
 message ExpeditionPathInfo {
-	uint32 challenge_id = 1;
-	uint32 HPIHFPPEGEB = 15;
-	uint32 LGBBIHMBIOM = 50000;
-	ExpeditionState state = 4;
-	uint32 DAEPBFLMGIA = 2;
-	uint32 start_time = 6;
-	repeated uint32 avatar_id_list = 8;
-	uint32 KALHHMPCIDP = 14;
-	float bonus_probability = 7;
-	uint32 NLLIPHBOCCE = 50001;
+	uint32 challenge_id = 9;
+	uint32 HPIHFPPEGEB = 20003;
+	uint32 LGBBIHMBIOM = 20001;
+	ExpeditionState state = 2;
+	uint32 DAEPBFLMGIA = 20000;
+	uint32 start_time = 3;
+	repeated uint32 avatar_id_list = 4;
+	uint32 KALHHMPCIDP = 50003;
+	float bonus_probability = 8;
+	uint32 NLLIPHBOCCE = 50004;
 }

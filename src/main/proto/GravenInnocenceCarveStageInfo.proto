@@ -5,5 +5,5 @@ option java_outer_classname = "GravenInnocenceCarveStageInfoOuterClass";
 
 message GravenInnocenceCarveStageInfo {
 	uint32 stage_id = 1;
-	bool is_open = 7;
+	bool is_open = 2;
 }

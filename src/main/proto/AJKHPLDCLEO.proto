@@ -6,9 +6,9 @@ option java_outer_classname = "AJKHPLDCLEOOuterClass";
 import "EIHOFHPLHMH.proto";
 
 message AJKHPLDCLEO {
-	bool is_open = 1;
-	repeated EIHOFHPLHMH BMJDALKAMOO = 11;
+	bool is_open = 2;
+	repeated EIHOFHPLHMH BMJDALKAMOO = 20000;
 	uint32 score = 4;
-	uint32 level_id = 7;
+	uint32 level_id = 1;
 	bool is_finish = 3;
 }

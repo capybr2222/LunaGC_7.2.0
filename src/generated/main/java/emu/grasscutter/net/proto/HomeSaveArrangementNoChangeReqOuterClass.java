@@ -19,7 +19,7 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 7;</code>
+     * <code>uint32 scene_id = 12;</code>
      * @return The sceneId.
      */
     int getSceneId();
@@ -69,7 +69,7 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 96: {
 
               sceneId_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
               emu.grasscutter.net.proto.HomeSaveArrangementNoChangeReqOuterClass.HomeSaveArrangementNoChangeReq.class, emu.grasscutter.net.proto.HomeSaveArrangementNoChangeReqOuterClass.HomeSaveArrangementNoChangeReq.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 7;
+    public static final int SCENE_ID_FIELD_NUMBER = 12;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 7;</code>
+     * <code>uint32 scene_id = 12;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sceneId_ != 0) {
-        output.writeUInt32(7, sceneId_);
+        output.writeUInt32(12, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, sceneId_);
+          .computeUInt32Size(12, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -518,7 +518,7 @@ public final class HomeSaveArrangementNoChangeReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n$HomeSaveArrangementNoChangeReq.proto\"2" +
       "\n\036HomeSaveArrangementNoChangeReq\022\020\n\010scen" +
-      "e_id\030\007 \001(\rBE\n\031emu.grasscutter.net.protoB" +
+      "e_id\030\014 \001(\rBE\n\031emu.grasscutter.net.protoB" +
       "(HomeSaveArrangementNoChangeReqOuterClas" +
       "sb\006proto3"
     };

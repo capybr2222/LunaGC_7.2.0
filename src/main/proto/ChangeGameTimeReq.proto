@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ChangeGameTimeReqOuterClass";
 
 message ChangeGameTimeReq {
-	uint32 extra_days = 11;
-	bool is_force_set = 1;
-	uint32 game_time = 12;
+	uint32 extra_days = 8;
+	bool is_force_set = 14;
+	uint32 game_time = 7;
 }

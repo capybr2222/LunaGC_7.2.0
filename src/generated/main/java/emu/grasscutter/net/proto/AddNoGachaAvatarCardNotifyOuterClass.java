@@ -19,61 +19,61 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 item_id = 9;</code>
+     * <code>uint32 item_id = 13;</code>
      * @return The itemId.
      */
     int getItemId();
 
     /**
-     * <code>uint32 initial_level = 50000;</code>
+     * <code>uint32 initial_level = 20000;</code>
      * @return The initialLevel.
      */
     int getInitialLevel();
 
     /**
-     * <code>uint32 initial_promote_level = 50001;</code>
+     * <code>uint32 initial_promote_level = 20001;</code>
      * @return The initialPromoteLevel.
      */
     int getInitialPromoteLevel();
 
     /**
-     * <code>uint32 reason = 12;</code>
+     * <code>uint32 reason = 14;</code>
      * @return The reason.
      */
     int getReason();
 
     /**
-     * <code>uint32 avatar_id = 2;</code>
+     * <code>uint32 avatar_id = 6;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem> 
         getTransferItemListList();
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem getTransferItemList(int index);
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     int getTransferItemListCount();
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItemOrBuilder> 
         getTransferItemListOrBuilderList();
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItemOrBuilder getTransferItemListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_transfer_to_item = 7;</code>
+     * <code>bool is_transfer_to_item = 10;</code>
      * @return The isTransferToItem.
      */
     boolean getIsTransferToItem();
@@ -125,27 +125,12 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
 
               avatarId_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              isTransferToItem_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              itemId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              reason_ = input.readUInt32();
-              break;
-            }
-            case 106: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 transferItemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem>();
                 mutable_bitField0_ |= 0x00000001;
@@ -154,12 +139,27 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.parser(), extensionRegistry));
               break;
             }
-            case 400000: {
+            case 80: {
+
+              isTransferToItem_ = input.readBool();
+              break;
+            }
+            case 104: {
+
+              itemId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              reason_ = input.readUInt32();
+              break;
+            }
+            case 160000: {
 
               initialLevel_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 160008: {
 
               initialPromoteLevel_ = input.readUInt32();
               break;
@@ -199,10 +199,10 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
               emu.grasscutter.net.proto.AddNoGachaAvatarCardNotifyOuterClass.AddNoGachaAvatarCardNotify.class, emu.grasscutter.net.proto.AddNoGachaAvatarCardNotifyOuterClass.AddNoGachaAvatarCardNotify.Builder.class);
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 9;
+    public static final int ITEM_ID_FIELD_NUMBER = 13;
     private int itemId_;
     /**
-     * <code>uint32 item_id = 9;</code>
+     * <code>uint32 item_id = 13;</code>
      * @return The itemId.
      */
     @java.lang.Override
@@ -210,10 +210,10 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       return itemId_;
     }
 
-    public static final int INITIAL_LEVEL_FIELD_NUMBER = 50000;
+    public static final int INITIAL_LEVEL_FIELD_NUMBER = 20000;
     private int initialLevel_;
     /**
-     * <code>uint32 initial_level = 50000;</code>
+     * <code>uint32 initial_level = 20000;</code>
      * @return The initialLevel.
      */
     @java.lang.Override
@@ -221,10 +221,10 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       return initialLevel_;
     }
 
-    public static final int INITIAL_PROMOTE_LEVEL_FIELD_NUMBER = 50001;
+    public static final int INITIAL_PROMOTE_LEVEL_FIELD_NUMBER = 20001;
     private int initialPromoteLevel_;
     /**
-     * <code>uint32 initial_promote_level = 50001;</code>
+     * <code>uint32 initial_promote_level = 20001;</code>
      * @return The initialPromoteLevel.
      */
     @java.lang.Override
@@ -232,10 +232,10 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       return initialPromoteLevel_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 12;
+    public static final int REASON_FIELD_NUMBER = 14;
     private int reason_;
     /**
-     * <code>uint32 reason = 12;</code>
+     * <code>uint32 reason = 14;</code>
      * @return The reason.
      */
     @java.lang.Override
@@ -243,10 +243,10 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       return reason_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 2;
+    public static final int AVATAR_ID_FIELD_NUMBER = 6;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 2;</code>
+     * <code>uint32 avatar_id = 6;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -254,17 +254,17 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       return avatarId_;
     }
 
-    public static final int TRANSFER_ITEM_LIST_FIELD_NUMBER = 13;
+    public static final int TRANSFER_ITEM_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem> transferItemList_;
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem> getTransferItemListList() {
       return transferItemList_;
     }
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItemOrBuilder> 
@@ -272,21 +272,21 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       return transferItemList_;
     }
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     @java.lang.Override
     public int getTransferItemListCount() {
       return transferItemList_.size();
     }
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem getTransferItemList(int index) {
       return transferItemList_.get(index);
     }
     /**
-     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+     * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItemOrBuilder getTransferItemListOrBuilder(
@@ -294,10 +294,10 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       return transferItemList_.get(index);
     }
 
-    public static final int IS_TRANSFER_TO_ITEM_FIELD_NUMBER = 7;
+    public static final int IS_TRANSFER_TO_ITEM_FIELD_NUMBER = 10;
     private boolean isTransferToItem_;
     /**
-     * <code>bool is_transfer_to_item = 7;</code>
+     * <code>bool is_transfer_to_item = 10;</code>
      * @return The isTransferToItem.
      */
     @java.lang.Override
@@ -320,25 +320,25 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (avatarId_ != 0) {
-        output.writeUInt32(2, avatarId_);
-      }
-      if (isTransferToItem_ != false) {
-        output.writeBool(7, isTransferToItem_);
-      }
-      if (itemId_ != 0) {
-        output.writeUInt32(9, itemId_);
-      }
-      if (reason_ != 0) {
-        output.writeUInt32(12, reason_);
+        output.writeUInt32(6, avatarId_);
       }
       for (int i = 0; i < transferItemList_.size(); i++) {
-        output.writeMessage(13, transferItemList_.get(i));
+        output.writeMessage(9, transferItemList_.get(i));
+      }
+      if (isTransferToItem_ != false) {
+        output.writeBool(10, isTransferToItem_);
+      }
+      if (itemId_ != 0) {
+        output.writeUInt32(13, itemId_);
+      }
+      if (reason_ != 0) {
+        output.writeUInt32(14, reason_);
       }
       if (initialLevel_ != 0) {
-        output.writeUInt32(50000, initialLevel_);
+        output.writeUInt32(20000, initialLevel_);
       }
       if (initialPromoteLevel_ != 0) {
-        output.writeUInt32(50001, initialPromoteLevel_);
+        output.writeUInt32(20001, initialPromoteLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -351,31 +351,31 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
       size = 0;
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, avatarId_);
-      }
-      if (isTransferToItem_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isTransferToItem_);
-      }
-      if (itemId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, itemId_);
-      }
-      if (reason_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, reason_);
+          .computeUInt32Size(6, avatarId_);
       }
       for (int i = 0; i < transferItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, transferItemList_.get(i));
+          .computeMessageSize(9, transferItemList_.get(i));
+      }
+      if (isTransferToItem_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, isTransferToItem_);
+      }
+      if (itemId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, itemId_);
+      }
+      if (reason_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, reason_);
       }
       if (initialLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, initialLevel_);
+          .computeUInt32Size(20000, initialLevel_);
       }
       if (initialPromoteLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, initialPromoteLevel_);
+          .computeUInt32Size(20001, initialPromoteLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -752,7 +752,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
 
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 9;</code>
+       * <code>uint32 item_id = 13;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -760,7 +760,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 9;</code>
+       * <code>uint32 item_id = 13;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -771,7 +771,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_id = 9;</code>
+       * <code>uint32 item_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
@@ -783,7 +783,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
 
       private int initialLevel_ ;
       /**
-       * <code>uint32 initial_level = 50000;</code>
+       * <code>uint32 initial_level = 20000;</code>
        * @return The initialLevel.
        */
       @java.lang.Override
@@ -791,7 +791,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return initialLevel_;
       }
       /**
-       * <code>uint32 initial_level = 50000;</code>
+       * <code>uint32 initial_level = 20000;</code>
        * @param value The initialLevel to set.
        * @return This builder for chaining.
        */
@@ -802,7 +802,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 initial_level = 50000;</code>
+       * <code>uint32 initial_level = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearInitialLevel() {
@@ -814,7 +814,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
 
       private int initialPromoteLevel_ ;
       /**
-       * <code>uint32 initial_promote_level = 50001;</code>
+       * <code>uint32 initial_promote_level = 20001;</code>
        * @return The initialPromoteLevel.
        */
       @java.lang.Override
@@ -822,7 +822,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return initialPromoteLevel_;
       }
       /**
-       * <code>uint32 initial_promote_level = 50001;</code>
+       * <code>uint32 initial_promote_level = 20001;</code>
        * @param value The initialPromoteLevel to set.
        * @return This builder for chaining.
        */
@@ -833,7 +833,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 initial_promote_level = 50001;</code>
+       * <code>uint32 initial_promote_level = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearInitialPromoteLevel() {
@@ -845,7 +845,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
 
       private int reason_ ;
       /**
-       * <code>uint32 reason = 12;</code>
+       * <code>uint32 reason = 14;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -853,7 +853,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return reason_;
       }
       /**
-       * <code>uint32 reason = 12;</code>
+       * <code>uint32 reason = 14;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -864,7 +864,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reason = 12;</code>
+       * <code>uint32 reason = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -876,7 +876,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 2;</code>
+       * <code>uint32 avatar_id = 6;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -884,7 +884,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 2;</code>
+       * <code>uint32 avatar_id = 6;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -895,7 +895,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 2;</code>
+       * <code>uint32 avatar_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -918,7 +918,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
           emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem, emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.Builder, emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItemOrBuilder> transferItemListBuilder_;
 
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem> getTransferItemListList() {
         if (transferItemListBuilder_ == null) {
@@ -928,7 +928,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public int getTransferItemListCount() {
         if (transferItemListBuilder_ == null) {
@@ -938,7 +938,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem getTransferItemList(int index) {
         if (transferItemListBuilder_ == null) {
@@ -948,7 +948,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder setTransferItemList(
           int index, emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem value) {
@@ -965,7 +965,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder setTransferItemList(
           int index, emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.Builder builderForValue) {
@@ -979,7 +979,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder addTransferItemList(emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem value) {
         if (transferItemListBuilder_ == null) {
@@ -995,7 +995,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder addTransferItemList(
           int index, emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem value) {
@@ -1012,7 +1012,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder addTransferItemList(
           emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.Builder builderForValue) {
@@ -1026,7 +1026,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder addTransferItemList(
           int index, emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.Builder builderForValue) {
@@ -1040,7 +1040,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder addAllTransferItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem> values) {
@@ -1055,7 +1055,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder clearTransferItemList() {
         if (transferItemListBuilder_ == null) {
@@ -1068,7 +1068,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public Builder removeTransferItemList(int index) {
         if (transferItemListBuilder_ == null) {
@@ -1081,14 +1081,14 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.Builder getTransferItemListBuilder(
           int index) {
         return getTransferItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItemOrBuilder getTransferItemListOrBuilder(
           int index) {
@@ -1098,7 +1098,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItemOrBuilder> 
            getTransferItemListOrBuilderList() {
@@ -1109,14 +1109,14 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.Builder addTransferItemListBuilder() {
         return getTransferItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.getDefaultInstance());
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.Builder addTransferItemListBuilder(
           int index) {
@@ -1124,7 +1124,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
             index, emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.getDefaultInstance());
       }
       /**
-       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 13;</code>
+       * <code>repeated .AddNoGachaAvatarCardTransferItem transfer_item_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AddNoGachaAvatarCardTransferItemOuterClass.AddNoGachaAvatarCardTransferItem.Builder> 
            getTransferItemListBuilderList() {
@@ -1147,7 +1147,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
 
       private boolean isTransferToItem_ ;
       /**
-       * <code>bool is_transfer_to_item = 7;</code>
+       * <code>bool is_transfer_to_item = 10;</code>
        * @return The isTransferToItem.
        */
       @java.lang.Override
@@ -1155,7 +1155,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return isTransferToItem_;
       }
       /**
-       * <code>bool is_transfer_to_item = 7;</code>
+       * <code>bool is_transfer_to_item = 10;</code>
        * @param value The isTransferToItem to set.
        * @return This builder for chaining.
        */
@@ -1166,7 +1166,7 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_transfer_to_item = 7;</code>
+       * <code>bool is_transfer_to_item = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTransferToItem() {
@@ -1244,12 +1244,12 @@ public final class AddNoGachaAvatarCardNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n AddNoGachaAvatarCardNotify.proto\032&AddN" +
       "oGachaAvatarCardTransferItem.proto\"\346\001\n\032A" +
-      "ddNoGachaAvatarCardNotify\022\017\n\007item_id\030\t \001" +
-      "(\r\022\027\n\rinitial_level\030\320\206\003 \001(\r\022\037\n\025initial_p" +
-      "romote_level\030\321\206\003 \001(\r\022\016\n\006reason\030\014 \001(\r\022\021\n\t" +
-      "avatar_id\030\002 \001(\r\022=\n\022transfer_item_list\030\r " +
+      "ddNoGachaAvatarCardNotify\022\017\n\007item_id\030\r \001" +
+      "(\r\022\027\n\rinitial_level\030\240\234\001 \001(\r\022\037\n\025initial_p" +
+      "romote_level\030\241\234\001 \001(\r\022\016\n\006reason\030\016 \001(\r\022\021\n\t" +
+      "avatar_id\030\006 \001(\r\022=\n\022transfer_item_list\030\t " +
       "\003(\0132!.AddNoGachaAvatarCardTransferItem\022\033" +
-      "\n\023is_transfer_to_item\030\007 \001(\010BA\n\031emu.grass" +
+      "\n\023is_transfer_to_item\030\n \001(\010BA\n\031emu.grass" +
       "cutter.net.protoB$AddNoGachaAvatarCardNo" +
       "tifyOuterClassb\006proto3"
     };

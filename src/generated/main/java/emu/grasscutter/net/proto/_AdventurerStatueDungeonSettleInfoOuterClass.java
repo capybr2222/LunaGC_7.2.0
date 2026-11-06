@@ -25,19 +25,19 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
     int getLevelId();
 
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 10;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>bool is_succ = 15;</code>
+     * <code>bool is_succ = 12;</code>
      * @return The isSucc.
      */
     boolean getIsSucc();
 
     /**
-     * <code>uint32 score = 14;</code>
+     * <code>uint32 score = 1;</code>
      * @return The score.
      */
     int getScore();
@@ -87,22 +87,22 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              score_ = input.readUInt32();
+              break;
+            }
             case 48: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 80: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 112: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 96: {
 
               isSucc_ = input.readBool();
               break;
@@ -150,10 +150,10 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 10;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 10;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int IS_SUCC_FIELD_NUMBER = 15;
+    public static final int IS_SUCC_FIELD_NUMBER = 12;
     private boolean isSucc_;
     /**
-     * <code>bool is_succ = 15;</code>
+     * <code>bool is_succ = 12;</code>
      * @return The isSucc.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
       return isSucc_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 14;
+    public static final int SCORE_FIELD_NUMBER = 1;
     private int score_;
     /**
-     * <code>uint32 score = 14;</code>
+     * <code>uint32 score = 1;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (score_ != 0) {
+        output.writeUInt32(1, score_);
+      }
       if (levelId_ != 0) {
         output.writeUInt32(6, levelId_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(7, isNewRecord_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(14, score_);
+        output.writeBool(10, isNewRecord_);
       }
       if (isSucc_ != false) {
-        output.writeBool(15, isSucc_);
+        output.writeBool(12, isSucc_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, score_);
+      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, levelId_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isNewRecord_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, score_);
+          .computeBoolSize(10, isNewRecord_);
       }
       if (isSucc_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isSucc_);
+          .computeBoolSize(12, isSucc_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -571,7 +571,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 10;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 10;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -602,7 +602,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
 
       private boolean isSucc_ ;
       /**
-       * <code>bool is_succ = 15;</code>
+       * <code>bool is_succ = 12;</code>
        * @return The isSucc.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
         return isSucc_;
       }
       /**
-       * <code>bool is_succ = 15;</code>
+       * <code>bool is_succ = 12;</code>
        * @param value The isSucc to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_succ = 15;</code>
+       * <code>bool is_succ = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsSucc() {
@@ -633,7 +633,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 1;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 1;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 14;</code>
+       * <code>uint32 score = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -730,8 +730,8 @@ public final class _AdventurerStatueDungeonSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n(_AdventurerStatueDungeonSettleInfo.pro" +
       "to\"m\n\"_AdventurerStatueDungeonSettleInfo" +
-      "\022\020\n\010level_id\030\006 \001(\r\022\025\n\ris_new_record\030\007 \001(" +
-      "\010\022\017\n\007is_succ\030\017 \001(\010\022\r\n\005score\030\016 \001(\rBI\n\031emu" +
+      "\022\020\n\010level_id\030\006 \001(\r\022\025\n\ris_new_record\030\n \001(" +
+      "\010\022\017\n\007is_succ\030\014 \001(\010\022\r\n\005score\030\001 \001(\rBI\n\031emu" +
       ".grasscutter.net.protoB,_AdventurerStatu" +
       "eDungeonSettleInfoOuterClassb\006proto3"
     };

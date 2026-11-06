@@ -19,19 +19,19 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 open_time = 1;</code>
+     * <code>uint32 open_time = 2;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 section_id = 4;</code>
+     * <code>uint32 section_id = 1;</code>
      * @return The sectionId.
      */
     int getSectionId();
@@ -83,15 +83,15 @@ public final class FleurFairDungeonSectionInfoOuterClass {
               break;
             case 8: {
 
-              openTime_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
               sectionId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 16: {
+
+              openTime_ = input.readUInt32();
+              break;
+            }
+            case 24: {
 
               isOpen_ = input.readBool();
               break;
@@ -128,10 +128,10 @@ public final class FleurFairDungeonSectionInfoOuterClass {
               emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo.class, emu.grasscutter.net.proto.FleurFairDungeonSectionInfoOuterClass.FleurFairDungeonSectionInfo.Builder.class);
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 1;
+    public static final int OPEN_TIME_FIELD_NUMBER = 2;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 1;</code>
+     * <code>uint32 open_time = 2;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       return openTime_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 14;
+    public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int SECTION_ID_FIELD_NUMBER = 4;
+    public static final int SECTION_ID_FIELD_NUMBER = 1;
     private int sectionId_;
     /**
-     * <code>uint32 section_id = 4;</code>
+     * <code>uint32 section_id = 1;</code>
      * @return The sectionId.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class FleurFairDungeonSectionInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (openTime_ != 0) {
-        output.writeUInt32(1, openTime_);
-      }
       if (sectionId_ != 0) {
-        output.writeUInt32(4, sectionId_);
+        output.writeUInt32(1, sectionId_);
+      }
+      if (openTime_ != 0) {
+        output.writeUInt32(2, openTime_);
       }
       if (isOpen_ != false) {
-        output.writeBool(14, isOpen_);
+        output.writeBool(3, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class FleurFairDungeonSectionInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (openTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, openTime_);
-      }
       if (sectionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sectionId_);
+          .computeUInt32Size(1, sectionId_);
+      }
+      if (openTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, openTime_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isOpen_);
+          .computeBoolSize(3, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -500,7 +500,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 1;</code>
+       * <code>uint32 open_time = 2;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -508,7 +508,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 1;</code>
+       * <code>uint32 open_time = 2;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -519,7 +519,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 open_time = 1;</code>
+       * <code>uint32 open_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
@@ -531,7 +531,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -539,7 +539,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -550,7 +550,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -562,7 +562,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
 
       private int sectionId_ ;
       /**
-       * <code>uint32 section_id = 4;</code>
+       * <code>uint32 section_id = 1;</code>
        * @return The sectionId.
        */
       @java.lang.Override
@@ -570,7 +570,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
         return sectionId_;
       }
       /**
-       * <code>uint32 section_id = 4;</code>
+       * <code>uint32 section_id = 1;</code>
        * @param value The sectionId to set.
        * @return This builder for chaining.
        */
@@ -581,7 +581,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 section_id = 4;</code>
+       * <code>uint32 section_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearSectionId() {
@@ -659,7 +659,7 @@ public final class FleurFairDungeonSectionInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n!FleurFairDungeonSectionInfo.proto\"U\n\033F" +
       "leurFairDungeonSectionInfo\022\021\n\topen_time\030" +
-      "\001 \001(\r\022\017\n\007is_open\030\016 \001(\010\022\022\n\nsection_id\030\004 \001" +
+      "\002 \001(\r\022\017\n\007is_open\030\003 \001(\010\022\022\n\nsection_id\030\001 \001" +
       "(\rBB\n\031emu.grasscutter.net.protoB%FleurFa" +
       "irDungeonSectionInfoOuterClassb\006proto3"
     };

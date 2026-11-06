@@ -19,25 +19,25 @@ public final class GAJPJEMGABNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_finished = 3;</code>
+     * <code>bool is_finished = 9;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 max_score = 10;</code>
+     * <code>uint32 max_score = 8;</code>
      * @return The maxScore.
      */
     int getMaxScore();
 
     /**
-     * <code>bool is_open = 11;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
@@ -87,24 +87,24 @@ public final class GAJPJEMGABNOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
-              isFinished_ = input.readBool();
+              isOpen_ = input.readBool();
               break;
             }
             case 64: {
 
-              levelId_ = input.readUInt32();
+              maxScore_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              isFinished_ = input.readBool();
               break;
             }
             case 80: {
 
-              maxScore_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              isOpen_ = input.readBool();
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class GAJPJEMGABNOuterClass {
               emu.grasscutter.net.proto.GAJPJEMGABNOuterClass.GAJPJEMGABN.class, emu.grasscutter.net.proto.GAJPJEMGABNOuterClass.GAJPJEMGABN.Builder.class);
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 3;
+    public static final int IS_FINISHED_FIELD_NUMBER = 9;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 3;</code>
+     * <code>bool is_finished = 9;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class GAJPJEMGABNOuterClass {
       return isFinished_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    public static final int LEVEL_ID_FIELD_NUMBER = 10;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 10;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class GAJPJEMGABNOuterClass {
       return levelId_;
     }
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 10;
+    public static final int MAX_SCORE_FIELD_NUMBER = 8;
     private int maxScore_;
     /**
-     * <code>uint32 max_score = 10;</code>
+     * <code>uint32 max_score = 8;</code>
      * @return The maxScore.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class GAJPJEMGABNOuterClass {
       return maxScore_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 11;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 11;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class GAJPJEMGABNOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinished_ != false) {
-        output.writeBool(3, isFinished_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+      if (isOpen_ != false) {
+        output.writeBool(2, isOpen_);
       }
       if (maxScore_ != 0) {
-        output.writeUInt32(10, maxScore_);
+        output.writeUInt32(8, maxScore_);
       }
-      if (isOpen_ != false) {
-        output.writeBool(11, isOpen_);
+      if (isFinished_ != false) {
+        output.writeBool(9, isFinished_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(10, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class GAJPJEMGABNOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinished_ != false) {
+      if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isFinished_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeBoolSize(2, isOpen_);
       }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, maxScore_);
+          .computeUInt32Size(8, maxScore_);
       }
-      if (isOpen_ != false) {
+      if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isOpen_);
+          .computeBoolSize(9, isFinished_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class GAJPJEMGABNOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 3;</code>
+       * <code>bool is_finished = 9;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class GAJPJEMGABNOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 3;</code>
+       * <code>bool is_finished = 9;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class GAJPJEMGABNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 3;</code>
+       * <code>bool is_finished = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -571,7 +571,7 @@ public final class GAJPJEMGABNOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class GAJPJEMGABNOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 10;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class GAJPJEMGABNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -602,7 +602,7 @@ public final class GAJPJEMGABNOuterClass {
 
       private int maxScore_ ;
       /**
-       * <code>uint32 max_score = 10;</code>
+       * <code>uint32 max_score = 8;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class GAJPJEMGABNOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 max_score = 10;</code>
+       * <code>uint32 max_score = 8;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class GAJPJEMGABNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_score = 10;</code>
+       * <code>uint32 max_score = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
@@ -633,7 +633,7 @@ public final class GAJPJEMGABNOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class GAJPJEMGABNOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class GAJPJEMGABNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 11;</code>
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -729,8 +729,8 @@ public final class GAJPJEMGABNOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021GAJPJEMGABN.proto\"X\n\013GAJPJEMGABN\022\023\n\013is" +
-      "_finished\030\003 \001(\010\022\020\n\010level_id\030\010 \001(\r\022\021\n\tmax" +
-      "_score\030\n \001(\r\022\017\n\007is_open\030\013 \001(\010B2\n\031emu.gra" +
+      "_finished\030\t \001(\010\022\020\n\010level_id\030\n \001(\r\022\021\n\tmax" +
+      "_score\030\010 \001(\r\022\017\n\007is_open\030\002 \001(\010B2\n\031emu.gra" +
       "sscutter.net.protoB\025GAJPJEMGABNOuterClas" +
       "sb\006proto3"
     };

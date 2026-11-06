@@ -19,7 +19,7 @@ public final class HomeSceneJumpRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_enter_room_scene = 6;</code>
+     * <code>bool is_enter_room_scene = 13;</code>
      * @return The isEnterRoomScene.
      */
     boolean getIsEnterRoomScene();
@@ -75,14 +75,14 @@ public final class HomeSceneJumpRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              isEnterRoomScene_ = input.readBool();
-              break;
-            }
             case 96: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
+
+              isEnterRoomScene_ = input.readBool();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class HomeSceneJumpRspOuterClass {
               emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp.class, emu.grasscutter.net.proto.HomeSceneJumpRspOuterClass.HomeSceneJumpRsp.Builder.class);
     }
 
-    public static final int IS_ENTER_ROOM_SCENE_FIELD_NUMBER = 6;
+    public static final int IS_ENTER_ROOM_SCENE_FIELD_NUMBER = 13;
     private boolean isEnterRoomScene_;
     /**
-     * <code>bool is_enter_room_scene = 6;</code>
+     * <code>bool is_enter_room_scene = 13;</code>
      * @return The isEnterRoomScene.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class HomeSceneJumpRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isEnterRoomScene_ != false) {
-        output.writeBool(6, isEnterRoomScene_);
-      }
       if (retcode_ != 0) {
         output.writeInt32(12, retcode_);
+      }
+      if (isEnterRoomScene_ != false) {
+        output.writeBool(13, isEnterRoomScene_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class HomeSceneJumpRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isEnterRoomScene_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isEnterRoomScene_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(12, retcode_);
+      }
+      if (isEnterRoomScene_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isEnterRoomScene_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class HomeSceneJumpRspOuterClass {
 
       private boolean isEnterRoomScene_ ;
       /**
-       * <code>bool is_enter_room_scene = 6;</code>
+       * <code>bool is_enter_room_scene = 13;</code>
        * @return The isEnterRoomScene.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class HomeSceneJumpRspOuterClass {
         return isEnterRoomScene_;
       }
       /**
-       * <code>bool is_enter_room_scene = 6;</code>
+       * <code>bool is_enter_room_scene = 13;</code>
        * @param value The isEnterRoomScene to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class HomeSceneJumpRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_enter_room_scene = 6;</code>
+       * <code>bool is_enter_room_scene = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEnterRoomScene() {
@@ -588,7 +588,7 @@ public final class HomeSceneJumpRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomeSceneJumpRsp.proto\"@\n\020HomeSceneJum" +
-      "pRsp\022\033\n\023is_enter_room_scene\030\006 \001(\010\022\017\n\007ret" +
+      "pRsp\022\033\n\023is_enter_room_scene\030\r \001(\010\022\017\n\007ret" +
       "code\030\014 \001(\005B7\n\031emu.grasscutter.net.protoB" +
       "\032HomeSceneJumpRspOuterClassb\006proto3"
     };

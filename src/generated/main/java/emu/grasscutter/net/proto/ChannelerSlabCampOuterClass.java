@@ -19,7 +19,7 @@ public final class ChannelerSlabCampOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reward_id = 12;</code>
+     * <code>uint32 reward_id = 2;</code>
      * @return The rewardId.
      */
     int getRewardId();
@@ -37,17 +37,17 @@ public final class ChannelerSlabCampOuterClass {
     int getBuffNum();
 
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 3;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 3;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 3;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
   }
@@ -101,12 +101,12 @@ public final class ChannelerSlabCampOuterClass {
               groupId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 16: {
 
-              buffNum_ = input.readUInt32();
+              rewardId_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -119,9 +119,9 @@ public final class ChannelerSlabCampOuterClass {
 
               break;
             }
-            case 96: {
+            case 32: {
 
-              rewardId_ = input.readUInt32();
+              buffNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -156,10 +156,10 @@ public final class ChannelerSlabCampOuterClass {
               emu.grasscutter.net.proto.ChannelerSlabCampOuterClass.ChannelerSlabCamp.class, emu.grasscutter.net.proto.ChannelerSlabCampOuterClass.ChannelerSlabCamp.Builder.class);
     }
 
-    public static final int REWARD_ID_FIELD_NUMBER = 12;
+    public static final int REWARD_ID_FIELD_NUMBER = 2;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 12;</code>
+     * <code>uint32 reward_id = 2;</code>
      * @return The rewardId.
      */
     @java.lang.Override
@@ -189,10 +189,10 @@ public final class ChannelerSlabCampOuterClass {
       return buffNum_;
     }
 
-    public static final int POS_FIELD_NUMBER = 5;
+    public static final int POS_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 3;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -200,7 +200,7 @@ public final class ChannelerSlabCampOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 3;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -208,7 +208,7 @@ public final class ChannelerSlabCampOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
@@ -232,14 +232,14 @@ public final class ChannelerSlabCampOuterClass {
       if (groupId_ != 0) {
         output.writeUInt32(1, groupId_);
       }
-      if (buffNum_ != 0) {
-        output.writeUInt32(4, buffNum_);
+      if (rewardId_ != 0) {
+        output.writeUInt32(2, rewardId_);
       }
       if (pos_ != null) {
-        output.writeMessage(5, getPos());
+        output.writeMessage(3, getPos());
       }
-      if (rewardId_ != 0) {
-        output.writeUInt32(12, rewardId_);
+      if (buffNum_ != 0) {
+        output.writeUInt32(4, buffNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,17 +254,17 @@ public final class ChannelerSlabCampOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, groupId_);
       }
-      if (buffNum_ != 0) {
+      if (rewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, buffNum_);
+          .computeUInt32Size(2, rewardId_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getPos());
+          .computeMessageSize(3, getPos());
       }
-      if (rewardId_ != 0) {
+      if (buffNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, rewardId_);
+          .computeUInt32Size(4, buffNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -583,7 +583,7 @@ public final class ChannelerSlabCampOuterClass {
 
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 12;</code>
+       * <code>uint32 reward_id = 2;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -591,7 +591,7 @@ public final class ChannelerSlabCampOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 12;</code>
+       * <code>uint32 reward_id = 2;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -602,7 +602,7 @@ public final class ChannelerSlabCampOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 12;</code>
+       * <code>uint32 reward_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
@@ -678,14 +678,14 @@ public final class ChannelerSlabCampOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -696,7 +696,7 @@ public final class ChannelerSlabCampOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -712,7 +712,7 @@ public final class ChannelerSlabCampOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -726,7 +726,7 @@ public final class ChannelerSlabCampOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -744,7 +744,7 @@ public final class ChannelerSlabCampOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -758,7 +758,7 @@ public final class ChannelerSlabCampOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -766,7 +766,7 @@ public final class ChannelerSlabCampOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -777,7 +777,7 @@ public final class ChannelerSlabCampOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -860,9 +860,9 @@ public final class ChannelerSlabCampOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027ChannelerSlabCamp.proto\032\014Vector.proto\"" +
-      "`\n\021ChannelerSlabCamp\022\021\n\treward_id\030\014 \001(\r\022" +
+      "`\n\021ChannelerSlabCamp\022\021\n\treward_id\030\002 \001(\r\022" +
       "\020\n\010group_id\030\001 \001(\r\022\020\n\010buff_num\030\004 \001(\r\022\024\n\003p" +
-      "os\030\005 \001(\0132\007.VectorB8\n\031emu.grasscutter.net" +
+      "os\030\003 \001(\0132\007.VectorB8\n\031emu.grasscutter.net" +
       ".protoB\033ChannelerSlabCampOuterClassb\006pro" +
       "to3"
     };

@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "DPEEOGGEECKOuterClass";
 
 message DPEEOGGEECK {
-	uint32 BLCPLGCJEBJ = 4;
-	uint32 KHJHFLNMNPC = 8;
+	uint32 BLCPLGCJEBJ = 9;
+	uint32 KHJHFLNMNPC = 4;
 }

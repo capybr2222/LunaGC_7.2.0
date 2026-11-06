@@ -6,13 +6,13 @@ option java_outer_classname = "HomeBasicInfoOuterClass";
 import "HomeLimitedShopInfo.proto";
 
 message HomeBasicInfo {
-	uint32 cur_module_id = 50000;
-	string owner_nick_name = 10;
-	bool is_in_edit_mode = 12;
-	uint32 home_owner_uid = 50001;
-	uint32 cur_room_scene_id = 50002;
-	uint32 level = 1;
-	HomeLimitedShopInfo limited_shop_info = 4;
-	uint64 exp = 14;
-	uint32 JDHBFLPNNFK = 7;
+	uint32 cur_module_id = 13;
+	string owner_nick_name = 9;
+	bool is_in_edit_mode = 5;
+	uint32 home_owner_uid = 3;
+	uint32 cur_room_scene_id = 15;
+	uint32 level = 10;
+	HomeLimitedShopInfo limited_shop_info = 1;
+	uint64 exp = 2;
+	uint32 JDHBFLPNNFK = 12;
 }

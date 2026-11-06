@@ -6,5 +6,5 @@ option java_outer_classname = "DOAKNFOOGMHOuterClass";
 import "PANGJIGDLJH.proto";
 
 message DOAKNFOOGMH {
-	repeated PANGJIGDLJH level_info_list = 3;
+	repeated PANGJIGDLJH level_info_list = 1;
 }

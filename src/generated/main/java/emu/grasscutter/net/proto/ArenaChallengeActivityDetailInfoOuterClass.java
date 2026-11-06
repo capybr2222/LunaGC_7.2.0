@@ -19,47 +19,47 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel> 
         getLevelListList();
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel getLevelList(int index);
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     int getLevelListCount();
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevelOrBuilder> 
         getLevelListOrBuilderList();
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevelOrBuilder getLevelListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_finish_any_level = 1;</code>
+     * <code>bool is_finish_any_level = 4;</code>
      * @return The isFinishAnyLevel.
      */
     boolean getIsFinishAnyLevel();
 
     /**
-     * <code>uint32 world_level = 15;</code>
+     * <code>uint32 world_level = 1;</code>
      * @return The worldLevel.
      */
     int getWorldLevel();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
     int getLevelOpenTimeMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
     boolean containsLevelOpenTimeMap(
         int key);
@@ -70,19 +70,19 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLevelOpenTimeMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLevelOpenTimeMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
 
     int getLevelOpenTimeMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
 
     int getLevelOpenTimeMapOrThrow(
@@ -137,10 +137,10 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
               break;
             case 8: {
 
-              isFinishAnyLevel_ = input.readBool();
+              worldLevel_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel>();
                 mutable_bitField0_ |= 0x00000001;
@@ -149,7 +149,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.parser(), extensionRegistry));
               break;
             }
-            case 114: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 levelOpenTimeMap_ = com.google.protobuf.MapField.newMapField(
                     LevelOpenTimeMapDefaultEntryHolder.defaultEntry);
@@ -162,9 +162,9 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
                   levelOpenTimeMap__.getKey(), levelOpenTimeMap__.getValue());
               break;
             }
-            case 120: {
+            case 32: {
 
-              worldLevel_ = input.readUInt32();
+              isFinishAnyLevel_ = input.readBool();
               break;
             }
             default: {
@@ -199,7 +199,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 14:
+        case 3:
           return internalGetLevelOpenTimeMap();
         default:
           throw new RuntimeException(
@@ -214,17 +214,17 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo.class, emu.grasscutter.net.proto.ArenaChallengeActivityDetailInfoOuterClass.ArenaChallengeActivityDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_LIST_FIELD_NUMBER = 11;
+    public static final int LEVEL_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel> levelList_;
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel> getLevelListList() {
       return levelList_;
     }
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevelOrBuilder> 
@@ -232,21 +232,21 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       return levelList_;
     }
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     @java.lang.Override
     public int getLevelListCount() {
       return levelList_.size();
     }
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel getLevelList(int index) {
       return levelList_.get(index);
     }
     /**
-     * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+     * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevelOrBuilder getLevelListOrBuilder(
@@ -254,10 +254,10 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       return levelList_.get(index);
     }
 
-    public static final int IS_FINISH_ANY_LEVEL_FIELD_NUMBER = 1;
+    public static final int IS_FINISH_ANY_LEVEL_FIELD_NUMBER = 4;
     private boolean isFinishAnyLevel_;
     /**
-     * <code>bool is_finish_any_level = 1;</code>
+     * <code>bool is_finish_any_level = 4;</code>
      * @return The isFinishAnyLevel.
      */
     @java.lang.Override
@@ -265,10 +265,10 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       return isFinishAnyLevel_;
     }
 
-    public static final int WORLD_LEVEL_FIELD_NUMBER = 15;
+    public static final int WORLD_LEVEL_FIELD_NUMBER = 1;
     private int worldLevel_;
     /**
-     * <code>uint32 world_level = 15;</code>
+     * <code>uint32 world_level = 1;</code>
      * @return The worldLevel.
      */
     @java.lang.Override
@@ -276,7 +276,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       return worldLevel_;
     }
 
-    public static final int LEVEL_OPEN_TIME_MAP_FIELD_NUMBER = 14;
+    public static final int LEVEL_OPEN_TIME_MAP_FIELD_NUMBER = 3;
     private static final class LevelOpenTimeMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -303,7 +303,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       return internalGetLevelOpenTimeMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
 
     @java.lang.Override
@@ -321,7 +321,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       return getLevelOpenTimeMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
     @java.lang.Override
 
@@ -329,7 +329,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       return internalGetLevelOpenTimeMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
     @java.lang.Override
 
@@ -342,7 +342,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
      */
     @java.lang.Override
 
@@ -371,20 +371,20 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinishAnyLevel_ != false) {
-        output.writeBool(1, isFinishAnyLevel_);
+      if (worldLevel_ != 0) {
+        output.writeUInt32(1, worldLevel_);
       }
       for (int i = 0; i < levelList_.size(); i++) {
-        output.writeMessage(11, levelList_.get(i));
+        output.writeMessage(2, levelList_.get(i));
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetLevelOpenTimeMap(),
           LevelOpenTimeMapDefaultEntryHolder.defaultEntry,
-          14);
-      if (worldLevel_ != 0) {
-        output.writeUInt32(15, worldLevel_);
+          3);
+      if (isFinishAnyLevel_ != false) {
+        output.writeBool(4, isFinishAnyLevel_);
       }
       unknownFields.writeTo(output);
     }
@@ -395,13 +395,13 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinishAnyLevel_ != false) {
+      if (worldLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isFinishAnyLevel_);
+          .computeUInt32Size(1, worldLevel_);
       }
       for (int i = 0; i < levelList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, levelList_.get(i));
+          .computeMessageSize(2, levelList_.get(i));
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetLevelOpenTimeMap().getMap().entrySet()) {
@@ -411,11 +411,11 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(14, levelOpenTimeMap__);
+            .computeMessageSize(3, levelOpenTimeMap__);
       }
-      if (worldLevel_ != 0) {
+      if (isFinishAnyLevel_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, worldLevel_);
+          .computeBoolSize(4, isFinishAnyLevel_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -575,7 +575,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 14:
+          case 3:
             return internalGetLevelOpenTimeMap();
           default:
             throw new RuntimeException(
@@ -586,7 +586,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 14:
+          case 3:
             return internalGetMutableLevelOpenTimeMap();
           default:
             throw new RuntimeException(
@@ -796,7 +796,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevelOrBuilder> levelListBuilder_;
 
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel> getLevelListList() {
         if (levelListBuilder_ == null) {
@@ -806,7 +806,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public int getLevelListCount() {
         if (levelListBuilder_ == null) {
@@ -816,7 +816,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel getLevelList(int index) {
         if (levelListBuilder_ == null) {
@@ -826,7 +826,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder setLevelList(
           int index, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel value) {
@@ -843,7 +843,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder setLevelList(
           int index, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder builderForValue) {
@@ -857,7 +857,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder addLevelList(emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel value) {
         if (levelListBuilder_ == null) {
@@ -873,7 +873,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder addLevelList(
           int index, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel value) {
@@ -890,7 +890,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder addLevelList(
           emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder builderForValue) {
@@ -904,7 +904,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder addLevelList(
           int index, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder builderForValue) {
@@ -918,7 +918,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder addAllLevelList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel> values) {
@@ -933,7 +933,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder clearLevelList() {
         if (levelListBuilder_ == null) {
@@ -946,7 +946,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public Builder removeLevelList(int index) {
         if (levelListBuilder_ == null) {
@@ -959,14 +959,14 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder getLevelListBuilder(
           int index) {
         return getLevelListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevelOrBuilder getLevelListOrBuilder(
           int index) {
@@ -976,7 +976,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevelOrBuilder> 
            getLevelListOrBuilderList() {
@@ -987,14 +987,14 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder addLevelListBuilder() {
         return getLevelListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.getDefaultInstance());
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder addLevelListBuilder(
           int index) {
@@ -1002,7 +1002,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.getDefaultInstance());
       }
       /**
-       * <code>repeated .ArenaChallengeMonsterLevel level_list = 11;</code>
+       * <code>repeated .ArenaChallengeMonsterLevel level_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ArenaChallengeMonsterLevelOuterClass.ArenaChallengeMonsterLevel.Builder> 
            getLevelListBuilderList() {
@@ -1025,7 +1025,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
 
       private boolean isFinishAnyLevel_ ;
       /**
-       * <code>bool is_finish_any_level = 1;</code>
+       * <code>bool is_finish_any_level = 4;</code>
        * @return The isFinishAnyLevel.
        */
       @java.lang.Override
@@ -1033,7 +1033,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return isFinishAnyLevel_;
       }
       /**
-       * <code>bool is_finish_any_level = 1;</code>
+       * <code>bool is_finish_any_level = 4;</code>
        * @param value The isFinishAnyLevel to set.
        * @return This builder for chaining.
        */
@@ -1044,7 +1044,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish_any_level = 1;</code>
+       * <code>bool is_finish_any_level = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinishAnyLevel() {
@@ -1056,7 +1056,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
 
       private int worldLevel_ ;
       /**
-       * <code>uint32 world_level = 15;</code>
+       * <code>uint32 world_level = 1;</code>
        * @return The worldLevel.
        */
       @java.lang.Override
@@ -1064,7 +1064,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return worldLevel_;
       }
       /**
-       * <code>uint32 world_level = 15;</code>
+       * <code>uint32 world_level = 1;</code>
        * @param value The worldLevel to set.
        * @return This builder for chaining.
        */
@@ -1075,7 +1075,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 world_level = 15;</code>
+       * <code>uint32 world_level = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearWorldLevel() {
@@ -1112,7 +1112,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return internalGetLevelOpenTimeMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
        */
 
       @java.lang.Override
@@ -1130,7 +1130,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return getLevelOpenTimeMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1138,7 +1138,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return internalGetLevelOpenTimeMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1151,7 +1151,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
        */
       @java.lang.Override
 
@@ -1172,7 +1172,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
        */
 
       public Builder removeLevelOpenTimeMap(
@@ -1191,7 +1191,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return internalGetMutableLevelOpenTimeMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
        */
       public Builder putLevelOpenTimeMap(
           int key,
@@ -1203,7 +1203,7 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; level_open_time_map = 3;</code>
        */
 
       public Builder putAllLevelOpenTimeMap(
@@ -1287,9 +1287,9 @@ public final class ArenaChallengeActivityDetailInfoOuterClass {
       "\n&ArenaChallengeActivityDetailInfo.proto" +
       "\032 ArenaChallengeMonsterLevel.proto\"\224\002\n A" +
       "renaChallengeActivityDetailInfo\022/\n\nlevel" +
-      "_list\030\013 \003(\0132\033.ArenaChallengeMonsterLevel" +
-      "\022\033\n\023is_finish_any_level\030\001 \001(\010\022\023\n\013world_l" +
-      "evel\030\017 \001(\r\022T\n\023level_open_time_map\030\016 \003(\0132" +
+      "_list\030\002 \003(\0132\033.ArenaChallengeMonsterLevel" +
+      "\022\033\n\023is_finish_any_level\030\004 \001(\010\022\023\n\013world_l" +
+      "evel\030\001 \001(\r\022T\n\023level_open_time_map\030\003 \003(\0132" +
       "7.ArenaChallengeActivityDetailInfo.Level" +
       "OpenTimeMapEntry\0327\n\025LevelOpenTimeMapEntr" +
       "y\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001BG\n\031emu" +

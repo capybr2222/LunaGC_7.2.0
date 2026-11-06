@@ -6,6 +6,6 @@ option java_outer_classname = "AvatarTeamUpdateNotifyOuterClass";
 import "AvatarTeam.proto";
 
 message AvatarTeamUpdateNotify {
-	repeated uint64 temp_avatar_guid_list = 4;
-	map<uint32, AvatarTeam> avatar_team_map = 2;
+	repeated uint64 temp_avatar_guid_list = 13;
+	map<uint32, AvatarTeam> avatar_team_map = 15;
 }

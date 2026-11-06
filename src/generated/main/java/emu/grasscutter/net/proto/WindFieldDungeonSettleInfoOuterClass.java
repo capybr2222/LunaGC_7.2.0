@@ -19,46 +19,46 @@ public final class WindFieldDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+     * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
      * @return A list containing the lFGENDKAIFE.
      */
     java.util.List<java.lang.Integer> getLFGENDKAIFEList();
     /**
-     * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+     * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
      * @return The count of lFGENDKAIFE.
      */
     int getLFGENDKAIFECount();
     /**
-     * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+     * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
      * @param index The index of the element to return.
      * @return The lFGENDKAIFE at the given index.
      */
     int getLFGENDKAIFE(int index);
 
     /**
-     * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+     * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
      * @return A list containing the nBCOMIAPKMP.
      */
     java.util.List<java.lang.Integer> getNBCOMIAPKMPList();
     /**
-     * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+     * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
      * @return The count of nBCOMIAPKMP.
      */
     int getNBCOMIAPKMPCount();
     /**
-     * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+     * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
      * @param index The index of the element to return.
      * @return The nBCOMIAPKMP at the given index.
      */
     int getNBCOMIAPKMP(int index);
 
     /**
-     * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+     * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
      * @return The enum numeric value on the wire for failReason.
      */
     int getFailReasonValue();
     /**
-     * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+     * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
      * @return The failReason.
      */
     emu.grasscutter.net.proto.WindFieldDungeonFailReasonOuterClass.WindFieldDungeonFailReason getFailReason();
@@ -112,13 +112,13 @@ public final class WindFieldDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 24: {
               int rawValue = input.readEnum();
 
               failReason_ = rawValue;
               break;
             }
-            case 400000: {
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 lFGENDKAIFE_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -126,7 +126,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
               lFGENDKAIFE_.addInt(input.readUInt32());
               break;
             }
-            case 400002: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -139,7 +139,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 400008: {
+            case 160008: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 nBCOMIAPKMP_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -147,7 +147,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
               nBCOMIAPKMP_.addInt(input.readUInt32());
               break;
             }
-            case 400010: {
+            case 160010: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -198,10 +198,10 @@ public final class WindFieldDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.class, emu.grasscutter.net.proto.WindFieldDungeonSettleInfoOuterClass.WindFieldDungeonSettleInfo.Builder.class);
     }
 
-    public static final int LFGENDKAIFE_FIELD_NUMBER = 50000;
+    public static final int LFGENDKAIFE_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList lFGENDKAIFE_;
     /**
-     * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+     * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
      * @return A list containing the lFGENDKAIFE.
      */
     @java.lang.Override
@@ -210,14 +210,14 @@ public final class WindFieldDungeonSettleInfoOuterClass {
       return lFGENDKAIFE_;
     }
     /**
-     * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+     * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
      * @return The count of lFGENDKAIFE.
      */
     public int getLFGENDKAIFECount() {
       return lFGENDKAIFE_.size();
     }
     /**
-     * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+     * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
      * @param index The index of the element to return.
      * @return The lFGENDKAIFE at the given index.
      */
@@ -226,10 +226,10 @@ public final class WindFieldDungeonSettleInfoOuterClass {
     }
     private int lFGENDKAIFEMemoizedSerializedSize = -1;
 
-    public static final int NBCOMIAPKMP_FIELD_NUMBER = 50001;
+    public static final int NBCOMIAPKMP_FIELD_NUMBER = 20001;
     private com.google.protobuf.Internal.IntList nBCOMIAPKMP_;
     /**
-     * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+     * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
      * @return A list containing the nBCOMIAPKMP.
      */
     @java.lang.Override
@@ -238,14 +238,14 @@ public final class WindFieldDungeonSettleInfoOuterClass {
       return nBCOMIAPKMP_;
     }
     /**
-     * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+     * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
      * @return The count of nBCOMIAPKMP.
      */
     public int getNBCOMIAPKMPCount() {
       return nBCOMIAPKMP_.size();
     }
     /**
-     * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+     * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
      * @param index The index of the element to return.
      * @return The nBCOMIAPKMP at the given index.
      */
@@ -254,17 +254,17 @@ public final class WindFieldDungeonSettleInfoOuterClass {
     }
     private int nBCOMIAPKMPMemoizedSerializedSize = -1;
 
-    public static final int FAIL_REASON_FIELD_NUMBER = 7;
+    public static final int FAIL_REASON_FIELD_NUMBER = 3;
     private int failReason_;
     /**
-     * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+     * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
      * @return The enum numeric value on the wire for failReason.
      */
     @java.lang.Override public int getFailReasonValue() {
       return failReason_;
     }
     /**
-     * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+     * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
      * @return The failReason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.WindFieldDungeonFailReasonOuterClass.WindFieldDungeonFailReason getFailReason() {
@@ -289,17 +289,17 @@ public final class WindFieldDungeonSettleInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (failReason_ != emu.grasscutter.net.proto.WindFieldDungeonFailReasonOuterClass.WindFieldDungeonFailReason.WIND_FIELD_DUNGEON_FAIL_NONE.getNumber()) {
-        output.writeEnum(7, failReason_);
+        output.writeEnum(3, failReason_);
       }
       if (getLFGENDKAIFEList().size() > 0) {
-        output.writeUInt32NoTag(400002);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(lFGENDKAIFEMemoizedSerializedSize);
       }
       for (int i = 0; i < lFGENDKAIFE_.size(); i++) {
         output.writeUInt32NoTag(lFGENDKAIFE_.getInt(i));
       }
       if (getNBCOMIAPKMPList().size() > 0) {
-        output.writeUInt32NoTag(400010);
+        output.writeUInt32NoTag(160010);
         output.writeUInt32NoTag(nBCOMIAPKMPMemoizedSerializedSize);
       }
       for (int i = 0; i < nBCOMIAPKMP_.size(); i++) {
@@ -316,7 +316,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
       size = 0;
       if (failReason_ != emu.grasscutter.net.proto.WindFieldDungeonFailReasonOuterClass.WindFieldDungeonFailReason.WIND_FIELD_DUNGEON_FAIL_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(7, failReason_);
+          .computeEnumSize(3, failReason_);
       }
       {
         int dataSize = 0;
@@ -673,7 +673,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+       * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
        * @return A list containing the lFGENDKAIFE.
        */
       public java.util.List<java.lang.Integer>
@@ -682,14 +682,14 @@ public final class WindFieldDungeonSettleInfoOuterClass {
                  java.util.Collections.unmodifiableList(lFGENDKAIFE_) : lFGENDKAIFE_;
       }
       /**
-       * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+       * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
        * @return The count of lFGENDKAIFE.
        */
       public int getLFGENDKAIFECount() {
         return lFGENDKAIFE_.size();
       }
       /**
-       * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+       * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
        * @param index The index of the element to return.
        * @return The lFGENDKAIFE at the given index.
        */
@@ -697,7 +697,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return lFGENDKAIFE_.getInt(index);
       }
       /**
-       * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+       * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
        * @param index The index to set the value at.
        * @param value The lFGENDKAIFE to set.
        * @return This builder for chaining.
@@ -710,7 +710,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+       * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
        * @param value The lFGENDKAIFE to add.
        * @return This builder for chaining.
        */
@@ -721,7 +721,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+       * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
        * @param values The lFGENDKAIFE to add.
        * @return This builder for chaining.
        */
@@ -734,7 +734,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LFGENDKAIFE = 50000;</code>
+       * <code>repeated uint32 LFGENDKAIFE = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearLFGENDKAIFE() {
@@ -752,7 +752,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+       * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
        * @return A list containing the nBCOMIAPKMP.
        */
       public java.util.List<java.lang.Integer>
@@ -761,14 +761,14 @@ public final class WindFieldDungeonSettleInfoOuterClass {
                  java.util.Collections.unmodifiableList(nBCOMIAPKMP_) : nBCOMIAPKMP_;
       }
       /**
-       * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+       * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
        * @return The count of nBCOMIAPKMP.
        */
       public int getNBCOMIAPKMPCount() {
         return nBCOMIAPKMP_.size();
       }
       /**
-       * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+       * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
        * @param index The index of the element to return.
        * @return The nBCOMIAPKMP at the given index.
        */
@@ -776,7 +776,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return nBCOMIAPKMP_.getInt(index);
       }
       /**
-       * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+       * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
        * @param index The index to set the value at.
        * @param value The nBCOMIAPKMP to set.
        * @return This builder for chaining.
@@ -789,7 +789,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+       * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
        * @param value The nBCOMIAPKMP to add.
        * @return This builder for chaining.
        */
@@ -800,7 +800,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+       * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
        * @param values The nBCOMIAPKMP to add.
        * @return This builder for chaining.
        */
@@ -813,7 +813,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 NBCOMIAPKMP = 50001;</code>
+       * <code>repeated uint32 NBCOMIAPKMP = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearNBCOMIAPKMP() {
@@ -825,14 +825,14 @@ public final class WindFieldDungeonSettleInfoOuterClass {
 
       private int failReason_ = 0;
       /**
-       * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+       * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
        * @return The enum numeric value on the wire for failReason.
        */
       @java.lang.Override public int getFailReasonValue() {
         return failReason_;
       }
       /**
-       * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+       * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
        * @param value The enum numeric value on the wire for failReason to set.
        * @return This builder for chaining.
        */
@@ -843,7 +843,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+       * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
        * @return The failReason.
        */
       @java.lang.Override
@@ -853,7 +853,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.WindFieldDungeonFailReasonOuterClass.WindFieldDungeonFailReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+       * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
        * @param value The failReason to set.
        * @return This builder for chaining.
        */
@@ -867,7 +867,7 @@ public final class WindFieldDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.WindFieldDungeonFailReason fail_reason = 7;</code>
+       * <code>.WindFieldDungeonFailReason fail_reason = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFailReason() {
@@ -945,9 +945,9 @@ public final class WindFieldDungeonSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n WindFieldDungeonSettleInfo.proto\032 Wind" +
       "FieldDungeonFailReason.proto\"|\n\032WindFiel" +
-      "dDungeonSettleInfo\022\025\n\013LFGENDKAIFE\030\320\206\003 \003(" +
-      "\r\022\025\n\013NBCOMIAPKMP\030\321\206\003 \003(\r\0220\n\013fail_reason\030" +
-      "\007 \001(\0162\033.WindFieldDungeonFailReasonBA\n\031em" +
+      "dDungeonSettleInfo\022\025\n\013LFGENDKAIFE\030\240\234\001 \003(" +
+      "\r\022\025\n\013NBCOMIAPKMP\030\241\234\001 \003(\r\0220\n\013fail_reason\030" +
+      "\003 \001(\0162\033.WindFieldDungeonFailReasonBA\n\031em" +
       "u.grasscutter.net.protoB$WindFieldDungeo" +
       "nSettleInfoOuterClassb\006proto3"
     };

@@ -19,91 +19,91 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 min_open_player_level = 9;</code>
+     * <code>uint32 min_open_player_level = 5;</code>
      * @return The minOpenPlayerLevel.
      */
     int getMinOpenPlayerLevel();
 
     /**
-     * <code>uint32 KDGCGILDGOH = 11;</code>
+     * <code>uint32 KDGCGILDGOH = 20000;</code>
      * @return The kDGCGILDGOH.
      */
     int getKDGCGILDGOH();
 
     /**
-     * <code>uint32 preview_reward_id = 5;</code>
+     * <code>uint32 preview_reward_id = 4;</code>
      * @return The previewRewardId.
      */
     int getPreviewRewardId();
 
     /**
-     * <code>uint32 FMCDPDEMHLH = 50000;</code>
+     * <code>uint32 FMCDPDEMHLH = 20001;</code>
      * @return The fMCDPDEMHLH.
      */
     int getFMCDPDEMHLH();
 
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo> 
         getRegionInfoListList();
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo getRegionInfoList(int index);
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     int getRegionInfoListCount();
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder> 
         getRegionInfoListOrBuilderList();
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder getRegionInfoListOrBuilder(
         int index);
 
     /**
-     * <code>bool is_mp_challenge_touched = 7;</code>
+     * <code>bool is_mp_challenge_touched = 8;</code>
      * @return The isMpChallengeTouched.
      */
     boolean getIsMpChallengeTouched();
 
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo> 
         getBonusChallengeListList();
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo getBonusChallengeList(int index);
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     int getBonusChallengeListCount();
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder> 
         getBonusChallengeListOrBuilderList();
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder getBonusChallengeListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 fjeocgnlcej = 50001;</code>
+     * <code>uint32 fjeocgnlcej = 50003;</code>
      * @return The fjeocgnlcej.
      */
     int getFjeocgnlcej();
 
     /**
-     * <code>uint32 treasure_close_time = 13;</code>
+     * <code>uint32 treasure_close_time = 3;</code>
      * @return The treasureCloseTime.
      */
     int getTreasureCloseTime();
@@ -156,7 +156,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 regionInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -165,7 +165,22 @@ public final class TreasureMapActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.parser(), extensionRegistry));
               break;
             }
-            case 34: {
+            case 24: {
+
+              treasureCloseTime_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              previewRewardId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              minOpenPlayerLevel_ = input.readUInt32();
+              break;
+            }
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 bonusChallengeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo>();
                 mutable_bitField0_ |= 0x00000002;
@@ -174,37 +189,22 @@ public final class TreasureMapActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.parser(), extensionRegistry));
               break;
             }
-            case 40: {
-
-              previewRewardId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 64: {
 
               isMpChallengeTouched_ = input.readBool();
               break;
             }
-            case 72: {
-
-              minOpenPlayerLevel_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 160000: {
 
               kDGCGILDGOH_ = input.readUInt32();
               break;
             }
-            case 104: {
-
-              treasureCloseTime_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
+            case 160008: {
 
               fMCDPDEMHLH_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 400024: {
 
               fjeocgnlcej_ = input.readUInt32();
               break;
@@ -247,10 +247,10 @@ public final class TreasureMapActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.TreasureMapActivityDetailInfoOuterClass.TreasureMapActivityDetailInfo.class, emu.grasscutter.net.proto.TreasureMapActivityDetailInfoOuterClass.TreasureMapActivityDetailInfo.Builder.class);
     }
 
-    public static final int MIN_OPEN_PLAYER_LEVEL_FIELD_NUMBER = 9;
+    public static final int MIN_OPEN_PLAYER_LEVEL_FIELD_NUMBER = 5;
     private int minOpenPlayerLevel_;
     /**
-     * <code>uint32 min_open_player_level = 9;</code>
+     * <code>uint32 min_open_player_level = 5;</code>
      * @return The minOpenPlayerLevel.
      */
     @java.lang.Override
@@ -258,10 +258,10 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return minOpenPlayerLevel_;
     }
 
-    public static final int KDGCGILDGOH_FIELD_NUMBER = 11;
+    public static final int KDGCGILDGOH_FIELD_NUMBER = 20000;
     private int kDGCGILDGOH_;
     /**
-     * <code>uint32 KDGCGILDGOH = 11;</code>
+     * <code>uint32 KDGCGILDGOH = 20000;</code>
      * @return The kDGCGILDGOH.
      */
     @java.lang.Override
@@ -269,10 +269,10 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return kDGCGILDGOH_;
     }
 
-    public static final int PREVIEW_REWARD_ID_FIELD_NUMBER = 5;
+    public static final int PREVIEW_REWARD_ID_FIELD_NUMBER = 4;
     private int previewRewardId_;
     /**
-     * <code>uint32 preview_reward_id = 5;</code>
+     * <code>uint32 preview_reward_id = 4;</code>
      * @return The previewRewardId.
      */
     @java.lang.Override
@@ -280,10 +280,10 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return previewRewardId_;
     }
 
-    public static final int FMCDPDEMHLH_FIELD_NUMBER = 50000;
+    public static final int FMCDPDEMHLH_FIELD_NUMBER = 20001;
     private int fMCDPDEMHLH_;
     /**
-     * <code>uint32 FMCDPDEMHLH = 50000;</code>
+     * <code>uint32 FMCDPDEMHLH = 20001;</code>
      * @return The fMCDPDEMHLH.
      */
     @java.lang.Override
@@ -291,17 +291,17 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return fMCDPDEMHLH_;
     }
 
-    public static final int REGION_INFO_LIST_FIELD_NUMBER = 3;
+    public static final int REGION_INFO_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo> regionInfoList_;
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo> getRegionInfoListList() {
       return regionInfoList_;
     }
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder> 
@@ -309,21 +309,21 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return regionInfoList_;
     }
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     @java.lang.Override
     public int getRegionInfoListCount() {
       return regionInfoList_.size();
     }
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo getRegionInfoList(int index) {
       return regionInfoList_.get(index);
     }
     /**
-     * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+     * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder getRegionInfoListOrBuilder(
@@ -331,10 +331,10 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return regionInfoList_.get(index);
     }
 
-    public static final int IS_MP_CHALLENGE_TOUCHED_FIELD_NUMBER = 7;
+    public static final int IS_MP_CHALLENGE_TOUCHED_FIELD_NUMBER = 8;
     private boolean isMpChallengeTouched_;
     /**
-     * <code>bool is_mp_challenge_touched = 7;</code>
+     * <code>bool is_mp_challenge_touched = 8;</code>
      * @return The isMpChallengeTouched.
      */
     @java.lang.Override
@@ -342,17 +342,17 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return isMpChallengeTouched_;
     }
 
-    public static final int BONUS_CHALLENGE_LIST_FIELD_NUMBER = 4;
+    public static final int BONUS_CHALLENGE_LIST_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo> bonusChallengeList_;
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo> getBonusChallengeListList() {
       return bonusChallengeList_;
     }
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder> 
@@ -360,21 +360,21 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return bonusChallengeList_;
     }
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     @java.lang.Override
     public int getBonusChallengeListCount() {
       return bonusChallengeList_.size();
     }
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo getBonusChallengeList(int index) {
       return bonusChallengeList_.get(index);
     }
     /**
-     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+     * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder getBonusChallengeListOrBuilder(
@@ -382,10 +382,10 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return bonusChallengeList_.get(index);
     }
 
-    public static final int FJEOCGNLCEJ_FIELD_NUMBER = 50001;
+    public static final int FJEOCGNLCEJ_FIELD_NUMBER = 50003;
     private int fjeocgnlcej_;
     /**
-     * <code>uint32 fjeocgnlcej = 50001;</code>
+     * <code>uint32 fjeocgnlcej = 50003;</code>
      * @return The fjeocgnlcej.
      */
     @java.lang.Override
@@ -393,10 +393,10 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       return fjeocgnlcej_;
     }
 
-    public static final int TREASURE_CLOSE_TIME_FIELD_NUMBER = 13;
+    public static final int TREASURE_CLOSE_TIME_FIELD_NUMBER = 3;
     private int treasureCloseTime_;
     /**
-     * <code>uint32 treasure_close_time = 13;</code>
+     * <code>uint32 treasure_close_time = 3;</code>
      * @return The treasureCloseTime.
      */
     @java.lang.Override
@@ -419,31 +419,31 @@ public final class TreasureMapActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < regionInfoList_.size(); i++) {
-        output.writeMessage(3, regionInfoList_.get(i));
-      }
-      for (int i = 0; i < bonusChallengeList_.size(); i++) {
-        output.writeMessage(4, bonusChallengeList_.get(i));
-      }
-      if (previewRewardId_ != 0) {
-        output.writeUInt32(5, previewRewardId_);
-      }
-      if (isMpChallengeTouched_ != false) {
-        output.writeBool(7, isMpChallengeTouched_);
-      }
-      if (minOpenPlayerLevel_ != 0) {
-        output.writeUInt32(9, minOpenPlayerLevel_);
-      }
-      if (kDGCGILDGOH_ != 0) {
-        output.writeUInt32(11, kDGCGILDGOH_);
+        output.writeMessage(1, regionInfoList_.get(i));
       }
       if (treasureCloseTime_ != 0) {
-        output.writeUInt32(13, treasureCloseTime_);
+        output.writeUInt32(3, treasureCloseTime_);
+      }
+      if (previewRewardId_ != 0) {
+        output.writeUInt32(4, previewRewardId_);
+      }
+      if (minOpenPlayerLevel_ != 0) {
+        output.writeUInt32(5, minOpenPlayerLevel_);
+      }
+      for (int i = 0; i < bonusChallengeList_.size(); i++) {
+        output.writeMessage(7, bonusChallengeList_.get(i));
+      }
+      if (isMpChallengeTouched_ != false) {
+        output.writeBool(8, isMpChallengeTouched_);
+      }
+      if (kDGCGILDGOH_ != 0) {
+        output.writeUInt32(20000, kDGCGILDGOH_);
       }
       if (fMCDPDEMHLH_ != 0) {
-        output.writeUInt32(50000, fMCDPDEMHLH_);
+        output.writeUInt32(20001, fMCDPDEMHLH_);
       }
       if (fjeocgnlcej_ != 0) {
-        output.writeUInt32(50001, fjeocgnlcej_);
+        output.writeUInt32(50003, fjeocgnlcej_);
       }
       unknownFields.writeTo(output);
     }
@@ -456,39 +456,39 @@ public final class TreasureMapActivityDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < regionInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, regionInfoList_.get(i));
-      }
-      for (int i = 0; i < bonusChallengeList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, bonusChallengeList_.get(i));
-      }
-      if (previewRewardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, previewRewardId_);
-      }
-      if (isMpChallengeTouched_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isMpChallengeTouched_);
-      }
-      if (minOpenPlayerLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, minOpenPlayerLevel_);
-      }
-      if (kDGCGILDGOH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, kDGCGILDGOH_);
+          .computeMessageSize(1, regionInfoList_.get(i));
       }
       if (treasureCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, treasureCloseTime_);
+          .computeUInt32Size(3, treasureCloseTime_);
+      }
+      if (previewRewardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, previewRewardId_);
+      }
+      if (minOpenPlayerLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, minOpenPlayerLevel_);
+      }
+      for (int i = 0; i < bonusChallengeList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, bonusChallengeList_.get(i));
+      }
+      if (isMpChallengeTouched_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isMpChallengeTouched_);
+      }
+      if (kDGCGILDGOH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20000, kDGCGILDGOH_);
       }
       if (fMCDPDEMHLH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, fMCDPDEMHLH_);
+          .computeUInt32Size(20001, fMCDPDEMHLH_);
       }
       if (fjeocgnlcej_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, fjeocgnlcej_);
+          .computeUInt32Size(50003, fjeocgnlcej_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -923,7 +923,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
 
       private int minOpenPlayerLevel_ ;
       /**
-       * <code>uint32 min_open_player_level = 9;</code>
+       * <code>uint32 min_open_player_level = 5;</code>
        * @return The minOpenPlayerLevel.
        */
       @java.lang.Override
@@ -931,7 +931,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return minOpenPlayerLevel_;
       }
       /**
-       * <code>uint32 min_open_player_level = 9;</code>
+       * <code>uint32 min_open_player_level = 5;</code>
        * @param value The minOpenPlayerLevel to set.
        * @return This builder for chaining.
        */
@@ -942,7 +942,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 min_open_player_level = 9;</code>
+       * <code>uint32 min_open_player_level = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearMinOpenPlayerLevel() {
@@ -954,7 +954,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
 
       private int kDGCGILDGOH_ ;
       /**
-       * <code>uint32 KDGCGILDGOH = 11;</code>
+       * <code>uint32 KDGCGILDGOH = 20000;</code>
        * @return The kDGCGILDGOH.
        */
       @java.lang.Override
@@ -962,7 +962,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return kDGCGILDGOH_;
       }
       /**
-       * <code>uint32 KDGCGILDGOH = 11;</code>
+       * <code>uint32 KDGCGILDGOH = 20000;</code>
        * @param value The kDGCGILDGOH to set.
        * @return This builder for chaining.
        */
@@ -973,7 +973,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 KDGCGILDGOH = 11;</code>
+       * <code>uint32 KDGCGILDGOH = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearKDGCGILDGOH() {
@@ -985,7 +985,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
 
       private int previewRewardId_ ;
       /**
-       * <code>uint32 preview_reward_id = 5;</code>
+       * <code>uint32 preview_reward_id = 4;</code>
        * @return The previewRewardId.
        */
       @java.lang.Override
@@ -993,7 +993,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return previewRewardId_;
       }
       /**
-       * <code>uint32 preview_reward_id = 5;</code>
+       * <code>uint32 preview_reward_id = 4;</code>
        * @param value The previewRewardId to set.
        * @return This builder for chaining.
        */
@@ -1004,7 +1004,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 preview_reward_id = 5;</code>
+       * <code>uint32 preview_reward_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearPreviewRewardId() {
@@ -1016,7 +1016,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
 
       private int fMCDPDEMHLH_ ;
       /**
-       * <code>uint32 FMCDPDEMHLH = 50000;</code>
+       * <code>uint32 FMCDPDEMHLH = 20001;</code>
        * @return The fMCDPDEMHLH.
        */
       @java.lang.Override
@@ -1024,7 +1024,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return fMCDPDEMHLH_;
       }
       /**
-       * <code>uint32 FMCDPDEMHLH = 50000;</code>
+       * <code>uint32 FMCDPDEMHLH = 20001;</code>
        * @param value The fMCDPDEMHLH to set.
        * @return This builder for chaining.
        */
@@ -1035,7 +1035,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 FMCDPDEMHLH = 50000;</code>
+       * <code>uint32 FMCDPDEMHLH = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearFMCDPDEMHLH() {
@@ -1058,7 +1058,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder> regionInfoListBuilder_;
 
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo> getRegionInfoListList() {
         if (regionInfoListBuilder_ == null) {
@@ -1068,7 +1068,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public int getRegionInfoListCount() {
         if (regionInfoListBuilder_ == null) {
@@ -1078,7 +1078,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo getRegionInfoList(int index) {
         if (regionInfoListBuilder_ == null) {
@@ -1088,7 +1088,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder setRegionInfoList(
           int index, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo value) {
@@ -1105,7 +1105,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder setRegionInfoList(
           int index, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder builderForValue) {
@@ -1119,7 +1119,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder addRegionInfoList(emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo value) {
         if (regionInfoListBuilder_ == null) {
@@ -1135,7 +1135,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder addRegionInfoList(
           int index, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo value) {
@@ -1152,7 +1152,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder addRegionInfoList(
           emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder builderForValue) {
@@ -1166,7 +1166,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder addRegionInfoList(
           int index, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder builderForValue) {
@@ -1180,7 +1180,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder addAllRegionInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo> values) {
@@ -1195,7 +1195,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder clearRegionInfoList() {
         if (regionInfoListBuilder_ == null) {
@@ -1208,7 +1208,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public Builder removeRegionInfoList(int index) {
         if (regionInfoListBuilder_ == null) {
@@ -1221,14 +1221,14 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder getRegionInfoListBuilder(
           int index) {
         return getRegionInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder getRegionInfoListOrBuilder(
           int index) {
@@ -1238,7 +1238,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfoOrBuilder> 
            getRegionInfoListOrBuilderList() {
@@ -1249,14 +1249,14 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder addRegionInfoListBuilder() {
         return getRegionInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder addRegionInfoListBuilder(
           int index) {
@@ -1264,7 +1264,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TreasureMapRegionInfo region_info_list = 3;</code>
+       * <code>repeated .TreasureMapRegionInfo region_info_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TreasureMapRegionInfoOuterClass.TreasureMapRegionInfo.Builder> 
            getRegionInfoListBuilderList() {
@@ -1287,7 +1287,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
 
       private boolean isMpChallengeTouched_ ;
       /**
-       * <code>bool is_mp_challenge_touched = 7;</code>
+       * <code>bool is_mp_challenge_touched = 8;</code>
        * @return The isMpChallengeTouched.
        */
       @java.lang.Override
@@ -1295,7 +1295,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return isMpChallengeTouched_;
       }
       /**
-       * <code>bool is_mp_challenge_touched = 7;</code>
+       * <code>bool is_mp_challenge_touched = 8;</code>
        * @param value The isMpChallengeTouched to set.
        * @return This builder for chaining.
        */
@@ -1306,7 +1306,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_mp_challenge_touched = 7;</code>
+       * <code>bool is_mp_challenge_touched = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsMpChallengeTouched() {
@@ -1329,7 +1329,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder> bonusChallengeListBuilder_;
 
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo> getBonusChallengeListList() {
         if (bonusChallengeListBuilder_ == null) {
@@ -1339,7 +1339,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public int getBonusChallengeListCount() {
         if (bonusChallengeListBuilder_ == null) {
@@ -1349,7 +1349,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo getBonusChallengeList(int index) {
         if (bonusChallengeListBuilder_ == null) {
@@ -1359,7 +1359,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder setBonusChallengeList(
           int index, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo value) {
@@ -1376,7 +1376,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder setBonusChallengeList(
           int index, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder builderForValue) {
@@ -1390,7 +1390,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder addBonusChallengeList(emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo value) {
         if (bonusChallengeListBuilder_ == null) {
@@ -1406,7 +1406,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder addBonusChallengeList(
           int index, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo value) {
@@ -1423,7 +1423,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder addBonusChallengeList(
           emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder builderForValue) {
@@ -1437,7 +1437,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder addBonusChallengeList(
           int index, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder builderForValue) {
@@ -1451,7 +1451,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder addAllBonusChallengeList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo> values) {
@@ -1466,7 +1466,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder clearBonusChallengeList() {
         if (bonusChallengeListBuilder_ == null) {
@@ -1479,7 +1479,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public Builder removeBonusChallengeList(int index) {
         if (bonusChallengeListBuilder_ == null) {
@@ -1492,14 +1492,14 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder getBonusChallengeListBuilder(
           int index) {
         return getBonusChallengeListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder getBonusChallengeListOrBuilder(
           int index) {
@@ -1509,7 +1509,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfoOrBuilder> 
            getBonusChallengeListOrBuilderList() {
@@ -1520,14 +1520,14 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder addBonusChallengeListBuilder() {
         return getBonusChallengeListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder addBonusChallengeListBuilder(
           int index) {
@@ -1535,7 +1535,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 4;</code>
+       * <code>repeated .TreasureMapBonusChallengeInfo bonus_challenge_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TreasureMapBonusChallengeInfoOuterClass.TreasureMapBonusChallengeInfo.Builder> 
            getBonusChallengeListBuilderList() {
@@ -1558,7 +1558,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
 
       private int fjeocgnlcej_ ;
       /**
-       * <code>uint32 fjeocgnlcej = 50001;</code>
+       * <code>uint32 fjeocgnlcej = 50003;</code>
        * @return The fjeocgnlcej.
        */
       @java.lang.Override
@@ -1566,7 +1566,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return fjeocgnlcej_;
       }
       /**
-       * <code>uint32 fjeocgnlcej = 50001;</code>
+       * <code>uint32 fjeocgnlcej = 50003;</code>
        * @param value The fjeocgnlcej to set.
        * @return This builder for chaining.
        */
@@ -1577,7 +1577,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fjeocgnlcej = 50001;</code>
+       * <code>uint32 fjeocgnlcej = 50003;</code>
        * @return This builder for chaining.
        */
       public Builder clearFjeocgnlcej() {
@@ -1589,7 +1589,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
 
       private int treasureCloseTime_ ;
       /**
-       * <code>uint32 treasure_close_time = 13;</code>
+       * <code>uint32 treasure_close_time = 3;</code>
        * @return The treasureCloseTime.
        */
       @java.lang.Override
@@ -1597,7 +1597,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return treasureCloseTime_;
       }
       /**
-       * <code>uint32 treasure_close_time = 13;</code>
+       * <code>uint32 treasure_close_time = 3;</code>
        * @param value The treasureCloseTime to set.
        * @return This builder for chaining.
        */
@@ -1608,7 +1608,7 @@ public final class TreasureMapActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 treasure_close_time = 13;</code>
+       * <code>uint32 treasure_close_time = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearTreasureCloseTime() {
@@ -1686,17 +1686,17 @@ public final class TreasureMapActivityDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n#TreasureMapActivityDetailInfo.proto\032#T" +
       "reasureMapBonusChallengeInfo.proto\032\033Trea" +
-      "sureMapRegionInfo.proto\"\312\002\n\035TreasureMapA" +
+      "sureMapRegionInfo.proto\"\314\002\n\035TreasureMapA" +
       "ctivityDetailInfo\022\035\n\025min_open_player_lev" +
-      "el\030\t \001(\r\022\023\n\013KDGCGILDGOH\030\013 \001(\r\022\031\n\021preview" +
-      "_reward_id\030\005 \001(\r\022\025\n\013FMCDPDEMHLH\030\320\206\003 \001(\r\022" +
-      "0\n\020region_info_list\030\003 \003(\0132\026.TreasureMapR" +
-      "egionInfo\022\037\n\027is_mp_challenge_touched\030\007 \001" +
-      "(\010\022<\n\024bonus_challenge_list\030\004 \003(\0132\036.Treas" +
-      "ureMapBonusChallengeInfo\022\025\n\013fjeocgnlcej\030" +
-      "\321\206\003 \001(\r\022\033\n\023treasure_close_time\030\r \001(\rBD\n\031" +
-      "emu.grasscutter.net.protoB\'TreasureMapAc" +
-      "tivityDetailInfoOuterClassb\006proto3"
+      "el\030\005 \001(\r\022\025\n\013KDGCGILDGOH\030\240\234\001 \001(\r\022\031\n\021previ" +
+      "ew_reward_id\030\004 \001(\r\022\025\n\013FMCDPDEMHLH\030\241\234\001 \001(" +
+      "\r\0220\n\020region_info_list\030\001 \003(\0132\026.TreasureMa" +
+      "pRegionInfo\022\037\n\027is_mp_challenge_touched\030\010" +
+      " \001(\010\022<\n\024bonus_challenge_list\030\007 \003(\0132\036.Tre" +
+      "asureMapBonusChallengeInfo\022\025\n\013fjeocgnlce" +
+      "j\030\323\206\003 \001(\r\022\033\n\023treasure_close_time\030\003 \001(\rBD" +
+      "\n\031emu.grasscutter.net.protoB\'TreasureMap" +
+      "ActivityDetailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

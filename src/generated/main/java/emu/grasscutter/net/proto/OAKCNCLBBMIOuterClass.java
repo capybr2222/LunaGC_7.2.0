@@ -19,25 +19,25 @@ public final class OAKCNCLBBMIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG> 
         getLevelInfoListList();
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG getLevelInfoList(int index);
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHGOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHGOrBuilder getLevelInfoListOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class OAKCNCLBBMIOuterClass {
             case 0:
               done = true;
               break;
-            case 106: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class OAKCNCLBBMIOuterClass {
               emu.grasscutter.net.proto.OAKCNCLBBMIOuterClass.OAKCNCLBBMI.class, emu.grasscutter.net.proto.OAKCNCLBBMIOuterClass.OAKCNCLBBMI.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 13;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG> levelInfoList_;
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHGOrBuilder> 
@@ -151,21 +151,21 @@ public final class OAKCNCLBBMIOuterClass {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+     * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHGOrBuilder getLevelInfoListOrBuilder(
@@ -188,7 +188,7 @@ public final class OAKCNCLBBMIOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(13, levelInfoList_.get(i));
+        output.writeMessage(4, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class OAKCNCLBBMIOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, levelInfoList_.get(i));
+          .computeMessageSize(4, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class OAKCNCLBBMIOuterClass {
           emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG, emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.Builder, emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHGOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class OAKCNCLBBMIOuterClass {
         }
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class OAKCNCLBBMIOuterClass {
         }
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class OAKCNCLBBMIOuterClass {
         }
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG value) {
@@ -575,7 +575,7 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder addLevelInfoList(emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG value) {
         if (levelInfoListBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG value) {
@@ -622,7 +622,7 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder addLevelInfoList(
           emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder addAllLevelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG> values) {
@@ -665,7 +665,7 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class OAKCNCLBBMIOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHGOrBuilder getLevelInfoListOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class OAKCNCLBBMIOuterClass {
         }
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHGOrBuilder> 
            getLevelInfoListOrBuilderList() {
@@ -719,14 +719,14 @@ public final class OAKCNCLBBMIOuterClass {
         }
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.getDefaultInstance());
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.Builder addLevelInfoListBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class OAKCNCLBBMIOuterClass {
             index, emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.getDefaultInstance());
       }
       /**
-       * <code>repeated .ALCMFKHLGHG level_info_list = 13;</code>
+       * <code>repeated .ALCMFKHLGHG level_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ALCMFKHLGHGOuterClass.ALCMFKHLGHG.Builder> 
            getLevelInfoListBuilderList() {
@@ -822,7 +822,7 @@ public final class OAKCNCLBBMIOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021OAKCNCLBBMI.proto\032\021ALCMFKHLGHG.proto\"4" +
-      "\n\013OAKCNCLBBMI\022%\n\017level_info_list\030\r \003(\0132\014" +
+      "\n\013OAKCNCLBBMI\022%\n\017level_info_list\030\004 \003(\0132\014" +
       ".ALCMFKHLGHGB2\n\031emu.grasscutter.net.prot" +
       "oB\025OAKCNCLBBMIOuterClassb\006proto3"
     };

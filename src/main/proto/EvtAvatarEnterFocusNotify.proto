@@ -7,19 +7,19 @@ import "ForwardType.proto";
 import "Vector.proto";
 
 message EvtAvatarEnterFocusNotify {
-	int32 IMMFFEBPCJM = 12;
+	int32 IMMFFEBPCJM = 1;
 	bool ogolkmlffhe = 50000;
-	bool CFNHGMLGPHP = 50001;
-	ForwardType forward_type = 15;
+	bool CFNHGMLGPHP = 20011;
+	ForwardType forward_type = 14;
 	bool gmlebihpokd = 50002;
-	bool HFFPEFBLBPC = 50003;
+	bool HFFPEFBLBPC = 20009;
 	bool mdmoimdcopf = 50004;
 	bool egblcmolomc = 50005;
 	bool dbphfokbncp = 50006;
 	bool oemkcenfmim = 50007;
-	bool ADMFCLBHILF = 50008;
-	uint32 entity_id = 10;
-	bool FDCDPKDKNAL = 50009;
-	Vector focus_forward = 9;
+	bool ADMFCLBHILF = 20006;
+	uint32 entity_id = 3;
+	bool FDCDPKDKNAL = 20008;
+	Vector focus_forward = 10;
 	bool pbhffghhpma = 50010;
 }

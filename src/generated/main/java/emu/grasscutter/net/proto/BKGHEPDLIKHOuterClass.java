@@ -19,13 +19,13 @@ public final class BKGHEPDLIKHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 7;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -75,14 +75,14 @@ public final class BKGHEPDLIKHOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 88: {
+            case 8: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class BKGHEPDLIKHOuterClass {
               emu.grasscutter.net.proto.BKGHEPDLIKHOuterClass.BKGHEPDLIKH.class, emu.grasscutter.net.proto.BKGHEPDLIKHOuterClass.BKGHEPDLIKH.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 7;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 7;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class BKGHEPDLIKHOuterClass {
       return isOpen_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class BKGHEPDLIKHOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(7, isOpen_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeUInt32(1, levelId_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(2, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class BKGHEPDLIKHOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isOpen_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeUInt32Size(1, levelId_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class BKGHEPDLIKHOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class BKGHEPDLIKHOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class BKGHEPDLIKHOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -492,7 +492,7 @@ public final class BKGHEPDLIKHOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class BKGHEPDLIKHOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class BKGHEPDLIKHOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -588,7 +588,7 @@ public final class BKGHEPDLIKHOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021BKGHEPDLIKH.proto\"0\n\013BKGHEPDLIKH\022\017\n\007is" +
-      "_open\030\007 \001(\010\022\020\n\010level_id\030\013 \001(\rB2\n\031emu.gra" +
+      "_open\030\002 \001(\010\022\020\n\010level_id\030\001 \001(\rB2\n\031emu.gra" +
       "sscutter.net.protoB\025BKGHEPDLIKHOuterClas" +
       "sb\006proto3"
     };

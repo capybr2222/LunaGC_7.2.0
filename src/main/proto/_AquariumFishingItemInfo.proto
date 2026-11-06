@@ -4,8 +4,8 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "_AquariumFishingItemInfoOuterClass";
 
 message _AquariumFishingItemInfo {
-	uint32 item_id = 4;
-	uint32 EENNPDEJDJC = 5;
-	uint32 count = 1;
-	bool _is_first_capture = 6;
+	uint32 item_id = 13;
+	uint32 EENNPDEJDJC = 20000;
+	uint32 count = 7;
+	bool _is_first_capture = 10;
 }

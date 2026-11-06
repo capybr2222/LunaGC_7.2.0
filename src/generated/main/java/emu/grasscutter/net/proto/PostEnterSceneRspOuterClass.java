@@ -25,7 +25,7 @@ public final class PostEnterSceneRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint32 enter_scene_token = 8;</code>
+     * <code>uint32 enter_scene_token = 2;</code>
      * @return The enterSceneToken.
      */
     int getEnterSceneToken();
@@ -75,14 +75,14 @@ public final class PostEnterSceneRspOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              enterSceneToken_ = input.readUInt32();
+              break;
+            }
             case 48: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
-
-              enterSceneToken_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class PostEnterSceneRspOuterClass {
       return retcode_;
     }
 
-    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 8;
+    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 2;
     private int enterSceneToken_;
     /**
-     * <code>uint32 enter_scene_token = 8;</code>
+     * <code>uint32 enter_scene_token = 2;</code>
      * @return The enterSceneToken.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class PostEnterSceneRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (enterSceneToken_ != 0) {
+        output.writeUInt32(2, enterSceneToken_);
+      }
       if (retcode_ != 0) {
         output.writeInt32(6, retcode_);
-      }
-      if (enterSceneToken_ != 0) {
-        output.writeUInt32(8, enterSceneToken_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class PostEnterSceneRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (enterSceneToken_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, enterSceneToken_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(6, retcode_);
-      }
-      if (enterSceneToken_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, enterSceneToken_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -491,7 +491,7 @@ public final class PostEnterSceneRspOuterClass {
 
       private int enterSceneToken_ ;
       /**
-       * <code>uint32 enter_scene_token = 8;</code>
+       * <code>uint32 enter_scene_token = 2;</code>
        * @return The enterSceneToken.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class PostEnterSceneRspOuterClass {
         return enterSceneToken_;
       }
       /**
-       * <code>uint32 enter_scene_token = 8;</code>
+       * <code>uint32 enter_scene_token = 2;</code>
        * @param value The enterSceneToken to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class PostEnterSceneRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 enter_scene_token = 8;</code>
+       * <code>uint32 enter_scene_token = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearEnterSceneToken() {
@@ -588,7 +588,7 @@ public final class PostEnterSceneRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027PostEnterSceneRsp.proto\"?\n\021PostEnterSc" +
       "eneRsp\022\017\n\007retcode\030\006 \001(\005\022\031\n\021enter_scene_t" +
-      "oken\030\010 \001(\rB8\n\031emu.grasscutter.net.protoB" +
+      "oken\030\002 \001(\rB8\n\031emu.grasscutter.net.protoB" +
       "\033PostEnterSceneRspOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

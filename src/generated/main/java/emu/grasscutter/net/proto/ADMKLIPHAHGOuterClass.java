@@ -19,7 +19,7 @@ public final class ADMKLIPHAHGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HFMJFHBOGDB = 50000;</code>
+     * <code>uint32 HFMJFHBOGDB = 6;</code>
      * @return The hFMJFHBOGDB.
      */
     int getHFMJFHBOGDB();
@@ -31,13 +31,13 @@ public final class ADMKLIPHAHGOuterClass {
     int getConfigId();
 
     /**
-     * <code>uint32 DOAOCNIJGNK = 50001;</code>
+     * <code>uint32 DOAOCNIJGNK = 12;</code>
      * @return The dOAOCNIJGNK.
      */
     int getDOAOCNIJGNK();
 
     /**
-     * <code>uint32 FJDBPKDKOEF = 50002;</code>
+     * <code>uint32 FJDBPKDKOEF = 13;</code>
      * @return The fJDBPKDKOEF.
      */
     int getFJDBPKDKOEF();
@@ -93,29 +93,29 @@ public final class ADMKLIPHAHGOuterClass {
             case 0:
               done = true;
               break;
+            case 48: {
+
+              hFMJFHBOGDB_ = input.readUInt32();
+              break;
+            }
             case 80: {
 
               configId_ = input.readUInt32();
               break;
             }
-            case 112: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
-
-              hFMJFHBOGDB_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
+            case 96: {
 
               dOAOCNIJGNK_ = input.readUInt32();
               break;
             }
-            case 400016: {
+            case 104: {
 
               fJDBPKDKOEF_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,10 +150,10 @@ public final class ADMKLIPHAHGOuterClass {
               emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.class, emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder.class);
     }
 
-    public static final int HFMJFHBOGDB_FIELD_NUMBER = 50000;
+    public static final int HFMJFHBOGDB_FIELD_NUMBER = 6;
     private int hFMJFHBOGDB_;
     /**
-     * <code>uint32 HFMJFHBOGDB = 50000;</code>
+     * <code>uint32 HFMJFHBOGDB = 6;</code>
      * @return The hFMJFHBOGDB.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class ADMKLIPHAHGOuterClass {
       return configId_;
     }
 
-    public static final int DOAOCNIJGNK_FIELD_NUMBER = 50001;
+    public static final int DOAOCNIJGNK_FIELD_NUMBER = 12;
     private int dOAOCNIJGNK_;
     /**
-     * <code>uint32 DOAOCNIJGNK = 50001;</code>
+     * <code>uint32 DOAOCNIJGNK = 12;</code>
      * @return The dOAOCNIJGNK.
      */
     @java.lang.Override
@@ -183,10 +183,10 @@ public final class ADMKLIPHAHGOuterClass {
       return dOAOCNIJGNK_;
     }
 
-    public static final int FJDBPKDKOEF_FIELD_NUMBER = 50002;
+    public static final int FJDBPKDKOEF_FIELD_NUMBER = 13;
     private int fJDBPKDKOEF_;
     /**
-     * <code>uint32 FJDBPKDKOEF = 50002;</code>
+     * <code>uint32 FJDBPKDKOEF = 13;</code>
      * @return The fJDBPKDKOEF.
      */
     @java.lang.Override
@@ -219,20 +219,20 @@ public final class ADMKLIPHAHGOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (hFMJFHBOGDB_ != 0) {
+        output.writeUInt32(6, hFMJFHBOGDB_);
+      }
       if (configId_ != 0) {
         output.writeUInt32(10, configId_);
       }
-      if (groupId_ != 0) {
-        output.writeUInt32(14, groupId_);
-      }
-      if (hFMJFHBOGDB_ != 0) {
-        output.writeUInt32(50000, hFMJFHBOGDB_);
-      }
       if (dOAOCNIJGNK_ != 0) {
-        output.writeUInt32(50001, dOAOCNIJGNK_);
+        output.writeUInt32(12, dOAOCNIJGNK_);
       }
       if (fJDBPKDKOEF_ != 0) {
-        output.writeUInt32(50002, fJDBPKDKOEF_);
+        output.writeUInt32(13, fJDBPKDKOEF_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(14, groupId_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class ADMKLIPHAHGOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (hFMJFHBOGDB_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, hFMJFHBOGDB_);
+      }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, configId_);
       }
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, groupId_);
-      }
-      if (hFMJFHBOGDB_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, hFMJFHBOGDB_);
-      }
       if (dOAOCNIJGNK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, dOAOCNIJGNK_);
+          .computeUInt32Size(12, dOAOCNIJGNK_);
       }
       if (fJDBPKDKOEF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50002, fJDBPKDKOEF_);
+          .computeUInt32Size(13, fJDBPKDKOEF_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, groupId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -577,7 +577,7 @@ public final class ADMKLIPHAHGOuterClass {
 
       private int hFMJFHBOGDB_ ;
       /**
-       * <code>uint32 HFMJFHBOGDB = 50000;</code>
+       * <code>uint32 HFMJFHBOGDB = 6;</code>
        * @return The hFMJFHBOGDB.
        */
       @java.lang.Override
@@ -585,7 +585,7 @@ public final class ADMKLIPHAHGOuterClass {
         return hFMJFHBOGDB_;
       }
       /**
-       * <code>uint32 HFMJFHBOGDB = 50000;</code>
+       * <code>uint32 HFMJFHBOGDB = 6;</code>
        * @param value The hFMJFHBOGDB to set.
        * @return This builder for chaining.
        */
@@ -596,7 +596,7 @@ public final class ADMKLIPHAHGOuterClass {
         return this;
       }
       /**
-       * <code>uint32 HFMJFHBOGDB = 50000;</code>
+       * <code>uint32 HFMJFHBOGDB = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearHFMJFHBOGDB() {
@@ -639,7 +639,7 @@ public final class ADMKLIPHAHGOuterClass {
 
       private int dOAOCNIJGNK_ ;
       /**
-       * <code>uint32 DOAOCNIJGNK = 50001;</code>
+       * <code>uint32 DOAOCNIJGNK = 12;</code>
        * @return The dOAOCNIJGNK.
        */
       @java.lang.Override
@@ -647,7 +647,7 @@ public final class ADMKLIPHAHGOuterClass {
         return dOAOCNIJGNK_;
       }
       /**
-       * <code>uint32 DOAOCNIJGNK = 50001;</code>
+       * <code>uint32 DOAOCNIJGNK = 12;</code>
        * @param value The dOAOCNIJGNK to set.
        * @return This builder for chaining.
        */
@@ -658,7 +658,7 @@ public final class ADMKLIPHAHGOuterClass {
         return this;
       }
       /**
-       * <code>uint32 DOAOCNIJGNK = 50001;</code>
+       * <code>uint32 DOAOCNIJGNK = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearDOAOCNIJGNK() {
@@ -670,7 +670,7 @@ public final class ADMKLIPHAHGOuterClass {
 
       private int fJDBPKDKOEF_ ;
       /**
-       * <code>uint32 FJDBPKDKOEF = 50002;</code>
+       * <code>uint32 FJDBPKDKOEF = 13;</code>
        * @return The fJDBPKDKOEF.
        */
       @java.lang.Override
@@ -678,7 +678,7 @@ public final class ADMKLIPHAHGOuterClass {
         return fJDBPKDKOEF_;
       }
       /**
-       * <code>uint32 FJDBPKDKOEF = 50002;</code>
+       * <code>uint32 FJDBPKDKOEF = 13;</code>
        * @param value The fJDBPKDKOEF to set.
        * @return This builder for chaining.
        */
@@ -689,7 +689,7 @@ public final class ADMKLIPHAHGOuterClass {
         return this;
       }
       /**
-       * <code>uint32 FJDBPKDKOEF = 50002;</code>
+       * <code>uint32 FJDBPKDKOEF = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearFJDBPKDKOEF() {
@@ -796,11 +796,11 @@ public final class ADMKLIPHAHGOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021ADMKLIPHAHG.proto\"w\n\013ADMKLIPHAHG\022\025\n\013HF" +
-      "MJFHBOGDB\030\320\206\003 \001(\r\022\021\n\tconfig_id\030\n \001(\r\022\025\n\013" +
-      "DOAOCNIJGNK\030\321\206\003 \001(\r\022\025\n\013FJDBPKDKOEF\030\322\206\003 \001" +
-      "(\r\022\020\n\010group_id\030\016 \001(\rB2\n\031emu.grasscutter." +
-      "net.protoB\025ADMKLIPHAHGOuterClassb\006proto3"
+      "\n\021ADMKLIPHAHG.proto\"q\n\013ADMKLIPHAHG\022\023\n\013HF" +
+      "MJFHBOGDB\030\006 \001(\r\022\021\n\tconfig_id\030\n \001(\r\022\023\n\013DO" +
+      "AOCNIJGNK\030\014 \001(\r\022\023\n\013FJDBPKDKOEF\030\r \001(\r\022\020\n\010" +
+      "group_id\030\016 \001(\rB2\n\031emu.grasscutter.net.pr" +
+      "otoB\025ADMKLIPHAHGOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

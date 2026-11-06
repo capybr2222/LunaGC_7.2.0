@@ -48,17 +48,17 @@ public final class NPLDPCGLKMKOuterClass {
     boolean getIsFinish();
 
     /**
-     * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+     * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
      * @return A list containing the jFAEGBAKLOB.
      */
     java.util.List<java.lang.Integer> getJFAEGBAKLOBList();
     /**
-     * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+     * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
      * @return The count of jFAEGBAKLOB.
      */
     int getJFAEGBAKLOBCount();
     /**
-     * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+     * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
      * @param index The index of the element to return.
      * @return The jFAEGBAKLOB at the given index.
      */
@@ -94,17 +94,17 @@ public final class NPLDPCGLKMKOuterClass {
     boolean getIsOpen();
 
     /**
-     * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+     * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
      * @return A list containing the aHAPLEIGAPI.
      */
     java.util.List<java.lang.Integer> getAHAPLEIGAPIList();
     /**
-     * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+     * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
      * @return The count of aHAPLEIGAPI.
      */
     int getAHAPLEIGAPICount();
     /**
-     * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+     * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
      * @param index The index of the element to return.
      * @return The aHAPLEIGAPI at the given index.
      */
@@ -222,7 +222,7 @@ public final class NPLDPCGLKMKOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 400000: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 jFAEGBAKLOB_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -230,7 +230,7 @@ public final class NPLDPCGLKMKOuterClass {
               jFAEGBAKLOB_.addInt(input.readUInt32());
               break;
             }
-            case 400002: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -243,7 +243,7 @@ public final class NPLDPCGLKMKOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 400008: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 aHAPLEIGAPI_ = newIntList();
                 mutable_bitField0_ |= 0x00000008;
@@ -251,7 +251,7 @@ public final class NPLDPCGLKMKOuterClass {
               aHAPLEIGAPI_.addInt(input.readUInt32());
               break;
             }
-            case 400010: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
@@ -358,10 +358,10 @@ public final class NPLDPCGLKMKOuterClass {
       return isFinish_;
     }
 
-    public static final int JFAEGBAKLOB_FIELD_NUMBER = 50000;
+    public static final int JFAEGBAKLOB_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList jFAEGBAKLOB_;
     /**
-     * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+     * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
      * @return A list containing the jFAEGBAKLOB.
      */
     @java.lang.Override
@@ -370,14 +370,14 @@ public final class NPLDPCGLKMKOuterClass {
       return jFAEGBAKLOB_;
     }
     /**
-     * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+     * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
      * @return The count of jFAEGBAKLOB.
      */
     public int getJFAEGBAKLOBCount() {
       return jFAEGBAKLOB_.size();
     }
     /**
-     * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+     * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
      * @param index The index of the element to return.
      * @return The jFAEGBAKLOB at the given index.
      */
@@ -436,10 +436,10 @@ public final class NPLDPCGLKMKOuterClass {
       return isOpen_;
     }
 
-    public static final int AHAPLEIGAPI_FIELD_NUMBER = 50001;
+    public static final int AHAPLEIGAPI_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList aHAPLEIGAPI_;
     /**
-     * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+     * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
      * @return A list containing the aHAPLEIGAPI.
      */
     @java.lang.Override
@@ -448,14 +448,14 @@ public final class NPLDPCGLKMKOuterClass {
       return aHAPLEIGAPI_;
     }
     /**
-     * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+     * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
      * @return The count of aHAPLEIGAPI.
      */
     public int getAHAPLEIGAPICount() {
       return aHAPLEIGAPI_.size();
     }
     /**
-     * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+     * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
      * @param index The index of the element to return.
      * @return The aHAPLEIGAPI at the given index.
      */
@@ -506,14 +506,14 @@ public final class NPLDPCGLKMKOuterClass {
         output.writeUInt32(9, levelId_);
       }
       if (getJFAEGBAKLOBList().size() > 0) {
-        output.writeUInt32NoTag(400002);
+        output.writeUInt32NoTag(106);
         output.writeUInt32NoTag(jFAEGBAKLOBMemoizedSerializedSize);
       }
       for (int i = 0; i < jFAEGBAKLOB_.size(); i++) {
         output.writeUInt32NoTag(jFAEGBAKLOB_.getInt(i));
       }
       if (getAHAPLEIGAPIList().size() > 0) {
-        output.writeUInt32NoTag(400010);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(aHAPLEIGAPIMemoizedSerializedSize);
       }
       for (int i = 0; i < aHAPLEIGAPI_.size(); i++) {
@@ -580,7 +580,7 @@ public final class NPLDPCGLKMKOuterClass {
         }
         size += dataSize;
         if (!getJFAEGBAKLOBList().isEmpty()) {
-          size += 3;
+          size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
@@ -594,7 +594,7 @@ public final class NPLDPCGLKMKOuterClass {
         }
         size += dataSize;
         if (!getAHAPLEIGAPIList().isEmpty()) {
-          size += 3;
+          size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
@@ -1147,7 +1147,7 @@ public final class NPLDPCGLKMKOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+       * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
        * @return A list containing the jFAEGBAKLOB.
        */
       public java.util.List<java.lang.Integer>
@@ -1156,14 +1156,14 @@ public final class NPLDPCGLKMKOuterClass {
                  java.util.Collections.unmodifiableList(jFAEGBAKLOB_) : jFAEGBAKLOB_;
       }
       /**
-       * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+       * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
        * @return The count of jFAEGBAKLOB.
        */
       public int getJFAEGBAKLOBCount() {
         return jFAEGBAKLOB_.size();
       }
       /**
-       * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+       * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
        * @param index The index of the element to return.
        * @return The jFAEGBAKLOB at the given index.
        */
@@ -1171,7 +1171,7 @@ public final class NPLDPCGLKMKOuterClass {
         return jFAEGBAKLOB_.getInt(index);
       }
       /**
-       * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+       * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
        * @param index The index to set the value at.
        * @param value The jFAEGBAKLOB to set.
        * @return This builder for chaining.
@@ -1184,7 +1184,7 @@ public final class NPLDPCGLKMKOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+       * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
        * @param value The jFAEGBAKLOB to add.
        * @return This builder for chaining.
        */
@@ -1195,7 +1195,7 @@ public final class NPLDPCGLKMKOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+       * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
        * @param values The jFAEGBAKLOB to add.
        * @return This builder for chaining.
        */
@@ -1208,7 +1208,7 @@ public final class NPLDPCGLKMKOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 JFAEGBAKLOB = 50000;</code>
+       * <code>repeated uint32 JFAEGBAKLOB = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearJFAEGBAKLOB() {
@@ -1367,7 +1367,7 @@ public final class NPLDPCGLKMKOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+       * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
        * @return A list containing the aHAPLEIGAPI.
        */
       public java.util.List<java.lang.Integer>
@@ -1376,14 +1376,14 @@ public final class NPLDPCGLKMKOuterClass {
                  java.util.Collections.unmodifiableList(aHAPLEIGAPI_) : aHAPLEIGAPI_;
       }
       /**
-       * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+       * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
        * @return The count of aHAPLEIGAPI.
        */
       public int getAHAPLEIGAPICount() {
         return aHAPLEIGAPI_.size();
       }
       /**
-       * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+       * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
        * @param index The index of the element to return.
        * @return The aHAPLEIGAPI at the given index.
        */
@@ -1391,7 +1391,7 @@ public final class NPLDPCGLKMKOuterClass {
         return aHAPLEIGAPI_.getInt(index);
       }
       /**
-       * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+       * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
        * @param index The index to set the value at.
        * @param value The aHAPLEIGAPI to set.
        * @return This builder for chaining.
@@ -1404,7 +1404,7 @@ public final class NPLDPCGLKMKOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+       * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
        * @param value The aHAPLEIGAPI to add.
        * @return This builder for chaining.
        */
@@ -1415,7 +1415,7 @@ public final class NPLDPCGLKMKOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+       * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
        * @param values The aHAPLEIGAPI to add.
        * @return This builder for chaining.
        */
@@ -1428,7 +1428,7 @@ public final class NPLDPCGLKMKOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AHAPLEIGAPI = 50001;</code>
+       * <code>repeated uint32 AHAPLEIGAPI = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearAHAPLEIGAPI() {
@@ -1504,13 +1504,13 @@ public final class NPLDPCGLKMKOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021NPLDPCGLKMK.proto\"\252\001\n\013NPLDPCGLKMK\022\023\n\013B" +
+      "\n\021NPLDPCGLKMK.proto\"\246\001\n\013NPLDPCGLKMK\022\023\n\013B" +
       "GKNOBGMOIP\030\004 \003(\r\022\020\n\010level_id\030\t \001(\r\022\021\n\tis" +
-      "_finish\030\006 \001(\010\022\025\n\013JFAEGBAKLOB\030\320\206\003 \003(\r\022\023\n\013" +
-      "EBFKBDLLJGC\030\005 \003(\r\022\r\n\005score\030\010 \001(\r\022\017\n\007is_o" +
-      "pen\030\003 \001(\010\022\025\n\013AHAPLEIGAPI\030\321\206\003 \003(\rB2\n\031emu." +
-      "grasscutter.net.protoB\025NPLDPCGLKMKOuterC" +
-      "lassb\006proto3"
+      "_finish\030\006 \001(\010\022\023\n\013JFAEGBAKLOB\030\r \003(\r\022\023\n\013EB" +
+      "FKBDLLJGC\030\005 \003(\r\022\r\n\005score\030\010 \001(\r\022\017\n\007is_ope" +
+      "n\030\003 \001(\010\022\023\n\013AHAPLEIGAPI\030\017 \003(\rB2\n\031emu.gras" +
+      "scutter.net.protoB\025NPLDPCGLKMKOuterClass" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

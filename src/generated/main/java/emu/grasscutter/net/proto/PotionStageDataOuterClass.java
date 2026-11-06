@@ -19,70 +19,70 @@ public final class PotionStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+     * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
      * @return A list containing the hLFNHDFMEEL.
      */
     java.util.List<java.lang.Integer> getHLFNHDFMEELList();
     /**
-     * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+     * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
      * @return The count of hLFNHDFMEEL.
      */
     int getHLFNHDFMEELCount();
     /**
-     * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+     * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
      * @param index The index of the element to return.
      * @return The hLFNHDFMEEL at the given index.
      */
     int getHLFNHDFMEEL(int index);
 
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> 
         getLevelListList();
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData getLevelList(int index);
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     int getLevelListCount();
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> 
         getLevelListOrBuilderList();
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder getLevelListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 stage_id = 2;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+     * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
      * @return A list containing the mDEMNAHABEN.
      */
     java.util.List<java.lang.Integer> getMDEMNAHABENList();
     /**
-     * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+     * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
      * @return The count of mDEMNAHABEN.
      */
     int getMDEMNAHABENCount();
     /**
-     * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+     * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
      * @param index The index of the element to return.
      * @return The mDEMNAHABEN at the given index.
      */
@@ -137,17 +137,17 @@ public final class PotionStageDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 82: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 levelList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData>();
                 mutable_bitField0_ |= 0x00000002;
@@ -156,7 +156,7 @@ public final class PotionStageDataOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.parser(), extensionRegistry));
               break;
             }
-            case 400000: {
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hLFNHDFMEEL_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -164,7 +164,7 @@ public final class PotionStageDataOuterClass {
               hLFNHDFMEEL_.addInt(input.readUInt32());
               break;
             }
-            case 400002: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -177,7 +177,7 @@ public final class PotionStageDataOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 400008: {
+            case 160008: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 mDEMNAHABEN_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
@@ -185,7 +185,7 @@ public final class PotionStageDataOuterClass {
               mDEMNAHABEN_.addInt(input.readUInt32());
               break;
             }
-            case 400010: {
+            case 160010: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
@@ -239,10 +239,10 @@ public final class PotionStageDataOuterClass {
               emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.class, emu.grasscutter.net.proto.PotionStageDataOuterClass.PotionStageData.Builder.class);
     }
 
-    public static final int HLFNHDFMEEL_FIELD_NUMBER = 50000;
+    public static final int HLFNHDFMEEL_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList hLFNHDFMEEL_;
     /**
-     * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+     * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
      * @return A list containing the hLFNHDFMEEL.
      */
     @java.lang.Override
@@ -251,14 +251,14 @@ public final class PotionStageDataOuterClass {
       return hLFNHDFMEEL_;
     }
     /**
-     * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+     * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
      * @return The count of hLFNHDFMEEL.
      */
     public int getHLFNHDFMEELCount() {
       return hLFNHDFMEEL_.size();
     }
     /**
-     * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+     * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
      * @param index The index of the element to return.
      * @return The hLFNHDFMEEL at the given index.
      */
@@ -267,10 +267,10 @@ public final class PotionStageDataOuterClass {
     }
     private int hLFNHDFMEELMemoizedSerializedSize = -1;
 
-    public static final int IS_OPEN_FIELD_NUMBER = 6;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 6;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -278,17 +278,17 @@ public final class PotionStageDataOuterClass {
       return isOpen_;
     }
 
-    public static final int LEVEL_LIST_FIELD_NUMBER = 10;
+    public static final int LEVEL_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> levelList_;
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> getLevelListList() {
       return levelList_;
     }
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> 
@@ -296,21 +296,21 @@ public final class PotionStageDataOuterClass {
       return levelList_;
     }
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     @java.lang.Override
     public int getLevelListCount() {
       return levelList_.size();
     }
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData getLevelList(int index) {
       return levelList_.get(index);
     }
     /**
-     * <code>repeated .PotionLevelData level_list = 10;</code>
+     * <code>repeated .PotionLevelData level_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder getLevelListOrBuilder(
@@ -318,10 +318,10 @@ public final class PotionStageDataOuterClass {
       return levelList_.get(index);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 2;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -329,10 +329,10 @@ public final class PotionStageDataOuterClass {
       return stageId_;
     }
 
-    public static final int MDEMNAHABEN_FIELD_NUMBER = 50001;
+    public static final int MDEMNAHABEN_FIELD_NUMBER = 20001;
     private com.google.protobuf.Internal.IntList mDEMNAHABEN_;
     /**
-     * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+     * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
      * @return A list containing the mDEMNAHABEN.
      */
     @java.lang.Override
@@ -341,14 +341,14 @@ public final class PotionStageDataOuterClass {
       return mDEMNAHABEN_;
     }
     /**
-     * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+     * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
      * @return The count of mDEMNAHABEN.
      */
     public int getMDEMNAHABENCount() {
       return mDEMNAHABEN_.size();
     }
     /**
-     * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+     * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
      * @param index The index of the element to return.
      * @return The mDEMNAHABEN at the given index.
      */
@@ -373,23 +373,23 @@ public final class PotionStageDataOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (stageId_ != 0) {
-        output.writeUInt32(2, stageId_);
+        output.writeUInt32(1, stageId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(6, isOpen_);
+        output.writeBool(2, isOpen_);
       }
       for (int i = 0; i < levelList_.size(); i++) {
-        output.writeMessage(10, levelList_.get(i));
+        output.writeMessage(5, levelList_.get(i));
       }
       if (getHLFNHDFMEELList().size() > 0) {
-        output.writeUInt32NoTag(400002);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(hLFNHDFMEELMemoizedSerializedSize);
       }
       for (int i = 0; i < hLFNHDFMEEL_.size(); i++) {
         output.writeUInt32NoTag(hLFNHDFMEEL_.getInt(i));
       }
       if (getMDEMNAHABENList().size() > 0) {
-        output.writeUInt32NoTag(400010);
+        output.writeUInt32NoTag(160010);
         output.writeUInt32NoTag(mDEMNAHABENMemoizedSerializedSize);
       }
       for (int i = 0; i < mDEMNAHABEN_.size(); i++) {
@@ -406,15 +406,15 @@ public final class PotionStageDataOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, stageId_);
+          .computeUInt32Size(1, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isOpen_);
+          .computeBoolSize(2, isOpen_);
       }
       for (int i = 0; i < levelList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, levelList_.get(i));
+          .computeMessageSize(5, levelList_.get(i));
       }
       {
         int dataSize = 0;
@@ -831,7 +831,7 @@ public final class PotionStageDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+       * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
        * @return A list containing the hLFNHDFMEEL.
        */
       public java.util.List<java.lang.Integer>
@@ -840,14 +840,14 @@ public final class PotionStageDataOuterClass {
                  java.util.Collections.unmodifiableList(hLFNHDFMEEL_) : hLFNHDFMEEL_;
       }
       /**
-       * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+       * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
        * @return The count of hLFNHDFMEEL.
        */
       public int getHLFNHDFMEELCount() {
         return hLFNHDFMEEL_.size();
       }
       /**
-       * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+       * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
        * @param index The index of the element to return.
        * @return The hLFNHDFMEEL at the given index.
        */
@@ -855,7 +855,7 @@ public final class PotionStageDataOuterClass {
         return hLFNHDFMEEL_.getInt(index);
       }
       /**
-       * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+       * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
        * @param index The index to set the value at.
        * @param value The hLFNHDFMEEL to set.
        * @return This builder for chaining.
@@ -868,7 +868,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+       * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
        * @param value The hLFNHDFMEEL to add.
        * @return This builder for chaining.
        */
@@ -879,7 +879,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+       * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
        * @param values The hLFNHDFMEEL to add.
        * @return This builder for chaining.
        */
@@ -892,7 +892,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 HLFNHDFMEEL = 50000;</code>
+       * <code>repeated uint32 HLFNHDFMEEL = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearHLFNHDFMEEL() {
@@ -904,7 +904,7 @@ public final class PotionStageDataOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -912,7 +912,7 @@ public final class PotionStageDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -923,7 +923,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 6;</code>
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -946,7 +946,7 @@ public final class PotionStageDataOuterClass {
           emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> levelListBuilder_;
 
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> getLevelListList() {
         if (levelListBuilder_ == null) {
@@ -956,7 +956,7 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public int getLevelListCount() {
         if (levelListBuilder_ == null) {
@@ -966,7 +966,7 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData getLevelList(int index) {
         if (levelListBuilder_ == null) {
@@ -976,7 +976,7 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder setLevelList(
           int index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData value) {
@@ -993,7 +993,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder setLevelList(
           int index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder builderForValue) {
@@ -1007,7 +1007,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder addLevelList(emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData value) {
         if (levelListBuilder_ == null) {
@@ -1023,7 +1023,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder addLevelList(
           int index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData value) {
@@ -1040,7 +1040,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder addLevelList(
           emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder builderForValue) {
@@ -1054,7 +1054,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder addLevelList(
           int index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder builderForValue) {
@@ -1068,7 +1068,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder addAllLevelList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData> values) {
@@ -1083,7 +1083,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder clearLevelList() {
         if (levelListBuilder_ == null) {
@@ -1096,7 +1096,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public Builder removeLevelList(int index) {
         if (levelListBuilder_ == null) {
@@ -1109,14 +1109,14 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder getLevelListBuilder(
           int index) {
         return getLevelListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder getLevelListOrBuilder(
           int index) {
@@ -1126,7 +1126,7 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelDataOrBuilder> 
            getLevelListOrBuilderList() {
@@ -1137,14 +1137,14 @@ public final class PotionStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder addLevelListBuilder() {
         return getLevelListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder addLevelListBuilder(
           int index) {
@@ -1152,7 +1152,7 @@ public final class PotionStageDataOuterClass {
             index, emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.getDefaultInstance());
       }
       /**
-       * <code>repeated .PotionLevelData level_list = 10;</code>
+       * <code>repeated .PotionLevelData level_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.PotionLevelDataOuterClass.PotionLevelData.Builder> 
            getLevelListBuilderList() {
@@ -1175,7 +1175,7 @@ public final class PotionStageDataOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -1183,7 +1183,7 @@ public final class PotionStageDataOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -1194,7 +1194,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -1212,7 +1212,7 @@ public final class PotionStageDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+       * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
        * @return A list containing the mDEMNAHABEN.
        */
       public java.util.List<java.lang.Integer>
@@ -1221,14 +1221,14 @@ public final class PotionStageDataOuterClass {
                  java.util.Collections.unmodifiableList(mDEMNAHABEN_) : mDEMNAHABEN_;
       }
       /**
-       * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+       * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
        * @return The count of mDEMNAHABEN.
        */
       public int getMDEMNAHABENCount() {
         return mDEMNAHABEN_.size();
       }
       /**
-       * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+       * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
        * @param index The index of the element to return.
        * @return The mDEMNAHABEN at the given index.
        */
@@ -1236,7 +1236,7 @@ public final class PotionStageDataOuterClass {
         return mDEMNAHABEN_.getInt(index);
       }
       /**
-       * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+       * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
        * @param index The index to set the value at.
        * @param value The mDEMNAHABEN to set.
        * @return This builder for chaining.
@@ -1249,7 +1249,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+       * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
        * @param value The mDEMNAHABEN to add.
        * @return This builder for chaining.
        */
@@ -1260,7 +1260,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+       * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
        * @param values The mDEMNAHABEN to add.
        * @return This builder for chaining.
        */
@@ -1273,7 +1273,7 @@ public final class PotionStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 MDEMNAHABEN = 50001;</code>
+       * <code>repeated uint32 MDEMNAHABEN = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearMDEMNAHABEN() {
@@ -1351,9 +1351,9 @@ public final class PotionStageDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\025PotionStageData.proto\032\025PotionLevelData" +
       ".proto\"\210\001\n\017PotionStageData\022\025\n\013HLFNHDFMEE" +
-      "L\030\320\206\003 \003(\r\022\017\n\007is_open\030\006 \001(\010\022$\n\nlevel_list" +
-      "\030\n \003(\0132\020.PotionLevelData\022\020\n\010stage_id\030\002 \001" +
-      "(\r\022\025\n\013MDEMNAHABEN\030\321\206\003 \003(\rB6\n\031emu.grasscu" +
+      "L\030\240\234\001 \003(\r\022\017\n\007is_open\030\002 \001(\010\022$\n\nlevel_list" +
+      "\030\005 \003(\0132\020.PotionLevelData\022\020\n\010stage_id\030\001 \001" +
+      "(\r\022\025\n\013MDEMNAHABEN\030\241\234\001 \003(\rB6\n\031emu.grasscu" +
       "tter.net.protoB\031PotionStageDataOuterClas" +
       "sb\006proto3"
     };

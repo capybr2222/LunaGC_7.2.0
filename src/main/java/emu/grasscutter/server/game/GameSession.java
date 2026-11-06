@@ -24,9 +24,11 @@ public class GameSession implements GameSessionManager.KcpChannel {
     @Getter private Player player;
 
     @Getter private long encryptSeed = Crypto.ENCRYPT_SEED;
-    private byte[] encryptKey = Crypto.ENCRYPT_KEY;
+    private volatile byte[] encryptKey = Crypto.ENCRYPT_KEY;
 
-    @Setter private boolean useSecretKey;
+    private final Object sendLock = new Object();
+
+    @Setter private volatile boolean useSecretKey;
 
     private boolean reportedBadMagic;
 
@@ -107,7 +109,8 @@ public class GameSession implements GameSessionManager.KcpChannel {
     public void logPacket(String sendOrRecv, int opcode, byte[] payload) {
         if (MUTED_LOG_OPCODES.contains(opcode)) return;
         Grasscutter.getLogger()
-                .info(sendOrRecv + ": " + PacketOpcodesUtils.getOpcodeName(opcode) + " (" + opcode + ")");
+                .info(sendOrRecv + ": " + PacketOpcodesUtils.getOpcodeName(opcode) + " (" + opcode + ")"
+                        + " " + (payload == null ? 0 : payload.length) + "b");
         if (GAME_INFO.isShowPacketPayload) System.out.println(Utils.bytesToHex(payload));
     }
 
@@ -165,13 +168,27 @@ public class GameSession implements GameSessionManager.KcpChannel {
         if (!event.isCanceled()) {
             try {
                 packet = event.getPacket();
-                var bytes = packet.build();
-                if (packet.shouldEncrypt) {
-                    if (Grasscutter.getConfig().server.game.useXorEncryption) {
-                        Crypto.xor(bytes, packet.useDispatchKey() || !useSecretKey() ? Crypto.DISPATCH_KEY : this.encryptKey);
+                synchronized (this.sendLock) {
+                    var bytes = packet.build();
+                    if (bytes.length > GameServer.KCP_MAX_MESSAGE) {
+                        Grasscutter.getLogger()
+                                .error(
+                                        "{} is {} bytes, over the {} byte KCP limit - not sending it.",
+                                        PacketOpcodesUtils.getOpcodeName(packet.getOpcode()),
+                                        bytes.length,
+                                        GameServer.KCP_MAX_MESSAGE);
+                        return;
                     }
+                    if (packet.shouldEncrypt
+                            && Grasscutter.getConfig().server.game.useXorEncryption) {
+                        Crypto.xor(
+                                bytes,
+                                packet.useDispatchKey() || !useSecretKey()
+                                        ? Crypto.DISPATCH_KEY
+                                        : this.encryptKey);
+                    }
+                    tunnel.writeData(bytes);
                 }
-                tunnel.writeData(bytes);
             } catch (Exception ignored) {
                 Grasscutter.getLogger().debug("Unable to send packet to client.");
             }

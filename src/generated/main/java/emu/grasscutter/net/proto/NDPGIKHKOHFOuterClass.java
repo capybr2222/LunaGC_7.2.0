@@ -19,19 +19,19 @@ public final class NDPGIKHKOHFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 6;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 NHEFNKONPEI = 9;</code>
+     * <code>uint32 NHEFNKONPEI = 50000;</code>
      * @return The nHEFNKONPEI.
      */
     int getNHEFNKONPEI();
 
     /**
-     * <code>uint32 MCBOJPBIBID = 7;</code>
+     * <code>uint32 MCBOJPBIBID = 20000;</code>
      * @return The mCBOJPBIBID.
      */
     int getMCBOJPBIBID();
@@ -113,19 +113,14 @@ public final class NDPGIKHKOHFOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 48: {
+            case 8: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 16: {
 
-              mCBOJPBIBID_ = input.readUInt32();
+              isOpen_ = input.readBool();
               break;
             }
             case 66: {
@@ -137,7 +132,12 @@ public final class NDPGIKHKOHFOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.PFPIOBPBJMMOuterClass.PFPIOBPBJMM.parser(), extensionRegistry));
               break;
             }
-            case 72: {
+            case 160000: {
+
+              mCBOJPBIBID_ = input.readUInt32();
+              break;
+            }
+            case 400000: {
 
               nHEFNKONPEI_ = input.readUInt32();
               break;
@@ -177,10 +177,10 @@ public final class NDPGIKHKOHFOuterClass {
               emu.grasscutter.net.proto.NDPGIKHKOHFOuterClass.NDPGIKHKOHF.class, emu.grasscutter.net.proto.NDPGIKHKOHFOuterClass.NDPGIKHKOHF.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 6;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 6;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -188,10 +188,10 @@ public final class NDPGIKHKOHFOuterClass {
       return stageId_;
     }
 
-    public static final int NHEFNKONPEI_FIELD_NUMBER = 9;
+    public static final int NHEFNKONPEI_FIELD_NUMBER = 50000;
     private int nHEFNKONPEI_;
     /**
-     * <code>uint32 NHEFNKONPEI = 9;</code>
+     * <code>uint32 NHEFNKONPEI = 50000;</code>
      * @return The nHEFNKONPEI.
      */
     @java.lang.Override
@@ -199,10 +199,10 @@ public final class NDPGIKHKOHFOuterClass {
       return nHEFNKONPEI_;
     }
 
-    public static final int MCBOJPBIBID_FIELD_NUMBER = 7;
+    public static final int MCBOJPBIBID_FIELD_NUMBER = 20000;
     private int mCBOJPBIBID_;
     /**
-     * <code>uint32 MCBOJPBIBID = 7;</code>
+     * <code>uint32 MCBOJPBIBID = 20000;</code>
      * @return The mCBOJPBIBID.
      */
     @java.lang.Override
@@ -275,20 +275,20 @@ public final class NDPGIKHKOHFOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (stageId_ != 0) {
+        output.writeUInt32(1, stageId_);
+      }
       if (isOpen_ != false) {
         output.writeBool(2, isOpen_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(6, stageId_);
-      }
-      if (mCBOJPBIBID_ != 0) {
-        output.writeUInt32(7, mCBOJPBIBID_);
       }
       for (int i = 0; i < avatarInfoList_.size(); i++) {
         output.writeMessage(8, avatarInfoList_.get(i));
       }
+      if (mCBOJPBIBID_ != 0) {
+        output.writeUInt32(20000, mCBOJPBIBID_);
+      }
       if (nHEFNKONPEI_ != 0) {
-        output.writeUInt32(9, nHEFNKONPEI_);
+        output.writeUInt32(50000, nHEFNKONPEI_);
       }
       unknownFields.writeTo(output);
     }
@@ -299,25 +299,25 @@ public final class NDPGIKHKOHFOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, stageId_);
+      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isOpen_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, stageId_);
-      }
-      if (mCBOJPBIBID_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, mCBOJPBIBID_);
       }
       for (int i = 0; i < avatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, avatarInfoList_.get(i));
       }
+      if (mCBOJPBIBID_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20000, mCBOJPBIBID_);
+      }
       if (nHEFNKONPEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, nHEFNKONPEI_);
+          .computeUInt32Size(50000, nHEFNKONPEI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -674,7 +674,7 @@ public final class NDPGIKHKOHFOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 6;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -682,7 +682,7 @@ public final class NDPGIKHKOHFOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 6;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -693,7 +693,7 @@ public final class NDPGIKHKOHFOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 6;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -705,7 +705,7 @@ public final class NDPGIKHKOHFOuterClass {
 
       private int nHEFNKONPEI_ ;
       /**
-       * <code>uint32 NHEFNKONPEI = 9;</code>
+       * <code>uint32 NHEFNKONPEI = 50000;</code>
        * @return The nHEFNKONPEI.
        */
       @java.lang.Override
@@ -713,7 +713,7 @@ public final class NDPGIKHKOHFOuterClass {
         return nHEFNKONPEI_;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 9;</code>
+       * <code>uint32 NHEFNKONPEI = 50000;</code>
        * @param value The nHEFNKONPEI to set.
        * @return This builder for chaining.
        */
@@ -724,7 +724,7 @@ public final class NDPGIKHKOHFOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 9;</code>
+       * <code>uint32 NHEFNKONPEI = 50000;</code>
        * @return This builder for chaining.
        */
       public Builder clearNHEFNKONPEI() {
@@ -736,7 +736,7 @@ public final class NDPGIKHKOHFOuterClass {
 
       private int mCBOJPBIBID_ ;
       /**
-       * <code>uint32 MCBOJPBIBID = 7;</code>
+       * <code>uint32 MCBOJPBIBID = 20000;</code>
        * @return The mCBOJPBIBID.
        */
       @java.lang.Override
@@ -744,7 +744,7 @@ public final class NDPGIKHKOHFOuterClass {
         return mCBOJPBIBID_;
       }
       /**
-       * <code>uint32 MCBOJPBIBID = 7;</code>
+       * <code>uint32 MCBOJPBIBID = 20000;</code>
        * @param value The mCBOJPBIBID to set.
        * @return This builder for chaining.
        */
@@ -755,7 +755,7 @@ public final class NDPGIKHKOHFOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MCBOJPBIBID = 7;</code>
+       * <code>uint32 MCBOJPBIBID = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearMCBOJPBIBID() {
@@ -1102,12 +1102,12 @@ public final class NDPGIKHKOHFOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021NDPGIKHKOHF.proto\032\021PFPIOBPBJMM.proto\"\202" +
-      "\001\n\013NDPGIKHKOHF\022\020\n\010stage_id\030\006 \001(\r\022\023\n\013NHEF" +
-      "NKONPEI\030\t \001(\r\022\023\n\013MCBOJPBIBID\030\007 \001(\r\022\017\n\007is" +
-      "_open\030\002 \001(\010\022&\n\020avatar_info_list\030\010 \003(\0132\014." +
-      "PFPIOBPBJMMB2\n\031emu.grasscutter.net.proto" +
-      "B\025NDPGIKHKOHFOuterClassb\006proto3"
+      "\n\021NDPGIKHKOHF.proto\032\021PFPIOBPBJMM.proto\"\206" +
+      "\001\n\013NDPGIKHKOHF\022\020\n\010stage_id\030\001 \001(\r\022\025\n\013NHEF" +
+      "NKONPEI\030\320\206\003 \001(\r\022\025\n\013MCBOJPBIBID\030\240\234\001 \001(\r\022\017" +
+      "\n\007is_open\030\002 \001(\010\022&\n\020avatar_info_list\030\010 \003(" +
+      "\0132\014.PFPIOBPBJMMB2\n\031emu.grasscutter.net.p" +
+      "rotoB\025NDPGIKHKOHFOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

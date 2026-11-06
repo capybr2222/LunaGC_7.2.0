@@ -19,24 +19,24 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 LIPNPNHELML = 11;</code>
+     * <code>repeated uint32 LIPNPNHELML = 20000;</code>
      * @return A list containing the lIPNPNHELML.
      */
     java.util.List<java.lang.Integer> getLIPNPNHELMLList();
     /**
-     * <code>repeated uint32 LIPNPNHELML = 11;</code>
+     * <code>repeated uint32 LIPNPNHELML = 20000;</code>
      * @return The count of lIPNPNHELML.
      */
     int getLIPNPNHELMLCount();
     /**
-     * <code>repeated uint32 LIPNPNHELML = 11;</code>
+     * <code>repeated uint32 LIPNPNHELML = 20000;</code>
      * @param index The index of the element to return.
      * @return The lIPNPNHELML at the given index.
      */
     int getLIPNPNHELML(int index);
 
     /**
-     * <code>bool LFAFBLMLCKG = 15;</code>
+     * <code>bool LFAFBLMLCKG = 9;</code>
      * @return The lFAFBLMLCKG.
      */
     boolean getLFAFBLMLCKG();
@@ -88,7 +88,12 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 72: {
+
+              lFAFBLMLCKG_ = input.readBool();
+              break;
+            }
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 lIPNPNHELML_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +101,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
               lIPNPNHELML_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -107,11 +112,6 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
                 lIPNPNHELML_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 120: {
-
-              lFAFBLMLCKG_ = input.readBool();
               break;
             }
             default: {
@@ -149,10 +149,10 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
               emu.grasscutter.net.proto._GCGPvePuzzleDetailInfoOuterClass._GCGPvePuzzleDetailInfo.class, emu.grasscutter.net.proto._GCGPvePuzzleDetailInfoOuterClass._GCGPvePuzzleDetailInfo.Builder.class);
     }
 
-    public static final int LIPNPNHELML_FIELD_NUMBER = 11;
+    public static final int LIPNPNHELML_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList lIPNPNHELML_;
     /**
-     * <code>repeated uint32 LIPNPNHELML = 11;</code>
+     * <code>repeated uint32 LIPNPNHELML = 20000;</code>
      * @return A list containing the lIPNPNHELML.
      */
     @java.lang.Override
@@ -161,14 +161,14 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
       return lIPNPNHELML_;
     }
     /**
-     * <code>repeated uint32 LIPNPNHELML = 11;</code>
+     * <code>repeated uint32 LIPNPNHELML = 20000;</code>
      * @return The count of lIPNPNHELML.
      */
     public int getLIPNPNHELMLCount() {
       return lIPNPNHELML_.size();
     }
     /**
-     * <code>repeated uint32 LIPNPNHELML = 11;</code>
+     * <code>repeated uint32 LIPNPNHELML = 20000;</code>
      * @param index The index of the element to return.
      * @return The lIPNPNHELML at the given index.
      */
@@ -177,10 +177,10 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
     }
     private int lIPNPNHELMLMemoizedSerializedSize = -1;
 
-    public static final int LFAFBLMLCKG_FIELD_NUMBER = 15;
+    public static final int LFAFBLMLCKG_FIELD_NUMBER = 9;
     private boolean lFAFBLMLCKG_;
     /**
-     * <code>bool LFAFBLMLCKG = 15;</code>
+     * <code>bool LFAFBLMLCKG = 9;</code>
      * @return The lFAFBLMLCKG.
      */
     @java.lang.Override
@@ -203,15 +203,15 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (lFAFBLMLCKG_ != false) {
+        output.writeBool(9, lFAFBLMLCKG_);
+      }
       if (getLIPNPNHELMLList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(lIPNPNHELMLMemoizedSerializedSize);
       }
       for (int i = 0; i < lIPNPNHELML_.size(); i++) {
         output.writeUInt32NoTag(lIPNPNHELML_.getInt(i));
-      }
-      if (lFAFBLMLCKG_ != false) {
-        output.writeBool(15, lFAFBLMLCKG_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,6 +222,10 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (lFAFBLMLCKG_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(9, lFAFBLMLCKG_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < lIPNPNHELML_.size(); i++) {
@@ -230,15 +234,11 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
         }
         size += dataSize;
         if (!getLIPNPNHELMLList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
         lIPNPNHELMLMemoizedSerializedSize = dataSize;
-      }
-      if (lFAFBLMLCKG_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, lFAFBLMLCKG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -546,7 +546,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 LIPNPNHELML = 11;</code>
+       * <code>repeated uint32 LIPNPNHELML = 20000;</code>
        * @return A list containing the lIPNPNHELML.
        */
       public java.util.List<java.lang.Integer>
@@ -555,14 +555,14 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
                  java.util.Collections.unmodifiableList(lIPNPNHELML_) : lIPNPNHELML_;
       }
       /**
-       * <code>repeated uint32 LIPNPNHELML = 11;</code>
+       * <code>repeated uint32 LIPNPNHELML = 20000;</code>
        * @return The count of lIPNPNHELML.
        */
       public int getLIPNPNHELMLCount() {
         return lIPNPNHELML_.size();
       }
       /**
-       * <code>repeated uint32 LIPNPNHELML = 11;</code>
+       * <code>repeated uint32 LIPNPNHELML = 20000;</code>
        * @param index The index of the element to return.
        * @return The lIPNPNHELML at the given index.
        */
@@ -570,7 +570,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
         return lIPNPNHELML_.getInt(index);
       }
       /**
-       * <code>repeated uint32 LIPNPNHELML = 11;</code>
+       * <code>repeated uint32 LIPNPNHELML = 20000;</code>
        * @param index The index to set the value at.
        * @param value The lIPNPNHELML to set.
        * @return This builder for chaining.
@@ -583,7 +583,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LIPNPNHELML = 11;</code>
+       * <code>repeated uint32 LIPNPNHELML = 20000;</code>
        * @param value The lIPNPNHELML to add.
        * @return This builder for chaining.
        */
@@ -594,7 +594,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LIPNPNHELML = 11;</code>
+       * <code>repeated uint32 LIPNPNHELML = 20000;</code>
        * @param values The lIPNPNHELML to add.
        * @return This builder for chaining.
        */
@@ -607,7 +607,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LIPNPNHELML = 11;</code>
+       * <code>repeated uint32 LIPNPNHELML = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearLIPNPNHELML() {
@@ -619,7 +619,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
 
       private boolean lFAFBLMLCKG_ ;
       /**
-       * <code>bool LFAFBLMLCKG = 15;</code>
+       * <code>bool LFAFBLMLCKG = 9;</code>
        * @return The lFAFBLMLCKG.
        */
       @java.lang.Override
@@ -627,7 +627,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
         return lFAFBLMLCKG_;
       }
       /**
-       * <code>bool LFAFBLMLCKG = 15;</code>
+       * <code>bool LFAFBLMLCKG = 9;</code>
        * @param value The lFAFBLMLCKG to set.
        * @return This builder for chaining.
        */
@@ -638,7 +638,7 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool LFAFBLMLCKG = 15;</code>
+       * <code>bool LFAFBLMLCKG = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLFAFBLMLCKG() {
@@ -714,11 +714,11 @@ public final class _GCGPvePuzzleDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035_GCGPvePuzzleDetailInfo.proto\"C\n\027_GCGP" +
-      "vePuzzleDetailInfo\022\023\n\013LIPNPNHELML\030\013 \003(\r\022" +
-      "\023\n\013LFAFBLMLCKG\030\017 \001(\010B>\n\031emu.grasscutter." +
-      "net.protoB!_GCGPvePuzzleDetailInfoOuterC" +
-      "lassb\006proto3"
+      "\n\035_GCGPvePuzzleDetailInfo.proto\"E\n\027_GCGP" +
+      "vePuzzleDetailInfo\022\025\n\013LIPNPNHELML\030\240\234\001 \003(" +
+      "\r\022\023\n\013LFAFBLMLCKG\030\t \001(\010B>\n\031emu.grasscutte" +
+      "r.net.protoB!_GCGPvePuzzleDetailInfoOute" +
+      "rClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

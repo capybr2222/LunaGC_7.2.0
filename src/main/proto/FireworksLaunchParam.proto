@@ -6,6 +6,6 @@ option java_outer_classname = "FireworksLaunchParamOuterClass";
 import "FireworksLaunchParamType.proto";
 
 message FireworksLaunchParam {
-	int32 value = 10;
-	FireworksLaunchParamType type = 11;
+	int32 value = 7;
+	FireworksLaunchParamType type = 5;
 }

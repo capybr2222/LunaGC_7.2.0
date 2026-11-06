@@ -4,11 +4,11 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "IrodoriPoetryThemeDataOuterClass";
 
 message IrodoriPoetryThemeData {
-	uint32 MMJJCCPKICN = 3;
-	uint32 lnhhekidiag = 50000;
-	uint32 ajonpjmnann = 50001;
-	repeated uint32 ccpllhmeokj = 50002;
-	repeated uint32 bngojinjala = 50003;
-	uint32 progress = 4;
-	uint32 max_progress = 50004;
+	uint32 MMJJCCPKICN = 50000;
+	uint32 lnhhekidiag = 50001;
+	uint32 ajonpjmnann = 50002;
+	repeated uint32 ccpllhmeokj = 50003;
+	repeated uint32 bngojinjala = 50004;
+	uint32 progress = 2;
+	uint32 max_progress = 3;
 }

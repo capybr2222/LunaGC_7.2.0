@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ClientLockGameTimeNotifyOuterClass";
 
 message ClientLockGameTimeNotify {
-	bool is_lock = 15;
+	bool is_lock = 12;
 }

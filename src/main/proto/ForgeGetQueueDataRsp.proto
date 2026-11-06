@@ -6,7 +6,7 @@ option java_outer_classname = "ForgeGetQueueDataRspOuterClass";
 import "ForgeQueueData.proto";
 
 message ForgeGetQueueDataRsp {
-	uint32 max_queue_num = 7;
-	int32 retcode = 14;
-	map<uint32, ForgeQueueData> forge_queue_map = 5;
+	uint32 max_queue_num = 15;
+	int32 retcode = 10;
+	map<uint32, ForgeQueueData> forge_queue_map = 14;
 }

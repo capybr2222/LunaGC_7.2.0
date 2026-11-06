@@ -5,7 +5,7 @@ option java_outer_classname = "_AdventurerStatueDungeonSettleInfoOuterClass";
 
 message _AdventurerStatueDungeonSettleInfo {
 	uint32 level_id = 6;
-	bool is_new_record = 7;
-	bool is_succ = 15;
-	uint32 score = 14;
+	bool is_new_record = 10;
+	bool is_succ = 12;
+	uint32 score = 1;
 }

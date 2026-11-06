@@ -4,11 +4,11 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "SeaLampActivityDetailInfoOuterClass";
 
 message SeaLampActivityDetailInfo {
-	uint32 PLOPGFGAFLJ = 50000;
-	uint32 phase_id = 12;
-	repeated uint32 ICNIKLDGHJA = 50001;
+	uint32 PLOPGFGAFLJ = 20002;
+	uint32 phase_id = 20003;
+	repeated uint32 ICNIKLDGHJA = 20001;
 	uint32 progress = 2;
-	uint32 AEBFOBBJKLH = 50002;
-	repeated uint32 MGKPFINDMBE = 50003;
-	uint32 days = 7;
+	uint32 AEBFOBBJKLH = 20004;
+	repeated uint32 MGKPFINDMBE = 20000;
+	uint32 days = 3;
 }

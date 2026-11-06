@@ -19,19 +19,19 @@ public final class _RankedMatchDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 NFIMEMMGEDE = 50000;</code>
+     * <code>uint32 NFIMEMMGEDE = 20002;</code>
      * @return The nFIMEMMGEDE.
      */
     int getNFIMEMMGEDE();
 
     /**
-     * <code>uint32 JDHBFLPNNFK = 4;</code>
+     * <code>uint32 JDHBFLPNNFK = 13;</code>
      * @return The jDHBFLPNNFK.
      */
     int getJDHBFLPNNFK();
 
     /**
-     * <code>uint32 LOGCPKHCCHA = 50001;</code>
+     * <code>uint32 LOGCPKHCCHA = 20001;</code>
      * @return The lOGCPKHCCHA.
      */
     int getLOGCPKHCCHA();
@@ -81,19 +81,19 @@ public final class _RankedMatchDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 104: {
 
               jDHBFLPNNFK_ = input.readUInt32();
               break;
             }
-            case 400000: {
-
-              nFIMEMMGEDE_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
+            case 160008: {
 
               lOGCPKHCCHA_ = input.readUInt32();
+              break;
+            }
+            case 160016: {
+
+              nFIMEMMGEDE_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class _RankedMatchDetailInfoOuterClass {
               emu.grasscutter.net.proto._RankedMatchDetailInfoOuterClass._RankedMatchDetailInfo.class, emu.grasscutter.net.proto._RankedMatchDetailInfoOuterClass._RankedMatchDetailInfo.Builder.class);
     }
 
-    public static final int NFIMEMMGEDE_FIELD_NUMBER = 50000;
+    public static final int NFIMEMMGEDE_FIELD_NUMBER = 20002;
     private int nFIMEMMGEDE_;
     /**
-     * <code>uint32 NFIMEMMGEDE = 50000;</code>
+     * <code>uint32 NFIMEMMGEDE = 20002;</code>
      * @return The nFIMEMMGEDE.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class _RankedMatchDetailInfoOuterClass {
       return nFIMEMMGEDE_;
     }
 
-    public static final int JDHBFLPNNFK_FIELD_NUMBER = 4;
+    public static final int JDHBFLPNNFK_FIELD_NUMBER = 13;
     private int jDHBFLPNNFK_;
     /**
-     * <code>uint32 JDHBFLPNNFK = 4;</code>
+     * <code>uint32 JDHBFLPNNFK = 13;</code>
      * @return The jDHBFLPNNFK.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _RankedMatchDetailInfoOuterClass {
       return jDHBFLPNNFK_;
     }
 
-    public static final int LOGCPKHCCHA_FIELD_NUMBER = 50001;
+    public static final int LOGCPKHCCHA_FIELD_NUMBER = 20001;
     private int lOGCPKHCCHA_;
     /**
-     * <code>uint32 LOGCPKHCCHA = 50001;</code>
+     * <code>uint32 LOGCPKHCCHA = 20001;</code>
      * @return The lOGCPKHCCHA.
      */
     @java.lang.Override
@@ -176,13 +176,13 @@ public final class _RankedMatchDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (jDHBFLPNNFK_ != 0) {
-        output.writeUInt32(4, jDHBFLPNNFK_);
-      }
-      if (nFIMEMMGEDE_ != 0) {
-        output.writeUInt32(50000, nFIMEMMGEDE_);
+        output.writeUInt32(13, jDHBFLPNNFK_);
       }
       if (lOGCPKHCCHA_ != 0) {
-        output.writeUInt32(50001, lOGCPKHCCHA_);
+        output.writeUInt32(20001, lOGCPKHCCHA_);
+      }
+      if (nFIMEMMGEDE_ != 0) {
+        output.writeUInt32(20002, nFIMEMMGEDE_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +195,15 @@ public final class _RankedMatchDetailInfoOuterClass {
       size = 0;
       if (jDHBFLPNNFK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, jDHBFLPNNFK_);
-      }
-      if (nFIMEMMGEDE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, nFIMEMMGEDE_);
+          .computeUInt32Size(13, jDHBFLPNNFK_);
       }
       if (lOGCPKHCCHA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, lOGCPKHCCHA_);
+          .computeUInt32Size(20001, lOGCPKHCCHA_);
+      }
+      if (nFIMEMMGEDE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20002, nFIMEMMGEDE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -499,7 +499,7 @@ public final class _RankedMatchDetailInfoOuterClass {
 
       private int nFIMEMMGEDE_ ;
       /**
-       * <code>uint32 NFIMEMMGEDE = 50000;</code>
+       * <code>uint32 NFIMEMMGEDE = 20002;</code>
        * @return The nFIMEMMGEDE.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class _RankedMatchDetailInfoOuterClass {
         return nFIMEMMGEDE_;
       }
       /**
-       * <code>uint32 NFIMEMMGEDE = 50000;</code>
+       * <code>uint32 NFIMEMMGEDE = 20002;</code>
        * @param value The nFIMEMMGEDE to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class _RankedMatchDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NFIMEMMGEDE = 50000;</code>
+       * <code>uint32 NFIMEMMGEDE = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearNFIMEMMGEDE() {
@@ -530,7 +530,7 @@ public final class _RankedMatchDetailInfoOuterClass {
 
       private int jDHBFLPNNFK_ ;
       /**
-       * <code>uint32 JDHBFLPNNFK = 4;</code>
+       * <code>uint32 JDHBFLPNNFK = 13;</code>
        * @return The jDHBFLPNNFK.
        */
       @java.lang.Override
@@ -538,7 +538,7 @@ public final class _RankedMatchDetailInfoOuterClass {
         return jDHBFLPNNFK_;
       }
       /**
-       * <code>uint32 JDHBFLPNNFK = 4;</code>
+       * <code>uint32 JDHBFLPNNFK = 13;</code>
        * @param value The jDHBFLPNNFK to set.
        * @return This builder for chaining.
        */
@@ -549,7 +549,7 @@ public final class _RankedMatchDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 JDHBFLPNNFK = 4;</code>
+       * <code>uint32 JDHBFLPNNFK = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearJDHBFLPNNFK() {
@@ -561,7 +561,7 @@ public final class _RankedMatchDetailInfoOuterClass {
 
       private int lOGCPKHCCHA_ ;
       /**
-       * <code>uint32 LOGCPKHCCHA = 50001;</code>
+       * <code>uint32 LOGCPKHCCHA = 20001;</code>
        * @return The lOGCPKHCCHA.
        */
       @java.lang.Override
@@ -569,7 +569,7 @@ public final class _RankedMatchDetailInfoOuterClass {
         return lOGCPKHCCHA_;
       }
       /**
-       * <code>uint32 LOGCPKHCCHA = 50001;</code>
+       * <code>uint32 LOGCPKHCCHA = 20001;</code>
        * @param value The lOGCPKHCCHA to set.
        * @return This builder for chaining.
        */
@@ -580,7 +580,7 @@ public final class _RankedMatchDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LOGCPKHCCHA = 50001;</code>
+       * <code>uint32 LOGCPKHCCHA = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearLOGCPKHCCHA() {
@@ -657,8 +657,8 @@ public final class _RankedMatchDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034_RankedMatchDetailInfo.proto\"[\n\026_Ranke" +
-      "dMatchDetailInfo\022\025\n\013NFIMEMMGEDE\030\320\206\003 \001(\r\022" +
-      "\023\n\013JDHBFLPNNFK\030\004 \001(\r\022\025\n\013LOGCPKHCCHA\030\321\206\003 " +
+      "dMatchDetailInfo\022\025\n\013NFIMEMMGEDE\030\242\234\001 \001(\r\022" +
+      "\023\n\013JDHBFLPNNFK\030\r \001(\r\022\025\n\013LOGCPKHCCHA\030\241\234\001 " +
       "\001(\rB=\n\031emu.grasscutter.net.protoB _Ranke" +
       "dMatchDetailInfoOuterClassb\006proto3"
     };

@@ -19,24 +19,24 @@ public final class SceneAudioNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 source_uid = 4;</code>
+     * <code>uint32 source_uid = 8;</code>
      * @return The sourceUid.
      */
     int getSourceUid();
 
     /**
-     * <code>int32 type = 8;</code>
+     * <code>int32 type = 9;</code>
      * @return The type.
      */
     int getType();
 
     /**
-     * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+     * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
      * @return The enum numeric value on the wire for businessType.
      */
     int getBusinessTypeValue();
     /**
-     * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+     * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
      * @return The businessType.
      */
     emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify._SceneAudioBusinessType getBusinessType();
@@ -67,17 +67,17 @@ public final class SceneAudioNotifyOuterClass {
         getParam3Bytes(int index);
 
     /**
-     * <code>repeated float param2 = 13;</code>
+     * <code>repeated float param2 = 10;</code>
      * @return A list containing the param2.
      */
     java.util.List<java.lang.Float> getParam2List();
     /**
-     * <code>repeated float param2 = 13;</code>
+     * <code>repeated float param2 = 10;</code>
      * @return The count of param2.
      */
     int getParam2Count();
     /**
-     * <code>repeated float param2 = 13;</code>
+     * <code>repeated float param2 = 10;</code>
      * @param index The index of the element to return.
      * @return The param2 at the given index.
      */
@@ -150,6 +150,12 @@ public final class SceneAudioNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+              int rawValue = input.readEnum();
+
+              businessType_ = rawValue;
+              break;
+            }
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
@@ -180,23 +186,17 @@ public final class SceneAudioNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 32: {
+            case 64: {
 
               sourceUid_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 72: {
 
               type_ = input.readInt32();
               break;
             }
-            case 96: {
-              int rawValue = input.readEnum();
-
-              businessType_ = rawValue;
-              break;
-            }
-            case 109: {
+            case 85: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 param2_ = newFloatList();
                 mutable_bitField0_ |= 0x00000002;
@@ -204,7 +204,7 @@ public final class SceneAudioNotifyOuterClass {
               param2_.addFloat(input.readFloat());
               break;
             }
-            case 106: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -366,10 +366,10 @@ public final class SceneAudioNotifyOuterClass {
       // @@protoc_insertion_point(enum_scope:SceneAudioNotify._SceneAudioBusinessType)
     }
 
-    public static final int SOURCE_UID_FIELD_NUMBER = 4;
+    public static final int SOURCE_UID_FIELD_NUMBER = 8;
     private int sourceUid_;
     /**
-     * <code>uint32 source_uid = 4;</code>
+     * <code>uint32 source_uid = 8;</code>
      * @return The sourceUid.
      */
     @java.lang.Override
@@ -377,10 +377,10 @@ public final class SceneAudioNotifyOuterClass {
       return sourceUid_;
     }
 
-    public static final int TYPE_FIELD_NUMBER = 8;
+    public static final int TYPE_FIELD_NUMBER = 9;
     private int type_;
     /**
-     * <code>int32 type = 8;</code>
+     * <code>int32 type = 9;</code>
      * @return The type.
      */
     @java.lang.Override
@@ -388,17 +388,17 @@ public final class SceneAudioNotifyOuterClass {
       return type_;
     }
 
-    public static final int BUSINESS_TYPE_FIELD_NUMBER = 12;
+    public static final int BUSINESS_TYPE_FIELD_NUMBER = 1;
     private int businessType_;
     /**
-     * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+     * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
      * @return The enum numeric value on the wire for businessType.
      */
     @java.lang.Override public int getBusinessTypeValue() {
       return businessType_;
     }
     /**
-     * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+     * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
      * @return The businessType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify._SceneAudioBusinessType getBusinessType() {
@@ -442,10 +442,10 @@ public final class SceneAudioNotifyOuterClass {
       return param3_.getByteString(index);
     }
 
-    public static final int PARAM2_FIELD_NUMBER = 13;
+    public static final int PARAM2_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.FloatList param2_;
     /**
-     * <code>repeated float param2 = 13;</code>
+     * <code>repeated float param2 = 10;</code>
      * @return A list containing the param2.
      */
     @java.lang.Override
@@ -454,14 +454,14 @@ public final class SceneAudioNotifyOuterClass {
       return param2_;
     }
     /**
-     * <code>repeated float param2 = 13;</code>
+     * <code>repeated float param2 = 10;</code>
      * @return The count of param2.
      */
     public int getParam2Count() {
       return param2_.size();
     }
     /**
-     * <code>repeated float param2 = 13;</code>
+     * <code>repeated float param2 = 10;</code>
      * @param index The index of the element to return.
      * @return The param2 at the given index.
      */
@@ -513,6 +513,9 @@ public final class SceneAudioNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (businessType_ != emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify._SceneAudioBusinessType.NORMAL.getNumber()) {
+        output.writeEnum(1, businessType_);
+      }
       for (int i = 0; i < param3_.size(); i++) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, param3_.getRaw(i));
       }
@@ -524,16 +527,13 @@ public final class SceneAudioNotifyOuterClass {
         output.writeUInt32NoTag(param1_.getInt(i));
       }
       if (sourceUid_ != 0) {
-        output.writeUInt32(4, sourceUid_);
+        output.writeUInt32(8, sourceUid_);
       }
       if (type_ != 0) {
-        output.writeInt32(8, type_);
-      }
-      if (businessType_ != emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify._SceneAudioBusinessType.NORMAL.getNumber()) {
-        output.writeEnum(12, businessType_);
+        output.writeInt32(9, type_);
       }
       if (getParam2List().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(param2MemoizedSerializedSize);
       }
       for (int i = 0; i < param2_.size(); i++) {
@@ -548,6 +548,10 @@ public final class SceneAudioNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (businessType_ != emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify._SceneAudioBusinessType.NORMAL.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, businessType_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < param3_.size(); i++) {
@@ -572,15 +576,11 @@ public final class SceneAudioNotifyOuterClass {
       }
       if (sourceUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sourceUid_);
+          .computeUInt32Size(8, sourceUid_);
       }
       if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, type_);
-      }
-      if (businessType_ != emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify._SceneAudioBusinessType.NORMAL.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, businessType_);
+          .computeInt32Size(9, type_);
       }
       {
         int dataSize = 0;
@@ -957,7 +957,7 @@ public final class SceneAudioNotifyOuterClass {
 
       private int sourceUid_ ;
       /**
-       * <code>uint32 source_uid = 4;</code>
+       * <code>uint32 source_uid = 8;</code>
        * @return The sourceUid.
        */
       @java.lang.Override
@@ -965,7 +965,7 @@ public final class SceneAudioNotifyOuterClass {
         return sourceUid_;
       }
       /**
-       * <code>uint32 source_uid = 4;</code>
+       * <code>uint32 source_uid = 8;</code>
        * @param value The sourceUid to set.
        * @return This builder for chaining.
        */
@@ -976,7 +976,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 source_uid = 4;</code>
+       * <code>uint32 source_uid = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearSourceUid() {
@@ -988,7 +988,7 @@ public final class SceneAudioNotifyOuterClass {
 
       private int type_ ;
       /**
-       * <code>int32 type = 8;</code>
+       * <code>int32 type = 9;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -996,7 +996,7 @@ public final class SceneAudioNotifyOuterClass {
         return type_;
       }
       /**
-       * <code>int32 type = 8;</code>
+       * <code>int32 type = 9;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -1007,7 +1007,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>int32 type = 8;</code>
+       * <code>int32 type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
@@ -1019,14 +1019,14 @@ public final class SceneAudioNotifyOuterClass {
 
       private int businessType_ = 0;
       /**
-       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
        * @return The enum numeric value on the wire for businessType.
        */
       @java.lang.Override public int getBusinessTypeValue() {
         return businessType_;
       }
       /**
-       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
        * @param value The enum numeric value on the wire for businessType to set.
        * @return This builder for chaining.
        */
@@ -1037,7 +1037,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
        * @return The businessType.
        */
       @java.lang.Override
@@ -1047,7 +1047,7 @@ public final class SceneAudioNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.SceneAudioNotifyOuterClass.SceneAudioNotify._SceneAudioBusinessType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
        * @param value The businessType to set.
        * @return This builder for chaining.
        */
@@ -1061,7 +1061,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 12;</code>
+       * <code>.SceneAudioNotify._SceneAudioBusinessType business_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearBusinessType() {
@@ -1189,7 +1189,7 @@ public final class SceneAudioNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated float param2 = 13;</code>
+       * <code>repeated float param2 = 10;</code>
        * @return A list containing the param2.
        */
       public java.util.List<java.lang.Float>
@@ -1198,14 +1198,14 @@ public final class SceneAudioNotifyOuterClass {
                  java.util.Collections.unmodifiableList(param2_) : param2_;
       }
       /**
-       * <code>repeated float param2 = 13;</code>
+       * <code>repeated float param2 = 10;</code>
        * @return The count of param2.
        */
       public int getParam2Count() {
         return param2_.size();
       }
       /**
-       * <code>repeated float param2 = 13;</code>
+       * <code>repeated float param2 = 10;</code>
        * @param index The index of the element to return.
        * @return The param2 at the given index.
        */
@@ -1213,7 +1213,7 @@ public final class SceneAudioNotifyOuterClass {
         return param2_.getFloat(index);
       }
       /**
-       * <code>repeated float param2 = 13;</code>
+       * <code>repeated float param2 = 10;</code>
        * @param index The index to set the value at.
        * @param value The param2 to set.
        * @return This builder for chaining.
@@ -1226,7 +1226,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated float param2 = 13;</code>
+       * <code>repeated float param2 = 10;</code>
        * @param value The param2 to add.
        * @return This builder for chaining.
        */
@@ -1237,7 +1237,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated float param2 = 13;</code>
+       * <code>repeated float param2 = 10;</code>
        * @param values The param2 to add.
        * @return This builder for chaining.
        */
@@ -1250,7 +1250,7 @@ public final class SceneAudioNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated float param2 = 13;</code>
+       * <code>repeated float param2 = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam2() {
@@ -1406,10 +1406,10 @@ public final class SceneAudioNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SceneAudioNotify.proto\"\344\001\n\020SceneAudioN" +
-      "otify\022\022\n\nsource_uid\030\004 \001(\r\022\014\n\004type\030\010 \001(\005\022" +
-      "@\n\rbusiness_type\030\014 \001(\0162).SceneAudioNotif" +
+      "otify\022\022\n\nsource_uid\030\010 \001(\r\022\014\n\004type\030\t \001(\005\022" +
+      "@\n\rbusiness_type\030\001 \001(\0162).SceneAudioNotif" +
       "y._SceneAudioBusinessType\022\016\n\006param3\030\002 \003(" +
-      "\t\022\016\n\006param2\030\r \003(\002\022\016\n\006param1\030\003 \003(\r\"<\n\027_Sc" +
+      "\t\022\016\n\006param2\030\n \003(\002\022\016\n\006param1\030\003 \003(\r\"<\n\027_Sc" +
       "eneAudioBusinessType\022\n\n\006NORMAL\020\000\022\025\n\021INST" +
       "RUMENT_WIDGET\020\001B7\n\031emu.grasscutter.net.p" +
       "rotoB\032SceneAudioNotifyOuterClassb\006proto3"

@@ -19,25 +19,25 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float shorten_ratio = 10;</code>
+     * <code>float shorten_ratio = 1;</code>
      * @return The shortenRatio.
      */
     float getShortenRatio();
 
     /**
-     * <code>uint32 hour_time = 3;</code>
+     * <code>uint32 hour_time = 12;</code>
      * @return The hourTime.
      */
     int getHourTime();
 
     /**
-     * <code>uint32 exp_id = 2;</code>
+     * <code>uint32 exp_id = 5;</code>
      * @return The expId.
      */
     int getExpId();
 
     /**
-     * <code>uint64 avatar_guid = 5;</code>
+     * <code>uint64 avatar_guid = 13;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
@@ -87,24 +87,24 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 13: {
 
-              expId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              hourTime_ = input.readUInt32();
+              shortenRatio_ = input.readFloat();
               break;
             }
             case 40: {
 
-              avatarGuid_ = input.readUInt64();
+              expId_ = input.readUInt32();
               break;
             }
-            case 85: {
+            case 96: {
 
-              shortenRatio_ = input.readFloat();
+              hourTime_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              avatarGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
               emu.grasscutter.net.proto._AvatarExpeditionBasicInfoOuterClass._AvatarExpeditionBasicInfo.class, emu.grasscutter.net.proto._AvatarExpeditionBasicInfoOuterClass._AvatarExpeditionBasicInfo.Builder.class);
     }
 
-    public static final int SHORTEN_RATIO_FIELD_NUMBER = 10;
+    public static final int SHORTEN_RATIO_FIELD_NUMBER = 1;
     private float shortenRatio_;
     /**
-     * <code>float shorten_ratio = 10;</code>
+     * <code>float shorten_ratio = 1;</code>
      * @return The shortenRatio.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
       return shortenRatio_;
     }
 
-    public static final int HOUR_TIME_FIELD_NUMBER = 3;
+    public static final int HOUR_TIME_FIELD_NUMBER = 12;
     private int hourTime_;
     /**
-     * <code>uint32 hour_time = 3;</code>
+     * <code>uint32 hour_time = 12;</code>
      * @return The hourTime.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
       return hourTime_;
     }
 
-    public static final int EXP_ID_FIELD_NUMBER = 2;
+    public static final int EXP_ID_FIELD_NUMBER = 5;
     private int expId_;
     /**
-     * <code>uint32 exp_id = 2;</code>
+     * <code>uint32 exp_id = 5;</code>
      * @return The expId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
       return expId_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 5;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 13;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 5;</code>
+     * <code>uint64 avatar_guid = 13;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (shortenRatio_ != 0F) {
+        output.writeFloat(1, shortenRatio_);
+      }
       if (expId_ != 0) {
-        output.writeUInt32(2, expId_);
+        output.writeUInt32(5, expId_);
       }
       if (hourTime_ != 0) {
-        output.writeUInt32(3, hourTime_);
+        output.writeUInt32(12, hourTime_);
       }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(5, avatarGuid_);
-      }
-      if (shortenRatio_ != 0F) {
-        output.writeFloat(10, shortenRatio_);
+        output.writeUInt64(13, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (shortenRatio_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(1, shortenRatio_);
+      }
       if (expId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, expId_);
+          .computeUInt32Size(5, expId_);
       }
       if (hourTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, hourTime_);
+          .computeUInt32Size(12, hourTime_);
       }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, avatarGuid_);
-      }
-      if (shortenRatio_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, shortenRatio_);
+          .computeUInt64Size(13, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -541,7 +541,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
 
       private float shortenRatio_ ;
       /**
-       * <code>float shorten_ratio = 10;</code>
+       * <code>float shorten_ratio = 1;</code>
        * @return The shortenRatio.
        */
       @java.lang.Override
@@ -549,7 +549,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
         return shortenRatio_;
       }
       /**
-       * <code>float shorten_ratio = 10;</code>
+       * <code>float shorten_ratio = 1;</code>
        * @param value The shortenRatio to set.
        * @return This builder for chaining.
        */
@@ -560,7 +560,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
         return this;
       }
       /**
-       * <code>float shorten_ratio = 10;</code>
+       * <code>float shorten_ratio = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearShortenRatio() {
@@ -572,7 +572,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
 
       private int hourTime_ ;
       /**
-       * <code>uint32 hour_time = 3;</code>
+       * <code>uint32 hour_time = 12;</code>
        * @return The hourTime.
        */
       @java.lang.Override
@@ -580,7 +580,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
         return hourTime_;
       }
       /**
-       * <code>uint32 hour_time = 3;</code>
+       * <code>uint32 hour_time = 12;</code>
        * @param value The hourTime to set.
        * @return This builder for chaining.
        */
@@ -591,7 +591,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hour_time = 3;</code>
+       * <code>uint32 hour_time = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearHourTime() {
@@ -603,7 +603,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
 
       private int expId_ ;
       /**
-       * <code>uint32 exp_id = 2;</code>
+       * <code>uint32 exp_id = 5;</code>
        * @return The expId.
        */
       @java.lang.Override
@@ -611,7 +611,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
         return expId_;
       }
       /**
-       * <code>uint32 exp_id = 2;</code>
+       * <code>uint32 exp_id = 5;</code>
        * @param value The expId to set.
        * @return This builder for chaining.
        */
@@ -622,7 +622,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 exp_id = 2;</code>
+       * <code>uint32 exp_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearExpId() {
@@ -634,7 +634,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 13;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -642,7 +642,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 13;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -653,7 +653,7 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 5;</code>
+       * <code>uint64 avatar_guid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -731,8 +731,8 @@ public final class _AvatarExpeditionBasicInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n _AvatarExpeditionBasicInfo.proto\"k\n\032_A" +
       "vatarExpeditionBasicInfo\022\025\n\rshorten_rati" +
-      "o\030\n \001(\002\022\021\n\thour_time\030\003 \001(\r\022\016\n\006exp_id\030\002 \001" +
-      "(\r\022\023\n\013avatar_guid\030\005 \001(\004BA\n\031emu.grasscutt" +
+      "o\030\001 \001(\002\022\021\n\thour_time\030\014 \001(\r\022\016\n\006exp_id\030\005 \001" +
+      "(\r\022\023\n\013avatar_guid\030\r \001(\004BA\n\031emu.grasscutt" +
       "er.net.protoB$_AvatarExpeditionBasicInfo" +
       "OuterClassb\006proto3"
     };

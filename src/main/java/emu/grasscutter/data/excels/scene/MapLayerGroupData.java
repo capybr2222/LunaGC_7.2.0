@@ -11,9 +11,9 @@ public final class MapLayerGroupData extends GameResource {
     @Getter(onMethod_ = @Override)
     private int id;
 
-    @SerializedName("KIBILDMLEPI")
+    @SerializedName(value = "KIBILDMLEPI", alternate = {"FGPPGFADOCH"})
     private List<Integer> areaIds;
 
-    @SerializedName("DAMKLEIJMAG")
+    @SerializedName(value = "DAMKLEIJMAG", alternate = {"FLEEHDLAOHE"})
     private float mapFloorId;
 }

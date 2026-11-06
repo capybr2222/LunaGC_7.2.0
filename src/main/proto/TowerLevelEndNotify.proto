@@ -6,9 +6,9 @@ option java_outer_classname = "TowerLevelEndNotifyOuterClass";
 import "ItemParam.proto";
 
 message TowerLevelEndNotify {
-	repeated uint32 finished_star_cond_list = 15;
-	uint32 next_floor_id = 3;
-	uint32 continue_state = 8;
-	repeated ItemParam reward_item_list = 9;
-	bool is_success = 14;
+	repeated uint32 finished_star_cond_list = 4;
+	uint32 next_floor_id = 20001;
+	uint32 continue_state = 20000;
+	repeated ItemParam reward_item_list = 1;
+	bool is_success = 11;
 }

@@ -19,32 +19,32 @@ public final class JourneyDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
      * @return Whether the bJMFNOPMJEL field is set.
      */
     boolean hasBJMFNOPMJEL();
     /**
-     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
      * @return The bJMFNOPMJEL.
      */
     emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB getBJMFNOPMJEL();
     /**
-     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
      */
     emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHBOrBuilder getBJMFNOPMJELOrBuilder();
 
     /**
-     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
      * @return Whether the aGKNFNOJMOE field is set.
      */
     boolean hasAGKNFNOJMOE();
     /**
-     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
      * @return The aGKNFNOJMOE.
      */
     emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA getAGKNFNOJMOE();
     /**
-     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
      */
     emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBAOrBuilder getAGKNFNOJMOEOrBuilder();
 
@@ -64,17 +64,17 @@ public final class JourneyDetailInfoOuterClass {
     emu.grasscutter.net.proto.HBBCGELHFHEOuterClass.HBBCGELHFHEOrBuilder getMDEKHOGJKCFOrBuilder();
 
     /**
-     * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+     * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
      * @return Whether the gmildlieicb field is set.
      */
     boolean hasGmildlieicb();
     /**
-     * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+     * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
      * @return The gmildlieicb.
      */
     emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ getGmildlieicb();
     /**
-     * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+     * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
      */
     emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJOrBuilder getGmildlieicbOrBuilder();
   }
@@ -136,7 +136,7 @@ public final class JourneyDetailInfoOuterClass {
 
               break;
             }
-            case 82: {
+            case 400002: {
               emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB.Builder subBuilder = null;
               if (bJMFNOPMJEL_ != null) {
                 subBuilder = bJMFNOPMJEL_.toBuilder();
@@ -149,7 +149,7 @@ public final class JourneyDetailInfoOuterClass {
 
               break;
             }
-            case 400002: {
+            case 400010: {
               emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA.Builder subBuilder = null;
               if (aGKNFNOJMOE_ != null) {
                 subBuilder = aGKNFNOJMOE_.toBuilder();
@@ -162,7 +162,7 @@ public final class JourneyDetailInfoOuterClass {
 
               break;
             }
-            case 400010: {
+            case 400018: {
               emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ.Builder subBuilder = null;
               if (gmildlieicb_ != null) {
                 subBuilder = gmildlieicb_.toBuilder();
@@ -207,10 +207,10 @@ public final class JourneyDetailInfoOuterClass {
               emu.grasscutter.net.proto.JourneyDetailInfoOuterClass.JourneyDetailInfo.class, emu.grasscutter.net.proto.JourneyDetailInfoOuterClass.JourneyDetailInfo.Builder.class);
     }
 
-    public static final int BJMFNOPMJEL_FIELD_NUMBER = 10;
+    public static final int BJMFNOPMJEL_FIELD_NUMBER = 50000;
     private emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB bJMFNOPMJEL_;
     /**
-     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
      * @return Whether the bJMFNOPMJEL field is set.
      */
     @java.lang.Override
@@ -218,7 +218,7 @@ public final class JourneyDetailInfoOuterClass {
       return bJMFNOPMJEL_ != null;
     }
     /**
-     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
      * @return The bJMFNOPMJEL.
      */
     @java.lang.Override
@@ -226,17 +226,17 @@ public final class JourneyDetailInfoOuterClass {
       return bJMFNOPMJEL_ == null ? emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB.getDefaultInstance() : bJMFNOPMJEL_;
     }
     /**
-     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+     * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHBOrBuilder getBJMFNOPMJELOrBuilder() {
       return getBJMFNOPMJEL();
     }
 
-    public static final int AGKNFNOJMOE_FIELD_NUMBER = 50000;
+    public static final int AGKNFNOJMOE_FIELD_NUMBER = 50001;
     private emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA aGKNFNOJMOE_;
     /**
-     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
      * @return Whether the aGKNFNOJMOE field is set.
      */
     @java.lang.Override
@@ -244,7 +244,7 @@ public final class JourneyDetailInfoOuterClass {
       return aGKNFNOJMOE_ != null;
     }
     /**
-     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
      * @return The aGKNFNOJMOE.
      */
     @java.lang.Override
@@ -252,7 +252,7 @@ public final class JourneyDetailInfoOuterClass {
       return aGKNFNOJMOE_ == null ? emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA.getDefaultInstance() : aGKNFNOJMOE_;
     }
     /**
-     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+     * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBAOrBuilder getAGKNFNOJMOEOrBuilder() {
@@ -285,10 +285,10 @@ public final class JourneyDetailInfoOuterClass {
       return getMDEKHOGJKCF();
     }
 
-    public static final int GMILDLIEICB_FIELD_NUMBER = 50001;
+    public static final int GMILDLIEICB_FIELD_NUMBER = 50002;
     private emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ gmildlieicb_;
     /**
-     * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+     * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
      * @return Whether the gmildlieicb field is set.
      */
     @java.lang.Override
@@ -296,7 +296,7 @@ public final class JourneyDetailInfoOuterClass {
       return gmildlieicb_ != null;
     }
     /**
-     * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+     * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
      * @return The gmildlieicb.
      */
     @java.lang.Override
@@ -304,7 +304,7 @@ public final class JourneyDetailInfoOuterClass {
       return gmildlieicb_ == null ? emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ.getDefaultInstance() : gmildlieicb_;
     }
     /**
-     * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+     * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJOrBuilder getGmildlieicbOrBuilder() {
@@ -329,13 +329,13 @@ public final class JourneyDetailInfoOuterClass {
         output.writeMessage(3, getMDEKHOGJKCF());
       }
       if (bJMFNOPMJEL_ != null) {
-        output.writeMessage(10, getBJMFNOPMJEL());
+        output.writeMessage(50000, getBJMFNOPMJEL());
       }
       if (aGKNFNOJMOE_ != null) {
-        output.writeMessage(50000, getAGKNFNOJMOE());
+        output.writeMessage(50001, getAGKNFNOJMOE());
       }
       if (gmildlieicb_ != null) {
-        output.writeMessage(50001, getGmildlieicb());
+        output.writeMessage(50002, getGmildlieicb());
       }
       unknownFields.writeTo(output);
     }
@@ -352,15 +352,15 @@ public final class JourneyDetailInfoOuterClass {
       }
       if (bJMFNOPMJEL_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getBJMFNOPMJEL());
+          .computeMessageSize(50000, getBJMFNOPMJEL());
       }
       if (aGKNFNOJMOE_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(50000, getAGKNFNOJMOE());
+          .computeMessageSize(50001, getAGKNFNOJMOE());
       }
       if (gmildlieicb_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(50001, getGmildlieicb());
+          .computeMessageSize(50002, getGmildlieicb());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -720,14 +720,14 @@ public final class JourneyDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB, emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB.Builder, emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHBOrBuilder> bJMFNOPMJELBuilder_;
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        * @return Whether the bJMFNOPMJEL field is set.
        */
       public boolean hasBJMFNOPMJEL() {
         return bJMFNOPMJELBuilder_ != null || bJMFNOPMJEL_ != null;
       }
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        * @return The bJMFNOPMJEL.
        */
       public emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB getBJMFNOPMJEL() {
@@ -738,7 +738,7 @@ public final class JourneyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        */
       public Builder setBJMFNOPMJEL(emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB value) {
         if (bJMFNOPMJELBuilder_ == null) {
@@ -754,7 +754,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        */
       public Builder setBJMFNOPMJEL(
           emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB.Builder builderForValue) {
@@ -768,7 +768,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        */
       public Builder mergeBJMFNOPMJEL(emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB value) {
         if (bJMFNOPMJELBuilder_ == null) {
@@ -786,7 +786,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        */
       public Builder clearBJMFNOPMJEL() {
         if (bJMFNOPMJELBuilder_ == null) {
@@ -800,7 +800,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        */
       public emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB.Builder getBJMFNOPMJELBuilder() {
         
@@ -808,7 +808,7 @@ public final class JourneyDetailInfoOuterClass {
         return getBJMFNOPMJELFieldBuilder().getBuilder();
       }
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        */
       public emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHBOrBuilder getBJMFNOPMJELOrBuilder() {
         if (bJMFNOPMJELBuilder_ != null) {
@@ -819,7 +819,7 @@ public final class JourneyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 10;</code>
+       * <code>.JPCAOAHBLHB BJMFNOPMJEL = 50000;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB, emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHB.Builder, emu.grasscutter.net.proto.JPCAOAHBLHBOuterClass.JPCAOAHBLHBOrBuilder> 
@@ -839,14 +839,14 @@ public final class JourneyDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA, emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA.Builder, emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBAOrBuilder> aGKNFNOJMOEBuilder_;
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        * @return Whether the aGKNFNOJMOE field is set.
        */
       public boolean hasAGKNFNOJMOE() {
         return aGKNFNOJMOEBuilder_ != null || aGKNFNOJMOE_ != null;
       }
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        * @return The aGKNFNOJMOE.
        */
       public emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA getAGKNFNOJMOE() {
@@ -857,7 +857,7 @@ public final class JourneyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        */
       public Builder setAGKNFNOJMOE(emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA value) {
         if (aGKNFNOJMOEBuilder_ == null) {
@@ -873,7 +873,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        */
       public Builder setAGKNFNOJMOE(
           emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA.Builder builderForValue) {
@@ -887,7 +887,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        */
       public Builder mergeAGKNFNOJMOE(emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA value) {
         if (aGKNFNOJMOEBuilder_ == null) {
@@ -905,7 +905,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        */
       public Builder clearAGKNFNOJMOE() {
         if (aGKNFNOJMOEBuilder_ == null) {
@@ -919,7 +919,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        */
       public emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA.Builder getAGKNFNOJMOEBuilder() {
         
@@ -927,7 +927,7 @@ public final class JourneyDetailInfoOuterClass {
         return getAGKNFNOJMOEFieldBuilder().getBuilder();
       }
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        */
       public emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBAOrBuilder getAGKNFNOJMOEOrBuilder() {
         if (aGKNFNOJMOEBuilder_ != null) {
@@ -938,7 +938,7 @@ public final class JourneyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50000;</code>
+       * <code>.BFOFMBLMHBA AGKNFNOJMOE = 50001;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA, emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBA.Builder, emu.grasscutter.net.proto.BFOFMBLMHBAOuterClass.BFOFMBLMHBAOrBuilder> 
@@ -1077,14 +1077,14 @@ public final class JourneyDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ, emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ.Builder, emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJOrBuilder> gmildlieicbBuilder_;
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        * @return Whether the gmildlieicb field is set.
        */
       public boolean hasGmildlieicb() {
         return gmildlieicbBuilder_ != null || gmildlieicb_ != null;
       }
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        * @return The gmildlieicb.
        */
       public emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ getGmildlieicb() {
@@ -1095,7 +1095,7 @@ public final class JourneyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        */
       public Builder setGmildlieicb(emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ value) {
         if (gmildlieicbBuilder_ == null) {
@@ -1111,7 +1111,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        */
       public Builder setGmildlieicb(
           emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ.Builder builderForValue) {
@@ -1125,7 +1125,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        */
       public Builder mergeGmildlieicb(emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ value) {
         if (gmildlieicbBuilder_ == null) {
@@ -1143,7 +1143,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        */
       public Builder clearGmildlieicb() {
         if (gmildlieicbBuilder_ == null) {
@@ -1157,7 +1157,7 @@ public final class JourneyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        */
       public emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ.Builder getGmildlieicbBuilder() {
         
@@ -1165,7 +1165,7 @@ public final class JourneyDetailInfoOuterClass {
         return getGmildlieicbFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        */
       public emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJOrBuilder getGmildlieicbOrBuilder() {
         if (gmildlieicbBuilder_ != null) {
@@ -1176,7 +1176,7 @@ public final class JourneyDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.ILCHPINGCCJ gmildlieicb = 50001;</code>
+       * <code>.ILCHPINGCCJ gmildlieicb = 50002;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ, emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJ.Builder, emu.grasscutter.net.proto.ILCHPINGCCJOuterClass.ILCHPINGCCJOrBuilder> 
@@ -1260,13 +1260,13 @@ public final class JourneyDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027JourneyDetailInfo.proto\032\021BFOFMBLMHBA.p" +
       "roto\032\021HBBCGELHFHE.proto\032\021ILCHPINGCCJ.pro" +
-      "to\032\021JPCAOAHBLHB.proto\"\243\001\n\021JourneyDetailI" +
-      "nfo\022!\n\013BJMFNOPMJEL\030\n \001(\0132\014.JPCAOAHBLHB\022#" +
-      "\n\013AGKNFNOJMOE\030\320\206\003 \001(\0132\014.BFOFMBLMHBA\022!\n\013M" +
-      "DEKHOGJKCF\030\003 \001(\0132\014.HBBCGELHFHE\022#\n\013gmildl" +
-      "ieicb\030\321\206\003 \001(\0132\014.ILCHPINGCCJB8\n\031emu.grass" +
-      "cutter.net.protoB\033JourneyDetailInfoOuter" +
-      "Classb\006proto3"
+      "to\032\021JPCAOAHBLHB.proto\"\245\001\n\021JourneyDetailI" +
+      "nfo\022#\n\013BJMFNOPMJEL\030\320\206\003 \001(\0132\014.JPCAOAHBLHB" +
+      "\022#\n\013AGKNFNOJMOE\030\321\206\003 \001(\0132\014.BFOFMBLMHBA\022!\n" +
+      "\013MDEKHOGJKCF\030\003 \001(\0132\014.HBBCGELHFHE\022#\n\013gmil" +
+      "dlieicb\030\322\206\003 \001(\0132\014.ILCHPINGCCJB8\n\031emu.gra" +
+      "sscutter.net.protoB\033JourneyDetailInfoOut" +
+      "erClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

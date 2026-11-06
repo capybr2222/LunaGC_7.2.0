@@ -6,6 +6,6 @@ option java_outer_classname = "GachaTransferItemOuterClass";
 import "ItemParam.proto";
 
 message GachaTransferItem {
-	bool is_transfer_item_new = 12;
-	ItemParam item = 3;
+	bool is_transfer_item_new = 15;
+	ItemParam item = 10;
 }

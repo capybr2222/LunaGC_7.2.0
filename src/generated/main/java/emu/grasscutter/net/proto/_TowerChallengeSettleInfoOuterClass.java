@@ -19,25 +19,25 @@ public final class _TowerChallengeSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finish_time = 15;</code>
+     * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <code>uint32 IJFBANKCHKM = 50000;</code>
+     * <code>uint32 IJFBANKCHKM = 20001;</code>
      * @return The iJFBANKCHKM.
      */
     int getIJFBANKCHKM();
 
     /**
-     * <code>uint32 LJNKIOBAHKB = 50001;</code>
+     * <code>uint32 LJNKIOBAHKB = 20000;</code>
      * @return The lJNKIOBAHKB.
      */
     int getLJNKIOBAHKB();
 
     /**
-     * <code>uint32 level_id = 7;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -87,24 +87,24 @@ public final class _TowerChallengeSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 32: {
 
               finishTime_ = input.readUInt32();
               break;
             }
-            case 400000: {
+            case 112: {
 
-              iJFBANKCHKM_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 160000: {
 
               lJNKIOBAHKB_ = input.readUInt32();
+              break;
+            }
+            case 160008: {
+
+              iJFBANKCHKM_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class _TowerChallengeSettleInfoOuterClass {
               emu.grasscutter.net.proto._TowerChallengeSettleInfoOuterClass._TowerChallengeSettleInfo.class, emu.grasscutter.net.proto._TowerChallengeSettleInfoOuterClass._TowerChallengeSettleInfo.Builder.class);
     }
 
-    public static final int FINISH_TIME_FIELD_NUMBER = 15;
+    public static final int FINISH_TIME_FIELD_NUMBER = 4;
     private int finishTime_;
     /**
-     * <code>uint32 finish_time = 15;</code>
+     * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _TowerChallengeSettleInfoOuterClass {
       return finishTime_;
     }
 
-    public static final int IJFBANKCHKM_FIELD_NUMBER = 50000;
+    public static final int IJFBANKCHKM_FIELD_NUMBER = 20001;
     private int iJFBANKCHKM_;
     /**
-     * <code>uint32 IJFBANKCHKM = 50000;</code>
+     * <code>uint32 IJFBANKCHKM = 20001;</code>
      * @return The iJFBANKCHKM.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _TowerChallengeSettleInfoOuterClass {
       return iJFBANKCHKM_;
     }
 
-    public static final int LJNKIOBAHKB_FIELD_NUMBER = 50001;
+    public static final int LJNKIOBAHKB_FIELD_NUMBER = 20000;
     private int lJNKIOBAHKB_;
     /**
-     * <code>uint32 LJNKIOBAHKB = 50001;</code>
+     * <code>uint32 LJNKIOBAHKB = 20000;</code>
      * @return The lJNKIOBAHKB.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _TowerChallengeSettleInfoOuterClass {
       return lJNKIOBAHKB_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 7;
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 7;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class _TowerChallengeSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(7, levelId_);
-      }
       if (finishTime_ != 0) {
-        output.writeUInt32(15, finishTime_);
+        output.writeUInt32(4, finishTime_);
       }
-      if (iJFBANKCHKM_ != 0) {
-        output.writeUInt32(50000, iJFBANKCHKM_);
+      if (levelId_ != 0) {
+        output.writeUInt32(14, levelId_);
       }
       if (lJNKIOBAHKB_ != 0) {
-        output.writeUInt32(50001, lJNKIOBAHKB_);
+        output.writeUInt32(20000, lJNKIOBAHKB_);
+      }
+      if (iJFBANKCHKM_ != 0) {
+        output.writeUInt32(20001, iJFBANKCHKM_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class _TowerChallengeSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, levelId_);
-      }
       if (finishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, finishTime_);
+          .computeUInt32Size(4, finishTime_);
       }
-      if (iJFBANKCHKM_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, iJFBANKCHKM_);
+          .computeUInt32Size(14, levelId_);
       }
       if (lJNKIOBAHKB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, lJNKIOBAHKB_);
+          .computeUInt32Size(20000, lJNKIOBAHKB_);
+      }
+      if (iJFBANKCHKM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20001, iJFBANKCHKM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -538,7 +538,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
 
       private int finishTime_ ;
       /**
-       * <code>uint32 finish_time = 15;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @return The finishTime.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
         return finishTime_;
       }
       /**
-       * <code>uint32 finish_time = 15;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finish_time = 15;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishTime() {
@@ -569,7 +569,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
 
       private int iJFBANKCHKM_ ;
       /**
-       * <code>uint32 IJFBANKCHKM = 50000;</code>
+       * <code>uint32 IJFBANKCHKM = 20001;</code>
        * @return The iJFBANKCHKM.
        */
       @java.lang.Override
@@ -577,7 +577,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
         return iJFBANKCHKM_;
       }
       /**
-       * <code>uint32 IJFBANKCHKM = 50000;</code>
+       * <code>uint32 IJFBANKCHKM = 20001;</code>
        * @param value The iJFBANKCHKM to set.
        * @return This builder for chaining.
        */
@@ -588,7 +588,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 IJFBANKCHKM = 50000;</code>
+       * <code>uint32 IJFBANKCHKM = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearIJFBANKCHKM() {
@@ -600,7 +600,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
 
       private int lJNKIOBAHKB_ ;
       /**
-       * <code>uint32 LJNKIOBAHKB = 50001;</code>
+       * <code>uint32 LJNKIOBAHKB = 20000;</code>
        * @return The lJNKIOBAHKB.
        */
       @java.lang.Override
@@ -608,7 +608,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
         return lJNKIOBAHKB_;
       }
       /**
-       * <code>uint32 LJNKIOBAHKB = 50001;</code>
+       * <code>uint32 LJNKIOBAHKB = 20000;</code>
        * @param value The lJNKIOBAHKB to set.
        * @return This builder for chaining.
        */
@@ -619,7 +619,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LJNKIOBAHKB = 50001;</code>
+       * <code>uint32 LJNKIOBAHKB = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearLJNKIOBAHKB() {
@@ -631,7 +631,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -639,7 +639,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -650,7 +650,7 @@ public final class _TowerChallengeSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 7;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -727,9 +727,9 @@ public final class _TowerChallengeSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037_TowerChallengeSettleInfo.proto\"p\n\031_To" +
-      "werChallengeSettleInfo\022\023\n\013finish_time\030\017 " +
-      "\001(\r\022\025\n\013IJFBANKCHKM\030\320\206\003 \001(\r\022\025\n\013LJNKIOBAHK" +
-      "B\030\321\206\003 \001(\r\022\020\n\010level_id\030\007 \001(\rB@\n\031emu.grass" +
+      "werChallengeSettleInfo\022\023\n\013finish_time\030\004 " +
+      "\001(\r\022\025\n\013IJFBANKCHKM\030\241\234\001 \001(\r\022\025\n\013LJNKIOBAHK" +
+      "B\030\240\234\001 \001(\r\022\020\n\010level_id\030\016 \001(\rB@\n\031emu.grass" +
       "cutter.net.protoB#_TowerChallengeSettleI" +
       "nfoOuterClassb\006proto3"
     };

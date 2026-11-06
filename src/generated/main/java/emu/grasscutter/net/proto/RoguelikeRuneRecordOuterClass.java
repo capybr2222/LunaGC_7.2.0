@@ -25,13 +25,13 @@ public final class RoguelikeRuneRecordOuterClass {
     int getPddnmmiceml();
 
     /**
-     * <code>uint32 HAKBGHFECEJ = 50001;</code>
+     * <code>uint32 HAKBGHFECEJ = 20002;</code>
      * @return The hAKBGHFECEJ.
      */
     int getHAKBGHFECEJ();
 
     /**
-     * <code>uint32 rune_id = 13;</code>
+     * <code>uint32 rune_id = 20000;</code>
      * @return The runeId.
      */
     int getRuneId();
@@ -81,19 +81,19 @@ public final class RoguelikeRuneRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 160000: {
 
               runeId_ = input.readUInt32();
+              break;
+            }
+            case 160016: {
+
+              hAKBGHFECEJ_ = input.readUInt32();
               break;
             }
             case 400000: {
 
               pddnmmiceml_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              hAKBGHFECEJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class RoguelikeRuneRecordOuterClass {
       return pddnmmiceml_;
     }
 
-    public static final int HAKBGHFECEJ_FIELD_NUMBER = 50001;
+    public static final int HAKBGHFECEJ_FIELD_NUMBER = 20002;
     private int hAKBGHFECEJ_;
     /**
-     * <code>uint32 HAKBGHFECEJ = 50001;</code>
+     * <code>uint32 HAKBGHFECEJ = 20002;</code>
      * @return The hAKBGHFECEJ.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class RoguelikeRuneRecordOuterClass {
       return hAKBGHFECEJ_;
     }
 
-    public static final int RUNE_ID_FIELD_NUMBER = 13;
+    public static final int RUNE_ID_FIELD_NUMBER = 20000;
     private int runeId_;
     /**
-     * <code>uint32 rune_id = 13;</code>
+     * <code>uint32 rune_id = 20000;</code>
      * @return The runeId.
      */
     @java.lang.Override
@@ -176,13 +176,13 @@ public final class RoguelikeRuneRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (runeId_ != 0) {
-        output.writeUInt32(13, runeId_);
+        output.writeUInt32(20000, runeId_);
+      }
+      if (hAKBGHFECEJ_ != 0) {
+        output.writeUInt32(20002, hAKBGHFECEJ_);
       }
       if (pddnmmiceml_ != 0) {
         output.writeUInt32(50000, pddnmmiceml_);
-      }
-      if (hAKBGHFECEJ_ != 0) {
-        output.writeUInt32(50001, hAKBGHFECEJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +195,15 @@ public final class RoguelikeRuneRecordOuterClass {
       size = 0;
       if (runeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, runeId_);
+          .computeUInt32Size(20000, runeId_);
+      }
+      if (hAKBGHFECEJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20002, hAKBGHFECEJ_);
       }
       if (pddnmmiceml_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(50000, pddnmmiceml_);
-      }
-      if (hAKBGHFECEJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, hAKBGHFECEJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -530,7 +530,7 @@ public final class RoguelikeRuneRecordOuterClass {
 
       private int hAKBGHFECEJ_ ;
       /**
-       * <code>uint32 HAKBGHFECEJ = 50001;</code>
+       * <code>uint32 HAKBGHFECEJ = 20002;</code>
        * @return The hAKBGHFECEJ.
        */
       @java.lang.Override
@@ -538,7 +538,7 @@ public final class RoguelikeRuneRecordOuterClass {
         return hAKBGHFECEJ_;
       }
       /**
-       * <code>uint32 HAKBGHFECEJ = 50001;</code>
+       * <code>uint32 HAKBGHFECEJ = 20002;</code>
        * @param value The hAKBGHFECEJ to set.
        * @return This builder for chaining.
        */
@@ -549,7 +549,7 @@ public final class RoguelikeRuneRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 HAKBGHFECEJ = 50001;</code>
+       * <code>uint32 HAKBGHFECEJ = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearHAKBGHFECEJ() {
@@ -561,7 +561,7 @@ public final class RoguelikeRuneRecordOuterClass {
 
       private int runeId_ ;
       /**
-       * <code>uint32 rune_id = 13;</code>
+       * <code>uint32 rune_id = 20000;</code>
        * @return The runeId.
        */
       @java.lang.Override
@@ -569,7 +569,7 @@ public final class RoguelikeRuneRecordOuterClass {
         return runeId_;
       }
       /**
-       * <code>uint32 rune_id = 13;</code>
+       * <code>uint32 rune_id = 20000;</code>
        * @param value The runeId to set.
        * @return This builder for chaining.
        */
@@ -580,7 +580,7 @@ public final class RoguelikeRuneRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 rune_id = 13;</code>
+       * <code>uint32 rune_id = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearRuneId() {
@@ -656,11 +656,11 @@ public final class RoguelikeRuneRecordOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031RoguelikeRuneRecord.proto\"T\n\023Roguelike" +
+      "\n\031RoguelikeRuneRecord.proto\"V\n\023Roguelike" +
       "RuneRecord\022\025\n\013pddnmmiceml\030\320\206\003 \001(\r\022\025\n\013HAK" +
-      "BGHFECEJ\030\321\206\003 \001(\r\022\017\n\007rune_id\030\r \001(\rB:\n\031emu" +
-      ".grasscutter.net.protoB\035RoguelikeRuneRec" +
-      "ordOuterClassb\006proto3"
+      "BGHFECEJ\030\242\234\001 \001(\r\022\021\n\007rune_id\030\240\234\001 \001(\rB:\n\031e" +
+      "mu.grasscutter.net.protoB\035RoguelikeRuneR" +
+      "ecordOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

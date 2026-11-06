@@ -19,13 +19,13 @@ public final class KANFGENDGJNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 LHNODHIMIFH = 1;</code>
+     * <code>uint32 LHNODHIMIFH = 3;</code>
      * @return The lHNODHIMIFH.
      */
     int getLHNODHIMIFH();
 
     /**
-     * <code>bool GADNPJHGAEG = 3;</code>
+     * <code>bool GADNPJHGAEG = 6;</code>
      * @return The gADNPJHGAEG.
      */
     boolean getGADNPJHGAEG();
@@ -75,12 +75,12 @@ public final class KANFGENDGJNOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               lHNODHIMIFH_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 48: {
 
               gADNPJHGAEG_ = input.readBool();
               break;
@@ -117,10 +117,10 @@ public final class KANFGENDGJNOuterClass {
               emu.grasscutter.net.proto.KANFGENDGJNOuterClass.KANFGENDGJN.class, emu.grasscutter.net.proto.KANFGENDGJNOuterClass.KANFGENDGJN.Builder.class);
     }
 
-    public static final int LHNODHIMIFH_FIELD_NUMBER = 1;
+    public static final int LHNODHIMIFH_FIELD_NUMBER = 3;
     private int lHNODHIMIFH_;
     /**
-     * <code>uint32 LHNODHIMIFH = 1;</code>
+     * <code>uint32 LHNODHIMIFH = 3;</code>
      * @return The lHNODHIMIFH.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class KANFGENDGJNOuterClass {
       return lHNODHIMIFH_;
     }
 
-    public static final int GADNPJHGAEG_FIELD_NUMBER = 3;
+    public static final int GADNPJHGAEG_FIELD_NUMBER = 6;
     private boolean gADNPJHGAEG_;
     /**
-     * <code>bool GADNPJHGAEG = 3;</code>
+     * <code>bool GADNPJHGAEG = 6;</code>
      * @return The gADNPJHGAEG.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class KANFGENDGJNOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (lHNODHIMIFH_ != 0) {
-        output.writeUInt32(1, lHNODHIMIFH_);
+        output.writeUInt32(3, lHNODHIMIFH_);
       }
       if (gADNPJHGAEG_ != false) {
-        output.writeBool(3, gADNPJHGAEG_);
+        output.writeBool(6, gADNPJHGAEG_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class KANFGENDGJNOuterClass {
       size = 0;
       if (lHNODHIMIFH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, lHNODHIMIFH_);
+          .computeUInt32Size(3, lHNODHIMIFH_);
       }
       if (gADNPJHGAEG_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, gADNPJHGAEG_);
+          .computeBoolSize(6, gADNPJHGAEG_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class KANFGENDGJNOuterClass {
 
       private int lHNODHIMIFH_ ;
       /**
-       * <code>uint32 LHNODHIMIFH = 1;</code>
+       * <code>uint32 LHNODHIMIFH = 3;</code>
        * @return The lHNODHIMIFH.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class KANFGENDGJNOuterClass {
         return lHNODHIMIFH_;
       }
       /**
-       * <code>uint32 LHNODHIMIFH = 1;</code>
+       * <code>uint32 LHNODHIMIFH = 3;</code>
        * @param value The lHNODHIMIFH to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class KANFGENDGJNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LHNODHIMIFH = 1;</code>
+       * <code>uint32 LHNODHIMIFH = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLHNODHIMIFH() {
@@ -492,7 +492,7 @@ public final class KANFGENDGJNOuterClass {
 
       private boolean gADNPJHGAEG_ ;
       /**
-       * <code>bool GADNPJHGAEG = 3;</code>
+       * <code>bool GADNPJHGAEG = 6;</code>
        * @return The gADNPJHGAEG.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class KANFGENDGJNOuterClass {
         return gADNPJHGAEG_;
       }
       /**
-       * <code>bool GADNPJHGAEG = 3;</code>
+       * <code>bool GADNPJHGAEG = 6;</code>
        * @param value The gADNPJHGAEG to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class KANFGENDGJNOuterClass {
         return this;
       }
       /**
-       * <code>bool GADNPJHGAEG = 3;</code>
+       * <code>bool GADNPJHGAEG = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGADNPJHGAEG() {
@@ -588,7 +588,7 @@ public final class KANFGENDGJNOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021KANFGENDGJN.proto\"7\n\013KANFGENDGJN\022\023\n\013LH" +
-      "NODHIMIFH\030\001 \001(\r\022\023\n\013GADNPJHGAEG\030\003 \001(\010B2\n\031" +
+      "NODHIMIFH\030\003 \001(\r\022\023\n\013GADNPJHGAEG\030\006 \001(\010B2\n\031" +
       "emu.grasscutter.net.protoB\025KANFGENDGJNOu" +
       "terClassb\006proto3"
     };

@@ -5,5 +5,5 @@ option java_outer_classname = "PostEnterSceneReqOuterClass";
 
 message PostEnterSceneReq {
 	double total_tick_time = 1;
-	uint32 enter_scene_token = 8;
+	uint32 enter_scene_token = 6;
 }

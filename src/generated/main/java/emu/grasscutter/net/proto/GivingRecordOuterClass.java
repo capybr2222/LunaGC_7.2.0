@@ -19,35 +19,35 @@ public final class GivingRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 config_id = 2;</code>
+     * <code>uint32 config_id = 5;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>uint32 group_id = 14;</code>
+     * <code>uint32 group_id = 6;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>bool is_finished = 7;</code>
+     * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>uint32 last_group_id = 6;</code>
+     * <code>uint32 last_group_id = 1;</code>
      * @return The lastGroupId.
      */
     int getLastGroupId();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     int getMaterialCntMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     boolean containsMaterialCntMap(
         int key);
@@ -58,32 +58,32 @@ public final class GivingRecordOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getMaterialCntMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getMaterialCntMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
 
     int getMaterialCntMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
 
     int getMaterialCntMapOrThrow(
         int key);
 
     /**
-     * <code>uint32 giving_id = 10;</code>
+     * <code>uint32 giving_id = 11;</code>
      * @return The givingId.
      */
     int getGivingId();
 
     /**
-     * <code>bool is_gadget_giving = 9;</code>
+     * <code>bool is_gadget_giving = 14;</code>
      * @return The isGadgetGiving.
      */
     boolean getIsGadgetGiving();
@@ -134,7 +134,37 @@ public final class GivingRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 8: {
+
+              lastGroupId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              configId_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              groupId_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              givingId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isFinished_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              isGadgetGiving_ = input.readBool();
+              break;
+            }
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 materialCntMap_ = com.google.protobuf.MapField.newMapField(
                     MaterialCntMapDefaultEntryHolder.defaultEntry);
@@ -145,36 +175,6 @@ public final class GivingRecordOuterClass {
                   MaterialCntMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               materialCntMap_.getMutableMap().put(
                   materialCntMap__.getKey(), materialCntMap__.getValue());
-              break;
-            }
-            case 16: {
-
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              lastGroupId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              isGadgetGiving_ = input.readBool();
-              break;
-            }
-            case 80: {
-
-              givingId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              groupId_ = input.readUInt32();
               break;
             }
             default: {
@@ -206,7 +206,7 @@ public final class GivingRecordOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 1:
+        case 15:
           return internalGetMaterialCntMap();
         default:
           throw new RuntimeException(
@@ -221,10 +221,10 @@ public final class GivingRecordOuterClass {
               emu.grasscutter.net.proto.GivingRecordOuterClass.GivingRecord.class, emu.grasscutter.net.proto.GivingRecordOuterClass.GivingRecord.Builder.class);
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 2;
+    public static final int CONFIG_ID_FIELD_NUMBER = 5;
     private int configId_;
     /**
-     * <code>uint32 config_id = 2;</code>
+     * <code>uint32 config_id = 5;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -232,10 +232,10 @@ public final class GivingRecordOuterClass {
       return configId_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 14;
+    public static final int GROUP_ID_FIELD_NUMBER = 6;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 14;</code>
+     * <code>uint32 group_id = 6;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -243,10 +243,10 @@ public final class GivingRecordOuterClass {
       return groupId_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 7;
+    public static final int IS_FINISHED_FIELD_NUMBER = 13;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 7;</code>
+     * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -254,10 +254,10 @@ public final class GivingRecordOuterClass {
       return isFinished_;
     }
 
-    public static final int LAST_GROUP_ID_FIELD_NUMBER = 6;
+    public static final int LAST_GROUP_ID_FIELD_NUMBER = 1;
     private int lastGroupId_;
     /**
-     * <code>uint32 last_group_id = 6;</code>
+     * <code>uint32 last_group_id = 1;</code>
      * @return The lastGroupId.
      */
     @java.lang.Override
@@ -265,7 +265,7 @@ public final class GivingRecordOuterClass {
       return lastGroupId_;
     }
 
-    public static final int MATERIAL_CNT_MAP_FIELD_NUMBER = 1;
+    public static final int MATERIAL_CNT_MAP_FIELD_NUMBER = 15;
     private static final class MaterialCntMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -292,7 +292,7 @@ public final class GivingRecordOuterClass {
       return internalGetMaterialCntMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
 
     @java.lang.Override
@@ -310,7 +310,7 @@ public final class GivingRecordOuterClass {
       return getMaterialCntMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     @java.lang.Override
 
@@ -318,7 +318,7 @@ public final class GivingRecordOuterClass {
       return internalGetMaterialCntMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     @java.lang.Override
 
@@ -331,7 +331,7 @@ public final class GivingRecordOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+     * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
      */
     @java.lang.Override
 
@@ -346,10 +346,10 @@ public final class GivingRecordOuterClass {
       return map.get(key);
     }
 
-    public static final int GIVING_ID_FIELD_NUMBER = 10;
+    public static final int GIVING_ID_FIELD_NUMBER = 11;
     private int givingId_;
     /**
-     * <code>uint32 giving_id = 10;</code>
+     * <code>uint32 giving_id = 11;</code>
      * @return The givingId.
      */
     @java.lang.Override
@@ -357,10 +357,10 @@ public final class GivingRecordOuterClass {
       return givingId_;
     }
 
-    public static final int IS_GADGET_GIVING_FIELD_NUMBER = 9;
+    public static final int IS_GADGET_GIVING_FIELD_NUMBER = 14;
     private boolean isGadgetGiving_;
     /**
-     * <code>bool is_gadget_giving = 9;</code>
+     * <code>bool is_gadget_giving = 14;</code>
      * @return The isGadgetGiving.
      */
     @java.lang.Override
@@ -382,30 +382,30 @@ public final class GivingRecordOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (lastGroupId_ != 0) {
+        output.writeUInt32(1, lastGroupId_);
+      }
+      if (configId_ != 0) {
+        output.writeUInt32(5, configId_);
+      }
+      if (groupId_ != 0) {
+        output.writeUInt32(6, groupId_);
+      }
+      if (givingId_ != 0) {
+        output.writeUInt32(11, givingId_);
+      }
+      if (isFinished_ != false) {
+        output.writeBool(13, isFinished_);
+      }
+      if (isGadgetGiving_ != false) {
+        output.writeBool(14, isGadgetGiving_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetMaterialCntMap(),
           MaterialCntMapDefaultEntryHolder.defaultEntry,
-          1);
-      if (configId_ != 0) {
-        output.writeUInt32(2, configId_);
-      }
-      if (lastGroupId_ != 0) {
-        output.writeUInt32(6, lastGroupId_);
-      }
-      if (isFinished_ != false) {
-        output.writeBool(7, isFinished_);
-      }
-      if (isGadgetGiving_ != false) {
-        output.writeBool(9, isGadgetGiving_);
-      }
-      if (givingId_ != 0) {
-        output.writeUInt32(10, givingId_);
-      }
-      if (groupId_ != 0) {
-        output.writeUInt32(14, groupId_);
-      }
+          15);
       unknownFields.writeTo(output);
     }
 
@@ -415,6 +415,30 @@ public final class GivingRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (lastGroupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, lastGroupId_);
+      }
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, configId_);
+      }
+      if (groupId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, groupId_);
+      }
+      if (givingId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, givingId_);
+      }
+      if (isFinished_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isFinished_);
+      }
+      if (isGadgetGiving_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isGadgetGiving_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetMaterialCntMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -423,31 +447,7 @@ public final class GivingRecordOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(1, materialCntMap__);
-      }
-      if (configId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, configId_);
-      }
-      if (lastGroupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, lastGroupId_);
-      }
-      if (isFinished_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isFinished_);
-      }
-      if (isGadgetGiving_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isGadgetGiving_);
-      }
-      if (givingId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, givingId_);
-      }
-      if (groupId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, groupId_);
+            .computeMessageSize(15, materialCntMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -618,7 +618,7 @@ public final class GivingRecordOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 15:
             return internalGetMaterialCntMap();
           default:
             throw new RuntimeException(
@@ -629,7 +629,7 @@ public final class GivingRecordOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 1:
+          case 15:
             return internalGetMutableMaterialCntMap();
           default:
             throw new RuntimeException(
@@ -810,7 +810,7 @@ public final class GivingRecordOuterClass {
 
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 config_id = 5;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -818,7 +818,7 @@ public final class GivingRecordOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 config_id = 5;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -829,7 +829,7 @@ public final class GivingRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 config_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
@@ -841,7 +841,7 @@ public final class GivingRecordOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 6;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -849,7 +849,7 @@ public final class GivingRecordOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 6;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -860,7 +860,7 @@ public final class GivingRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 14;</code>
+       * <code>uint32 group_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -872,7 +872,7 @@ public final class GivingRecordOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 7;</code>
+       * <code>bool is_finished = 13;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -880,7 +880,7 @@ public final class GivingRecordOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 7;</code>
+       * <code>bool is_finished = 13;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -891,7 +891,7 @@ public final class GivingRecordOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 7;</code>
+       * <code>bool is_finished = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -903,7 +903,7 @@ public final class GivingRecordOuterClass {
 
       private int lastGroupId_ ;
       /**
-       * <code>uint32 last_group_id = 6;</code>
+       * <code>uint32 last_group_id = 1;</code>
        * @return The lastGroupId.
        */
       @java.lang.Override
@@ -911,7 +911,7 @@ public final class GivingRecordOuterClass {
         return lastGroupId_;
       }
       /**
-       * <code>uint32 last_group_id = 6;</code>
+       * <code>uint32 last_group_id = 1;</code>
        * @param value The lastGroupId to set.
        * @return This builder for chaining.
        */
@@ -922,7 +922,7 @@ public final class GivingRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 last_group_id = 6;</code>
+       * <code>uint32 last_group_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLastGroupId() {
@@ -959,7 +959,7 @@ public final class GivingRecordOuterClass {
         return internalGetMaterialCntMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
 
       @java.lang.Override
@@ -977,7 +977,7 @@ public final class GivingRecordOuterClass {
         return getMaterialCntMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
       @java.lang.Override
 
@@ -985,7 +985,7 @@ public final class GivingRecordOuterClass {
         return internalGetMaterialCntMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
       @java.lang.Override
 
@@ -998,7 +998,7 @@ public final class GivingRecordOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
       @java.lang.Override
 
@@ -1019,7 +1019,7 @@ public final class GivingRecordOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
 
       public Builder removeMaterialCntMap(
@@ -1038,7 +1038,7 @@ public final class GivingRecordOuterClass {
         return internalGetMutableMaterialCntMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
       public Builder putMaterialCntMap(
           int key,
@@ -1050,7 +1050,7 @@ public final class GivingRecordOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 1;</code>
+       * <code>map&lt;uint32, uint32&gt; material_cnt_map = 15;</code>
        */
 
       public Builder putAllMaterialCntMap(
@@ -1062,7 +1062,7 @@ public final class GivingRecordOuterClass {
 
       private int givingId_ ;
       /**
-       * <code>uint32 giving_id = 10;</code>
+       * <code>uint32 giving_id = 11;</code>
        * @return The givingId.
        */
       @java.lang.Override
@@ -1070,7 +1070,7 @@ public final class GivingRecordOuterClass {
         return givingId_;
       }
       /**
-       * <code>uint32 giving_id = 10;</code>
+       * <code>uint32 giving_id = 11;</code>
        * @param value The givingId to set.
        * @return This builder for chaining.
        */
@@ -1081,7 +1081,7 @@ public final class GivingRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 giving_id = 10;</code>
+       * <code>uint32 giving_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearGivingId() {
@@ -1093,7 +1093,7 @@ public final class GivingRecordOuterClass {
 
       private boolean isGadgetGiving_ ;
       /**
-       * <code>bool is_gadget_giving = 9;</code>
+       * <code>bool is_gadget_giving = 14;</code>
        * @return The isGadgetGiving.
        */
       @java.lang.Override
@@ -1101,7 +1101,7 @@ public final class GivingRecordOuterClass {
         return isGadgetGiving_;
       }
       /**
-       * <code>bool is_gadget_giving = 9;</code>
+       * <code>bool is_gadget_giving = 14;</code>
        * @param value The isGadgetGiving to set.
        * @return This builder for chaining.
        */
@@ -1112,7 +1112,7 @@ public final class GivingRecordOuterClass {
         return this;
       }
       /**
-       * <code>bool is_gadget_giving = 9;</code>
+       * <code>bool is_gadget_giving = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsGadgetGiving() {
@@ -1194,11 +1194,11 @@ public final class GivingRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022GivingRecord.proto\"\200\002\n\014GivingRecord\022\021\n" +
-      "\tconfig_id\030\002 \001(\r\022\020\n\010group_id\030\016 \001(\r\022\023\n\013is" +
-      "_finished\030\007 \001(\010\022\025\n\rlast_group_id\030\006 \001(\r\022;" +
-      "\n\020material_cnt_map\030\001 \003(\0132!.GivingRecord." +
-      "MaterialCntMapEntry\022\021\n\tgiving_id\030\n \001(\r\022\030" +
-      "\n\020is_gadget_giving\030\t \001(\010\0325\n\023MaterialCntM" +
+      "\tconfig_id\030\005 \001(\r\022\020\n\010group_id\030\006 \001(\r\022\023\n\013is" +
+      "_finished\030\r \001(\010\022\025\n\rlast_group_id\030\001 \001(\r\022;" +
+      "\n\020material_cnt_map\030\017 \003(\0132!.GivingRecord." +
+      "MaterialCntMapEntry\022\021\n\tgiving_id\030\013 \001(\r\022\030" +
+      "\n\020is_gadget_giving\030\016 \001(\010\0325\n\023MaterialCntM" +
       "apEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B" +
       "3\n\031emu.grasscutter.net.protoB\026GivingReco" +
       "rdOuterClassb\006proto3"

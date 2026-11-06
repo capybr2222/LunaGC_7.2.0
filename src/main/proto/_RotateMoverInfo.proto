@@ -9,5 +9,5 @@ import "Vector.proto";
 message _RotateMoverInfo {
 	Vector IMFDIHLBFEN = 1;
 	float LAIKIBMMJKD = 2;
-	MathQuaternion GMDLGOECLKP = 3;
+	MathQuaternion GMDLGOECLKP = 20001;
 }

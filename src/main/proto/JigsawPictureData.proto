@@ -4,8 +4,8 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "JigsawPictureDataOuterClass";
 
 message JigsawPictureData {
-	bool is_finished = 4;
+	bool is_finished = 2;
 	uint32 eemgkjochhk = 50000;
-	bool is_open = 8;
+	bool is_open = 1;
 	uint32 mmgjjbelbhf = 50001;
 }

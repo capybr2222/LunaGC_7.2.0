@@ -6,15 +6,15 @@ option java_outer_classname = "_LoliGolfDungeonSettleInfoOuterClass";
 import "Uint32Pair.proto";
 
 message _LoliGolfDungeonSettleInfo {
-	uint32 BMMIKCIJLHN = 50000;
-	uint32 FHKOLIDKNBA = 50001;
-	uint32 JOELLBHNGDL = 50002;
-	uint32 qte_count = 13;
-	uint32 level_id = 1;
-	uint32 IDJGDOGIJFE = 50003;
-	repeated Uint32Pair NKOOPGKMHEK = 50004;
-	uint32 AFOELHPKJOP = 50005;
-	repeated Uint32Pair KHEMPDGCLGG = 50006;
-	uint32 score = 12;
-	bool is_new_record = 5;
+	uint32 BMMIKCIJLHN = 20004;
+	uint32 FHKOLIDKNBA = 20002;
+	uint32 JOELLBHNGDL = 20003;
+	uint32 qte_count = 9;
+	uint32 level_id = 13;
+	uint32 IDJGDOGIJFE = 20007;
+	repeated Uint32Pair NKOOPGKMHEK = 20000;
+	uint32 AFOELHPKJOP = 20005;
+	repeated Uint32Pair KHEMPDGCLGG = 20001;
+	uint32 score = 1;
+	bool is_new_record = 8;
 }

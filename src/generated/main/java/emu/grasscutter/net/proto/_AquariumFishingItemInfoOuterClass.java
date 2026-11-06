@@ -19,25 +19,25 @@ public final class _AquariumFishingItemInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 item_id = 4;</code>
+     * <code>uint32 item_id = 13;</code>
      * @return The itemId.
      */
     int getItemId();
 
     /**
-     * <code>uint32 EENNPDEJDJC = 5;</code>
+     * <code>uint32 EENNPDEJDJC = 20000;</code>
      * @return The eENNPDEJDJC.
      */
     int getEENNPDEJDJC();
 
     /**
-     * <code>uint32 count = 1;</code>
+     * <code>uint32 count = 7;</code>
      * @return The count.
      */
     int getCount();
 
     /**
-     * <code>bool _is_first_capture = 6;</code>
+     * <code>bool _is_first_capture = 10;</code>
      * @return The isFirstCapture.
      */
     boolean getIsFirstCapture();
@@ -87,24 +87,24 @@ public final class _AquariumFishingItemInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
 
               count_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 80: {
+
+              IsFirstCapture_ = input.readBool();
+              break;
+            }
+            case 104: {
 
               itemId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 160000: {
 
               eENNPDEJDJC_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              IsFirstCapture_ = input.readBool();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class _AquariumFishingItemInfoOuterClass {
               emu.grasscutter.net.proto._AquariumFishingItemInfoOuterClass._AquariumFishingItemInfo.class, emu.grasscutter.net.proto._AquariumFishingItemInfoOuterClass._AquariumFishingItemInfo.Builder.class);
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 4;
+    public static final int ITEM_ID_FIELD_NUMBER = 13;
     private int itemId_;
     /**
-     * <code>uint32 item_id = 4;</code>
+     * <code>uint32 item_id = 13;</code>
      * @return The itemId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _AquariumFishingItemInfoOuterClass {
       return itemId_;
     }
 
-    public static final int EENNPDEJDJC_FIELD_NUMBER = 5;
+    public static final int EENNPDEJDJC_FIELD_NUMBER = 20000;
     private int eENNPDEJDJC_;
     /**
-     * <code>uint32 EENNPDEJDJC = 5;</code>
+     * <code>uint32 EENNPDEJDJC = 20000;</code>
      * @return The eENNPDEJDJC.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _AquariumFishingItemInfoOuterClass {
       return eENNPDEJDJC_;
     }
 
-    public static final int COUNT_FIELD_NUMBER = 1;
+    public static final int COUNT_FIELD_NUMBER = 7;
     private int count_;
     /**
-     * <code>uint32 count = 1;</code>
+     * <code>uint32 count = 7;</code>
      * @return The count.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _AquariumFishingItemInfoOuterClass {
       return count_;
     }
 
-    public static final int _IS_FIRST_CAPTURE_FIELD_NUMBER = 6;
+    public static final int _IS_FIRST_CAPTURE_FIELD_NUMBER = 10;
     private boolean IsFirstCapture_;
     /**
-     * <code>bool _is_first_capture = 6;</code>
+     * <code>bool _is_first_capture = 10;</code>
      * @return The isFirstCapture.
      */
     @java.lang.Override
@@ -198,16 +198,16 @@ public final class _AquariumFishingItemInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (count_ != 0) {
-        output.writeUInt32(1, count_);
-      }
-      if (itemId_ != 0) {
-        output.writeUInt32(4, itemId_);
-      }
-      if (eENNPDEJDJC_ != 0) {
-        output.writeUInt32(5, eENNPDEJDJC_);
+        output.writeUInt32(7, count_);
       }
       if (IsFirstCapture_ != false) {
-        output.writeBool(6, IsFirstCapture_);
+        output.writeBool(10, IsFirstCapture_);
+      }
+      if (itemId_ != 0) {
+        output.writeUInt32(13, itemId_);
+      }
+      if (eENNPDEJDJC_ != 0) {
+        output.writeUInt32(20000, eENNPDEJDJC_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,19 +220,19 @@ public final class _AquariumFishingItemInfoOuterClass {
       size = 0;
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, count_);
-      }
-      if (itemId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, itemId_);
-      }
-      if (eENNPDEJDJC_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, eENNPDEJDJC_);
+          .computeUInt32Size(7, count_);
       }
       if (IsFirstCapture_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, IsFirstCapture_);
+          .computeBoolSize(10, IsFirstCapture_);
+      }
+      if (itemId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, itemId_);
+      }
+      if (eENNPDEJDJC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20000, eENNPDEJDJC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class _AquariumFishingItemInfoOuterClass {
 
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 4;</code>
+       * <code>uint32 item_id = 13;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class _AquariumFishingItemInfoOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 4;</code>
+       * <code>uint32 item_id = 13;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class _AquariumFishingItemInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_id = 4;</code>
+       * <code>uint32 item_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
@@ -570,7 +570,7 @@ public final class _AquariumFishingItemInfoOuterClass {
 
       private int eENNPDEJDJC_ ;
       /**
-       * <code>uint32 EENNPDEJDJC = 5;</code>
+       * <code>uint32 EENNPDEJDJC = 20000;</code>
        * @return The eENNPDEJDJC.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class _AquariumFishingItemInfoOuterClass {
         return eENNPDEJDJC_;
       }
       /**
-       * <code>uint32 EENNPDEJDJC = 5;</code>
+       * <code>uint32 EENNPDEJDJC = 20000;</code>
        * @param value The eENNPDEJDJC to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class _AquariumFishingItemInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 EENNPDEJDJC = 5;</code>
+       * <code>uint32 EENNPDEJDJC = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearEENNPDEJDJC() {
@@ -601,7 +601,7 @@ public final class _AquariumFishingItemInfoOuterClass {
 
       private int count_ ;
       /**
-       * <code>uint32 count = 1;</code>
+       * <code>uint32 count = 7;</code>
        * @return The count.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class _AquariumFishingItemInfoOuterClass {
         return count_;
       }
       /**
-       * <code>uint32 count = 1;</code>
+       * <code>uint32 count = 7;</code>
        * @param value The count to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class _AquariumFishingItemInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 count = 1;</code>
+       * <code>uint32 count = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearCount() {
@@ -632,7 +632,7 @@ public final class _AquariumFishingItemInfoOuterClass {
 
       private boolean IsFirstCapture_ ;
       /**
-       * <code>bool _is_first_capture = 6;</code>
+       * <code>bool _is_first_capture = 10;</code>
        * @return The isFirstCapture.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class _AquariumFishingItemInfoOuterClass {
         return IsFirstCapture_;
       }
       /**
-       * <code>bool _is_first_capture = 6;</code>
+       * <code>bool _is_first_capture = 10;</code>
        * @param value The isFirstCapture to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class _AquariumFishingItemInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool _is_first_capture = 6;</code>
+       * <code>bool _is_first_capture = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFirstCapture() {
@@ -727,12 +727,12 @@ public final class _AquariumFishingItemInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036_AquariumFishingItemInfo.proto\"j\n\030_Aqu" +
-      "ariumFishingItemInfo\022\017\n\007item_id\030\004 \001(\r\022\023\n" +
-      "\013EENNPDEJDJC\030\005 \001(\r\022\r\n\005count\030\001 \001(\r\022\031\n\021_is" +
-      "_first_capture\030\006 \001(\010B?\n\031emu.grasscutter." +
-      "net.protoB\"_AquariumFishingItemInfoOuter" +
-      "Classb\006proto3"
+      "\n\036_AquariumFishingItemInfo.proto\"l\n\030_Aqu" +
+      "ariumFishingItemInfo\022\017\n\007item_id\030\r \001(\r\022\025\n" +
+      "\013EENNPDEJDJC\030\240\234\001 \001(\r\022\r\n\005count\030\007 \001(\r\022\031\n\021_" +
+      "is_first_capture\030\n \001(\010B?\n\031emu.grasscutte" +
+      "r.net.protoB\"_AquariumFishingItemInfoOut" +
+      "erClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

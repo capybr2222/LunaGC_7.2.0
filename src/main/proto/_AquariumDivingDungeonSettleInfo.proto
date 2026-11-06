@@ -7,12 +7,12 @@ import "_AquariumDivingBagDetail.proto";
 import "_AquariumDivingLevelEvent.proto";
 
 message _AquariumDivingDungeonSettleInfo {
-	uint32 IHODOKLDAGG = 50000;
-	_AquariumDivingBagDetail _bag_detail = 10;
-	uint32 EFPBHJOIBJH = 6;
-	uint32 CFPHMDCAGDL = 50001;
-	uint32 _bait_count = 13;
-	repeated uint32 _finished_task_id_list = 14;
-	_AquariumDivingLevelEvent IDPMJLBKBNC = 3;
-	uint32 GJFKPLMNGED = 50002;
+	uint32 IHODOKLDAGG = 20003;
+	_AquariumDivingBagDetail _bag_detail = 7;
+	uint32 EFPBHJOIBJH = 50001;
+	uint32 CFPHMDCAGDL = 20001;
+	uint32 _bait_count = 11;
+	repeated uint32 _finished_task_id_list = 10;
+	_AquariumDivingLevelEvent IDPMJLBKBNC = 14;
+	uint32 GJFKPLMNGED = 20002;
 }

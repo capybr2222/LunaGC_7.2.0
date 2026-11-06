@@ -4,9 +4,9 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "VintageMarketStoreInfoOuterClass";
 
 message VintageMarketStoreInfo {
-	repeated uint32 GLINPEAHPKI = 50000;
-	repeated uint32 HHJEAFJANAD = 50001;
-	repeated uint32 strategy_list = 8;
-	uint32 store_id = 12;
-	uint32 slot_count = 15;
+	repeated uint32 GLINPEAHPKI = 20000;
+	repeated uint32 HHJEAFJANAD = 20002;
+	repeated uint32 strategy_list = 20001;
+	uint32 store_id = 1;
+	uint32 slot_count = 2;
 }

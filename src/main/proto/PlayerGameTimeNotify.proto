@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "PlayerGameTimeNotifyOuterClass";
 
 message PlayerGameTimeNotify {
-	bool is_home = 1;
-	uint32 game_time = 13;
-	uint32 uid = 10;
+	bool is_home = 3;
+	uint32 game_time = 9;
+	uint32 uid = 4;
 }

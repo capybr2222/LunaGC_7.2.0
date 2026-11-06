@@ -11,18 +11,18 @@ message DIGMMKNOMJH {
 		uint32 AAKAOLKKNGC = 3;
 		repeated uint32 avatar_id_list = 7;
 	}
-	Uint32Pair IEMHJKAFADD = 50000;
-	uint32 BHLBDKEMLCA = 50001;
-	Uint32Pair CEBNLIBJDMH = 50002;
+	Uint32Pair IEMHJKAFADD = 7;
+	uint32 BHLBDKEMLCA = 8;
+	Uint32Pair CEBNLIBJDMH = 4;
 	repeated Uint32Pair DHLLNAJOLGD = 2;
 	repeated uint32 LJFEALFCNDK = 9;
 	uint32 difficulty_id = 11;
 	uint32 FACBACBDDPB = 1;
-	repeated uint32 GANBJPGGDCN = 50003;
+	repeated uint32 GANBJPGGDCN = 3;
 	repeated PHPBCLPALEL GIKGKBOOEBA = 10;
-	repeated BKPMKCLBFJO PBOLJCMMHAE = 50004;
-	repeated uint32 LBBGFJIIGEF = 50005;
-	Uint32Pair ALLEKLNOBLE = 50006;
-	uint32 AEOAOJFGECJ = 50007;
-	uint32 GLAJBGCECKN = 50008;
+	repeated BKPMKCLBFJO PBOLJCMMHAE = 15;
+	repeated uint32 LBBGFJIIGEF = 12;
+	Uint32Pair ALLEKLNOBLE = 14;
+	uint32 AEOAOJFGECJ = 6;
+	uint32 GLAJBGCECKN = 13;
 }

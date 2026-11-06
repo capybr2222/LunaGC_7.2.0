@@ -19,7 +19,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 12;</code>
+     * <code>uint32 score = 15;</code>
      * @return The score.
      */
     int getScore();
@@ -31,19 +31,19 @@ public final class _TpsDefenseSettleInfoOuterClass {
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 kill_num = 10;</code>
+     * <code>uint32 kill_num = 9;</code>
      * @return The killNum.
      */
     int getKillNum();
 
     /**
-     * <code>uint32 max_hp = 14;</code>
+     * <code>uint32 max_hp = 12;</code>
      * @return The maxHp.
      */
     int getMaxHp();
 
     /**
-     * <code>uint32 hp = 13;</code>
+     * <code>uint32 hp = 11;</code>
      * @return The hp.
      */
     int getHp();
@@ -98,24 +98,24 @@ public final class _TpsDefenseSettleInfoOuterClass {
               isNewRecord_ = input.readBool();
               break;
             }
-            case 80: {
+            case 72: {
 
               killNum_ = input.readUInt32();
               break;
             }
-            case 96: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 88: {
 
               hp_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 96: {
 
               maxHp_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,10 +150,10 @@ public final class _TpsDefenseSettleInfoOuterClass {
               emu.grasscutter.net.proto._TpsDefenseSettleInfoOuterClass._TpsDefenseSettleInfo.class, emu.grasscutter.net.proto._TpsDefenseSettleInfoOuterClass._TpsDefenseSettleInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 12;
+    public static final int SCORE_FIELD_NUMBER = 15;
     private int score_;
     /**
-     * <code>uint32 score = 12;</code>
+     * <code>uint32 score = 15;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _TpsDefenseSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int KILL_NUM_FIELD_NUMBER = 10;
+    public static final int KILL_NUM_FIELD_NUMBER = 9;
     private int killNum_;
     /**
-     * <code>uint32 kill_num = 10;</code>
+     * <code>uint32 kill_num = 9;</code>
      * @return The killNum.
      */
     @java.lang.Override
@@ -183,10 +183,10 @@ public final class _TpsDefenseSettleInfoOuterClass {
       return killNum_;
     }
 
-    public static final int MAX_HP_FIELD_NUMBER = 14;
+    public static final int MAX_HP_FIELD_NUMBER = 12;
     private int maxHp_;
     /**
-     * <code>uint32 max_hp = 14;</code>
+     * <code>uint32 max_hp = 12;</code>
      * @return The maxHp.
      */
     @java.lang.Override
@@ -194,10 +194,10 @@ public final class _TpsDefenseSettleInfoOuterClass {
       return maxHp_;
     }
 
-    public static final int HP_FIELD_NUMBER = 13;
+    public static final int HP_FIELD_NUMBER = 11;
     private int hp_;
     /**
-     * <code>uint32 hp = 13;</code>
+     * <code>uint32 hp = 11;</code>
      * @return The hp.
      */
     @java.lang.Override
@@ -223,16 +223,16 @@ public final class _TpsDefenseSettleInfoOuterClass {
         output.writeBool(6, isNewRecord_);
       }
       if (killNum_ != 0) {
-        output.writeUInt32(10, killNum_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(12, score_);
+        output.writeUInt32(9, killNum_);
       }
       if (hp_ != 0) {
-        output.writeUInt32(13, hp_);
+        output.writeUInt32(11, hp_);
       }
       if (maxHp_ != 0) {
-        output.writeUInt32(14, maxHp_);
+        output.writeUInt32(12, maxHp_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(15, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -249,19 +249,19 @@ public final class _TpsDefenseSettleInfoOuterClass {
       }
       if (killNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, killNum_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, score_);
+          .computeUInt32Size(9, killNum_);
       }
       if (hp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, hp_);
+          .computeUInt32Size(11, hp_);
       }
       if (maxHp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, maxHp_);
+          .computeUInt32Size(12, maxHp_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -578,7 +578,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 12;</code>
+       * <code>uint32 score = 15;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -586,7 +586,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 12;</code>
+       * <code>uint32 score = 15;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -597,7 +597,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 12;</code>
+       * <code>uint32 score = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -640,7 +640,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
 
       private int killNum_ ;
       /**
-       * <code>uint32 kill_num = 10;</code>
+       * <code>uint32 kill_num = 9;</code>
        * @return The killNum.
        */
       @java.lang.Override
@@ -648,7 +648,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
         return killNum_;
       }
       /**
-       * <code>uint32 kill_num = 10;</code>
+       * <code>uint32 kill_num = 9;</code>
        * @param value The killNum to set.
        * @return This builder for chaining.
        */
@@ -659,7 +659,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 kill_num = 10;</code>
+       * <code>uint32 kill_num = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearKillNum() {
@@ -671,7 +671,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
 
       private int maxHp_ ;
       /**
-       * <code>uint32 max_hp = 14;</code>
+       * <code>uint32 max_hp = 12;</code>
        * @return The maxHp.
        */
       @java.lang.Override
@@ -679,7 +679,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
         return maxHp_;
       }
       /**
-       * <code>uint32 max_hp = 14;</code>
+       * <code>uint32 max_hp = 12;</code>
        * @param value The maxHp to set.
        * @return This builder for chaining.
        */
@@ -690,7 +690,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_hp = 14;</code>
+       * <code>uint32 max_hp = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxHp() {
@@ -702,7 +702,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
 
       private int hp_ ;
       /**
-       * <code>uint32 hp = 13;</code>
+       * <code>uint32 hp = 11;</code>
        * @return The hp.
        */
       @java.lang.Override
@@ -710,7 +710,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
         return hp_;
       }
       /**
-       * <code>uint32 hp = 13;</code>
+       * <code>uint32 hp = 11;</code>
        * @param value The hp to set.
        * @return This builder for chaining.
        */
@@ -721,7 +721,7 @@ public final class _TpsDefenseSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hp = 13;</code>
+       * <code>uint32 hp = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearHp() {
@@ -798,9 +798,9 @@ public final class _TpsDefenseSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033_TpsDefenseSettleInfo.proto\"k\n\025_TpsDef" +
-      "enseSettleInfo\022\r\n\005score\030\014 \001(\r\022\025\n\ris_new_" +
-      "record\030\006 \001(\010\022\020\n\010kill_num\030\n \001(\r\022\016\n\006max_hp" +
-      "\030\016 \001(\r\022\n\n\002hp\030\r \001(\rB<\n\031emu.grasscutter.ne" +
+      "enseSettleInfo\022\r\n\005score\030\017 \001(\r\022\025\n\ris_new_" +
+      "record\030\006 \001(\010\022\020\n\010kill_num\030\t \001(\r\022\016\n\006max_hp" +
+      "\030\014 \001(\r\022\n\n\002hp\030\013 \001(\rB<\n\031emu.grasscutter.ne" +
       "t.protoB\037_TpsDefenseSettleInfoOuterClass" +
       "b\006proto3"
     };

@@ -4,10 +4,10 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "EffigyChallengeV2LevelDataOuterClass";
 
 message EffigyChallengeV2LevelData {
-	uint32 EFFLFFBKDAC = 50000;
-	bool is_level_open = 7;
-	uint32 level_id = 13;
-	uint32 NHEFNKONPEI = 8;
-	uint32 GGADAHHNPNB = 50001;
-	uint32 ppmpmjhejhj = 50002;
+	uint32 EFFLFFBKDAC = 20000;
+	bool is_level_open = 3;
+	uint32 level_id = 1;
+	uint32 NHEFNKONPEI = 50001;
+	uint32 GGADAHHNPNB = 20002;
+	uint32 ppmpmjhejhj = 50003;
 }

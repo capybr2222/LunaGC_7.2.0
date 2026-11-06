@@ -6,10 +6,10 @@ option java_outer_classname = "HomeFurnitureDataOuterClass";
 import "Vector.proto";
 
 message HomeFurnitureData {
-	int32 parent_furniture_index = 9;
-	Vector spawn_pos = 6;
-	uint32 version = 12;
-	Vector spawn_rot = 7;
-	uint32 guid = 5;
-	uint32 furniture_id = 11;
+	int32 parent_furniture_index = 14;
+	Vector spawn_pos = 3;
+	uint32 version = 11;
+	Vector spawn_rot = 2;
+	uint32 guid = 7;
+	uint32 furniture_id = 10;
 }

@@ -6,9 +6,9 @@ option java_outer_classname = "EvtAvatarLockChairRspOuterClass";
 import "Vector.proto";
 
 message EvtAvatarLockChairRsp {
-	uint64 chair_id = 13;
-	int32 retcode = 12;
-	Vector position = 8;
-	int32 direction = 7;
+	uint64 chair_id = 1;
+	int32 retcode = 4;
+	Vector position = 13;
+	int32 direction = 11;
 	uint32 entity_id = 14;
 }

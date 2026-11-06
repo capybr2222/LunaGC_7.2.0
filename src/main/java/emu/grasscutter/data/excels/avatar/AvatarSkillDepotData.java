@@ -33,7 +33,7 @@ public class AvatarSkillDepotData extends GameResource {
 
     @SerializedName(
             value = "specialProudSkillOpens",
-            alternate = {"DAEIJGCFNLL", "NMKACHALCPO", "EIBOFEEGGID"})
+            alternate = {"DAEIJGCFNLL", "NMKACHALCPO", "EIBOFEEGGID", "LHFOOPMJHBN"})
     private List<SpecialProudSkillOpens> specialProudSkillOpens;
 
     private String talentStarName;

@@ -6,5 +6,5 @@ option java_outer_classname = "EJIGDIIFDBIOuterClass";
 import "PJJFGODDFME.proto";
 
 message EJIGDIIFDBI {
-	repeated PJJFGODDFME level_info_list = 13;
+	repeated PJJFGODDFME level_info_list = 4;
 }

@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "_ClientDetectorResultOuterClass";
 
 message _ClientDetectorResult {
-	repeated uint32 DCGOIJMIJMG = 3;
-	bool GJFFLCIHPIN = 15;
+	repeated uint32 DCGOIJMIJMG = 20000;
+	bool GJFFLCIHPIN = 6;
 }

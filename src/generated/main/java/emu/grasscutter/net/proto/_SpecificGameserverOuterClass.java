@@ -19,13 +19,13 @@ public final class _SpecificGameserverOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 JNFCLADDNJC = 1;</code>
+     * <code>uint32 JNFCLADDNJC = 20000;</code>
      * @return The jNFCLADDNJC.
      */
     int getJNFCLADDNJC();
 
     /**
-     * <code>uint32 FOCNOCHNIAO = 2;</code>
+     * <code>uint32 FOCNOCHNIAO = 20001;</code>
      * @return The fOCNOCHNIAO.
      */
     int getFOCNOCHNIAO();
@@ -75,12 +75,12 @@ public final class _SpecificGameserverOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 160000: {
 
               jNFCLADDNJC_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 160008: {
 
               fOCNOCHNIAO_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class _SpecificGameserverOuterClass {
               emu.grasscutter.net.proto._SpecificGameserverOuterClass._SpecificGameserver.class, emu.grasscutter.net.proto._SpecificGameserverOuterClass._SpecificGameserver.Builder.class);
     }
 
-    public static final int JNFCLADDNJC_FIELD_NUMBER = 1;
+    public static final int JNFCLADDNJC_FIELD_NUMBER = 20000;
     private int jNFCLADDNJC_;
     /**
-     * <code>uint32 JNFCLADDNJC = 1;</code>
+     * <code>uint32 JNFCLADDNJC = 20000;</code>
      * @return The jNFCLADDNJC.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class _SpecificGameserverOuterClass {
       return jNFCLADDNJC_;
     }
 
-    public static final int FOCNOCHNIAO_FIELD_NUMBER = 2;
+    public static final int FOCNOCHNIAO_FIELD_NUMBER = 20001;
     private int fOCNOCHNIAO_;
     /**
-     * <code>uint32 FOCNOCHNIAO = 2;</code>
+     * <code>uint32 FOCNOCHNIAO = 20001;</code>
      * @return The fOCNOCHNIAO.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class _SpecificGameserverOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (jNFCLADDNJC_ != 0) {
-        output.writeUInt32(1, jNFCLADDNJC_);
+        output.writeUInt32(20000, jNFCLADDNJC_);
       }
       if (fOCNOCHNIAO_ != 0) {
-        output.writeUInt32(2, fOCNOCHNIAO_);
+        output.writeUInt32(20001, fOCNOCHNIAO_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class _SpecificGameserverOuterClass {
       size = 0;
       if (jNFCLADDNJC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, jNFCLADDNJC_);
+          .computeUInt32Size(20000, jNFCLADDNJC_);
       }
       if (fOCNOCHNIAO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, fOCNOCHNIAO_);
+          .computeUInt32Size(20001, fOCNOCHNIAO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class _SpecificGameserverOuterClass {
 
       private int jNFCLADDNJC_ ;
       /**
-       * <code>uint32 JNFCLADDNJC = 1;</code>
+       * <code>uint32 JNFCLADDNJC = 20000;</code>
        * @return The jNFCLADDNJC.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class _SpecificGameserverOuterClass {
         return jNFCLADDNJC_;
       }
       /**
-       * <code>uint32 JNFCLADDNJC = 1;</code>
+       * <code>uint32 JNFCLADDNJC = 20000;</code>
        * @param value The jNFCLADDNJC to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class _SpecificGameserverOuterClass {
         return this;
       }
       /**
-       * <code>uint32 JNFCLADDNJC = 1;</code>
+       * <code>uint32 JNFCLADDNJC = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearJNFCLADDNJC() {
@@ -491,7 +491,7 @@ public final class _SpecificGameserverOuterClass {
 
       private int fOCNOCHNIAO_ ;
       /**
-       * <code>uint32 FOCNOCHNIAO = 2;</code>
+       * <code>uint32 FOCNOCHNIAO = 20001;</code>
        * @return The fOCNOCHNIAO.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class _SpecificGameserverOuterClass {
         return fOCNOCHNIAO_;
       }
       /**
-       * <code>uint32 FOCNOCHNIAO = 2;</code>
+       * <code>uint32 FOCNOCHNIAO = 20001;</code>
        * @param value The fOCNOCHNIAO to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class _SpecificGameserverOuterClass {
         return this;
       }
       /**
-       * <code>uint32 FOCNOCHNIAO = 2;</code>
+       * <code>uint32 FOCNOCHNIAO = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearFOCNOCHNIAO() {
@@ -586,10 +586,11 @@ public final class _SpecificGameserverOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031_SpecificGameserver.proto\"?\n\023_Specific" +
-      "Gameserver\022\023\n\013JNFCLADDNJC\030\001 \001(\r\022\023\n\013FOCNO" +
-      "CHNIAO\030\002 \001(\rB:\n\031emu.grasscutter.net.prot" +
-      "oB\035_SpecificGameserverOuterClassb\006proto3"
+      "\n\031_SpecificGameserver.proto\"C\n\023_Specific" +
+      "Gameserver\022\025\n\013JNFCLADDNJC\030\240\234\001 \001(\r\022\025\n\013FOC" +
+      "NOCHNIAO\030\241\234\001 \001(\rB:\n\031emu.grasscutter.net." +
+      "protoB\035_SpecificGameserverOuterClassb\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,7 +19,7 @@ public final class UnlockTransPointRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -69,7 +69,7 @@ public final class UnlockTransPointRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
@@ -106,10 +106,10 @@ public final class UnlockTransPointRspOuterClass {
               emu.grasscutter.net.proto.UnlockTransPointRspOuterClass.UnlockTransPointRsp.class, emu.grasscutter.net.proto.UnlockTransPointRspOuterClass.UnlockTransPointRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class UnlockTransPointRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(8, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class UnlockTransPointRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class UnlockTransPointRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class UnlockTransPointRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class UnlockTransPointRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -517,7 +517,7 @@ public final class UnlockTransPointRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031UnlockTransPointRsp.proto\"&\n\023UnlockTra" +
-      "nsPointRsp\022\017\n\007retcode\030\006 \001(\005B:\n\031emu.grass" +
+      "nsPointRsp\022\017\n\007retcode\030\010 \001(\005B:\n\031emu.grass" +
       "cutter.net.protoB\035UnlockTransPointRspOut" +
       "erClassb\006proto3"
     };

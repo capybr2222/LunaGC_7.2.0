@@ -19,7 +19,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trial_avatar_index_id = 4;</code>
+     * <code>uint32 trial_avatar_index_id = 2;</code>
      * @return The trialAvatarIndexId.
      */
     int getTrialAvatarIndexId();
@@ -69,7 +69,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
               trialAvatarIndexId_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
               emu.grasscutter.net.proto.ReceivedTrialAvatarActivityRewardReqOuterClass.ReceivedTrialAvatarActivityRewardReq.class, emu.grasscutter.net.proto.ReceivedTrialAvatarActivityRewardReqOuterClass.ReceivedTrialAvatarActivityRewardReq.Builder.class);
     }
 
-    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 4;
+    public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 2;
     private int trialAvatarIndexId_;
     /**
-     * <code>uint32 trial_avatar_index_id = 4;</code>
+     * <code>uint32 trial_avatar_index_id = 2;</code>
      * @return The trialAvatarIndexId.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (trialAvatarIndexId_ != 0) {
-        output.writeUInt32(4, trialAvatarIndexId_);
+        output.writeUInt32(2, trialAvatarIndexId_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
       size = 0;
       if (trialAvatarIndexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, trialAvatarIndexId_);
+          .computeUInt32Size(2, trialAvatarIndexId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
 
       private int trialAvatarIndexId_ ;
       /**
-       * <code>uint32 trial_avatar_index_id = 4;</code>
+       * <code>uint32 trial_avatar_index_id = 2;</code>
        * @return The trialAvatarIndexId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
         return trialAvatarIndexId_;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 4;</code>
+       * <code>uint32 trial_avatar_index_id = 2;</code>
        * @param value The trialAvatarIndexId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 4;</code>
+       * <code>uint32 trial_avatar_index_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialAvatarIndexId() {
@@ -518,7 +518,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n*ReceivedTrialAvatarActivityRewardReq.p" +
       "roto\"E\n$ReceivedTrialAvatarActivityRewar" +
-      "dReq\022\035\n\025trial_avatar_index_id\030\004 \001(\rBK\n\031e" +
+      "dReq\022\035\n\025trial_avatar_index_id\030\002 \001(\rBK\n\031e" +
       "mu.grasscutter.net.protoB.ReceivedTrialA" +
       "vatarActivityRewardReqOuterClassb\006proto3"
     };

@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "GetDailyDungeonEntryInfoReqOuterClass";
 
 message GetDailyDungeonEntryInfoReq {
-	uint32 scene_id = 10;
+	uint32 scene_id = 6;
 }

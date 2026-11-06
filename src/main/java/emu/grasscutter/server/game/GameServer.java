@@ -54,6 +54,10 @@ import org.jetbrains.annotations.*;
 
 @Getter
 public final class GameServer extends KcpServer implements Iterable<Player> {
+
+    public static final int KCP_MTU = 1400;
+
+    public static final int KCP_MAX_MESSAGE = 255 * (KCP_MTU - 24);
     private final InetSocketAddress address;
     private final GameServerPacketHandler packetHandler;
     private final Map<Integer, Player> players;
@@ -126,7 +130,7 @@ public final class GameServer extends KcpServer implements Iterable<Player> {
 
         var channelConfig = new ChannelConfig();
         channelConfig.nodelay(true, GAME_INFO.kcpInterval, 2, true);
-        channelConfig.setMtu(1400);
+        channelConfig.setMtu(KCP_MTU);
         channelConfig.setSndwnd(256);
         channelConfig.setRcvwnd(256);
         channelConfig.setTimeoutMillis(30 * 1000);

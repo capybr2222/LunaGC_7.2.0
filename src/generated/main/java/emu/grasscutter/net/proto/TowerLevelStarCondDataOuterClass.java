@@ -19,25 +19,25 @@ public final class TowerLevelStarCondDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 star_cond_index = 5;</code>
+     * <code>uint32 star_cond_index = 20001;</code>
      * @return The starCondIndex.
      */
     int getStarCondIndex();
 
     /**
-     * <code>bool is_pause = 6;</code>
+     * <code>bool is_pause = 15;</code>
      * @return The isPause.
      */
     boolean getIsPause();
 
     /**
-     * <code>bool is_fail = 7;</code>
+     * <code>bool is_fail = 2;</code>
      * @return The isFail.
      */
     boolean getIsFail();
 
     /**
-     * <code>uint32 cond_value = 8;</code>
+     * <code>uint32 cond_value = 20000;</code>
      * @return The condValue.
      */
     int getCondValue();
@@ -87,24 +87,24 @@ public final class TowerLevelStarCondDataOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              starCondIndex_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              isPause_ = input.readBool();
-              break;
-            }
-            case 56: {
+            case 16: {
 
               isFail_ = input.readBool();
               break;
             }
-            case 64: {
+            case 120: {
+
+              isPause_ = input.readBool();
+              break;
+            }
+            case 160000: {
 
               condValue_ = input.readUInt32();
+              break;
+            }
+            case 160008: {
+
+              starCondIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class TowerLevelStarCondDataOuterClass {
               emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.class, emu.grasscutter.net.proto.TowerLevelStarCondDataOuterClass.TowerLevelStarCondData.Builder.class);
     }
 
-    public static final int STAR_COND_INDEX_FIELD_NUMBER = 5;
+    public static final int STAR_COND_INDEX_FIELD_NUMBER = 20001;
     private int starCondIndex_;
     /**
-     * <code>uint32 star_cond_index = 5;</code>
+     * <code>uint32 star_cond_index = 20001;</code>
      * @return The starCondIndex.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class TowerLevelStarCondDataOuterClass {
       return starCondIndex_;
     }
 
-    public static final int IS_PAUSE_FIELD_NUMBER = 6;
+    public static final int IS_PAUSE_FIELD_NUMBER = 15;
     private boolean isPause_;
     /**
-     * <code>bool is_pause = 6;</code>
+     * <code>bool is_pause = 15;</code>
      * @return The isPause.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class TowerLevelStarCondDataOuterClass {
       return isPause_;
     }
 
-    public static final int IS_FAIL_FIELD_NUMBER = 7;
+    public static final int IS_FAIL_FIELD_NUMBER = 2;
     private boolean isFail_;
     /**
-     * <code>bool is_fail = 7;</code>
+     * <code>bool is_fail = 2;</code>
      * @return The isFail.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class TowerLevelStarCondDataOuterClass {
       return isFail_;
     }
 
-    public static final int COND_VALUE_FIELD_NUMBER = 8;
+    public static final int COND_VALUE_FIELD_NUMBER = 20000;
     private int condValue_;
     /**
-     * <code>uint32 cond_value = 8;</code>
+     * <code>uint32 cond_value = 20000;</code>
      * @return The condValue.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class TowerLevelStarCondDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (starCondIndex_ != 0) {
-        output.writeUInt32(5, starCondIndex_);
+      if (isFail_ != false) {
+        output.writeBool(2, isFail_);
       }
       if (isPause_ != false) {
-        output.writeBool(6, isPause_);
-      }
-      if (isFail_ != false) {
-        output.writeBool(7, isFail_);
+        output.writeBool(15, isPause_);
       }
       if (condValue_ != 0) {
-        output.writeUInt32(8, condValue_);
+        output.writeUInt32(20000, condValue_);
+      }
+      if (starCondIndex_ != 0) {
+        output.writeUInt32(20001, starCondIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class TowerLevelStarCondDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (starCondIndex_ != 0) {
+      if (isFail_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, starCondIndex_);
+          .computeBoolSize(2, isFail_);
       }
       if (isPause_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isPause_);
-      }
-      if (isFail_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isFail_);
+          .computeBoolSize(15, isPause_);
       }
       if (condValue_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, condValue_);
+          .computeUInt32Size(20000, condValue_);
+      }
+      if (starCondIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20001, starCondIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class TowerLevelStarCondDataOuterClass {
 
       private int starCondIndex_ ;
       /**
-       * <code>uint32 star_cond_index = 5;</code>
+       * <code>uint32 star_cond_index = 20001;</code>
        * @return The starCondIndex.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return starCondIndex_;
       }
       /**
-       * <code>uint32 star_cond_index = 5;</code>
+       * <code>uint32 star_cond_index = 20001;</code>
        * @param value The starCondIndex to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 star_cond_index = 5;</code>
+       * <code>uint32 star_cond_index = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearStarCondIndex() {
@@ -571,7 +571,7 @@ public final class TowerLevelStarCondDataOuterClass {
 
       private boolean isPause_ ;
       /**
-       * <code>bool is_pause = 6;</code>
+       * <code>bool is_pause = 15;</code>
        * @return The isPause.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return isPause_;
       }
       /**
-       * <code>bool is_pause = 6;</code>
+       * <code>bool is_pause = 15;</code>
        * @param value The isPause to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_pause = 6;</code>
+       * <code>bool is_pause = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsPause() {
@@ -602,7 +602,7 @@ public final class TowerLevelStarCondDataOuterClass {
 
       private boolean isFail_ ;
       /**
-       * <code>bool is_fail = 7;</code>
+       * <code>bool is_fail = 2;</code>
        * @return The isFail.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return isFail_;
       }
       /**
-       * <code>bool is_fail = 7;</code>
+       * <code>bool is_fail = 2;</code>
        * @param value The isFail to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_fail = 7;</code>
+       * <code>bool is_fail = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFail() {
@@ -633,7 +633,7 @@ public final class TowerLevelStarCondDataOuterClass {
 
       private int condValue_ ;
       /**
-       * <code>uint32 cond_value = 8;</code>
+       * <code>uint32 cond_value = 20000;</code>
        * @return The condValue.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return condValue_;
       }
       /**
-       * <code>uint32 cond_value = 8;</code>
+       * <code>uint32 cond_value = 20000;</code>
        * @param value The condValue to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class TowerLevelStarCondDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cond_value = 8;</code>
+       * <code>uint32 cond_value = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearCondValue() {
@@ -728,12 +728,12 @@ public final class TowerLevelStarCondDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TowerLevelStarCondData.proto\"h\n\026TowerL" +
-      "evelStarCondData\022\027\n\017star_cond_index\030\005 \001(" +
-      "\r\022\020\n\010is_pause\030\006 \001(\010\022\017\n\007is_fail\030\007 \001(\010\022\022\n\n" +
-      "cond_value\030\010 \001(\rB=\n\031emu.grasscutter.net." +
-      "protoB TowerLevelStarCondDataOuterClassb" +
-      "\006proto3"
+      "\n\034TowerLevelStarCondData.proto\"l\n\026TowerL" +
+      "evelStarCondData\022\031\n\017star_cond_index\030\241\234\001 " +
+      "\001(\r\022\020\n\010is_pause\030\017 \001(\010\022\017\n\007is_fail\030\002 \001(\010\022\024" +
+      "\n\ncond_value\030\240\234\001 \001(\rB=\n\031emu.grasscutter." +
+      "net.protoB TowerLevelStarCondDataOuterCl" +
+      "assb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

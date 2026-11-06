@@ -19,40 +19,40 @@ public final class GachaActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 have_get_robot_list = 4;</code>
+     * <code>repeated uint32 have_get_robot_list = 6;</code>
      * @return A list containing the haveGetRobotList.
      */
     java.util.List<java.lang.Integer> getHaveGetRobotListList();
     /**
-     * <code>repeated uint32 have_get_robot_list = 4;</code>
+     * <code>repeated uint32 have_get_robot_list = 6;</code>
      * @return The count of haveGetRobotList.
      */
     int getHaveGetRobotListCount();
     /**
-     * <code>repeated uint32 have_get_robot_list = 4;</code>
+     * <code>repeated uint32 have_get_robot_list = 6;</code>
      * @param index The index of the element to return.
      * @return The haveGetRobotList at the given index.
      */
     int getHaveGetRobotList(int index);
 
     /**
-     * <code>uint32 LAJGHCOADJM = 50000;</code>
+     * <code>uint32 LAJGHCOADJM = 20001;</code>
      * @return The lAJGHCOADJM.
      */
     int getLAJGHCOADJM();
 
     /**
-     * <code>uint32 MFPKJNHGEIO = 50001;</code>
+     * <code>uint32 MFPKJNHGEIO = 20000;</code>
      * @return The mFPKJNHGEIO.
      */
     int getMFPKJNHGEIO();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
     int getRobotNumMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
     boolean containsRobotNumMap(
         int key);
@@ -63,30 +63,30 @@ public final class GachaActivityDetailInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getRobotNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getRobotNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
 
     int getRobotNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
 
     int getRobotNumMapOrThrow(
         int key);
 
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
     int getHaveRewardRobotNumMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
     boolean containsHaveRewardRobotNumMap(
         int key);
@@ -97,44 +97,44 @@ public final class GachaActivityDetailInfoOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getHaveRewardRobotNumMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getHaveRewardRobotNumMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
 
     int getHaveRewardRobotNumMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
 
     int getHaveRewardRobotNumMapOrThrow(
         int key);
 
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData> 
         getGachaStageDataListList();
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData getGachaStageDataList(int index);
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     int getGachaStageDataListCount();
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageDataOrBuilder> 
         getGachaStageDataListOrBuilderList();
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageDataOrBuilder getGachaStageDataListOrBuilder(
         int index);
@@ -187,50 +187,7 @@ public final class GachaActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                haveGetRobotList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              haveGetRobotList_.addInt(input.readUInt32());
-              break;
-            }
-            case 34: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                haveGetRobotList_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                haveGetRobotList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 50: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                gachaStageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData>();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              gachaStageDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.parser(), extensionRegistry));
-              break;
-            }
-            case 90: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                haveRewardRobotNumMap_ = com.google.protobuf.MapField.newMapField(
-                    HaveRewardRobotNumMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000004;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              haveRewardRobotNumMap__ = input.readMessage(
-                  HaveRewardRobotNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              haveRewardRobotNumMap_.getMutableMap().put(
-                  haveRewardRobotNumMap__.getKey(), haveRewardRobotNumMap__.getValue());
-              break;
-            }
-            case 114: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 robotNumMap_ = com.google.protobuf.MapField.newMapField(
                     RobotNumMapDefaultEntryHolder.defaultEntry);
@@ -243,14 +200,57 @@ public final class GachaActivityDetailInfoOuterClass {
                   robotNumMap__.getKey(), robotNumMap__.getValue());
               break;
             }
-            case 400000: {
-
-              lAJGHCOADJM_ = input.readUInt32();
+            case 26: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                gachaStageDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData>();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              gachaStageDataList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.parser(), extensionRegistry));
               break;
             }
-            case 400008: {
+            case 34: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+                haveRewardRobotNumMap_ = com.google.protobuf.MapField.newMapField(
+                    HaveRewardRobotNumMapDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000004;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              haveRewardRobotNumMap__ = input.readMessage(
+                  HaveRewardRobotNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              haveRewardRobotNumMap_.getMutableMap().put(
+                  haveRewardRobotNumMap__.getKey(), haveRewardRobotNumMap__.getValue());
+              break;
+            }
+            case 48: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                haveGetRobotList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              haveGetRobotList_.addInt(input.readUInt32());
+              break;
+            }
+            case 50: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                haveGetRobotList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                haveGetRobotList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 160000: {
 
               mFPKJNHGEIO_ = input.readUInt32();
+              break;
+            }
+            case 160008: {
+
+              lAJGHCOADJM_ = input.readUInt32();
               break;
             }
             default: {
@@ -268,11 +268,11 @@ public final class GachaActivityDetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          haveGetRobotList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
           gachaStageDataList_ = java.util.Collections.unmodifiableList(gachaStageDataList_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          haveGetRobotList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -288,9 +288,9 @@ public final class GachaActivityDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 14:
+        case 1:
           return internalGetRobotNumMap();
-        case 11:
+        case 4:
           return internalGetHaveRewardRobotNumMap();
         default:
           throw new RuntimeException(
@@ -305,10 +305,10 @@ public final class GachaActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.GachaActivityDetailInfoOuterClass.GachaActivityDetailInfo.class, emu.grasscutter.net.proto.GachaActivityDetailInfoOuterClass.GachaActivityDetailInfo.Builder.class);
     }
 
-    public static final int HAVE_GET_ROBOT_LIST_FIELD_NUMBER = 4;
+    public static final int HAVE_GET_ROBOT_LIST_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList haveGetRobotList_;
     /**
-     * <code>repeated uint32 have_get_robot_list = 4;</code>
+     * <code>repeated uint32 have_get_robot_list = 6;</code>
      * @return A list containing the haveGetRobotList.
      */
     @java.lang.Override
@@ -317,14 +317,14 @@ public final class GachaActivityDetailInfoOuterClass {
       return haveGetRobotList_;
     }
     /**
-     * <code>repeated uint32 have_get_robot_list = 4;</code>
+     * <code>repeated uint32 have_get_robot_list = 6;</code>
      * @return The count of haveGetRobotList.
      */
     public int getHaveGetRobotListCount() {
       return haveGetRobotList_.size();
     }
     /**
-     * <code>repeated uint32 have_get_robot_list = 4;</code>
+     * <code>repeated uint32 have_get_robot_list = 6;</code>
      * @param index The index of the element to return.
      * @return The haveGetRobotList at the given index.
      */
@@ -333,10 +333,10 @@ public final class GachaActivityDetailInfoOuterClass {
     }
     private int haveGetRobotListMemoizedSerializedSize = -1;
 
-    public static final int LAJGHCOADJM_FIELD_NUMBER = 50000;
+    public static final int LAJGHCOADJM_FIELD_NUMBER = 20001;
     private int lAJGHCOADJM_;
     /**
-     * <code>uint32 LAJGHCOADJM = 50000;</code>
+     * <code>uint32 LAJGHCOADJM = 20001;</code>
      * @return The lAJGHCOADJM.
      */
     @java.lang.Override
@@ -344,10 +344,10 @@ public final class GachaActivityDetailInfoOuterClass {
       return lAJGHCOADJM_;
     }
 
-    public static final int MFPKJNHGEIO_FIELD_NUMBER = 50001;
+    public static final int MFPKJNHGEIO_FIELD_NUMBER = 20000;
     private int mFPKJNHGEIO_;
     /**
-     * <code>uint32 MFPKJNHGEIO = 50001;</code>
+     * <code>uint32 MFPKJNHGEIO = 20000;</code>
      * @return The mFPKJNHGEIO.
      */
     @java.lang.Override
@@ -355,7 +355,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return mFPKJNHGEIO_;
     }
 
-    public static final int ROBOT_NUM_MAP_FIELD_NUMBER = 14;
+    public static final int ROBOT_NUM_MAP_FIELD_NUMBER = 1;
     private static final class RobotNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -382,7 +382,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return internalGetRobotNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
 
     @java.lang.Override
@@ -400,7 +400,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return getRobotNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
     @java.lang.Override
 
@@ -408,7 +408,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return internalGetRobotNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
     @java.lang.Override
 
@@ -421,7 +421,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+     * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
      */
     @java.lang.Override
 
@@ -436,7 +436,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int HAVE_REWARD_ROBOT_NUM_MAP_FIELD_NUMBER = 11;
+    public static final int HAVE_REWARD_ROBOT_NUM_MAP_FIELD_NUMBER = 4;
     private static final class HaveRewardRobotNumMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -463,7 +463,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return internalGetHaveRewardRobotNumMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
 
     @java.lang.Override
@@ -481,7 +481,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return getHaveRewardRobotNumMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
     @java.lang.Override
 
@@ -489,7 +489,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return internalGetHaveRewardRobotNumMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
     @java.lang.Override
 
@@ -502,7 +502,7 @@ public final class GachaActivityDetailInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+     * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
      */
     @java.lang.Override
 
@@ -517,17 +517,17 @@ public final class GachaActivityDetailInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int GACHA_STAGE_DATA_LIST_FIELD_NUMBER = 6;
+    public static final int GACHA_STAGE_DATA_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData> gachaStageDataList_;
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData> getGachaStageDataListList() {
       return gachaStageDataList_;
     }
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageDataOrBuilder> 
@@ -535,21 +535,21 @@ public final class GachaActivityDetailInfoOuterClass {
       return gachaStageDataList_;
     }
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     @java.lang.Override
     public int getGachaStageDataListCount() {
       return gachaStageDataList_.size();
     }
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData getGachaStageDataList(int index) {
       return gachaStageDataList_.get(index);
     }
     /**
-     * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+     * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageDataOrBuilder getGachaStageDataListOrBuilder(
@@ -572,33 +572,33 @@ public final class GachaActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getHaveGetRobotListList().size() > 0) {
-        output.writeUInt32NoTag(34);
-        output.writeUInt32NoTag(haveGetRobotListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < haveGetRobotList_.size(); i++) {
-        output.writeUInt32NoTag(haveGetRobotList_.getInt(i));
-      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetRobotNumMap(),
+          RobotNumMapDefaultEntryHolder.defaultEntry,
+          1);
       for (int i = 0; i < gachaStageDataList_.size(); i++) {
-        output.writeMessage(6, gachaStageDataList_.get(i));
+        output.writeMessage(3, gachaStageDataList_.get(i));
       }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetHaveRewardRobotNumMap(),
           HaveRewardRobotNumMapDefaultEntryHolder.defaultEntry,
-          11);
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetRobotNumMap(),
-          RobotNumMapDefaultEntryHolder.defaultEntry,
-          14);
-      if (lAJGHCOADJM_ != 0) {
-        output.writeUInt32(50000, lAJGHCOADJM_);
+          4);
+      if (getHaveGetRobotListList().size() > 0) {
+        output.writeUInt32NoTag(50);
+        output.writeUInt32NoTag(haveGetRobotListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < haveGetRobotList_.size(); i++) {
+        output.writeUInt32NoTag(haveGetRobotList_.getInt(i));
       }
       if (mFPKJNHGEIO_ != 0) {
-        output.writeUInt32(50001, mFPKJNHGEIO_);
+        output.writeUInt32(20000, mFPKJNHGEIO_);
+      }
+      if (lAJGHCOADJM_ != 0) {
+        output.writeUInt32(20001, lAJGHCOADJM_);
       }
       unknownFields.writeTo(output);
     }
@@ -609,6 +609,30 @@ public final class GachaActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetRobotNumMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        robotNumMap__ = RobotNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(1, robotNumMap__);
+      }
+      for (int i = 0; i < gachaStageDataList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, gachaStageDataList_.get(i));
+      }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetHaveRewardRobotNumMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        haveRewardRobotNumMap__ = HaveRewardRobotNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(4, haveRewardRobotNumMap__);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < haveGetRobotList_.size(); i++) {
@@ -623,37 +647,13 @@ public final class GachaActivityDetailInfoOuterClass {
         }
         haveGetRobotListMemoizedSerializedSize = dataSize;
       }
-      for (int i = 0; i < gachaStageDataList_.size(); i++) {
+      if (mFPKJNHGEIO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, gachaStageDataList_.get(i));
-      }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetHaveRewardRobotNumMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        haveRewardRobotNumMap__ = HaveRewardRobotNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(11, haveRewardRobotNumMap__);
-      }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetRobotNumMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        robotNumMap__ = RobotNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(14, robotNumMap__);
+          .computeUInt32Size(20000, mFPKJNHGEIO_);
       }
       if (lAJGHCOADJM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, lAJGHCOADJM_);
-      }
-      if (mFPKJNHGEIO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, mFPKJNHGEIO_);
+          .computeUInt32Size(20001, lAJGHCOADJM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -824,9 +824,9 @@ public final class GachaActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 14:
+          case 1:
             return internalGetRobotNumMap();
-          case 11:
+          case 4:
             return internalGetHaveRewardRobotNumMap();
           default:
             throw new RuntimeException(
@@ -837,9 +837,9 @@ public final class GachaActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 14:
+          case 1:
             return internalGetMutableRobotNumMap();
-          case 11:
+          case 4:
             return internalGetMutableHaveRewardRobotNumMap();
           default:
             throw new RuntimeException(
@@ -1066,7 +1066,7 @@ public final class GachaActivityDetailInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 have_get_robot_list = 4;</code>
+       * <code>repeated uint32 have_get_robot_list = 6;</code>
        * @return A list containing the haveGetRobotList.
        */
       public java.util.List<java.lang.Integer>
@@ -1075,14 +1075,14 @@ public final class GachaActivityDetailInfoOuterClass {
                  java.util.Collections.unmodifiableList(haveGetRobotList_) : haveGetRobotList_;
       }
       /**
-       * <code>repeated uint32 have_get_robot_list = 4;</code>
+       * <code>repeated uint32 have_get_robot_list = 6;</code>
        * @return The count of haveGetRobotList.
        */
       public int getHaveGetRobotListCount() {
         return haveGetRobotList_.size();
       }
       /**
-       * <code>repeated uint32 have_get_robot_list = 4;</code>
+       * <code>repeated uint32 have_get_robot_list = 6;</code>
        * @param index The index of the element to return.
        * @return The haveGetRobotList at the given index.
        */
@@ -1090,7 +1090,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return haveGetRobotList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 have_get_robot_list = 4;</code>
+       * <code>repeated uint32 have_get_robot_list = 6;</code>
        * @param index The index to set the value at.
        * @param value The haveGetRobotList to set.
        * @return This builder for chaining.
@@ -1103,7 +1103,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 have_get_robot_list = 4;</code>
+       * <code>repeated uint32 have_get_robot_list = 6;</code>
        * @param value The haveGetRobotList to add.
        * @return This builder for chaining.
        */
@@ -1114,7 +1114,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 have_get_robot_list = 4;</code>
+       * <code>repeated uint32 have_get_robot_list = 6;</code>
        * @param values The haveGetRobotList to add.
        * @return This builder for chaining.
        */
@@ -1127,7 +1127,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 have_get_robot_list = 4;</code>
+       * <code>repeated uint32 have_get_robot_list = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearHaveGetRobotList() {
@@ -1139,7 +1139,7 @@ public final class GachaActivityDetailInfoOuterClass {
 
       private int lAJGHCOADJM_ ;
       /**
-       * <code>uint32 LAJGHCOADJM = 50000;</code>
+       * <code>uint32 LAJGHCOADJM = 20001;</code>
        * @return The lAJGHCOADJM.
        */
       @java.lang.Override
@@ -1147,7 +1147,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return lAJGHCOADJM_;
       }
       /**
-       * <code>uint32 LAJGHCOADJM = 50000;</code>
+       * <code>uint32 LAJGHCOADJM = 20001;</code>
        * @param value The lAJGHCOADJM to set.
        * @return This builder for chaining.
        */
@@ -1158,7 +1158,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LAJGHCOADJM = 50000;</code>
+       * <code>uint32 LAJGHCOADJM = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearLAJGHCOADJM() {
@@ -1170,7 +1170,7 @@ public final class GachaActivityDetailInfoOuterClass {
 
       private int mFPKJNHGEIO_ ;
       /**
-       * <code>uint32 MFPKJNHGEIO = 50001;</code>
+       * <code>uint32 MFPKJNHGEIO = 20000;</code>
        * @return The mFPKJNHGEIO.
        */
       @java.lang.Override
@@ -1178,7 +1178,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return mFPKJNHGEIO_;
       }
       /**
-       * <code>uint32 MFPKJNHGEIO = 50001;</code>
+       * <code>uint32 MFPKJNHGEIO = 20000;</code>
        * @param value The mFPKJNHGEIO to set.
        * @return This builder for chaining.
        */
@@ -1189,7 +1189,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MFPKJNHGEIO = 50001;</code>
+       * <code>uint32 MFPKJNHGEIO = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearMFPKJNHGEIO() {
@@ -1226,7 +1226,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return internalGetRobotNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
        */
 
       @java.lang.Override
@@ -1244,7 +1244,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return getRobotNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
        */
       @java.lang.Override
 
@@ -1252,7 +1252,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return internalGetRobotNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
        */
       @java.lang.Override
 
@@ -1265,7 +1265,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
        */
       @java.lang.Override
 
@@ -1286,7 +1286,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
        */
 
       public Builder removeRobotNumMap(
@@ -1305,7 +1305,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return internalGetMutableRobotNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
        */
       public Builder putRobotNumMap(
           int key,
@@ -1317,7 +1317,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; robot_num_map = 14;</code>
+       * <code>map&lt;uint32, uint32&gt; robot_num_map = 1;</code>
        */
 
       public Builder putAllRobotNumMap(
@@ -1354,7 +1354,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return internalGetHaveRewardRobotNumMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
        */
 
       @java.lang.Override
@@ -1372,7 +1372,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return getHaveRewardRobotNumMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
        */
       @java.lang.Override
 
@@ -1380,7 +1380,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return internalGetHaveRewardRobotNumMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
        */
       @java.lang.Override
 
@@ -1393,7 +1393,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
        */
       @java.lang.Override
 
@@ -1414,7 +1414,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
        */
 
       public Builder removeHaveRewardRobotNumMap(
@@ -1433,7 +1433,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return internalGetMutableHaveRewardRobotNumMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
        */
       public Builder putHaveRewardRobotNumMap(
           int key,
@@ -1445,7 +1445,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 11;</code>
+       * <code>map&lt;uint32, uint32&gt; have_reward_robot_num_map = 4;</code>
        */
 
       public Builder putAllHaveRewardRobotNumMap(
@@ -1468,7 +1468,7 @@ public final class GachaActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData, emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder, emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageDataOrBuilder> gachaStageDataListBuilder_;
 
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData> getGachaStageDataListList() {
         if (gachaStageDataListBuilder_ == null) {
@@ -1478,7 +1478,7 @@ public final class GachaActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public int getGachaStageDataListCount() {
         if (gachaStageDataListBuilder_ == null) {
@@ -1488,7 +1488,7 @@ public final class GachaActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData getGachaStageDataList(int index) {
         if (gachaStageDataListBuilder_ == null) {
@@ -1498,7 +1498,7 @@ public final class GachaActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder setGachaStageDataList(
           int index, emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData value) {
@@ -1515,7 +1515,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder setGachaStageDataList(
           int index, emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder builderForValue) {
@@ -1529,7 +1529,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder addGachaStageDataList(emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData value) {
         if (gachaStageDataListBuilder_ == null) {
@@ -1545,7 +1545,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder addGachaStageDataList(
           int index, emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData value) {
@@ -1562,7 +1562,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder addGachaStageDataList(
           emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder builderForValue) {
@@ -1576,7 +1576,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder addGachaStageDataList(
           int index, emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder builderForValue) {
@@ -1590,7 +1590,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder addAllGachaStageDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData> values) {
@@ -1605,7 +1605,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder clearGachaStageDataList() {
         if (gachaStageDataListBuilder_ == null) {
@@ -1618,7 +1618,7 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public Builder removeGachaStageDataList(int index) {
         if (gachaStageDataListBuilder_ == null) {
@@ -1631,14 +1631,14 @@ public final class GachaActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder getGachaStageDataListBuilder(
           int index) {
         return getGachaStageDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageDataOrBuilder getGachaStageDataListOrBuilder(
           int index) {
@@ -1648,7 +1648,7 @@ public final class GachaActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageDataOrBuilder> 
            getGachaStageDataListOrBuilderList() {
@@ -1659,14 +1659,14 @@ public final class GachaActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder addGachaStageDataListBuilder() {
         return getGachaStageDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder addGachaStageDataListBuilder(
           int index) {
@@ -1674,7 +1674,7 @@ public final class GachaActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.getDefaultInstance());
       }
       /**
-       * <code>repeated .GachaStageData gacha_stage_data_list = 6;</code>
+       * <code>repeated .GachaStageData gacha_stage_data_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder> 
            getGachaStageDataListBuilderList() {
@@ -1773,13 +1773,13 @@ public final class GachaActivityDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035GachaActivityDetailInfo.proto\032\024GachaSt" +
       "ageData.proto\"\240\003\n\027GachaActivityDetailInf" +
-      "o\022\033\n\023have_get_robot_list\030\004 \003(\r\022\025\n\013LAJGHC" +
-      "OADJM\030\320\206\003 \001(\r\022\025\n\013MFPKJNHGEIO\030\321\206\003 \001(\r\022@\n\r" +
-      "robot_num_map\030\016 \003(\0132).GachaActivityDetai" +
+      "o\022\033\n\023have_get_robot_list\030\006 \003(\r\022\025\n\013LAJGHC" +
+      "OADJM\030\241\234\001 \001(\r\022\025\n\013MFPKJNHGEIO\030\240\234\001 \001(\r\022@\n\r" +
+      "robot_num_map\030\001 \003(\0132).GachaActivityDetai" +
       "lInfo.RobotNumMapEntry\022V\n\031have_reward_ro" +
-      "bot_num_map\030\013 \003(\01323.GachaActivityDetailI" +
+      "bot_num_map\030\004 \003(\01323.GachaActivityDetailI" +
       "nfo.HaveRewardRobotNumMapEntry\022.\n\025gacha_" +
-      "stage_data_list\030\006 \003(\0132\017.GachaStageData\0322" +
+      "stage_data_list\030\003 \003(\0132\017.GachaStageData\0322" +
       "\n\020RobotNumMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value" +
       "\030\002 \001(\r:\0028\001\032<\n\032HaveRewardRobotNumMapEntry" +
       "\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B>\n\031emu." +

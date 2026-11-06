@@ -107,12 +107,12 @@ public final class OnlinePlayerInfoOuterClass {
     int getBlacklistUidList(int index);
 
     /**
-     * <code>string signature = 11;</code>
+     * <code>string signature = 13;</code>
      * @return The signature.
      */
     java.lang.String getSignature();
     /**
-     * <code>string signature = 11;</code>
+     * <code>string signature = 13;</code>
      * @return The bytes for signature.
      */
     com.google.protobuf.ByteString
@@ -134,12 +134,12 @@ public final class OnlinePlayerInfoOuterClass {
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>string psn_id = 13;</code>
+     * <code>string psn_id = 50000;</code>
      * @return The psnId.
      */
     java.lang.String getPsnId();
     /**
-     * <code>string psn_id = 13;</code>
+     * <code>string psn_id = 50000;</code>
      * @return The bytes for psnId.
      */
     com.google.protobuf.ByteString
@@ -238,13 +238,13 @@ public final class OnlinePlayerInfoOuterClass {
         int index);
 
     /**
-     * <code>uint32 OCKNBKMKBKH = 22;</code>
+     * <code>uint32 OCKNBKMKBKH = 50005;</code>
      * @return The oCKNBKMKBKH.
      */
     int getOCKNBKMKBKH();
 
     /**
-     * <code>uint32 AOGHDBHOGII = 23;</code>
+     * <code>uint32 AOGHDBHOGII = 50006;</code>
      * @return The aOGHDBHOGII.
      */
     int getAOGHDBHOGII();
@@ -374,12 +374,6 @@ public final class OnlinePlayerInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 90: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              signature_ = s;
-              break;
-            }
             case 98: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
@@ -396,7 +390,7 @@ public final class OnlinePlayerInfoOuterClass {
             case 106: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              psnId_ = s;
+              signature_ = s;
               break;
             }
             case 114: {
@@ -454,12 +448,18 @@ public final class OnlinePlayerInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto._BeyondProfileTagOuterClass._BeyondProfileTag.parser(), extensionRegistry));
               break;
             }
-            case 176: {
+            case 400002: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              psnId_ = s;
+              break;
+            }
+            case 400040: {
 
               oCKNBKMKBKH_ = input.readUInt32();
               break;
             }
-            case 184: {
+            case 400048: {
 
               aOGHDBHOGII_ = input.readUInt32();
               break;
@@ -691,10 +691,10 @@ public final class OnlinePlayerInfoOuterClass {
     }
     private int blacklistUidListMemoizedSerializedSize = -1;
 
-    public static final int SIGNATURE_FIELD_NUMBER = 11;
+    public static final int SIGNATURE_FIELD_NUMBER = 13;
     private volatile java.lang.Object signature_;
     /**
-     * <code>string signature = 11;</code>
+     * <code>string signature = 13;</code>
      * @return The signature.
      */
     @java.lang.Override
@@ -711,7 +711,7 @@ public final class OnlinePlayerInfoOuterClass {
       }
     }
     /**
-     * <code>string signature = 11;</code>
+     * <code>string signature = 13;</code>
      * @return The bytes for signature.
      */
     @java.lang.Override
@@ -755,10 +755,10 @@ public final class OnlinePlayerInfoOuterClass {
       return getProfilePicture();
     }
 
-    public static final int PSN_ID_FIELD_NUMBER = 13;
+    public static final int PSN_ID_FIELD_NUMBER = 50000;
     private volatile java.lang.Object psnId_;
     /**
-     * <code>string psn_id = 13;</code>
+     * <code>string psn_id = 50000;</code>
      * @return The psnId.
      */
     @java.lang.Override
@@ -775,7 +775,7 @@ public final class OnlinePlayerInfoOuterClass {
       }
     }
     /**
-     * <code>string psn_id = 13;</code>
+     * <code>string psn_id = 50000;</code>
      * @return The bytes for psnId.
      */
     @java.lang.Override
@@ -987,10 +987,10 @@ public final class OnlinePlayerInfoOuterClass {
       return BeyondProfileTagList_.get(index);
     }
 
-    public static final int OCKNBKMKBKH_FIELD_NUMBER = 22;
+    public static final int OCKNBKMKBKH_FIELD_NUMBER = 50005;
     private int oCKNBKMKBKH_;
     /**
-     * <code>uint32 OCKNBKMKBKH = 22;</code>
+     * <code>uint32 OCKNBKMKBKH = 50005;</code>
      * @return The oCKNBKMKBKH.
      */
     @java.lang.Override
@@ -998,10 +998,10 @@ public final class OnlinePlayerInfoOuterClass {
       return oCKNBKMKBKH_;
     }
 
-    public static final int AOGHDBHOGII_FIELD_NUMBER = 23;
+    public static final int AOGHDBHOGII_FIELD_NUMBER = 50006;
     private int aOGHDBHOGII_;
     /**
-     * <code>uint32 AOGHDBHOGII = 23;</code>
+     * <code>uint32 AOGHDBHOGII = 50006;</code>
      * @return The aOGHDBHOGII.
      */
     @java.lang.Override
@@ -1058,14 +1058,11 @@ public final class OnlinePlayerInfoOuterClass {
       for (int i = 0; i < blacklistUidList_.size(); i++) {
         output.writeUInt32NoTag(blacklistUidList_.getInt(i));
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, signature_);
-      }
       if (profilePicture_ != null) {
         output.writeMessage(12, getProfilePicture());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, psnId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, signature_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(Xuid_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 14, Xuid_);
@@ -1091,11 +1088,14 @@ public final class OnlinePlayerInfoOuterClass {
       for (int i = 0; i < BeyondProfileTagList_.size(); i++) {
         output.writeMessage(21, BeyondProfileTagList_.get(i));
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 50000, psnId_);
+      }
       if (oCKNBKMKBKH_ != 0) {
-        output.writeUInt32(22, oCKNBKMKBKH_);
+        output.writeUInt32(50005, oCKNBKMKBKH_);
       }
       if (aOGHDBHOGII_ != 0) {
-        output.writeUInt32(23, aOGHDBHOGII_);
+        output.writeUInt32(50006, aOGHDBHOGII_);
       }
       unknownFields.writeTo(output);
     }
@@ -1154,15 +1154,12 @@ public final class OnlinePlayerInfoOuterClass {
         }
         blacklistUidListMemoizedSerializedSize = dataSize;
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, signature_);
-      }
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, getProfilePicture());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, psnId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, signature_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(Xuid_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, Xuid_);
@@ -1194,13 +1191,16 @@ public final class OnlinePlayerInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(21, BeyondProfileTagList_.get(i));
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(50000, psnId_);
+      }
       if (oCKNBKMKBKH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(22, oCKNBKMKBKH_);
+          .computeUInt32Size(50005, oCKNBKMKBKH_);
       }
       if (aOGHDBHOGII_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(23, aOGHDBHOGII_);
+          .computeUInt32Size(50006, aOGHDBHOGII_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2253,7 +2253,7 @@ public final class OnlinePlayerInfoOuterClass {
 
       private java.lang.Object signature_ = "";
       /**
-       * <code>string signature = 11;</code>
+       * <code>string signature = 13;</code>
        * @return The signature.
        */
       public java.lang.String getSignature() {
@@ -2269,7 +2269,7 @@ public final class OnlinePlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string signature = 11;</code>
+       * <code>string signature = 13;</code>
        * @return The bytes for signature.
        */
       public com.google.protobuf.ByteString
@@ -2286,7 +2286,7 @@ public final class OnlinePlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string signature = 11;</code>
+       * <code>string signature = 13;</code>
        * @param value The signature to set.
        * @return This builder for chaining.
        */
@@ -2301,7 +2301,7 @@ public final class OnlinePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string signature = 11;</code>
+       * <code>string signature = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearSignature() {
@@ -2311,7 +2311,7 @@ public final class OnlinePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string signature = 11;</code>
+       * <code>string signature = 13;</code>
        * @param value The bytes for signature to set.
        * @return This builder for chaining.
        */
@@ -2448,7 +2448,7 @@ public final class OnlinePlayerInfoOuterClass {
 
       private java.lang.Object psnId_ = "";
       /**
-       * <code>string psn_id = 13;</code>
+       * <code>string psn_id = 50000;</code>
        * @return The psnId.
        */
       public java.lang.String getPsnId() {
@@ -2464,7 +2464,7 @@ public final class OnlinePlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string psn_id = 13;</code>
+       * <code>string psn_id = 50000;</code>
        * @return The bytes for psnId.
        */
       public com.google.protobuf.ByteString
@@ -2481,7 +2481,7 @@ public final class OnlinePlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string psn_id = 13;</code>
+       * <code>string psn_id = 50000;</code>
        * @param value The psnId to set.
        * @return This builder for chaining.
        */
@@ -2496,7 +2496,7 @@ public final class OnlinePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string psn_id = 13;</code>
+       * <code>string psn_id = 50000;</code>
        * @return This builder for chaining.
        */
       public Builder clearPsnId() {
@@ -2506,7 +2506,7 @@ public final class OnlinePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string psn_id = 13;</code>
+       * <code>string psn_id = 50000;</code>
        * @param value The bytes for psnId to set.
        * @return This builder for chaining.
        */
@@ -3182,7 +3182,7 @@ public final class OnlinePlayerInfoOuterClass {
 
       private int oCKNBKMKBKH_ ;
       /**
-       * <code>uint32 OCKNBKMKBKH = 22;</code>
+       * <code>uint32 OCKNBKMKBKH = 50005;</code>
        * @return The oCKNBKMKBKH.
        */
       @java.lang.Override
@@ -3190,7 +3190,7 @@ public final class OnlinePlayerInfoOuterClass {
         return oCKNBKMKBKH_;
       }
       /**
-       * <code>uint32 OCKNBKMKBKH = 22;</code>
+       * <code>uint32 OCKNBKMKBKH = 50005;</code>
        * @param value The oCKNBKMKBKH to set.
        * @return This builder for chaining.
        */
@@ -3201,7 +3201,7 @@ public final class OnlinePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 OCKNBKMKBKH = 22;</code>
+       * <code>uint32 OCKNBKMKBKH = 50005;</code>
        * @return This builder for chaining.
        */
       public Builder clearOCKNBKMKBKH() {
@@ -3213,7 +3213,7 @@ public final class OnlinePlayerInfoOuterClass {
 
       private int aOGHDBHOGII_ ;
       /**
-       * <code>uint32 AOGHDBHOGII = 23;</code>
+       * <code>uint32 AOGHDBHOGII = 50006;</code>
        * @return The aOGHDBHOGII.
        */
       @java.lang.Override
@@ -3221,7 +3221,7 @@ public final class OnlinePlayerInfoOuterClass {
         return aOGHDBHOGII_;
       }
       /**
-       * <code>uint32 AOGHDBHOGII = 23;</code>
+       * <code>uint32 AOGHDBHOGII = 50006;</code>
        * @param value The aOGHDBHOGII to set.
        * @return This builder for chaining.
        */
@@ -3232,7 +3232,7 @@ public final class OnlinePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 AOGHDBHOGII = 23;</code>
+       * <code>uint32 AOGHDBHOGII = 50006;</code>
        * @return This builder for chaining.
        */
       public Builder clearAOGHDBHOGII() {
@@ -3311,24 +3311,24 @@ public final class OnlinePlayerInfoOuterClass {
       "\n\026OnlinePlayerInfo.proto\032\023MpSettingType." +
       "proto\032\022PlatformType.proto\032\024ProfilePictur" +
       "e.proto\032\033_BeyondProfilePicture.proto\032\027_B" +
-      "eyondProfileTag.proto\"\360\004\n\020OnlinePlayerIn" +
+      "eyondProfileTag.proto\"\366\004\n\020OnlinePlayerIn" +
       "fo\022\013\n\003uid\030\001 \001(\r\022\020\n\010nickname\030\002 \001(\t\022\024\n\014pla" +
       "yer_level\030\003 \001(\r\022\021\n\tavatar_id\030\004 \001(\r\022\'\n\017mp" +
       "_setting_type\030\005 \001(\0162\016.MpSettingType\022\037\n\027c" +
       "ur_player_num_in_world\030\006 \001(\r\022\023\n\013world_le" +
       "vel\030\007 \001(\r\022\021\n\tonline_id\030\010 \001(\t\022\024\n\014name_car" +
       "d_id\030\t \001(\r\022\032\n\022blacklist_uid_list\030\n \003(\r\022\021" +
-      "\n\tsignature\030\013 \001(\t\022(\n\017profile_picture\030\014 \001" +
-      "(\0132\017.ProfilePicture\022\016\n\006psn_id\030\r \001(\t\022\r\n\005_" +
-      "xuid\030\016 \001(\t\022\026\n\016_xbox_gamertag\030\017 \001(\t\022$\n\rpl" +
-      "atform_type\030\020 \001(\0162\r.PlatformType\022\023\n\013EEHK" +
-      "AIMJJDO\030\021 \001(\010\022\023\n\013BLBGGMBGLKI\030\022 \001(\010\022\023\n\013KO" +
-      "BLEBEGKJJ\030\023 \001(\010\0227\n\027_beyond_profile_pictu" +
-      "re\030\024 \001(\0132\026._BeyondProfilePicture\0224\n\030_bey" +
-      "ond_profile_tag_list\030\025 \003(\0132\022._BeyondProf" +
-      "ileTag\022\023\n\013OCKNBKMKBKH\030\026 \001(\r\022\023\n\013AOGHDBHOG" +
-      "II\030\027 \001(\rB7\n\031emu.grasscutter.net.protoB\032O" +
-      "nlinePlayerInfoOuterClassb\006proto3"
+      "\n\tsignature\030\r \001(\t\022(\n\017profile_picture\030\014 \001" +
+      "(\0132\017.ProfilePicture\022\020\n\006psn_id\030\320\206\003 \001(\t\022\r\n" +
+      "\005_xuid\030\016 \001(\t\022\026\n\016_xbox_gamertag\030\017 \001(\t\022$\n\r" +
+      "platform_type\030\020 \001(\0162\r.PlatformType\022\023\n\013EE" +
+      "HKAIMJJDO\030\021 \001(\010\022\023\n\013BLBGGMBGLKI\030\022 \001(\010\022\023\n\013" +
+      "KOBLEBEGKJJ\030\023 \001(\010\0227\n\027_beyond_profile_pic" +
+      "ture\030\024 \001(\0132\026._BeyondProfilePicture\0224\n\030_b" +
+      "eyond_profile_tag_list\030\025 \003(\0132\022._BeyondPr" +
+      "ofileTag\022\025\n\013OCKNBKMKBKH\030\325\206\003 \001(\r\022\025\n\013AOGHD" +
+      "BHOGII\030\326\206\003 \001(\rB7\n\031emu.grasscutter.net.pr" +
+      "otoB\032OnlinePlayerInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -8,10 +8,10 @@ import "SalvageScoreChallengeInfo.proto";
 
 message SalvageChallengeInfo {
 	oneof challenge_detail {
-		uint32 boss_challenge_id = 1;
-		SalvageBundleChallengeInfo bundle_info = 5;
-		SalvageScoreChallengeInfo score_challenge_info = 9;
+		uint32 boss_challenge_id = 12;
+		SalvageBundleChallengeInfo bundle_info = 10;
+		SalvageScoreChallengeInfo score_challenge_info = 11;
 	}
-	bool is_unlock = 15;
-	uint32 challenge_type = 3;
+	bool is_unlock = 2;
+	uint32 challenge_type = 1;
 }

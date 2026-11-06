@@ -19,70 +19,70 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
      * @return Whether the pCCLJJHAJGH field is set.
      */
     boolean hasPCCLJJHAJGH();
     /**
-     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
      * @return The pCCLJJHAJGH.
      */
     emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG getPCCLJJHAJGH();
     /**
-     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
      */
     emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCGOrBuilder getPCCLJJHAJGHOrBuilder();
 
     /**
-     * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+     * <code>repeated uint32 LIMMJOANIDO = 6;</code>
      * @return A list containing the lIMMJOANIDO.
      */
     java.util.List<java.lang.Integer> getLIMMJOANIDOList();
     /**
-     * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+     * <code>repeated uint32 LIMMJOANIDO = 6;</code>
      * @return The count of lIMMJOANIDO.
      */
     int getLIMMJOANIDOCount();
     /**
-     * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+     * <code>repeated uint32 LIMMJOANIDO = 6;</code>
      * @param index The index of the element to return.
      * @return The lIMMJOANIDO at the given index.
      */
     int getLIMMJOANIDO(int index);
 
     /**
-     * <code>bool LBCGNOOJDIC = 11;</code>
+     * <code>bool LBCGNOOJDIC = 1;</code>
      * @return The lBCGNOOJDIC.
      */
     boolean getLBCGNOOJDIC();
 
     /**
-     * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+     * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
      * @return Whether the lEGBABJELMF field is set.
      */
     boolean hasLEGBABJELMF();
     /**
-     * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+     * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
      * @return The lEGBABJELMF.
      */
     emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND getLEGBABJELMF();
     /**
-     * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+     * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
      */
     emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKENDOrBuilder getLEGBABJELMFOrBuilder();
 
     /**
-     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
      * @return Whether the dHFAFMNNEOJ field is set.
      */
     boolean hasDHFAFMNNEOJ();
     /**
-     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
      * @return The dHFAFMNNEOJ.
      */
     emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC getDHFAFMNNEOJ();
     /**
-     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
      */
     emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGACOrBuilder getDHFAFMNNEOJOrBuilder();
   }
@@ -133,20 +133,12 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.Builder subBuilder = null;
-              if (pCCLJJHAJGH_ != null) {
-                subBuilder = pCCLJJHAJGH_.toBuilder();
-              }
-              pCCLJJHAJGH_ = input.readMessage(emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(pCCLJJHAJGH_);
-                pCCLJJHAJGH_ = subBuilder.buildPartial();
-              }
+            case 8: {
 
+              lBCGNOOJDIC_ = input.readBool();
               break;
             }
-            case 16: {
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 lIMMJOANIDO_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -154,7 +146,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
               lIMMJOANIDO_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -167,7 +159,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 58: {
+            case 160002: {
               emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND.Builder subBuilder = null;
               if (lEGBABJELMF_ != null) {
                 subBuilder = lEGBABJELMF_.toBuilder();
@@ -180,12 +172,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
 
               break;
             }
-            case 88: {
-
-              lBCGNOOJDIC_ = input.readBool();
-              break;
-            }
-            case 106: {
+            case 160018: {
               emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC.Builder subBuilder = null;
               if (dHFAFMNNEOJ_ != null) {
                 subBuilder = dHFAFMNNEOJ_.toBuilder();
@@ -194,6 +181,19 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(dHFAFMNNEOJ_);
                 dHFAFMNNEOJ_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 160026: {
+              emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.Builder subBuilder = null;
+              if (pCCLJJHAJGH_ != null) {
+                subBuilder = pCCLJJHAJGH_.toBuilder();
+              }
+              pCCLJJHAJGH_ = input.readMessage(emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pCCLJJHAJGH_);
+                pCCLJJHAJGH_ = subBuilder.buildPartial();
               }
 
               break;
@@ -233,10 +233,10 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
               emu.grasscutter.net.proto._GCGAutoBattleCardDetailInfoOuterClass._GCGAutoBattleCardDetailInfo.class, emu.grasscutter.net.proto._GCGAutoBattleCardDetailInfoOuterClass._GCGAutoBattleCardDetailInfo.Builder.class);
     }
 
-    public static final int PCCLJJHAJGH_FIELD_NUMBER = 1;
+    public static final int PCCLJJHAJGH_FIELD_NUMBER = 20003;
     private emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG pCCLJJHAJGH_;
     /**
-     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
      * @return Whether the pCCLJJHAJGH field is set.
      */
     @java.lang.Override
@@ -244,7 +244,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       return pCCLJJHAJGH_ != null;
     }
     /**
-     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
      * @return The pCCLJJHAJGH.
      */
     @java.lang.Override
@@ -252,17 +252,17 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       return pCCLJJHAJGH_ == null ? emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.getDefaultInstance() : pCCLJJHAJGH_;
     }
     /**
-     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+     * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCGOrBuilder getPCCLJJHAJGHOrBuilder() {
       return getPCCLJJHAJGH();
     }
 
-    public static final int LIMMJOANIDO_FIELD_NUMBER = 2;
+    public static final int LIMMJOANIDO_FIELD_NUMBER = 6;
     private com.google.protobuf.Internal.IntList lIMMJOANIDO_;
     /**
-     * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+     * <code>repeated uint32 LIMMJOANIDO = 6;</code>
      * @return A list containing the lIMMJOANIDO.
      */
     @java.lang.Override
@@ -271,14 +271,14 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       return lIMMJOANIDO_;
     }
     /**
-     * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+     * <code>repeated uint32 LIMMJOANIDO = 6;</code>
      * @return The count of lIMMJOANIDO.
      */
     public int getLIMMJOANIDOCount() {
       return lIMMJOANIDO_.size();
     }
     /**
-     * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+     * <code>repeated uint32 LIMMJOANIDO = 6;</code>
      * @param index The index of the element to return.
      * @return The lIMMJOANIDO at the given index.
      */
@@ -287,10 +287,10 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
     }
     private int lIMMJOANIDOMemoizedSerializedSize = -1;
 
-    public static final int LBCGNOOJDIC_FIELD_NUMBER = 11;
+    public static final int LBCGNOOJDIC_FIELD_NUMBER = 1;
     private boolean lBCGNOOJDIC_;
     /**
-     * <code>bool LBCGNOOJDIC = 11;</code>
+     * <code>bool LBCGNOOJDIC = 1;</code>
      * @return The lBCGNOOJDIC.
      */
     @java.lang.Override
@@ -298,10 +298,10 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       return lBCGNOOJDIC_;
     }
 
-    public static final int LEGBABJELMF_FIELD_NUMBER = 7;
+    public static final int LEGBABJELMF_FIELD_NUMBER = 20000;
     private emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND lEGBABJELMF_;
     /**
-     * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+     * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
      * @return Whether the lEGBABJELMF field is set.
      */
     @java.lang.Override
@@ -309,7 +309,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       return lEGBABJELMF_ != null;
     }
     /**
-     * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+     * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
      * @return The lEGBABJELMF.
      */
     @java.lang.Override
@@ -317,17 +317,17 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       return lEGBABJELMF_ == null ? emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND.getDefaultInstance() : lEGBABJELMF_;
     }
     /**
-     * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+     * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKENDOrBuilder getLEGBABJELMFOrBuilder() {
       return getLEGBABJELMF();
     }
 
-    public static final int DHFAFMNNEOJ_FIELD_NUMBER = 13;
+    public static final int DHFAFMNNEOJ_FIELD_NUMBER = 20002;
     private emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC dHFAFMNNEOJ_;
     /**
-     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
      * @return Whether the dHFAFMNNEOJ field is set.
      */
     @java.lang.Override
@@ -335,7 +335,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       return dHFAFMNNEOJ_ != null;
     }
     /**
-     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
      * @return The dHFAFMNNEOJ.
      */
     @java.lang.Override
@@ -343,7 +343,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       return dHFAFMNNEOJ_ == null ? emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC.getDefaultInstance() : dHFAFMNNEOJ_;
     }
     /**
-     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+     * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGACOrBuilder getDHFAFMNNEOJOrBuilder() {
@@ -365,24 +365,24 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (pCCLJJHAJGH_ != null) {
-        output.writeMessage(1, getPCCLJJHAJGH());
+      if (lBCGNOOJDIC_ != false) {
+        output.writeBool(1, lBCGNOOJDIC_);
       }
       if (getLIMMJOANIDOList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(lIMMJOANIDOMemoizedSerializedSize);
       }
       for (int i = 0; i < lIMMJOANIDO_.size(); i++) {
         output.writeUInt32NoTag(lIMMJOANIDO_.getInt(i));
       }
       if (lEGBABJELMF_ != null) {
-        output.writeMessage(7, getLEGBABJELMF());
-      }
-      if (lBCGNOOJDIC_ != false) {
-        output.writeBool(11, lBCGNOOJDIC_);
+        output.writeMessage(20000, getLEGBABJELMF());
       }
       if (dHFAFMNNEOJ_ != null) {
-        output.writeMessage(13, getDHFAFMNNEOJ());
+        output.writeMessage(20002, getDHFAFMNNEOJ());
+      }
+      if (pCCLJJHAJGH_ != null) {
+        output.writeMessage(20003, getPCCLJJHAJGH());
       }
       unknownFields.writeTo(output);
     }
@@ -393,9 +393,9 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pCCLJJHAJGH_ != null) {
+      if (lBCGNOOJDIC_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getPCCLJJHAJGH());
+          .computeBoolSize(1, lBCGNOOJDIC_);
       }
       {
         int dataSize = 0;
@@ -413,15 +413,15 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       }
       if (lEGBABJELMF_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getLEGBABJELMF());
-      }
-      if (lBCGNOOJDIC_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, lBCGNOOJDIC_);
+          .computeMessageSize(20000, getLEGBABJELMF());
       }
       if (dHFAFMNNEOJ_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getDHFAFMNNEOJ());
+          .computeMessageSize(20002, getDHFAFMNNEOJ());
+      }
+      if (pCCLJJHAJGH_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20003, getPCCLJJHAJGH());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -794,14 +794,14 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG, emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.Builder, emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCGOrBuilder> pCCLJJHAJGHBuilder_;
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        * @return Whether the pCCLJJHAJGH field is set.
        */
       public boolean hasPCCLJJHAJGH() {
         return pCCLJJHAJGHBuilder_ != null || pCCLJJHAJGH_ != null;
       }
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        * @return The pCCLJJHAJGH.
        */
       public emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG getPCCLJJHAJGH() {
@@ -812,7 +812,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        */
       public Builder setPCCLJJHAJGH(emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG value) {
         if (pCCLJJHAJGHBuilder_ == null) {
@@ -828,7 +828,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        */
       public Builder setPCCLJJHAJGH(
           emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.Builder builderForValue) {
@@ -842,7 +842,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        */
       public Builder mergePCCLJJHAJGH(emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG value) {
         if (pCCLJJHAJGHBuilder_ == null) {
@@ -860,7 +860,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        */
       public Builder clearPCCLJJHAJGH() {
         if (pCCLJJHAJGHBuilder_ == null) {
@@ -874,7 +874,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        */
       public emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.Builder getPCCLJJHAJGHBuilder() {
         
@@ -882,7 +882,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return getPCCLJJHAJGHFieldBuilder().getBuilder();
       }
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        */
       public emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCGOrBuilder getPCCLJJHAJGHOrBuilder() {
         if (pCCLJJHAJGHBuilder_ != null) {
@@ -893,7 +893,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 1;</code>
+       * <code>.KBHFBAJNBCG PCCLJJHAJGH = 20003;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG, emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCG.Builder, emu.grasscutter.net.proto.KBHFBAJNBCGOuterClass.KBHFBAJNBCGOrBuilder> 
@@ -917,7 +917,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+       * <code>repeated uint32 LIMMJOANIDO = 6;</code>
        * @return A list containing the lIMMJOANIDO.
        */
       public java.util.List<java.lang.Integer>
@@ -926,14 +926,14 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
                  java.util.Collections.unmodifiableList(lIMMJOANIDO_) : lIMMJOANIDO_;
       }
       /**
-       * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+       * <code>repeated uint32 LIMMJOANIDO = 6;</code>
        * @return The count of lIMMJOANIDO.
        */
       public int getLIMMJOANIDOCount() {
         return lIMMJOANIDO_.size();
       }
       /**
-       * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+       * <code>repeated uint32 LIMMJOANIDO = 6;</code>
        * @param index The index of the element to return.
        * @return The lIMMJOANIDO at the given index.
        */
@@ -941,7 +941,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return lIMMJOANIDO_.getInt(index);
       }
       /**
-       * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+       * <code>repeated uint32 LIMMJOANIDO = 6;</code>
        * @param index The index to set the value at.
        * @param value The lIMMJOANIDO to set.
        * @return This builder for chaining.
@@ -954,7 +954,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+       * <code>repeated uint32 LIMMJOANIDO = 6;</code>
        * @param value The lIMMJOANIDO to add.
        * @return This builder for chaining.
        */
@@ -965,7 +965,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+       * <code>repeated uint32 LIMMJOANIDO = 6;</code>
        * @param values The lIMMJOANIDO to add.
        * @return This builder for chaining.
        */
@@ -978,7 +978,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LIMMJOANIDO = 2;</code>
+       * <code>repeated uint32 LIMMJOANIDO = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLIMMJOANIDO() {
@@ -990,7 +990,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
 
       private boolean lBCGNOOJDIC_ ;
       /**
-       * <code>bool LBCGNOOJDIC = 11;</code>
+       * <code>bool LBCGNOOJDIC = 1;</code>
        * @return The lBCGNOOJDIC.
        */
       @java.lang.Override
@@ -998,7 +998,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return lBCGNOOJDIC_;
       }
       /**
-       * <code>bool LBCGNOOJDIC = 11;</code>
+       * <code>bool LBCGNOOJDIC = 1;</code>
        * @param value The lBCGNOOJDIC to set.
        * @return This builder for chaining.
        */
@@ -1009,7 +1009,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool LBCGNOOJDIC = 11;</code>
+       * <code>bool LBCGNOOJDIC = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLBCGNOOJDIC() {
@@ -1023,14 +1023,14 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND, emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND.Builder, emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKENDOrBuilder> lEGBABJELMFBuilder_;
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        * @return Whether the lEGBABJELMF field is set.
        */
       public boolean hasLEGBABJELMF() {
         return lEGBABJELMFBuilder_ != null || lEGBABJELMF_ != null;
       }
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        * @return The lEGBABJELMF.
        */
       public emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND getLEGBABJELMF() {
@@ -1041,7 +1041,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        */
       public Builder setLEGBABJELMF(emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND value) {
         if (lEGBABJELMFBuilder_ == null) {
@@ -1057,7 +1057,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        */
       public Builder setLEGBABJELMF(
           emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND.Builder builderForValue) {
@@ -1071,7 +1071,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        */
       public Builder mergeLEGBABJELMF(emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND value) {
         if (lEGBABJELMFBuilder_ == null) {
@@ -1089,7 +1089,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        */
       public Builder clearLEGBABJELMF() {
         if (lEGBABJELMFBuilder_ == null) {
@@ -1103,7 +1103,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        */
       public emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND.Builder getLEGBABJELMFBuilder() {
         
@@ -1111,7 +1111,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return getLEGBABJELMFFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        */
       public emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKENDOrBuilder getLEGBABJELMFOrBuilder() {
         if (lEGBABJELMFBuilder_ != null) {
@@ -1122,7 +1122,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.HBJLPIDKEND LEGBABJELMF = 7;</code>
+       * <code>.HBJLPIDKEND LEGBABJELMF = 20000;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND, emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKEND.Builder, emu.grasscutter.net.proto.HBJLPIDKENDOuterClass.HBJLPIDKENDOrBuilder> 
@@ -1142,14 +1142,14 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC, emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC.Builder, emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGACOrBuilder> dHFAFMNNEOJBuilder_;
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        * @return Whether the dHFAFMNNEOJ field is set.
        */
       public boolean hasDHFAFMNNEOJ() {
         return dHFAFMNNEOJBuilder_ != null || dHFAFMNNEOJ_ != null;
       }
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        * @return The dHFAFMNNEOJ.
        */
       public emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC getDHFAFMNNEOJ() {
@@ -1160,7 +1160,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        */
       public Builder setDHFAFMNNEOJ(emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC value) {
         if (dHFAFMNNEOJBuilder_ == null) {
@@ -1176,7 +1176,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        */
       public Builder setDHFAFMNNEOJ(
           emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC.Builder builderForValue) {
@@ -1190,7 +1190,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        */
       public Builder mergeDHFAFMNNEOJ(emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC value) {
         if (dHFAFMNNEOJBuilder_ == null) {
@@ -1208,7 +1208,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        */
       public Builder clearDHFAFMNNEOJ() {
         if (dHFAFMNNEOJBuilder_ == null) {
@@ -1222,7 +1222,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        */
       public emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC.Builder getDHFAFMNNEOJBuilder() {
         
@@ -1230,7 +1230,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         return getDHFAFMNNEOJFieldBuilder().getBuilder();
       }
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        */
       public emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGACOrBuilder getDHFAFMNNEOJOrBuilder() {
         if (dHFAFMNNEOJBuilder_ != null) {
@@ -1241,7 +1241,7 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
         }
       }
       /**
-       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 13;</code>
+       * <code>.JJAAPEINGAC DHFAFMNNEOJ = 20002;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC, emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGAC.Builder, emu.grasscutter.net.proto.JJAAPEINGACOuterClass.JJAAPEINGACOrBuilder> 
@@ -1325,13 +1325,13 @@ public final class _GCGAutoBattleCardDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"_GCGAutoBattleCardDetailInfo.proto\032\021HB" +
       "JLPIDKEND.proto\032\021JJAAPEINGAC.proto\032\021KBHF" +
-      "BAJNBCG.proto\"\261\001\n\034_GCGAutoBattleCardDeta" +
-      "ilInfo\022!\n\013PCCLJJHAJGH\030\001 \001(\0132\014.KBHFBAJNBC" +
-      "G\022\023\n\013LIMMJOANIDO\030\002 \003(\r\022\023\n\013LBCGNOOJDIC\030\013 " +
-      "\001(\010\022!\n\013LEGBABJELMF\030\007 \001(\0132\014.HBJLPIDKEND\022!" +
-      "\n\013DHFAFMNNEOJ\030\r \001(\0132\014.JJAAPEINGACBC\n\031emu" +
-      ".grasscutter.net.protoB&_GCGAutoBattleCa" +
-      "rdDetailInfoOuterClassb\006proto3"
+      "BAJNBCG.proto\"\267\001\n\034_GCGAutoBattleCardDeta" +
+      "ilInfo\022#\n\013PCCLJJHAJGH\030\243\234\001 \001(\0132\014.KBHFBAJN" +
+      "BCG\022\023\n\013LIMMJOANIDO\030\006 \003(\r\022\023\n\013LBCGNOOJDIC\030" +
+      "\001 \001(\010\022#\n\013LEGBABJELMF\030\240\234\001 \001(\0132\014.HBJLPIDKE" +
+      "ND\022#\n\013DHFAFMNNEOJ\030\242\234\001 \001(\0132\014.JJAAPEINGACB" +
+      "C\n\031emu.grasscutter.net.protoB&_GCGAutoBa" +
+      "ttleCardDetailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

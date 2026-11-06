@@ -6,11 +6,11 @@ option java_outer_classname = "AddNoGachaAvatarCardNotifyOuterClass";
 import "AddNoGachaAvatarCardTransferItem.proto";
 
 message AddNoGachaAvatarCardNotify {
-	uint32 item_id = 9;
-	uint32 initial_level = 50000;
-	uint32 initial_promote_level = 50001;
-	uint32 reason = 12;
-	uint32 avatar_id = 2;
-	repeated AddNoGachaAvatarCardTransferItem transfer_item_list = 13;
-	bool is_transfer_to_item = 7;
+	uint32 item_id = 13;
+	uint32 initial_level = 20000;
+	uint32 initial_promote_level = 20001;
+	uint32 reason = 14;
+	uint32 avatar_id = 6;
+	repeated AddNoGachaAvatarCardTransferItem transfer_item_list = 9;
+	bool is_transfer_to_item = 10;
 }

@@ -19,19 +19,19 @@ public final class CooperateChallengeDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficulty_id = 14;</code>
+     * <code>uint32 difficulty_id = 7;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
 
     /**
-     * <code>bool MNGLBAEBKDA = 9;</code>
+     * <code>bool MNGLBAEBKDA = 50000;</code>
      * @return The mNGLBAEBKDA.
      */
     boolean getMNGLBAEBKDA();
 
     /**
-     * <code>bool LBCGNOOJDIC = 1;</code>
+     * <code>bool LBCGNOOJDIC = 50001;</code>
      * @return The lBCGNOOJDIC.
      */
     boolean getLBCGNOOJDIC();
@@ -81,19 +81,19 @@ public final class CooperateChallengeDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
 
-              lBCGNOOJDIC_ = input.readBool();
+              difficultyId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 400000: {
 
               mNGLBAEBKDA_ = input.readBool();
               break;
             }
-            case 112: {
+            case 400008: {
 
-              difficultyId_ = input.readUInt32();
+              lBCGNOOJDIC_ = input.readBool();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class CooperateChallengeDetailInfoOuterClass {
               emu.grasscutter.net.proto.CooperateChallengeDetailInfoOuterClass.CooperateChallengeDetailInfo.class, emu.grasscutter.net.proto.CooperateChallengeDetailInfoOuterClass.CooperateChallengeDetailInfo.Builder.class);
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 14;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 7;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 14;</code>
+     * <code>uint32 difficulty_id = 7;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class CooperateChallengeDetailInfoOuterClass {
       return difficultyId_;
     }
 
-    public static final int MNGLBAEBKDA_FIELD_NUMBER = 9;
+    public static final int MNGLBAEBKDA_FIELD_NUMBER = 50000;
     private boolean mNGLBAEBKDA_;
     /**
-     * <code>bool MNGLBAEBKDA = 9;</code>
+     * <code>bool MNGLBAEBKDA = 50000;</code>
      * @return The mNGLBAEBKDA.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class CooperateChallengeDetailInfoOuterClass {
       return mNGLBAEBKDA_;
     }
 
-    public static final int LBCGNOOJDIC_FIELD_NUMBER = 1;
+    public static final int LBCGNOOJDIC_FIELD_NUMBER = 50001;
     private boolean lBCGNOOJDIC_;
     /**
-     * <code>bool LBCGNOOJDIC = 1;</code>
+     * <code>bool LBCGNOOJDIC = 50001;</code>
      * @return The lBCGNOOJDIC.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class CooperateChallengeDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lBCGNOOJDIC_ != false) {
-        output.writeBool(1, lBCGNOOJDIC_);
+      if (difficultyId_ != 0) {
+        output.writeUInt32(7, difficultyId_);
       }
       if (mNGLBAEBKDA_ != false) {
-        output.writeBool(9, mNGLBAEBKDA_);
+        output.writeBool(50000, mNGLBAEBKDA_);
       }
-      if (difficultyId_ != 0) {
-        output.writeUInt32(14, difficultyId_);
+      if (lBCGNOOJDIC_ != false) {
+        output.writeBool(50001, lBCGNOOJDIC_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class CooperateChallengeDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lBCGNOOJDIC_ != false) {
+      if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, lBCGNOOJDIC_);
+          .computeUInt32Size(7, difficultyId_);
       }
       if (mNGLBAEBKDA_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, mNGLBAEBKDA_);
+          .computeBoolSize(50000, mNGLBAEBKDA_);
       }
-      if (difficultyId_ != 0) {
+      if (lBCGNOOJDIC_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, difficultyId_);
+          .computeBoolSize(50001, lBCGNOOJDIC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -501,7 +501,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 14;</code>
+       * <code>uint32 difficulty_id = 7;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 14;</code>
+       * <code>uint32 difficulty_id = 7;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 14;</code>
+       * <code>uint32 difficulty_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -532,7 +532,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
 
       private boolean mNGLBAEBKDA_ ;
       /**
-       * <code>bool MNGLBAEBKDA = 9;</code>
+       * <code>bool MNGLBAEBKDA = 50000;</code>
        * @return The mNGLBAEBKDA.
        */
       @java.lang.Override
@@ -540,7 +540,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
         return mNGLBAEBKDA_;
       }
       /**
-       * <code>bool MNGLBAEBKDA = 9;</code>
+       * <code>bool MNGLBAEBKDA = 50000;</code>
        * @param value The mNGLBAEBKDA to set.
        * @return This builder for chaining.
        */
@@ -551,7 +551,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool MNGLBAEBKDA = 9;</code>
+       * <code>bool MNGLBAEBKDA = 50000;</code>
        * @return This builder for chaining.
        */
       public Builder clearMNGLBAEBKDA() {
@@ -563,7 +563,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
 
       private boolean lBCGNOOJDIC_ ;
       /**
-       * <code>bool LBCGNOOJDIC = 1;</code>
+       * <code>bool LBCGNOOJDIC = 50001;</code>
        * @return The lBCGNOOJDIC.
        */
       @java.lang.Override
@@ -571,7 +571,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
         return lBCGNOOJDIC_;
       }
       /**
-       * <code>bool LBCGNOOJDIC = 1;</code>
+       * <code>bool LBCGNOOJDIC = 50001;</code>
        * @param value The lBCGNOOJDIC to set.
        * @return This builder for chaining.
        */
@@ -582,7 +582,7 @@ public final class CooperateChallengeDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool LBCGNOOJDIC = 1;</code>
+       * <code>bool LBCGNOOJDIC = 50001;</code>
        * @return This builder for chaining.
        */
       public Builder clearLBCGNOOJDIC() {
@@ -658,12 +658,12 @@ public final class CooperateChallengeDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"CooperateChallengeDetailInfo.proto\"_\n\034" +
+      "\n\"CooperateChallengeDetailInfo.proto\"c\n\034" +
       "CooperateChallengeDetailInfo\022\025\n\rdifficul" +
-      "ty_id\030\016 \001(\r\022\023\n\013MNGLBAEBKDA\030\t \001(\010\022\023\n\013LBCG" +
-      "NOOJDIC\030\001 \001(\010BC\n\031emu.grasscutter.net.pro" +
-      "toB&CooperateChallengeDetailInfoOuterCla" +
-      "ssb\006proto3"
+      "ty_id\030\007 \001(\r\022\025\n\013MNGLBAEBKDA\030\320\206\003 \001(\010\022\025\n\013LB" +
+      "CGNOOJDIC\030\321\206\003 \001(\010BC\n\031emu.grasscutter.net" +
+      ".protoB&CooperateChallengeDetailInfoOute" +
+      "rClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

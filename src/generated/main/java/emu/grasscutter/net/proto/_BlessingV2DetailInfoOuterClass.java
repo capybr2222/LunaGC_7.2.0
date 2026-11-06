@@ -19,67 +19,67 @@ public final class _BlessingV2DetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_activated = 6;</code>
+     * <code>bool is_activated = 1;</code>
      * @return The isActivated.
      */
     boolean getIsActivated();
 
     /**
-     * <code>bool ELCGFJCJMNN = 14;</code>
+     * <code>bool ELCGFJCJMNN = 8;</code>
      * @return The eLCGFJCJMNN.
      */
     boolean getELCGFJCJMNN();
 
     /**
-     * <code>uint32 DKHOJDNIKGN = 9;</code>
+     * <code>uint32 DKHOJDNIKGN = 20001;</code>
      * @return The dKHOJDNIKGN.
      */
     int getDKHOJDNIKGN();
 
     /**
-     * <code>uint32 GFJBLFOFJIP = 12;</code>
+     * <code>uint32 GFJBLFOFJIP = 20004;</code>
      * @return The gFJBLFOFJIP.
      */
     int getGFJBLFOFJIP();
 
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG> 
         getOIJEHCLCPFNList();
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG getOIJEHCLCPFN(int index);
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     int getOIJEHCLCPFNCount();
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHGOrBuilder> 
         getOIJEHCLCPFNOrBuilderList();
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHGOrBuilder getOIJEHCLCPFNOrBuilder(
         int index);
 
     /**
-     * <code>fixed32 content_close_time = 15;</code>
+     * <code>fixed32 content_close_time = 6;</code>
      * @return The contentCloseTime.
      */
     int getContentCloseTime();
 
     /**
-     * <code>uint32 HLGJOMHPMDA = 13;</code>
+     * <code>uint32 HLGJOMHPMDA = 20003;</code>
      * @return The hLGJOMHPMDA.
      */
     int getHLGJOMHPMDA();
 
     /**
-     * <code>fixed32 next_refresh_time = 7;</code>
+     * <code>fixed32 next_refresh_time = 5;</code>
      * @return The nextRefreshTime.
      */
     int getNextRefreshTime();
@@ -131,22 +131,27 @@ public final class _BlessingV2DetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
               isActivated_ = input.readBool();
               break;
             }
-            case 61: {
+            case 45: {
 
               nextRefreshTime_ = input.readFixed32();
               break;
             }
-            case 72: {
+            case 53: {
 
-              dKHOJDNIKGN_ = input.readUInt32();
+              contentCloseTime_ = input.readFixed32();
               break;
             }
-            case 90: {
+            case 64: {
+
+              eLCGFJCJMNN_ = input.readBool();
+              break;
+            }
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 oIJEHCLCPFN_ = new java.util.ArrayList<emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG>();
                 mutable_bitField0_ |= 0x00000001;
@@ -155,24 +160,19 @@ public final class _BlessingV2DetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 160008: {
 
-              gFJBLFOFJIP_ = input.readUInt32();
+              dKHOJDNIKGN_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 160024: {
 
               hLGJOMHPMDA_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 160032: {
 
-              eLCGFJCJMNN_ = input.readBool();
-              break;
-            }
-            case 125: {
-
-              contentCloseTime_ = input.readFixed32();
+              gFJBLFOFJIP_ = input.readUInt32();
               break;
             }
             default: {
@@ -210,10 +210,10 @@ public final class _BlessingV2DetailInfoOuterClass {
               emu.grasscutter.net.proto._BlessingV2DetailInfoOuterClass._BlessingV2DetailInfo.class, emu.grasscutter.net.proto._BlessingV2DetailInfoOuterClass._BlessingV2DetailInfo.Builder.class);
     }
 
-    public static final int IS_ACTIVATED_FIELD_NUMBER = 6;
+    public static final int IS_ACTIVATED_FIELD_NUMBER = 1;
     private boolean isActivated_;
     /**
-     * <code>bool is_activated = 6;</code>
+     * <code>bool is_activated = 1;</code>
      * @return The isActivated.
      */
     @java.lang.Override
@@ -221,10 +221,10 @@ public final class _BlessingV2DetailInfoOuterClass {
       return isActivated_;
     }
 
-    public static final int ELCGFJCJMNN_FIELD_NUMBER = 14;
+    public static final int ELCGFJCJMNN_FIELD_NUMBER = 8;
     private boolean eLCGFJCJMNN_;
     /**
-     * <code>bool ELCGFJCJMNN = 14;</code>
+     * <code>bool ELCGFJCJMNN = 8;</code>
      * @return The eLCGFJCJMNN.
      */
     @java.lang.Override
@@ -232,10 +232,10 @@ public final class _BlessingV2DetailInfoOuterClass {
       return eLCGFJCJMNN_;
     }
 
-    public static final int DKHOJDNIKGN_FIELD_NUMBER = 9;
+    public static final int DKHOJDNIKGN_FIELD_NUMBER = 20001;
     private int dKHOJDNIKGN_;
     /**
-     * <code>uint32 DKHOJDNIKGN = 9;</code>
+     * <code>uint32 DKHOJDNIKGN = 20001;</code>
      * @return The dKHOJDNIKGN.
      */
     @java.lang.Override
@@ -243,10 +243,10 @@ public final class _BlessingV2DetailInfoOuterClass {
       return dKHOJDNIKGN_;
     }
 
-    public static final int GFJBLFOFJIP_FIELD_NUMBER = 12;
+    public static final int GFJBLFOFJIP_FIELD_NUMBER = 20004;
     private int gFJBLFOFJIP_;
     /**
-     * <code>uint32 GFJBLFOFJIP = 12;</code>
+     * <code>uint32 GFJBLFOFJIP = 20004;</code>
      * @return The gFJBLFOFJIP.
      */
     @java.lang.Override
@@ -254,17 +254,17 @@ public final class _BlessingV2DetailInfoOuterClass {
       return gFJBLFOFJIP_;
     }
 
-    public static final int OIJEHCLCPFN_FIELD_NUMBER = 11;
+    public static final int OIJEHCLCPFN_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG> oIJEHCLCPFN_;
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG> getOIJEHCLCPFNList() {
       return oIJEHCLCPFN_;
     }
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHGOrBuilder> 
@@ -272,21 +272,21 @@ public final class _BlessingV2DetailInfoOuterClass {
       return oIJEHCLCPFN_;
     }
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     @java.lang.Override
     public int getOIJEHCLCPFNCount() {
       return oIJEHCLCPFN_.size();
     }
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG getOIJEHCLCPFN(int index) {
       return oIJEHCLCPFN_.get(index);
     }
     /**
-     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+     * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHGOrBuilder getOIJEHCLCPFNOrBuilder(
@@ -294,10 +294,10 @@ public final class _BlessingV2DetailInfoOuterClass {
       return oIJEHCLCPFN_.get(index);
     }
 
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 15;
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 6;
     private int contentCloseTime_;
     /**
-     * <code>fixed32 content_close_time = 15;</code>
+     * <code>fixed32 content_close_time = 6;</code>
      * @return The contentCloseTime.
      */
     @java.lang.Override
@@ -305,10 +305,10 @@ public final class _BlessingV2DetailInfoOuterClass {
       return contentCloseTime_;
     }
 
-    public static final int HLGJOMHPMDA_FIELD_NUMBER = 13;
+    public static final int HLGJOMHPMDA_FIELD_NUMBER = 20003;
     private int hLGJOMHPMDA_;
     /**
-     * <code>uint32 HLGJOMHPMDA = 13;</code>
+     * <code>uint32 HLGJOMHPMDA = 20003;</code>
      * @return The hLGJOMHPMDA.
      */
     @java.lang.Override
@@ -316,10 +316,10 @@ public final class _BlessingV2DetailInfoOuterClass {
       return hLGJOMHPMDA_;
     }
 
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 7;
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 5;
     private int nextRefreshTime_;
     /**
-     * <code>fixed32 next_refresh_time = 7;</code>
+     * <code>fixed32 next_refresh_time = 5;</code>
      * @return The nextRefreshTime.
      */
     @java.lang.Override
@@ -342,28 +342,28 @@ public final class _BlessingV2DetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isActivated_ != false) {
-        output.writeBool(6, isActivated_);
+        output.writeBool(1, isActivated_);
       }
       if (nextRefreshTime_ != 0) {
-        output.writeFixed32(7, nextRefreshTime_);
-      }
-      if (dKHOJDNIKGN_ != 0) {
-        output.writeUInt32(9, dKHOJDNIKGN_);
-      }
-      for (int i = 0; i < oIJEHCLCPFN_.size(); i++) {
-        output.writeMessage(11, oIJEHCLCPFN_.get(i));
-      }
-      if (gFJBLFOFJIP_ != 0) {
-        output.writeUInt32(12, gFJBLFOFJIP_);
-      }
-      if (hLGJOMHPMDA_ != 0) {
-        output.writeUInt32(13, hLGJOMHPMDA_);
-      }
-      if (eLCGFJCJMNN_ != false) {
-        output.writeBool(14, eLCGFJCJMNN_);
+        output.writeFixed32(5, nextRefreshTime_);
       }
       if (contentCloseTime_ != 0) {
-        output.writeFixed32(15, contentCloseTime_);
+        output.writeFixed32(6, contentCloseTime_);
+      }
+      if (eLCGFJCJMNN_ != false) {
+        output.writeBool(8, eLCGFJCJMNN_);
+      }
+      for (int i = 0; i < oIJEHCLCPFN_.size(); i++) {
+        output.writeMessage(20000, oIJEHCLCPFN_.get(i));
+      }
+      if (dKHOJDNIKGN_ != 0) {
+        output.writeUInt32(20001, dKHOJDNIKGN_);
+      }
+      if (hLGJOMHPMDA_ != 0) {
+        output.writeUInt32(20003, hLGJOMHPMDA_);
+      }
+      if (gFJBLFOFJIP_ != 0) {
+        output.writeUInt32(20004, gFJBLFOFJIP_);
       }
       unknownFields.writeTo(output);
     }
@@ -376,35 +376,35 @@ public final class _BlessingV2DetailInfoOuterClass {
       size = 0;
       if (isActivated_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isActivated_);
+          .computeBoolSize(1, isActivated_);
       }
       if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(7, nextRefreshTime_);
-      }
-      if (dKHOJDNIKGN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, dKHOJDNIKGN_);
-      }
-      for (int i = 0; i < oIJEHCLCPFN_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, oIJEHCLCPFN_.get(i));
-      }
-      if (gFJBLFOFJIP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, gFJBLFOFJIP_);
-      }
-      if (hLGJOMHPMDA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, hLGJOMHPMDA_);
-      }
-      if (eLCGFJCJMNN_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, eLCGFJCJMNN_);
+          .computeFixed32Size(5, nextRefreshTime_);
       }
       if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(15, contentCloseTime_);
+          .computeFixed32Size(6, contentCloseTime_);
+      }
+      if (eLCGFJCJMNN_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, eLCGFJCJMNN_);
+      }
+      for (int i = 0; i < oIJEHCLCPFN_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20000, oIJEHCLCPFN_.get(i));
+      }
+      if (dKHOJDNIKGN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20001, dKHOJDNIKGN_);
+      }
+      if (hLGJOMHPMDA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20003, hLGJOMHPMDA_);
+      }
+      if (gFJBLFOFJIP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20004, gFJBLFOFJIP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -792,7 +792,7 @@ public final class _BlessingV2DetailInfoOuterClass {
 
       private boolean isActivated_ ;
       /**
-       * <code>bool is_activated = 6;</code>
+       * <code>bool is_activated = 1;</code>
        * @return The isActivated.
        */
       @java.lang.Override
@@ -800,7 +800,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return isActivated_;
       }
       /**
-       * <code>bool is_activated = 6;</code>
+       * <code>bool is_activated = 1;</code>
        * @param value The isActivated to set.
        * @return This builder for chaining.
        */
@@ -811,7 +811,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_activated = 6;</code>
+       * <code>bool is_activated = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsActivated() {
@@ -823,7 +823,7 @@ public final class _BlessingV2DetailInfoOuterClass {
 
       private boolean eLCGFJCJMNN_ ;
       /**
-       * <code>bool ELCGFJCJMNN = 14;</code>
+       * <code>bool ELCGFJCJMNN = 8;</code>
        * @return The eLCGFJCJMNN.
        */
       @java.lang.Override
@@ -831,7 +831,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return eLCGFJCJMNN_;
       }
       /**
-       * <code>bool ELCGFJCJMNN = 14;</code>
+       * <code>bool ELCGFJCJMNN = 8;</code>
        * @param value The eLCGFJCJMNN to set.
        * @return This builder for chaining.
        */
@@ -842,7 +842,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool ELCGFJCJMNN = 14;</code>
+       * <code>bool ELCGFJCJMNN = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearELCGFJCJMNN() {
@@ -854,7 +854,7 @@ public final class _BlessingV2DetailInfoOuterClass {
 
       private int dKHOJDNIKGN_ ;
       /**
-       * <code>uint32 DKHOJDNIKGN = 9;</code>
+       * <code>uint32 DKHOJDNIKGN = 20001;</code>
        * @return The dKHOJDNIKGN.
        */
       @java.lang.Override
@@ -862,7 +862,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return dKHOJDNIKGN_;
       }
       /**
-       * <code>uint32 DKHOJDNIKGN = 9;</code>
+       * <code>uint32 DKHOJDNIKGN = 20001;</code>
        * @param value The dKHOJDNIKGN to set.
        * @return This builder for chaining.
        */
@@ -873,7 +873,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 DKHOJDNIKGN = 9;</code>
+       * <code>uint32 DKHOJDNIKGN = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearDKHOJDNIKGN() {
@@ -885,7 +885,7 @@ public final class _BlessingV2DetailInfoOuterClass {
 
       private int gFJBLFOFJIP_ ;
       /**
-       * <code>uint32 GFJBLFOFJIP = 12;</code>
+       * <code>uint32 GFJBLFOFJIP = 20004;</code>
        * @return The gFJBLFOFJIP.
        */
       @java.lang.Override
@@ -893,7 +893,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return gFJBLFOFJIP_;
       }
       /**
-       * <code>uint32 GFJBLFOFJIP = 12;</code>
+       * <code>uint32 GFJBLFOFJIP = 20004;</code>
        * @param value The gFJBLFOFJIP to set.
        * @return This builder for chaining.
        */
@@ -904,7 +904,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 GFJBLFOFJIP = 12;</code>
+       * <code>uint32 GFJBLFOFJIP = 20004;</code>
        * @return This builder for chaining.
        */
       public Builder clearGFJBLFOFJIP() {
@@ -927,7 +927,7 @@ public final class _BlessingV2DetailInfoOuterClass {
           emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG, emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder, emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHGOrBuilder> oIJEHCLCPFNBuilder_;
 
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG> getOIJEHCLCPFNList() {
         if (oIJEHCLCPFNBuilder_ == null) {
@@ -937,7 +937,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public int getOIJEHCLCPFNCount() {
         if (oIJEHCLCPFNBuilder_ == null) {
@@ -947,7 +947,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG getOIJEHCLCPFN(int index) {
         if (oIJEHCLCPFNBuilder_ == null) {
@@ -957,7 +957,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder setOIJEHCLCPFN(
           int index, emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG value) {
@@ -974,7 +974,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder setOIJEHCLCPFN(
           int index, emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder builderForValue) {
@@ -988,7 +988,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder addOIJEHCLCPFN(emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG value) {
         if (oIJEHCLCPFNBuilder_ == null) {
@@ -1004,7 +1004,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder addOIJEHCLCPFN(
           int index, emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG value) {
@@ -1021,7 +1021,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder addOIJEHCLCPFN(
           emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder builderForValue) {
@@ -1035,7 +1035,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder addOIJEHCLCPFN(
           int index, emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder builderForValue) {
@@ -1049,7 +1049,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder addAllOIJEHCLCPFN(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG> values) {
@@ -1064,7 +1064,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder clearOIJEHCLCPFN() {
         if (oIJEHCLCPFNBuilder_ == null) {
@@ -1077,7 +1077,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public Builder removeOIJEHCLCPFN(int index) {
         if (oIJEHCLCPFNBuilder_ == null) {
@@ -1090,14 +1090,14 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder getOIJEHCLCPFNBuilder(
           int index) {
         return getOIJEHCLCPFNFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHGOrBuilder getOIJEHCLCPFNOrBuilder(
           int index) {
@@ -1107,7 +1107,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHGOrBuilder> 
            getOIJEHCLCPFNOrBuilderList() {
@@ -1118,14 +1118,14 @@ public final class _BlessingV2DetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder addOIJEHCLCPFNBuilder() {
         return getOIJEHCLCPFNFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.getDefaultInstance());
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder addOIJEHCLCPFNBuilder(
           int index) {
@@ -1133,7 +1133,7 @@ public final class _BlessingV2DetailInfoOuterClass {
             index, emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.getDefaultInstance());
       }
       /**
-       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 11;</code>
+       * <code>repeated .ADMKLIPHAHG OIJEHCLCPFN = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ADMKLIPHAHGOuterClass.ADMKLIPHAHG.Builder> 
            getOIJEHCLCPFNBuilderList() {
@@ -1156,7 +1156,7 @@ public final class _BlessingV2DetailInfoOuterClass {
 
       private int contentCloseTime_ ;
       /**
-       * <code>fixed32 content_close_time = 15;</code>
+       * <code>fixed32 content_close_time = 6;</code>
        * @return The contentCloseTime.
        */
       @java.lang.Override
@@ -1164,7 +1164,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return contentCloseTime_;
       }
       /**
-       * <code>fixed32 content_close_time = 15;</code>
+       * <code>fixed32 content_close_time = 6;</code>
        * @param value The contentCloseTime to set.
        * @return This builder for chaining.
        */
@@ -1175,7 +1175,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>fixed32 content_close_time = 15;</code>
+       * <code>fixed32 content_close_time = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearContentCloseTime() {
@@ -1187,7 +1187,7 @@ public final class _BlessingV2DetailInfoOuterClass {
 
       private int hLGJOMHPMDA_ ;
       /**
-       * <code>uint32 HLGJOMHPMDA = 13;</code>
+       * <code>uint32 HLGJOMHPMDA = 20003;</code>
        * @return The hLGJOMHPMDA.
        */
       @java.lang.Override
@@ -1195,7 +1195,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return hLGJOMHPMDA_;
       }
       /**
-       * <code>uint32 HLGJOMHPMDA = 13;</code>
+       * <code>uint32 HLGJOMHPMDA = 20003;</code>
        * @param value The hLGJOMHPMDA to set.
        * @return This builder for chaining.
        */
@@ -1206,7 +1206,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 HLGJOMHPMDA = 13;</code>
+       * <code>uint32 HLGJOMHPMDA = 20003;</code>
        * @return This builder for chaining.
        */
       public Builder clearHLGJOMHPMDA() {
@@ -1218,7 +1218,7 @@ public final class _BlessingV2DetailInfoOuterClass {
 
       private int nextRefreshTime_ ;
       /**
-       * <code>fixed32 next_refresh_time = 7;</code>
+       * <code>fixed32 next_refresh_time = 5;</code>
        * @return The nextRefreshTime.
        */
       @java.lang.Override
@@ -1226,7 +1226,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return nextRefreshTime_;
       }
       /**
-       * <code>fixed32 next_refresh_time = 7;</code>
+       * <code>fixed32 next_refresh_time = 5;</code>
        * @param value The nextRefreshTime to set.
        * @return This builder for chaining.
        */
@@ -1237,7 +1237,7 @@ public final class _BlessingV2DetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>fixed32 next_refresh_time = 7;</code>
+       * <code>fixed32 next_refresh_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearNextRefreshTime() {
@@ -1314,14 +1314,14 @@ public final class _BlessingV2DetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033_BlessingV2DetailInfo.proto\032\021ADMKLIPHA" +
-      "HG.proto\"\333\001\n\025_BlessingV2DetailInfo\022\024\n\014is" +
-      "_activated\030\006 \001(\010\022\023\n\013ELCGFJCJMNN\030\016 \001(\010\022\023\n" +
-      "\013DKHOJDNIKGN\030\t \001(\r\022\023\n\013GFJBLFOFJIP\030\014 \001(\r\022" +
-      "!\n\013OIJEHCLCPFN\030\013 \003(\0132\014.ADMKLIPHAHG\022\032\n\022co" +
-      "ntent_close_time\030\017 \001(\007\022\023\n\013HLGJOMHPMDA\030\r " +
-      "\001(\r\022\031\n\021next_refresh_time\030\007 \001(\007B<\n\031emu.gr" +
-      "asscutter.net.protoB\037_BlessingV2DetailIn" +
-      "foOuterClassb\006proto3"
+      "HG.proto\"\343\001\n\025_BlessingV2DetailInfo\022\024\n\014is" +
+      "_activated\030\001 \001(\010\022\023\n\013ELCGFJCJMNN\030\010 \001(\010\022\025\n" +
+      "\013DKHOJDNIKGN\030\241\234\001 \001(\r\022\025\n\013GFJBLFOFJIP\030\244\234\001 " +
+      "\001(\r\022#\n\013OIJEHCLCPFN\030\240\234\001 \003(\0132\014.ADMKLIPHAHG" +
+      "\022\032\n\022content_close_time\030\006 \001(\007\022\025\n\013HLGJOMHP" +
+      "MDA\030\243\234\001 \001(\r\022\031\n\021next_refresh_time\030\005 \001(\007B<" +
+      "\n\031emu.grasscutter.net.protoB\037_BlessingV2" +
+      "DetailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

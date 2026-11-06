@@ -19,13 +19,13 @@ public final class GetShopmallDataRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 param = 11;</code>
+     * <code>uint32 param = 14;</code>
      * @return The param.
      */
     int getParam();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -115,12 +115,12 @@ public final class GetShopmallDataRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 64: {
+            case 104: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 112: {
 
               param_ = input.readUInt32();
               break;
@@ -160,10 +160,10 @@ public final class GetShopmallDataRspOuterClass {
               emu.grasscutter.net.proto.GetShopmallDataRspOuterClass.GetShopmallDataRsp.class, emu.grasscutter.net.proto.GetShopmallDataRspOuterClass.GetShopmallDataRsp.Builder.class);
     }
 
-    public static final int PARAM_FIELD_NUMBER = 11;
+    public static final int PARAM_FIELD_NUMBER = 14;
     private int param_;
     /**
-     * <code>uint32 param = 11;</code>
+     * <code>uint32 param = 14;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -171,10 +171,10 @@ public final class GetShopmallDataRspOuterClass {
       return param_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 13;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -233,10 +233,10 @@ public final class GetShopmallDataRspOuterClass {
         output.writeUInt32NoTag(shopTypeList_.getInt(i));
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(13, retcode_);
       }
       if (param_ != 0) {
-        output.writeUInt32(11, param_);
+        output.writeUInt32(14, param_);
       }
       unknownFields.writeTo(output);
     }
@@ -263,11 +263,11 @@ public final class GetShopmallDataRspOuterClass {
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(13, retcode_);
       }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, param_);
+          .computeUInt32Size(14, param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -578,7 +578,7 @@ public final class GetShopmallDataRspOuterClass {
 
       private int param_ ;
       /**
-       * <code>uint32 param = 11;</code>
+       * <code>uint32 param = 14;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -586,7 +586,7 @@ public final class GetShopmallDataRspOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 11;</code>
+       * <code>uint32 param = 14;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -597,7 +597,7 @@ public final class GetShopmallDataRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 11;</code>
+       * <code>uint32 param = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
@@ -609,7 +609,7 @@ public final class GetShopmallDataRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -617,7 +617,7 @@ public final class GetShopmallDataRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -628,7 +628,7 @@ public final class GetShopmallDataRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -784,7 +784,7 @@ public final class GetShopmallDataRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GetShopmallDataRsp.proto\"L\n\022GetShopmal" +
-      "lDataRsp\022\r\n\005param\030\013 \001(\r\022\017\n\007retcode\030\010 \001(\005" +
+      "lDataRsp\022\r\n\005param\030\016 \001(\r\022\017\n\007retcode\030\r \001(\005" +
       "\022\026\n\016shop_type_list\030\007 \003(\rB9\n\031emu.grasscut" +
       "ter.net.protoB\034GetShopmallDataRspOuterCl" +
       "assb\006proto3"

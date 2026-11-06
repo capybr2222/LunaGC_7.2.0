@@ -6,8 +6,8 @@ option java_outer_classname = "DuelHeartLevelInfoOuterClass";
 import "DuelHeartLevelDifficultyInfo.proto";
 
 message DuelHeartLevelInfo {
-	bool is_cg_viewed = 1;
-	bool is_open = 6;
-	repeated DuelHeartLevelDifficultyInfo difficulty_info_list = 8;
-	uint32 level_id = 10;
+	bool is_cg_viewed = 4;
+	bool is_open = 3;
+	repeated DuelHeartLevelDifficultyInfo difficulty_info_list = 2;
+	uint32 level_id = 1;
 }

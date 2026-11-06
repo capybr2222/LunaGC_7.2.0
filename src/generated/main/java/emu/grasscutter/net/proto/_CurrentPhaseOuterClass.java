@@ -19,12 +19,12 @@ public final class _CurrentPhaseOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+     * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
      * @return The enum numeric value on the wire for kKFBGJGDAJI.
      */
     int getKKFBGJGDAJIValue();
     /**
-     * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+     * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
      * @return The kKFBGJGDAJI.
      */
     emu.grasscutter.net.proto.DEGDFAOEICKOuterClass.DEGDFAOEICK getKKFBGJGDAJI();
@@ -81,15 +81,15 @@ public final class _CurrentPhaseOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-              int rawValue = input.readEnum();
-
-              kKFBGJGDAJI_ = rawValue;
-              break;
-            }
             case 16: {
 
               eMBJNKGJLFN_ = input.readUInt32();
+              break;
+            }
+            case 160008: {
+              int rawValue = input.readEnum();
+
+              kKFBGJGDAJI_ = rawValue;
               break;
             }
             default: {
@@ -124,17 +124,17 @@ public final class _CurrentPhaseOuterClass {
               emu.grasscutter.net.proto._CurrentPhaseOuterClass._CurrentPhase.class, emu.grasscutter.net.proto._CurrentPhaseOuterClass._CurrentPhase.Builder.class);
     }
 
-    public static final int KKFBGJGDAJI_FIELD_NUMBER = 1;
+    public static final int KKFBGJGDAJI_FIELD_NUMBER = 20001;
     private int kKFBGJGDAJI_;
     /**
-     * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+     * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
      * @return The enum numeric value on the wire for kKFBGJGDAJI.
      */
     @java.lang.Override public int getKKFBGJGDAJIValue() {
       return kKFBGJGDAJI_;
     }
     /**
-     * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+     * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
      * @return The kKFBGJGDAJI.
      */
     @java.lang.Override public emu.grasscutter.net.proto.DEGDFAOEICKOuterClass.DEGDFAOEICK getKKFBGJGDAJI() {
@@ -168,11 +168,11 @@ public final class _CurrentPhaseOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kKFBGJGDAJI_ != emu.grasscutter.net.proto.DEGDFAOEICKOuterClass.DEGDFAOEICK.DEGDFAOEICK_OFFICIAL.getNumber()) {
-        output.writeEnum(1, kKFBGJGDAJI_);
-      }
       if (eMBJNKGJLFN_ != 0) {
         output.writeUInt32(2, eMBJNKGJLFN_);
+      }
+      if (kKFBGJGDAJI_ != emu.grasscutter.net.proto.DEGDFAOEICKOuterClass.DEGDFAOEICK.DEGDFAOEICK_OFFICIAL.getNumber()) {
+        output.writeEnum(20001, kKFBGJGDAJI_);
       }
       unknownFields.writeTo(output);
     }
@@ -183,13 +183,13 @@ public final class _CurrentPhaseOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kKFBGJGDAJI_ != emu.grasscutter.net.proto.DEGDFAOEICKOuterClass.DEGDFAOEICK.DEGDFAOEICK_OFFICIAL.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, kKFBGJGDAJI_);
-      }
       if (eMBJNKGJLFN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, eMBJNKGJLFN_);
+      }
+      if (kKFBGJGDAJI_ != emu.grasscutter.net.proto.DEGDFAOEICKOuterClass.DEGDFAOEICK.DEGDFAOEICK_OFFICIAL.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(20001, kKFBGJGDAJI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -474,14 +474,14 @@ public final class _CurrentPhaseOuterClass {
 
       private int kKFBGJGDAJI_ = 0;
       /**
-       * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+       * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
        * @return The enum numeric value on the wire for kKFBGJGDAJI.
        */
       @java.lang.Override public int getKKFBGJGDAJIValue() {
         return kKFBGJGDAJI_;
       }
       /**
-       * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+       * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
        * @param value The enum numeric value on the wire for kKFBGJGDAJI to set.
        * @return This builder for chaining.
        */
@@ -492,7 +492,7 @@ public final class _CurrentPhaseOuterClass {
         return this;
       }
       /**
-       * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+       * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
        * @return The kKFBGJGDAJI.
        */
       @java.lang.Override
@@ -502,7 +502,7 @@ public final class _CurrentPhaseOuterClass {
         return result == null ? emu.grasscutter.net.proto.DEGDFAOEICKOuterClass.DEGDFAOEICK.UNRECOGNIZED : result;
       }
       /**
-       * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+       * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
        * @param value The kKFBGJGDAJI to set.
        * @return This builder for chaining.
        */
@@ -516,7 +516,7 @@ public final class _CurrentPhaseOuterClass {
         return this;
       }
       /**
-       * <code>.DEGDFAOEICK KKFBGJGDAJI = 1;</code>
+       * <code>.DEGDFAOEICK KKFBGJGDAJI = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearKKFBGJGDAJI() {
@@ -624,10 +624,10 @@ public final class _CurrentPhaseOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023_CurrentPhase.proto\032\021DEGDFAOEICK.proto" +
-      "\"G\n\r_CurrentPhase\022!\n\013KKFBGJGDAJI\030\001 \001(\0162\014" +
-      ".DEGDFAOEICK\022\023\n\013EMBJNKGJLFN\030\002 \001(\rB4\n\031emu" +
-      ".grasscutter.net.protoB\027_CurrentPhaseOut" +
-      "erClassb\006proto3"
+      "\"I\n\r_CurrentPhase\022#\n\013KKFBGJGDAJI\030\241\234\001 \001(\016" +
+      "2\014.DEGDFAOEICK\022\023\n\013EMBJNKGJLFN\030\002 \001(\rB4\n\031e" +
+      "mu.grasscutter.net.protoB\027_CurrentPhaseO" +
+      "uterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

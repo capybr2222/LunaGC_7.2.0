@@ -5,6 +5,6 @@ option java_outer_classname = "PingRspOuterClass";
 
 message PingRsp {
 	uint32 seq = 1;
-	int32 retcode = 3;
-	uint32 client_time = 9;
+	uint32 client_time = 6;
+	int32 retcode = 11;
 }

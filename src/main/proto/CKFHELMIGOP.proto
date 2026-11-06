@@ -6,15 +6,15 @@ option java_outer_classname = "CKFHELMIGOPOuterClass";
 import "PJFELCMPMKJ.proto";
 
 message CKFHELMIGOP {
-	uint64 OAICLPJOICK = 50000;
+	uint64 OAICLPJOICK = 4;
 	uint32 FLGHAOCLOAJ = 12;
-	uint32 DILPAMLKLCC = 50001;
-	uint32 IECDLMNALEJ = 50002;
-	map<uint64, uint32> CCKHKMBCEGJ = 50003;
-	uint64 MIHDAJBFNKE = 50004;
+	uint32 DILPAMLKLCC = 10;
+	uint32 IECDLMNALEJ = 9;
+	map<uint64, uint32> CCKHKMBCEGJ = 3;
+	uint64 MIHDAJBFNKE = 13;
 	repeated uint32 KNPJGLLICAD = 11;
-	map<uint64, uint32> CGNCCOMCOBA = 50005;
-	uint32 JLCDGPLJJMM = 50006;
-	uint32 NDLKHEFOAJF = 50007;
+	map<uint64, uint32> CGNCCOMCOBA = 8;
+	uint32 JLCDGPLJJMM = 6;
+	uint32 NDLKHEFOAJF = 5;
 	repeated PJFELCMPMKJ DDNFEHGKHFO = 15;
 }

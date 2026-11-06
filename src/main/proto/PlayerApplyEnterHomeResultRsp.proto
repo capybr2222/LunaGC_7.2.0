@@ -4,8 +4,8 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "PlayerApplyEnterHomeResultRspOuterClass";
 
 message PlayerApplyEnterHomeResultRsp {
-	bool is_agreed = 4;
-	uint32 apply_uid = 9;
-	int32 retcode = 11;
+	bool is_agreed = 12;
+	uint32 apply_uid = 4;
+	int32 retcode = 5;
 	uint32 param = 15;
 }

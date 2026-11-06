@@ -7,11 +7,11 @@ import "HitColliderType.proto";
 import "Vector.proto";
 
 message HitCollision {
-	float OMEMJMGDNPP = 50000;
-	float PFLEHLDGODB = 50001;
-	int32 hit_box_index = 15;
+	float OMEMJMGDNPP = 20000;
+	float PFLEHLDGODB = 20002;
+	int32 hit_box_index = 3;
 	Vector hit_point = 9;
-	HitColliderType hit_collider_type = 5;
-	Vector hit_dir = 12;
-	float EGIAGADINML = 50002;
+	HitColliderType hit_collider_type = 12;
+	Vector hit_dir = 10;
+	float EGIAGADINML = 20001;
 }

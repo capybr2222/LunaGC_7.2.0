@@ -19,42 +19,42 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 item_num = 9;</code>
+     * <code>uint32 item_num = 2;</code>
      * @return The itemNum.
      */
     int getItemNum();
 
     /**
-     * <code>uint32 score = 5;</code>
+     * <code>uint32 score = 6;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 MOEKEMAHBNN = 3;</code>
+     * <code>uint32 MOEKEMAHBNN = 10;</code>
      * @return The mOEKEMAHBNN.
      */
     int getMOEKEMAHBNN();
 
     /**
-     * <code>.GalleryStopReason reason = 1;</code>
+     * <code>.GalleryStopReason reason = 4;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GalleryStopReason reason = 1;</code>
+     * <code>.GalleryStopReason reason = 4;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
 
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
@@ -105,35 +105,35 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
+
+              itemNum_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 32: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 24: {
-
-              mOEKEMAHBNN_ = input.readUInt32();
-              break;
-            }
-            case 40: {
+            case 48: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 72: {
-
-              itemNum_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 64: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              mOEKEMAHBNN_ = input.readUInt32();
               break;
             }
             default: {
@@ -168,10 +168,10 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
               emu.grasscutter.net.proto._RankedMatchShootingSettleInfoOuterClass._RankedMatchShootingSettleInfo.class, emu.grasscutter.net.proto._RankedMatchShootingSettleInfoOuterClass._RankedMatchShootingSettleInfo.Builder.class);
     }
 
-    public static final int ITEM_NUM_FIELD_NUMBER = 9;
+    public static final int ITEM_NUM_FIELD_NUMBER = 2;
     private int itemNum_;
     /**
-     * <code>uint32 item_num = 9;</code>
+     * <code>uint32 item_num = 2;</code>
      * @return The itemNum.
      */
     @java.lang.Override
@@ -179,10 +179,10 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
       return itemNum_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 5;
+    public static final int SCORE_FIELD_NUMBER = 6;
     private int score_;
     /**
-     * <code>uint32 score = 5;</code>
+     * <code>uint32 score = 6;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -190,10 +190,10 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int MOEKEMAHBNN_FIELD_NUMBER = 3;
+    public static final int MOEKEMAHBNN_FIELD_NUMBER = 10;
     private int mOEKEMAHBNN_;
     /**
-     * <code>uint32 MOEKEMAHBNN = 3;</code>
+     * <code>uint32 MOEKEMAHBNN = 10;</code>
      * @return The mOEKEMAHBNN.
      */
     @java.lang.Override
@@ -201,17 +201,17 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
       return mOEKEMAHBNN_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 1;
+    public static final int REASON_FIELD_NUMBER = 4;
     private int reason_;
     /**
-     * <code>.GalleryStopReason reason = 1;</code>
+     * <code>.GalleryStopReason reason = 4;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GalleryStopReason reason = 1;</code>
+     * <code>.GalleryStopReason reason = 4;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
@@ -220,10 +220,10 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 14;
+    public static final int LEVEL_ID_FIELD_NUMBER = 8;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 8;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -231,10 +231,10 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -256,23 +256,23 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
-        output.writeEnum(1, reason_);
-      }
-      if (mOEKEMAHBNN_ != 0) {
-        output.writeUInt32(3, mOEKEMAHBNN_);
-      }
-      if (score_ != 0) {
-        output.writeUInt32(5, score_);
+      if (itemNum_ != 0) {
+        output.writeUInt32(2, itemNum_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(7, isNewRecord_);
+        output.writeBool(3, isNewRecord_);
       }
-      if (itemNum_ != 0) {
-        output.writeUInt32(9, itemNum_);
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
+        output.writeEnum(4, reason_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(6, score_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(14, levelId_);
+        output.writeUInt32(8, levelId_);
+      }
+      if (mOEKEMAHBNN_ != 0) {
+        output.writeUInt32(10, mOEKEMAHBNN_);
       }
       unknownFields.writeTo(output);
     }
@@ -283,29 +283,29 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
+      if (itemNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, reason_);
-      }
-      if (mOEKEMAHBNN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, mOEKEMAHBNN_);
-      }
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, score_);
+          .computeUInt32Size(2, itemNum_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isNewRecord_);
+          .computeBoolSize(3, isNewRecord_);
       }
-      if (itemNum_ != 0) {
+      if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, itemNum_);
+          .computeEnumSize(4, reason_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, score_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, levelId_);
+          .computeUInt32Size(8, levelId_);
+      }
+      if (mOEKEMAHBNN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, mOEKEMAHBNN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -631,7 +631,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
 
       private int itemNum_ ;
       /**
-       * <code>uint32 item_num = 9;</code>
+       * <code>uint32 item_num = 2;</code>
        * @return The itemNum.
        */
       @java.lang.Override
@@ -639,7 +639,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return itemNum_;
       }
       /**
-       * <code>uint32 item_num = 9;</code>
+       * <code>uint32 item_num = 2;</code>
        * @param value The itemNum to set.
        * @return This builder for chaining.
        */
@@ -650,7 +650,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_num = 9;</code>
+       * <code>uint32 item_num = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemNum() {
@@ -662,7 +662,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 5;</code>
+       * <code>uint32 score = 6;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -670,7 +670,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 5;</code>
+       * <code>uint32 score = 6;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -681,7 +681,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 5;</code>
+       * <code>uint32 score = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -693,7 +693,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
 
       private int mOEKEMAHBNN_ ;
       /**
-       * <code>uint32 MOEKEMAHBNN = 3;</code>
+       * <code>uint32 MOEKEMAHBNN = 10;</code>
        * @return The mOEKEMAHBNN.
        */
       @java.lang.Override
@@ -701,7 +701,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return mOEKEMAHBNN_;
       }
       /**
-       * <code>uint32 MOEKEMAHBNN = 3;</code>
+       * <code>uint32 MOEKEMAHBNN = 10;</code>
        * @param value The mOEKEMAHBNN to set.
        * @return This builder for chaining.
        */
@@ -712,7 +712,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MOEKEMAHBNN = 3;</code>
+       * <code>uint32 MOEKEMAHBNN = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearMOEKEMAHBNN() {
@@ -724,14 +724,14 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 1;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 1;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -742,7 +742,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 1;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -752,7 +752,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 1;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -766,7 +766,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 1;</code>
+       * <code>.GalleryStopReason reason = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -778,7 +778,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -786,7 +786,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 8;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -797,7 +797,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -809,7 +809,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -817,7 +817,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 3;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -828,7 +828,7 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -906,10 +906,10 @@ public final class _RankedMatchShootingSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n$_RankedMatchShootingSettleInfo.proto\032\027" +
       "GalleryStopReason.proto\"\243\001\n\036_RankedMatch" +
-      "ShootingSettleInfo\022\020\n\010item_num\030\t \001(\r\022\r\n\005" +
-      "score\030\005 \001(\r\022\023\n\013MOEKEMAHBNN\030\003 \001(\r\022\"\n\006reas" +
-      "on\030\001 \001(\0162\022.GalleryStopReason\022\020\n\010level_id" +
-      "\030\016 \001(\r\022\025\n\ris_new_record\030\007 \001(\010BE\n\031emu.gra" +
+      "ShootingSettleInfo\022\020\n\010item_num\030\002 \001(\r\022\r\n\005" +
+      "score\030\006 \001(\r\022\023\n\013MOEKEMAHBNN\030\n \001(\r\022\"\n\006reas" +
+      "on\030\004 \001(\0162\022.GalleryStopReason\022\020\n\010level_id" +
+      "\030\010 \001(\r\022\025\n\ris_new_record\030\003 \001(\010BE\n\031emu.gra" +
       "sscutter.net.protoB(_RankedMatchShooting" +
       "SettleInfoOuterClassb\006proto3"
     };

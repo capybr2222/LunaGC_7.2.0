@@ -19,19 +19,19 @@ public final class _SlimeCannonLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 use_time = 15;</code>
+     * <code>uint32 use_time = 1;</code>
      * @return The useTime.
      */
     int getUseTime();
 
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 14;</code>
      * @return The score.
      */
     int getScore();
@@ -43,19 +43,19 @@ public final class _SlimeCannonLevelInfoOuterClass {
     boolean getIsOpen();
 
     /**
-     * <code>uint32 _max_combo_num = 4;</code>
+     * <code>uint32 _max_combo_num = 9;</code>
      * @return The maxComboNum.
      */
     int getMaxComboNum();
 
     /**
-     * <code>uint32 _max_wave = 2;</code>
+     * <code>uint32 _max_wave = 15;</code>
      * @return The maxWave.
      */
     int getMaxWave();
 
     /**
-     * <code>bool is_finish = 12;</code>
+     * <code>bool is_finish = 13;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
@@ -105,19 +105,14 @@ public final class _SlimeCannonLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              MaxWave_ = input.readUInt32();
+              useTime_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 48: {
 
               levelId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              MaxComboNum_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -125,19 +120,24 @@ public final class _SlimeCannonLevelInfoOuterClass {
               isOpen_ = input.readBool();
               break;
             }
-            case 80: {
+            case 72: {
 
-              score_ = input.readUInt32();
+              MaxComboNum_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
               isFinish_ = input.readBool();
               break;
             }
+            case 112: {
+
+              score_ = input.readUInt32();
+              break;
+            }
             case 120: {
 
-              useTime_ = input.readUInt32();
+              MaxWave_ = input.readUInt32();
               break;
             }
             default: {
@@ -172,10 +172,10 @@ public final class _SlimeCannonLevelInfoOuterClass {
               emu.grasscutter.net.proto._SlimeCannonLevelInfoOuterClass._SlimeCannonLevelInfo.class, emu.grasscutter.net.proto._SlimeCannonLevelInfoOuterClass._SlimeCannonLevelInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 3;
+    public static final int LEVEL_ID_FIELD_NUMBER = 6;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 3;</code>
+     * <code>uint32 level_id = 6;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -183,10 +183,10 @@ public final class _SlimeCannonLevelInfoOuterClass {
       return levelId_;
     }
 
-    public static final int USE_TIME_FIELD_NUMBER = 15;
+    public static final int USE_TIME_FIELD_NUMBER = 1;
     private int useTime_;
     /**
-     * <code>uint32 use_time = 15;</code>
+     * <code>uint32 use_time = 1;</code>
      * @return The useTime.
      */
     @java.lang.Override
@@ -194,10 +194,10 @@ public final class _SlimeCannonLevelInfoOuterClass {
       return useTime_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 10;
+    public static final int SCORE_FIELD_NUMBER = 14;
     private int score_;
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 14;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -216,10 +216,10 @@ public final class _SlimeCannonLevelInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int _MAX_COMBO_NUM_FIELD_NUMBER = 4;
+    public static final int _MAX_COMBO_NUM_FIELD_NUMBER = 9;
     private int MaxComboNum_;
     /**
-     * <code>uint32 _max_combo_num = 4;</code>
+     * <code>uint32 _max_combo_num = 9;</code>
      * @return The maxComboNum.
      */
     @java.lang.Override
@@ -227,10 +227,10 @@ public final class _SlimeCannonLevelInfoOuterClass {
       return MaxComboNum_;
     }
 
-    public static final int _MAX_WAVE_FIELD_NUMBER = 2;
+    public static final int _MAX_WAVE_FIELD_NUMBER = 15;
     private int MaxWave_;
     /**
-     * <code>uint32 _max_wave = 2;</code>
+     * <code>uint32 _max_wave = 15;</code>
      * @return The maxWave.
      */
     @java.lang.Override
@@ -238,10 +238,10 @@ public final class _SlimeCannonLevelInfoOuterClass {
       return MaxWave_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 12;
+    public static final int IS_FINISH_FIELD_NUMBER = 13;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 12;</code>
+     * <code>bool is_finish = 13;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -263,26 +263,26 @@ public final class _SlimeCannonLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (MaxWave_ != 0) {
-        output.writeUInt32(2, MaxWave_);
+      if (useTime_ != 0) {
+        output.writeUInt32(1, useTime_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(3, levelId_);
-      }
-      if (MaxComboNum_ != 0) {
-        output.writeUInt32(4, MaxComboNum_);
+        output.writeUInt32(6, levelId_);
       }
       if (isOpen_ != false) {
         output.writeBool(8, isOpen_);
       }
-      if (score_ != 0) {
-        output.writeUInt32(10, score_);
+      if (MaxComboNum_ != 0) {
+        output.writeUInt32(9, MaxComboNum_);
       }
       if (isFinish_ != false) {
-        output.writeBool(12, isFinish_);
+        output.writeBool(13, isFinish_);
       }
-      if (useTime_ != 0) {
-        output.writeUInt32(15, useTime_);
+      if (score_ != 0) {
+        output.writeUInt32(14, score_);
+      }
+      if (MaxWave_ != 0) {
+        output.writeUInt32(15, MaxWave_);
       }
       unknownFields.writeTo(output);
     }
@@ -293,33 +293,33 @@ public final class _SlimeCannonLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (MaxWave_ != 0) {
+      if (useTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, MaxWave_);
+          .computeUInt32Size(1, useTime_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, levelId_);
-      }
-      if (MaxComboNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, MaxComboNum_);
+          .computeUInt32Size(6, levelId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(8, isOpen_);
       }
-      if (score_ != 0) {
+      if (MaxComboNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, score_);
+          .computeUInt32Size(9, MaxComboNum_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isFinish_);
+          .computeBoolSize(13, isFinish_);
       }
-      if (useTime_ != 0) {
+      if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, useTime_);
+          .computeUInt32Size(14, score_);
+      }
+      if (MaxWave_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, MaxWave_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -657,7 +657,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 6;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -665,7 +665,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 6;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -676,7 +676,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 3;</code>
+       * <code>uint32 level_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -688,7 +688,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
 
       private int useTime_ ;
       /**
-       * <code>uint32 use_time = 15;</code>
+       * <code>uint32 use_time = 1;</code>
        * @return The useTime.
        */
       @java.lang.Override
@@ -696,7 +696,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return useTime_;
       }
       /**
-       * <code>uint32 use_time = 15;</code>
+       * <code>uint32 use_time = 1;</code>
        * @param value The useTime to set.
        * @return This builder for chaining.
        */
@@ -707,7 +707,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 use_time = 15;</code>
+       * <code>uint32 use_time = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearUseTime() {
@@ -719,7 +719,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 14;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -727,7 +727,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 14;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -738,7 +738,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -781,7 +781,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
 
       private int MaxComboNum_ ;
       /**
-       * <code>uint32 _max_combo_num = 4;</code>
+       * <code>uint32 _max_combo_num = 9;</code>
        * @return The maxComboNum.
        */
       @java.lang.Override
@@ -789,7 +789,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return MaxComboNum_;
       }
       /**
-       * <code>uint32 _max_combo_num = 4;</code>
+       * <code>uint32 _max_combo_num = 9;</code>
        * @param value The maxComboNum to set.
        * @return This builder for chaining.
        */
@@ -800,7 +800,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 _max_combo_num = 4;</code>
+       * <code>uint32 _max_combo_num = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxComboNum() {
@@ -812,7 +812,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
 
       private int MaxWave_ ;
       /**
-       * <code>uint32 _max_wave = 2;</code>
+       * <code>uint32 _max_wave = 15;</code>
        * @return The maxWave.
        */
       @java.lang.Override
@@ -820,7 +820,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return MaxWave_;
       }
       /**
-       * <code>uint32 _max_wave = 2;</code>
+       * <code>uint32 _max_wave = 15;</code>
        * @param value The maxWave to set.
        * @return This builder for chaining.
        */
@@ -831,7 +831,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 _max_wave = 2;</code>
+       * <code>uint32 _max_wave = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxWave() {
@@ -843,7 +843,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 12;</code>
+       * <code>bool is_finish = 13;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -851,7 +851,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 12;</code>
+       * <code>bool is_finish = 13;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -862,7 +862,7 @@ public final class _SlimeCannonLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 12;</code>
+       * <code>bool is_finish = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -939,10 +939,10 @@ public final class _SlimeCannonLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033_SlimeCannonLevelInfo.proto\"\231\001\n\025_Slime" +
-      "CannonLevelInfo\022\020\n\010level_id\030\003 \001(\r\022\020\n\010use" +
-      "_time\030\017 \001(\r\022\r\n\005score\030\n \001(\r\022\017\n\007is_open\030\010 " +
-      "\001(\010\022\026\n\016_max_combo_num\030\004 \001(\r\022\021\n\t_max_wave" +
-      "\030\002 \001(\r\022\021\n\tis_finish\030\014 \001(\010B<\n\031emu.grasscu" +
+      "CannonLevelInfo\022\020\n\010level_id\030\006 \001(\r\022\020\n\010use" +
+      "_time\030\001 \001(\r\022\r\n\005score\030\016 \001(\r\022\017\n\007is_open\030\010 " +
+      "\001(\010\022\026\n\016_max_combo_num\030\t \001(\r\022\021\n\t_max_wave" +
+      "\030\017 \001(\r\022\021\n\tis_finish\030\r \001(\010B<\n\031emu.grasscu" +
       "tter.net.protoB\037_SlimeCannonLevelInfoOut" +
       "erClassb\006proto3"
     };

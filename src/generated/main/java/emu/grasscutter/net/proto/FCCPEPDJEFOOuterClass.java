@@ -19,7 +19,7 @@ public final class FCCPEPDJEFOOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_finished = 10;</code>
+     * <code>bool is_finished = 3;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
@@ -31,13 +31,13 @@ public final class FCCPEPDJEFOOuterClass {
     boolean getIsLevelOpen();
 
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 NHEFNKONPEI = 14;</code>
+     * <code>uint32 NHEFNKONPEI = 4;</code>
      * @return The nHEFNKONPEI.
      */
     int getNHEFNKONPEI();
@@ -87,22 +87,22 @@ public final class FCCPEPDJEFOOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
             case 16: {
 
               isLevelOpen_ = input.readBool();
               break;
             }
-            case 64: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 24: {
 
               isFinished_ = input.readBool();
               break;
             }
-            case 112: {
+            case 32: {
 
               nHEFNKONPEI_ = input.readUInt32();
               break;
@@ -139,10 +139,10 @@ public final class FCCPEPDJEFOOuterClass {
               emu.grasscutter.net.proto.FCCPEPDJEFOOuterClass.FCCPEPDJEFO.class, emu.grasscutter.net.proto.FCCPEPDJEFOOuterClass.FCCPEPDJEFO.Builder.class);
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 10;
+    public static final int IS_FINISHED_FIELD_NUMBER = 3;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 10;</code>
+     * <code>bool is_finished = 3;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class FCCPEPDJEFOOuterClass {
       return isLevelOpen_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class FCCPEPDJEFOOuterClass {
       return levelId_;
     }
 
-    public static final int NHEFNKONPEI_FIELD_NUMBER = 14;
+    public static final int NHEFNKONPEI_FIELD_NUMBER = 4;
     private int nHEFNKONPEI_;
     /**
-     * <code>uint32 NHEFNKONPEI = 14;</code>
+     * <code>uint32 NHEFNKONPEI = 4;</code>
      * @return The nHEFNKONPEI.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class FCCPEPDJEFOOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (levelId_ != 0) {
+        output.writeUInt32(1, levelId_);
+      }
       if (isLevelOpen_ != false) {
         output.writeBool(2, isLevelOpen_);
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
-      }
       if (isFinished_ != false) {
-        output.writeBool(10, isFinished_);
+        output.writeBool(3, isFinished_);
       }
       if (nHEFNKONPEI_ != 0) {
-        output.writeUInt32(14, nHEFNKONPEI_);
+        output.writeUInt32(4, nHEFNKONPEI_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class FCCPEPDJEFOOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, levelId_);
+      }
       if (isLevelOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isLevelOpen_);
       }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
-      }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isFinished_);
+          .computeBoolSize(3, isFinished_);
       }
       if (nHEFNKONPEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, nHEFNKONPEI_);
+          .computeUInt32Size(4, nHEFNKONPEI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class FCCPEPDJEFOOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 10;</code>
+       * <code>bool is_finished = 3;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class FCCPEPDJEFOOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 10;</code>
+       * <code>bool is_finished = 3;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class FCCPEPDJEFOOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 10;</code>
+       * <code>bool is_finished = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -602,7 +602,7 @@ public final class FCCPEPDJEFOOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class FCCPEPDJEFOOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class FCCPEPDJEFOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -633,7 +633,7 @@ public final class FCCPEPDJEFOOuterClass {
 
       private int nHEFNKONPEI_ ;
       /**
-       * <code>uint32 NHEFNKONPEI = 14;</code>
+       * <code>uint32 NHEFNKONPEI = 4;</code>
        * @return The nHEFNKONPEI.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class FCCPEPDJEFOOuterClass {
         return nHEFNKONPEI_;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 14;</code>
+       * <code>uint32 NHEFNKONPEI = 4;</code>
        * @param value The nHEFNKONPEI to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class FCCPEPDJEFOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 14;</code>
+       * <code>uint32 NHEFNKONPEI = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearNHEFNKONPEI() {
@@ -729,8 +729,8 @@ public final class FCCPEPDJEFOOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021FCCPEPDJEFO.proto\"`\n\013FCCPEPDJEFO\022\023\n\013is" +
-      "_finished\030\n \001(\010\022\025\n\ris_level_open\030\002 \001(\010\022\020" +
-      "\n\010level_id\030\010 \001(\r\022\023\n\013NHEFNKONPEI\030\016 \001(\rB2\n" +
+      "_finished\030\003 \001(\010\022\025\n\ris_level_open\030\002 \001(\010\022\020" +
+      "\n\010level_id\030\001 \001(\r\022\023\n\013NHEFNKONPEI\030\004 \001(\rB2\n" +
       "\031emu.grasscutter.net.protoB\025FCCPEPDJEFOO" +
       "uterClassb\006proto3"
     };

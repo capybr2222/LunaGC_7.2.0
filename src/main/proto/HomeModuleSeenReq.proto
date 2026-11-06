@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "HomeModuleSeenReqOuterClass";
 
 message HomeModuleSeenReq {
-	repeated uint32 seen_module_id_list = 8;
+	repeated uint32 seen_module_id_list = 15;
 }

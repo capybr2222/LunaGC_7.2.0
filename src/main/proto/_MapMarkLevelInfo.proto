@@ -6,5 +6,5 @@ option java_outer_classname = "_MapMarkLevelInfoOuterClass";
 import "DIIIBCMEKMP.proto";
 
 message _MapMarkLevelInfo {
-	repeated DIIIBCMEKMP KDFMEPMGGHJ = 11;
+	repeated DIIIBCMEKMP KDFMEPMGGHJ = 10;
 }

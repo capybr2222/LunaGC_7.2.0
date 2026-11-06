@@ -6,9 +6,9 @@ option java_outer_classname = "PacmanSettleInfoOuterClass";
 import "_PacmanDungeonStopReason.proto";
 
 message PacmanSettleInfo {
-	_PacmanDungeonStopReason reason = 3;
-	uint32 coin_num = 2;
-	uint32 final_score = 11;
-	bool is_new_record = 13;
-	uint32 killed_monster_num = 6;
+	_PacmanDungeonStopReason reason = 5;
+	uint32 coin_num = 1;
+	uint32 final_score = 3;
+	bool is_new_record = 4;
+	uint32 killed_monster_num = 2;
 }

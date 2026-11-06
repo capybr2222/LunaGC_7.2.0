@@ -7,6 +7,6 @@ import "_UgcV2OfficialLevelData.proto";
 
 message UgcV2DetailInfo {
 	bool AIKDBBNMIJB = 50000;
-	repeated _UgcV2OfficialLevelData _official_level_data_list = 3;
+	repeated _UgcV2OfficialLevelData _official_level_data_list = 2;
 	bool IEIJBECPIKD = 50001;
 }

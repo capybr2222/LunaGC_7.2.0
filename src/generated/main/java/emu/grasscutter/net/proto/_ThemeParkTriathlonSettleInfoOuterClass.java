@@ -19,7 +19,7 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool OABFNCIAGMK = 12;</code>
+     * <code>bool OABFNCIAGMK = 9;</code>
      * @return The oABFNCIAGMK.
      */
     boolean getOABFNCIAGMK();
@@ -75,7 +75,7 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 72: {
 
               oABFNCIAGMK_ = input.readBool();
               break;
@@ -117,10 +117,10 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
               emu.grasscutter.net.proto._ThemeParkTriathlonSettleInfoOuterClass._ThemeParkTriathlonSettleInfo.class, emu.grasscutter.net.proto._ThemeParkTriathlonSettleInfoOuterClass._ThemeParkTriathlonSettleInfo.Builder.class);
     }
 
-    public static final int OABFNCIAGMK_FIELD_NUMBER = 12;
+    public static final int OABFNCIAGMK_FIELD_NUMBER = 9;
     private boolean oABFNCIAGMK_;
     /**
-     * <code>bool OABFNCIAGMK = 12;</code>
+     * <code>bool OABFNCIAGMK = 9;</code>
      * @return The oABFNCIAGMK.
      */
     @java.lang.Override
@@ -154,7 +154,7 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (oABFNCIAGMK_ != false) {
-        output.writeBool(12, oABFNCIAGMK_);
+        output.writeBool(9, oABFNCIAGMK_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(13, levelId_);
@@ -170,7 +170,7 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
       size = 0;
       if (oABFNCIAGMK_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, oABFNCIAGMK_);
+          .computeBoolSize(9, oABFNCIAGMK_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -461,7 +461,7 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
 
       private boolean oABFNCIAGMK_ ;
       /**
-       * <code>bool OABFNCIAGMK = 12;</code>
+       * <code>bool OABFNCIAGMK = 9;</code>
        * @return The oABFNCIAGMK.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
         return oABFNCIAGMK_;
       }
       /**
-       * <code>bool OABFNCIAGMK = 12;</code>
+       * <code>bool OABFNCIAGMK = 9;</code>
        * @param value The oABFNCIAGMK to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool OABFNCIAGMK = 12;</code>
+       * <code>bool OABFNCIAGMK = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearOABFNCIAGMK() {
@@ -589,7 +589,7 @@ public final class _ThemeParkTriathlonSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n#_ThemeParkTriathlonSettleInfo.proto\"F\n" +
       "\035_ThemeParkTriathlonSettleInfo\022\023\n\013OABFNC" +
-      "IAGMK\030\014 \001(\010\022\020\n\010level_id\030\r \001(\rBD\n\031emu.gra" +
+      "IAGMK\030\t \001(\010\022\020\n\010level_id\030\r \001(\rBD\n\031emu.gra" +
       "sscutter.net.protoB\'_ThemeParkTriathlonS" +
       "ettleInfoOuterClassb\006proto3"
     };

@@ -25,31 +25,31 @@ public final class AnnounceDataOuterClass {
     boolean getIsCenterSystemLast5EveryMinutes();
 
     /**
-     * <code>uint32 end_time = 8;</code>
+     * <code>uint32 end_time = 15;</code>
      * @return The endTime.
      */
     int getEndTime();
 
     /**
-     * <code>uint32 begin_time = 7;</code>
+     * <code>uint32 begin_time = 4;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <code>uint32 center_system_frequency = 50000;</code>
+     * <code>uint32 center_system_frequency = 6;</code>
      * @return The centerSystemFrequency.
      */
     int getCenterSystemFrequency();
 
     /**
-     * <code>uint32 count_down_frequency = 50001;</code>
+     * <code>uint32 count_down_frequency = 11;</code>
      * @return The countDownFrequency.
      */
     int getCountDownFrequency();
 
     /**
-     * <code>uint32 config_id = 14;</code>
+     * <code>uint32 config_id = 2;</code>
      * @return The configId.
      */
     int getConfigId();
@@ -143,29 +143,29 @@ public final class AnnounceDataOuterClass {
               isCenterSystemLast5EveryMinutes_ = input.readBool();
               break;
             }
-            case 56: {
-
-              beginTime_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              endTime_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 16: {
 
               configId_ = input.readUInt32();
               break;
             }
-            case 400000: {
+            case 32: {
+
+              beginTime_ = input.readUInt32();
+              break;
+            }
+            case 48: {
 
               centerSystemFrequency_ = input.readUInt32();
               break;
             }
-            case 400008: {
+            case 88: {
 
               countDownFrequency_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              endTime_ = input.readUInt32();
               break;
             }
             case 400018: {
@@ -229,10 +229,10 @@ public final class AnnounceDataOuterClass {
       return isCenterSystemLast5EveryMinutes_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 8;
+    public static final int END_TIME_FIELD_NUMBER = 15;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 8;</code>
+     * <code>uint32 end_time = 15;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -240,10 +240,10 @@ public final class AnnounceDataOuterClass {
       return endTime_;
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 7;
+    public static final int BEGIN_TIME_FIELD_NUMBER = 4;
     private int beginTime_;
     /**
-     * <code>uint32 begin_time = 7;</code>
+     * <code>uint32 begin_time = 4;</code>
      * @return The beginTime.
      */
     @java.lang.Override
@@ -251,10 +251,10 @@ public final class AnnounceDataOuterClass {
       return beginTime_;
     }
 
-    public static final int CENTER_SYSTEM_FREQUENCY_FIELD_NUMBER = 50000;
+    public static final int CENTER_SYSTEM_FREQUENCY_FIELD_NUMBER = 6;
     private int centerSystemFrequency_;
     /**
-     * <code>uint32 center_system_frequency = 50000;</code>
+     * <code>uint32 center_system_frequency = 6;</code>
      * @return The centerSystemFrequency.
      */
     @java.lang.Override
@@ -262,10 +262,10 @@ public final class AnnounceDataOuterClass {
       return centerSystemFrequency_;
     }
 
-    public static final int COUNT_DOWN_FREQUENCY_FIELD_NUMBER = 50001;
+    public static final int COUNT_DOWN_FREQUENCY_FIELD_NUMBER = 11;
     private int countDownFrequency_;
     /**
-     * <code>uint32 count_down_frequency = 50001;</code>
+     * <code>uint32 count_down_frequency = 11;</code>
      * @return The countDownFrequency.
      */
     @java.lang.Override
@@ -273,10 +273,10 @@ public final class AnnounceDataOuterClass {
       return countDownFrequency_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 14;
+    public static final int CONFIG_ID_FIELD_NUMBER = 2;
     private int configId_;
     /**
-     * <code>uint32 config_id = 14;</code>
+     * <code>uint32 config_id = 2;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -415,20 +415,20 @@ public final class AnnounceDataOuterClass {
       if (isCenterSystemLast5EveryMinutes_ != false) {
         output.writeBool(1, isCenterSystemLast5EveryMinutes_);
       }
-      if (beginTime_ != 0) {
-        output.writeUInt32(7, beginTime_);
-      }
-      if (endTime_ != 0) {
-        output.writeUInt32(8, endTime_);
-      }
       if (configId_ != 0) {
-        output.writeUInt32(14, configId_);
+        output.writeUInt32(2, configId_);
+      }
+      if (beginTime_ != 0) {
+        output.writeUInt32(4, beginTime_);
       }
       if (centerSystemFrequency_ != 0) {
-        output.writeUInt32(50000, centerSystemFrequency_);
+        output.writeUInt32(6, centerSystemFrequency_);
       }
       if (countDownFrequency_ != 0) {
-        output.writeUInt32(50001, countDownFrequency_);
+        output.writeUInt32(11, countDownFrequency_);
+      }
+      if (endTime_ != 0) {
+        output.writeUInt32(15, endTime_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eNGJGCGFMMM_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 50002, eNGJGCGFMMM_);
@@ -452,25 +452,25 @@ public final class AnnounceDataOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(1, isCenterSystemLast5EveryMinutes_);
       }
-      if (beginTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, beginTime_);
-      }
-      if (endTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, endTime_);
-      }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, configId_);
+          .computeUInt32Size(2, configId_);
+      }
+      if (beginTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, beginTime_);
       }
       if (centerSystemFrequency_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, centerSystemFrequency_);
+          .computeUInt32Size(6, centerSystemFrequency_);
       }
       if (countDownFrequency_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, countDownFrequency_);
+          .computeUInt32Size(11, countDownFrequency_);
+      }
+      if (endTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, endTime_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(eNGJGCGFMMM_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(50002, eNGJGCGFMMM_);
@@ -870,7 +870,7 @@ public final class AnnounceDataOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 8;</code>
+       * <code>uint32 end_time = 15;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -878,7 +878,7 @@ public final class AnnounceDataOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 8;</code>
+       * <code>uint32 end_time = 15;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -889,7 +889,7 @@ public final class AnnounceDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 8;</code>
+       * <code>uint32 end_time = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -901,7 +901,7 @@ public final class AnnounceDataOuterClass {
 
       private int beginTime_ ;
       /**
-       * <code>uint32 begin_time = 7;</code>
+       * <code>uint32 begin_time = 4;</code>
        * @return The beginTime.
        */
       @java.lang.Override
@@ -909,7 +909,7 @@ public final class AnnounceDataOuterClass {
         return beginTime_;
       }
       /**
-       * <code>uint32 begin_time = 7;</code>
+       * <code>uint32 begin_time = 4;</code>
        * @param value The beginTime to set.
        * @return This builder for chaining.
        */
@@ -920,7 +920,7 @@ public final class AnnounceDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 begin_time = 7;</code>
+       * <code>uint32 begin_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearBeginTime() {
@@ -932,7 +932,7 @@ public final class AnnounceDataOuterClass {
 
       private int centerSystemFrequency_ ;
       /**
-       * <code>uint32 center_system_frequency = 50000;</code>
+       * <code>uint32 center_system_frequency = 6;</code>
        * @return The centerSystemFrequency.
        */
       @java.lang.Override
@@ -940,7 +940,7 @@ public final class AnnounceDataOuterClass {
         return centerSystemFrequency_;
       }
       /**
-       * <code>uint32 center_system_frequency = 50000;</code>
+       * <code>uint32 center_system_frequency = 6;</code>
        * @param value The centerSystemFrequency to set.
        * @return This builder for chaining.
        */
@@ -951,7 +951,7 @@ public final class AnnounceDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 center_system_frequency = 50000;</code>
+       * <code>uint32 center_system_frequency = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearCenterSystemFrequency() {
@@ -963,7 +963,7 @@ public final class AnnounceDataOuterClass {
 
       private int countDownFrequency_ ;
       /**
-       * <code>uint32 count_down_frequency = 50001;</code>
+       * <code>uint32 count_down_frequency = 11;</code>
        * @return The countDownFrequency.
        */
       @java.lang.Override
@@ -971,7 +971,7 @@ public final class AnnounceDataOuterClass {
         return countDownFrequency_;
       }
       /**
-       * <code>uint32 count_down_frequency = 50001;</code>
+       * <code>uint32 count_down_frequency = 11;</code>
        * @param value The countDownFrequency to set.
        * @return This builder for chaining.
        */
@@ -982,7 +982,7 @@ public final class AnnounceDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 count_down_frequency = 50001;</code>
+       * <code>uint32 count_down_frequency = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCountDownFrequency() {
@@ -994,7 +994,7 @@ public final class AnnounceDataOuterClass {
 
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 2;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -1002,7 +1002,7 @@ public final class AnnounceDataOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 2;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -1013,7 +1013,7 @@ public final class AnnounceDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 14;</code>
+       * <code>uint32 config_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
@@ -1317,15 +1317,15 @@ public final class AnnounceDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022AnnounceData.proto\"\376\001\n\014AnnounceData\022-\n" +
+      "\n\022AnnounceData.proto\"\372\001\n\014AnnounceData\022-\n" +
       "%is_center_system_last_5_every_minutes\030\001" +
-      " \001(\010\022\020\n\010end_time\030\010 \001(\r\022\022\n\nbegin_time\030\007 \001" +
-      "(\r\022!\n\027center_system_frequency\030\320\206\003 \001(\r\022\036\n" +
-      "\024count_down_frequency\030\321\206\003 \001(\r\022\021\n\tconfig_" +
-      "id\030\016 \001(\r\022\025\n\013ENGJGCGFMMM\030\322\206\003 \001(\t\022\025\n\013LHMGG" +
-      "PMCDCN\030\323\206\003 \001(\t\022\025\n\013KFAGDOEAIPP\030\324\206\003 \001(\tB3\n" +
-      "\031emu.grasscutter.net.protoB\026AnnounceData" +
-      "OuterClassb\006proto3"
+      " \001(\010\022\020\n\010end_time\030\017 \001(\r\022\022\n\nbegin_time\030\004 \001" +
+      "(\r\022\037\n\027center_system_frequency\030\006 \001(\r\022\034\n\024c" +
+      "ount_down_frequency\030\013 \001(\r\022\021\n\tconfig_id\030\002" +
+      " \001(\r\022\025\n\013ENGJGCGFMMM\030\322\206\003 \001(\t\022\025\n\013LHMGGPMCD" +
+      "CN\030\323\206\003 \001(\t\022\025\n\013KFAGDOEAIPP\030\324\206\003 \001(\tB3\n\031emu" +
+      ".grasscutter.net.protoB\026AnnounceDataOute" +
+      "rClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

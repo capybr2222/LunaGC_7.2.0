@@ -19,31 +19,31 @@ public final class NatlanArenaDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 icmhjlaaeoi = 14;</code>
+     * <code>uint32 icmhjlaaeoi = 7;</code>
      * @return The icmhjlaaeoi.
      */
     int getIcmhjlaaeoi();
 
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ> 
         getLevelInfoListList();
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ getLevelInfoList(int index);
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJOrBuilder getLevelInfoListOrBuilder(
         int index);
@@ -95,7 +95,7 @@ public final class NatlanArenaDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ>();
                 mutable_bitField0_ |= 0x00000001;
@@ -104,7 +104,7 @@ public final class NatlanArenaDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.parser(), extensionRegistry));
               break;
             }
-            case 112: {
+            case 56: {
 
               icmhjlaaeoi_ = input.readUInt32();
               break;
@@ -144,10 +144,10 @@ public final class NatlanArenaDetailInfoOuterClass {
               emu.grasscutter.net.proto.NatlanArenaDetailInfoOuterClass.NatlanArenaDetailInfo.class, emu.grasscutter.net.proto.NatlanArenaDetailInfoOuterClass.NatlanArenaDetailInfo.Builder.class);
     }
 
-    public static final int ICMHJLAAEOI_FIELD_NUMBER = 14;
+    public static final int ICMHJLAAEOI_FIELD_NUMBER = 7;
     private int icmhjlaaeoi_;
     /**
-     * <code>uint32 icmhjlaaeoi = 14;</code>
+     * <code>uint32 icmhjlaaeoi = 7;</code>
      * @return The icmhjlaaeoi.
      */
     @java.lang.Override
@@ -155,17 +155,17 @@ public final class NatlanArenaDetailInfoOuterClass {
       return icmhjlaaeoi_;
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 7;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ> levelInfoList_;
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJOrBuilder> 
@@ -173,21 +173,21 @@ public final class NatlanArenaDetailInfoOuterClass {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+     * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJOrBuilder getLevelInfoListOrBuilder(
@@ -210,10 +210,10 @@ public final class NatlanArenaDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(7, levelInfoList_.get(i));
+        output.writeMessage(2, levelInfoList_.get(i));
       }
       if (icmhjlaaeoi_ != 0) {
-        output.writeUInt32(14, icmhjlaaeoi_);
+        output.writeUInt32(7, icmhjlaaeoi_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,11 +226,11 @@ public final class NatlanArenaDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, levelInfoList_.get(i));
+          .computeMessageSize(2, levelInfoList_.get(i));
       }
       if (icmhjlaaeoi_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, icmhjlaaeoi_);
+          .computeUInt32Size(7, icmhjlaaeoi_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -556,7 +556,7 @@ public final class NatlanArenaDetailInfoOuterClass {
 
       private int icmhjlaaeoi_ ;
       /**
-       * <code>uint32 icmhjlaaeoi = 14;</code>
+       * <code>uint32 icmhjlaaeoi = 7;</code>
        * @return The icmhjlaaeoi.
        */
       @java.lang.Override
@@ -564,7 +564,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return icmhjlaaeoi_;
       }
       /**
-       * <code>uint32 icmhjlaaeoi = 14;</code>
+       * <code>uint32 icmhjlaaeoi = 7;</code>
        * @param value The icmhjlaaeoi to set.
        * @return This builder for chaining.
        */
@@ -575,7 +575,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 icmhjlaaeoi = 14;</code>
+       * <code>uint32 icmhjlaaeoi = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIcmhjlaaeoi() {
@@ -598,7 +598,7 @@ public final class NatlanArenaDetailInfoOuterClass {
           emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ, emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.Builder, emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
@@ -608,7 +608,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -618,7 +618,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -628,7 +628,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ value) {
@@ -645,7 +645,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.Builder builderForValue) {
@@ -659,7 +659,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder addLevelInfoList(emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ value) {
         if (levelInfoListBuilder_ == null) {
@@ -675,7 +675,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ value) {
@@ -692,7 +692,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder addLevelInfoList(
           emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.Builder builderForValue) {
@@ -706,7 +706,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.Builder builderForValue) {
@@ -720,7 +720,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder addAllLevelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ> values) {
@@ -735,7 +735,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -748,7 +748,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -761,14 +761,14 @@ public final class NatlanArenaDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJOrBuilder getLevelInfoListOrBuilder(
           int index) {
@@ -778,7 +778,7 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJOrBuilder> 
            getLevelInfoListOrBuilderList() {
@@ -789,14 +789,14 @@ public final class NatlanArenaDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.getDefaultInstance());
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.Builder addLevelInfoListBuilder(
           int index) {
@@ -804,7 +804,7 @@ public final class NatlanArenaDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.getDefaultInstance());
       }
       /**
-       * <code>repeated .DHPCNLIFCNJ level_info_list = 7;</code>
+       * <code>repeated .DHPCNLIFCNJ level_info_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DHPCNLIFCNJOuterClass.DHPCNLIFCNJ.Builder> 
            getLevelInfoListBuilderList() {
@@ -893,7 +893,7 @@ public final class NatlanArenaDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033NatlanArenaDetailInfo.proto\032\021DHPCNLIFC" +
       "NJ.proto\"S\n\025NatlanArenaDetailInfo\022\023\n\013icm" +
-      "hjlaaeoi\030\016 \001(\r\022%\n\017level_info_list\030\007 \003(\0132" +
+      "hjlaaeoi\030\007 \001(\r\022%\n\017level_info_list\030\002 \003(\0132" +
       "\014.DHPCNLIFCNJB<\n\031emu.grasscutter.net.pro" +
       "toB\037NatlanArenaDetailInfoOuterClassb\006pro" +
       "to3"

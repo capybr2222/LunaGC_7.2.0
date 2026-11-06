@@ -31,36 +31,36 @@ public final class _BeyondBattlePassScheduleOuterClass {
     boolean getIsExtraPaidRewardTaken();
 
     /**
-     * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+     * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
      * @return The enum numeric value on the wire for unlockStatus.
      */
     int getUnlockStatusValue();
     /**
-     * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+     * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
      * @return The unlockStatus.
      */
     emu.grasscutter.net.proto._BeyondBattlePassUnlockStatusOuterClass._BeyondBattlePassUnlockStatus getUnlockStatus();
 
     /**
-     * <code>uint32 level = 4;</code>
+     * <code>uint32 level = 14;</code>
      * @return The level.
      */
     int getLevel();
 
     /**
-     * <code>uint32 end_time = 5;</code>
+     * <code>uint32 end_time = 15;</code>
      * @return The endTime.
      */
     int getEndTime();
 
     /**
-     * <code>uint32 begin_time = 10;</code>
+     * <code>uint32 begin_time = 3;</code>
      * @return The beginTime.
      */
     int getBeginTime();
 
     /**
-     * <code>uint32 schedule_id = 14;</code>
+     * <code>uint32 schedule_id = 2;</code>
      * @return The scheduleId.
      */
     int getScheduleId();
@@ -111,14 +111,14 @@ public final class _BeyondBattlePassScheduleOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
-              level_ = input.readUInt32();
+              scheduleId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 24: {
 
-              endTime_ = input.readUInt32();
+              beginTime_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -126,15 +126,10 @@ public final class _BeyondBattlePassScheduleOuterClass {
               point_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 80: {
               int rawValue = input.readEnum();
 
               unlockStatus_ = rawValue;
-              break;
-            }
-            case 80: {
-
-              beginTime_ = input.readUInt32();
               break;
             }
             case 96: {
@@ -144,7 +139,12 @@ public final class _BeyondBattlePassScheduleOuterClass {
             }
             case 112: {
 
-              scheduleId_ = input.readUInt32();
+              level_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              endTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -201,17 +201,17 @@ public final class _BeyondBattlePassScheduleOuterClass {
       return isExtraPaidRewardTaken_;
     }
 
-    public static final int UNLOCK_STATUS_FIELD_NUMBER = 8;
+    public static final int UNLOCK_STATUS_FIELD_NUMBER = 10;
     private int unlockStatus_;
     /**
-     * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+     * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
      * @return The enum numeric value on the wire for unlockStatus.
      */
     @java.lang.Override public int getUnlockStatusValue() {
       return unlockStatus_;
     }
     /**
-     * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+     * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
      * @return The unlockStatus.
      */
     @java.lang.Override public emu.grasscutter.net.proto._BeyondBattlePassUnlockStatusOuterClass._BeyondBattlePassUnlockStatus getUnlockStatus() {
@@ -220,10 +220,10 @@ public final class _BeyondBattlePassScheduleOuterClass {
       return result == null ? emu.grasscutter.net.proto._BeyondBattlePassUnlockStatusOuterClass._BeyondBattlePassUnlockStatus.UNRECOGNIZED : result;
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 4;
+    public static final int LEVEL_FIELD_NUMBER = 14;
     private int level_;
     /**
-     * <code>uint32 level = 4;</code>
+     * <code>uint32 level = 14;</code>
      * @return The level.
      */
     @java.lang.Override
@@ -231,10 +231,10 @@ public final class _BeyondBattlePassScheduleOuterClass {
       return level_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 5;
+    public static final int END_TIME_FIELD_NUMBER = 15;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 5;</code>
+     * <code>uint32 end_time = 15;</code>
      * @return The endTime.
      */
     @java.lang.Override
@@ -242,10 +242,10 @@ public final class _BeyondBattlePassScheduleOuterClass {
       return endTime_;
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 10;
+    public static final int BEGIN_TIME_FIELD_NUMBER = 3;
     private int beginTime_;
     /**
-     * <code>uint32 begin_time = 10;</code>
+     * <code>uint32 begin_time = 3;</code>
      * @return The beginTime.
      */
     @java.lang.Override
@@ -253,10 +253,10 @@ public final class _BeyondBattlePassScheduleOuterClass {
       return beginTime_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 14;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 2;
     private int scheduleId_;
     /**
-     * <code>uint32 schedule_id = 14;</code>
+     * <code>uint32 schedule_id = 2;</code>
      * @return The scheduleId.
      */
     @java.lang.Override
@@ -278,26 +278,26 @@ public final class _BeyondBattlePassScheduleOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (level_ != 0) {
-        output.writeUInt32(4, level_);
+      if (scheduleId_ != 0) {
+        output.writeUInt32(2, scheduleId_);
       }
-      if (endTime_ != 0) {
-        output.writeUInt32(5, endTime_);
+      if (beginTime_ != 0) {
+        output.writeUInt32(3, beginTime_);
       }
       if (point_ != 0) {
         output.writeUInt32(7, point_);
       }
       if (unlockStatus_ != emu.grasscutter.net.proto._BeyondBattlePassUnlockStatusOuterClass._BeyondBattlePassUnlockStatus.BEYOND_BATTLE_PASS_INVALID.getNumber()) {
-        output.writeEnum(8, unlockStatus_);
-      }
-      if (beginTime_ != 0) {
-        output.writeUInt32(10, beginTime_);
+        output.writeEnum(10, unlockStatus_);
       }
       if (isExtraPaidRewardTaken_ != false) {
         output.writeBool(12, isExtraPaidRewardTaken_);
       }
-      if (scheduleId_ != 0) {
-        output.writeUInt32(14, scheduleId_);
+      if (level_ != 0) {
+        output.writeUInt32(14, level_);
+      }
+      if (endTime_ != 0) {
+        output.writeUInt32(15, endTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -308,13 +308,13 @@ public final class _BeyondBattlePassScheduleOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (level_ != 0) {
+      if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, level_);
+          .computeUInt32Size(2, scheduleId_);
       }
-      if (endTime_ != 0) {
+      if (beginTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, endTime_);
+          .computeUInt32Size(3, beginTime_);
       }
       if (point_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -322,19 +322,19 @@ public final class _BeyondBattlePassScheduleOuterClass {
       }
       if (unlockStatus_ != emu.grasscutter.net.proto._BeyondBattlePassUnlockStatusOuterClass._BeyondBattlePassUnlockStatus.BEYOND_BATTLE_PASS_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, unlockStatus_);
-      }
-      if (beginTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, beginTime_);
+          .computeEnumSize(10, unlockStatus_);
       }
       if (isExtraPaidRewardTaken_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(12, isExtraPaidRewardTaken_);
       }
-      if (scheduleId_ != 0) {
+      if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, scheduleId_);
+          .computeUInt32Size(14, level_);
+      }
+      if (endTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, endTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -732,14 +732,14 @@ public final class _BeyondBattlePassScheduleOuterClass {
 
       private int unlockStatus_ = 0;
       /**
-       * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+       * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
        * @return The enum numeric value on the wire for unlockStatus.
        */
       @java.lang.Override public int getUnlockStatusValue() {
         return unlockStatus_;
       }
       /**
-       * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+       * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
        * @param value The enum numeric value on the wire for unlockStatus to set.
        * @return This builder for chaining.
        */
@@ -750,7 +750,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return this;
       }
       /**
-       * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+       * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
        * @return The unlockStatus.
        */
       @java.lang.Override
@@ -760,7 +760,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return result == null ? emu.grasscutter.net.proto._BeyondBattlePassUnlockStatusOuterClass._BeyondBattlePassUnlockStatus.UNRECOGNIZED : result;
       }
       /**
-       * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+       * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
        * @param value The unlockStatus to set.
        * @return This builder for chaining.
        */
@@ -774,7 +774,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return this;
       }
       /**
-       * <code>._BeyondBattlePassUnlockStatus unlock_status = 8;</code>
+       * <code>._BeyondBattlePassUnlockStatus unlock_status = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnlockStatus() {
@@ -786,7 +786,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
 
       private int level_ ;
       /**
-       * <code>uint32 level = 4;</code>
+       * <code>uint32 level = 14;</code>
        * @return The level.
        */
       @java.lang.Override
@@ -794,7 +794,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return level_;
       }
       /**
-       * <code>uint32 level = 4;</code>
+       * <code>uint32 level = 14;</code>
        * @param value The level to set.
        * @return This builder for chaining.
        */
@@ -805,7 +805,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level = 4;</code>
+       * <code>uint32 level = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevel() {
@@ -817,7 +817,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 5;</code>
+       * <code>uint32 end_time = 15;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -825,7 +825,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 5;</code>
+       * <code>uint32 end_time = 15;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -836,7 +836,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 5;</code>
+       * <code>uint32 end_time = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
@@ -848,7 +848,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
 
       private int beginTime_ ;
       /**
-       * <code>uint32 begin_time = 10;</code>
+       * <code>uint32 begin_time = 3;</code>
        * @return The beginTime.
        */
       @java.lang.Override
@@ -856,7 +856,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return beginTime_;
       }
       /**
-       * <code>uint32 begin_time = 10;</code>
+       * <code>uint32 begin_time = 3;</code>
        * @param value The beginTime to set.
        * @return This builder for chaining.
        */
@@ -867,7 +867,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 begin_time = 10;</code>
+       * <code>uint32 begin_time = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearBeginTime() {
@@ -879,7 +879,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
 
       private int scheduleId_ ;
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 schedule_id = 2;</code>
        * @return The scheduleId.
        */
       @java.lang.Override
@@ -887,7 +887,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return scheduleId_;
       }
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 schedule_id = 2;</code>
        * @param value The scheduleId to set.
        * @return This builder for chaining.
        */
@@ -898,7 +898,7 @@ public final class _BeyondBattlePassScheduleOuterClass {
         return this;
       }
       /**
-       * <code>uint32 schedule_id = 14;</code>
+       * <code>uint32 schedule_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearScheduleId() {
@@ -978,9 +978,9 @@ public final class _BeyondBattlePassScheduleOuterClass {
       "ndBattlePassUnlockStatus.proto\"\317\001\n\031_Beyo" +
       "ndBattlePassSchedule\022\r\n\005point\030\007 \001(\r\022\"\n\032i" +
       "s_extra_paid_reward_taken\030\014 \001(\010\0225\n\runloc" +
-      "k_status\030\010 \001(\0162\036._BeyondBattlePassUnlock" +
-      "Status\022\r\n\005level\030\004 \001(\r\022\020\n\010end_time\030\005 \001(\r\022" +
-      "\022\n\nbegin_time\030\n \001(\r\022\023\n\013schedule_id\030\016 \001(\r" +
+      "k_status\030\n \001(\0162\036._BeyondBattlePassUnlock" +
+      "Status\022\r\n\005level\030\016 \001(\r\022\020\n\010end_time\030\017 \001(\r\022" +
+      "\022\n\nbegin_time\030\003 \001(\r\022\023\n\013schedule_id\030\002 \001(\r" +
       "B@\n\031emu.grasscutter.net.protoB#_BeyondBa" +
       "ttlePassScheduleOuterClassb\006proto3"
     };

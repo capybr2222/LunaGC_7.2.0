@@ -6,17 +6,17 @@ option java_outer_classname = "_UgcLanV5CardBriefInfoOuterClass";
 import "_LanV5CardSocial.proto";
 
 message _UgcLanV5CardBriefInfo {
-	bool KPEEGKCFFBA = 2;
-	uint32 PNLPELDJLFL = 10;
+	bool KPEEGKCFFBA = 9;
+	uint32 PNLPELDJLFL = 7;
 	bool is_liked = 8;
-	uint32 audit_state = 4;
-	bool is_published = 1;
-	uint32 slot_id = 9;
-	uint64 ugc_guid = 11;
-	uint32 BHBJOKCFMPN = 13;
-	_LanV5CardSocial social = 5;
-	bool is_stored = 12;
+	uint32 audit_state = 2;
+	bool is_published = 4;
+	uint32 slot_id = 1;
+	uint64 ugc_guid = 5;
+	uint32 BHBJOKCFMPN = 10;
+	_LanV5CardSocial social = 13;
+	bool is_stored = 11;
 	uint32 save_time = 6;
-	string FOGGDOBPMJO = 3;
-	string creator_nickname = 15;
+	string FOGGDOBPMJO = 15;
+	string creator_nickname = 3;
 }

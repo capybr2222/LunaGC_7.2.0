@@ -9,7 +9,7 @@ import "Vector.proto";
 
 message _GadgetBase {
 	uint32 GACKKCOFACA = 1;
-	repeated JGFGJGJGLPD FAHAJIEGCEP = 2;
+	repeated JGFGJGJGLPD FAHAJIEGCEP = 20001;
 	Vector OLIPGCONBJC = 3;
-	MDGFOMDDDEF JPIGMAONIDJ = 4;
+	MDGFOMDDDEF JPIGMAONIDJ = 20002;
 }

@@ -7,9 +7,9 @@ import "_LanternRiteV6CardInfo.proto";
 import "_LanternRiteV6DanmakuInfo.proto";
 
 message _LanternRiteV6DetailInfo {
-	uint32 like_num = 2;
-	_LanternRiteV6DanmakuInfo _danmaku_info = 7;
-	uint32 JFKNEPBHALE = 10;
-	bool is_taken_costume_reward = 1;
-	_LanternRiteV6CardInfo _card_info = 15;
+	uint32 like_num = 7;
+	_LanternRiteV6DanmakuInfo _danmaku_info = 4;
+	uint32 JFKNEPBHALE = 2;
+	bool is_taken_costume_reward = 10;
+	_LanternRiteV6CardInfo _card_info = 14;
 }

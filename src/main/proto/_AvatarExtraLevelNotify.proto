@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "_AvatarExtraLevelNotifyOuterClass";
 
 message _AvatarExtraLevelNotify {
-	uint32 _extra_level = 1;
-	uint64 avatar_guid = 2;
+	uint32 _extra_level = 10;
+	uint64 avatar_guid = 3;
 	uint32 entity_id = 11;
 }

@@ -19,7 +19,7 @@ public final class PlayerChatNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 channel_id = 15;</code>
+     * <code>uint32 channel_id = 1;</code>
      * @return The channelId.
      */
     int getChannelId();
@@ -84,6 +84,11 @@ public final class PlayerChatNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              channelId_ = input.readUInt32();
+              break;
+            }
             case 34: {
               emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo.Builder subBuilder = null;
               if (chatInfo_ != null) {
@@ -95,11 +100,6 @@ public final class PlayerChatNotifyOuterClass {
                 chatInfo_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 120: {
-
-              channelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +134,10 @@ public final class PlayerChatNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerChatNotifyOuterClass.PlayerChatNotify.class, emu.grasscutter.net.proto.PlayerChatNotifyOuterClass.PlayerChatNotify.Builder.class);
     }
 
-    public static final int CHANNEL_ID_FIELD_NUMBER = 15;
+    public static final int CHANNEL_ID_FIELD_NUMBER = 1;
     private int channelId_;
     /**
-     * <code>uint32 channel_id = 15;</code>
+     * <code>uint32 channel_id = 1;</code>
      * @return The channelId.
      */
     @java.lang.Override
@@ -185,11 +185,11 @@ public final class PlayerChatNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (channelId_ != 0) {
+        output.writeUInt32(1, channelId_);
+      }
       if (chatInfo_ != null) {
         output.writeMessage(4, getChatInfo());
-      }
-      if (channelId_ != 0) {
-        output.writeUInt32(15, channelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +200,13 @@ public final class PlayerChatNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (channelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, channelId_);
+      }
       if (chatInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, getChatInfo());
-      }
-      if (channelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, channelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -505,7 +505,7 @@ public final class PlayerChatNotifyOuterClass {
 
       private int channelId_ ;
       /**
-       * <code>uint32 channel_id = 15;</code>
+       * <code>uint32 channel_id = 1;</code>
        * @return The channelId.
        */
       @java.lang.Override
@@ -513,7 +513,7 @@ public final class PlayerChatNotifyOuterClass {
         return channelId_;
       }
       /**
-       * <code>uint32 channel_id = 15;</code>
+       * <code>uint32 channel_id = 1;</code>
        * @param value The channelId to set.
        * @return This builder for chaining.
        */
@@ -524,7 +524,7 @@ public final class PlayerChatNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 channel_id = 15;</code>
+       * <code>uint32 channel_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearChannelId() {
@@ -720,7 +720,7 @@ public final class PlayerChatNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026PlayerChatNotify.proto\032\016ChatInfo.proto" +
-      "\"D\n\020PlayerChatNotify\022\022\n\nchannel_id\030\017 \001(\r" +
+      "\"D\n\020PlayerChatNotify\022\022\n\nchannel_id\030\001 \001(\r" +
       "\022\034\n\tchat_info\030\004 \001(\0132\t.ChatInfoB7\n\031emu.gr" +
       "asscutter.net.protoB\032PlayerChatNotifyOut" +
       "erClassb\006proto3"

@@ -4,8 +4,8 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "BladeDanceSettleInfoOuterClass";
 
 message BladeDanceSettleInfo {
-	bool is_new_record = 14;
-	uint32 cost_time = 6;
-	uint32 level_id = 3;
-	uint32 kill_monster_num = 12;
+	bool is_new_record = 3;
+	uint32 cost_time = 2;
+	uint32 level_id = 1;
+	uint32 kill_monster_num = 4;
 }

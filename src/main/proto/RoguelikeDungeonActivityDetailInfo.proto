@@ -7,10 +7,10 @@ import "RogueStageInfo.proto";
 import "RoguelikeShikigamiRecord.proto";
 
 message RoguelikeDungeonActivityDetailInfo {
-	bool is_content_closed = 2;
-	uint32 content_close_time = 9;
-	repeated RoguelikeShikigamiRecord shikigami_list = 8;
-	repeated uint32 rune_list = 4;
-	repeated uint32 equipped_rune_list = 11;
+	bool is_content_closed = 5;
+	uint32 content_close_time = 6;
+	repeated RoguelikeShikigamiRecord shikigami_list = 2;
+	repeated uint32 rune_list = 1;
+	repeated uint32 equipped_rune_list = 4;
 	repeated RogueStageInfo stage_list = 3;
 }

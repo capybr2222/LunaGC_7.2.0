@@ -6,5 +6,5 @@ option java_outer_classname = "_NormalSyncInfoOuterClass";
 import "IHPAJHCDDIF.proto";
 
 message _NormalSyncInfo {
-	IHPAJHCDDIF BFKACDGIBAI = 1;
+	IHPAJHCDDIF BFKACDGIBAI = 20000;
 }

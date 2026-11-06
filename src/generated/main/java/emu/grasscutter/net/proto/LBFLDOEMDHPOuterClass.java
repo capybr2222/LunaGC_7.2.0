@@ -19,19 +19,19 @@ public final class LBFLDOEMDHPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 cost_time = 2;</code>
+     * <code>uint32 cost_time = 6;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <code>bool is_finished = 10;</code>
+     * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -81,19 +81,19 @@ public final class LBFLDOEMDHPOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
 
               costTime_ = input.readUInt32();
               break;
             }
-            case 80: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 112: {
+            case 72: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isFinished_ = input.readBool();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class LBFLDOEMDHPOuterClass {
               emu.grasscutter.net.proto.LBFLDOEMDHPOuterClass.LBFLDOEMDHP.class, emu.grasscutter.net.proto.LBFLDOEMDHPOuterClass.LBFLDOEMDHP.Builder.class);
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 2;
+    public static final int COST_TIME_FIELD_NUMBER = 6;
     private int costTime_;
     /**
-     * <code>uint32 cost_time = 2;</code>
+     * <code>uint32 cost_time = 6;</code>
      * @return The costTime.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class LBFLDOEMDHPOuterClass {
       return costTime_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 10;
+    public static final int IS_FINISHED_FIELD_NUMBER = 13;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 10;</code>
+     * <code>bool is_finished = 13;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class LBFLDOEMDHPOuterClass {
       return isFinished_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 14;
+    public static final int LEVEL_ID_FIELD_NUMBER = 9;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 14;</code>
+     * <code>uint32 level_id = 9;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -176,13 +176,13 @@ public final class LBFLDOEMDHPOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (costTime_ != 0) {
-        output.writeUInt32(2, costTime_);
-      }
-      if (isFinished_ != false) {
-        output.writeBool(10, isFinished_);
+        output.writeUInt32(6, costTime_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(14, levelId_);
+        output.writeUInt32(9, levelId_);
+      }
+      if (isFinished_ != false) {
+        output.writeBool(13, isFinished_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +195,15 @@ public final class LBFLDOEMDHPOuterClass {
       size = 0;
       if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, costTime_);
-      }
-      if (isFinished_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isFinished_);
+          .computeUInt32Size(6, costTime_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, levelId_);
+          .computeUInt32Size(9, levelId_);
+      }
+      if (isFinished_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isFinished_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -500,7 +500,7 @@ public final class LBFLDOEMDHPOuterClass {
 
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 2;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -508,7 +508,7 @@ public final class LBFLDOEMDHPOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 2;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -519,7 +519,7 @@ public final class LBFLDOEMDHPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 2;</code>
+       * <code>uint32 cost_time = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
@@ -531,7 +531,7 @@ public final class LBFLDOEMDHPOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 10;</code>
+       * <code>bool is_finished = 13;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -539,7 +539,7 @@ public final class LBFLDOEMDHPOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 10;</code>
+       * <code>bool is_finished = 13;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -550,7 +550,7 @@ public final class LBFLDOEMDHPOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 10;</code>
+       * <code>bool is_finished = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -562,7 +562,7 @@ public final class LBFLDOEMDHPOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -570,7 +570,7 @@ public final class LBFLDOEMDHPOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 9;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -581,7 +581,7 @@ public final class LBFLDOEMDHPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 14;</code>
+       * <code>uint32 level_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -658,8 +658,8 @@ public final class LBFLDOEMDHPOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021LBFLDOEMDHP.proto\"G\n\013LBFLDOEMDHP\022\021\n\tco" +
-      "st_time\030\002 \001(\r\022\023\n\013is_finished\030\n \001(\010\022\020\n\010le" +
-      "vel_id\030\016 \001(\rB2\n\031emu.grasscutter.net.prot" +
+      "st_time\030\006 \001(\r\022\023\n\013is_finished\030\r \001(\010\022\020\n\010le" +
+      "vel_id\030\t \001(\rB2\n\031emu.grasscutter.net.prot" +
       "oB\025LBFLDOEMDHPOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

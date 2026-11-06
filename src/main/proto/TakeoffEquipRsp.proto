@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "TakeoffEquipRspOuterClass";
 
 message TakeoffEquipRsp {
-	uint64 avatar_guid = 6;
-	int32 retcode = 9;
-	uint32 slot = 4;
+	uint64 avatar_guid = 2;
+	int32 retcode = 12;
+	uint32 slot = 8;
 }

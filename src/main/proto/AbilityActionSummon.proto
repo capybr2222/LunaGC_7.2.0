@@ -6,6 +6,6 @@ option java_outer_classname = "AbilityActionSummonOuterClass";
 import "Vector.proto";
 
 message AbilityActionSummon {
-	Vector rot = 10;
-	Vector pos = 11;
+	Vector rot = 4;
+	Vector pos = 7;
 }

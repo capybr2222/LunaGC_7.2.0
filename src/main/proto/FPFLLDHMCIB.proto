@@ -6,5 +6,5 @@ option java_outer_classname = "FPFLLDHMCIBOuterClass";
 import "_ActivityAvatarInfo.proto";
 
 message FPFLLDHMCIB {
-	repeated _ActivityAvatarInfo avatar_list = 8;
+	repeated _ActivityAvatarInfo avatar_list = 6;
 }

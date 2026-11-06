@@ -19,25 +19,25 @@ public final class IPHFKFLNBGHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> 
         getAvatarInfoListList();
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getAvatarInfoList(int index);
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     int getAvatarInfoListCount();
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
         getAvatarInfoListOrBuilderList();
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class IPHFKFLNBGHOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class IPHFKFLNBGHOuterClass {
               emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH.class, emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH.Builder.class);
     }
 
-    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 2;
+    public static final int AVATAR_INFO_LIST_FIELD_NUMBER = 4;
     private java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> avatarInfoList_;
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> getAvatarInfoListList() {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
@@ -151,21 +151,21 @@ public final class IPHFKFLNBGHOuterClass {
       return avatarInfoList_;
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public int getAvatarInfoListCount() {
       return avatarInfoList_.size();
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getAvatarInfoList(int index) {
       return avatarInfoList_.get(index);
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
@@ -188,7 +188,7 @@ public final class IPHFKFLNBGHOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < avatarInfoList_.size(); i++) {
-        output.writeMessage(2, avatarInfoList_.get(i));
+        output.writeMessage(4, avatarInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class IPHFKFLNBGHOuterClass {
       size = 0;
       for (int i = 0; i < avatarInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, avatarInfoList_.get(i));
+          .computeMessageSize(4, avatarInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class IPHFKFLNBGHOuterClass {
           emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> avatarInfoListBuilder_;
 
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> getAvatarInfoListList() {
         if (avatarInfoListBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class IPHFKFLNBGHOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public int getAvatarInfoListCount() {
         if (avatarInfoListBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class IPHFKFLNBGHOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class IPHFKFLNBGHOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
@@ -575,7 +575,7 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder setAvatarInfoList(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAvatarInfoList(emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
         if (avatarInfoListBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
@@ -622,7 +622,7 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAvatarInfoList(
           emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAvatarInfoList(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder addAllAvatarInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> values) {
@@ -665,7 +665,7 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder clearAvatarInfoList() {
         if (avatarInfoListBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public Builder removeAvatarInfoList(int index) {
         if (avatarInfoListBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class IPHFKFLNBGHOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder getAvatarInfoListBuilder(
           int index) {
         return getAvatarInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getAvatarInfoListOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class IPHFKFLNBGHOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
            getAvatarInfoListOrBuilderList() {
@@ -719,14 +719,14 @@ public final class IPHFKFLNBGHOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder addAvatarInfoListBuilder() {
         return getAvatarInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder addAvatarInfoListBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class IPHFKFLNBGHOuterClass {
             index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 2;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_info_list = 4;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder> 
            getAvatarInfoListBuilderList() {
@@ -823,7 +823,7 @@ public final class IPHFKFLNBGHOuterClass {
     java.lang.String[] descriptorData = {
       "\n\021IPHFKFLNBGH.proto\032\031_ActivityAvatarInfo" +
       ".proto\"=\n\013IPHFKFLNBGH\022.\n\020avatar_info_lis" +
-      "t\030\002 \003(\0132\024._ActivityAvatarInfoB2\n\031emu.gra" +
+      "t\030\004 \003(\0132\024._ActivityAvatarInfoB2\n\031emu.gra" +
       "sscutter.net.protoB\025IPHFKFLNBGHOuterClas" +
       "sb\006proto3"
     };

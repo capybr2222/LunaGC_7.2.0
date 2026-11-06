@@ -19,13 +19,13 @@ public final class TpsAmmunitionChangeOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ammunition_config_id = 7;</code>
+     * <code>uint32 ammunition_config_id = 20000;</code>
      * @return The ammunitionConfigId.
      */
     int getAmmunitionConfigId();
 
     /**
-     * <code>int32 change_count = 12;</code>
+     * <code>int32 change_count = 2;</code>
      * @return The changeCount.
      */
     int getChangeCount();
@@ -75,14 +75,14 @@ public final class TpsAmmunitionChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              ammunitionConfigId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 16: {
 
               changeCount_ = input.readInt32();
+              break;
+            }
+            case 160000: {
+
+              ammunitionConfigId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class TpsAmmunitionChangeOuterClass {
               emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.class, emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder.class);
     }
 
-    public static final int AMMUNITION_CONFIG_ID_FIELD_NUMBER = 7;
+    public static final int AMMUNITION_CONFIG_ID_FIELD_NUMBER = 20000;
     private int ammunitionConfigId_;
     /**
-     * <code>uint32 ammunition_config_id = 7;</code>
+     * <code>uint32 ammunition_config_id = 20000;</code>
      * @return The ammunitionConfigId.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class TpsAmmunitionChangeOuterClass {
       return ammunitionConfigId_;
     }
 
-    public static final int CHANGE_COUNT_FIELD_NUMBER = 12;
+    public static final int CHANGE_COUNT_FIELD_NUMBER = 2;
     private int changeCount_;
     /**
-     * <code>int32 change_count = 12;</code>
+     * <code>int32 change_count = 2;</code>
      * @return The changeCount.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class TpsAmmunitionChangeOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (ammunitionConfigId_ != 0) {
-        output.writeUInt32(7, ammunitionConfigId_);
-      }
       if (changeCount_ != 0) {
-        output.writeInt32(12, changeCount_);
+        output.writeInt32(2, changeCount_);
+      }
+      if (ammunitionConfigId_ != 0) {
+        output.writeUInt32(20000, ammunitionConfigId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class TpsAmmunitionChangeOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (ammunitionConfigId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, ammunitionConfigId_);
-      }
       if (changeCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, changeCount_);
+          .computeInt32Size(2, changeCount_);
+      }
+      if (ammunitionConfigId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20000, ammunitionConfigId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class TpsAmmunitionChangeOuterClass {
 
       private int ammunitionConfigId_ ;
       /**
-       * <code>uint32 ammunition_config_id = 7;</code>
+       * <code>uint32 ammunition_config_id = 20000;</code>
        * @return The ammunitionConfigId.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class TpsAmmunitionChangeOuterClass {
         return ammunitionConfigId_;
       }
       /**
-       * <code>uint32 ammunition_config_id = 7;</code>
+       * <code>uint32 ammunition_config_id = 20000;</code>
        * @param value The ammunitionConfigId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class TpsAmmunitionChangeOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ammunition_config_id = 7;</code>
+       * <code>uint32 ammunition_config_id = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearAmmunitionConfigId() {
@@ -491,7 +491,7 @@ public final class TpsAmmunitionChangeOuterClass {
 
       private int changeCount_ ;
       /**
-       * <code>int32 change_count = 12;</code>
+       * <code>int32 change_count = 2;</code>
        * @return The changeCount.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class TpsAmmunitionChangeOuterClass {
         return changeCount_;
       }
       /**
-       * <code>int32 change_count = 12;</code>
+       * <code>int32 change_count = 2;</code>
        * @param value The changeCount to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class TpsAmmunitionChangeOuterClass {
         return this;
       }
       /**
-       * <code>int32 change_count = 12;</code>
+       * <code>int32 change_count = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearChangeCount() {
@@ -586,11 +586,11 @@ public final class TpsAmmunitionChangeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031TpsAmmunitionChange.proto\"I\n\023TpsAmmuni" +
-      "tionChange\022\034\n\024ammunition_config_id\030\007 \001(\r" +
-      "\022\024\n\014change_count\030\014 \001(\005B:\n\031emu.grasscutte" +
-      "r.net.protoB\035TpsAmmunitionChangeOuterCla" +
-      "ssb\006proto3"
+      "\n\031TpsAmmunitionChange.proto\"K\n\023TpsAmmuni" +
+      "tionChange\022\036\n\024ammunition_config_id\030\240\234\001 \001" +
+      "(\r\022\024\n\014change_count\030\002 \001(\005B:\n\031emu.grasscut" +
+      "ter.net.protoB\035TpsAmmunitionChangeOuterC" +
+      "lassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

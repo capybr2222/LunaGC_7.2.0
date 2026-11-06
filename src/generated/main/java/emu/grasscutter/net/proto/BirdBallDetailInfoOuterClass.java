@@ -43,7 +43,7 @@ public final class BirdBallDetailInfoOuterClass {
         int index);
 
     /**
-     * <code>uint32 ibhhmnemdlk = 8;</code>
+     * <code>uint32 ibhhmnemdlk = 3;</code>
      * @return The ibhhmnemdlk.
      */
     int getIbhhmnemdlk();
@@ -120,7 +120,7 @@ public final class BirdBallDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 24: {
 
               ibhhmnemdlk_ = input.readUInt32();
               break;
@@ -221,10 +221,10 @@ public final class BirdBallDetailInfoOuterClass {
       return micfncjpgim_.get(index);
     }
 
-    public static final int IBHHMNEMDLK_FIELD_NUMBER = 8;
+    public static final int IBHHMNEMDLK_FIELD_NUMBER = 3;
     private int ibhhmnemdlk_;
     /**
-     * <code>uint32 ibhhmnemdlk = 8;</code>
+     * <code>uint32 ibhhmnemdlk = 3;</code>
      * @return The ibhhmnemdlk.
      */
     @java.lang.Override
@@ -287,7 +287,7 @@ public final class BirdBallDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (ibhhmnemdlk_ != 0) {
-        output.writeUInt32(8, ibhhmnemdlk_);
+        output.writeUInt32(3, ibhhmnemdlk_);
       }
       for (int i = 0; i < micfncjpgim_.size(); i++) {
         output.writeMessage(50000, micfncjpgim_.get(i));
@@ -306,7 +306,7 @@ public final class BirdBallDetailInfoOuterClass {
       size = 0;
       if (ibhhmnemdlk_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, ibhhmnemdlk_);
+          .computeUInt32Size(3, ibhhmnemdlk_);
       }
       for (int i = 0; i < micfncjpgim_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -928,7 +928,7 @@ public final class BirdBallDetailInfoOuterClass {
 
       private int ibhhmnemdlk_ ;
       /**
-       * <code>uint32 ibhhmnemdlk = 8;</code>
+       * <code>uint32 ibhhmnemdlk = 3;</code>
        * @return The ibhhmnemdlk.
        */
       @java.lang.Override
@@ -936,7 +936,7 @@ public final class BirdBallDetailInfoOuterClass {
         return ibhhmnemdlk_;
       }
       /**
-       * <code>uint32 ibhhmnemdlk = 8;</code>
+       * <code>uint32 ibhhmnemdlk = 3;</code>
        * @param value The ibhhmnemdlk to set.
        * @return This builder for chaining.
        */
@@ -947,7 +947,7 @@ public final class BirdBallDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ibhhmnemdlk = 8;</code>
+       * <code>uint32 ibhhmnemdlk = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIbhhmnemdlk() {
@@ -1266,7 +1266,7 @@ public final class BirdBallDetailInfoOuterClass {
       "\n\030BirdBallDetailInfo.proto\032\021CPAPGLMOHIO." +
       "proto\"s\n\022BirdBallDetailInfo\022#\n\013micfncjpg" +
       "im\030\320\206\003 \003(\0132\014.CPAPGLMOHIO\022\023\n\013ibhhmnemdlk\030" +
-      "\010 \001(\r\022#\n\013inhailmbbld\030\321\206\003 \003(\0132\014.CPAPGLMOH" +
+      "\003 \001(\r\022#\n\013inhailmbbld\030\321\206\003 \003(\0132\014.CPAPGLMOH" +
       "IOB9\n\031emu.grasscutter.net.protoB\034BirdBal" +
       "lDetailInfoOuterClassb\006proto3"
     };

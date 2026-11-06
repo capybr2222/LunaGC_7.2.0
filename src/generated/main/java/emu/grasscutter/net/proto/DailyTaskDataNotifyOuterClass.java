@@ -19,25 +19,25 @@ public final class DailyTaskDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
         getFinishedUidDailyTaskListList();
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getFinishedUidDailyTaskList(int index);
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     int getFinishedUidDailyTaskListCount();
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
         getFinishedUidDailyTaskListOrBuilderList();
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getFinishedUidDailyTaskListOrBuilder(
         int index);
@@ -49,13 +49,13 @@ public final class DailyTaskDataNotifyOuterClass {
     int getScoreRewardId();
 
     /**
-     * <code>uint32 finished_num = 3;</code>
+     * <code>uint32 finished_num = 6;</code>
      * @return The finishedNum.
      */
     int getFinishedNum();
 
     /**
-     * <code>bool is_taken_score_reward = 9;</code>
+     * <code>bool is_taken_score_reward = 2;</code>
      * @return The isTakenScoreReward.
      */
     boolean getIsTakenScoreReward();
@@ -107,9 +107,9 @@ public final class DailyTaskDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
-              finishedNum_ = input.readUInt32();
+              isTakenScoreReward_ = input.readBool();
               break;
             }
             case 32: {
@@ -117,18 +117,18 @@ public final class DailyTaskDataNotifyOuterClass {
               scoreRewardId_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 48: {
+
+              finishedNum_ = input.readUInt32();
+              break;
+            }
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 FinishedUidDailyTaskList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
               }
               FinishedUidDailyTaskList_.add(
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
-              break;
-            }
-            case 72: {
-
-              isTakenScoreReward_ = input.readBool();
               break;
             }
             default: {
@@ -166,17 +166,17 @@ public final class DailyTaskDataNotifyOuterClass {
               emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify.class, emu.grasscutter.net.proto.DailyTaskDataNotifyOuterClass.DailyTaskDataNotify.Builder.class);
     }
 
-    public static final int _FINISHED_UID_DAILY_TASK_LIST_FIELD_NUMBER = 5;
+    public static final int _FINISHED_UID_DAILY_TASK_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> FinishedUidDailyTaskList_;
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getFinishedUidDailyTaskListList() {
       return FinishedUidDailyTaskList_;
     }
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
@@ -184,21 +184,21 @@ public final class DailyTaskDataNotifyOuterClass {
       return FinishedUidDailyTaskList_;
     }
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     @java.lang.Override
     public int getFinishedUidDailyTaskListCount() {
       return FinishedUidDailyTaskList_.size();
     }
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getFinishedUidDailyTaskList(int index) {
       return FinishedUidDailyTaskList_.get(index);
     }
     /**
-     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+     * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getFinishedUidDailyTaskListOrBuilder(
@@ -217,10 +217,10 @@ public final class DailyTaskDataNotifyOuterClass {
       return scoreRewardId_;
     }
 
-    public static final int FINISHED_NUM_FIELD_NUMBER = 3;
+    public static final int FINISHED_NUM_FIELD_NUMBER = 6;
     private int finishedNum_;
     /**
-     * <code>uint32 finished_num = 3;</code>
+     * <code>uint32 finished_num = 6;</code>
      * @return The finishedNum.
      */
     @java.lang.Override
@@ -228,10 +228,10 @@ public final class DailyTaskDataNotifyOuterClass {
       return finishedNum_;
     }
 
-    public static final int IS_TAKEN_SCORE_REWARD_FIELD_NUMBER = 9;
+    public static final int IS_TAKEN_SCORE_REWARD_FIELD_NUMBER = 2;
     private boolean isTakenScoreReward_;
     /**
-     * <code>bool is_taken_score_reward = 9;</code>
+     * <code>bool is_taken_score_reward = 2;</code>
      * @return The isTakenScoreReward.
      */
     @java.lang.Override
@@ -253,17 +253,17 @@ public final class DailyTaskDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (finishedNum_ != 0) {
-        output.writeUInt32(3, finishedNum_);
+      if (isTakenScoreReward_ != false) {
+        output.writeBool(2, isTakenScoreReward_);
       }
       if (scoreRewardId_ != 0) {
         output.writeUInt32(4, scoreRewardId_);
       }
-      for (int i = 0; i < FinishedUidDailyTaskList_.size(); i++) {
-        output.writeMessage(5, FinishedUidDailyTaskList_.get(i));
+      if (finishedNum_ != 0) {
+        output.writeUInt32(6, finishedNum_);
       }
-      if (isTakenScoreReward_ != false) {
-        output.writeBool(9, isTakenScoreReward_);
+      for (int i = 0; i < FinishedUidDailyTaskList_.size(); i++) {
+        output.writeMessage(12, FinishedUidDailyTaskList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -274,21 +274,21 @@ public final class DailyTaskDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (finishedNum_ != 0) {
+      if (isTakenScoreReward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, finishedNum_);
+          .computeBoolSize(2, isTakenScoreReward_);
       }
       if (scoreRewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, scoreRewardId_);
       }
+      if (finishedNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, finishedNum_);
+      }
       for (int i = 0; i < FinishedUidDailyTaskList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, FinishedUidDailyTaskList_.get(i));
-      }
-      if (isTakenScoreReward_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isTakenScoreReward_);
+          .computeMessageSize(12, FinishedUidDailyTaskList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -646,7 +646,7 @@ public final class DailyTaskDataNotifyOuterClass {
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> FinishedUidDailyTaskListBuilder_;
 
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getFinishedUidDailyTaskListList() {
         if (FinishedUidDailyTaskListBuilder_ == null) {
@@ -656,7 +656,7 @@ public final class DailyTaskDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public int getFinishedUidDailyTaskListCount() {
         if (FinishedUidDailyTaskListBuilder_ == null) {
@@ -666,7 +666,7 @@ public final class DailyTaskDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getFinishedUidDailyTaskList(int index) {
         if (FinishedUidDailyTaskListBuilder_ == null) {
@@ -676,7 +676,7 @@ public final class DailyTaskDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder setFinishedUidDailyTaskList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -693,7 +693,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder setFinishedUidDailyTaskList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -707,7 +707,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder addFinishedUidDailyTaskList(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
         if (FinishedUidDailyTaskListBuilder_ == null) {
@@ -723,7 +723,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder addFinishedUidDailyTaskList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -740,7 +740,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder addFinishedUidDailyTaskList(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -754,7 +754,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder addFinishedUidDailyTaskList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -768,7 +768,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder addAllFinishedUidDailyTaskList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
@@ -783,7 +783,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder clearFinishedUidDailyTaskList() {
         if (FinishedUidDailyTaskListBuilder_ == null) {
@@ -796,7 +796,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public Builder removeFinishedUidDailyTaskList(int index) {
         if (FinishedUidDailyTaskListBuilder_ == null) {
@@ -809,14 +809,14 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getFinishedUidDailyTaskListBuilder(
           int index) {
         return getFinishedUidDailyTaskListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getFinishedUidDailyTaskListOrBuilder(
           int index) {
@@ -826,7 +826,7 @@ public final class DailyTaskDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
            getFinishedUidDailyTaskListOrBuilderList() {
@@ -837,14 +837,14 @@ public final class DailyTaskDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addFinishedUidDailyTaskListBuilder() {
         return getFinishedUidDailyTaskListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addFinishedUidDailyTaskListBuilder(
           int index) {
@@ -852,7 +852,7 @@ public final class DailyTaskDataNotifyOuterClass {
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 5;</code>
+       * <code>repeated .Uint32Pair _finished_uid_daily_task_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
            getFinishedUidDailyTaskListBuilderList() {
@@ -906,7 +906,7 @@ public final class DailyTaskDataNotifyOuterClass {
 
       private int finishedNum_ ;
       /**
-       * <code>uint32 finished_num = 3;</code>
+       * <code>uint32 finished_num = 6;</code>
        * @return The finishedNum.
        */
       @java.lang.Override
@@ -914,7 +914,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return finishedNum_;
       }
       /**
-       * <code>uint32 finished_num = 3;</code>
+       * <code>uint32 finished_num = 6;</code>
        * @param value The finishedNum to set.
        * @return This builder for chaining.
        */
@@ -925,7 +925,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finished_num = 3;</code>
+       * <code>uint32 finished_num = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedNum() {
@@ -937,7 +937,7 @@ public final class DailyTaskDataNotifyOuterClass {
 
       private boolean isTakenScoreReward_ ;
       /**
-       * <code>bool is_taken_score_reward = 9;</code>
+       * <code>bool is_taken_score_reward = 2;</code>
        * @return The isTakenScoreReward.
        */
       @java.lang.Override
@@ -945,7 +945,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return isTakenScoreReward_;
       }
       /**
-       * <code>bool is_taken_score_reward = 9;</code>
+       * <code>bool is_taken_score_reward = 2;</code>
        * @param value The isTakenScoreReward to set.
        * @return This builder for chaining.
        */
@@ -956,7 +956,7 @@ public final class DailyTaskDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_taken_score_reward = 9;</code>
+       * <code>bool is_taken_score_reward = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTakenScoreReward() {
@@ -1034,9 +1034,9 @@ public final class DailyTaskDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031DailyTaskDataNotify.proto\032\020Uint32Pair." +
       "proto\"\227\001\n\023DailyTaskDataNotify\0222\n\035_finish" +
-      "ed_uid_daily_task_list\030\005 \003(\0132\013.Uint32Pai" +
+      "ed_uid_daily_task_list\030\014 \003(\0132\013.Uint32Pai" +
       "r\022\027\n\017score_reward_id\030\004 \001(\r\022\024\n\014finished_n" +
-      "um\030\003 \001(\r\022\035\n\025is_taken_score_reward\030\t \001(\010B" +
+      "um\030\006 \001(\r\022\035\n\025is_taken_score_reward\030\002 \001(\010B" +
       ":\n\031emu.grasscutter.net.protoB\035DailyTaskD" +
       "ataNotifyOuterClassb\006proto3"
     };

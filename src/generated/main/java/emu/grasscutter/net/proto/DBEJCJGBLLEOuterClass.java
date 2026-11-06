@@ -19,7 +19,7 @@ public final class DBEJCJGBLLEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BJNOEGFAPNE = 50000;</code>
+     * <code>uint32 BJNOEGFAPNE = 3;</code>
      * @return The bJNOEGFAPNE.
      */
     int getBJNOEGFAPNE();
@@ -40,7 +40,7 @@ public final class DBEJCJGBLLEOuterClass {
     emu.grasscutter.net.proto._TemplatePotionInfoOuterClass._TemplatePotionInfoOrBuilder getNNADFEPJILGOrBuilder();
 
     /**
-     * <code>uint32 HJIAHCGONMF = 50001;</code>
+     * <code>uint32 HJIAHCGONMF = 9;</code>
      * @return The hJIAHCGONMF.
      */
     int getHJIAHCGONMF();
@@ -102,6 +102,11 @@ public final class DBEJCJGBLLEOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              bJNOEGFAPNE_ = input.readUInt32();
+              break;
+            }
             case 32: {
 
               aJFHLGLOBLG_ = input.readUInt32();
@@ -120,19 +125,14 @@ public final class DBEJCJGBLLEOuterClass {
 
               break;
             }
+            case 72: {
+
+              hJIAHCGONMF_ = input.readUInt32();
+              break;
+            }
             case 120: {
 
               cost_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
-
-              bJNOEGFAPNE_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              hJIAHCGONMF_ = input.readUInt32();
               break;
             }
             default: {
@@ -167,10 +167,10 @@ public final class DBEJCJGBLLEOuterClass {
               emu.grasscutter.net.proto.DBEJCJGBLLEOuterClass.DBEJCJGBLLE.class, emu.grasscutter.net.proto.DBEJCJGBLLEOuterClass.DBEJCJGBLLE.Builder.class);
     }
 
-    public static final int BJNOEGFAPNE_FIELD_NUMBER = 50000;
+    public static final int BJNOEGFAPNE_FIELD_NUMBER = 3;
     private int bJNOEGFAPNE_;
     /**
-     * <code>uint32 BJNOEGFAPNE = 50000;</code>
+     * <code>uint32 BJNOEGFAPNE = 3;</code>
      * @return The bJNOEGFAPNE.
      */
     @java.lang.Override
@@ -204,10 +204,10 @@ public final class DBEJCJGBLLEOuterClass {
       return getNNADFEPJILG();
     }
 
-    public static final int HJIAHCGONMF_FIELD_NUMBER = 50001;
+    public static final int HJIAHCGONMF_FIELD_NUMBER = 9;
     private int hJIAHCGONMF_;
     /**
-     * <code>uint32 HJIAHCGONMF = 50001;</code>
+     * <code>uint32 HJIAHCGONMF = 9;</code>
      * @return The hJIAHCGONMF.
      */
     @java.lang.Override
@@ -251,20 +251,20 @@ public final class DBEJCJGBLLEOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (bJNOEGFAPNE_ != 0) {
+        output.writeUInt32(3, bJNOEGFAPNE_);
+      }
       if (aJFHLGLOBLG_ != 0) {
         output.writeUInt32(4, aJFHLGLOBLG_);
       }
       if (nNADFEPJILG_ != null) {
         output.writeMessage(7, getNNADFEPJILG());
       }
+      if (hJIAHCGONMF_ != 0) {
+        output.writeUInt32(9, hJIAHCGONMF_);
+      }
       if (cost_ != 0) {
         output.writeUInt32(15, cost_);
-      }
-      if (bJNOEGFAPNE_ != 0) {
-        output.writeUInt32(50000, bJNOEGFAPNE_);
-      }
-      if (hJIAHCGONMF_ != 0) {
-        output.writeUInt32(50001, hJIAHCGONMF_);
       }
       unknownFields.writeTo(output);
     }
@@ -275,6 +275,10 @@ public final class DBEJCJGBLLEOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (bJNOEGFAPNE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, bJNOEGFAPNE_);
+      }
       if (aJFHLGLOBLG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, aJFHLGLOBLG_);
@@ -283,17 +287,13 @@ public final class DBEJCJGBLLEOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, getNNADFEPJILG());
       }
+      if (hJIAHCGONMF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, hJIAHCGONMF_);
+      }
       if (cost_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, cost_);
-      }
-      if (bJNOEGFAPNE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, bJNOEGFAPNE_);
-      }
-      if (hJIAHCGONMF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, hJIAHCGONMF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -622,7 +622,7 @@ public final class DBEJCJGBLLEOuterClass {
 
       private int bJNOEGFAPNE_ ;
       /**
-       * <code>uint32 BJNOEGFAPNE = 50000;</code>
+       * <code>uint32 BJNOEGFAPNE = 3;</code>
        * @return The bJNOEGFAPNE.
        */
       @java.lang.Override
@@ -630,7 +630,7 @@ public final class DBEJCJGBLLEOuterClass {
         return bJNOEGFAPNE_;
       }
       /**
-       * <code>uint32 BJNOEGFAPNE = 50000;</code>
+       * <code>uint32 BJNOEGFAPNE = 3;</code>
        * @param value The bJNOEGFAPNE to set.
        * @return This builder for chaining.
        */
@@ -641,7 +641,7 @@ public final class DBEJCJGBLLEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BJNOEGFAPNE = 50000;</code>
+       * <code>uint32 BJNOEGFAPNE = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearBJNOEGFAPNE() {
@@ -772,7 +772,7 @@ public final class DBEJCJGBLLEOuterClass {
 
       private int hJIAHCGONMF_ ;
       /**
-       * <code>uint32 HJIAHCGONMF = 50001;</code>
+       * <code>uint32 HJIAHCGONMF = 9;</code>
        * @return The hJIAHCGONMF.
        */
       @java.lang.Override
@@ -780,7 +780,7 @@ public final class DBEJCJGBLLEOuterClass {
         return hJIAHCGONMF_;
       }
       /**
-       * <code>uint32 HJIAHCGONMF = 50001;</code>
+       * <code>uint32 HJIAHCGONMF = 9;</code>
        * @param value The hJIAHCGONMF to set.
        * @return This builder for chaining.
        */
@@ -791,7 +791,7 @@ public final class DBEJCJGBLLEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 HJIAHCGONMF = 50001;</code>
+       * <code>uint32 HJIAHCGONMF = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearHJIAHCGONMF() {
@@ -930,12 +930,12 @@ public final class DBEJCJGBLLEOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021DBEJCJGBLLE.proto\032\031_TemplatePotionInfo" +
-      ".proto\"\211\001\n\013DBEJCJGBLLE\022\025\n\013BJNOEGFAPNE\030\320\206" +
-      "\003 \001(\r\022)\n\013NNADFEPJILG\030\007 \001(\0132\024._TemplatePo" +
-      "tionInfo\022\025\n\013HJIAHCGONMF\030\321\206\003 \001(\r\022\023\n\013AJFHL" +
-      "GLOBLG\030\004 \001(\r\022\014\n\004cost\030\017 \001(\rB2\n\031emu.grassc" +
-      "utter.net.protoB\025DBEJCJGBLLEOuterClassb\006" +
-      "proto3"
+      ".proto\"\205\001\n\013DBEJCJGBLLE\022\023\n\013BJNOEGFAPNE\030\003 " +
+      "\001(\r\022)\n\013NNADFEPJILG\030\007 \001(\0132\024._TemplatePoti" +
+      "onInfo\022\023\n\013HJIAHCGONMF\030\t \001(\r\022\023\n\013AJFHLGLOB" +
+      "LG\030\004 \001(\r\022\014\n\004cost\030\017 \001(\rB2\n\031emu.grasscutte" +
+      "r.net.protoB\025DBEJCJGBLLEOuterClassb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

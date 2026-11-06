@@ -6,5 +6,5 @@ option java_outer_classname = "_MultiSyncInfoOuterClass";
 import "IHPAJHCDDIF.proto";
 
 message _MultiSyncInfo {
-	repeated IHPAJHCDDIF KBMGLOPGOHF = 2;
+	repeated IHPAJHCDDIF KBMGLOPGOHF = 20000;
 }

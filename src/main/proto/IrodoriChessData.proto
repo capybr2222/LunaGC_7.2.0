@@ -6,6 +6,6 @@ option java_outer_classname = "IrodoriChessDataOuterClass";
 import "IrodoriChessLevelData.proto";
 
 message IrodoriChessData {
-	bool is_open = 7;
-	repeated IrodoriChessLevelData level_data_list = 5;
+	bool is_open = 1;
+	repeated IrodoriChessLevelData level_data_list = 2;
 }

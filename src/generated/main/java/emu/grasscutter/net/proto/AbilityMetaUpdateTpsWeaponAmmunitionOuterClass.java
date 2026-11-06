@@ -19,66 +19,66 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+     * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
      * @return The enum numeric value on the wire for updateType.
      */
     int getUpdateTypeValue();
     /**
-     * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+     * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
      * @return The updateType.
      */
     emu.grasscutter.net.proto.TpsAmmunitionUpdateTypeOuterClass.TpsAmmunitionUpdateType getUpdateType();
 
     /**
-     * <code>bool FENKFADBDID = 7;</code>
+     * <code>bool FENKFADBDID = 1;</code>
      * @return The fENKFADBDID.
      */
     boolean getFENKFADBDID();
 
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo> 
         getAccessoryListList();
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo getAccessoryList(int index);
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     int getAccessoryListCount();
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfoOrBuilder> 
         getAccessoryListOrBuilderList();
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfoOrBuilder getAccessoryListOrBuilder(
         int index);
 
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange> 
         getAmmunitionListList();
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange getAmmunitionList(int index);
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     int getAmmunitionListCount();
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChangeOrBuilder> 
         getAmmunitionListOrBuilderList();
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChangeOrBuilder getAmmunitionListOrBuilder(
         int index);
@@ -132,33 +132,33 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-              int rawValue = input.readEnum();
-
-              updateType_ = rawValue;
-              break;
-            }
-            case 56: {
+            case 8: {
 
               fENKFADBDID_ = input.readBool();
               break;
             }
-            case 66: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                accessoryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              accessoryList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 74: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 ammunitionList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange>();
                 mutable_bitField0_ |= 0x00000002;
               }
               ammunitionList_.add(
                   input.readMessage(emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.parser(), extensionRegistry));
+              break;
+            }
+            case 64: {
+              int rawValue = input.readEnum();
+
+              updateType_ = rawValue;
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                accessoryList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              accessoryList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -176,11 +176,11 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          accessoryList_ = java.util.Collections.unmodifiableList(accessoryList_);
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           ammunitionList_ = java.util.Collections.unmodifiableList(ammunitionList_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          accessoryList_ = java.util.Collections.unmodifiableList(accessoryList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -199,17 +199,17 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
               emu.grasscutter.net.proto.AbilityMetaUpdateTpsWeaponAmmunitionOuterClass.AbilityMetaUpdateTpsWeaponAmmunition.class, emu.grasscutter.net.proto.AbilityMetaUpdateTpsWeaponAmmunitionOuterClass.AbilityMetaUpdateTpsWeaponAmmunition.Builder.class);
     }
 
-    public static final int UPDATE_TYPE_FIELD_NUMBER = 3;
+    public static final int UPDATE_TYPE_FIELD_NUMBER = 8;
     private int updateType_;
     /**
-     * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+     * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
      * @return The enum numeric value on the wire for updateType.
      */
     @java.lang.Override public int getUpdateTypeValue() {
       return updateType_;
     }
     /**
-     * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+     * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
      * @return The updateType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.TpsAmmunitionUpdateTypeOuterClass.TpsAmmunitionUpdateType getUpdateType() {
@@ -218,10 +218,10 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
       return result == null ? emu.grasscutter.net.proto.TpsAmmunitionUpdateTypeOuterClass.TpsAmmunitionUpdateType.UNRECOGNIZED : result;
     }
 
-    public static final int FENKFADBDID_FIELD_NUMBER = 7;
+    public static final int FENKFADBDID_FIELD_NUMBER = 1;
     private boolean fENKFADBDID_;
     /**
-     * <code>bool FENKFADBDID = 7;</code>
+     * <code>bool FENKFADBDID = 1;</code>
      * @return The fENKFADBDID.
      */
     @java.lang.Override
@@ -229,17 +229,17 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
       return fENKFADBDID_;
     }
 
-    public static final int ACCESSORY_LIST_FIELD_NUMBER = 8;
+    public static final int ACCESSORY_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo> accessoryList_;
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo> getAccessoryListList() {
       return accessoryList_;
     }
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfoOrBuilder> 
@@ -247,21 +247,21 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
       return accessoryList_;
     }
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     @java.lang.Override
     public int getAccessoryListCount() {
       return accessoryList_.size();
     }
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo getAccessoryList(int index) {
       return accessoryList_.get(index);
     }
     /**
-     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+     * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfoOrBuilder getAccessoryListOrBuilder(
@@ -269,17 +269,17 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
       return accessoryList_.get(index);
     }
 
-    public static final int AMMUNITION_LIST_FIELD_NUMBER = 9;
+    public static final int AMMUNITION_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange> ammunitionList_;
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange> getAmmunitionListList() {
       return ammunitionList_;
     }
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChangeOrBuilder> 
@@ -287,21 +287,21 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
       return ammunitionList_;
     }
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     @java.lang.Override
     public int getAmmunitionListCount() {
       return ammunitionList_.size();
     }
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange getAmmunitionList(int index) {
       return ammunitionList_.get(index);
     }
     /**
-     * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+     * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChangeOrBuilder getAmmunitionListOrBuilder(
@@ -323,17 +323,17 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (updateType_ != emu.grasscutter.net.proto.TpsAmmunitionUpdateTypeOuterClass.TpsAmmunitionUpdateType.TPS_AMMUNITION_UPDATE_TYPE_COST.getNumber()) {
-        output.writeEnum(3, updateType_);
-      }
       if (fENKFADBDID_ != false) {
-        output.writeBool(7, fENKFADBDID_);
-      }
-      for (int i = 0; i < accessoryList_.size(); i++) {
-        output.writeMessage(8, accessoryList_.get(i));
+        output.writeBool(1, fENKFADBDID_);
       }
       for (int i = 0; i < ammunitionList_.size(); i++) {
-        output.writeMessage(9, ammunitionList_.get(i));
+        output.writeMessage(2, ammunitionList_.get(i));
+      }
+      if (updateType_ != emu.grasscutter.net.proto.TpsAmmunitionUpdateTypeOuterClass.TpsAmmunitionUpdateType.TPS_AMMUNITION_UPDATE_TYPE_COST.getNumber()) {
+        output.writeEnum(8, updateType_);
+      }
+      for (int i = 0; i < accessoryList_.size(); i++) {
+        output.writeMessage(15, accessoryList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -344,21 +344,21 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (updateType_ != emu.grasscutter.net.proto.TpsAmmunitionUpdateTypeOuterClass.TpsAmmunitionUpdateType.TPS_AMMUNITION_UPDATE_TYPE_COST.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, updateType_);
-      }
       if (fENKFADBDID_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, fENKFADBDID_);
-      }
-      for (int i = 0; i < accessoryList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, accessoryList_.get(i));
+          .computeBoolSize(1, fENKFADBDID_);
       }
       for (int i = 0; i < ammunitionList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, ammunitionList_.get(i));
+          .computeMessageSize(2, ammunitionList_.get(i));
+      }
+      if (updateType_ != emu.grasscutter.net.proto.TpsAmmunitionUpdateTypeOuterClass.TpsAmmunitionUpdateType.TPS_AMMUNITION_UPDATE_TYPE_COST.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, updateType_);
+      }
+      for (int i = 0; i < accessoryList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, accessoryList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -742,14 +742,14 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
 
       private int updateType_ = 0;
       /**
-       * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+       * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
        * @return The enum numeric value on the wire for updateType.
        */
       @java.lang.Override public int getUpdateTypeValue() {
         return updateType_;
       }
       /**
-       * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+       * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
        * @param value The enum numeric value on the wire for updateType to set.
        * @return This builder for chaining.
        */
@@ -760,7 +760,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+       * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
        * @return The updateType.
        */
       @java.lang.Override
@@ -770,7 +770,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return result == null ? emu.grasscutter.net.proto.TpsAmmunitionUpdateTypeOuterClass.TpsAmmunitionUpdateType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+       * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
        * @param value The updateType to set.
        * @return This builder for chaining.
        */
@@ -784,7 +784,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>.TpsAmmunitionUpdateType update_type = 3;</code>
+       * <code>.TpsAmmunitionUpdateType update_type = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearUpdateType() {
@@ -796,7 +796,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
 
       private boolean fENKFADBDID_ ;
       /**
-       * <code>bool FENKFADBDID = 7;</code>
+       * <code>bool FENKFADBDID = 1;</code>
        * @return The fENKFADBDID.
        */
       @java.lang.Override
@@ -804,7 +804,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return fENKFADBDID_;
       }
       /**
-       * <code>bool FENKFADBDID = 7;</code>
+       * <code>bool FENKFADBDID = 1;</code>
        * @param value The fENKFADBDID to set.
        * @return This builder for chaining.
        */
@@ -815,7 +815,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>bool FENKFADBDID = 7;</code>
+       * <code>bool FENKFADBDID = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearFENKFADBDID() {
@@ -838,7 +838,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
           emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo, emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder, emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfoOrBuilder> accessoryListBuilder_;
 
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo> getAccessoryListList() {
         if (accessoryListBuilder_ == null) {
@@ -848,7 +848,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public int getAccessoryListCount() {
         if (accessoryListBuilder_ == null) {
@@ -858,7 +858,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo getAccessoryList(int index) {
         if (accessoryListBuilder_ == null) {
@@ -868,7 +868,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder setAccessoryList(
           int index, emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo value) {
@@ -885,7 +885,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder setAccessoryList(
           int index, emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder builderForValue) {
@@ -899,7 +899,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder addAccessoryList(emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo value) {
         if (accessoryListBuilder_ == null) {
@@ -915,7 +915,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder addAccessoryList(
           int index, emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo value) {
@@ -932,7 +932,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder addAccessoryList(
           emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder builderForValue) {
@@ -946,7 +946,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder addAccessoryList(
           int index, emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder builderForValue) {
@@ -960,7 +960,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder addAllAccessoryList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo> values) {
@@ -975,7 +975,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder clearAccessoryList() {
         if (accessoryListBuilder_ == null) {
@@ -988,7 +988,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public Builder removeAccessoryList(int index) {
         if (accessoryListBuilder_ == null) {
@@ -1001,14 +1001,14 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder getAccessoryListBuilder(
           int index) {
         return getAccessoryListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfoOrBuilder getAccessoryListOrBuilder(
           int index) {
@@ -1018,7 +1018,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfoOrBuilder> 
            getAccessoryListOrBuilderList() {
@@ -1029,14 +1029,14 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder addAccessoryListBuilder() {
         return getAccessoryListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder addAccessoryListBuilder(
           int index) {
@@ -1044,7 +1044,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
             index, emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 8;</code>
+       * <code>repeated .TpsWeaponAccessoryInfo accessory_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TpsWeaponAccessoryInfoOuterClass.TpsWeaponAccessoryInfo.Builder> 
            getAccessoryListBuilderList() {
@@ -1078,7 +1078,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
           emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange, emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder, emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChangeOrBuilder> ammunitionListBuilder_;
 
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange> getAmmunitionListList() {
         if (ammunitionListBuilder_ == null) {
@@ -1088,7 +1088,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public int getAmmunitionListCount() {
         if (ammunitionListBuilder_ == null) {
@@ -1098,7 +1098,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange getAmmunitionList(int index) {
         if (ammunitionListBuilder_ == null) {
@@ -1108,7 +1108,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder setAmmunitionList(
           int index, emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange value) {
@@ -1125,7 +1125,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder setAmmunitionList(
           int index, emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder builderForValue) {
@@ -1139,7 +1139,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder addAmmunitionList(emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange value) {
         if (ammunitionListBuilder_ == null) {
@@ -1155,7 +1155,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder addAmmunitionList(
           int index, emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange value) {
@@ -1172,7 +1172,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder addAmmunitionList(
           emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder builderForValue) {
@@ -1186,7 +1186,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder addAmmunitionList(
           int index, emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder builderForValue) {
@@ -1200,7 +1200,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder addAllAmmunitionList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange> values) {
@@ -1215,7 +1215,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder clearAmmunitionList() {
         if (ammunitionListBuilder_ == null) {
@@ -1228,7 +1228,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public Builder removeAmmunitionList(int index) {
         if (ammunitionListBuilder_ == null) {
@@ -1241,14 +1241,14 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder getAmmunitionListBuilder(
           int index) {
         return getAmmunitionListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChangeOrBuilder getAmmunitionListOrBuilder(
           int index) {
@@ -1258,7 +1258,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChangeOrBuilder> 
            getAmmunitionListOrBuilderList() {
@@ -1269,14 +1269,14 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
         }
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder addAmmunitionListBuilder() {
         return getAmmunitionListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.getDefaultInstance());
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder addAmmunitionListBuilder(
           int index) {
@@ -1284,7 +1284,7 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
             index, emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.getDefaultInstance());
       }
       /**
-       * <code>repeated .TpsAmmunitionChange ammunition_list = 9;</code>
+       * <code>repeated .TpsAmmunitionChange ammunition_list = 2;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TpsAmmunitionChangeOuterClass.TpsAmmunitionChange.Builder> 
            getAmmunitionListBuilderList() {
@@ -1375,10 +1375,10 @@ public final class AbilityMetaUpdateTpsWeaponAmmunitionOuterClass {
       "roto\032\031TpsAmmunitionChange.proto\032\035TpsAmmu" +
       "nitionUpdateType.proto\032\034TpsWeaponAccesso" +
       "ryInfo.proto\"\312\001\n$AbilityMetaUpdateTpsWea" +
-      "ponAmmunition\022-\n\013update_type\030\003 \001(\0162\030.Tps" +
-      "AmmunitionUpdateType\022\023\n\013FENKFADBDID\030\007 \001(" +
-      "\010\022/\n\016accessory_list\030\010 \003(\0132\027.TpsWeaponAcc" +
-      "essoryInfo\022-\n\017ammunition_list\030\t \003(\0132\024.Tp" +
+      "ponAmmunition\022-\n\013update_type\030\010 \001(\0162\030.Tps" +
+      "AmmunitionUpdateType\022\023\n\013FENKFADBDID\030\001 \001(" +
+      "\010\022/\n\016accessory_list\030\017 \003(\0132\027.TpsWeaponAcc" +
+      "essoryInfo\022-\n\017ammunition_list\030\002 \003(\0132\024.Tp" +
       "sAmmunitionChangeBK\n\031emu.grasscutter.net" +
       ".protoB.AbilityMetaUpdateTpsWeaponAmmuni" +
       "tionOuterClassb\006proto3"

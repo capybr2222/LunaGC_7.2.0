@@ -19,31 +19,31 @@ public final class _UgcV2OfficialLevelDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_level_open = 14;</code>
+     * <code>bool is_level_open = 3;</code>
      * @return The isLevelOpen.
      */
     boolean getIsLevelOpen();
 
     /**
-     * <code>bool is_finished = 12;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>uint32 best_score = 3;</code>
+     * <code>uint32 best_score = 2;</code>
      * @return The bestScore.
      */
     int getBestScore();
 
     /**
-     * <code>uint64 _level_guid = 11;</code>
+     * <code>uint64 _level_guid = 5;</code>
      * @return The levelGuid.
      */
     long getLevelGuid();
@@ -93,29 +93,29 @@ public final class _UgcV2OfficialLevelDataOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
 
               bestScore_ = input.readUInt32();
               break;
             }
-            case 88: {
-
-              LevelGuid_ = input.readUInt64();
-              break;
-            }
-            case 96: {
-
-              isFinished_ = input.readBool();
-              break;
-            }
-            case 112: {
+            case 24: {
 
               isLevelOpen_ = input.readBool();
               break;
             }
-            case 120: {
+            case 32: {
 
-              levelId_ = input.readUInt32();
+              isFinished_ = input.readBool();
+              break;
+            }
+            case 40: {
+
+              LevelGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -150,10 +150,10 @@ public final class _UgcV2OfficialLevelDataOuterClass {
               emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.class, emu.grasscutter.net.proto._UgcV2OfficialLevelDataOuterClass._UgcV2OfficialLevelData.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _UgcV2OfficialLevelDataOuterClass {
       return levelId_;
     }
 
-    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 14;
+    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 3;
     private boolean isLevelOpen_;
     /**
-     * <code>bool is_level_open = 14;</code>
+     * <code>bool is_level_open = 3;</code>
      * @return The isLevelOpen.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _UgcV2OfficialLevelDataOuterClass {
       return isLevelOpen_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 12;
+    public static final int IS_FINISHED_FIELD_NUMBER = 4;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 12;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -183,10 +183,10 @@ public final class _UgcV2OfficialLevelDataOuterClass {
       return isFinished_;
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 3;
+    public static final int BEST_SCORE_FIELD_NUMBER = 2;
     private int bestScore_;
     /**
-     * <code>uint32 best_score = 3;</code>
+     * <code>uint32 best_score = 2;</code>
      * @return The bestScore.
      */
     @java.lang.Override
@@ -194,10 +194,10 @@ public final class _UgcV2OfficialLevelDataOuterClass {
       return bestScore_;
     }
 
-    public static final int _LEVEL_GUID_FIELD_NUMBER = 11;
+    public static final int _LEVEL_GUID_FIELD_NUMBER = 5;
     private long LevelGuid_;
     /**
-     * <code>uint64 _level_guid = 11;</code>
+     * <code>uint64 _level_guid = 5;</code>
      * @return The levelGuid.
      */
     @java.lang.Override
@@ -219,20 +219,20 @@ public final class _UgcV2OfficialLevelDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (levelId_ != 0) {
+        output.writeUInt32(1, levelId_);
+      }
       if (bestScore_ != 0) {
-        output.writeUInt32(3, bestScore_);
-      }
-      if (LevelGuid_ != 0L) {
-        output.writeUInt64(11, LevelGuid_);
-      }
-      if (isFinished_ != false) {
-        output.writeBool(12, isFinished_);
+        output.writeUInt32(2, bestScore_);
       }
       if (isLevelOpen_ != false) {
-        output.writeBool(14, isLevelOpen_);
+        output.writeBool(3, isLevelOpen_);
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+      if (isFinished_ != false) {
+        output.writeBool(4, isFinished_);
+      }
+      if (LevelGuid_ != 0L) {
+        output.writeUInt64(5, LevelGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class _UgcV2OfficialLevelDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, levelId_);
+      }
       if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, bestScore_);
-      }
-      if (LevelGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(11, LevelGuid_);
-      }
-      if (isFinished_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isFinished_);
+          .computeUInt32Size(2, bestScore_);
       }
       if (isLevelOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isLevelOpen_);
+          .computeBoolSize(3, isLevelOpen_);
       }
-      if (levelId_ != 0) {
+      if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeBoolSize(4, isFinished_);
+      }
+      if (LevelGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(5, LevelGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -580,7 +580,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -588,7 +588,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -599,7 +599,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -611,7 +611,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
 
       private boolean isLevelOpen_ ;
       /**
-       * <code>bool is_level_open = 14;</code>
+       * <code>bool is_level_open = 3;</code>
        * @return The isLevelOpen.
        */
       @java.lang.Override
@@ -619,7 +619,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return isLevelOpen_;
       }
       /**
-       * <code>bool is_level_open = 14;</code>
+       * <code>bool is_level_open = 3;</code>
        * @param value The isLevelOpen to set.
        * @return This builder for chaining.
        */
@@ -630,7 +630,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_level_open = 14;</code>
+       * <code>bool is_level_open = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLevelOpen() {
@@ -642,7 +642,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 12;</code>
+       * <code>bool is_finished = 4;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -650,7 +650,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 12;</code>
+       * <code>bool is_finished = 4;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -661,7 +661,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 12;</code>
+       * <code>bool is_finished = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -673,7 +673,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
 
       private int bestScore_ ;
       /**
-       * <code>uint32 best_score = 3;</code>
+       * <code>uint32 best_score = 2;</code>
        * @return The bestScore.
        */
       @java.lang.Override
@@ -681,7 +681,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return bestScore_;
       }
       /**
-       * <code>uint32 best_score = 3;</code>
+       * <code>uint32 best_score = 2;</code>
        * @param value The bestScore to set.
        * @return This builder for chaining.
        */
@@ -692,7 +692,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_score = 3;</code>
+       * <code>uint32 best_score = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestScore() {
@@ -704,7 +704,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
 
       private long LevelGuid_ ;
       /**
-       * <code>uint64 _level_guid = 11;</code>
+       * <code>uint64 _level_guid = 5;</code>
        * @return The levelGuid.
        */
       @java.lang.Override
@@ -712,7 +712,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return LevelGuid_;
       }
       /**
-       * <code>uint64 _level_guid = 11;</code>
+       * <code>uint64 _level_guid = 5;</code>
        * @param value The levelGuid to set.
        * @return This builder for chaining.
        */
@@ -723,7 +723,7 @@ public final class _UgcV2OfficialLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint64 _level_guid = 11;</code>
+       * <code>uint64 _level_guid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelGuid() {
@@ -800,9 +800,9 @@ public final class _UgcV2OfficialLevelDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035_UgcV2OfficialLevelData.proto\"\200\001\n\027_Ugc" +
-      "V2OfficialLevelData\022\020\n\010level_id\030\017 \001(\r\022\025\n" +
-      "\ris_level_open\030\016 \001(\010\022\023\n\013is_finished\030\014 \001(" +
-      "\010\022\022\n\nbest_score\030\003 \001(\r\022\023\n\013_level_guid\030\013 \001" +
+      "V2OfficialLevelData\022\020\n\010level_id\030\001 \001(\r\022\025\n" +
+      "\ris_level_open\030\003 \001(\010\022\023\n\013is_finished\030\004 \001(" +
+      "\010\022\022\n\nbest_score\030\002 \001(\r\022\023\n\013_level_guid\030\005 \001" +
       "(\004B>\n\031emu.grasscutter.net.protoB!_UgcV2O" +
       "fficialLevelDataOuterClassb\006proto3"
     };

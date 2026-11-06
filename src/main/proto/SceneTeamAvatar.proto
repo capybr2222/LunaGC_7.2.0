@@ -12,21 +12,21 @@ import "SceneWeaponInfo.proto";
 import "ServerBuff.proto";
 
 message SceneTeamAvatar {
-	bool is_reconnect = 3;
-	bool is_player_cur_avatar = 50000;
-	AbilitySyncStateInfo avatar_ability_info = 50001;
-	uint32 weapon_entity_id = 12;
-	AbilityControlBlock ability_control_block = 11;
-	AvatarInfo avatar_info = 4;
-	uint32 player_uid = 13;
-	uint32 entity_id = 8;
-	AbilitySyncStateInfo weapon_ability_info = 50002;
-	repeated ServerBuff server_buff_list = 9;
-	SceneEntityInfo scene_entity_info = 15;
-	uint64 avatar_guid = 5;
+	bool is_reconnect = 2;
+	bool is_player_cur_avatar = 15;
+	AbilitySyncStateInfo avatar_ability_info = 6;
+	uint32 weapon_entity_id = 5;
+	AbilityControlBlock ability_control_block = 4;
+	AvatarInfo avatar_info = 14;
+	uint32 player_uid = 3;
+	uint32 entity_id = 9;
+	AbilitySyncStateInfo weapon_ability_info = 8;
+	repeated ServerBuff server_buff_list = 13;
+	SceneEntityInfo scene_entity_info = 12;
+	uint64 avatar_guid = 11;
 	SceneAvatarInfo scene_avatar_info = 1;
-	uint32 scene_id = 6;
+	uint32 scene_id = 10;
 	uint64 weapon_guid = 7;
-	repeated SceneWeaponInfo tps_weapon_list = 382;
-	bool is_on_scene = 50003;
+	repeated SceneWeaponInfo tps_weapon_list = 645;
+	bool is_on_scene = 549;
 }

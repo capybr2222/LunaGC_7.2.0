@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "TakeoffEquipReqOuterClass";
 
 message TakeoffEquipReq {
-	uint32 slot = 9;
-	uint64 avatar_guid = 3;
+	uint32 slot = 15;
+	uint64 avatar_guid = 9;
 }

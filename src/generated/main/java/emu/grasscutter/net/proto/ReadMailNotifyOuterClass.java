@@ -19,17 +19,17 @@ public final class ReadMailNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <code>repeated uint32 mail_id_list = 14;</code>
      * @return A list containing the mailIdList.
      */
     java.util.List<java.lang.Integer> getMailIdListList();
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <code>repeated uint32 mail_id_list = 14;</code>
      * @return The count of mailIdList.
      */
     int getMailIdListCount();
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <code>repeated uint32 mail_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The mailIdList at the given index.
      */
@@ -82,7 +82,7 @@ public final class ReadMailNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 mailIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -90,7 +90,7 @@ public final class ReadMailNotifyOuterClass {
               mailIdList_.addInt(input.readUInt32());
               break;
             }
-            case 66: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -138,10 +138,10 @@ public final class ReadMailNotifyOuterClass {
               emu.grasscutter.net.proto.ReadMailNotifyOuterClass.ReadMailNotify.class, emu.grasscutter.net.proto.ReadMailNotifyOuterClass.ReadMailNotify.Builder.class);
     }
 
-    public static final int MAIL_ID_LIST_FIELD_NUMBER = 8;
+    public static final int MAIL_ID_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList mailIdList_;
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <code>repeated uint32 mail_id_list = 14;</code>
      * @return A list containing the mailIdList.
      */
     @java.lang.Override
@@ -150,14 +150,14 @@ public final class ReadMailNotifyOuterClass {
       return mailIdList_;
     }
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <code>repeated uint32 mail_id_list = 14;</code>
      * @return The count of mailIdList.
      */
     public int getMailIdListCount() {
       return mailIdList_.size();
     }
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <code>repeated uint32 mail_id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The mailIdList at the given index.
      */
@@ -182,7 +182,7 @@ public final class ReadMailNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getMailIdListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(mailIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < mailIdList_.size(); i++) {
@@ -506,7 +506,7 @@ public final class ReadMailNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 mail_id_list = 8;</code>
+       * <code>repeated uint32 mail_id_list = 14;</code>
        * @return A list containing the mailIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -515,14 +515,14 @@ public final class ReadMailNotifyOuterClass {
                  java.util.Collections.unmodifiableList(mailIdList_) : mailIdList_;
       }
       /**
-       * <code>repeated uint32 mail_id_list = 8;</code>
+       * <code>repeated uint32 mail_id_list = 14;</code>
        * @return The count of mailIdList.
        */
       public int getMailIdListCount() {
         return mailIdList_.size();
       }
       /**
-       * <code>repeated uint32 mail_id_list = 8;</code>
+       * <code>repeated uint32 mail_id_list = 14;</code>
        * @param index The index of the element to return.
        * @return The mailIdList at the given index.
        */
@@ -530,7 +530,7 @@ public final class ReadMailNotifyOuterClass {
         return mailIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 mail_id_list = 8;</code>
+       * <code>repeated uint32 mail_id_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The mailIdList to set.
        * @return This builder for chaining.
@@ -543,7 +543,7 @@ public final class ReadMailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mail_id_list = 8;</code>
+       * <code>repeated uint32 mail_id_list = 14;</code>
        * @param value The mailIdList to add.
        * @return This builder for chaining.
        */
@@ -554,7 +554,7 @@ public final class ReadMailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mail_id_list = 8;</code>
+       * <code>repeated uint32 mail_id_list = 14;</code>
        * @param values The mailIdList to add.
        * @return This builder for chaining.
        */
@@ -567,7 +567,7 @@ public final class ReadMailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mail_id_list = 8;</code>
+       * <code>repeated uint32 mail_id_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMailIdList() {
@@ -644,7 +644,7 @@ public final class ReadMailNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024ReadMailNotify.proto\"&\n\016ReadMailNotify" +
-      "\022\024\n\014mail_id_list\030\010 \003(\rB5\n\031emu.grasscutte" +
+      "\022\024\n\014mail_id_list\030\016 \003(\rB5\n\031emu.grasscutte" +
       "r.net.protoB\030ReadMailNotifyOuterClassb\006p" +
       "roto3"
     };

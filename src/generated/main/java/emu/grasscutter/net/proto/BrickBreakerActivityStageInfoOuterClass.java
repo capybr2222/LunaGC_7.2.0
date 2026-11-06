@@ -19,19 +19,19 @@ public final class BrickBreakerActivityStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 9;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>bool KEJPBFGPNLE = 50000;</code>
+     * <code>bool KEJPBFGPNLE = 20000;</code>
      * @return The kEJPBFGPNLE.
      */
     boolean getKEJPBFGPNLE();
 
     /**
-     * <code>bool HLENJPJHOHL = 50001;</code>
+     * <code>bool HLENJPJHOHL = 20001;</code>
      * @return The hLENJPJHOHL.
      */
     boolean getHLENJPJHOHL();
@@ -81,17 +81,17 @@ public final class BrickBreakerActivityStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 8: {
 
               stageId_ = input.readUInt32();
               break;
             }
-            case 400000: {
+            case 160000: {
 
               kEJPBFGPNLE_ = input.readBool();
               break;
             }
-            case 400008: {
+            case 160008: {
 
               hLENJPJHOHL_ = input.readBool();
               break;
@@ -128,10 +128,10 @@ public final class BrickBreakerActivityStageInfoOuterClass {
               emu.grasscutter.net.proto.BrickBreakerActivityStageInfoOuterClass.BrickBreakerActivityStageInfo.class, emu.grasscutter.net.proto.BrickBreakerActivityStageInfoOuterClass.BrickBreakerActivityStageInfo.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 9;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 9;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class BrickBreakerActivityStageInfoOuterClass {
       return stageId_;
     }
 
-    public static final int KEJPBFGPNLE_FIELD_NUMBER = 50000;
+    public static final int KEJPBFGPNLE_FIELD_NUMBER = 20000;
     private boolean kEJPBFGPNLE_;
     /**
-     * <code>bool KEJPBFGPNLE = 50000;</code>
+     * <code>bool KEJPBFGPNLE = 20000;</code>
      * @return The kEJPBFGPNLE.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class BrickBreakerActivityStageInfoOuterClass {
       return kEJPBFGPNLE_;
     }
 
-    public static final int HLENJPJHOHL_FIELD_NUMBER = 50001;
+    public static final int HLENJPJHOHL_FIELD_NUMBER = 20001;
     private boolean hLENJPJHOHL_;
     /**
-     * <code>bool HLENJPJHOHL = 50001;</code>
+     * <code>bool HLENJPJHOHL = 20001;</code>
      * @return The hLENJPJHOHL.
      */
     @java.lang.Override
@@ -176,13 +176,13 @@ public final class BrickBreakerActivityStageInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (stageId_ != 0) {
-        output.writeUInt32(9, stageId_);
+        output.writeUInt32(1, stageId_);
       }
       if (kEJPBFGPNLE_ != false) {
-        output.writeBool(50000, kEJPBFGPNLE_);
+        output.writeBool(20000, kEJPBFGPNLE_);
       }
       if (hLENJPJHOHL_ != false) {
-        output.writeBool(50001, hLENJPJHOHL_);
+        output.writeBool(20001, hLENJPJHOHL_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +195,15 @@ public final class BrickBreakerActivityStageInfoOuterClass {
       size = 0;
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, stageId_);
+          .computeUInt32Size(1, stageId_);
       }
       if (kEJPBFGPNLE_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50000, kEJPBFGPNLE_);
+          .computeBoolSize(20000, kEJPBFGPNLE_);
       }
       if (hLENJPJHOHL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50001, hLENJPJHOHL_);
+          .computeBoolSize(20001, hLENJPJHOHL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -501,7 +501,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 9;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 9;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 9;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -532,7 +532,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
 
       private boolean kEJPBFGPNLE_ ;
       /**
-       * <code>bool KEJPBFGPNLE = 50000;</code>
+       * <code>bool KEJPBFGPNLE = 20000;</code>
        * @return The kEJPBFGPNLE.
        */
       @java.lang.Override
@@ -540,7 +540,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
         return kEJPBFGPNLE_;
       }
       /**
-       * <code>bool KEJPBFGPNLE = 50000;</code>
+       * <code>bool KEJPBFGPNLE = 20000;</code>
        * @param value The kEJPBFGPNLE to set.
        * @return This builder for chaining.
        */
@@ -551,7 +551,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool KEJPBFGPNLE = 50000;</code>
+       * <code>bool KEJPBFGPNLE = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearKEJPBFGPNLE() {
@@ -563,7 +563,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
 
       private boolean hLENJPJHOHL_ ;
       /**
-       * <code>bool HLENJPJHOHL = 50001;</code>
+       * <code>bool HLENJPJHOHL = 20001;</code>
        * @return The hLENJPJHOHL.
        */
       @java.lang.Override
@@ -571,7 +571,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
         return hLENJPJHOHL_;
       }
       /**
-       * <code>bool HLENJPJHOHL = 50001;</code>
+       * <code>bool HLENJPJHOHL = 20001;</code>
        * @param value The hLENJPJHOHL to set.
        * @return This builder for chaining.
        */
@@ -582,7 +582,7 @@ public final class BrickBreakerActivityStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool HLENJPJHOHL = 50001;</code>
+       * <code>bool HLENJPJHOHL = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearHLENJPJHOHL() {
@@ -660,8 +660,8 @@ public final class BrickBreakerActivityStageInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n#BrickBreakerActivityStageInfo.proto\"_\n" +
       "\035BrickBreakerActivityStageInfo\022\020\n\010stage_" +
-      "id\030\t \001(\r\022\025\n\013KEJPBFGPNLE\030\320\206\003 \001(\010\022\025\n\013HLENJ" +
-      "PJHOHL\030\321\206\003 \001(\010BD\n\031emu.grasscutter.net.pr" +
+      "id\030\001 \001(\r\022\025\n\013KEJPBFGPNLE\030\240\234\001 \001(\010\022\025\n\013HLENJ" +
+      "PJHOHL\030\241\234\001 \001(\010BD\n\031emu.grasscutter.net.pr" +
       "otoB\'BrickBreakerActivityStageInfoOuterC" +
       "lassb\006proto3"
     };

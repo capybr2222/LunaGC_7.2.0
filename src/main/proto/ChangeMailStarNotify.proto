@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ChangeMailStarNotifyOuterClass";
 
 message ChangeMailStarNotify {
-	bool is_star = 4;
-	repeated uint32 mail_id_list = 10;
+	bool is_star = 7;
+	repeated uint32 mail_id_list = 2;
 }

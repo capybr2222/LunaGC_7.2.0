@@ -11,7 +11,7 @@ message InvestigationMonster {
 		LockState_LOCK_QUEST = 1;
 	}
 	uint32 id = 15;
-	LockState lock_state = 3;
-	uint32 city_id = 9;
-	repeated _InvestigationMonsterDetail _investigation_monster_detail_list = 1511;
+	LockState lock_state = 9;
+	uint32 city_id = 8;
+	repeated _InvestigationMonsterDetail _investigation_monster_detail_list = 1898;
 }

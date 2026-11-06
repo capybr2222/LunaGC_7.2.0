@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "HomeSaveArrangementNoChangeReqOuterClass";
 
 message HomeSaveArrangementNoChangeReq {
-	uint32 scene_id = 7;
+	uint32 scene_id = 12;
 }

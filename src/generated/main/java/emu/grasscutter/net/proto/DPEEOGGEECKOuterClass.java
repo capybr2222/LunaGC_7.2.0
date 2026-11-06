@@ -19,13 +19,13 @@ public final class DPEEOGGEECKOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BLCPLGCJEBJ = 4;</code>
+     * <code>uint32 BLCPLGCJEBJ = 9;</code>
      * @return The bLCPLGCJEBJ.
      */
     int getBLCPLGCJEBJ();
 
     /**
-     * <code>uint32 KHJHFLNMNPC = 8;</code>
+     * <code>uint32 KHJHFLNMNPC = 4;</code>
      * @return The kHJHFLNMNPC.
      */
     int getKHJHFLNMNPC();
@@ -77,12 +77,12 @@ public final class DPEEOGGEECKOuterClass {
               break;
             case 32: {
 
-              bLCPLGCJEBJ_ = input.readUInt32();
+              kHJHFLNMNPC_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 72: {
 
-              kHJHFLNMNPC_ = input.readUInt32();
+              bLCPLGCJEBJ_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class DPEEOGGEECKOuterClass {
               emu.grasscutter.net.proto.DPEEOGGEECKOuterClass.DPEEOGGEECK.class, emu.grasscutter.net.proto.DPEEOGGEECKOuterClass.DPEEOGGEECK.Builder.class);
     }
 
-    public static final int BLCPLGCJEBJ_FIELD_NUMBER = 4;
+    public static final int BLCPLGCJEBJ_FIELD_NUMBER = 9;
     private int bLCPLGCJEBJ_;
     /**
-     * <code>uint32 BLCPLGCJEBJ = 4;</code>
+     * <code>uint32 BLCPLGCJEBJ = 9;</code>
      * @return The bLCPLGCJEBJ.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class DPEEOGGEECKOuterClass {
       return bLCPLGCJEBJ_;
     }
 
-    public static final int KHJHFLNMNPC_FIELD_NUMBER = 8;
+    public static final int KHJHFLNMNPC_FIELD_NUMBER = 4;
     private int kHJHFLNMNPC_;
     /**
-     * <code>uint32 KHJHFLNMNPC = 8;</code>
+     * <code>uint32 KHJHFLNMNPC = 4;</code>
      * @return The kHJHFLNMNPC.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class DPEEOGGEECKOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bLCPLGCJEBJ_ != 0) {
-        output.writeUInt32(4, bLCPLGCJEBJ_);
-      }
       if (kHJHFLNMNPC_ != 0) {
-        output.writeUInt32(8, kHJHFLNMNPC_);
+        output.writeUInt32(4, kHJHFLNMNPC_);
+      }
+      if (bLCPLGCJEBJ_ != 0) {
+        output.writeUInt32(9, bLCPLGCJEBJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class DPEEOGGEECKOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bLCPLGCJEBJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, bLCPLGCJEBJ_);
-      }
       if (kHJHFLNMNPC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, kHJHFLNMNPC_);
+          .computeUInt32Size(4, kHJHFLNMNPC_);
+      }
+      if (bLCPLGCJEBJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, bLCPLGCJEBJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class DPEEOGGEECKOuterClass {
 
       private int bLCPLGCJEBJ_ ;
       /**
-       * <code>uint32 BLCPLGCJEBJ = 4;</code>
+       * <code>uint32 BLCPLGCJEBJ = 9;</code>
        * @return The bLCPLGCJEBJ.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class DPEEOGGEECKOuterClass {
         return bLCPLGCJEBJ_;
       }
       /**
-       * <code>uint32 BLCPLGCJEBJ = 4;</code>
+       * <code>uint32 BLCPLGCJEBJ = 9;</code>
        * @param value The bLCPLGCJEBJ to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class DPEEOGGEECKOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BLCPLGCJEBJ = 4;</code>
+       * <code>uint32 BLCPLGCJEBJ = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearBLCPLGCJEBJ() {
@@ -491,7 +491,7 @@ public final class DPEEOGGEECKOuterClass {
 
       private int kHJHFLNMNPC_ ;
       /**
-       * <code>uint32 KHJHFLNMNPC = 8;</code>
+       * <code>uint32 KHJHFLNMNPC = 4;</code>
        * @return The kHJHFLNMNPC.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class DPEEOGGEECKOuterClass {
         return kHJHFLNMNPC_;
       }
       /**
-       * <code>uint32 KHJHFLNMNPC = 8;</code>
+       * <code>uint32 KHJHFLNMNPC = 4;</code>
        * @param value The kHJHFLNMNPC to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class DPEEOGGEECKOuterClass {
         return this;
       }
       /**
-       * <code>uint32 KHJHFLNMNPC = 8;</code>
+       * <code>uint32 KHJHFLNMNPC = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearKHJHFLNMNPC() {
@@ -587,7 +587,7 @@ public final class DPEEOGGEECKOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021DPEEOGGEECK.proto\"7\n\013DPEEOGGEECK\022\023\n\013BL" +
-      "CPLGCJEBJ\030\004 \001(\r\022\023\n\013KHJHFLNMNPC\030\010 \001(\rB2\n\031" +
+      "CPLGCJEBJ\030\t \001(\r\022\023\n\013KHJHFLNMNPC\030\004 \001(\rB2\n\031" +
       "emu.grasscutter.net.protoB\025DPEEOGGEECKOu" +
       "terClassb\006proto3"
     };

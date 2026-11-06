@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "WearEquipRspOuterClass";
 
 message WearEquipRsp {
-	uint64 equip_guid = 6;
-	uint64 avatar_guid = 4;
-	int32 retcode = 7;
+	uint64 equip_guid = 5;
+	uint64 avatar_guid = 9;
+	int32 retcode = 6;
 }

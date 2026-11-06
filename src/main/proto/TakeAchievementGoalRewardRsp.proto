@@ -6,7 +6,7 @@ option java_outer_classname = "TakeAchievementGoalRewardRspOuterClass";
 import "ItemParam.proto";
 
 message TakeAchievementGoalRewardRsp {
-	int32 retcode = 3;
-	repeated uint32 id_list = 6;
-	repeated ItemParam item_list = 12;
+	int32 retcode = 10;
+	repeated uint32 id_list = 13;
+	repeated ItemParam item_list = 8;
 }

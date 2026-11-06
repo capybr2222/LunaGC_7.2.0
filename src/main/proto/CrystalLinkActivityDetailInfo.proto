@@ -6,6 +6,6 @@ option java_outer_classname = "CrystalLinkActivityDetailInfoOuterClass";
 import "CrystalLinkLevelInfo.proto";
 
 message CrystalLinkActivityDetailInfo {
-	repeated CrystalLinkLevelInfo level_info_list = 13;
-	uint32 difficulty_id = 7;
+	repeated CrystalLinkLevelInfo level_info_list = 1;
+	uint32 difficulty_id = 2;
 }

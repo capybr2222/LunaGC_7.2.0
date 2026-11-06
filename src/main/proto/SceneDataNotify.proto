@@ -7,9 +7,9 @@ import "MapLayerInfo.proto";
 import "_LimitedRegionInfo.proto";
 
 message SceneDataNotify {
-	repeated string level_config_name_list = 13;
-	_LimitedRegionInfo _limited_region_info = 9;
-	repeated uint32 scene_tag_id_list = 5;
-	MapLayerInfo _map_layer_info = 15;
-	uint32 scene_id = 4;
+	repeated string level_config_name_list = 1;
+	_LimitedRegionInfo _limited_region_info = 6;
+	repeated uint32 scene_tag_id_list = 11;
+	MapLayerInfo _map_layer_info = 3;
+	uint32 scene_id = 7;
 }

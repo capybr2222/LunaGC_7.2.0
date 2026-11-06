@@ -35,6 +35,12 @@ public class AvatarData extends GameResource {
     @Getter
     private long nameTextMapHash;
 
+    @Getter private long prefabPathHash;
+    @Getter private long prefabPathRemoteHash;
+    @Getter private long controllerPathHash;
+    @Getter private long controllerPathRemoteHash;
+    @Getter private long combatConfigHash;
+
     private float hpBase;
     private float attackBase;
     private float defenseBase;

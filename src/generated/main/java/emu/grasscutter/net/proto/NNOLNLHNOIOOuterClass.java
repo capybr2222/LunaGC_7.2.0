@@ -61,13 +61,13 @@ public final class NNOLNLHNOIOOuterClass {
     boolean getGOEKPDMOLKD();
 
     /**
-     * <code>uint32 PBBFBMDGOOH = 50000;</code>
+     * <code>uint32 PBBFBMDGOOH = 6;</code>
      * @return The pBBFBMDGOOH.
      */
     int getPBBFBMDGOOH();
 
     /**
-     * <code>uint32 IKFHIPAAFEF = 50001;</code>
+     * <code>uint32 IKFHIPAAFEF = 8;</code>
      * @return The iKFHIPAAFEF.
      */
     int getIKFHIPAAFEF();
@@ -127,6 +127,16 @@ public final class NNOLNLHNOIOOuterClass {
               dNIBBKLBBJE_ = input.readUInt32();
               break;
             }
+            case 48: {
+
+              pBBFBMDGOOH_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              iKFHIPAAFEF_ = input.readUInt32();
+              break;
+            }
             case 72: {
 
               hCEJBKINEOB_ = input.readBool();
@@ -150,16 +160,6 @@ public final class NNOLNLHNOIOOuterClass {
             case 104: {
 
               gOEKPDMOLKD_ = input.readBool();
-              break;
-            }
-            case 400000: {
-
-              pBBFBMDGOOH_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              iKFHIPAAFEF_ = input.readUInt32();
               break;
             }
             default: {
@@ -271,10 +271,10 @@ public final class NNOLNLHNOIOOuterClass {
       return gOEKPDMOLKD_;
     }
 
-    public static final int PBBFBMDGOOH_FIELD_NUMBER = 50000;
+    public static final int PBBFBMDGOOH_FIELD_NUMBER = 6;
     private int pBBFBMDGOOH_;
     /**
-     * <code>uint32 PBBFBMDGOOH = 50000;</code>
+     * <code>uint32 PBBFBMDGOOH = 6;</code>
      * @return The pBBFBMDGOOH.
      */
     @java.lang.Override
@@ -282,10 +282,10 @@ public final class NNOLNLHNOIOOuterClass {
       return pBBFBMDGOOH_;
     }
 
-    public static final int IKFHIPAAFEF_FIELD_NUMBER = 50001;
+    public static final int IKFHIPAAFEF_FIELD_NUMBER = 8;
     private int iKFHIPAAFEF_;
     /**
-     * <code>uint32 IKFHIPAAFEF = 50001;</code>
+     * <code>uint32 IKFHIPAAFEF = 8;</code>
      * @return The iKFHIPAAFEF.
      */
     @java.lang.Override
@@ -313,6 +313,12 @@ public final class NNOLNLHNOIOOuterClass {
       if (dNIBBKLBBJE_ != 0) {
         output.writeUInt32(4, dNIBBKLBBJE_);
       }
+      if (pBBFBMDGOOH_ != 0) {
+        output.writeUInt32(6, pBBFBMDGOOH_);
+      }
+      if (iKFHIPAAFEF_ != 0) {
+        output.writeUInt32(8, iKFHIPAAFEF_);
+      }
       if (hCEJBKINEOB_ != false) {
         output.writeBool(9, hCEJBKINEOB_);
       }
@@ -327,12 +333,6 @@ public final class NNOLNLHNOIOOuterClass {
       }
       if (gOEKPDMOLKD_ != false) {
         output.writeBool(13, gOEKPDMOLKD_);
-      }
-      if (pBBFBMDGOOH_ != 0) {
-        output.writeUInt32(50000, pBBFBMDGOOH_);
-      }
-      if (iKFHIPAAFEF_ != 0) {
-        output.writeUInt32(50001, iKFHIPAAFEF_);
       }
       unknownFields.writeTo(output);
     }
@@ -350,6 +350,14 @@ public final class NNOLNLHNOIOOuterClass {
       if (dNIBBKLBBJE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, dNIBBKLBBJE_);
+      }
+      if (pBBFBMDGOOH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, pBBFBMDGOOH_);
+      }
+      if (iKFHIPAAFEF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, iKFHIPAAFEF_);
       }
       if (hCEJBKINEOB_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -370,14 +378,6 @@ public final class NNOLNLHNOIOOuterClass {
       if (gOEKPDMOLKD_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(13, gOEKPDMOLKD_);
-      }
-      if (pBBFBMDGOOH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, pBBFBMDGOOH_);
-      }
-      if (iKFHIPAAFEF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, iKFHIPAAFEF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -953,7 +953,7 @@ public final class NNOLNLHNOIOOuterClass {
 
       private int pBBFBMDGOOH_ ;
       /**
-       * <code>uint32 PBBFBMDGOOH = 50000;</code>
+       * <code>uint32 PBBFBMDGOOH = 6;</code>
        * @return The pBBFBMDGOOH.
        */
       @java.lang.Override
@@ -961,7 +961,7 @@ public final class NNOLNLHNOIOOuterClass {
         return pBBFBMDGOOH_;
       }
       /**
-       * <code>uint32 PBBFBMDGOOH = 50000;</code>
+       * <code>uint32 PBBFBMDGOOH = 6;</code>
        * @param value The pBBFBMDGOOH to set.
        * @return This builder for chaining.
        */
@@ -972,7 +972,7 @@ public final class NNOLNLHNOIOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 PBBFBMDGOOH = 50000;</code>
+       * <code>uint32 PBBFBMDGOOH = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearPBBFBMDGOOH() {
@@ -984,7 +984,7 @@ public final class NNOLNLHNOIOOuterClass {
 
       private int iKFHIPAAFEF_ ;
       /**
-       * <code>uint32 IKFHIPAAFEF = 50001;</code>
+       * <code>uint32 IKFHIPAAFEF = 8;</code>
        * @return The iKFHIPAAFEF.
        */
       @java.lang.Override
@@ -992,7 +992,7 @@ public final class NNOLNLHNOIOOuterClass {
         return iKFHIPAAFEF_;
       }
       /**
-       * <code>uint32 IKFHIPAAFEF = 50001;</code>
+       * <code>uint32 IKFHIPAAFEF = 8;</code>
        * @param value The iKFHIPAAFEF to set.
        * @return This builder for chaining.
        */
@@ -1003,7 +1003,7 @@ public final class NNOLNLHNOIOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 IKFHIPAAFEF = 50001;</code>
+       * <code>uint32 IKFHIPAAFEF = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIKFHIPAAFEF() {
@@ -1079,13 +1079,13 @@ public final class NNOLNLHNOIOOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021NNOLNLHNOIO.proto\"\271\001\n\013NNOLNLHNOIO\022\023\n\013H" +
+      "\n\021NNOLNLHNOIO.proto\"\265\001\n\013NNOLNLHNOIO\022\023\n\013H" +
       "CEJBKINEOB\030\t \001(\010\022\r\n\005count\030\001 \001(\r\022\023\n\013DNIBB" +
       "KLBBJE\030\004 \001(\r\022\014\n\004rank\030\n \001(\r\022\023\n\013is_unlocke" +
       "d\030\014 \001(\010\022\013\n\003exp\030\013 \001(\r\022\023\n\013GOEKPDMOLKD\030\r \001(" +
-      "\010\022\025\n\013PBBFBMDGOOH\030\320\206\003 \001(\r\022\025\n\013IKFHIPAAFEF\030" +
-      "\321\206\003 \001(\rB2\n\031emu.grasscutter.net.protoB\025NN" +
-      "OLNLHNOIOOuterClassb\006proto3"
+      "\010\022\023\n\013PBBFBMDGOOH\030\006 \001(\r\022\023\n\013IKFHIPAAFEF\030\010 " +
+      "\001(\rB2\n\031emu.grasscutter.net.protoB\025NNOLNL" +
+      "HNOIOOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

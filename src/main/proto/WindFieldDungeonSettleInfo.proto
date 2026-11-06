@@ -6,7 +6,7 @@ option java_outer_classname = "WindFieldDungeonSettleInfoOuterClass";
 import "WindFieldDungeonFailReason.proto";
 
 message WindFieldDungeonSettleInfo {
-	repeated uint32 LFGENDKAIFE = 50000;
-	repeated uint32 NBCOMIAPKMP = 50001;
-	WindFieldDungeonFailReason fail_reason = 7;
+	repeated uint32 LFGENDKAIFE = 20000;
+	repeated uint32 NBCOMIAPKMP = 20001;
+	WindFieldDungeonFailReason fail_reason = 3;
 }

@@ -23,7 +23,7 @@ message OEHOLOIDPEF {
 	}
 	uint32 guid = 15;
 	uint32 level = 9;
-	uint32 JCACGOEHBOA = 50000;
-	uint32 NNPEIMCDGIP = 50001;
+	uint32 JCACGOEHBOA = 5;
+	uint32 NNPEIMCDGIP = 6;
 	uint32 buff_id = 11;
 }

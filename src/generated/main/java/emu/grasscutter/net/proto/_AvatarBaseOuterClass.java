@@ -31,36 +31,36 @@ public final class _AvatarBaseOuterClass {
     boolean getKAJLCAPNCFA();
 
     /**
-     * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+     * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
      * @return The enum numeric value on the wire for iDLLCHKCKLM.
      */
     int getIDLLCHKCKLMValue();
     /**
-     * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+     * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
      * @return The iDLLCHKCKLM.
      */
     emu.grasscutter.net.proto.JEOKDCIGCFPOuterClass.JEOKDCIGCFP getIDLLCHKCKLM();
 
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB> 
         getIOFBONMICEBList();
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB getIOFBONMICEB(int index);
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     int getIOFBONMICEBCount();
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEBOrBuilder> 
         getIOFBONMICEBOrBuilderList();
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEBOrBuilder getIOFBONMICEBOrBuilder(
         int index);
@@ -123,19 +123,19 @@ public final class _AvatarBaseOuterClass {
               kAJLCAPNCFA_ = input.readBool();
               break;
             }
-            case 24: {
-              int rawValue = input.readEnum();
-
-              iDLLCHKCKLM_ = rawValue;
-              break;
-            }
-            case 34: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 iOFBONMICEB_ = new java.util.ArrayList<emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB>();
                 mutable_bitField0_ |= 0x00000001;
               }
               iOFBONMICEB_.add(
                   input.readMessage(emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.parser(), extensionRegistry));
+              break;
+            }
+            case 160008: {
+              int rawValue = input.readEnum();
+
+              iDLLCHKCKLM_ = rawValue;
               break;
             }
             default: {
@@ -195,17 +195,17 @@ public final class _AvatarBaseOuterClass {
       return kAJLCAPNCFA_;
     }
 
-    public static final int IDLLCHKCKLM_FIELD_NUMBER = 3;
+    public static final int IDLLCHKCKLM_FIELD_NUMBER = 20001;
     private int iDLLCHKCKLM_;
     /**
-     * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+     * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
      * @return The enum numeric value on the wire for iDLLCHKCKLM.
      */
     @java.lang.Override public int getIDLLCHKCKLMValue() {
       return iDLLCHKCKLM_;
     }
     /**
-     * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+     * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
      * @return The iDLLCHKCKLM.
      */
     @java.lang.Override public emu.grasscutter.net.proto.JEOKDCIGCFPOuterClass.JEOKDCIGCFP getIDLLCHKCKLM() {
@@ -214,17 +214,17 @@ public final class _AvatarBaseOuterClass {
       return result == null ? emu.grasscutter.net.proto.JEOKDCIGCFPOuterClass.JEOKDCIGCFP.UNRECOGNIZED : result;
     }
 
-    public static final int IOFBONMICEB_FIELD_NUMBER = 4;
+    public static final int IOFBONMICEB_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB> iOFBONMICEB_;
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB> getIOFBONMICEBList() {
       return iOFBONMICEB_;
     }
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEBOrBuilder> 
@@ -232,21 +232,21 @@ public final class _AvatarBaseOuterClass {
       return iOFBONMICEB_;
     }
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     @java.lang.Override
     public int getIOFBONMICEBCount() {
       return iOFBONMICEB_.size();
     }
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB getIOFBONMICEB(int index) {
       return iOFBONMICEB_.get(index);
     }
     /**
-     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+     * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEBOrBuilder getIOFBONMICEBOrBuilder(
@@ -274,11 +274,11 @@ public final class _AvatarBaseOuterClass {
       if (kAJLCAPNCFA_ != false) {
         output.writeBool(2, kAJLCAPNCFA_);
       }
-      if (iDLLCHKCKLM_ != emu.grasscutter.net.proto.JEOKDCIGCFPOuterClass.JEOKDCIGCFP.JEOKDCIGCFP_BEYOND_ENUM_NONE.getNumber()) {
-        output.writeEnum(3, iDLLCHKCKLM_);
-      }
       for (int i = 0; i < iOFBONMICEB_.size(); i++) {
-        output.writeMessage(4, iOFBONMICEB_.get(i));
+        output.writeMessage(20000, iOFBONMICEB_.get(i));
+      }
+      if (iDLLCHKCKLM_ != emu.grasscutter.net.proto.JEOKDCIGCFPOuterClass.JEOKDCIGCFP.JEOKDCIGCFP_BEYOND_ENUM_NONE.getNumber()) {
+        output.writeEnum(20001, iDLLCHKCKLM_);
       }
       unknownFields.writeTo(output);
     }
@@ -297,13 +297,13 @@ public final class _AvatarBaseOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, kAJLCAPNCFA_);
       }
-      if (iDLLCHKCKLM_ != emu.grasscutter.net.proto.JEOKDCIGCFPOuterClass.JEOKDCIGCFP.JEOKDCIGCFP_BEYOND_ENUM_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, iDLLCHKCKLM_);
-      }
       for (int i = 0; i < iOFBONMICEB_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, iOFBONMICEB_.get(i));
+          .computeMessageSize(20000, iOFBONMICEB_.get(i));
+      }
+      if (iDLLCHKCKLM_ != emu.grasscutter.net.proto.JEOKDCIGCFPOuterClass.JEOKDCIGCFP.JEOKDCIGCFP_BEYOND_ENUM_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(20001, iDLLCHKCKLM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -711,14 +711,14 @@ public final class _AvatarBaseOuterClass {
 
       private int iDLLCHKCKLM_ = 0;
       /**
-       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
        * @return The enum numeric value on the wire for iDLLCHKCKLM.
        */
       @java.lang.Override public int getIDLLCHKCKLMValue() {
         return iDLLCHKCKLM_;
       }
       /**
-       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
        * @param value The enum numeric value on the wire for iDLLCHKCKLM to set.
        * @return This builder for chaining.
        */
@@ -729,7 +729,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
        * @return The iDLLCHKCKLM.
        */
       @java.lang.Override
@@ -739,7 +739,7 @@ public final class _AvatarBaseOuterClass {
         return result == null ? emu.grasscutter.net.proto.JEOKDCIGCFPOuterClass.JEOKDCIGCFP.UNRECOGNIZED : result;
       }
       /**
-       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
        * @param value The iDLLCHKCKLM to set.
        * @return This builder for chaining.
        */
@@ -753,7 +753,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 3;</code>
+       * <code>.JEOKDCIGCFP IDLLCHKCKLM = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearIDLLCHKCKLM() {
@@ -776,7 +776,7 @@ public final class _AvatarBaseOuterClass {
           emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB, emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.Builder, emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEBOrBuilder> iOFBONMICEBBuilder_;
 
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB> getIOFBONMICEBList() {
         if (iOFBONMICEBBuilder_ == null) {
@@ -786,7 +786,7 @@ public final class _AvatarBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public int getIOFBONMICEBCount() {
         if (iOFBONMICEBBuilder_ == null) {
@@ -796,7 +796,7 @@ public final class _AvatarBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB getIOFBONMICEB(int index) {
         if (iOFBONMICEBBuilder_ == null) {
@@ -806,7 +806,7 @@ public final class _AvatarBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder setIOFBONMICEB(
           int index, emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB value) {
@@ -823,7 +823,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder setIOFBONMICEB(
           int index, emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.Builder builderForValue) {
@@ -837,7 +837,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder addIOFBONMICEB(emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB value) {
         if (iOFBONMICEBBuilder_ == null) {
@@ -853,7 +853,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder addIOFBONMICEB(
           int index, emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB value) {
@@ -870,7 +870,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder addIOFBONMICEB(
           emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.Builder builderForValue) {
@@ -884,7 +884,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder addIOFBONMICEB(
           int index, emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.Builder builderForValue) {
@@ -898,7 +898,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder addAllIOFBONMICEB(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB> values) {
@@ -913,7 +913,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder clearIOFBONMICEB() {
         if (iOFBONMICEBBuilder_ == null) {
@@ -926,7 +926,7 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public Builder removeIOFBONMICEB(int index) {
         if (iOFBONMICEBBuilder_ == null) {
@@ -939,14 +939,14 @@ public final class _AvatarBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.Builder getIOFBONMICEBBuilder(
           int index) {
         return getIOFBONMICEBFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEBOrBuilder getIOFBONMICEBOrBuilder(
           int index) {
@@ -956,7 +956,7 @@ public final class _AvatarBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEBOrBuilder> 
            getIOFBONMICEBOrBuilderList() {
@@ -967,14 +967,14 @@ public final class _AvatarBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.Builder addIOFBONMICEBBuilder() {
         return getIOFBONMICEBFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.getDefaultInstance());
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.Builder addIOFBONMICEBBuilder(
           int index) {
@@ -982,7 +982,7 @@ public final class _AvatarBaseOuterClass {
             index, emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.getDefaultInstance());
       }
       /**
-       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 4;</code>
+       * <code>repeated .EMCDNJLCAEB IOFBONMICEB = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.EMCDNJLCAEBOuterClass.EMCDNJLCAEB.Builder> 
            getIOFBONMICEBBuilderList() {
@@ -1070,12 +1070,12 @@ public final class _AvatarBaseOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021_AvatarBase.proto\032\021EMCDNJLCAEB.proto\032\021" +
-      "JEOKDCIGCFP.proto\"}\n\013_AvatarBase\022\023\n\013EAFG" +
-      "FOJNJMD\030\001 \001(\r\022\023\n\013KAJLCAPNCFA\030\002 \001(\010\022!\n\013ID" +
-      "LLCHKCKLM\030\003 \001(\0162\014.JEOKDCIGCFP\022!\n\013IOFBONM" +
-      "ICEB\030\004 \003(\0132\014.EMCDNJLCAEBB2\n\031emu.grasscut" +
-      "ter.net.protoB\025_AvatarBaseOuterClassb\006pr" +
-      "oto3"
+      "JEOKDCIGCFP.proto\"\201\001\n\013_AvatarBase\022\023\n\013EAF" +
+      "GFOJNJMD\030\001 \001(\r\022\023\n\013KAJLCAPNCFA\030\002 \001(\010\022#\n\013I" +
+      "DLLCHKCKLM\030\241\234\001 \001(\0162\014.JEOKDCIGCFP\022#\n\013IOFB" +
+      "ONMICEB\030\240\234\001 \003(\0132\014.EMCDNJLCAEBB2\n\031emu.gra" +
+      "sscutter.net.protoB\025_AvatarBaseOuterClas" +
+      "sb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

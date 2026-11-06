@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "_RevenueBonusInfoOuterClass";
 
 message _RevenueBonusInfo {
-	uint32 FLCOAFFDMEG = 3;
-	uint32 PBAEBPEGLFB = 50000;
-	uint32 PCBLBGGHLFH = 50001;
+	uint32 FLCOAFFDMEG = 20002;
+	uint32 PBAEBPEGLFB = 20001;
+	uint32 PCBLBGGHLFH = 20000;
 }

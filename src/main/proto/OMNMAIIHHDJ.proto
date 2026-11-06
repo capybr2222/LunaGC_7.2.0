@@ -11,8 +11,8 @@ message OMNMAIIHHDJ {
 	bool FHIOEKBKAJF = 1;
 	uint64 HALOGJLKGLB = 6;
 	repeated FIIHDNCNDHH record_list = 2;
-	uint32 PDDGCIDOLBL = 50000;
-	uint32 IKADJGPFNOI = 50001;
+	uint32 PDDGCIDOLBL = 7;
+	uint32 IKADJGPFNOI = 12;
 	repeated Uint32Pair KEJAEGGMIBJ = 5;
 	repeated Uint32Pair AABFCMMGMKE = 9;
 	bool is_open = 13;

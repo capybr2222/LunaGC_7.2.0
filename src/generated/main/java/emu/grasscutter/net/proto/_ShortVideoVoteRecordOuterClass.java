@@ -19,13 +19,13 @@ public final class _ShortVideoVoteRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 value = 1;</code>
+     * <code>uint32 value = 10;</code>
      * @return The value.
      */
     int getValue();
 
     /**
-     * <code>uint64 key = 7;</code>
+     * <code>uint64 key = 6;</code>
      * @return The key.
      */
     long getKey();
@@ -75,14 +75,14 @@ public final class _ShortVideoVoteRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              value_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 48: {
 
               key_ = input.readUInt64();
+              break;
+            }
+            case 80: {
+
+              value_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class _ShortVideoVoteRecordOuterClass {
               emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.class, emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder.class);
     }
 
-    public static final int VALUE_FIELD_NUMBER = 1;
+    public static final int VALUE_FIELD_NUMBER = 10;
     private int value_;
     /**
-     * <code>uint32 value = 1;</code>
+     * <code>uint32 value = 10;</code>
      * @return The value.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class _ShortVideoVoteRecordOuterClass {
       return value_;
     }
 
-    public static final int KEY_FIELD_NUMBER = 7;
+    public static final int KEY_FIELD_NUMBER = 6;
     private long key_;
     /**
-     * <code>uint64 key = 7;</code>
+     * <code>uint64 key = 6;</code>
      * @return The key.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class _ShortVideoVoteRecordOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (value_ != 0) {
-        output.writeUInt32(1, value_);
-      }
       if (key_ != 0L) {
-        output.writeUInt64(7, key_);
+        output.writeUInt64(6, key_);
+      }
+      if (value_ != 0) {
+        output.writeUInt32(10, value_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class _ShortVideoVoteRecordOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (value_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, value_);
-      }
       if (key_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(7, key_);
+          .computeUInt64Size(6, key_);
+      }
+      if (value_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, value_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class _ShortVideoVoteRecordOuterClass {
 
       private int value_ ;
       /**
-       * <code>uint32 value = 1;</code>
+       * <code>uint32 value = 10;</code>
        * @return The value.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class _ShortVideoVoteRecordOuterClass {
         return value_;
       }
       /**
-       * <code>uint32 value = 1;</code>
+       * <code>uint32 value = 10;</code>
        * @param value The value to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class _ShortVideoVoteRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 value = 1;</code>
+       * <code>uint32 value = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearValue() {
@@ -492,7 +492,7 @@ public final class _ShortVideoVoteRecordOuterClass {
 
       private long key_ ;
       /**
-       * <code>uint64 key = 7;</code>
+       * <code>uint64 key = 6;</code>
        * @return The key.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class _ShortVideoVoteRecordOuterClass {
         return key_;
       }
       /**
-       * <code>uint64 key = 7;</code>
+       * <code>uint64 key = 6;</code>
        * @param value The key to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class _ShortVideoVoteRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint64 key = 7;</code>
+       * <code>uint64 key = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearKey() {
@@ -588,7 +588,7 @@ public final class _ShortVideoVoteRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033_ShortVideoVoteRecord.proto\"3\n\025_ShortV" +
-      "ideoVoteRecord\022\r\n\005value\030\001 \001(\r\022\013\n\003key\030\007 \001" +
+      "ideoVoteRecord\022\r\n\005value\030\n \001(\r\022\013\n\003key\030\006 \001" +
       "(\004B<\n\031emu.grasscutter.net.protoB\037_ShortV" +
       "ideoVoteRecordOuterClassb\006proto3"
     };

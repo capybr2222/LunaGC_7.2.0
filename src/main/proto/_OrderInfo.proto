@@ -6,9 +6,9 @@ option java_outer_classname = "_OrderInfoOuterClass";
 import "FGJFGPAPOHE.proto";
 
 message _OrderInfo {
-	uint32 GCKDBLEMLNM = 2;
-	bool LKIIDNBEBIM = 7;
-	repeated uint32 npc_id_list = 10;
-	FGJFGPAPOHE BHHGGMIGHHL = 5;
-	uint32 id = 14;
+	uint32 GCKDBLEMLNM = 6;
+	bool LKIIDNBEBIM = 8;
+	repeated uint32 npc_id_list = 3;
+	FGJFGPAPOHE BHHGGMIGHHL = 10;
+	uint32 id = 15;
 }

@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "VintageBoothUsedItemDataOuterClass";
 
 message VintageBoothUsedItemData {
-	uint32 gadget_id = 9;
-	bool is_open = 4;
+	uint32 gadget_id = 1;
+	bool is_open = 3;
 }

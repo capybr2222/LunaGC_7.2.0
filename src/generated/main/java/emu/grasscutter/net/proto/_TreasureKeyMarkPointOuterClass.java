@@ -19,17 +19,17 @@ public final class _TreasureKeyMarkPointOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector _mark_pos = 1;</code>
+     * <code>.Vector _mark_pos = 15;</code>
      * @return Whether the markPos field is set.
      */
     boolean hasMarkPos();
     /**
-     * <code>.Vector _mark_pos = 1;</code>
+     * <code>.Vector _mark_pos = 15;</code>
      * @return The markPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getMarkPos();
     /**
-     * <code>.Vector _mark_pos = 1;</code>
+     * <code>.Vector _mark_pos = 15;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMarkPosOrBuilder();
 
@@ -40,31 +40,31 @@ public final class _TreasureKeyMarkPointOuterClass {
     int getMarkSceneId();
 
     /**
-     * <code>uint32 group_id = 4;</code>
+     * <code>uint32 group_id = 9;</code>
      * @return The groupId.
      */
     int getGroupId();
 
     /**
-     * <code>uint32 _mark_map_layer_id = 8;</code>
+     * <code>uint32 _mark_map_layer_id = 12;</code>
      * @return The markMapLayerId.
      */
     int getMarkMapLayerId();
 
     /**
-     * <code>uint32 material_id = 9;</code>
+     * <code>uint32 material_id = 13;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>uint32 config_id = 13;</code>
+     * <code>uint32 config_id = 8;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>bool is_active = 6;</code>
+     * <code>bool is_active = 14;</code>
      * @return The isActive.
      */
     boolean getIsActive();
@@ -114,7 +114,37 @@ public final class _TreasureKeyMarkPointOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 24: {
+
+              MarkSceneId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              configId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              groupId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              MarkMapLayerId_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              materialId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isActive_ = input.readBool();
+              break;
+            }
+            case 122: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (MarkPos_ != null) {
                 subBuilder = MarkPos_.toBuilder();
@@ -125,36 +155,6 @@ public final class _TreasureKeyMarkPointOuterClass {
                 MarkPos_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 24: {
-
-              MarkSceneId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              groupId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              isActive_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              MarkMapLayerId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              materialId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              configId_ = input.readUInt32();
               break;
             }
             default: {
@@ -189,10 +189,10 @@ public final class _TreasureKeyMarkPointOuterClass {
               emu.grasscutter.net.proto._TreasureKeyMarkPointOuterClass._TreasureKeyMarkPoint.class, emu.grasscutter.net.proto._TreasureKeyMarkPointOuterClass._TreasureKeyMarkPoint.Builder.class);
     }
 
-    public static final int _MARK_POS_FIELD_NUMBER = 1;
+    public static final int _MARK_POS_FIELD_NUMBER = 15;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector MarkPos_;
     /**
-     * <code>.Vector _mark_pos = 1;</code>
+     * <code>.Vector _mark_pos = 15;</code>
      * @return Whether the markPos field is set.
      */
     @java.lang.Override
@@ -200,7 +200,7 @@ public final class _TreasureKeyMarkPointOuterClass {
       return MarkPos_ != null;
     }
     /**
-     * <code>.Vector _mark_pos = 1;</code>
+     * <code>.Vector _mark_pos = 15;</code>
      * @return The markPos.
      */
     @java.lang.Override
@@ -208,7 +208,7 @@ public final class _TreasureKeyMarkPointOuterClass {
       return MarkPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : MarkPos_;
     }
     /**
-     * <code>.Vector _mark_pos = 1;</code>
+     * <code>.Vector _mark_pos = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMarkPosOrBuilder() {
@@ -226,10 +226,10 @@ public final class _TreasureKeyMarkPointOuterClass {
       return MarkSceneId_;
     }
 
-    public static final int GROUP_ID_FIELD_NUMBER = 4;
+    public static final int GROUP_ID_FIELD_NUMBER = 9;
     private int groupId_;
     /**
-     * <code>uint32 group_id = 4;</code>
+     * <code>uint32 group_id = 9;</code>
      * @return The groupId.
      */
     @java.lang.Override
@@ -237,10 +237,10 @@ public final class _TreasureKeyMarkPointOuterClass {
       return groupId_;
     }
 
-    public static final int _MARK_MAP_LAYER_ID_FIELD_NUMBER = 8;
+    public static final int _MARK_MAP_LAYER_ID_FIELD_NUMBER = 12;
     private int MarkMapLayerId_;
     /**
-     * <code>uint32 _mark_map_layer_id = 8;</code>
+     * <code>uint32 _mark_map_layer_id = 12;</code>
      * @return The markMapLayerId.
      */
     @java.lang.Override
@@ -248,10 +248,10 @@ public final class _TreasureKeyMarkPointOuterClass {
       return MarkMapLayerId_;
     }
 
-    public static final int MATERIAL_ID_FIELD_NUMBER = 9;
+    public static final int MATERIAL_ID_FIELD_NUMBER = 13;
     private int materialId_;
     /**
-     * <code>uint32 material_id = 9;</code>
+     * <code>uint32 material_id = 13;</code>
      * @return The materialId.
      */
     @java.lang.Override
@@ -259,10 +259,10 @@ public final class _TreasureKeyMarkPointOuterClass {
       return materialId_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 13;
+    public static final int CONFIG_ID_FIELD_NUMBER = 8;
     private int configId_;
     /**
-     * <code>uint32 config_id = 13;</code>
+     * <code>uint32 config_id = 8;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -270,10 +270,10 @@ public final class _TreasureKeyMarkPointOuterClass {
       return configId_;
     }
 
-    public static final int IS_ACTIVE_FIELD_NUMBER = 6;
+    public static final int IS_ACTIVE_FIELD_NUMBER = 14;
     private boolean isActive_;
     /**
-     * <code>bool is_active = 6;</code>
+     * <code>bool is_active = 14;</code>
      * @return The isActive.
      */
     @java.lang.Override
@@ -295,26 +295,26 @@ public final class _TreasureKeyMarkPointOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (MarkPos_ != null) {
-        output.writeMessage(1, getMarkPos());
-      }
       if (MarkSceneId_ != 0) {
         output.writeUInt32(3, MarkSceneId_);
       }
-      if (groupId_ != 0) {
-        output.writeUInt32(4, groupId_);
+      if (configId_ != 0) {
+        output.writeUInt32(8, configId_);
       }
-      if (isActive_ != false) {
-        output.writeBool(6, isActive_);
+      if (groupId_ != 0) {
+        output.writeUInt32(9, groupId_);
       }
       if (MarkMapLayerId_ != 0) {
-        output.writeUInt32(8, MarkMapLayerId_);
+        output.writeUInt32(12, MarkMapLayerId_);
       }
       if (materialId_ != 0) {
-        output.writeUInt32(9, materialId_);
+        output.writeUInt32(13, materialId_);
       }
-      if (configId_ != 0) {
-        output.writeUInt32(13, configId_);
+      if (isActive_ != false) {
+        output.writeBool(14, isActive_);
+      }
+      if (MarkPos_ != null) {
+        output.writeMessage(15, getMarkPos());
       }
       unknownFields.writeTo(output);
     }
@@ -325,33 +325,33 @@ public final class _TreasureKeyMarkPointOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (MarkPos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getMarkPos());
-      }
       if (MarkSceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, MarkSceneId_);
       }
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, configId_);
+      }
       if (groupId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, groupId_);
-      }
-      if (isActive_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isActive_);
+          .computeUInt32Size(9, groupId_);
       }
       if (MarkMapLayerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, MarkMapLayerId_);
+          .computeUInt32Size(12, MarkMapLayerId_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, materialId_);
+          .computeUInt32Size(13, materialId_);
       }
-      if (configId_ != 0) {
+      if (isActive_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, configId_);
+          .computeBoolSize(14, isActive_);
+      }
+      if (MarkPos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, getMarkPos());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -703,14 +703,14 @@ public final class _TreasureKeyMarkPointOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> MarkPosBuilder_;
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        * @return Whether the markPos field is set.
        */
       public boolean hasMarkPos() {
         return MarkPosBuilder_ != null || MarkPos_ != null;
       }
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        * @return The markPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getMarkPos() {
@@ -721,7 +721,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         }
       }
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        */
       public Builder setMarkPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (MarkPosBuilder_ == null) {
@@ -737,7 +737,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        */
       public Builder setMarkPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -751,7 +751,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        */
       public Builder mergeMarkPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (MarkPosBuilder_ == null) {
@@ -769,7 +769,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        */
       public Builder clearMarkPos() {
         if (MarkPosBuilder_ == null) {
@@ -783,7 +783,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getMarkPosBuilder() {
         
@@ -791,7 +791,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return getMarkPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getMarkPosOrBuilder() {
         if (MarkPosBuilder_ != null) {
@@ -802,7 +802,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         }
       }
       /**
-       * <code>.Vector _mark_pos = 1;</code>
+       * <code>.Vector _mark_pos = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -851,7 +851,7 @@ public final class _TreasureKeyMarkPointOuterClass {
 
       private int groupId_ ;
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 9;</code>
        * @return The groupId.
        */
       @java.lang.Override
@@ -859,7 +859,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return groupId_;
       }
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 9;</code>
        * @param value The groupId to set.
        * @return This builder for chaining.
        */
@@ -870,7 +870,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>uint32 group_id = 4;</code>
+       * <code>uint32 group_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearGroupId() {
@@ -882,7 +882,7 @@ public final class _TreasureKeyMarkPointOuterClass {
 
       private int MarkMapLayerId_ ;
       /**
-       * <code>uint32 _mark_map_layer_id = 8;</code>
+       * <code>uint32 _mark_map_layer_id = 12;</code>
        * @return The markMapLayerId.
        */
       @java.lang.Override
@@ -890,7 +890,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return MarkMapLayerId_;
       }
       /**
-       * <code>uint32 _mark_map_layer_id = 8;</code>
+       * <code>uint32 _mark_map_layer_id = 12;</code>
        * @param value The markMapLayerId to set.
        * @return This builder for chaining.
        */
@@ -901,7 +901,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>uint32 _mark_map_layer_id = 8;</code>
+       * <code>uint32 _mark_map_layer_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearMarkMapLayerId() {
@@ -913,7 +913,7 @@ public final class _TreasureKeyMarkPointOuterClass {
 
       private int materialId_ ;
       /**
-       * <code>uint32 material_id = 9;</code>
+       * <code>uint32 material_id = 13;</code>
        * @return The materialId.
        */
       @java.lang.Override
@@ -921,7 +921,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return materialId_;
       }
       /**
-       * <code>uint32 material_id = 9;</code>
+       * <code>uint32 material_id = 13;</code>
        * @param value The materialId to set.
        * @return This builder for chaining.
        */
@@ -932,7 +932,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>uint32 material_id = 9;</code>
+       * <code>uint32 material_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
@@ -944,7 +944,7 @@ public final class _TreasureKeyMarkPointOuterClass {
 
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 13;</code>
+       * <code>uint32 config_id = 8;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -952,7 +952,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 13;</code>
+       * <code>uint32 config_id = 8;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -963,7 +963,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 13;</code>
+       * <code>uint32 config_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
@@ -975,7 +975,7 @@ public final class _TreasureKeyMarkPointOuterClass {
 
       private boolean isActive_ ;
       /**
-       * <code>bool is_active = 6;</code>
+       * <code>bool is_active = 14;</code>
        * @return The isActive.
        */
       @java.lang.Override
@@ -983,7 +983,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return isActive_;
       }
       /**
-       * <code>bool is_active = 6;</code>
+       * <code>bool is_active = 14;</code>
        * @param value The isActive to set.
        * @return This builder for chaining.
        */
@@ -994,7 +994,7 @@ public final class _TreasureKeyMarkPointOuterClass {
         return this;
       }
       /**
-       * <code>bool is_active = 6;</code>
+       * <code>bool is_active = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsActive() {
@@ -1072,10 +1072,10 @@ public final class _TreasureKeyMarkPointOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033_TreasureKeyMarkPoint.proto\032\014Vector.pr" +
       "oto\"\264\001\n\025_TreasureKeyMarkPoint\022\032\n\t_mark_p" +
-      "os\030\001 \001(\0132\007.Vector\022\026\n\016_mark_scene_id\030\003 \001(" +
-      "\r\022\020\n\010group_id\030\004 \001(\r\022\032\n\022_mark_map_layer_i" +
-      "d\030\010 \001(\r\022\023\n\013material_id\030\t \001(\r\022\021\n\tconfig_i" +
-      "d\030\r \001(\r\022\021\n\tis_active\030\006 \001(\010B<\n\031emu.grassc" +
+      "os\030\017 \001(\0132\007.Vector\022\026\n\016_mark_scene_id\030\003 \001(" +
+      "\r\022\020\n\010group_id\030\t \001(\r\022\032\n\022_mark_map_layer_i" +
+      "d\030\014 \001(\r\022\023\n\013material_id\030\r \001(\r\022\021\n\tconfig_i" +
+      "d\030\010 \001(\r\022\021\n\tis_active\030\016 \001(\010B<\n\031emu.grassc" +
       "utter.net.protoB\037_TreasureKeyMarkPointOu" +
       "terClassb\006proto3"
     };

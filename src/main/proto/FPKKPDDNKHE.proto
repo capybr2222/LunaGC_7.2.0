@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "FPKKPDDNKHEOuterClass";
 
 message FPKKPDDNKHE {
-	uint32 object_id = 6;
-	uint32 finish_time = 1;
+	uint32 object_id = 1;
+	uint32 finish_time = 2;
 }

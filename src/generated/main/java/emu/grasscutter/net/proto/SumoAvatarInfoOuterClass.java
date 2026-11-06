@@ -19,7 +19,7 @@ public final class SumoAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_trial = 9;</code>
+     * <code>bool is_trial = 1;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
@@ -75,14 +75,14 @@ public final class SumoAvatarInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+
+              isTrial_ = input.readBool();
+              break;
+            }
             case 16: {
 
               avatarId_ = input.readUInt64();
-              break;
-            }
-            case 72: {
-
-              isTrial_ = input.readBool();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class SumoAvatarInfoOuterClass {
               emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.class, emu.grasscutter.net.proto.SumoAvatarInfoOuterClass.SumoAvatarInfo.Builder.class);
     }
 
-    public static final int IS_TRIAL_FIELD_NUMBER = 9;
+    public static final int IS_TRIAL_FIELD_NUMBER = 1;
     private boolean isTrial_;
     /**
-     * <code>bool is_trial = 9;</code>
+     * <code>bool is_trial = 1;</code>
      * @return The isTrial.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class SumoAvatarInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (isTrial_ != false) {
+        output.writeBool(1, isTrial_);
+      }
       if (avatarId_ != 0L) {
         output.writeUInt64(2, avatarId_);
-      }
-      if (isTrial_ != false) {
-        output.writeBool(9, isTrial_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class SumoAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (isTrial_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isTrial_);
+      }
       if (avatarId_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(2, avatarId_);
-      }
-      if (isTrial_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isTrial_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -462,7 +462,7 @@ public final class SumoAvatarInfoOuterClass {
 
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 9;</code>
+       * <code>bool is_trial = 1;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -470,7 +470,7 @@ public final class SumoAvatarInfoOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 9;</code>
+       * <code>bool is_trial = 1;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
@@ -481,7 +481,7 @@ public final class SumoAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial = 9;</code>
+       * <code>bool is_trial = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
@@ -589,7 +589,7 @@ public final class SumoAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024SumoAvatarInfo.proto\"5\n\016SumoAvatarInfo" +
-      "\022\020\n\010is_trial\030\t \001(\010\022\021\n\tavatar_id\030\002 \001(\004B5\n" +
+      "\022\020\n\010is_trial\030\001 \001(\010\022\021\n\tavatar_id\030\002 \001(\004B5\n" +
       "\031emu.grasscutter.net.protoB\030SumoAvatarIn" +
       "foOuterClassb\006proto3"
     };

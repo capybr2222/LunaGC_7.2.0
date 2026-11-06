@@ -19,19 +19,19 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 watcher_id = 8;</code>
+     * <code>uint32 watcher_id = 6;</code>
      * @return The watcherId.
      */
     int getWatcherId();
 
     /**
-     * <code>uint32 activity_id = 4;</code>
+     * <code>uint32 activity_id = 13;</code>
      * @return The activityId.
      */
     int getActivityId();
@@ -81,19 +81,19 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 24: {
 
-              activityId_ = input.readUInt32();
+              retcode_ = input.readInt32();
               break;
             }
-            case 64: {
+            case 48: {
 
               watcherId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 104: {
 
-              retcode_ = input.readInt32();
+              activityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
               emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.class, emu.grasscutter.net.proto.ActivityTakeWatcherRewardRspOuterClass.ActivityTakeWatcherRewardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 10;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 10;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int WATCHER_ID_FIELD_NUMBER = 8;
+    public static final int WATCHER_ID_FIELD_NUMBER = 6;
     private int watcherId_;
     /**
-     * <code>uint32 watcher_id = 8;</code>
+     * <code>uint32 watcher_id = 6;</code>
      * @return The watcherId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       return watcherId_;
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 4;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 13;
     private int activityId_;
     /**
-     * <code>uint32 activity_id = 4;</code>
+     * <code>uint32 activity_id = 13;</code>
      * @return The activityId.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (activityId_ != 0) {
-        output.writeUInt32(4, activityId_);
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
       }
       if (watcherId_ != 0) {
-        output.writeUInt32(8, watcherId_);
+        output.writeUInt32(6, watcherId_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+      if (activityId_ != 0) {
+        output.writeUInt32(13, activityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (activityId_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, activityId_);
+          .computeInt32Size(3, retcode_);
       }
       if (watcherId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, watcherId_);
+          .computeUInt32Size(6, watcherId_);
       }
-      if (retcode_ != 0) {
+      if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeUInt32Size(13, activityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -499,7 +499,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 10;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -530,7 +530,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
 
       private int watcherId_ ;
       /**
-       * <code>uint32 watcher_id = 8;</code>
+       * <code>uint32 watcher_id = 6;</code>
        * @return The watcherId.
        */
       @java.lang.Override
@@ -538,7 +538,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return watcherId_;
       }
       /**
-       * <code>uint32 watcher_id = 8;</code>
+       * <code>uint32 watcher_id = 6;</code>
        * @param value The watcherId to set.
        * @return This builder for chaining.
        */
@@ -549,7 +549,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 watcher_id = 8;</code>
+       * <code>uint32 watcher_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherId() {
@@ -561,7 +561,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
 
       private int activityId_ ;
       /**
-       * <code>uint32 activity_id = 4;</code>
+       * <code>uint32 activity_id = 13;</code>
        * @return The activityId.
        */
       @java.lang.Override
@@ -569,7 +569,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return activityId_;
       }
       /**
-       * <code>uint32 activity_id = 4;</code>
+       * <code>uint32 activity_id = 13;</code>
        * @param value The activityId to set.
        * @return This builder for chaining.
        */
@@ -580,7 +580,7 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_id = 4;</code>
+       * <code>uint32 activity_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityId() {
@@ -658,8 +658,8 @@ public final class ActivityTakeWatcherRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"ActivityTakeWatcherRewardRsp.proto\"X\n\034" +
       "ActivityTakeWatcherRewardRsp\022\017\n\007retcode\030" +
-      "\n \001(\005\022\022\n\nwatcher_id\030\010 \001(\r\022\023\n\013activity_id" +
-      "\030\004 \001(\rBC\n\031emu.grasscutter.net.protoB&Act" +
+      "\003 \001(\005\022\022\n\nwatcher_id\030\006 \001(\r\022\023\n\013activity_id" +
+      "\030\r \001(\rBC\n\031emu.grasscutter.net.protoB&Act" +
       "ivityTakeWatcherRewardRspOuterClassb\006pro" +
       "to3"
     };

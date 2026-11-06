@@ -19,37 +19,37 @@ public final class _EquipStuffOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool MHDOFDCCPLH = 50000;</code>
+     * <code>bool MHDOFDCCPLH = 20002;</code>
      * @return The mHDOFDCCPLH.
      */
     boolean getMHDOFDCCPLH();
 
     /**
-     * <code>bool BEKPAJHIHOJ = 50001;</code>
+     * <code>bool BEKPAJHIHOJ = 20001;</code>
      * @return The bEKPAJHIHOJ.
      */
     boolean getBEKPAJHIHOJ();
 
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB> 
         getIDAKLGDICPCList();
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB getIDAKLGDICPC(int index);
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     int getIDAKLGDICPCCount();
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOBOrBuilder> 
         getIDAKLGDICPCOrBuilderList();
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOBOrBuilder getIDAKLGDICPCOrBuilder(
         int index);
@@ -101,7 +101,7 @@ public final class _EquipStuffOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 iDAKLGDICPC_ = new java.util.ArrayList<emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB>();
                 mutable_bitField0_ |= 0x00000001;
@@ -110,14 +110,14 @@ public final class _EquipStuffOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.parser(), extensionRegistry));
               break;
             }
-            case 400000: {
-
-              mHDOFDCCPLH_ = input.readBool();
-              break;
-            }
-            case 400008: {
+            case 160008: {
 
               bEKPAJHIHOJ_ = input.readBool();
+              break;
+            }
+            case 160016: {
+
+              mHDOFDCCPLH_ = input.readBool();
               break;
             }
             default: {
@@ -155,10 +155,10 @@ public final class _EquipStuffOuterClass {
               emu.grasscutter.net.proto._EquipStuffOuterClass._EquipStuff.class, emu.grasscutter.net.proto._EquipStuffOuterClass._EquipStuff.Builder.class);
     }
 
-    public static final int MHDOFDCCPLH_FIELD_NUMBER = 50000;
+    public static final int MHDOFDCCPLH_FIELD_NUMBER = 20002;
     private boolean mHDOFDCCPLH_;
     /**
-     * <code>bool MHDOFDCCPLH = 50000;</code>
+     * <code>bool MHDOFDCCPLH = 20002;</code>
      * @return The mHDOFDCCPLH.
      */
     @java.lang.Override
@@ -166,10 +166,10 @@ public final class _EquipStuffOuterClass {
       return mHDOFDCCPLH_;
     }
 
-    public static final int BEKPAJHIHOJ_FIELD_NUMBER = 50001;
+    public static final int BEKPAJHIHOJ_FIELD_NUMBER = 20001;
     private boolean bEKPAJHIHOJ_;
     /**
-     * <code>bool BEKPAJHIHOJ = 50001;</code>
+     * <code>bool BEKPAJHIHOJ = 20001;</code>
      * @return The bEKPAJHIHOJ.
      */
     @java.lang.Override
@@ -177,17 +177,17 @@ public final class _EquipStuffOuterClass {
       return bEKPAJHIHOJ_;
     }
 
-    public static final int IDAKLGDICPC_FIELD_NUMBER = 3;
+    public static final int IDAKLGDICPC_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB> iDAKLGDICPC_;
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB> getIDAKLGDICPCList() {
       return iDAKLGDICPC_;
     }
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOBOrBuilder> 
@@ -195,21 +195,21 @@ public final class _EquipStuffOuterClass {
       return iDAKLGDICPC_;
     }
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     @java.lang.Override
     public int getIDAKLGDICPCCount() {
       return iDAKLGDICPC_.size();
     }
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB getIDAKLGDICPC(int index) {
       return iDAKLGDICPC_.get(index);
     }
     /**
-     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+     * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOBOrBuilder getIDAKLGDICPCOrBuilder(
@@ -232,13 +232,13 @@ public final class _EquipStuffOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < iDAKLGDICPC_.size(); i++) {
-        output.writeMessage(3, iDAKLGDICPC_.get(i));
-      }
-      if (mHDOFDCCPLH_ != false) {
-        output.writeBool(50000, mHDOFDCCPLH_);
+        output.writeMessage(20000, iDAKLGDICPC_.get(i));
       }
       if (bEKPAJHIHOJ_ != false) {
-        output.writeBool(50001, bEKPAJHIHOJ_);
+        output.writeBool(20001, bEKPAJHIHOJ_);
+      }
+      if (mHDOFDCCPLH_ != false) {
+        output.writeBool(20002, mHDOFDCCPLH_);
       }
       unknownFields.writeTo(output);
     }
@@ -251,15 +251,15 @@ public final class _EquipStuffOuterClass {
       size = 0;
       for (int i = 0; i < iDAKLGDICPC_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, iDAKLGDICPC_.get(i));
-      }
-      if (mHDOFDCCPLH_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50000, mHDOFDCCPLH_);
+          .computeMessageSize(20000, iDAKLGDICPC_.get(i));
       }
       if (bEKPAJHIHOJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50001, bEKPAJHIHOJ_);
+          .computeBoolSize(20001, bEKPAJHIHOJ_);
+      }
+      if (mHDOFDCCPLH_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(20002, mHDOFDCCPLH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -597,7 +597,7 @@ public final class _EquipStuffOuterClass {
 
       private boolean mHDOFDCCPLH_ ;
       /**
-       * <code>bool MHDOFDCCPLH = 50000;</code>
+       * <code>bool MHDOFDCCPLH = 20002;</code>
        * @return The mHDOFDCCPLH.
        */
       @java.lang.Override
@@ -605,7 +605,7 @@ public final class _EquipStuffOuterClass {
         return mHDOFDCCPLH_;
       }
       /**
-       * <code>bool MHDOFDCCPLH = 50000;</code>
+       * <code>bool MHDOFDCCPLH = 20002;</code>
        * @param value The mHDOFDCCPLH to set.
        * @return This builder for chaining.
        */
@@ -616,7 +616,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>bool MHDOFDCCPLH = 50000;</code>
+       * <code>bool MHDOFDCCPLH = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearMHDOFDCCPLH() {
@@ -628,7 +628,7 @@ public final class _EquipStuffOuterClass {
 
       private boolean bEKPAJHIHOJ_ ;
       /**
-       * <code>bool BEKPAJHIHOJ = 50001;</code>
+       * <code>bool BEKPAJHIHOJ = 20001;</code>
        * @return The bEKPAJHIHOJ.
        */
       @java.lang.Override
@@ -636,7 +636,7 @@ public final class _EquipStuffOuterClass {
         return bEKPAJHIHOJ_;
       }
       /**
-       * <code>bool BEKPAJHIHOJ = 50001;</code>
+       * <code>bool BEKPAJHIHOJ = 20001;</code>
        * @param value The bEKPAJHIHOJ to set.
        * @return This builder for chaining.
        */
@@ -647,7 +647,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>bool BEKPAJHIHOJ = 50001;</code>
+       * <code>bool BEKPAJHIHOJ = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearBEKPAJHIHOJ() {
@@ -670,7 +670,7 @@ public final class _EquipStuffOuterClass {
           emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB, emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.Builder, emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOBOrBuilder> iDAKLGDICPCBuilder_;
 
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB> getIDAKLGDICPCList() {
         if (iDAKLGDICPCBuilder_ == null) {
@@ -680,7 +680,7 @@ public final class _EquipStuffOuterClass {
         }
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public int getIDAKLGDICPCCount() {
         if (iDAKLGDICPCBuilder_ == null) {
@@ -690,7 +690,7 @@ public final class _EquipStuffOuterClass {
         }
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB getIDAKLGDICPC(int index) {
         if (iDAKLGDICPCBuilder_ == null) {
@@ -700,7 +700,7 @@ public final class _EquipStuffOuterClass {
         }
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder setIDAKLGDICPC(
           int index, emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB value) {
@@ -717,7 +717,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder setIDAKLGDICPC(
           int index, emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.Builder builderForValue) {
@@ -731,7 +731,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder addIDAKLGDICPC(emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB value) {
         if (iDAKLGDICPCBuilder_ == null) {
@@ -747,7 +747,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder addIDAKLGDICPC(
           int index, emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB value) {
@@ -764,7 +764,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder addIDAKLGDICPC(
           emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.Builder builderForValue) {
@@ -778,7 +778,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder addIDAKLGDICPC(
           int index, emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.Builder builderForValue) {
@@ -792,7 +792,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder addAllIDAKLGDICPC(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB> values) {
@@ -807,7 +807,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder clearIDAKLGDICPC() {
         if (iDAKLGDICPCBuilder_ == null) {
@@ -820,7 +820,7 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public Builder removeIDAKLGDICPC(int index) {
         if (iDAKLGDICPCBuilder_ == null) {
@@ -833,14 +833,14 @@ public final class _EquipStuffOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.Builder getIDAKLGDICPCBuilder(
           int index) {
         return getIDAKLGDICPCFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOBOrBuilder getIDAKLGDICPCOrBuilder(
           int index) {
@@ -850,7 +850,7 @@ public final class _EquipStuffOuterClass {
         }
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOBOrBuilder> 
            getIDAKLGDICPCOrBuilderList() {
@@ -861,14 +861,14 @@ public final class _EquipStuffOuterClass {
         }
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.Builder addIDAKLGDICPCBuilder() {
         return getIDAKLGDICPCFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.getDefaultInstance());
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.Builder addIDAKLGDICPCBuilder(
           int index) {
@@ -876,7 +876,7 @@ public final class _EquipStuffOuterClass {
             index, emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.getDefaultInstance());
       }
       /**
-       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 3;</code>
+       * <code>repeated .FPCEOEFHGOB IDAKLGDICPC = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FPCEOEFHGOBOuterClass.FPCEOEFHGOB.Builder> 
            getIDAKLGDICPCBuilderList() {
@@ -963,11 +963,11 @@ public final class _EquipStuffOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021_EquipStuff.proto\032\021FPCEOEFHGOB.proto\"^" +
-      "\n\013_EquipStuff\022\025\n\013MHDOFDCCPLH\030\320\206\003 \001(\010\022\025\n\013" +
-      "BEKPAJHIHOJ\030\321\206\003 \001(\010\022!\n\013IDAKLGDICPC\030\003 \003(\013" +
-      "2\014.FPCEOEFHGOBB2\n\031emu.grasscutter.net.pr" +
-      "otoB\025_EquipStuffOuterClassb\006proto3"
+      "\n\021_EquipStuff.proto\032\021FPCEOEFHGOB.proto\"`" +
+      "\n\013_EquipStuff\022\025\n\013MHDOFDCCPLH\030\242\234\001 \001(\010\022\025\n\013" +
+      "BEKPAJHIHOJ\030\241\234\001 \001(\010\022#\n\013IDAKLGDICPC\030\240\234\001 \003" +
+      "(\0132\014.FPCEOEFHGOBB2\n\031emu.grasscutter.net." +
+      "protoB\025_EquipStuffOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

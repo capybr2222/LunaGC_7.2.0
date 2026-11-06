@@ -6,7 +6,7 @@ option java_outer_classname = "HMNAKLDLGGFOuterClass";
 import "CADPEFKILCP.proto";
 
 message HMNAKLDLGGF {
-	repeated uint32 OPCJALLNAGK = 12;
-	uint32 LLKBGEFIHAL = 13;
-	repeated CADPEFKILCP NNJAEBPGEBD = 14;
+	repeated uint32 OPCJALLNAGK = 10;
+	uint32 LLKBGEFIHAL = 3;
+	repeated CADPEFKILCP NNJAEBPGEBD = 6;
 }

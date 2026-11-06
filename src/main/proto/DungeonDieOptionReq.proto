@@ -6,6 +6,6 @@ option java_outer_classname = "DungeonDieOptionReqOuterClass";
 import "PlayerDieOption.proto";
 
 message DungeonDieOptionReq {
-	PlayerDieOption die_option = 4;
-	bool is_quit_immediately = 15;
+	PlayerDieOption die_option = 12;
+	bool is_quit_immediately = 3;
 }

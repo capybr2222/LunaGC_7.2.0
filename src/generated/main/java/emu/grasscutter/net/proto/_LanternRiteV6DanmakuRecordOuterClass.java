@@ -19,43 +19,43 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 FAMHJPHJKPE = 50000;</code>
+     * <code>uint32 FAMHJPHJKPE = 20002;</code>
      * @return The fAMHJPHJKPE.
      */
     int getFAMHJPHJKPE();
 
     /**
-     * <code>uint32 IJGJCFGFPFE = 50001;</code>
+     * <code>uint32 IJGJCFGFPFE = 20000;</code>
      * @return The iJGJCFGFPFE.
      */
     int getIJGJCFGFPFE();
 
     /**
-     * <code>uint32 BGFHONDHLIF = 50002;</code>
+     * <code>uint32 BGFHONDHLIF = 20001;</code>
      * @return The bGFHONDHLIF.
      */
     int getBGFHONDHLIF();
 
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> 
         getLevelRecordTimeListList();
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getLevelRecordTimeList(int index);
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     int getLevelRecordTimeListCount();
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
         getLevelRecordTimeListOrBuilderList();
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getLevelRecordTimeListOrBuilder(
         int index);
@@ -107,7 +107,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
             case 0:
               done = true;
               break;
-            case 74: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 LevelRecordTimeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
                 mutable_bitField0_ |= 0x00000001;
@@ -116,19 +116,19 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
-            case 400000: {
-
-              fAMHJPHJKPE_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
+            case 160000: {
 
               iJGJCFGFPFE_ = input.readUInt32();
               break;
             }
-            case 400016: {
+            case 160008: {
 
               bGFHONDHLIF_ = input.readUInt32();
+              break;
+            }
+            case 160016: {
+
+              fAMHJPHJKPE_ = input.readUInt32();
               break;
             }
             default: {
@@ -166,10 +166,10 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
               emu.grasscutter.net.proto._LanternRiteV6DanmakuRecordOuterClass._LanternRiteV6DanmakuRecord.class, emu.grasscutter.net.proto._LanternRiteV6DanmakuRecordOuterClass._LanternRiteV6DanmakuRecord.Builder.class);
     }
 
-    public static final int FAMHJPHJKPE_FIELD_NUMBER = 50000;
+    public static final int FAMHJPHJKPE_FIELD_NUMBER = 20002;
     private int fAMHJPHJKPE_;
     /**
-     * <code>uint32 FAMHJPHJKPE = 50000;</code>
+     * <code>uint32 FAMHJPHJKPE = 20002;</code>
      * @return The fAMHJPHJKPE.
      */
     @java.lang.Override
@@ -177,10 +177,10 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
       return fAMHJPHJKPE_;
     }
 
-    public static final int IJGJCFGFPFE_FIELD_NUMBER = 50001;
+    public static final int IJGJCFGFPFE_FIELD_NUMBER = 20000;
     private int iJGJCFGFPFE_;
     /**
-     * <code>uint32 IJGJCFGFPFE = 50001;</code>
+     * <code>uint32 IJGJCFGFPFE = 20000;</code>
      * @return The iJGJCFGFPFE.
      */
     @java.lang.Override
@@ -188,10 +188,10 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
       return iJGJCFGFPFE_;
     }
 
-    public static final int BGFHONDHLIF_FIELD_NUMBER = 50002;
+    public static final int BGFHONDHLIF_FIELD_NUMBER = 20001;
     private int bGFHONDHLIF_;
     /**
-     * <code>uint32 BGFHONDHLIF = 50002;</code>
+     * <code>uint32 BGFHONDHLIF = 20001;</code>
      * @return The bGFHONDHLIF.
      */
     @java.lang.Override
@@ -199,17 +199,17 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
       return bGFHONDHLIF_;
     }
 
-    public static final int _LEVEL_RECORD_TIME_LIST_FIELD_NUMBER = 9;
+    public static final int _LEVEL_RECORD_TIME_LIST_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> LevelRecordTimeList_;
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getLevelRecordTimeListList() {
       return LevelRecordTimeList_;
     }
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
@@ -217,21 +217,21 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
       return LevelRecordTimeList_;
     }
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     @java.lang.Override
     public int getLevelRecordTimeListCount() {
       return LevelRecordTimeList_.size();
     }
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getLevelRecordTimeList(int index) {
       return LevelRecordTimeList_.get(index);
     }
     /**
-     * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+     * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getLevelRecordTimeListOrBuilder(
@@ -254,16 +254,16 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < LevelRecordTimeList_.size(); i++) {
-        output.writeMessage(9, LevelRecordTimeList_.get(i));
-      }
-      if (fAMHJPHJKPE_ != 0) {
-        output.writeUInt32(50000, fAMHJPHJKPE_);
+        output.writeMessage(1, LevelRecordTimeList_.get(i));
       }
       if (iJGJCFGFPFE_ != 0) {
-        output.writeUInt32(50001, iJGJCFGFPFE_);
+        output.writeUInt32(20000, iJGJCFGFPFE_);
       }
       if (bGFHONDHLIF_ != 0) {
-        output.writeUInt32(50002, bGFHONDHLIF_);
+        output.writeUInt32(20001, bGFHONDHLIF_);
+      }
+      if (fAMHJPHJKPE_ != 0) {
+        output.writeUInt32(20002, fAMHJPHJKPE_);
       }
       unknownFields.writeTo(output);
     }
@@ -276,19 +276,19 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
       size = 0;
       for (int i = 0; i < LevelRecordTimeList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, LevelRecordTimeList_.get(i));
-      }
-      if (fAMHJPHJKPE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, fAMHJPHJKPE_);
+          .computeMessageSize(1, LevelRecordTimeList_.get(i));
       }
       if (iJGJCFGFPFE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, iJGJCFGFPFE_);
+          .computeUInt32Size(20000, iJGJCFGFPFE_);
       }
       if (bGFHONDHLIF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50002, bGFHONDHLIF_);
+          .computeUInt32Size(20001, bGFHONDHLIF_);
+      }
+      if (fAMHJPHJKPE_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20002, fAMHJPHJKPE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -634,7 +634,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
 
       private int fAMHJPHJKPE_ ;
       /**
-       * <code>uint32 FAMHJPHJKPE = 50000;</code>
+       * <code>uint32 FAMHJPHJKPE = 20002;</code>
        * @return The fAMHJPHJKPE.
        */
       @java.lang.Override
@@ -642,7 +642,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return fAMHJPHJKPE_;
       }
       /**
-       * <code>uint32 FAMHJPHJKPE = 50000;</code>
+       * <code>uint32 FAMHJPHJKPE = 20002;</code>
        * @param value The fAMHJPHJKPE to set.
        * @return This builder for chaining.
        */
@@ -653,7 +653,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 FAMHJPHJKPE = 50000;</code>
+       * <code>uint32 FAMHJPHJKPE = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearFAMHJPHJKPE() {
@@ -665,7 +665,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
 
       private int iJGJCFGFPFE_ ;
       /**
-       * <code>uint32 IJGJCFGFPFE = 50001;</code>
+       * <code>uint32 IJGJCFGFPFE = 20000;</code>
        * @return The iJGJCFGFPFE.
        */
       @java.lang.Override
@@ -673,7 +673,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return iJGJCFGFPFE_;
       }
       /**
-       * <code>uint32 IJGJCFGFPFE = 50001;</code>
+       * <code>uint32 IJGJCFGFPFE = 20000;</code>
        * @param value The iJGJCFGFPFE to set.
        * @return This builder for chaining.
        */
@@ -684,7 +684,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 IJGJCFGFPFE = 50001;</code>
+       * <code>uint32 IJGJCFGFPFE = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearIJGJCFGFPFE() {
@@ -696,7 +696,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
 
       private int bGFHONDHLIF_ ;
       /**
-       * <code>uint32 BGFHONDHLIF = 50002;</code>
+       * <code>uint32 BGFHONDHLIF = 20001;</code>
        * @return The bGFHONDHLIF.
        */
       @java.lang.Override
@@ -704,7 +704,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return bGFHONDHLIF_;
       }
       /**
-       * <code>uint32 BGFHONDHLIF = 50002;</code>
+       * <code>uint32 BGFHONDHLIF = 20001;</code>
        * @param value The bGFHONDHLIF to set.
        * @return This builder for chaining.
        */
@@ -715,7 +715,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BGFHONDHLIF = 50002;</code>
+       * <code>uint32 BGFHONDHLIF = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearBGFHONDHLIF() {
@@ -738,7 +738,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> LevelRecordTimeListBuilder_;
 
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> getLevelRecordTimeListList() {
         if (LevelRecordTimeListBuilder_ == null) {
@@ -748,7 +748,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public int getLevelRecordTimeListCount() {
         if (LevelRecordTimeListBuilder_ == null) {
@@ -758,7 +758,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair getLevelRecordTimeList(int index) {
         if (LevelRecordTimeListBuilder_ == null) {
@@ -768,7 +768,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder setLevelRecordTimeList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -785,7 +785,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder setLevelRecordTimeList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -799,7 +799,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder addLevelRecordTimeList(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
         if (LevelRecordTimeListBuilder_ == null) {
@@ -815,7 +815,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder addLevelRecordTimeList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair value) {
@@ -832,7 +832,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder addLevelRecordTimeList(
           emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -846,7 +846,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder addLevelRecordTimeList(
           int index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder builderForValue) {
@@ -860,7 +860,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder addAllLevelRecordTimeList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair> values) {
@@ -875,7 +875,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder clearLevelRecordTimeList() {
         if (LevelRecordTimeListBuilder_ == null) {
@@ -888,7 +888,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public Builder removeLevelRecordTimeList(int index) {
         if (LevelRecordTimeListBuilder_ == null) {
@@ -901,14 +901,14 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         return this;
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder getLevelRecordTimeListBuilder(
           int index) {
         return getLevelRecordTimeListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder getLevelRecordTimeListOrBuilder(
           int index) {
@@ -918,7 +918,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32PairOrBuilder> 
            getLevelRecordTimeListOrBuilderList() {
@@ -929,14 +929,14 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
         }
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addLevelRecordTimeListBuilder() {
         return getLevelRecordTimeListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder addLevelRecordTimeListBuilder(
           int index) {
@@ -944,7 +944,7 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
             index, emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.getDefaultInstance());
       }
       /**
-       * <code>repeated .Uint32Pair _level_record_time_list = 9;</code>
+       * <code>repeated .Uint32Pair _level_record_time_list = 1;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.Builder> 
            getLevelRecordTimeListBuilderList() {
@@ -1033,9 +1033,9 @@ public final class _LanternRiteV6DanmakuRecordOuterClass {
     java.lang.String[] descriptorData = {
       "\n!_LanternRiteV6DanmakuRecord.proto\032\020Uin" +
       "t32Pair.proto\"\220\001\n\033_LanternRiteV6DanmakuR" +
-      "ecord\022\025\n\013FAMHJPHJKPE\030\320\206\003 \001(\r\022\025\n\013IJGJCFGF" +
-      "PFE\030\321\206\003 \001(\r\022\025\n\013BGFHONDHLIF\030\322\206\003 \001(\r\022,\n\027_l" +
-      "evel_record_time_list\030\t \003(\0132\013.Uint32Pair" +
+      "ecord\022\025\n\013FAMHJPHJKPE\030\242\234\001 \001(\r\022\025\n\013IJGJCFGF" +
+      "PFE\030\240\234\001 \001(\r\022\025\n\013BGFHONDHLIF\030\241\234\001 \001(\r\022,\n\027_l" +
+      "evel_record_time_list\030\001 \003(\0132\013.Uint32Pair" +
       "BB\n\031emu.grasscutter.net.protoB%_LanternR" +
       "iteV6DanmakuRecordOuterClassb\006proto3"
     };

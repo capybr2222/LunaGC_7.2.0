@@ -19,7 +19,7 @@ public final class MGJIPEKJMGFOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 CNEAOHFFOJE = 50000;</code>
+     * <code>uint32 CNEAOHFFOJE = 13;</code>
      * @return The cNEAOHFFOJE.
      */
     int getCNEAOHFFOJE();
@@ -31,7 +31,7 @@ public final class MGJIPEKJMGFOuterClass {
     int getLICONHNCIPB();
 
     /**
-     * <code>uint32 IJHHNNPPAFM = 50001;</code>
+     * <code>uint32 IJHHNNPPAFM = 9;</code>
      * @return The iJHHNNPPAFM.
      */
     int getIJHHNNPPAFM();
@@ -81,19 +81,19 @@ public final class MGJIPEKJMGFOuterClass {
             case 0:
               done = true;
               break;
+            case 72: {
+
+              iJHHNNPPAFM_ = input.readUInt32();
+              break;
+            }
             case 96: {
 
               lICONHNCIPB_ = input.readUInt32();
               break;
             }
-            case 400000: {
+            case 104: {
 
               cNEAOHFFOJE_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              iJHHNNPPAFM_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class MGJIPEKJMGFOuterClass {
               emu.grasscutter.net.proto.MGJIPEKJMGFOuterClass.MGJIPEKJMGF.class, emu.grasscutter.net.proto.MGJIPEKJMGFOuterClass.MGJIPEKJMGF.Builder.class);
     }
 
-    public static final int CNEAOHFFOJE_FIELD_NUMBER = 50000;
+    public static final int CNEAOHFFOJE_FIELD_NUMBER = 13;
     private int cNEAOHFFOJE_;
     /**
-     * <code>uint32 CNEAOHFFOJE = 50000;</code>
+     * <code>uint32 CNEAOHFFOJE = 13;</code>
      * @return The cNEAOHFFOJE.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class MGJIPEKJMGFOuterClass {
       return lICONHNCIPB_;
     }
 
-    public static final int IJHHNNPPAFM_FIELD_NUMBER = 50001;
+    public static final int IJHHNNPPAFM_FIELD_NUMBER = 9;
     private int iJHHNNPPAFM_;
     /**
-     * <code>uint32 IJHHNNPPAFM = 50001;</code>
+     * <code>uint32 IJHHNNPPAFM = 9;</code>
      * @return The iJHHNNPPAFM.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class MGJIPEKJMGFOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (iJHHNNPPAFM_ != 0) {
+        output.writeUInt32(9, iJHHNNPPAFM_);
+      }
       if (lICONHNCIPB_ != 0) {
         output.writeUInt32(12, lICONHNCIPB_);
       }
       if (cNEAOHFFOJE_ != 0) {
-        output.writeUInt32(50000, cNEAOHFFOJE_);
-      }
-      if (iJHHNNPPAFM_ != 0) {
-        output.writeUInt32(50001, iJHHNNPPAFM_);
+        output.writeUInt32(13, cNEAOHFFOJE_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class MGJIPEKJMGFOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (iJHHNNPPAFM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, iJHHNNPPAFM_);
+      }
       if (lICONHNCIPB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, lICONHNCIPB_);
       }
       if (cNEAOHFFOJE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, cNEAOHFFOJE_);
-      }
-      if (iJHHNNPPAFM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, iJHHNNPPAFM_);
+          .computeUInt32Size(13, cNEAOHFFOJE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -499,7 +499,7 @@ public final class MGJIPEKJMGFOuterClass {
 
       private int cNEAOHFFOJE_ ;
       /**
-       * <code>uint32 CNEAOHFFOJE = 50000;</code>
+       * <code>uint32 CNEAOHFFOJE = 13;</code>
        * @return The cNEAOHFFOJE.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class MGJIPEKJMGFOuterClass {
         return cNEAOHFFOJE_;
       }
       /**
-       * <code>uint32 CNEAOHFFOJE = 50000;</code>
+       * <code>uint32 CNEAOHFFOJE = 13;</code>
        * @param value The cNEAOHFFOJE to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class MGJIPEKJMGFOuterClass {
         return this;
       }
       /**
-       * <code>uint32 CNEAOHFFOJE = 50000;</code>
+       * <code>uint32 CNEAOHFFOJE = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearCNEAOHFFOJE() {
@@ -561,7 +561,7 @@ public final class MGJIPEKJMGFOuterClass {
 
       private int iJHHNNPPAFM_ ;
       /**
-       * <code>uint32 IJHHNNPPAFM = 50001;</code>
+       * <code>uint32 IJHHNNPPAFM = 9;</code>
        * @return The iJHHNNPPAFM.
        */
       @java.lang.Override
@@ -569,7 +569,7 @@ public final class MGJIPEKJMGFOuterClass {
         return iJHHNNPPAFM_;
       }
       /**
-       * <code>uint32 IJHHNNPPAFM = 50001;</code>
+       * <code>uint32 IJHHNNPPAFM = 9;</code>
        * @param value The iJHHNNPPAFM to set.
        * @return This builder for chaining.
        */
@@ -580,7 +580,7 @@ public final class MGJIPEKJMGFOuterClass {
         return this;
       }
       /**
-       * <code>uint32 IJHHNNPPAFM = 50001;</code>
+       * <code>uint32 IJHHNNPPAFM = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIJHHNNPPAFM() {
@@ -656,11 +656,10 @@ public final class MGJIPEKJMGFOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MGJIPEKJMGF.proto\"P\n\013MGJIPEKJMGF\022\025\n\013CN" +
-      "EAOHFFOJE\030\320\206\003 \001(\r\022\023\n\013LICONHNCIPB\030\014 \001(\r\022\025" +
-      "\n\013IJHHNNPPAFM\030\321\206\003 \001(\rB2\n\031emu.grasscutter" +
-      ".net.protoB\025MGJIPEKJMGFOuterClassb\006proto" +
-      "3"
+      "\n\021MGJIPEKJMGF.proto\"L\n\013MGJIPEKJMGF\022\023\n\013CN" +
+      "EAOHFFOJE\030\r \001(\r\022\023\n\013LICONHNCIPB\030\014 \001(\r\022\023\n\013" +
+      "IJHHNNPPAFM\030\t \001(\rB2\n\031emu.grasscutter.net" +
+      ".protoB\025MGJIPEKJMGFOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

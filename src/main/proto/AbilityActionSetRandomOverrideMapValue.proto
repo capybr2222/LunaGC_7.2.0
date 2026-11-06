@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "AbilityActionSetRandomOverrideMapValueOuterClass";
 
 message AbilityActionSetRandomOverrideMapValue {
-	float random_value = 4;
+	float random_value = 1;
 }

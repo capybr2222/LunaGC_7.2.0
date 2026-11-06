@@ -14,28 +14,27 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class PacketWindSeedClientNotify extends BasePacket {
+    private static final int PAYLOAD_FIELD =
+            emu.grasscutter.net.proto.WindSeedType1NotifyOuterClass.WindSeedType1Notify.getDescriptor()
+                    .findFieldByName("_payload")
+                    .getNumber();
+
     static int cmdId() {
         int configured = Configuration.GAME_OPTIONS.watermark.cmdId;
         return configured > 0 ? configured : PacketOpcodes.WindSeedType1Notify;
     }
-
-    private static final int DEFAULT_PAYLOAD_FIELD =
-            emu.grasscutter.net.proto.WindSeedType1NotifyOuterClass.WindSeedType1Notify.getDescriptor()
-                    .findFieldByName("_payload")
-                    .getNumber();
 
     public static boolean disabled() {
         return Configuration.GAME_OPTIONS.watermark.cmdId < 0;
     }
 
     static byte[] encode(byte[] luac) {
-        return encode(luac, Configuration.GAME_OPTIONS.watermark.payloadField);
+        int field = Configuration.GAME_OPTIONS.watermark.payloadField;
+        return encode(luac, field > 0 ? field : PAYLOAD_FIELD);
     }
 
-    private static final int AREA_NOTIFY_FIELD = 1;
-
     static byte[] encode(byte[] luac, int field) {
-        if (field <= 0) field = DEFAULT_PAYLOAD_FIELD;
+        if (field <= 0) field = PAYLOAD_FIELD;
 
         var bos = new ByteArrayOutputStream();
         var out = CodedOutputStream.newInstance(bos);

@@ -19,43 +19,43 @@ public final class HKGHMIFOALHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA> 
         getLHFPBEBAGKGList();
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA getLHFPBEBAGKG(int index);
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     int getLHFPBEBAGKGCount();
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPAOrBuilder> 
         getLHFPBEBAGKGOrBuilderList();
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPAOrBuilder getLHFPBEBAGKGOrBuilder(
         int index);
 
     /**
-     * <code>uint32 stage = 6;</code>
+     * <code>uint32 stage = 2;</code>
      * @return The stage.
      */
     int getStage();
 
     /**
-     * <code>uint32 FBAPNDJKIBO = 8;</code>
+     * <code>uint32 FBAPNDJKIBO = 10;</code>
      * @return The fBAPNDJKIBO.
      */
     int getFBAPNDJKIBO();
@@ -109,10 +109,10 @@ public final class HKGHMIFOALHOuterClass {
               break;
             case 16: {
 
-              levelId_ = input.readUInt32();
+              stage_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 lHFPBEBAGKG_ = new java.util.ArrayList<emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA>();
                 mutable_bitField0_ |= 0x00000001;
@@ -121,12 +121,12 @@ public final class HKGHMIFOALHOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.parser(), extensionRegistry));
               break;
             }
-            case 48: {
+            case 56: {
 
-              stage_ = input.readUInt32();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 80: {
 
               fBAPNDJKIBO_ = input.readUInt32();
               break;
@@ -292,10 +292,10 @@ public final class HKGHMIFOALHOuterClass {
       // @@protoc_insertion_point(enum_scope:HKGHMIFOALH.KLEMBLCACPM)
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -303,17 +303,17 @@ public final class HKGHMIFOALHOuterClass {
       return levelId_;
     }
 
-    public static final int LHFPBEBAGKG_FIELD_NUMBER = 5;
+    public static final int LHFPBEBAGKG_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA> lHFPBEBAGKG_;
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA> getLHFPBEBAGKGList() {
       return lHFPBEBAGKG_;
     }
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPAOrBuilder> 
@@ -321,21 +321,21 @@ public final class HKGHMIFOALHOuterClass {
       return lHFPBEBAGKG_;
     }
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     @java.lang.Override
     public int getLHFPBEBAGKGCount() {
       return lHFPBEBAGKG_.size();
     }
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA getLHFPBEBAGKG(int index) {
       return lHFPBEBAGKG_.get(index);
     }
     /**
-     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+     * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPAOrBuilder getLHFPBEBAGKGOrBuilder(
@@ -343,10 +343,10 @@ public final class HKGHMIFOALHOuterClass {
       return lHFPBEBAGKG_.get(index);
     }
 
-    public static final int STAGE_FIELD_NUMBER = 6;
+    public static final int STAGE_FIELD_NUMBER = 2;
     private int stage_;
     /**
-     * <code>uint32 stage = 6;</code>
+     * <code>uint32 stage = 2;</code>
      * @return The stage.
      */
     @java.lang.Override
@@ -354,10 +354,10 @@ public final class HKGHMIFOALHOuterClass {
       return stage_;
     }
 
-    public static final int FBAPNDJKIBO_FIELD_NUMBER = 8;
+    public static final int FBAPNDJKIBO_FIELD_NUMBER = 10;
     private int fBAPNDJKIBO_;
     /**
-     * <code>uint32 FBAPNDJKIBO = 8;</code>
+     * <code>uint32 FBAPNDJKIBO = 10;</code>
      * @return The fBAPNDJKIBO.
      */
     @java.lang.Override
@@ -379,17 +379,17 @@ public final class HKGHMIFOALHOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
+      if (stage_ != 0) {
+        output.writeUInt32(2, stage_);
       }
       for (int i = 0; i < lHFPBEBAGKG_.size(); i++) {
-        output.writeMessage(5, lHFPBEBAGKG_.get(i));
+        output.writeMessage(3, lHFPBEBAGKG_.get(i));
       }
-      if (stage_ != 0) {
-        output.writeUInt32(6, stage_);
+      if (levelId_ != 0) {
+        output.writeUInt32(7, levelId_);
       }
       if (fBAPNDJKIBO_ != 0) {
-        output.writeUInt32(8, fBAPNDJKIBO_);
+        output.writeUInt32(10, fBAPNDJKIBO_);
       }
       unknownFields.writeTo(output);
     }
@@ -400,21 +400,21 @@ public final class HKGHMIFOALHOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
+      if (stage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
+          .computeUInt32Size(2, stage_);
       }
       for (int i = 0; i < lHFPBEBAGKG_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, lHFPBEBAGKG_.get(i));
+          .computeMessageSize(3, lHFPBEBAGKG_.get(i));
       }
-      if (stage_ != 0) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, stage_);
+          .computeUInt32Size(7, levelId_);
       }
       if (fBAPNDJKIBO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, fBAPNDJKIBO_);
+          .computeUInt32Size(10, fBAPNDJKIBO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -760,7 +760,7 @@ public final class HKGHMIFOALHOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -768,7 +768,7 @@ public final class HKGHMIFOALHOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 7;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -779,7 +779,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -802,7 +802,7 @@ public final class HKGHMIFOALHOuterClass {
           emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA, emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder, emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPAOrBuilder> lHFPBEBAGKGBuilder_;
 
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA> getLHFPBEBAGKGList() {
         if (lHFPBEBAGKGBuilder_ == null) {
@@ -812,7 +812,7 @@ public final class HKGHMIFOALHOuterClass {
         }
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public int getLHFPBEBAGKGCount() {
         if (lHFPBEBAGKGBuilder_ == null) {
@@ -822,7 +822,7 @@ public final class HKGHMIFOALHOuterClass {
         }
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA getLHFPBEBAGKG(int index) {
         if (lHFPBEBAGKGBuilder_ == null) {
@@ -832,7 +832,7 @@ public final class HKGHMIFOALHOuterClass {
         }
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder setLHFPBEBAGKG(
           int index, emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA value) {
@@ -849,7 +849,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder setLHFPBEBAGKG(
           int index, emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder builderForValue) {
@@ -863,7 +863,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder addLHFPBEBAGKG(emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA value) {
         if (lHFPBEBAGKGBuilder_ == null) {
@@ -879,7 +879,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder addLHFPBEBAGKG(
           int index, emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA value) {
@@ -896,7 +896,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder addLHFPBEBAGKG(
           emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder builderForValue) {
@@ -910,7 +910,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder addLHFPBEBAGKG(
           int index, emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder builderForValue) {
@@ -924,7 +924,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder addAllLHFPBEBAGKG(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA> values) {
@@ -939,7 +939,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder clearLHFPBEBAGKG() {
         if (lHFPBEBAGKGBuilder_ == null) {
@@ -952,7 +952,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public Builder removeLHFPBEBAGKG(int index) {
         if (lHFPBEBAGKGBuilder_ == null) {
@@ -965,14 +965,14 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder getLHFPBEBAGKGBuilder(
           int index) {
         return getLHFPBEBAGKGFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPAOrBuilder getLHFPBEBAGKGOrBuilder(
           int index) {
@@ -982,7 +982,7 @@ public final class HKGHMIFOALHOuterClass {
         }
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPAOrBuilder> 
            getLHFPBEBAGKGOrBuilderList() {
@@ -993,14 +993,14 @@ public final class HKGHMIFOALHOuterClass {
         }
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder addLHFPBEBAGKGBuilder() {
         return getLHFPBEBAGKGFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.getDefaultInstance());
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder addLHFPBEBAGKGBuilder(
           int index) {
@@ -1008,7 +1008,7 @@ public final class HKGHMIFOALHOuterClass {
             index, emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.getDefaultInstance());
       }
       /**
-       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 5;</code>
+       * <code>repeated .AOACBHIACPA LHFPBEBAGKG = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.AOACBHIACPAOuterClass.AOACBHIACPA.Builder> 
            getLHFPBEBAGKGBuilderList() {
@@ -1031,7 +1031,7 @@ public final class HKGHMIFOALHOuterClass {
 
       private int stage_ ;
       /**
-       * <code>uint32 stage = 6;</code>
+       * <code>uint32 stage = 2;</code>
        * @return The stage.
        */
       @java.lang.Override
@@ -1039,7 +1039,7 @@ public final class HKGHMIFOALHOuterClass {
         return stage_;
       }
       /**
-       * <code>uint32 stage = 6;</code>
+       * <code>uint32 stage = 2;</code>
        * @param value The stage to set.
        * @return This builder for chaining.
        */
@@ -1050,7 +1050,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage = 6;</code>
+       * <code>uint32 stage = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearStage() {
@@ -1062,7 +1062,7 @@ public final class HKGHMIFOALHOuterClass {
 
       private int fBAPNDJKIBO_ ;
       /**
-       * <code>uint32 FBAPNDJKIBO = 8;</code>
+       * <code>uint32 FBAPNDJKIBO = 10;</code>
        * @return The fBAPNDJKIBO.
        */
       @java.lang.Override
@@ -1070,7 +1070,7 @@ public final class HKGHMIFOALHOuterClass {
         return fBAPNDJKIBO_;
       }
       /**
-       * <code>uint32 FBAPNDJKIBO = 8;</code>
+       * <code>uint32 FBAPNDJKIBO = 10;</code>
        * @param value The fBAPNDJKIBO to set.
        * @return This builder for chaining.
        */
@@ -1081,7 +1081,7 @@ public final class HKGHMIFOALHOuterClass {
         return this;
       }
       /**
-       * <code>uint32 FBAPNDJKIBO = 8;</code>
+       * <code>uint32 FBAPNDJKIBO = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearFBAPNDJKIBO() {
@@ -1158,9 +1158,9 @@ public final class HKGHMIFOALHOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021HKGHMIFOALH.proto\032\021AOACBHIACPA.proto\"\331" +
-      "\001\n\013HKGHMIFOALH\022\020\n\010level_id\030\002 \001(\r\022!\n\013LHFP" +
-      "BEBAGKG\030\005 \003(\0132\014.AOACBHIACPA\022\r\n\005stage\030\006 \001" +
-      "(\r\022\023\n\013FBAPNDJKIBO\030\010 \001(\r\"q\n\013KLEMBLCACPM\022\026" +
+      "\001\n\013HKGHMIFOALH\022\020\n\010level_id\030\007 \001(\r\022!\n\013LHFP" +
+      "BEBAGKG\030\003 \003(\0132\014.AOACBHIACPA\022\r\n\005stage\030\002 \001" +
+      "(\r\022\023\n\013FBAPNDJKIBO\030\n \001(\r\"q\n\013KLEMBLCACPM\022\026" +
       "\n\022KLEMBLCACPM_LOCKED\020\000\022\026\n\022KLEMBLCACPM_UN" +
       "LOCK\020\001\022\030\n\024KLEMBLCACPM_FEEDABLE\020\002\022\030\n\024KLEM" +
       "BLCACPM_FINISHED\020\003B2\n\031emu.grasscutter.ne" +

@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "FleurFairDungeonSectionInfoOuterClass";
 
 message FleurFairDungeonSectionInfo {
-	uint32 open_time = 1;
-	bool is_open = 14;
-	uint32 section_id = 4;
+	uint32 open_time = 2;
+	bool is_open = 3;
+	uint32 section_id = 1;
 }

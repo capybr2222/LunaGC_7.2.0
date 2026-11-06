@@ -6,9 +6,9 @@ option java_outer_classname = "CrystalLinkDungeonSettleInfoOuterClass";
 message CrystalLinkDungeonSettleInfo {
 	bool pdkdbgnjpdl = 8;
 	uint32 difficulty_id = 2;
-	uint32 kill_elite_monster_num = 7;
-	uint32 kill_normal_mosnter_num = 14;
-	bool is_new_record = 3;
-	uint32 level_id = 5;
-	uint32 final_score = 4;
+	uint32 kill_elite_monster_num = 6;
+	uint32 kill_normal_mosnter_num = 5;
+	bool is_new_record = 4;
+	uint32 level_id = 1;
+	uint32 final_score = 3;
 }

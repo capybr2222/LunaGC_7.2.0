@@ -19,31 +19,31 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 5;</code>
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 score = 3;</code>
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 use_time = 11;</code>
+     * <code>uint32 use_time = 2;</code>
      * @return The useTime.
      */
     int getUseTime();
 
     /**
-     * <code>uint32 kill_monster_num = 7;</code>
+     * <code>uint32 kill_monster_num = 4;</code>
      * @return The killMonsterNum.
      */
     int getKillMonsterNum();
@@ -93,29 +93,29 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              score_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 56: {
-
-              killMonsterNum_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 8: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 16: {
 
               useTime_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              killMonsterNum_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              score_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,10 +150,10 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
               emu.grasscutter.net.proto._InspirationSpurtDungeonSettleInfoOuterClass._InspirationSpurtDungeonSettleInfo.class, emu.grasscutter.net.proto._InspirationSpurtDungeonSettleInfoOuterClass._InspirationSpurtDungeonSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 5;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 5;</code>
+     * <code>bool is_new_record = 3;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 9;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 9;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 3;
+    public static final int SCORE_FIELD_NUMBER = 5;
     private int score_;
     /**
-     * <code>uint32 score = 3;</code>
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -183,10 +183,10 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int USE_TIME_FIELD_NUMBER = 11;
+    public static final int USE_TIME_FIELD_NUMBER = 2;
     private int useTime_;
     /**
-     * <code>uint32 use_time = 11;</code>
+     * <code>uint32 use_time = 2;</code>
      * @return The useTime.
      */
     @java.lang.Override
@@ -194,10 +194,10 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
       return useTime_;
     }
 
-    public static final int KILL_MONSTER_NUM_FIELD_NUMBER = 7;
+    public static final int KILL_MONSTER_NUM_FIELD_NUMBER = 4;
     private int killMonsterNum_;
     /**
-     * <code>uint32 kill_monster_num = 7;</code>
+     * <code>uint32 kill_monster_num = 4;</code>
      * @return The killMonsterNum.
      */
     @java.lang.Override
@@ -219,20 +219,20 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (score_ != 0) {
-        output.writeUInt32(3, score_);
-      }
-      if (isNewRecord_ != false) {
-        output.writeBool(5, isNewRecord_);
-      }
-      if (killMonsterNum_ != 0) {
-        output.writeUInt32(7, killMonsterNum_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(9, levelId_);
+        output.writeUInt32(1, levelId_);
       }
       if (useTime_ != 0) {
-        output.writeUInt32(11, useTime_);
+        output.writeUInt32(2, useTime_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(3, isNewRecord_);
+      }
+      if (killMonsterNum_ != 0) {
+        output.writeUInt32(4, killMonsterNum_);
+      }
+      if (score_ != 0) {
+        output.writeUInt32(5, score_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +243,25 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (score_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, score_);
-      }
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isNewRecord_);
-      }
-      if (killMonsterNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, killMonsterNum_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, levelId_);
+          .computeUInt32Size(1, levelId_);
       }
       if (useTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, useTime_);
+          .computeUInt32Size(2, useTime_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isNewRecord_);
+      }
+      if (killMonsterNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, killMonsterNum_);
+      }
+      if (score_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, score_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -578,7 +578,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 5;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -586,7 +586,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 5;</code>
+       * <code>bool is_new_record = 3;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -597,7 +597,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 5;</code>
+       * <code>bool is_new_record = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -609,7 +609,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -617,7 +617,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -628,7 +628,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 9;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -640,7 +640,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 3;</code>
+       * <code>uint32 score = 5;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -648,7 +648,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 3;</code>
+       * <code>uint32 score = 5;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -659,7 +659,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 3;</code>
+       * <code>uint32 score = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -671,7 +671,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
 
       private int useTime_ ;
       /**
-       * <code>uint32 use_time = 11;</code>
+       * <code>uint32 use_time = 2;</code>
        * @return The useTime.
        */
       @java.lang.Override
@@ -679,7 +679,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return useTime_;
       }
       /**
-       * <code>uint32 use_time = 11;</code>
+       * <code>uint32 use_time = 2;</code>
        * @param value The useTime to set.
        * @return This builder for chaining.
        */
@@ -690,7 +690,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 use_time = 11;</code>
+       * <code>uint32 use_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearUseTime() {
@@ -702,7 +702,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
 
       private int killMonsterNum_ ;
       /**
-       * <code>uint32 kill_monster_num = 7;</code>
+       * <code>uint32 kill_monster_num = 4;</code>
        * @return The killMonsterNum.
        */
       @java.lang.Override
@@ -710,7 +710,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return killMonsterNum_;
       }
       /**
-       * <code>uint32 kill_monster_num = 7;</code>
+       * <code>uint32 kill_monster_num = 4;</code>
        * @param value The killMonsterNum to set.
        * @return This builder for chaining.
        */
@@ -721,7 +721,7 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 kill_monster_num = 7;</code>
+       * <code>uint32 kill_monster_num = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearKillMonsterNum() {
@@ -799,9 +799,9 @@ public final class _InspirationSpurtDungeonSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n(_InspirationSpurtDungeonSettleInfo.pro" +
       "to\"\210\001\n\"_InspirationSpurtDungeonSettleInf" +
-      "o\022\025\n\ris_new_record\030\005 \001(\010\022\020\n\010level_id\030\t \001" +
-      "(\r\022\r\n\005score\030\003 \001(\r\022\020\n\010use_time\030\013 \001(\r\022\030\n\020k" +
-      "ill_monster_num\030\007 \001(\rBI\n\031emu.grasscutter" +
+      "o\022\025\n\ris_new_record\030\003 \001(\010\022\020\n\010level_id\030\001 \001" +
+      "(\r\022\r\n\005score\030\005 \001(\r\022\020\n\010use_time\030\002 \001(\r\022\030\n\020k" +
+      "ill_monster_num\030\004 \001(\rBI\n\031emu.grasscutter" +
       ".net.protoB,_InspirationSpurtDungeonSett" +
       "leInfoOuterClassb\006proto3"
     };

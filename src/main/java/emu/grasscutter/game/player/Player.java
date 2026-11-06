@@ -200,6 +200,9 @@ public class Player implements PlayerHook, FieldFetch {
     @Transient @Getter @Setter private SceneLoadState sceneLoadState = SceneLoadState.NONE;
     @Transient private boolean hasSentLoginPackets;
     @Transient private long nextSendPlayerLocTime = 0;
+    @Transient private long nextSendRttTime = 0;
+
+    private static final long RTT_NOTIFY_INTERVAL_MS = 5000;
     @Getter private transient final Int2ObjectMap<EnterHomeRequest> enterHomeRequests;
 
     private transient final Int2ObjectMap<CoopRequest> coopRequests;
@@ -1279,9 +1282,12 @@ public class Player implements PlayerHook, FieldFetch {
 
         if (this.getWorld() != null) {
 
-            this.sendPacket(new PacketWorldPlayerRTTNotify(this.getWorld()));
-
             long time = System.currentTimeMillis();
+
+            if (time > this.nextSendRttTime) {
+                this.sendPacket(new PacketWorldPlayerRTTNotify(this.getWorld()));
+                this.nextSendRttTime = time + RTT_NOTIFY_INTERVAL_MS;
+            }
             if (this.getWorld().isMultiplayer() && this.getScene() != null && time > nextSendPlayerLocTime) {
                 this.sendPacket(new PacketWorldPlayerLocationNotify(this.getWorld()));
                 this.sendPacket(new PacketScenePlayerLocationNotify(this.getScene()));

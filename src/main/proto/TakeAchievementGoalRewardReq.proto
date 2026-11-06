@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "TakeAchievementGoalRewardReqOuterClass";
 
 message TakeAchievementGoalRewardReq {
-	repeated uint32 id_list = 13;
+	repeated uint32 id_list = 14;
 }

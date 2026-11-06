@@ -19,13 +19,13 @@ public final class PIPGMGPIKIPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 MOALINDDJKJ = 5;</code>
+     * <code>uint32 MOALINDDJKJ = 2;</code>
      * @return The mOALINDDJKJ.
      */
     int getMOALINDDJKJ();
 
     /**
-     * <code>uint32 stage = 9;</code>
+     * <code>uint32 stage = 5;</code>
      * @return The stage.
      */
     int getStage();
@@ -75,12 +75,12 @@ public final class PIPGMGPIKIPOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
               mOALINDDJKJ_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 40: {
 
               stage_ = input.readUInt32();
               break;
@@ -234,10 +234,10 @@ public final class PIPGMGPIKIPOuterClass {
       // @@protoc_insertion_point(enum_scope:PIPGMGPIKIP.IEBKFMGNBOP)
     }
 
-    public static final int MOALINDDJKJ_FIELD_NUMBER = 5;
+    public static final int MOALINDDJKJ_FIELD_NUMBER = 2;
     private int mOALINDDJKJ_;
     /**
-     * <code>uint32 MOALINDDJKJ = 5;</code>
+     * <code>uint32 MOALINDDJKJ = 2;</code>
      * @return The mOALINDDJKJ.
      */
     @java.lang.Override
@@ -245,10 +245,10 @@ public final class PIPGMGPIKIPOuterClass {
       return mOALINDDJKJ_;
     }
 
-    public static final int STAGE_FIELD_NUMBER = 9;
+    public static final int STAGE_FIELD_NUMBER = 5;
     private int stage_;
     /**
-     * <code>uint32 stage = 9;</code>
+     * <code>uint32 stage = 5;</code>
      * @return The stage.
      */
     @java.lang.Override
@@ -271,10 +271,10 @@ public final class PIPGMGPIKIPOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (mOALINDDJKJ_ != 0) {
-        output.writeUInt32(5, mOALINDDJKJ_);
+        output.writeUInt32(2, mOALINDDJKJ_);
       }
       if (stage_ != 0) {
-        output.writeUInt32(9, stage_);
+        output.writeUInt32(5, stage_);
       }
       unknownFields.writeTo(output);
     }
@@ -287,11 +287,11 @@ public final class PIPGMGPIKIPOuterClass {
       size = 0;
       if (mOALINDDJKJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, mOALINDDJKJ_);
+          .computeUInt32Size(2, mOALINDDJKJ_);
       }
       if (stage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, stage_);
+          .computeUInt32Size(5, stage_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -577,7 +577,7 @@ public final class PIPGMGPIKIPOuterClass {
 
       private int mOALINDDJKJ_ ;
       /**
-       * <code>uint32 MOALINDDJKJ = 5;</code>
+       * <code>uint32 MOALINDDJKJ = 2;</code>
        * @return The mOALINDDJKJ.
        */
       @java.lang.Override
@@ -585,7 +585,7 @@ public final class PIPGMGPIKIPOuterClass {
         return mOALINDDJKJ_;
       }
       /**
-       * <code>uint32 MOALINDDJKJ = 5;</code>
+       * <code>uint32 MOALINDDJKJ = 2;</code>
        * @param value The mOALINDDJKJ to set.
        * @return This builder for chaining.
        */
@@ -596,7 +596,7 @@ public final class PIPGMGPIKIPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MOALINDDJKJ = 5;</code>
+       * <code>uint32 MOALINDDJKJ = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMOALINDDJKJ() {
@@ -608,7 +608,7 @@ public final class PIPGMGPIKIPOuterClass {
 
       private int stage_ ;
       /**
-       * <code>uint32 stage = 9;</code>
+       * <code>uint32 stage = 5;</code>
        * @return The stage.
        */
       @java.lang.Override
@@ -616,7 +616,7 @@ public final class PIPGMGPIKIPOuterClass {
         return stage_;
       }
       /**
-       * <code>uint32 stage = 9;</code>
+       * <code>uint32 stage = 5;</code>
        * @param value The stage to set.
        * @return This builder for chaining.
        */
@@ -627,7 +627,7 @@ public final class PIPGMGPIKIPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage = 9;</code>
+       * <code>uint32 stage = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearStage() {
@@ -704,7 +704,7 @@ public final class PIPGMGPIKIPOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021PIPGMGPIKIP.proto\"\212\001\n\013PIPGMGPIKIP\022\023\n\013M" +
-      "OALINDDJKJ\030\005 \001(\r\022\r\n\005stage\030\t \001(\r\"W\n\013IEBKF" +
+      "OALINDDJKJ\030\002 \001(\r\022\r\n\005stage\030\005 \001(\r\"W\n\013IEBKF" +
       "MGNBOP\022\027\n\023IEBKFMGNBOP_STRANGE\020\000\022\030\n\024IEBKF" +
       "MGNBOP_FAMILIAR\020\001\022\025\n\021IEBKFMGNBOP_HONEY\020\002" +
       "B2\n\031emu.grasscutter.net.protoB\025PIPGMGPIK" +

@@ -19,25 +19,25 @@ public final class PJJFGODDFMEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 max_score = 5;</code>
+     * <code>uint32 max_score = 7;</code>
      * @return The maxScore.
      */
     int getMaxScore();
 
     /**
-     * <code>bool is_finished = 6;</code>
+     * <code>bool is_finished = 9;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>bool is_open = 8;</code>
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 level_id = 10;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -87,24 +87,24 @@ public final class PJJFGODDFMEOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 56: {
 
               maxScore_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 72: {
 
               isFinished_ = input.readBool();
               break;
             }
-            case 64: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 80: {
+            case 96: {
 
               levelId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class PJJFGODDFMEOuterClass {
               emu.grasscutter.net.proto.PJJFGODDFMEOuterClass.PJJFGODDFME.class, emu.grasscutter.net.proto.PJJFGODDFMEOuterClass.PJJFGODDFME.Builder.class);
     }
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 5;
+    public static final int MAX_SCORE_FIELD_NUMBER = 7;
     private int maxScore_;
     /**
-     * <code>uint32 max_score = 5;</code>
+     * <code>uint32 max_score = 7;</code>
      * @return The maxScore.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class PJJFGODDFMEOuterClass {
       return maxScore_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 6;
+    public static final int IS_FINISHED_FIELD_NUMBER = 9;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 6;</code>
+     * <code>bool is_finished = 9;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class PJJFGODDFMEOuterClass {
       return isFinished_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 8;
+    public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 8;</code>
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class PJJFGODDFMEOuterClass {
       return isOpen_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 10;
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 10;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -198,16 +198,16 @@ public final class PJJFGODDFMEOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (maxScore_ != 0) {
-        output.writeUInt32(5, maxScore_);
+        output.writeUInt32(7, maxScore_);
       }
       if (isFinished_ != false) {
-        output.writeBool(6, isFinished_);
-      }
-      if (isOpen_ != false) {
-        output.writeBool(8, isOpen_);
+        output.writeBool(9, isFinished_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(10, levelId_);
+        output.writeUInt32(12, levelId_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(14, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,19 +220,19 @@ public final class PJJFGODDFMEOuterClass {
       size = 0;
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, maxScore_);
+          .computeUInt32Size(7, maxScore_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isFinished_);
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isOpen_);
+          .computeBoolSize(9, isFinished_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, levelId_);
+          .computeUInt32Size(12, levelId_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class PJJFGODDFMEOuterClass {
 
       private int maxScore_ ;
       /**
-       * <code>uint32 max_score = 5;</code>
+       * <code>uint32 max_score = 7;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class PJJFGODDFMEOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 max_score = 5;</code>
+       * <code>uint32 max_score = 7;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class PJJFGODDFMEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_score = 5;</code>
+       * <code>uint32 max_score = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
@@ -571,7 +571,7 @@ public final class PJJFGODDFMEOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 6;</code>
+       * <code>bool is_finished = 9;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class PJJFGODDFMEOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 6;</code>
+       * <code>bool is_finished = 9;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class PJJFGODDFMEOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 6;</code>
+       * <code>bool is_finished = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -602,7 +602,7 @@ public final class PJJFGODDFMEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 8;</code>
+       * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class PJJFGODDFMEOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 8;</code>
+       * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class PJJFGODDFMEOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 8;</code>
+       * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -633,7 +633,7 @@ public final class PJJFGODDFMEOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class PJJFGODDFMEOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class PJJFGODDFMEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 10;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -729,8 +729,8 @@ public final class PJJFGODDFMEOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021PJJFGODDFME.proto\"X\n\013PJJFGODDFME\022\021\n\tma" +
-      "x_score\030\005 \001(\r\022\023\n\013is_finished\030\006 \001(\010\022\017\n\007is" +
-      "_open\030\010 \001(\010\022\020\n\010level_id\030\n \001(\rB2\n\031emu.gra" +
+      "x_score\030\007 \001(\r\022\023\n\013is_finished\030\t \001(\010\022\017\n\007is" +
+      "_open\030\016 \001(\010\022\020\n\010level_id\030\014 \001(\rB2\n\031emu.gra" +
       "sscutter.net.protoB\025PJJFGODDFMEOuterClas" +
       "sb\006proto3"
     };

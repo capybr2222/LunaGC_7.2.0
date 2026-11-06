@@ -5,8 +5,8 @@ option java_outer_classname = "ChatInfoOuterClass";
 
 message ChatInfo {
 	message SystemHint {
-		uint32 type = 5;
-		repeated uint32 uid_list = 6;
+		uint32 type = 6;
+		repeated uint32 uid_list = 2;
 	}
 	message _BeyondCollectionNewCaptain {
 		string PCLIOFOLGJG = 8;
@@ -14,30 +14,30 @@ message ChatInfo {
 		uint32 OHANCMMCDHI = 12;
 	}
 	message _HallInvitation {
-		uint32 DGNNJCJPGEO = 14;
-		uint64 BJFFLGDNMPL = 1;
-		repeated uint32 CFPLKFNPNAM = 7;
-		uint32 GHNMBPLBBFN = 5;
-		uint64 BOJNPHONGMP = 12;
-		uint32 CNFEBIOPANP = 3;
-		uint32 EPHGOMPBKJA = 9;
+		uint32 DGNNJCJPGEO = 50000;
+		uint64 BJFFLGDNMPL = 50001;
+		repeated uint32 CFPLKFNPNAM = 9;
+		uint32 GHNMBPLBBFN = 50002;
+		uint64 BOJNPHONGMP = 50003;
+		uint32 CNFEBIOPANP = 50004;
+		uint32 EPHGOMPBKJA = 50005;
 	}
 	message _BeyondTeamInvitation {
-		uint32 EPHGOMPBKJA = 7;
-		uint64 BOJNPHONGMP = 8;
-		uint32 GHNMBPLBBFN = 10;
-		uint32 CNFEBIOPANP = 1;
+		uint32 EPHGOMPBKJA = 50000;
+		uint64 BOJNPHONGMP = 4;
+		uint32 GHNMBPLBBFN = 50001;
+		uint32 CNFEBIOPANP = 50002;
 	}
 	message _BeyondTeamApplication {
-		uint64 MIHICCAEFOM = 12;
-		uint32 GJNLFEJCKPA = 2;
-		uint32 target_uid = 14;
-		uint32 HDMBGALJFMK = 10;
+		uint64 MIHICCAEFOM = 6;
+		uint32 GJNLFEJCKPA = 50000;
+		uint32 target_uid = 15;
+		uint32 HDMBGALJFMK = 50001;
 	}
 	message _BeyondTeamRecruitment {
-		uint32 OJDIIPKINNL = 6;
-		uint32 FDIFPEHDKFD = 10;
-		uint32 EILHBPNLEFB = 14;
+		uint32 OJDIIPKINNL = 50000;
+		uint32 FDIFPEHDKFD = 50001;
+		uint32 EILHBPNLEFB = 50002;
 	}
 	message _BeyondRoomInvitation {
 		uint32 GHNMBPLBBFN = 2;
@@ -53,38 +53,38 @@ message ChatInfo {
 		bytes FEPAFANMNLK = 7;
 	}
 	message _HallRecruitingInvitation {
-		uint64 DKLMLPNMIHN = 14;
-		uint32 DELCBHHBDCJ = 50000;
-		uint32 EILHBPNLEFB = 50001;
-		uint32 LMNLLOEFBOM = 15;
-		repeated uint32 GOFEPGIPJNF = 7;
-		uint64 OJDIIPKINNL = 5;
+		uint64 DKLMLPNMIHN = 50000;
+		uint32 DELCBHHBDCJ = 50001;
+		uint32 EILHBPNLEFB = 50002;
+		uint32 LMNLLOEFBOM = 50003;
+		repeated uint32 GOFEPGIPJNF = 13;
+		uint64 OJDIIPKINNL = 50004;
 	}
 	oneof mention {
-		bool is_mention_all = 2;
-		uint32 mentioned_uid = 12;
+		bool is_mention_all = 8;
+		uint32 mentioned_uid = 9;
 	}
 	oneof content {
-		_BeyondTeamRecruitment beyond_team_recruitment = 686;
-		_BeyondCostumeShareCode beyond_costume_share_code = 680;
-		uint32 icon = 1448;
-		_BeyondRoomInvitation beyond_room_invitation = 758;
-		_BeyondCollectionNewCaptain beyond_collection_new_captain = 188;
-		SystemHint system_hint = 765;
-		_HallInvitation hall_invitation = 1815;
-		string text = 1985;
-		_BeyondTeamApplication beyond_team_application = 525;
-		_HallRecruitingInvitation hall_recruiting_invitation = 770;
-		_BeyondGachaGift beyond_gacha_gift = 192;
-		_BeyondTeamInvitation beyond_team_invitation = 1953;
+		_BeyondTeamRecruitment beyond_team_recruitment = 836;
+		_BeyondCostumeShareCode beyond_costume_share_code = 654;
+		uint32 icon = 323;
+		_BeyondRoomInvitation beyond_room_invitation = 1559;
+		_BeyondCollectionNewCaptain beyond_collection_new_captain = 717;
+		SystemHint system_hint = 1538;
+		_HallInvitation hall_invitation = 1242;
+		string text = 630;
+		_BeyondTeamApplication beyond_team_application = 1536;
+		_HallRecruitingInvitation hall_recruiting_invitation = 366;
+		_BeyondGachaGift beyond_gacha_gift = 91;
+		_BeyondTeamInvitation beyond_team_invitation = 1319;
 	}
-	string _xuid = 13;
-	uint32 to_uid = 9;
-	uint32 ALKIPKCAPFL = 8;
-	uint32 platform_type = 4;
-	uint32 uid = 5;
-	uint32 time = 1;
-	uint64 OIEHJMHHCFB = 15;
-	bool is_read = 3;
+	string _xuid = 5;
+	uint32 to_uid = 50000;
+	uint32 ALKIPKCAPFL = 20000;
+	uint32 platform_type = 11;
+	uint32 uid = 1;
+	uint32 time = 2;
+	uint64 OIEHJMHHCFB = 10;
+	bool is_read = 7;
 	uint32 sequence = 6;
 }

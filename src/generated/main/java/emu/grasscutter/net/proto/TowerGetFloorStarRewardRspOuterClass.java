@@ -25,7 +25,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
     int getRetcode();
 
     /**
-     * <code>uint32 floor_id = 9;</code>
+     * <code>uint32 floor_id = 12;</code>
      * @return The floorId.
      */
     int getFloorId();
@@ -80,7 +80,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
               retcode_ = input.readInt32();
               break;
             }
-            case 72: {
+            case 96: {
 
               floorId_ = input.readUInt32();
               break;
@@ -128,10 +128,10 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int FLOOR_ID_FIELD_NUMBER = 9;
+    public static final int FLOOR_ID_FIELD_NUMBER = 12;
     private int floorId_;
     /**
-     * <code>uint32 floor_id = 9;</code>
+     * <code>uint32 floor_id = 12;</code>
      * @return The floorId.
      */
     @java.lang.Override
@@ -157,7 +157,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         output.writeInt32(5, retcode_);
       }
       if (floorId_ != 0) {
-        output.writeUInt32(9, floorId_);
+        output.writeUInt32(12, floorId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,7 +174,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
       }
       if (floorId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, floorId_);
+          .computeUInt32Size(12, floorId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -491,7 +491,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
 
       private int floorId_ ;
       /**
-       * <code>uint32 floor_id = 9;</code>
+       * <code>uint32 floor_id = 12;</code>
        * @return The floorId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return floorId_;
       }
       /**
-       * <code>uint32 floor_id = 9;</code>
+       * <code>uint32 floor_id = 12;</code>
        * @param value The floorId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 floor_id = 9;</code>
+       * <code>uint32 floor_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearFloorId() {
@@ -588,7 +588,7 @@ public final class TowerGetFloorStarRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n TowerGetFloorStarRewardRsp.proto\"?\n\032To" +
       "werGetFloorStarRewardRsp\022\017\n\007retcode\030\005 \001(" +
-      "\005\022\020\n\010floor_id\030\t \001(\rBA\n\031emu.grasscutter.n" +
+      "\005\022\020\n\010floor_id\030\014 \001(\rBA\n\031emu.grasscutter.n" +
       "et.protoB$TowerGetFloorStarRewardRspOute" +
       "rClassb\006proto3"
     };

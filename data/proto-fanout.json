@@ -1,35 +1,461 @@
 {
- "BlossomBriefInfoNotify": [
+ "ActivityScheduleInfoNotify": [
   {
-   "cmdId": 6743,
-   "symbol": "ABJOMOIIDHH",
+   "cmdId": 23766,
+   "symbol": "NJIJDNKNGOP",
    "fields": {
-    "brief_info_list": 10
+    "remain_fly_sea_lamp_num": 5,
+    "activity_schedule_list": 4
+   }
+  }
+ ],
+ "AskAddFriendNotify": [
+  {
+   "cmdId": 537,
+   "symbol": "HGDJEDJGDEN",
+   "fields": {
+    "target_friend_brief": 1,
+    "target_uid": 3
    }
   },
   {
-   "cmdId": 20484,
-   "symbol": "GIIGDONJFPJ",
+   "cmdId": 21995,
+   "symbol": "JKNECLJGNOF",
    "fields": {
-    "brief_info_list": 14
+    "target_friend_brief": 11,
+    "target_uid": 2
+   }
+  }
+ ],
+ "AvatarDieAnimationEndRsp": [
+  {
+   "cmdId": 29820,
+   "symbol": "BDBCACLGIHO",
+   "fields": {
+    "retcode": 14,
+    "skill_id": 2,
+    "die_guid": 3
+   }
+  }
+ ],
+ "AvatarFetterDataNotify": [
+  {
+   "cmdId": 7234,
+   "symbol": "LHBAFFLJGKO",
+   "fields": {
+    "fetter_info_map": 15
+   }
+  }
+ ],
+ "AvatarFightPropNotify": [
+  {
+   "cmdId": 1629,
+   "symbol": "MBJBGDJAECL",
+   "fields": {
+    "fight_prop_map": 10,
+    "avatar_guid": 2
+   }
+  },
+  {
+   "cmdId": 6762,
+   "symbol": "HGHIDMPKEOL",
+   "fields": {
+    "fight_prop_map": 14,
+    "avatar_guid": 6
+   }
+  }
+ ],
+ "BargainOfferPriceRsp": [
+  {
+   "cmdId": 3140,
+   "symbol": "HHJGCOKNNIP",
+   "fields": {
+    "retcode": 12,
+    "result_param": 10,
+    "cur_mood": 14,
+    "bargain_result": 3
+   }
+  }
+ ],
+ "BlossomBriefInfoNotify": [
+  {
+   "cmdId": 4404,
+   "symbol": "PDCNAAMOPNC",
+   "fields": {
+    "brief_info_list": 5
+   }
+  },
+  {
+   "cmdId": 20409,
+   "symbol": "KMHAOHCGCFM",
+   "fields": {
+    "brief_info_list": 9
+   }
+  }
+ ],
+ "ClientSetGameTimeRsp": [
+  {
+   "cmdId": 3517,
+   "symbol": "HEILNFLGDCJ",
+   "fields": {
+    "retcode": 8,
+    "game_time": 4,
+    "game_time_locked_quest_list": 5,
+    "client_game_time": 15
+   }
+  }
+ ],
+ "CookDataNotify": [
+  {
+   "cmdId": 3732,
+   "symbol": "HMNGJKAELOP",
+   "fields": {
+    "grade": 4,
+    "recipe_data_list": 11
+   }
+  }
+ ],
+ "DailyTaskDataNotify": [
+  {
+   "cmdId": 26315,
+   "symbol": "LECFBJEGFCF",
+   "fields": {
+    "is_taken_score_reward": 2
+   }
+  }
+ ],
+ "DealAddFriendRsp": [
+  {
+   "cmdId": 7832,
+   "symbol": "MGFMJDCPDCH",
+   "fields": {
+    "retcode": 12,
+    "target_uid": 3,
+    "deal_add_friend_result": 15
    }
   }
  ],
  "DelTeamEntityNotify": [
   {
-   "cmdId": 2050,
-   "symbol": "HHDADFOPFFM",
+   "cmdId": 21794,
+   "symbol": "DGJCFAGHCMK",
    "fields": {
-    "scene_id": 15,
-    "del_entity_id_list": 11
+    "scene_id": 9,
+    "del_entity_id_list": 2
    }
   },
   {
-   "cmdId": 26830,
-   "symbol": "HAFBDBHDKHD",
+   "cmdId": 22143,
+   "symbol": "OGLOCCHBEEG",
    "fields": {
     "scene_id": 15,
-    "del_entity_id_list": 3
+    "del_entity_id_list": 8
+   }
+  }
+ ],
+ "DungeonWayPointNotify": [
+  {
+   "cmdId": 26672,
+   "symbol": "ENNHDAOMNOI",
+   "fields": {
+    "active_way_point_list": 9,
+    "is_add": 6
+   }
+  }
+ ],
+ "FinishedParentQuestNotify": [
+  {
+   "cmdId": 897,
+   "symbol": "PJGGKFBBNKP",
+   "fields": {
+    "parent_quest_list": 9
+   }
+  },
+  {
+   "cmdId": 26691,
+   "symbol": "IEAGPIBCDHP",
+   "fields": {
+    "parent_quest_list": 2
+   }
+  }
+ ],
+ "FireworksLaunchDataNotify": [
+  {
+   "cmdId": 8277,
+   "symbol": "AAFLPGGGLKC",
+   "fields": {
+    "last_use_scheme_id": 4,
+    "scheme_data_list": 8
+   }
+  }
+ ],
+ "ForgeFormulaDataNotify": [
+  {
+   "cmdId": 25150,
+   "symbol": "IHPAKDPLLDE",
+   "fields": {
+    "is_locked": 12,
+    "forge_id": 5
+   }
+  }
+ ],
+ "GetAreaExplorePointRsp": [
+  {
+   "cmdId": 9854,
+   "symbol": "PDLHEHPCLFJ",
+   "fields": {
+    "area_id_list": 1,
+    "retcode": 8,
+    "explore_point_list": 4
+   }
+  }
+ ],
+ "GetMapAreaRsp": [
+  {
+   "cmdId": 25820,
+   "symbol": "AOBFKJLKAPC",
+   "fields": {
+    "retcode": 7,
+    "map_area_info_list": 6
+   }
+  }
+ ],
+ "GetPlayerAskFriendListRsp": [
+  {
+   "cmdId": 6971,
+   "symbol": "NGLEGOJFCKA",
+   "fields": {
+    "retcode": 1,
+    "ask_friend_list": 7
+   }
+  }
+ ],
+ "GetWorldMpInfoRsp": [
+  {
+   "cmdId": 5681,
+   "symbol": "BGMNAILJLBI",
+   "fields": {
+    "retcode": 5,
+    "quit_mp_valid_time": 13,
+    "is_in_mp_mode": 2
+   }
+  }
+ ],
+ "HomeKickPlayerRsp": [
+  {
+   "cmdId": 22527,
+   "symbol": "MIFKFHFGEDE",
+   "fields": {
+    "retcode": 14,
+    "target_uid": 6,
+    "is_kick_all": 9
+   }
+  }
+ ],
+ "HomeResourceNotify": [
+  {
+   "cmdId": 26107,
+   "symbol": "EJDNNHAAODM",
+   "fields": {}
+  }
+ ],
+ "ItemGivingRsp": [
+  {
+   "cmdId": 4706,
+   "symbol": "HLLOOLPFANN",
+   "fields": {
+    "retcode": 10,
+    "giving_id": 14,
+    "giving_group_id": 7
+   }
+  }
+ ],
+ "MarkNewNotify": [
+  {
+   "cmdId": 21109,
+   "symbol": "EJDOFIDDLII",
+   "fields": {
+    "id_list": 14,
+    "mark_new_type": 11
+   }
+  }
+ ],
+ "MonsterSummonTagNotify": [
+  {
+   "cmdId": 21355,
+   "symbol": "CFMBCEFIEHI",
+   "fields": {
+    "summon_tag_map": 11,
+    "monster_entity_id": 4
+   }
+  }
+ ],
+ "PlayerApplyEnterHomeNotify": [
+  {
+   "cmdId": 9827,
+   "symbol": "IAGANGJMGEH",
+   "fields": {
+    "src_player_info": 3,
+    "GLEHBKDANLA": 6,
+    "src_app_id": 8
+   }
+  },
+  {
+   "cmdId": 24164,
+   "symbol": "LCDEFONPLGJ",
+   "fields": {
+    "src_player_info": 14,
+    "src_app_id": 9,
+    "GLEHBKDANLA": 5
+   }
+  }
+ ],
+ "PlayerGameTimeNotify": [
+  {
+   "cmdId": 2518,
+   "symbol": "LFKBJHLCNEE",
+   "fields": {
+    "uid": 4,
+    "game_time": 9,
+    "is_home": 3
+   }
+  }
+ ],
+ "ProudSkillExtraLevelNotify": [
+  {
+   "cmdId": 4283,
+   "symbol": "OCLONPILBNC",
+   "fields": {
+    "avatar_guid": 4
+   }
+  }
+ ],
+ "QuestListNotify": [
+  {
+   "cmdId": 7876,
+   "symbol": "KEBFLFGFNPO",
+   "fields": {
+    "quest_list": 7
+   }
+  },
+  {
+   "cmdId": 24303,
+   "symbol": "NEPPAFHKFBJ",
+   "fields": {
+    "quest_list": 3
+   }
+  }
+ ],
+ "QuestProgressUpdateNotify": [
+  {
+   "cmdId": 4955,
+   "symbol": "PMDKLCKOAIG",
+   "fields": {
+    "quest_id": 14
+   }
+  }
+ ],
+ "SceneAreaUnlockNotify": [
+  {
+   "cmdId": 5612,
+   "symbol": "FMGNAMMGEFK",
+   "fields": {
+    "scene_id": 15,
+    "area_list": 10
+   }
+  }
+ ],
+ "SceneForceUnlockNotify": [
+  {
+   "cmdId": 20389,
+   "symbol": "GDIHOONFPBO",
+   "fields": {
+    "force_id_list": 15,
+    "is_add": 14
+   }
+  }
+ ],
+ "ScenePlayerSoundNotify": [
+  {
+   "cmdId": 22378,
+   "symbol": "BLNKIHBHOAE",
+   "fields": {
+    "play_type": 15,
+    "sound_name": 6,
+    "play_pos": 13
+   }
+  }
+ ],
+ "SetEquipLockStateRsp": [
+  {
+   "cmdId": 28792,
+   "symbol": "DKBCNDIANLF",
+   "fields": {
+    "is_locked": 14,
+    "retcode": 9,
+    "target_equip_guid": 10
+   }
+  }
+ ],
+ "SetPlayerSignatureRsp": [
+  {
+   "cmdId": 1869,
+   "symbol": "JAGJAGDKNBH",
+   "fields": {
+    "retcode": 11,
+    "signature": 12
+   }
+  }
+ ],
+ "TowerEnterLevelRsp": [
+  {
+   "cmdId": 28131,
+   "symbol": "EHMIDKLGNKH",
+   "fields": {
+    "floor_id": 6,
+    "retcode": 3,
+    "tower_buff_id_list": 4,
+    "level_index": 10
+   }
+  }
+ ],
+ "TowerLevelStarCondNotify": [
+  {
+   "cmdId": 27584,
+   "symbol": "OJBNPCPCDKL",
+   "fields": {
+    "floor_id": 7,
+    "level_index": 12,
+    "cond_data_list": 6
+   }
+  }
+ ],
+ "WeaponPromoteRsp": [
+  {
+   "cmdId": 26301,
+   "symbol": "CDJPOMEHPDN",
+   "fields": {
+    "target_weapon_guid": 8,
+    "retcode": 3
+   }
+  }
+ ],
+ "WorldDataNotify": [
+  {
+   "cmdId": 7828,
+   "symbol": "EJHEGPKPMJE",
+   "fields": {
+    "world_prop_map": 15
+   }
+  }
+ ],
+ "WorldPlayerLocationNotify": [
+  {
+   "cmdId": 486,
+   "symbol": "MKAFJMHKHHI",
+   "fields": {
+    "player_loc_list": 3,
+    "player_world_loc_list": 4
    }
   }
  ]

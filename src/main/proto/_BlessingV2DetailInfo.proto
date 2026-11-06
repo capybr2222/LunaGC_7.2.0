@@ -6,12 +6,12 @@ option java_outer_classname = "_BlessingV2DetailInfoOuterClass";
 import "ADMKLIPHAHG.proto";
 
 message _BlessingV2DetailInfo {
-	bool is_activated = 6;
-	bool ELCGFJCJMNN = 14;
-	uint32 DKHOJDNIKGN = 9;
-	uint32 GFJBLFOFJIP = 12;
-	repeated ADMKLIPHAHG OIJEHCLCPFN = 11;
-	fixed32 content_close_time = 15;
-	uint32 HLGJOMHPMDA = 13;
-	fixed32 next_refresh_time = 7;
+	bool is_activated = 1;
+	bool ELCGFJCJMNN = 8;
+	uint32 DKHOJDNIKGN = 20001;
+	uint32 GFJBLFOFJIP = 20004;
+	repeated ADMKLIPHAHG OIJEHCLCPFN = 20000;
+	fixed32 content_close_time = 6;
+	uint32 HLGJOMHPMDA = 20003;
+	fixed32 next_refresh_time = 5;
 }

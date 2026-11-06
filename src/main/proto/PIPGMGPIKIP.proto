@@ -9,6 +9,6 @@ message PIPGMGPIKIP {
 		IEBKFMGNBOP_FAMILIAR = 1;
 		IEBKFMGNBOP_HONEY = 2;
 	}
-	uint32 MOALINDDJKJ = 5;
-	uint32 stage = 9;
+	uint32 MOALINDDJKJ = 2;
+	uint32 stage = 5;
 }

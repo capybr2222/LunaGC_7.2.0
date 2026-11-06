@@ -6,7 +6,7 @@ option java_outer_classname = "_RankedMatchPuzzleSettleInfoOuterClass";
 import "GalleryStopReason.proto";
 
 message _RankedMatchPuzzleSettleInfo {
-	GalleryStopReason reason = 12;
-	uint32 item_num = 9;
+	GalleryStopReason reason = 15;
+	uint32 item_num = 12;
 	uint32 level_id = 14;
 }

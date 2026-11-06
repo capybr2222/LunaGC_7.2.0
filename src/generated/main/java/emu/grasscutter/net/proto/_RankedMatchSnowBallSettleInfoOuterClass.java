@@ -19,36 +19,36 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 10;</code>
+     * <code>bool is_new_record = 8;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>.GalleryStopReason reason = 8;</code>
+     * <code>.GalleryStopReason reason = 5;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.GalleryStopReason reason = 8;</code>
+     * <code>.GalleryStopReason reason = 5;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason();
 
     /**
-     * <code>uint32 score = 4;</code>
+     * <code>uint32 score = 3;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 item_num = 12;</code>
+     * <code>uint32 item_num = 10;</code>
      * @return The itemNum.
      */
     int getItemNum();
@@ -99,28 +99,28 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 24: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 40: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 80: {
+            case 64: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 88: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 80: {
 
               itemNum_ = input.readUInt32();
               break;
@@ -157,10 +157,10 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
               emu.grasscutter.net.proto._RankedMatchSnowBallSettleInfoOuterClass._RankedMatchSnowBallSettleInfo.class, emu.grasscutter.net.proto._RankedMatchSnowBallSettleInfoOuterClass._RankedMatchSnowBallSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 10;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 8;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 10;</code>
+     * <code>bool is_new_record = 8;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -168,17 +168,17 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 8;
+    public static final int REASON_FIELD_NUMBER = 5;
     private int reason_;
     /**
-     * <code>.GalleryStopReason reason = 8;</code>
+     * <code>.GalleryStopReason reason = 5;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.GalleryStopReason reason = 8;</code>
+     * <code>.GalleryStopReason reason = 5;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason getReason() {
@@ -187,10 +187,10 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 4;
+    public static final int SCORE_FIELD_NUMBER = 3;
     private int score_;
     /**
-     * <code>uint32 score = 4;</code>
+     * <code>uint32 score = 3;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -198,10 +198,10 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 11;
+    public static final int LEVEL_ID_FIELD_NUMBER = 2;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 11;</code>
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -209,10 +209,10 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int ITEM_NUM_FIELD_NUMBER = 12;
+    public static final int ITEM_NUM_FIELD_NUMBER = 10;
     private int itemNum_;
     /**
-     * <code>uint32 item_num = 12;</code>
+     * <code>uint32 item_num = 10;</code>
      * @return The itemNum.
      */
     @java.lang.Override
@@ -234,20 +234,20 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (levelId_ != 0) {
+        output.writeUInt32(2, levelId_);
+      }
       if (score_ != 0) {
-        output.writeUInt32(4, score_);
+        output.writeUInt32(3, score_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
-        output.writeEnum(8, reason_);
+        output.writeEnum(5, reason_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(10, isNewRecord_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(11, levelId_);
+        output.writeBool(8, isNewRecord_);
       }
       if (itemNum_ != 0) {
-        output.writeUInt32(12, itemNum_);
+        output.writeUInt32(10, itemNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -258,25 +258,25 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, levelId_);
+      }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, score_);
+          .computeUInt32Size(3, score_);
       }
       if (reason_ != emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.GalleryStopReason_GALLERY_STOP_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, reason_);
+          .computeEnumSize(5, reason_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isNewRecord_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, levelId_);
+          .computeBoolSize(8, isNewRecord_);
       }
       if (itemNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, itemNum_);
+          .computeUInt32Size(10, itemNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -592,7 +592,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <code>bool is_new_record = 8;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -600,7 +600,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <code>bool is_new_record = 8;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -611,7 +611,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 10;</code>
+       * <code>bool is_new_record = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -623,14 +623,14 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.GalleryStopReason reason = 8;</code>
+       * <code>.GalleryStopReason reason = 5;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.GalleryStopReason reason = 8;</code>
+       * <code>.GalleryStopReason reason = 5;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -641,7 +641,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 8;</code>
+       * <code>.GalleryStopReason reason = 5;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -651,7 +651,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.GalleryStopReasonOuterClass.GalleryStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.GalleryStopReason reason = 8;</code>
+       * <code>.GalleryStopReason reason = 5;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -665,7 +665,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.GalleryStopReason reason = 8;</code>
+       * <code>.GalleryStopReason reason = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -677,7 +677,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 4;</code>
+       * <code>uint32 score = 3;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -685,7 +685,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 4;</code>
+       * <code>uint32 score = 3;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -696,7 +696,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 4;</code>
+       * <code>uint32 score = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -708,7 +708,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -716,7 +716,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 2;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -727,7 +727,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 11;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -739,7 +739,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
 
       private int itemNum_ ;
       /**
-       * <code>uint32 item_num = 12;</code>
+       * <code>uint32 item_num = 10;</code>
        * @return The itemNum.
        */
       @java.lang.Override
@@ -747,7 +747,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return itemNum_;
       }
       /**
-       * <code>uint32 item_num = 12;</code>
+       * <code>uint32 item_num = 10;</code>
        * @param value The itemNum to set.
        * @return This builder for chaining.
        */
@@ -758,7 +758,7 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_num = 12;</code>
+       * <code>uint32 item_num = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemNum() {
@@ -836,10 +836,10 @@ public final class _RankedMatchSnowBallSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n$_RankedMatchSnowBallSettleInfo.proto\032\027" +
       "GalleryStopReason.proto\"\216\001\n\036_RankedMatch" +
-      "SnowBallSettleInfo\022\025\n\ris_new_record\030\n \001(" +
-      "\010\022\"\n\006reason\030\010 \001(\0162\022.GalleryStopReason\022\r\n" +
-      "\005score\030\004 \001(\r\022\020\n\010level_id\030\013 \001(\r\022\020\n\010item_n" +
-      "um\030\014 \001(\rBE\n\031emu.grasscutter.net.protoB(_" +
+      "SnowBallSettleInfo\022\025\n\ris_new_record\030\010 \001(" +
+      "\010\022\"\n\006reason\030\005 \001(\0162\022.GalleryStopReason\022\r\n" +
+      "\005score\030\003 \001(\r\022\020\n\010level_id\030\002 \001(\r\022\020\n\010item_n" +
+      "um\030\n \001(\rBE\n\031emu.grasscutter.net.protoB(_" +
       "RankedMatchSnowBallSettleInfoOuterClassb" +
       "\006proto3"
     };

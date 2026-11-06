@@ -6,6 +6,6 @@ option java_outer_classname = "SorushTrialDetailInfoOuterClass";
 message SorushTrialDetailInfo {
 	repeated uint32 BBFEAFFLOBA = 50000;
 	repeated uint32 HOPCJHIJDDK = 50001;
-	map<uint32, uint32> KCGIACHFPOC = 9;
+	map<uint32, uint32> KCGIACHFPOC = 4;
 	repeated uint32 IIDDBDAEPKC = 50002;
 }

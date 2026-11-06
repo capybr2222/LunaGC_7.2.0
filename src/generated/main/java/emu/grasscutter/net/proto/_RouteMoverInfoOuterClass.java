@@ -19,32 +19,32 @@ public final class _RouteMoverInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+     * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
      * @return Whether the iINJFNJGEGP field is set.
      */
     boolean hasIINJFNJGEGP();
     /**
-     * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+     * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
      * @return The iINJFNJGEGP.
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getIINJFNJGEGP();
     /**
-     * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+     * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getIINJFNJGEGPOrBuilder();
 
     /**
-     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
      * @return Whether the mFOMGKKGCKE field is set.
      */
     boolean hasMFOMGKKGCKE();
     /**
-     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
      * @return The mFOMGKKGCKE.
      */
     emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP getMFOMGKKGCKE();
     /**
-     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
      */
     emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNPOrBuilder getMFOMGKKGCKEOrBuilder();
   }
@@ -93,20 +93,7 @@ public final class _RouteMoverInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder subBuilder = null;
-              if (iINJFNJGEGP_ != null) {
-                subBuilder = iINJFNJGEGP_.toBuilder();
-              }
-              iINJFNJGEGP_ = input.readMessage(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(iINJFNJGEGP_);
-                iINJFNJGEGP_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 18: {
+            case 160002: {
               emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP.Builder subBuilder = null;
               if (mFOMGKKGCKE_ != null) {
                 subBuilder = mFOMGKKGCKE_.toBuilder();
@@ -115,6 +102,19 @@ public final class _RouteMoverInfoOuterClass {
               if (subBuilder != null) {
                 subBuilder.mergeFrom(mFOMGKKGCKE_);
                 mFOMGKKGCKE_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 160010: {
+              emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder subBuilder = null;
+              if (iINJFNJGEGP_ != null) {
+                subBuilder = iINJFNJGEGP_.toBuilder();
+              }
+              iINJFNJGEGP_ = input.readMessage(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(iINJFNJGEGP_);
+                iINJFNJGEGP_ = subBuilder.buildPartial();
               }
 
               break;
@@ -151,10 +151,10 @@ public final class _RouteMoverInfoOuterClass {
               emu.grasscutter.net.proto._RouteMoverInfoOuterClass._RouteMoverInfo.class, emu.grasscutter.net.proto._RouteMoverInfoOuterClass._RouteMoverInfo.Builder.class);
     }
 
-    public static final int IINJFNJGEGP_FIELD_NUMBER = 1;
+    public static final int IINJFNJGEGP_FIELD_NUMBER = 20001;
     private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion iINJFNJGEGP_;
     /**
-     * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+     * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
      * @return Whether the iINJFNJGEGP field is set.
      */
     @java.lang.Override
@@ -162,7 +162,7 @@ public final class _RouteMoverInfoOuterClass {
       return iINJFNJGEGP_ != null;
     }
     /**
-     * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+     * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
      * @return The iINJFNJGEGP.
      */
     @java.lang.Override
@@ -170,17 +170,17 @@ public final class _RouteMoverInfoOuterClass {
       return iINJFNJGEGP_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : iINJFNJGEGP_;
     }
     /**
-     * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+     * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getIINJFNJGEGPOrBuilder() {
       return getIINJFNJGEGP();
     }
 
-    public static final int MFOMGKKGCKE_FIELD_NUMBER = 2;
+    public static final int MFOMGKKGCKE_FIELD_NUMBER = 20000;
     private emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP mFOMGKKGCKE_;
     /**
-     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
      * @return Whether the mFOMGKKGCKE field is set.
      */
     @java.lang.Override
@@ -188,7 +188,7 @@ public final class _RouteMoverInfoOuterClass {
       return mFOMGKKGCKE_ != null;
     }
     /**
-     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
      * @return The mFOMGKKGCKE.
      */
     @java.lang.Override
@@ -196,7 +196,7 @@ public final class _RouteMoverInfoOuterClass {
       return mFOMGKKGCKE_ == null ? emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP.getDefaultInstance() : mFOMGKKGCKE_;
     }
     /**
-     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+     * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNPOrBuilder getMFOMGKKGCKEOrBuilder() {
@@ -217,11 +217,11 @@ public final class _RouteMoverInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iINJFNJGEGP_ != null) {
-        output.writeMessage(1, getIINJFNJGEGP());
-      }
       if (mFOMGKKGCKE_ != null) {
-        output.writeMessage(2, getMFOMGKKGCKE());
+        output.writeMessage(20000, getMFOMGKKGCKE());
+      }
+      if (iINJFNJGEGP_ != null) {
+        output.writeMessage(20001, getIINJFNJGEGP());
       }
       unknownFields.writeTo(output);
     }
@@ -232,13 +232,13 @@ public final class _RouteMoverInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iINJFNJGEGP_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getIINJFNJGEGP());
-      }
       if (mFOMGKKGCKE_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getMFOMGKKGCKE());
+          .computeMessageSize(20000, getMFOMGKKGCKE());
+      }
+      if (iINJFNJGEGP_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20001, getIINJFNJGEGP());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -552,14 +552,14 @@ public final class _RouteMoverInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> iINJFNJGEGPBuilder_;
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        * @return Whether the iINJFNJGEGP field is set.
        */
       public boolean hasIINJFNJGEGP() {
         return iINJFNJGEGPBuilder_ != null || iINJFNJGEGP_ != null;
       }
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        * @return The iINJFNJGEGP.
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getIINJFNJGEGP() {
@@ -570,7 +570,7 @@ public final class _RouteMoverInfoOuterClass {
         }
       }
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        */
       public Builder setIINJFNJGEGP(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
         if (iINJFNJGEGPBuilder_ == null) {
@@ -586,7 +586,7 @@ public final class _RouteMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        */
       public Builder setIINJFNJGEGP(
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder builderForValue) {
@@ -600,7 +600,7 @@ public final class _RouteMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        */
       public Builder mergeIINJFNJGEGP(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
         if (iINJFNJGEGPBuilder_ == null) {
@@ -618,7 +618,7 @@ public final class _RouteMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        */
       public Builder clearIINJFNJGEGP() {
         if (iINJFNJGEGPBuilder_ == null) {
@@ -632,7 +632,7 @@ public final class _RouteMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder getIINJFNJGEGPBuilder() {
         
@@ -640,7 +640,7 @@ public final class _RouteMoverInfoOuterClass {
         return getIINJFNJGEGPFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getIINJFNJGEGPOrBuilder() {
         if (iINJFNJGEGPBuilder_ != null) {
@@ -651,7 +651,7 @@ public final class _RouteMoverInfoOuterClass {
         }
       }
       /**
-       * <code>.MathQuaternion IINJFNJGEGP = 1;</code>
+       * <code>.MathQuaternion IINJFNJGEGP = 20001;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> 
@@ -671,14 +671,14 @@ public final class _RouteMoverInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP, emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP.Builder, emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNPOrBuilder> mFOMGKKGCKEBuilder_;
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        * @return Whether the mFOMGKKGCKE field is set.
        */
       public boolean hasMFOMGKKGCKE() {
         return mFOMGKKGCKEBuilder_ != null || mFOMGKKGCKE_ != null;
       }
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        * @return The mFOMGKKGCKE.
        */
       public emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP getMFOMGKKGCKE() {
@@ -689,7 +689,7 @@ public final class _RouteMoverInfoOuterClass {
         }
       }
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        */
       public Builder setMFOMGKKGCKE(emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP value) {
         if (mFOMGKKGCKEBuilder_ == null) {
@@ -705,7 +705,7 @@ public final class _RouteMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        */
       public Builder setMFOMGKKGCKE(
           emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP.Builder builderForValue) {
@@ -719,7 +719,7 @@ public final class _RouteMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        */
       public Builder mergeMFOMGKKGCKE(emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP value) {
         if (mFOMGKKGCKEBuilder_ == null) {
@@ -737,7 +737,7 @@ public final class _RouteMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        */
       public Builder clearMFOMGKKGCKE() {
         if (mFOMGKKGCKEBuilder_ == null) {
@@ -751,7 +751,7 @@ public final class _RouteMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        */
       public emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP.Builder getMFOMGKKGCKEBuilder() {
         
@@ -759,7 +759,7 @@ public final class _RouteMoverInfoOuterClass {
         return getMFOMGKKGCKEFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        */
       public emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNPOrBuilder getMFOMGKKGCKEOrBuilder() {
         if (mFOMGKKGCKEBuilder_ != null) {
@@ -770,7 +770,7 @@ public final class _RouteMoverInfoOuterClass {
         }
       }
       /**
-       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 2;</code>
+       * <code>.HPPHAPGKFNP MFOMGKKGCKE = 20000;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP, emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNP.Builder, emu.grasscutter.net.proto.HPPHAPGKFNPOuterClass.HPPHAPGKFNPOrBuilder> 
@@ -853,11 +853,11 @@ public final class _RouteMoverInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025_RouteMoverInfo.proto\032\021HPPHAPGKFNP.pro" +
-      "to\032\024MathQuaternion.proto\"Z\n\017_RouteMoverI" +
-      "nfo\022$\n\013IINJFNJGEGP\030\001 \001(\0132\017.MathQuaternio" +
-      "n\022!\n\013MFOMGKKGCKE\030\002 \001(\0132\014.HPPHAPGKFNPB6\n\031" +
-      "emu.grasscutter.net.protoB\031_RouteMoverIn" +
-      "foOuterClassb\006proto3"
+      "to\032\024MathQuaternion.proto\"^\n\017_RouteMoverI" +
+      "nfo\022&\n\013IINJFNJGEGP\030\241\234\001 \001(\0132\017.MathQuatern" +
+      "ion\022#\n\013MFOMGKKGCKE\030\240\234\001 \001(\0132\014.HPPHAPGKFNP" +
+      "B6\n\031emu.grasscutter.net.protoB\031_RouteMov" +
+      "erInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

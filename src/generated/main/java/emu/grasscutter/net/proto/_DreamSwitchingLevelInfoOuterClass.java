@@ -19,7 +19,7 @@ public final class _DreamSwitchingLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 ADIKAHFLJKL = 3;</code>
+     * <code>uint32 ADIKAHFLJKL = 13;</code>
      * @return The aDIKAHFLJKL.
      */
     int getADIKAHFLJKL();
@@ -69,7 +69,7 @@ public final class _DreamSwitchingLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 104: {
 
               aDIKAHFLJKL_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class _DreamSwitchingLevelInfoOuterClass {
               emu.grasscutter.net.proto._DreamSwitchingLevelInfoOuterClass._DreamSwitchingLevelInfo.class, emu.grasscutter.net.proto._DreamSwitchingLevelInfoOuterClass._DreamSwitchingLevelInfo.Builder.class);
     }
 
-    public static final int ADIKAHFLJKL_FIELD_NUMBER = 3;
+    public static final int ADIKAHFLJKL_FIELD_NUMBER = 13;
     private int aDIKAHFLJKL_;
     /**
-     * <code>uint32 ADIKAHFLJKL = 3;</code>
+     * <code>uint32 ADIKAHFLJKL = 13;</code>
      * @return The aDIKAHFLJKL.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class _DreamSwitchingLevelInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (aDIKAHFLJKL_ != 0) {
-        output.writeUInt32(3, aDIKAHFLJKL_);
+        output.writeUInt32(13, aDIKAHFLJKL_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class _DreamSwitchingLevelInfoOuterClass {
       size = 0;
       if (aDIKAHFLJKL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, aDIKAHFLJKL_);
+          .computeUInt32Size(13, aDIKAHFLJKL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class _DreamSwitchingLevelInfoOuterClass {
 
       private int aDIKAHFLJKL_ ;
       /**
-       * <code>uint32 ADIKAHFLJKL = 3;</code>
+       * <code>uint32 ADIKAHFLJKL = 13;</code>
        * @return The aDIKAHFLJKL.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class _DreamSwitchingLevelInfoOuterClass {
         return aDIKAHFLJKL_;
       }
       /**
-       * <code>uint32 ADIKAHFLJKL = 3;</code>
+       * <code>uint32 ADIKAHFLJKL = 13;</code>
        * @param value The aDIKAHFLJKL to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class _DreamSwitchingLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ADIKAHFLJKL = 3;</code>
+       * <code>uint32 ADIKAHFLJKL = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearADIKAHFLJKL() {
@@ -517,7 +517,7 @@ public final class _DreamSwitchingLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036_DreamSwitchingLevelInfo.proto\"/\n\030_Dre" +
-      "amSwitchingLevelInfo\022\023\n\013ADIKAHFLJKL\030\003 \001(" +
+      "amSwitchingLevelInfo\022\023\n\013ADIKAHFLJKL\030\r \001(" +
       "\rB?\n\031emu.grasscutter.net.protoB\"_DreamSw" +
       "itchingLevelInfoOuterClassb\006proto3"
     };

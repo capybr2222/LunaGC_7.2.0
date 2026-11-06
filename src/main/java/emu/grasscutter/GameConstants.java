@@ -1,5 +1,6 @@
 package emu.grasscutter;
 
+import emu.grasscutter.data.GameData;
 import emu.grasscutter.game.world.Position;
 import emu.grasscutter.utils.Utils;
 import emu.grasscutter.utils.objects.SparseSet;
@@ -11,7 +12,7 @@ public final class GameConstants {
     public static int[] VERSION_PARTS = Arrays.stream(VERSION.split("\\.")).mapToInt(Integer::parseInt).toArray();
     public static boolean DEBUG = false;
 
-    public static final int ENTITY_ID_BIT_SHIFT = 21;
+    public static final int ENTITY_ID_BIT_SHIFT = 27;
     public static final int DEFAULT_TEAMS = 4;
     public static final int MAX_TEAMS = 50;
     public static final int MAIN_CHARACTER_MALE = 10000005;
@@ -117,7 +118,29 @@ public final class GameConstants {
         105001, 105004, 106000-107000, 107011, 108000, 109000-110000,
         115000-130000, 200200-200899, 220050, 220054
         """);
-    public static final int[] DEFAULT_ABILITY_HASHES =
-            Arrays.stream(DEFAULT_ABILITY_STRINGS).mapToInt(Utils::abilityHash).toArray();
+    private static int[] defaultAbilityHashes;
+
+    public static int[] defaultAbilityHashes() {
+        var cached = defaultAbilityHashes;
+        if (cached != null) return cached;
+
+        var known = GameData.getAbilityDataMap();
+        if (known.isEmpty()) {
+            return Arrays.stream(DEFAULT_ABILITY_STRINGS).mapToInt(Utils::abilityHash).toArray();
+        }
+
+        var kept = Arrays.stream(DEFAULT_ABILITY_STRINGS).filter(known::containsKey).toArray(String[]::new);
+        if (kept.length != DEFAULT_ABILITY_STRINGS.length) {
+            Grasscutter.getLogger()
+                    .info(
+                            "Skipping {} default abilities that {} no longer defines: {}",
+                            DEFAULT_ABILITY_STRINGS.length - kept.length,
+                            VERSION,
+                            Arrays.stream(DEFAULT_ABILITY_STRINGS)
+                                    .filter(name -> !known.containsKey(name))
+                                    .toList());
+        }
+        return defaultAbilityHashes = Arrays.stream(kept).mapToInt(Utils::abilityHash).toArray();
+    }
     public static final int DEFAULT_ABILITY_NAME = Utils.abilityHash("Default");
 }

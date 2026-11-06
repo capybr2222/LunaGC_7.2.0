@@ -19,46 +19,46 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string player_name = 5;</code>
+     * <code>string player_name = 6;</code>
      * @return The playerName.
      */
     java.lang.String getPlayerName();
     /**
-     * <code>string player_name = 5;</code>
+     * <code>string player_name = 6;</code>
      * @return The bytes for playerName.
      */
     com.google.protobuf.ByteString
         getPlayerNameBytes();
 
     /**
-     * <code>uint32 uid = 6;</code>
+     * <code>uint32 uid = 7;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 icon = 9;</code>
+     * <code>uint32 icon = 2;</code>
      * @return The icon.
      */
     int getIcon();
 
     /**
-     * <code>.ProfilePicture profile_picture = 13;</code>
+     * <code>.ProfilePicture profile_picture = 8;</code>
      * @return Whether the profilePicture field is set.
      */
     boolean hasProfilePicture();
     /**
-     * <code>.ProfilePicture profile_picture = 13;</code>
+     * <code>.ProfilePicture profile_picture = 8;</code>
      * @return The profilePicture.
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
     /**
-     * <code>.ProfilePicture profile_picture = 13;</code>
+     * <code>.ProfilePicture profile_picture = 8;</code>
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>fixed32 time = 4;</code>
+     * <code>fixed32 time = 11;</code>
      * @return The time.
      */
     int getTime();
@@ -109,28 +109,23 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
             case 0:
               done = true;
               break;
-            case 37: {
+            case 16: {
 
-              time_ = input.readFixed32();
+              icon_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
               playerName_ = s;
               break;
             }
-            case 48: {
+            case 56: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 72: {
-
-              icon_ = input.readUInt32();
-              break;
-            }
-            case 106: {
+            case 66: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
                 subBuilder = profilePicture_.toBuilder();
@@ -141,6 +136,11 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
                 profilePicture_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 93: {
+
+              time_ = input.readFixed32();
               break;
             }
             default: {
@@ -175,10 +175,10 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
               emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.class, emu.grasscutter.net.proto.FurnitureMakeBeHelpedDataOuterClass.FurnitureMakeBeHelpedData.Builder.class);
     }
 
-    public static final int PLAYER_NAME_FIELD_NUMBER = 5;
+    public static final int PLAYER_NAME_FIELD_NUMBER = 6;
     private volatile java.lang.Object playerName_;
     /**
-     * <code>string player_name = 5;</code>
+     * <code>string player_name = 6;</code>
      * @return The playerName.
      */
     @java.lang.Override
@@ -195,7 +195,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       }
     }
     /**
-     * <code>string player_name = 5;</code>
+     * <code>string player_name = 6;</code>
      * @return The bytes for playerName.
      */
     @java.lang.Override
@@ -213,10 +213,10 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       }
     }
 
-    public static final int UID_FIELD_NUMBER = 6;
+    public static final int UID_FIELD_NUMBER = 7;
     private int uid_;
     /**
-     * <code>uint32 uid = 6;</code>
+     * <code>uint32 uid = 7;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -224,10 +224,10 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       return uid_;
     }
 
-    public static final int ICON_FIELD_NUMBER = 9;
+    public static final int ICON_FIELD_NUMBER = 2;
     private int icon_;
     /**
-     * <code>uint32 icon = 9;</code>
+     * <code>uint32 icon = 2;</code>
      * @return The icon.
      */
     @java.lang.Override
@@ -235,10 +235,10 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       return icon_;
     }
 
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 13;
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
     /**
-     * <code>.ProfilePicture profile_picture = 13;</code>
+     * <code>.ProfilePicture profile_picture = 8;</code>
      * @return Whether the profilePicture field is set.
      */
     @java.lang.Override
@@ -246,7 +246,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       return profilePicture_ != null;
     }
     /**
-     * <code>.ProfilePicture profile_picture = 13;</code>
+     * <code>.ProfilePicture profile_picture = 8;</code>
      * @return The profilePicture.
      */
     @java.lang.Override
@@ -254,17 +254,17 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
     }
     /**
-     * <code>.ProfilePicture profile_picture = 13;</code>
+     * <code>.ProfilePicture profile_picture = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
       return getProfilePicture();
     }
 
-    public static final int TIME_FIELD_NUMBER = 4;
+    public static final int TIME_FIELD_NUMBER = 11;
     private int time_;
     /**
-     * <code>fixed32 time = 4;</code>
+     * <code>fixed32 time = 11;</code>
      * @return The time.
      */
     @java.lang.Override
@@ -286,20 +286,20 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (time_ != 0) {
-        output.writeFixed32(4, time_);
+      if (icon_ != 0) {
+        output.writeUInt32(2, icon_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playerName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, playerName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, playerName_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(6, uid_);
-      }
-      if (icon_ != 0) {
-        output.writeUInt32(9, icon_);
+        output.writeUInt32(7, uid_);
       }
       if (profilePicture_ != null) {
-        output.writeMessage(13, getProfilePicture());
+        output.writeMessage(8, getProfilePicture());
+      }
+      if (time_ != 0) {
+        output.writeFixed32(11, time_);
       }
       unknownFields.writeTo(output);
     }
@@ -310,24 +310,24 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (time_ != 0) {
+      if (icon_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFixed32Size(4, time_);
+          .computeUInt32Size(2, icon_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playerName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, playerName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, playerName_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, uid_);
-      }
-      if (icon_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, icon_);
+          .computeUInt32Size(7, uid_);
       }
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getProfilePicture());
+          .computeMessageSize(8, getProfilePicture());
+      }
+      if (time_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFixed32Size(11, time_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -657,7 +657,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
 
       private java.lang.Object playerName_ = "";
       /**
-       * <code>string player_name = 5;</code>
+       * <code>string player_name = 6;</code>
        * @return The playerName.
        */
       public java.lang.String getPlayerName() {
@@ -673,7 +673,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         }
       }
       /**
-       * <code>string player_name = 5;</code>
+       * <code>string player_name = 6;</code>
        * @return The bytes for playerName.
        */
       public com.google.protobuf.ByteString
@@ -690,7 +690,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         }
       }
       /**
-       * <code>string player_name = 5;</code>
+       * <code>string player_name = 6;</code>
        * @param value The playerName to set.
        * @return This builder for chaining.
        */
@@ -705,7 +705,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>string player_name = 5;</code>
+       * <code>string player_name = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerName() {
@@ -715,7 +715,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>string player_name = 5;</code>
+       * <code>string player_name = 6;</code>
        * @param value The bytes for playerName to set.
        * @return This builder for chaining.
        */
@@ -733,7 +733,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 6;</code>
+       * <code>uint32 uid = 7;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -741,7 +741,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 6;</code>
+       * <code>uint32 uid = 7;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -752,7 +752,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 6;</code>
+       * <code>uint32 uid = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -764,7 +764,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
 
       private int icon_ ;
       /**
-       * <code>uint32 icon = 9;</code>
+       * <code>uint32 icon = 2;</code>
        * @return The icon.
        */
       @java.lang.Override
@@ -772,7 +772,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return icon_;
       }
       /**
-       * <code>uint32 icon = 9;</code>
+       * <code>uint32 icon = 2;</code>
        * @param value The icon to set.
        * @return This builder for chaining.
        */
@@ -783,7 +783,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 icon = 9;</code>
+       * <code>uint32 icon = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIcon() {
@@ -797,14 +797,14 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        * @return Whether the profilePicture field is set.
        */
       public boolean hasProfilePicture() {
         return profilePictureBuilder_ != null || profilePicture_ != null;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        * @return The profilePicture.
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
@@ -815,7 +815,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        */
       public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -831,7 +831,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        */
       public Builder setProfilePicture(
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
@@ -845,7 +845,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        */
       public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -863,7 +863,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        */
       public Builder clearProfilePicture() {
         if (profilePictureBuilder_ == null) {
@@ -877,7 +877,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
         
@@ -885,7 +885,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return getProfilePictureFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
         if (profilePictureBuilder_ != null) {
@@ -896,7 +896,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 13;</code>
+       * <code>.ProfilePicture profile_picture = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
@@ -914,7 +914,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
 
       private int time_ ;
       /**
-       * <code>fixed32 time = 4;</code>
+       * <code>fixed32 time = 11;</code>
        * @return The time.
        */
       @java.lang.Override
@@ -922,7 +922,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return time_;
       }
       /**
-       * <code>fixed32 time = 4;</code>
+       * <code>fixed32 time = 11;</code>
        * @param value The time to set.
        * @return This builder for chaining.
        */
@@ -933,7 +933,7 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
         return this;
       }
       /**
-       * <code>fixed32 time = 4;</code>
+       * <code>fixed32 time = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearTime() {
@@ -1011,9 +1011,9 @@ public final class FurnitureMakeBeHelpedDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037FurnitureMakeBeHelpedData.proto\032\024Profi" +
       "lePicture.proto\"\203\001\n\031FurnitureMakeBeHelpe" +
-      "dData\022\023\n\013player_name\030\005 \001(\t\022\013\n\003uid\030\006 \001(\r\022" +
-      "\014\n\004icon\030\t \001(\r\022(\n\017profile_picture\030\r \001(\0132\017" +
-      ".ProfilePicture\022\014\n\004time\030\004 \001(\007B@\n\031emu.gra" +
+      "dData\022\023\n\013player_name\030\006 \001(\t\022\013\n\003uid\030\007 \001(\r\022" +
+      "\014\n\004icon\030\002 \001(\r\022(\n\017profile_picture\030\010 \001(\0132\017" +
+      ".ProfilePicture\022\014\n\004time\030\013 \001(\007B@\n\031emu.gra" +
       "sscutter.net.protoB#FurnitureMakeBeHelpe" +
       "dDataOuterClassb\006proto3"
     };

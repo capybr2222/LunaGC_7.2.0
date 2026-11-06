@@ -7,9 +7,9 @@ import "GachaTransferItem.proto";
 import "ItemParam.proto";
 
 message GachaItem {
-	bool is_flash_card = 13;
-	bool is_gacha_item_new = 12;
-	ItemParam gacha_item = 6;
-	repeated GachaTransferItem transfer_items = 5;
-	repeated ItemParam token_item_list = 8;
+	bool is_flash_card = 15;
+	bool is_gacha_item_new = 14;
+	ItemParam gacha_item = 9;
+	repeated GachaTransferItem transfer_items = 1;
+	repeated ItemParam token_item_list = 7;
 }

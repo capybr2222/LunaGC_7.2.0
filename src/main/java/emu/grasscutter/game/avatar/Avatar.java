@@ -22,6 +22,7 @@ import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
 import emu.grasscutter.game.tps.TpsWeaponSystem;
+import emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfo;
 import emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo;
 import emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo;
 import emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo;
@@ -981,6 +982,18 @@ public class Avatar {
         return onExtraStep ? level : 0;
     }
 
+    public AvatarExcelInfo getExcelInfo() {
+        var data = this.getAvatarData();
+        if (data == null) return AvatarExcelInfo.getDefaultInstance();
+        return AvatarExcelInfo.newBuilder()
+                .setPrefabPathHash(data.getPrefabPathHash())
+                .setPrefabPathRemoteHash(data.getPrefabPathRemoteHash())
+                .setControllerPathHash(data.getControllerPathHash())
+                .setControllerPathRemoteHash(data.getControllerPathRemoteHash())
+                .setCombatConfigHash(data.getCombatConfigHash())
+                .build();
+    }
+
     public AvatarInfo toProto() {
         int fetterLevel = this.getFetterLevel();
         AvatarFetterInfo.Builder avatarFetter = AvatarFetterInfo.newBuilder().setExpLevel(fetterLevel);
@@ -1023,7 +1036,8 @@ public class Avatar {
                         .setWearingFlycloakId(this.getFlyCloak())
                         .setCostumeId(this.getCostume())
                         .setTraceEffectId(this.getTraceEffect())
-                        .setExtraLevel(this.getExtraLevel());
+                        .setExtraLevel(this.getExtraLevel())
+                        .setExcelInfo(this.getExcelInfo());
 
         this.getSkillExtraChargeMap()
                 .forEach(

@@ -40,17 +40,17 @@ public final class _RotateMoverInfoOuterClass {
     float getLAIKIBMMJKD();
 
     /**
-     * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+     * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
      * @return Whether the gMDLGOECLKP field is set.
      */
     boolean hasGMDLGOECLKP();
     /**
-     * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+     * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
      * @return The gMDLGOECLKP.
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getGMDLGOECLKP();
     /**
-     * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+     * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getGMDLGOECLKPOrBuilder();
   }
@@ -117,7 +117,7 @@ public final class _RotateMoverInfoOuterClass {
               lAIKIBMMJKD_ = input.readFloat();
               break;
             }
-            case 26: {
+            case 160010: {
               emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder subBuilder = null;
               if (gMDLGOECLKP_ != null) {
                 subBuilder = gMDLGOECLKP_.toBuilder();
@@ -199,10 +199,10 @@ public final class _RotateMoverInfoOuterClass {
       return lAIKIBMMJKD_;
     }
 
-    public static final int GMDLGOECLKP_FIELD_NUMBER = 3;
+    public static final int GMDLGOECLKP_FIELD_NUMBER = 20001;
     private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion gMDLGOECLKP_;
     /**
-     * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+     * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
      * @return Whether the gMDLGOECLKP field is set.
      */
     @java.lang.Override
@@ -210,7 +210,7 @@ public final class _RotateMoverInfoOuterClass {
       return gMDLGOECLKP_ != null;
     }
     /**
-     * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+     * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
      * @return The gMDLGOECLKP.
      */
     @java.lang.Override
@@ -218,7 +218,7 @@ public final class _RotateMoverInfoOuterClass {
       return gMDLGOECLKP_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : gMDLGOECLKP_;
     }
     /**
-     * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+     * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getGMDLGOECLKPOrBuilder() {
@@ -246,7 +246,7 @@ public final class _RotateMoverInfoOuterClass {
         output.writeFloat(2, lAIKIBMMJKD_);
       }
       if (gMDLGOECLKP_ != null) {
-        output.writeMessage(3, getGMDLGOECLKP());
+        output.writeMessage(20001, getGMDLGOECLKP());
       }
       unknownFields.writeTo(output);
     }
@@ -267,7 +267,7 @@ public final class _RotateMoverInfoOuterClass {
       }
       if (gMDLGOECLKP_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getGMDLGOECLKP());
+          .computeMessageSize(20001, getGMDLGOECLKP());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -743,14 +743,14 @@ public final class _RotateMoverInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> gMDLGOECLKPBuilder_;
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        * @return Whether the gMDLGOECLKP field is set.
        */
       public boolean hasGMDLGOECLKP() {
         return gMDLGOECLKPBuilder_ != null || gMDLGOECLKP_ != null;
       }
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        * @return The gMDLGOECLKP.
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getGMDLGOECLKP() {
@@ -761,7 +761,7 @@ public final class _RotateMoverInfoOuterClass {
         }
       }
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        */
       public Builder setGMDLGOECLKP(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
         if (gMDLGOECLKPBuilder_ == null) {
@@ -777,7 +777,7 @@ public final class _RotateMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        */
       public Builder setGMDLGOECLKP(
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder builderForValue) {
@@ -791,7 +791,7 @@ public final class _RotateMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        */
       public Builder mergeGMDLGOECLKP(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
         if (gMDLGOECLKPBuilder_ == null) {
@@ -809,7 +809,7 @@ public final class _RotateMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        */
       public Builder clearGMDLGOECLKP() {
         if (gMDLGOECLKPBuilder_ == null) {
@@ -823,7 +823,7 @@ public final class _RotateMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder getGMDLGOECLKPBuilder() {
         
@@ -831,7 +831,7 @@ public final class _RotateMoverInfoOuterClass {
         return getGMDLGOECLKPFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getGMDLGOECLKPOrBuilder() {
         if (gMDLGOECLKPBuilder_ != null) {
@@ -842,7 +842,7 @@ public final class _RotateMoverInfoOuterClass {
         }
       }
       /**
-       * <code>.MathQuaternion GMDLGOECLKP = 3;</code>
+       * <code>.MathQuaternion GMDLGOECLKP = 20001;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> 
@@ -925,11 +925,11 @@ public final class _RotateMoverInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026_RotateMoverInfo.proto\032\024MathQuaternion" +
-      ".proto\032\014Vector.proto\"k\n\020_RotateMoverInfo" +
+      ".proto\032\014Vector.proto\"m\n\020_RotateMoverInfo" +
       "\022\034\n\013IMFDIHLBFEN\030\001 \001(\0132\007.Vector\022\023\n\013LAIKIB" +
-      "MMJKD\030\002 \001(\002\022$\n\013GMDLGOECLKP\030\003 \001(\0132\017.MathQ" +
-      "uaternionB7\n\031emu.grasscutter.net.protoB\032" +
-      "_RotateMoverInfoOuterClassb\006proto3"
+      "MMJKD\030\002 \001(\002\022&\n\013GMDLGOECLKP\030\241\234\001 \001(\0132\017.Mat" +
+      "hQuaternionB7\n\031emu.grasscutter.net.proto" +
+      "B\032_RotateMoverInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "EnterWorldAreaReqOuterClass";
 
 message EnterWorldAreaReq {
-	uint32 area_id = 4;
-	uint32 area_type = 1;
+	uint32 area_id = 2;
+	uint32 area_type = 12;
 }

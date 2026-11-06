@@ -25,7 +25,7 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
     int getStageId();
 
     /**
-     * <code>bool is_open = 7;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
@@ -80,7 +80,7 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
               stageId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 16: {
 
               isOpen_ = input.readBool();
               break;
@@ -128,10 +128,10 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
       return stageId_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 7;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 7;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -157,7 +157,7 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
         output.writeUInt32(1, stageId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(7, isOpen_);
+        output.writeBool(2, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,7 +174,7 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isOpen_);
+          .computeBoolSize(2, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -492,7 +492,7 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 7;</code>
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -589,7 +589,7 @@ public final class GravenInnocenceCarveStageInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GravenInnocenceCarveStageInfo.proto\"B\n" +
       "\035GravenInnocenceCarveStageInfo\022\020\n\010stage_" +
-      "id\030\001 \001(\r\022\017\n\007is_open\030\007 \001(\010BD\n\031emu.grasscu" +
+      "id\030\001 \001(\r\022\017\n\007is_open\030\002 \001(\010BD\n\031emu.grasscu" +
       "tter.net.protoB\'GravenInnocenceCarveStag" +
       "eInfoOuterClassb\006proto3"
     };

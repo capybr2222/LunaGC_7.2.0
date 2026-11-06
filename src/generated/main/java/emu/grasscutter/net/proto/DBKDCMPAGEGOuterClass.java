@@ -49,13 +49,13 @@ public final class DBKDCMPAGEGOuterClass {
         int index);
 
     /**
-     * <code>uint32 BOJBEECJFDL = 50000;</code>
+     * <code>uint32 BOJBEECJFDL = 3;</code>
      * @return The bOJBEECJFDL.
      */
     int getBOJBEECJFDL();
 
     /**
-     * <code>uint32 ONEMANNIKIH = 50001;</code>
+     * <code>uint32 ONEMANNIKIH = 7;</code>
      * @return The oNEMANNIKIH.
      */
     int getONEMANNIKIH();
@@ -112,6 +112,11 @@ public final class DBKDCMPAGEGOuterClass {
               difficulty_ = input.readUInt32();
               break;
             }
+            case 24: {
+
+              bOJBEECJFDL_ = input.readUInt32();
+              break;
+            }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 teamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.LEEAPMKHDJKOuterClass.LEEAPMKHDJK>();
@@ -121,12 +126,7 @@ public final class DBKDCMPAGEGOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.LEEAPMKHDJKOuterClass.LEEAPMKHDJK.parser(), extensionRegistry));
               break;
             }
-            case 400000: {
-
-              bOJBEECJFDL_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
+            case 56: {
 
               oNEMANNIKIH_ = input.readUInt32();
               break;
@@ -217,10 +217,10 @@ public final class DBKDCMPAGEGOuterClass {
       return teamList_.get(index);
     }
 
-    public static final int BOJBEECJFDL_FIELD_NUMBER = 50000;
+    public static final int BOJBEECJFDL_FIELD_NUMBER = 3;
     private int bOJBEECJFDL_;
     /**
-     * <code>uint32 BOJBEECJFDL = 50000;</code>
+     * <code>uint32 BOJBEECJFDL = 3;</code>
      * @return The bOJBEECJFDL.
      */
     @java.lang.Override
@@ -228,10 +228,10 @@ public final class DBKDCMPAGEGOuterClass {
       return bOJBEECJFDL_;
     }
 
-    public static final int ONEMANNIKIH_FIELD_NUMBER = 50001;
+    public static final int ONEMANNIKIH_FIELD_NUMBER = 7;
     private int oNEMANNIKIH_;
     /**
-     * <code>uint32 ONEMANNIKIH = 50001;</code>
+     * <code>uint32 ONEMANNIKIH = 7;</code>
      * @return The oNEMANNIKIH.
      */
     @java.lang.Override
@@ -256,14 +256,14 @@ public final class DBKDCMPAGEGOuterClass {
       if (difficulty_ != 0) {
         output.writeUInt32(2, difficulty_);
       }
+      if (bOJBEECJFDL_ != 0) {
+        output.writeUInt32(3, bOJBEECJFDL_);
+      }
       for (int i = 0; i < teamList_.size(); i++) {
         output.writeMessage(5, teamList_.get(i));
       }
-      if (bOJBEECJFDL_ != 0) {
-        output.writeUInt32(50000, bOJBEECJFDL_);
-      }
       if (oNEMANNIKIH_ != 0) {
-        output.writeUInt32(50001, oNEMANNIKIH_);
+        output.writeUInt32(7, oNEMANNIKIH_);
       }
       unknownFields.writeTo(output);
     }
@@ -278,17 +278,17 @@ public final class DBKDCMPAGEGOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, difficulty_);
       }
+      if (bOJBEECJFDL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, bOJBEECJFDL_);
+      }
       for (int i = 0; i < teamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, teamList_.get(i));
       }
-      if (bOJBEECJFDL_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, bOJBEECJFDL_);
-      }
       if (oNEMANNIKIH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, oNEMANNIKIH_);
+          .computeUInt32Size(7, oNEMANNIKIH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -905,7 +905,7 @@ public final class DBKDCMPAGEGOuterClass {
 
       private int bOJBEECJFDL_ ;
       /**
-       * <code>uint32 BOJBEECJFDL = 50000;</code>
+       * <code>uint32 BOJBEECJFDL = 3;</code>
        * @return The bOJBEECJFDL.
        */
       @java.lang.Override
@@ -913,7 +913,7 @@ public final class DBKDCMPAGEGOuterClass {
         return bOJBEECJFDL_;
       }
       /**
-       * <code>uint32 BOJBEECJFDL = 50000;</code>
+       * <code>uint32 BOJBEECJFDL = 3;</code>
        * @param value The bOJBEECJFDL to set.
        * @return This builder for chaining.
        */
@@ -924,7 +924,7 @@ public final class DBKDCMPAGEGOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BOJBEECJFDL = 50000;</code>
+       * <code>uint32 BOJBEECJFDL = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearBOJBEECJFDL() {
@@ -936,7 +936,7 @@ public final class DBKDCMPAGEGOuterClass {
 
       private int oNEMANNIKIH_ ;
       /**
-       * <code>uint32 ONEMANNIKIH = 50001;</code>
+       * <code>uint32 ONEMANNIKIH = 7;</code>
        * @return The oNEMANNIKIH.
        */
       @java.lang.Override
@@ -944,7 +944,7 @@ public final class DBKDCMPAGEGOuterClass {
         return oNEMANNIKIH_;
       }
       /**
-       * <code>uint32 ONEMANNIKIH = 50001;</code>
+       * <code>uint32 ONEMANNIKIH = 7;</code>
        * @param value The oNEMANNIKIH to set.
        * @return This builder for chaining.
        */
@@ -955,7 +955,7 @@ public final class DBKDCMPAGEGOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ONEMANNIKIH = 50001;</code>
+       * <code>uint32 ONEMANNIKIH = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearONEMANNIKIH() {
@@ -1031,12 +1031,12 @@ public final class DBKDCMPAGEGOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021DBKDCMPAGEG.proto\032\021LEEAPMKHDJK.proto\"p" +
+      "\n\021DBKDCMPAGEG.proto\032\021LEEAPMKHDJK.proto\"l" +
       "\n\013DBKDCMPAGEG\022\022\n\ndifficulty\030\002 \001(\r\022\037\n\ttea" +
-      "m_list\030\005 \003(\0132\014.LEEAPMKHDJK\022\025\n\013BOJBEECJFD" +
-      "L\030\320\206\003 \001(\r\022\025\n\013ONEMANNIKIH\030\321\206\003 \001(\rB2\n\031emu." +
-      "grasscutter.net.protoB\025DBKDCMPAGEGOuterC" +
-      "lassb\006proto3"
+      "m_list\030\005 \003(\0132\014.LEEAPMKHDJK\022\023\n\013BOJBEECJFD" +
+      "L\030\003 \001(\r\022\023\n\013ONEMANNIKIH\030\007 \001(\rB2\n\031emu.gras" +
+      "scutter.net.protoB\025DBKDCMPAGEGOuterClass" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

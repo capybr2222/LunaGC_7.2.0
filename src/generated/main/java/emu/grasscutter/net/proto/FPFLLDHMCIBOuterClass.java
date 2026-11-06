@@ -19,25 +19,25 @@ public final class FPFLLDHMCIBOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> 
         getAvatarListList();
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getAvatarList(int index);
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     int getAvatarListCount();
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
         getAvatarListOrBuilderList();
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getAvatarListOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class FPFLLDHMCIBOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 50: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class FPFLLDHMCIBOuterClass {
               emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.class, emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder.class);
     }
 
-    public static final int AVATAR_LIST_FIELD_NUMBER = 8;
+    public static final int AVATAR_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> avatarList_;
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> getAvatarListList() {
       return avatarList_;
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
@@ -151,21 +151,21 @@ public final class FPFLLDHMCIBOuterClass {
       return avatarList_;
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     @java.lang.Override
     public int getAvatarListCount() {
       return avatarList_.size();
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getAvatarList(int index) {
       return avatarList_.get(index);
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+     * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getAvatarListOrBuilder(
@@ -188,7 +188,7 @@ public final class FPFLLDHMCIBOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < avatarList_.size(); i++) {
-        output.writeMessage(8, avatarList_.get(i));
+        output.writeMessage(6, avatarList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class FPFLLDHMCIBOuterClass {
       size = 0;
       for (int i = 0; i < avatarList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, avatarList_.get(i));
+          .computeMessageSize(6, avatarList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class FPFLLDHMCIBOuterClass {
           emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> avatarListBuilder_;
 
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> getAvatarListList() {
         if (avatarListBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class FPFLLDHMCIBOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public int getAvatarListCount() {
         if (avatarListBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class FPFLLDHMCIBOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getAvatarList(int index) {
         if (avatarListBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class FPFLLDHMCIBOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder setAvatarList(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
@@ -575,7 +575,7 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder setAvatarList(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder addAvatarList(emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
         if (avatarListBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder addAvatarList(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
@@ -622,7 +622,7 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder addAvatarList(
           emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder addAvatarList(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder addAllAvatarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> values) {
@@ -665,7 +665,7 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder clearAvatarList() {
         if (avatarListBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public Builder removeAvatarList(int index) {
         if (avatarListBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class FPFLLDHMCIBOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder getAvatarListBuilder(
           int index) {
         return getAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getAvatarListOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class FPFLLDHMCIBOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
            getAvatarListOrBuilderList() {
@@ -719,14 +719,14 @@ public final class FPFLLDHMCIBOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder addAvatarListBuilder() {
         return getAvatarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder addAvatarListBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class FPFLLDHMCIBOuterClass {
             index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo avatar_list = 8;</code>
+       * <code>repeated ._ActivityAvatarInfo avatar_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder> 
            getAvatarListBuilderList() {
@@ -822,7 +822,7 @@ public final class FPFLLDHMCIBOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021FPFLLDHMCIB.proto\032\031_ActivityAvatarInfo" +
-      ".proto\"8\n\013FPFLLDHMCIB\022)\n\013avatar_list\030\010 \003" +
+      ".proto\"8\n\013FPFLLDHMCIB\022)\n\013avatar_list\030\006 \003" +
       "(\0132\024._ActivityAvatarInfoB2\n\031emu.grasscut" +
       "ter.net.protoB\025FPFLLDHMCIBOuterClassb\006pr" +
       "oto3"

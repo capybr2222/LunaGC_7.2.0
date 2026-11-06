@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ShowClientGuideNotifyOuterClass";
 
 message ShowClientGuideNotify {
-	string guide_name = 13;
+	string guide_name = 3;
 }

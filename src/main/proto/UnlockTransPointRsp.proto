@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "UnlockTransPointRspOuterClass";
 
 message UnlockTransPointRsp {
-	int32 retcode = 6;
+	int32 retcode = 8;
 }

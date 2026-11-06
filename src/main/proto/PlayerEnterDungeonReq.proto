@@ -6,10 +6,10 @@ option java_outer_classname = "PlayerEnterDungeonReqOuterClass";
 import "DungeonEnterPosInfo.proto";
 
 message PlayerEnterDungeonReq {
-	uint32 BAEJLCIOPMI = 50000;
-	DungeonEnterPosInfo enter_pos_info = 11;
-	uint32 CCIOMCLOGDK = 50001;
-	uint32 point_id = 5;
-	uint32 dungeon_id = 14;
-	bool _is_continue = 10;
+	uint32 BAEJLCIOPMI = 20000;
+	DungeonEnterPosInfo enter_pos_info = 10;
+	uint32 CCIOMCLOGDK = 20001;
+	uint32 point_id = 14;
+	uint32 dungeon_id = 1;
+	bool _is_continue = 13;
 }

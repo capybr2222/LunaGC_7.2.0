@@ -55,7 +55,7 @@ public final class NNGBNNMJABPOuterClass {
         int index);
 
     /**
-     * <code>bool OICODBBMDAO = 50000;</code>
+     * <code>bool OICODBBMDAO = 11;</code>
      * @return The oICODBBMDAO.
      */
     boolean getOICODBBMDAO();
@@ -100,7 +100,7 @@ public final class NNGBNNMJABPOuterClass {
         int index);
 
     /**
-     * <code>bool FJKGOLJBKIM = 50001;</code>
+     * <code>bool FJKGOLJBKIM = 3;</code>
      * @return The fJKGOLJBKIM.
      */
     boolean getFJKGOLJBKIM();
@@ -153,6 +153,11 @@ public final class NNGBNNMJABPOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              fJKGOLJBKIM_ = input.readBool();
+              break;
+            }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 iMGAIHFOHFJ_ = new java.util.ArrayList<emu.grasscutter.net.proto.GKOENKALADAOuterClass.GKOENKALADA>();
@@ -165,6 +170,11 @@ public final class NNGBNNMJABPOuterClass {
             case 72: {
 
               jKOEGDMOGON_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              oICODBBMDAO_ = input.readBool();
               break;
             }
             case 106: {
@@ -192,16 +202,6 @@ public final class NNGBNNMJABPOuterClass {
             case 120: {
 
               level_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
-
-              oICODBBMDAO_ = input.readBool();
-              break;
-            }
-            case 400008: {
-
-              fJKGOLJBKIM_ = input.readBool();
               break;
             }
             default: {
@@ -304,10 +304,10 @@ public final class NNGBNNMJABPOuterClass {
       return iMGAIHFOHFJ_.get(index);
     }
 
-    public static final int OICODBBMDAO_FIELD_NUMBER = 50000;
+    public static final int OICODBBMDAO_FIELD_NUMBER = 11;
     private boolean oICODBBMDAO_;
     /**
-     * <code>bool OICODBBMDAO = 50000;</code>
+     * <code>bool OICODBBMDAO = 11;</code>
      * @return The oICODBBMDAO.
      */
     @java.lang.Override
@@ -381,10 +381,10 @@ public final class NNGBNNMJABPOuterClass {
       return eLEPHHGAEMM_.get(index);
     }
 
-    public static final int FJKGOLJBKIM_FIELD_NUMBER = 50001;
+    public static final int FJKGOLJBKIM_FIELD_NUMBER = 3;
     private boolean fJKGOLJBKIM_;
     /**
-     * <code>bool FJKGOLJBKIM = 50001;</code>
+     * <code>bool FJKGOLJBKIM = 3;</code>
      * @return The fJKGOLJBKIM.
      */
     @java.lang.Override
@@ -406,11 +406,17 @@ public final class NNGBNNMJABPOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (fJKGOLJBKIM_ != false) {
+        output.writeBool(3, fJKGOLJBKIM_);
+      }
       for (int i = 0; i < iMGAIHFOHFJ_.size(); i++) {
         output.writeMessage(5, iMGAIHFOHFJ_.get(i));
       }
       if (jKOEGDMOGON_ != 0) {
         output.writeUInt32(9, jKOEGDMOGON_);
+      }
+      if (oICODBBMDAO_ != false) {
+        output.writeBool(11, oICODBBMDAO_);
       }
       for (int i = 0; i < eLEPHHGAEMM_.size(); i++) {
         output.writeMessage(13, eLEPHHGAEMM_.get(i));
@@ -421,12 +427,6 @@ public final class NNGBNNMJABPOuterClass {
       if (level_ != 0) {
         output.writeUInt32(15, level_);
       }
-      if (oICODBBMDAO_ != false) {
-        output.writeBool(50000, oICODBBMDAO_);
-      }
-      if (fJKGOLJBKIM_ != false) {
-        output.writeBool(50001, fJKGOLJBKIM_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -436,6 +436,10 @@ public final class NNGBNNMJABPOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (fJKGOLJBKIM_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, fJKGOLJBKIM_);
+      }
       for (int i = 0; i < iMGAIHFOHFJ_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, iMGAIHFOHFJ_.get(i));
@@ -443,6 +447,10 @@ public final class NNGBNNMJABPOuterClass {
       if (jKOEGDMOGON_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, jKOEGDMOGON_);
+      }
+      if (oICODBBMDAO_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(11, oICODBBMDAO_);
       }
       for (int i = 0; i < eLEPHHGAEMM_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -455,14 +463,6 @@ public final class NNGBNNMJABPOuterClass {
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, level_);
-      }
-      if (oICODBBMDAO_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50000, oICODBBMDAO_);
-      }
-      if (fJKGOLJBKIM_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(50001, fJKGOLJBKIM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1193,7 +1193,7 @@ public final class NNGBNNMJABPOuterClass {
 
       private boolean oICODBBMDAO_ ;
       /**
-       * <code>bool OICODBBMDAO = 50000;</code>
+       * <code>bool OICODBBMDAO = 11;</code>
        * @return The oICODBBMDAO.
        */
       @java.lang.Override
@@ -1201,7 +1201,7 @@ public final class NNGBNNMJABPOuterClass {
         return oICODBBMDAO_;
       }
       /**
-       * <code>bool OICODBBMDAO = 50000;</code>
+       * <code>bool OICODBBMDAO = 11;</code>
        * @param value The oICODBBMDAO to set.
        * @return This builder for chaining.
        */
@@ -1212,7 +1212,7 @@ public final class NNGBNNMJABPOuterClass {
         return this;
       }
       /**
-       * <code>bool OICODBBMDAO = 50000;</code>
+       * <code>bool OICODBBMDAO = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearOICODBBMDAO() {
@@ -1583,7 +1583,7 @@ public final class NNGBNNMJABPOuterClass {
 
       private boolean fJKGOLJBKIM_ ;
       /**
-       * <code>bool FJKGOLJBKIM = 50001;</code>
+       * <code>bool FJKGOLJBKIM = 3;</code>
        * @return The fJKGOLJBKIM.
        */
       @java.lang.Override
@@ -1591,7 +1591,7 @@ public final class NNGBNNMJABPOuterClass {
         return fJKGOLJBKIM_;
       }
       /**
-       * <code>bool FJKGOLJBKIM = 50001;</code>
+       * <code>bool FJKGOLJBKIM = 3;</code>
        * @param value The fJKGOLJBKIM to set.
        * @return This builder for chaining.
        */
@@ -1602,7 +1602,7 @@ public final class NNGBNNMJABPOuterClass {
         return this;
       }
       /**
-       * <code>bool FJKGOLJBKIM = 50001;</code>
+       * <code>bool FJKGOLJBKIM = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFJKGOLJBKIM() {
@@ -1679,14 +1679,14 @@ public final class NNGBNNMJABPOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021NNGBNNMJABP.proto\032\021DACMDDCLPNH.proto\032\021" +
-      "GKOENKALADA.proto\032\021OEHOLOIDPEF.proto\"\310\001\n" +
+      "GKOENKALADA.proto\032\021OEHOLOIDPEF.proto\"\304\001\n" +
       "\013NNGBNNMJABP\022\023\n\013JKOEGDMOGON\030\t \001(\r\022\r\n\005lev" +
       "el\030\017 \001(\r\022!\n\013IMGAIHFOHFJ\030\005 \003(\0132\014.GKOENKAL" +
-      "ADA\022\025\n\013OICODBBMDAO\030\320\206\003 \001(\010\022!\n\013BPIHKBCGHJ" +
-      "A\030\016 \001(\0132\014.DACMDDCLPNH\022!\n\013ELEPHHGAEMM\030\r \003" +
-      "(\0132\014.OEHOLOIDPEF\022\025\n\013FJKGOLJBKIM\030\321\206\003 \001(\010B" +
-      "2\n\031emu.grasscutter.net.protoB\025NNGBNNMJAB" +
-      "POuterClassb\006proto3"
+      "ADA\022\023\n\013OICODBBMDAO\030\013 \001(\010\022!\n\013BPIHKBCGHJA\030" +
+      "\016 \001(\0132\014.DACMDDCLPNH\022!\n\013ELEPHHGAEMM\030\r \003(\013" +
+      "2\014.OEHOLOIDPEF\022\023\n\013FJKGOLJBKIM\030\003 \001(\010B2\n\031e" +
+      "mu.grasscutter.net.protoB\025NNGBNNMJABPOut" +
+      "erClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

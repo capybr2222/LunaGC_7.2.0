@@ -31,13 +31,13 @@ public final class BargainSnapshotOuterClass {
     int getBalopachcdb();
 
     /**
-     * <code>uint32 bargain_id = 1;</code>
+     * <code>uint32 bargain_id = 8;</code>
      * @return The bargainId.
      */
     int getBargainId();
 
     /**
-     * <code>int32 cur_mood = 3;</code>
+     * <code>int32 cur_mood = 11;</code>
      * @return The curMood.
      */
     int getCurMood();
@@ -87,12 +87,12 @@ public final class BargainSnapshotOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               bargainId_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 88: {
 
               curMood_ = input.readInt32();
               break;
@@ -161,10 +161,10 @@ public final class BargainSnapshotOuterClass {
       return balopachcdb_;
     }
 
-    public static final int BARGAIN_ID_FIELD_NUMBER = 1;
+    public static final int BARGAIN_ID_FIELD_NUMBER = 8;
     private int bargainId_;
     /**
-     * <code>uint32 bargain_id = 1;</code>
+     * <code>uint32 bargain_id = 8;</code>
      * @return The bargainId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class BargainSnapshotOuterClass {
       return bargainId_;
     }
 
-    public static final int CUR_MOOD_FIELD_NUMBER = 3;
+    public static final int CUR_MOOD_FIELD_NUMBER = 11;
     private int curMood_;
     /**
-     * <code>int32 cur_mood = 3;</code>
+     * <code>int32 cur_mood = 11;</code>
      * @return The curMood.
      */
     @java.lang.Override
@@ -198,10 +198,10 @@ public final class BargainSnapshotOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bargainId_ != 0) {
-        output.writeUInt32(1, bargainId_);
+        output.writeUInt32(8, bargainId_);
       }
       if (curMood_ != 0) {
-        output.writeInt32(3, curMood_);
+        output.writeInt32(11, curMood_);
       }
       if (iocnpjjnhld_ != 0) {
         output.writeUInt32(50000, iocnpjjnhld_);
@@ -220,11 +220,11 @@ public final class BargainSnapshotOuterClass {
       size = 0;
       if (bargainId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, bargainId_);
+          .computeUInt32Size(8, bargainId_);
       }
       if (curMood_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, curMood_);
+          .computeInt32Size(11, curMood_);
       }
       if (iocnpjjnhld_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -600,7 +600,7 @@ public final class BargainSnapshotOuterClass {
 
       private int bargainId_ ;
       /**
-       * <code>uint32 bargain_id = 1;</code>
+       * <code>uint32 bargain_id = 8;</code>
        * @return The bargainId.
        */
       @java.lang.Override
@@ -608,7 +608,7 @@ public final class BargainSnapshotOuterClass {
         return bargainId_;
       }
       /**
-       * <code>uint32 bargain_id = 1;</code>
+       * <code>uint32 bargain_id = 8;</code>
        * @param value The bargainId to set.
        * @return This builder for chaining.
        */
@@ -619,7 +619,7 @@ public final class BargainSnapshotOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bargain_id = 1;</code>
+       * <code>uint32 bargain_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBargainId() {
@@ -631,7 +631,7 @@ public final class BargainSnapshotOuterClass {
 
       private int curMood_ ;
       /**
-       * <code>int32 cur_mood = 3;</code>
+       * <code>int32 cur_mood = 11;</code>
        * @return The curMood.
        */
       @java.lang.Override
@@ -639,7 +639,7 @@ public final class BargainSnapshotOuterClass {
         return curMood_;
       }
       /**
-       * <code>int32 cur_mood = 3;</code>
+       * <code>int32 cur_mood = 11;</code>
        * @param value The curMood to set.
        * @return This builder for chaining.
        */
@@ -650,7 +650,7 @@ public final class BargainSnapshotOuterClass {
         return this;
       }
       /**
-       * <code>int32 cur_mood = 3;</code>
+       * <code>int32 cur_mood = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurMood() {
@@ -728,8 +728,8 @@ public final class BargainSnapshotOuterClass {
     java.lang.String[] descriptorData = {
       "\n\025BargainSnapshot.proto\"e\n\017BargainSnapsh" +
       "ot\022\025\n\013iocnpjjnhld\030\320\206\003 \001(\r\022\025\n\013balopachcdb" +
-      "\030\321\206\003 \001(\r\022\022\n\nbargain_id\030\001 \001(\r\022\020\n\010cur_mood" +
-      "\030\003 \001(\005B6\n\031emu.grasscutter.net.protoB\031Bar" +
+      "\030\321\206\003 \001(\r\022\022\n\nbargain_id\030\010 \001(\r\022\020\n\010cur_mood" +
+      "\030\013 \001(\005B6\n\031emu.grasscutter.net.protoB\031Bar" +
       "gainSnapshotOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

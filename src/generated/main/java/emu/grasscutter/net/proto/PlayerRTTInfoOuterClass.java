@@ -19,13 +19,13 @@ public final class PlayerRTTInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 rtt = 1;</code>
+     * <code>uint32 rtt = 5;</code>
      * @return The rtt.
      */
     int getRtt();
 
     /**
-     * <code>uint32 uid = 11;</code>
+     * <code>uint32 uid = 10;</code>
      * @return The uid.
      */
     int getUid();
@@ -75,12 +75,12 @@ public final class PlayerRTTInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 40: {
 
               rtt_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 80: {
 
               uid_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class PlayerRTTInfoOuterClass {
               emu.grasscutter.net.proto.PlayerRTTInfoOuterClass.PlayerRTTInfo.class, emu.grasscutter.net.proto.PlayerRTTInfoOuterClass.PlayerRTTInfo.Builder.class);
     }
 
-    public static final int RTT_FIELD_NUMBER = 1;
+    public static final int RTT_FIELD_NUMBER = 5;
     private int rtt_;
     /**
-     * <code>uint32 rtt = 1;</code>
+     * <code>uint32 rtt = 5;</code>
      * @return The rtt.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class PlayerRTTInfoOuterClass {
       return rtt_;
     }
 
-    public static final int UID_FIELD_NUMBER = 11;
+    public static final int UID_FIELD_NUMBER = 10;
     private int uid_;
     /**
-     * <code>uint32 uid = 11;</code>
+     * <code>uint32 uid = 10;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class PlayerRTTInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (rtt_ != 0) {
-        output.writeUInt32(1, rtt_);
+        output.writeUInt32(5, rtt_);
       }
       if (uid_ != 0) {
-        output.writeUInt32(11, uid_);
+        output.writeUInt32(10, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class PlayerRTTInfoOuterClass {
       size = 0;
       if (rtt_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, rtt_);
+          .computeUInt32Size(5, rtt_);
       }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, uid_);
+          .computeUInt32Size(10, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class PlayerRTTInfoOuterClass {
 
       private int rtt_ ;
       /**
-       * <code>uint32 rtt = 1;</code>
+       * <code>uint32 rtt = 5;</code>
        * @return The rtt.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class PlayerRTTInfoOuterClass {
         return rtt_;
       }
       /**
-       * <code>uint32 rtt = 1;</code>
+       * <code>uint32 rtt = 5;</code>
        * @param value The rtt to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class PlayerRTTInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 rtt = 1;</code>
+       * <code>uint32 rtt = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRtt() {
@@ -491,7 +491,7 @@ public final class PlayerRTTInfoOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 10;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class PlayerRTTInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 10;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class PlayerRTTInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 11;</code>
+       * <code>uint32 uid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -587,7 +587,7 @@ public final class PlayerRTTInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023PlayerRTTInfo.proto\")\n\rPlayerRTTInfo\022\013" +
-      "\n\003rtt\030\001 \001(\r\022\013\n\003uid\030\013 \001(\rB4\n\031emu.grasscut" +
+      "\n\003rtt\030\005 \001(\r\022\013\n\003uid\030\n \001(\rB4\n\031emu.grasscut" +
       "ter.net.protoB\027PlayerRTTInfoOuterClassb\006" +
       "proto3"
     };

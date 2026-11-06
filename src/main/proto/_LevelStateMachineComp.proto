@@ -5,5 +5,5 @@ option java_outer_classname = "_LevelStateMachineCompOuterClass";
 
 message _LevelStateMachineComp {
 	int32 BIFLHAOJNJO = 1;
-	string GACOKFFCBJO = 2;
+	string GACOKFFCBJO = 20000;
 }

@@ -6,5 +6,5 @@ option java_outer_classname = "_MinloadGameserverOuterClass";
 import "MMPPAHOHHBJ.proto";
 
 message _MinloadGameserver {
-	MMPPAHOHHBJ BEOALGIPDPJ = 1;
+	MMPPAHOHHBJ BEOALGIPDPJ = 20000;
 }

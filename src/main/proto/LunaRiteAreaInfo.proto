@@ -6,9 +6,9 @@ option java_outer_classname = "LunaRiteAreaInfoOuterClass";
 import "LunaRiteHintStatusType.proto";
 
 message LunaRiteAreaInfo {
-	LunaRiteHintStatusType hint_status = 7;
-	repeated uint32 sacrifice_list = 14;
+	LunaRiteHintStatusType hint_status = 5;
+	repeated uint32 sacrifice_list = 20000;
 	uint32 area_id = 1;
-	repeated uint32 sacrifice_reward_list = 5;
-	uint32 challenge_index = 12;
+	repeated uint32 sacrifice_reward_list = 20001;
+	uint32 challenge_index = 2;
 }

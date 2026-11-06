@@ -19,25 +19,25 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 cost_time = 9;</code>
+     * <code>uint32 cost_time = 3;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <code>bool MEJIIKGGCOO = 2;</code>
+     * <code>bool MEJIIKGGCOO = 4;</code>
      * @return The mEJIIKGGCOO.
      */
     boolean getMEJIIKGGCOO();
 
     /**
-     * <code>uint32 difficulty = 6;</code>
+     * <code>uint32 difficulty = 2;</code>
      * @return The difficulty.
      */
     int getDifficulty();
@@ -87,24 +87,24 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
-              mEJIIKGGCOO_ = input.readBool();
+              stageId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 16: {
 
               difficulty_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 24: {
 
               costTime_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 32: {
 
-              stageId_ = input.readUInt32();
+              mEJIIKGGCOO_ = input.readBool();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
               emu.grasscutter.net.proto._AcrobaticsBattleSettleInfoOuterClass._AcrobaticsBattleSettleInfo.class, emu.grasscutter.net.proto._AcrobaticsBattleSettleInfoOuterClass._AcrobaticsBattleSettleInfo.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 13;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 13;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
       return stageId_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 9;
+    public static final int COST_TIME_FIELD_NUMBER = 3;
     private int costTime_;
     /**
-     * <code>uint32 cost_time = 9;</code>
+     * <code>uint32 cost_time = 3;</code>
      * @return The costTime.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
       return costTime_;
     }
 
-    public static final int MEJIIKGGCOO_FIELD_NUMBER = 2;
+    public static final int MEJIIKGGCOO_FIELD_NUMBER = 4;
     private boolean mEJIIKGGCOO_;
     /**
-     * <code>bool MEJIIKGGCOO = 2;</code>
+     * <code>bool MEJIIKGGCOO = 4;</code>
      * @return The mEJIIKGGCOO.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
       return mEJIIKGGCOO_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 6;
+    public static final int DIFFICULTY_FIELD_NUMBER = 2;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 6;</code>
+     * <code>uint32 difficulty = 2;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mEJIIKGGCOO_ != false) {
-        output.writeBool(2, mEJIIKGGCOO_);
+      if (stageId_ != 0) {
+        output.writeUInt32(1, stageId_);
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(6, difficulty_);
+        output.writeUInt32(2, difficulty_);
       }
       if (costTime_ != 0) {
-        output.writeUInt32(9, costTime_);
+        output.writeUInt32(3, costTime_);
       }
-      if (stageId_ != 0) {
-        output.writeUInt32(13, stageId_);
+      if (mEJIIKGGCOO_ != false) {
+        output.writeBool(4, mEJIIKGGCOO_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mEJIIKGGCOO_ != false) {
+      if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, mEJIIKGGCOO_);
+          .computeUInt32Size(1, stageId_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, difficulty_);
+          .computeUInt32Size(2, difficulty_);
       }
       if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, costTime_);
+          .computeUInt32Size(3, costTime_);
       }
-      if (stageId_ != 0) {
+      if (mEJIIKGGCOO_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, stageId_);
+          .computeBoolSize(4, mEJIIKGGCOO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 13;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -570,7 +570,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
 
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 9;</code>
+       * <code>uint32 cost_time = 3;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 9;</code>
+       * <code>uint32 cost_time = 3;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 9;</code>
+       * <code>uint32 cost_time = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
@@ -601,7 +601,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
 
       private boolean mEJIIKGGCOO_ ;
       /**
-       * <code>bool MEJIIKGGCOO = 2;</code>
+       * <code>bool MEJIIKGGCOO = 4;</code>
        * @return The mEJIIKGGCOO.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
         return mEJIIKGGCOO_;
       }
       /**
-       * <code>bool MEJIIKGGCOO = 2;</code>
+       * <code>bool MEJIIKGGCOO = 4;</code>
        * @param value The mEJIIKGGCOO to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool MEJIIKGGCOO = 2;</code>
+       * <code>bool MEJIIKGGCOO = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearMEJIIKGGCOO() {
@@ -632,7 +632,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 6;</code>
+       * <code>uint32 difficulty = 2;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 6;</code>
+       * <code>uint32 difficulty = 2;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 6;</code>
+       * <code>uint32 difficulty = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -728,9 +728,9 @@ public final class _AcrobaticsBattleSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!_AcrobaticsBattleSettleInfo.proto\"k\n\033_" +
-      "AcrobaticsBattleSettleInfo\022\020\n\010stage_id\030\r" +
-      " \001(\r\022\021\n\tcost_time\030\t \001(\r\022\023\n\013MEJIIKGGCOO\030\002" +
-      " \001(\010\022\022\n\ndifficulty\030\006 \001(\rBB\n\031emu.grasscut" +
+      "AcrobaticsBattleSettleInfo\022\020\n\010stage_id\030\001" +
+      " \001(\r\022\021\n\tcost_time\030\003 \001(\r\022\023\n\013MEJIIKGGCOO\030\004" +
+      " \001(\010\022\022\n\ndifficulty\030\002 \001(\rBB\n\031emu.grasscut" +
       "ter.net.protoB%_AcrobaticsBattleSettleIn" +
       "foOuterClassb\006proto3"
     };

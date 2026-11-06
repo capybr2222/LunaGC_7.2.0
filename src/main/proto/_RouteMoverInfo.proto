@@ -7,6 +7,6 @@ import "HPPHAPGKFNP.proto";
 import "MathQuaternion.proto";
 
 message _RouteMoverInfo {
-	MathQuaternion IINJFNJGEGP = 1;
-	HPPHAPGKFNP MFOMGKKGCKE = 2;
+	MathQuaternion IINJFNJGEGP = 20001;
+	HPPHAPGKFNP MFOMGKKGCKE = 20000;
 }

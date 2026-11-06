@@ -8,6 +8,6 @@ message AbilityMetaUpdateMoonOvergrowValue {
 		INVALUE = 0;
 		SET = 1;
 	}
-	_UpdateType update_type = 5;
-	float _value = 6;
+	_UpdateType update_type = 10;
+	float _value = 11;
 }

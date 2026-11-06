@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "UnlockedFurnitureFormulaDataNotifyOuterClass";
 
 message UnlockedFurnitureFormulaDataNotify {
-	repeated uint32 furniture_id_list = 4;
-	bool is_all = 12;
+	repeated uint32 furniture_id_list = 1;
+	bool is_all = 13;
 }

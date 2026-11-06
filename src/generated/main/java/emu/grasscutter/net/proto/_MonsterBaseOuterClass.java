@@ -19,43 +19,43 @@ public final class _MonsterBaseOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 GNHNOINLCFC = 1;</code>
+     * <code>uint32 GNHNOINLCFC = 20002;</code>
      * @return The gNHNOINLCFC.
      */
     int getGNHNOINLCFC();
 
     /**
-     * <code>uint32 NLACIAJDIGD = 2;</code>
+     * <code>uint32 NLACIAJDIGD = 20001;</code>
      * @return The nLACIAJDIGD.
      */
     int getNLACIAJDIGD();
 
     /**
-     * <code>float NDAPJMNKOGL = 3;</code>
+     * <code>float NDAPJMNKOGL = 20003;</code>
      * @return The nDAPJMNKOGL.
      */
     float getNDAPJMNKOGL();
 
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL> 
         getEPPLNKCAPHJList();
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL getEPPLNKCAPHJ(int index);
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     int getEPPLNKCAPHJCount();
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBLOrBuilder> 
         getEPPLNKCAPHJOrBuilderList();
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBLOrBuilder getEPPLNKCAPHJOrBuilder(
         int index);
@@ -107,28 +107,28 @@ public final class _MonsterBaseOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              gNHNOINLCFC_ = input.readUInt32();
-              break;
-            }
-            case 16: {
-
-              nLACIAJDIGD_ = input.readUInt32();
-              break;
-            }
-            case 29: {
-
-              nDAPJMNKOGL_ = input.readFloat();
-              break;
-            }
-            case 34: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 ePPLNKCAPHJ_ = new java.util.ArrayList<emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL>();
                 mutable_bitField0_ |= 0x00000001;
               }
               ePPLNKCAPHJ_.add(
                   input.readMessage(emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.parser(), extensionRegistry));
+              break;
+            }
+            case 160008: {
+
+              nLACIAJDIGD_ = input.readUInt32();
+              break;
+            }
+            case 160016: {
+
+              gNHNOINLCFC_ = input.readUInt32();
+              break;
+            }
+            case 160029: {
+
+              nDAPJMNKOGL_ = input.readFloat();
               break;
             }
             default: {
@@ -166,10 +166,10 @@ public final class _MonsterBaseOuterClass {
               emu.grasscutter.net.proto._MonsterBaseOuterClass._MonsterBase.class, emu.grasscutter.net.proto._MonsterBaseOuterClass._MonsterBase.Builder.class);
     }
 
-    public static final int GNHNOINLCFC_FIELD_NUMBER = 1;
+    public static final int GNHNOINLCFC_FIELD_NUMBER = 20002;
     private int gNHNOINLCFC_;
     /**
-     * <code>uint32 GNHNOINLCFC = 1;</code>
+     * <code>uint32 GNHNOINLCFC = 20002;</code>
      * @return The gNHNOINLCFC.
      */
     @java.lang.Override
@@ -177,10 +177,10 @@ public final class _MonsterBaseOuterClass {
       return gNHNOINLCFC_;
     }
 
-    public static final int NLACIAJDIGD_FIELD_NUMBER = 2;
+    public static final int NLACIAJDIGD_FIELD_NUMBER = 20001;
     private int nLACIAJDIGD_;
     /**
-     * <code>uint32 NLACIAJDIGD = 2;</code>
+     * <code>uint32 NLACIAJDIGD = 20001;</code>
      * @return The nLACIAJDIGD.
      */
     @java.lang.Override
@@ -188,10 +188,10 @@ public final class _MonsterBaseOuterClass {
       return nLACIAJDIGD_;
     }
 
-    public static final int NDAPJMNKOGL_FIELD_NUMBER = 3;
+    public static final int NDAPJMNKOGL_FIELD_NUMBER = 20003;
     private float nDAPJMNKOGL_;
     /**
-     * <code>float NDAPJMNKOGL = 3;</code>
+     * <code>float NDAPJMNKOGL = 20003;</code>
      * @return The nDAPJMNKOGL.
      */
     @java.lang.Override
@@ -199,17 +199,17 @@ public final class _MonsterBaseOuterClass {
       return nDAPJMNKOGL_;
     }
 
-    public static final int EPPLNKCAPHJ_FIELD_NUMBER = 4;
+    public static final int EPPLNKCAPHJ_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL> ePPLNKCAPHJ_;
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL> getEPPLNKCAPHJList() {
       return ePPLNKCAPHJ_;
     }
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBLOrBuilder> 
@@ -217,21 +217,21 @@ public final class _MonsterBaseOuterClass {
       return ePPLNKCAPHJ_;
     }
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     @java.lang.Override
     public int getEPPLNKCAPHJCount() {
       return ePPLNKCAPHJ_.size();
     }
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL getEPPLNKCAPHJ(int index) {
       return ePPLNKCAPHJ_.get(index);
     }
     /**
-     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+     * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBLOrBuilder getEPPLNKCAPHJOrBuilder(
@@ -253,17 +253,17 @@ public final class _MonsterBaseOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gNHNOINLCFC_ != 0) {
-        output.writeUInt32(1, gNHNOINLCFC_);
+      for (int i = 0; i < ePPLNKCAPHJ_.size(); i++) {
+        output.writeMessage(20000, ePPLNKCAPHJ_.get(i));
       }
       if (nLACIAJDIGD_ != 0) {
-        output.writeUInt32(2, nLACIAJDIGD_);
+        output.writeUInt32(20001, nLACIAJDIGD_);
+      }
+      if (gNHNOINLCFC_ != 0) {
+        output.writeUInt32(20002, gNHNOINLCFC_);
       }
       if (nDAPJMNKOGL_ != 0F) {
-        output.writeFloat(3, nDAPJMNKOGL_);
-      }
-      for (int i = 0; i < ePPLNKCAPHJ_.size(); i++) {
-        output.writeMessage(4, ePPLNKCAPHJ_.get(i));
+        output.writeFloat(20003, nDAPJMNKOGL_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,21 +274,21 @@ public final class _MonsterBaseOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gNHNOINLCFC_ != 0) {
+      for (int i = 0; i < ePPLNKCAPHJ_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, gNHNOINLCFC_);
+          .computeMessageSize(20000, ePPLNKCAPHJ_.get(i));
       }
       if (nLACIAJDIGD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, nLACIAJDIGD_);
+          .computeUInt32Size(20001, nLACIAJDIGD_);
+      }
+      if (gNHNOINLCFC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20002, gNHNOINLCFC_);
       }
       if (nDAPJMNKOGL_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, nDAPJMNKOGL_);
-      }
-      for (int i = 0; i < ePPLNKCAPHJ_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, ePPLNKCAPHJ_.get(i));
+          .computeFloatSize(20003, nDAPJMNKOGL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -636,7 +636,7 @@ public final class _MonsterBaseOuterClass {
 
       private int gNHNOINLCFC_ ;
       /**
-       * <code>uint32 GNHNOINLCFC = 1;</code>
+       * <code>uint32 GNHNOINLCFC = 20002;</code>
        * @return The gNHNOINLCFC.
        */
       @java.lang.Override
@@ -644,7 +644,7 @@ public final class _MonsterBaseOuterClass {
         return gNHNOINLCFC_;
       }
       /**
-       * <code>uint32 GNHNOINLCFC = 1;</code>
+       * <code>uint32 GNHNOINLCFC = 20002;</code>
        * @param value The gNHNOINLCFC to set.
        * @return This builder for chaining.
        */
@@ -655,7 +655,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>uint32 GNHNOINLCFC = 1;</code>
+       * <code>uint32 GNHNOINLCFC = 20002;</code>
        * @return This builder for chaining.
        */
       public Builder clearGNHNOINLCFC() {
@@ -667,7 +667,7 @@ public final class _MonsterBaseOuterClass {
 
       private int nLACIAJDIGD_ ;
       /**
-       * <code>uint32 NLACIAJDIGD = 2;</code>
+       * <code>uint32 NLACIAJDIGD = 20001;</code>
        * @return The nLACIAJDIGD.
        */
       @java.lang.Override
@@ -675,7 +675,7 @@ public final class _MonsterBaseOuterClass {
         return nLACIAJDIGD_;
       }
       /**
-       * <code>uint32 NLACIAJDIGD = 2;</code>
+       * <code>uint32 NLACIAJDIGD = 20001;</code>
        * @param value The nLACIAJDIGD to set.
        * @return This builder for chaining.
        */
@@ -686,7 +686,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NLACIAJDIGD = 2;</code>
+       * <code>uint32 NLACIAJDIGD = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearNLACIAJDIGD() {
@@ -698,7 +698,7 @@ public final class _MonsterBaseOuterClass {
 
       private float nDAPJMNKOGL_ ;
       /**
-       * <code>float NDAPJMNKOGL = 3;</code>
+       * <code>float NDAPJMNKOGL = 20003;</code>
        * @return The nDAPJMNKOGL.
        */
       @java.lang.Override
@@ -706,7 +706,7 @@ public final class _MonsterBaseOuterClass {
         return nDAPJMNKOGL_;
       }
       /**
-       * <code>float NDAPJMNKOGL = 3;</code>
+       * <code>float NDAPJMNKOGL = 20003;</code>
        * @param value The nDAPJMNKOGL to set.
        * @return This builder for chaining.
        */
@@ -717,7 +717,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>float NDAPJMNKOGL = 3;</code>
+       * <code>float NDAPJMNKOGL = 20003;</code>
        * @return This builder for chaining.
        */
       public Builder clearNDAPJMNKOGL() {
@@ -740,7 +740,7 @@ public final class _MonsterBaseOuterClass {
           emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL, emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.Builder, emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBLOrBuilder> ePPLNKCAPHJBuilder_;
 
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL> getEPPLNKCAPHJList() {
         if (ePPLNKCAPHJBuilder_ == null) {
@@ -750,7 +750,7 @@ public final class _MonsterBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public int getEPPLNKCAPHJCount() {
         if (ePPLNKCAPHJBuilder_ == null) {
@@ -760,7 +760,7 @@ public final class _MonsterBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL getEPPLNKCAPHJ(int index) {
         if (ePPLNKCAPHJBuilder_ == null) {
@@ -770,7 +770,7 @@ public final class _MonsterBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder setEPPLNKCAPHJ(
           int index, emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL value) {
@@ -787,7 +787,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder setEPPLNKCAPHJ(
           int index, emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.Builder builderForValue) {
@@ -801,7 +801,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder addEPPLNKCAPHJ(emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL value) {
         if (ePPLNKCAPHJBuilder_ == null) {
@@ -817,7 +817,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder addEPPLNKCAPHJ(
           int index, emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL value) {
@@ -834,7 +834,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder addEPPLNKCAPHJ(
           emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.Builder builderForValue) {
@@ -848,7 +848,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder addEPPLNKCAPHJ(
           int index, emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.Builder builderForValue) {
@@ -862,7 +862,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder addAllEPPLNKCAPHJ(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL> values) {
@@ -877,7 +877,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder clearEPPLNKCAPHJ() {
         if (ePPLNKCAPHJBuilder_ == null) {
@@ -890,7 +890,7 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public Builder removeEPPLNKCAPHJ(int index) {
         if (ePPLNKCAPHJBuilder_ == null) {
@@ -903,14 +903,14 @@ public final class _MonsterBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.Builder getEPPLNKCAPHJBuilder(
           int index) {
         return getEPPLNKCAPHJFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBLOrBuilder getEPPLNKCAPHJOrBuilder(
           int index) {
@@ -920,7 +920,7 @@ public final class _MonsterBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBLOrBuilder> 
            getEPPLNKCAPHJOrBuilderList() {
@@ -931,14 +931,14 @@ public final class _MonsterBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.Builder addEPPLNKCAPHJBuilder() {
         return getEPPLNKCAPHJFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.getDefaultInstance());
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.Builder addEPPLNKCAPHJBuilder(
           int index) {
@@ -946,7 +946,7 @@ public final class _MonsterBaseOuterClass {
             index, emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.getDefaultInstance());
       }
       /**
-       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 4;</code>
+       * <code>repeated .DJNNMCLAEBL EPPLNKCAPHJ = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DJNNMCLAEBLOuterClass.DJNNMCLAEBL.Builder> 
            getEPPLNKCAPHJBuilderList() {
@@ -1034,11 +1034,11 @@ public final class _MonsterBaseOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022_MonsterBase.proto\032\021DJNNMCLAEBL.proto\"" +
-      "p\n\014_MonsterBase\022\023\n\013GNHNOINLCFC\030\001 \001(\r\022\023\n\013" +
-      "NLACIAJDIGD\030\002 \001(\r\022\023\n\013NDAPJMNKOGL\030\003 \001(\002\022!" +
-      "\n\013EPPLNKCAPHJ\030\004 \003(\0132\014.DJNNMCLAEBLB3\n\031emu" +
-      ".grasscutter.net.protoB\026_MonsterBaseOute" +
-      "rClassb\006proto3"
+      "x\n\014_MonsterBase\022\025\n\013GNHNOINLCFC\030\242\234\001 \001(\r\022\025" +
+      "\n\013NLACIAJDIGD\030\241\234\001 \001(\r\022\025\n\013NDAPJMNKOGL\030\243\234\001" +
+      " \001(\002\022#\n\013EPPLNKCAPHJ\030\240\234\001 \003(\0132\014.DJNNMCLAEB" +
+      "LB3\n\031emu.grasscutter.net.protoB\026_Monster" +
+      "BaseOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

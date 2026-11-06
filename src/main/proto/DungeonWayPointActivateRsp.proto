@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "DungeonWayPointActivateRspOuterClass";
 
 message DungeonWayPointActivateRsp {
-	uint32 way_point_id = 9;
-	int32 retcode = 13;
+	uint32 way_point_id = 3;
+	int32 retcode = 14;
 }

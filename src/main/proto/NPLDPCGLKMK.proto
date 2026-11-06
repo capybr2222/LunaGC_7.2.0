@@ -7,9 +7,9 @@ message NPLDPCGLKMK {
 	repeated uint32 BGKNOBGMOIP = 4;
 	uint32 level_id = 9;
 	bool is_finish = 6;
-	repeated uint32 JFAEGBAKLOB = 50000;
+	repeated uint32 JFAEGBAKLOB = 13;
 	repeated uint32 EBFKBDLLJGC = 5;
 	uint32 score = 8;
 	bool is_open = 3;
-	repeated uint32 AHAPLEIGAPI = 50001;
+	repeated uint32 AHAPLEIGAPI = 15;
 }

@@ -19,25 +19,25 @@ public final class _MultiSyncInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF> 
         getKBMGLOPGOHFList();
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF getKBMGLOPGOHF(int index);
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     int getKBMGLOPGOHFCount();
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder> 
         getKBMGLOPGOHFOrBuilderList();
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder getKBMGLOPGOHFOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class _MultiSyncInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 kBMGLOPGOHF_ = new java.util.ArrayList<emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class _MultiSyncInfoOuterClass {
               emu.grasscutter.net.proto._MultiSyncInfoOuterClass._MultiSyncInfo.class, emu.grasscutter.net.proto._MultiSyncInfoOuterClass._MultiSyncInfo.Builder.class);
     }
 
-    public static final int KBMGLOPGOHF_FIELD_NUMBER = 2;
+    public static final int KBMGLOPGOHF_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF> kBMGLOPGOHF_;
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF> getKBMGLOPGOHFList() {
       return kBMGLOPGOHF_;
     }
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder> 
@@ -151,21 +151,21 @@ public final class _MultiSyncInfoOuterClass {
       return kBMGLOPGOHF_;
     }
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     @java.lang.Override
     public int getKBMGLOPGOHFCount() {
       return kBMGLOPGOHF_.size();
     }
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF getKBMGLOPGOHF(int index) {
       return kBMGLOPGOHF_.get(index);
     }
     /**
-     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+     * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder getKBMGLOPGOHFOrBuilder(
@@ -188,7 +188,7 @@ public final class _MultiSyncInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < kBMGLOPGOHF_.size(); i++) {
-        output.writeMessage(2, kBMGLOPGOHF_.get(i));
+        output.writeMessage(20000, kBMGLOPGOHF_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class _MultiSyncInfoOuterClass {
       size = 0;
       for (int i = 0; i < kBMGLOPGOHF_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, kBMGLOPGOHF_.get(i));
+          .computeMessageSize(20000, kBMGLOPGOHF_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class _MultiSyncInfoOuterClass {
           emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder> kBMGLOPGOHFBuilder_;
 
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF> getKBMGLOPGOHFList() {
         if (kBMGLOPGOHFBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class _MultiSyncInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public int getKBMGLOPGOHFCount() {
         if (kBMGLOPGOHFBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class _MultiSyncInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF getKBMGLOPGOHF(int index) {
         if (kBMGLOPGOHFBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class _MultiSyncInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder setKBMGLOPGOHF(
           int index, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF value) {
@@ -575,7 +575,7 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder setKBMGLOPGOHF(
           int index, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder addKBMGLOPGOHF(emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF value) {
         if (kBMGLOPGOHFBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder addKBMGLOPGOHF(
           int index, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF value) {
@@ -622,7 +622,7 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder addKBMGLOPGOHF(
           emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder addKBMGLOPGOHF(
           int index, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder addAllKBMGLOPGOHF(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF> values) {
@@ -665,7 +665,7 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder clearKBMGLOPGOHF() {
         if (kBMGLOPGOHFBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public Builder removeKBMGLOPGOHF(int index) {
         if (kBMGLOPGOHFBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class _MultiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder getKBMGLOPGOHFBuilder(
           int index) {
         return getKBMGLOPGOHFFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder getKBMGLOPGOHFOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class _MultiSyncInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder> 
            getKBMGLOPGOHFOrBuilderList() {
@@ -719,14 +719,14 @@ public final class _MultiSyncInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder addKBMGLOPGOHFBuilder() {
         return getKBMGLOPGOHFFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.getDefaultInstance());
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder addKBMGLOPGOHFBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class _MultiSyncInfoOuterClass {
             index, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.getDefaultInstance());
       }
       /**
-       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 2;</code>
+       * <code>repeated .IHPAJHCDDIF KBMGLOPGOHF = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder> 
            getKBMGLOPGOHFBuilderList() {
@@ -822,9 +822,9 @@ public final class _MultiSyncInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024_MultiSyncInfo.proto\032\021IHPAJHCDDIF.prot" +
-      "o\"3\n\016_MultiSyncInfo\022!\n\013KBMGLOPGOHF\030\002 \003(\013" +
-      "2\014.IHPAJHCDDIFB5\n\031emu.grasscutter.net.pr" +
-      "otoB\030_MultiSyncInfoOuterClassb\006proto3"
+      "o\"5\n\016_MultiSyncInfo\022#\n\013KBMGLOPGOHF\030\240\234\001 \003" +
+      "(\0132\014.IHPAJHCDDIFB5\n\031emu.grasscutter.net." +
+      "protoB\030_MultiSyncInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

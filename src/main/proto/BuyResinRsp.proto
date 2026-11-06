@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "BuyResinRspOuterClass";
 
 message BuyResinRsp {
-	int32 retcode = 2;
-	uint32 cur_value = 14;
+	int32 retcode = 6;
+	uint32 cur_value = 12;
 }

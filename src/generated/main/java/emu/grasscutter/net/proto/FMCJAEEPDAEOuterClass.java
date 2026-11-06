@@ -19,19 +19,19 @@ public final class FMCJAEEPDAEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 12;</code>
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finish = 10;</code>
+     * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -81,17 +81,17 @@ public final class FMCJAEEPDAEOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 72: {
 
               isFinish_ = input.readBool();
               break;
             }
             case 96: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
 
               isOpen_ = input.readBool();
               break;
@@ -128,10 +128,10 @@ public final class FMCJAEEPDAEOuterClass {
               emu.grasscutter.net.proto.FMCJAEEPDAEOuterClass.FMCJAEEPDAE.class, emu.grasscutter.net.proto.FMCJAEEPDAEOuterClass.FMCJAEEPDAE.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 12;
+    public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 12;</code>
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class FMCJAEEPDAEOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 10;
+    public static final int IS_FINISH_FIELD_NUMBER = 9;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 10;</code>
+     * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class FMCJAEEPDAEOuterClass {
       return isFinish_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 12;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class FMCJAEEPDAEOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
-      }
       if (isFinish_ != false) {
-        output.writeBool(10, isFinish_);
+        output.writeBool(9, isFinish_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(12, levelId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(12, isOpen_);
+        output.writeBool(14, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class FMCJAEEPDAEOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
-      }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isFinish_);
+          .computeBoolSize(9, isFinish_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, levelId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isOpen_);
+          .computeBoolSize(14, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -501,7 +501,7 @@ public final class FMCJAEEPDAEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class FMCJAEEPDAEOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class FMCJAEEPDAEOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 12;</code>
+       * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -532,7 +532,7 @@ public final class FMCJAEEPDAEOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 10;</code>
+       * <code>bool is_finish = 9;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -540,7 +540,7 @@ public final class FMCJAEEPDAEOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 10;</code>
+       * <code>bool is_finish = 9;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -551,7 +551,7 @@ public final class FMCJAEEPDAEOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 10;</code>
+       * <code>bool is_finish = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -563,7 +563,7 @@ public final class FMCJAEEPDAEOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -571,7 +571,7 @@ public final class FMCJAEEPDAEOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 12;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -582,7 +582,7 @@ public final class FMCJAEEPDAEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -659,8 +659,8 @@ public final class FMCJAEEPDAEOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021FMCJAEEPDAE.proto\"C\n\013FMCJAEEPDAE\022\017\n\007is" +
-      "_open\030\014 \001(\010\022\021\n\tis_finish\030\n \001(\010\022\020\n\010level_" +
-      "id\030\005 \001(\rB2\n\031emu.grasscutter.net.protoB\025F" +
+      "_open\030\016 \001(\010\022\021\n\tis_finish\030\t \001(\010\022\020\n\010level_" +
+      "id\030\014 \001(\rB2\n\031emu.grasscutter.net.protoB\025F" +
       "MCJAEEPDAEOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

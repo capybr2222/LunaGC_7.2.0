@@ -7,8 +7,8 @@ import "GCGPlayCardCostInfo.proto";
 
 message JJAAPEINGAC {
 	uint32 NMKGLEHEEIN = 3;
-	repeated uint32 AJJGPPPBOAB = 50000;
-	repeated uint32 EGLADOIBKMG = 50001;
+	repeated uint32 AJJGPPPBOAB = 2;
+	repeated uint32 EGLADOIBKMG = 1;
 	uint32 FHJEAPIGJLG = 12;
 	repeated GCGPlayCardCostInfo MNIGABGNNBK = 8;
 }

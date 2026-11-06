@@ -6,9 +6,9 @@ option java_outer_classname = "SumoStageDataOuterClass";
 import "SumoTeamData.proto";
 
 message SumoStageData {
-	uint32 stage_id = 7;
-	repeated SumoTeamData team_list = 14;
-	uint32 max_score = 1;
-	bool is_open = 8;
-	uint32 open_time = 10;
+	uint32 stage_id = 1;
+	repeated SumoTeamData team_list = 5;
+	uint32 max_score = 2;
+	bool is_open = 4;
+	uint32 open_time = 3;
 }

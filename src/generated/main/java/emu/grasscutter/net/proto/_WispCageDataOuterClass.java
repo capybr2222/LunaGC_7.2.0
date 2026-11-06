@@ -19,22 +19,22 @@ public final class _WispCageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector rot = 9;</code>
+     * <code>.Vector rot = 13;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
-     * <code>.Vector rot = 9;</code>
+     * <code>.Vector rot = 13;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector rot = 9;</code>
+     * <code>.Vector rot = 13;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
 
     /**
-     * <code>uint32 scene_id = 11;</code>
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     int getSceneId();
@@ -61,42 +61,42 @@ public final class _WispCageDataOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getLastUsedMaterialListList();
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getLastUsedMaterialList(int index);
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     int getLastUsedMaterialListCount();
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getLastUsedMaterialListOrBuilderList();
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getLastUsedMaterialListOrBuilder(
         int index);
 
     /**
-     * <code>._WispCageState state = 12;</code>
+     * <code>._WispCageState state = 7;</code>
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
     /**
-     * <code>._WispCageState state = 12;</code>
+     * <code>._WispCageState state = 7;</code>
      * @return The state.
      */
     emu.grasscutter.net.proto._WispCageStateOuterClass._WispCageState getState();
 
     /**
-     * <code>uint32 _collect_finish_time = 8;</code>
+     * <code>uint32 _collect_finish_time = 3;</code>
      * @return The collectFinishTime.
      */
     int getCollectFinishTime();
@@ -149,17 +149,28 @@ public final class _WispCageDataOuterClass {
             case 0:
               done = true;
               break;
+            case 24: {
+
+              CollectFinishTime_ = input.readUInt32();
+              break;
+            }
             case 48: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 56: {
+              int rawValue = input.readEnum();
 
-              CollectFinishTime_ = input.readUInt32();
+              state_ = rawValue;
               break;
             }
-            case 74: {
+            case 72: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 106: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (rot_ != null) {
                 subBuilder = rot_.toBuilder();
@@ -170,26 +181,6 @@ public final class _WispCageDataOuterClass {
                 rot_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 82: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                LastUsedMaterialList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              LastUsedMaterialList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
-              break;
-            }
-            case 88: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-              int rawValue = input.readEnum();
-
-              state_ = rawValue;
               break;
             }
             case 114: {
@@ -203,6 +194,15 @@ public final class _WispCageDataOuterClass {
                 pos_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                LastUsedMaterialList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              LastUsedMaterialList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -240,10 +240,10 @@ public final class _WispCageDataOuterClass {
               emu.grasscutter.net.proto._WispCageDataOuterClass._WispCageData.class, emu.grasscutter.net.proto._WispCageDataOuterClass._WispCageData.Builder.class);
     }
 
-    public static final int ROT_FIELD_NUMBER = 9;
+    public static final int ROT_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector rot = 9;</code>
+     * <code>.Vector rot = 13;</code>
      * @return Whether the rot field is set.
      */
     @java.lang.Override
@@ -251,7 +251,7 @@ public final class _WispCageDataOuterClass {
       return rot_ != null;
     }
     /**
-     * <code>.Vector rot = 9;</code>
+     * <code>.Vector rot = 13;</code>
      * @return The rot.
      */
     @java.lang.Override
@@ -259,17 +259,17 @@ public final class _WispCageDataOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector rot = 9;</code>
+     * <code>.Vector rot = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
       return getRot();
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 11;
+    public static final int SCENE_ID_FIELD_NUMBER = 9;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 11;</code>
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -314,17 +314,17 @@ public final class _WispCageDataOuterClass {
       return getPos();
     }
 
-    public static final int _LAST_USED_MATERIAL_LIST_FIELD_NUMBER = 10;
+    public static final int _LAST_USED_MATERIAL_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> LastUsedMaterialList_;
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getLastUsedMaterialListList() {
       return LastUsedMaterialList_;
     }
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -332,21 +332,21 @@ public final class _WispCageDataOuterClass {
       return LastUsedMaterialList_;
     }
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     @java.lang.Override
     public int getLastUsedMaterialListCount() {
       return LastUsedMaterialList_.size();
     }
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getLastUsedMaterialList(int index) {
       return LastUsedMaterialList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+     * <code>repeated .ItemParam _last_used_material_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getLastUsedMaterialListOrBuilder(
@@ -354,17 +354,17 @@ public final class _WispCageDataOuterClass {
       return LastUsedMaterialList_.get(index);
     }
 
-    public static final int STATE_FIELD_NUMBER = 12;
+    public static final int STATE_FIELD_NUMBER = 7;
     private int state_;
     /**
-     * <code>._WispCageState state = 12;</code>
+     * <code>._WispCageState state = 7;</code>
      * @return The enum numeric value on the wire for state.
      */
     @java.lang.Override public int getStateValue() {
       return state_;
     }
     /**
-     * <code>._WispCageState state = 12;</code>
+     * <code>._WispCageState state = 7;</code>
      * @return The state.
      */
     @java.lang.Override public emu.grasscutter.net.proto._WispCageStateOuterClass._WispCageState getState() {
@@ -373,10 +373,10 @@ public final class _WispCageDataOuterClass {
       return result == null ? emu.grasscutter.net.proto._WispCageStateOuterClass._WispCageState.UNRECOGNIZED : result;
     }
 
-    public static final int _COLLECT_FINISH_TIME_FIELD_NUMBER = 8;
+    public static final int _COLLECT_FINISH_TIME_FIELD_NUMBER = 3;
     private int CollectFinishTime_;
     /**
-     * <code>uint32 _collect_finish_time = 8;</code>
+     * <code>uint32 _collect_finish_time = 3;</code>
      * @return The collectFinishTime.
      */
     @java.lang.Override
@@ -398,26 +398,26 @@ public final class _WispCageDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (CollectFinishTime_ != 0) {
+        output.writeUInt32(3, CollectFinishTime_);
+      }
       if (gadgetEntityId_ != 0) {
         output.writeUInt32(6, gadgetEntityId_);
       }
-      if (CollectFinishTime_ != 0) {
-        output.writeUInt32(8, CollectFinishTime_);
-      }
-      if (rot_ != null) {
-        output.writeMessage(9, getRot());
-      }
-      for (int i = 0; i < LastUsedMaterialList_.size(); i++) {
-        output.writeMessage(10, LastUsedMaterialList_.get(i));
+      if (state_ != emu.grasscutter.net.proto._WispCageStateOuterClass._WispCageState.WISP_CAGE_STATE_NOT_EXIST.getNumber()) {
+        output.writeEnum(7, state_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(11, sceneId_);
+        output.writeUInt32(9, sceneId_);
       }
-      if (state_ != emu.grasscutter.net.proto._WispCageStateOuterClass._WispCageState.WISP_CAGE_STATE_NOT_EXIST.getNumber()) {
-        output.writeEnum(12, state_);
+      if (rot_ != null) {
+        output.writeMessage(13, getRot());
       }
       if (pos_ != null) {
         output.writeMessage(14, getPos());
+      }
+      for (int i = 0; i < LastUsedMaterialList_.size(); i++) {
+        output.writeMessage(15, LastUsedMaterialList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -428,33 +428,33 @@ public final class _WispCageDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (CollectFinishTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, CollectFinishTime_);
+      }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(6, gadgetEntityId_);
       }
-      if (CollectFinishTime_ != 0) {
+      if (state_ != emu.grasscutter.net.proto._WispCageStateOuterClass._WispCageState.WISP_CAGE_STATE_NOT_EXIST.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, CollectFinishTime_);
-      }
-      if (rot_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getRot());
-      }
-      for (int i = 0; i < LastUsedMaterialList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, LastUsedMaterialList_.get(i));
+          .computeEnumSize(7, state_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, sceneId_);
+          .computeUInt32Size(9, sceneId_);
       }
-      if (state_ != emu.grasscutter.net.proto._WispCageStateOuterClass._WispCageState.WISP_CAGE_STATE_NOT_EXIST.getNumber()) {
+      if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, state_);
+          .computeMessageSize(13, getRot());
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(14, getPos());
+      }
+      for (int i = 0; i < LastUsedMaterialList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, LastUsedMaterialList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -857,14 +857,14 @@ public final class _WispCageDataOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        * @return The rot.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
@@ -875,7 +875,7 @@ public final class _WispCageDataOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -891,7 +891,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        */
       public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -905,7 +905,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -923,7 +923,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        */
       public Builder clearRot() {
         if (rotBuilder_ == null) {
@@ -937,7 +937,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
         
@@ -945,7 +945,7 @@ public final class _WispCageDataOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
         if (rotBuilder_ != null) {
@@ -956,7 +956,7 @@ public final class _WispCageDataOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 9;</code>
+       * <code>.Vector rot = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -974,7 +974,7 @@ public final class _WispCageDataOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 11;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -982,7 +982,7 @@ public final class _WispCageDataOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 11;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -993,7 +993,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 11;</code>
+       * <code>uint32 scene_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -1166,7 +1166,7 @@ public final class _WispCageDataOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> LastUsedMaterialListBuilder_;
 
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getLastUsedMaterialListList() {
         if (LastUsedMaterialListBuilder_ == null) {
@@ -1176,7 +1176,7 @@ public final class _WispCageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public int getLastUsedMaterialListCount() {
         if (LastUsedMaterialListBuilder_ == null) {
@@ -1186,7 +1186,7 @@ public final class _WispCageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getLastUsedMaterialList(int index) {
         if (LastUsedMaterialListBuilder_ == null) {
@@ -1196,7 +1196,7 @@ public final class _WispCageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder setLastUsedMaterialList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1213,7 +1213,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder setLastUsedMaterialList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1227,7 +1227,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder addLastUsedMaterialList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (LastUsedMaterialListBuilder_ == null) {
@@ -1243,7 +1243,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder addLastUsedMaterialList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1260,7 +1260,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder addLastUsedMaterialList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1274,7 +1274,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder addLastUsedMaterialList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -1288,7 +1288,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder addAllLastUsedMaterialList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -1303,7 +1303,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder clearLastUsedMaterialList() {
         if (LastUsedMaterialListBuilder_ == null) {
@@ -1316,7 +1316,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public Builder removeLastUsedMaterialList(int index) {
         if (LastUsedMaterialListBuilder_ == null) {
@@ -1329,14 +1329,14 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getLastUsedMaterialListBuilder(
           int index) {
         return getLastUsedMaterialListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getLastUsedMaterialListOrBuilder(
           int index) {
@@ -1346,7 +1346,7 @@ public final class _WispCageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getLastUsedMaterialListOrBuilderList() {
@@ -1357,14 +1357,14 @@ public final class _WispCageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addLastUsedMaterialListBuilder() {
         return getLastUsedMaterialListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addLastUsedMaterialListBuilder(
           int index) {
@@ -1372,7 +1372,7 @@ public final class _WispCageDataOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam _last_used_material_list = 10;</code>
+       * <code>repeated .ItemParam _last_used_material_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getLastUsedMaterialListBuilderList() {
@@ -1395,14 +1395,14 @@ public final class _WispCageDataOuterClass {
 
       private int state_ = 0;
       /**
-       * <code>._WispCageState state = 12;</code>
+       * <code>._WispCageState state = 7;</code>
        * @return The enum numeric value on the wire for state.
        */
       @java.lang.Override public int getStateValue() {
         return state_;
       }
       /**
-       * <code>._WispCageState state = 12;</code>
+       * <code>._WispCageState state = 7;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
        */
@@ -1413,7 +1413,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>._WispCageState state = 12;</code>
+       * <code>._WispCageState state = 7;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -1423,7 +1423,7 @@ public final class _WispCageDataOuterClass {
         return result == null ? emu.grasscutter.net.proto._WispCageStateOuterClass._WispCageState.UNRECOGNIZED : result;
       }
       /**
-       * <code>._WispCageState state = 12;</code>
+       * <code>._WispCageState state = 7;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -1437,7 +1437,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>._WispCageState state = 12;</code>
+       * <code>._WispCageState state = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
@@ -1449,7 +1449,7 @@ public final class _WispCageDataOuterClass {
 
       private int CollectFinishTime_ ;
       /**
-       * <code>uint32 _collect_finish_time = 8;</code>
+       * <code>uint32 _collect_finish_time = 3;</code>
        * @return The collectFinishTime.
        */
       @java.lang.Override
@@ -1457,7 +1457,7 @@ public final class _WispCageDataOuterClass {
         return CollectFinishTime_;
       }
       /**
-       * <code>uint32 _collect_finish_time = 8;</code>
+       * <code>uint32 _collect_finish_time = 3;</code>
        * @param value The collectFinishTime to set.
        * @return This builder for chaining.
        */
@@ -1468,7 +1468,7 @@ public final class _WispCageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 _collect_finish_time = 8;</code>
+       * <code>uint32 _collect_finish_time = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCollectFinishTime() {
@@ -1546,12 +1546,12 @@ public final class _WispCageDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\023_WispCageData.proto\032\017ItemParam.proto\032\014" +
       "Vector.proto\032\024_WispCageState.proto\"\323\001\n\r_" +
-      "WispCageData\022\024\n\003rot\030\t \001(\0132\007.Vector\022\020\n\010sc" +
-      "ene_id\030\013 \001(\r\022\030\n\020gadget_entity_id\030\006 \001(\r\022\024" +
+      "WispCageData\022\024\n\003rot\030\r \001(\0132\007.Vector\022\020\n\010sc" +
+      "ene_id\030\t \001(\r\022\030\n\020gadget_entity_id\030\006 \001(\r\022\024" +
       "\n\003pos\030\016 \001(\0132\007.Vector\022,\n\030_last_used_mater" +
-      "ial_list\030\n \003(\0132\n.ItemParam\022\036\n\005state\030\014 \001(" +
+      "ial_list\030\017 \003(\0132\n.ItemParam\022\036\n\005state\030\007 \001(" +
       "\0162\017._WispCageState\022\034\n\024_collect_finish_ti" +
-      "me\030\010 \001(\rB4\n\031emu.grasscutter.net.protoB\027_" +
+      "me\030\003 \001(\rB4\n\031emu.grasscutter.net.protoB\027_" +
       "WispCageDataOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

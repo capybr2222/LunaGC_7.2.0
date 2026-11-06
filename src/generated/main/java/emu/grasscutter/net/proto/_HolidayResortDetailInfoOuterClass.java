@@ -19,7 +19,7 @@ public final class _HolidayResortDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HKBMJEAPLJO = 7;</code>
+     * <code>uint32 HKBMJEAPLJO = 1;</code>
      * @return The hKBMJEAPLJO.
      */
     int getHKBMJEAPLJO();
@@ -69,7 +69,7 @@ public final class _HolidayResortDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 8: {
 
               hKBMJEAPLJO_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class _HolidayResortDetailInfoOuterClass {
               emu.grasscutter.net.proto._HolidayResortDetailInfoOuterClass._HolidayResortDetailInfo.class, emu.grasscutter.net.proto._HolidayResortDetailInfoOuterClass._HolidayResortDetailInfo.Builder.class);
     }
 
-    public static final int HKBMJEAPLJO_FIELD_NUMBER = 7;
+    public static final int HKBMJEAPLJO_FIELD_NUMBER = 1;
     private int hKBMJEAPLJO_;
     /**
-     * <code>uint32 HKBMJEAPLJO = 7;</code>
+     * <code>uint32 HKBMJEAPLJO = 1;</code>
      * @return The hKBMJEAPLJO.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class _HolidayResortDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (hKBMJEAPLJO_ != 0) {
-        output.writeUInt32(7, hKBMJEAPLJO_);
+        output.writeUInt32(1, hKBMJEAPLJO_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class _HolidayResortDetailInfoOuterClass {
       size = 0;
       if (hKBMJEAPLJO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, hKBMJEAPLJO_);
+          .computeUInt32Size(1, hKBMJEAPLJO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class _HolidayResortDetailInfoOuterClass {
 
       private int hKBMJEAPLJO_ ;
       /**
-       * <code>uint32 HKBMJEAPLJO = 7;</code>
+       * <code>uint32 HKBMJEAPLJO = 1;</code>
        * @return The hKBMJEAPLJO.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class _HolidayResortDetailInfoOuterClass {
         return hKBMJEAPLJO_;
       }
       /**
-       * <code>uint32 HKBMJEAPLJO = 7;</code>
+       * <code>uint32 HKBMJEAPLJO = 1;</code>
        * @param value The hKBMJEAPLJO to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class _HolidayResortDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 HKBMJEAPLJO = 7;</code>
+       * <code>uint32 HKBMJEAPLJO = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearHKBMJEAPLJO() {
@@ -517,7 +517,7 @@ public final class _HolidayResortDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036_HolidayResortDetailInfo.proto\"/\n\030_Hol" +
-      "idayResortDetailInfo\022\023\n\013HKBMJEAPLJO\030\007 \001(" +
+      "idayResortDetailInfo\022\023\n\013HKBMJEAPLJO\030\001 \001(" +
       "\rB?\n\031emu.grasscutter.net.protoB\"_Holiday" +
       "ResortDetailInfoOuterClassb\006proto3"
     };

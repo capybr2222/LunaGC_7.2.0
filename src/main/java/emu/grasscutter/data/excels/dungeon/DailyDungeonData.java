@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels.dungeon;
 
+import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import it.unimi.dsi.fastutil.ints.*;
 import java.util.Calendar;
@@ -18,6 +19,7 @@ public class DailyDungeonData extends GameResource {
     private int[] wednesday;
     private int[] thursday;
     private int[] friday;
+    @SerializedName(value = "saturday", alternate = {"CHGDPBMNDEF"})
     private int[] saturday;
     private int[] sunday;
 

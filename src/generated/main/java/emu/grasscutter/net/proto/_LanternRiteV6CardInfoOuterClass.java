@@ -19,7 +19,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 _claimed_gift_num = 10;</code>
+     * <code>uint32 _claimed_gift_num = 4;</code>
      * @return The claimedGiftNum.
      */
     int getClaimedGiftNum();
@@ -49,25 +49,25 @@ public final class _LanternRiteV6CardInfoOuterClass {
         int index);
 
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail> 
         getCardTemplateListList();
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail getCardTemplateList(int index);
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     int getCardTemplateListCount();
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetailOrBuilder> 
         getCardTemplateListOrBuilderList();
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetailOrBuilder getCardTemplateListOrBuilder(
         int index);
@@ -120,7 +120,12 @@ public final class _LanternRiteV6CardInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 32: {
+
+              ClaimedGiftNum_ = input.readUInt32();
+              break;
+            }
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 CardTemplateList_ = new java.util.ArrayList<emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail>();
                 mutable_bitField0_ |= 0x00000002;
@@ -136,11 +141,6 @@ public final class _LanternRiteV6CardInfoOuterClass {
               }
               CardGiftList_.add(
                   input.readMessage(emu.grasscutter.net.proto._LanV6LanternGiftDetailOuterClass._LanV6LanternGiftDetail.parser(), extensionRegistry));
-              break;
-            }
-            case 80: {
-
-              ClaimedGiftNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -181,10 +181,10 @@ public final class _LanternRiteV6CardInfoOuterClass {
               emu.grasscutter.net.proto._LanternRiteV6CardInfoOuterClass._LanternRiteV6CardInfo.class, emu.grasscutter.net.proto._LanternRiteV6CardInfoOuterClass._LanternRiteV6CardInfo.Builder.class);
     }
 
-    public static final int _CLAIMED_GIFT_NUM_FIELD_NUMBER = 10;
+    public static final int _CLAIMED_GIFT_NUM_FIELD_NUMBER = 4;
     private int ClaimedGiftNum_;
     /**
-     * <code>uint32 _claimed_gift_num = 10;</code>
+     * <code>uint32 _claimed_gift_num = 4;</code>
      * @return The claimedGiftNum.
      */
     @java.lang.Override
@@ -232,17 +232,17 @@ public final class _LanternRiteV6CardInfoOuterClass {
       return CardGiftList_.get(index);
     }
 
-    public static final int _CARD_TEMPLATE_LIST_FIELD_NUMBER = 3;
+    public static final int _CARD_TEMPLATE_LIST_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail> CardTemplateList_;
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail> getCardTemplateListList() {
       return CardTemplateList_;
     }
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetailOrBuilder> 
@@ -250,21 +250,21 @@ public final class _LanternRiteV6CardInfoOuterClass {
       return CardTemplateList_;
     }
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     @java.lang.Override
     public int getCardTemplateListCount() {
       return CardTemplateList_.size();
     }
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail getCardTemplateList(int index) {
       return CardTemplateList_.get(index);
     }
     /**
-     * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+     * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetailOrBuilder getCardTemplateListOrBuilder(
@@ -286,14 +286,14 @@ public final class _LanternRiteV6CardInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (ClaimedGiftNum_ != 0) {
+        output.writeUInt32(4, ClaimedGiftNum_);
+      }
       for (int i = 0; i < CardTemplateList_.size(); i++) {
-        output.writeMessage(3, CardTemplateList_.get(i));
+        output.writeMessage(7, CardTemplateList_.get(i));
       }
       for (int i = 0; i < CardGiftList_.size(); i++) {
         output.writeMessage(9, CardGiftList_.get(i));
-      }
-      if (ClaimedGiftNum_ != 0) {
-        output.writeUInt32(10, ClaimedGiftNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -304,17 +304,17 @@ public final class _LanternRiteV6CardInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (ClaimedGiftNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, ClaimedGiftNum_);
+      }
       for (int i = 0; i < CardTemplateList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, CardTemplateList_.get(i));
+          .computeMessageSize(7, CardTemplateList_.get(i));
       }
       for (int i = 0; i < CardGiftList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, CardGiftList_.get(i));
-      }
-      if (ClaimedGiftNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, ClaimedGiftNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -688,7 +688,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
 
       private int ClaimedGiftNum_ ;
       /**
-       * <code>uint32 _claimed_gift_num = 10;</code>
+       * <code>uint32 _claimed_gift_num = 4;</code>
        * @return The claimedGiftNum.
        */
       @java.lang.Override
@@ -696,7 +696,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return ClaimedGiftNum_;
       }
       /**
-       * <code>uint32 _claimed_gift_num = 10;</code>
+       * <code>uint32 _claimed_gift_num = 4;</code>
        * @param value The claimedGiftNum to set.
        * @return This builder for chaining.
        */
@@ -707,7 +707,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 _claimed_gift_num = 10;</code>
+       * <code>uint32 _claimed_gift_num = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearClaimedGiftNum() {
@@ -970,7 +970,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
           emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail, emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.Builder, emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetailOrBuilder> CardTemplateListBuilder_;
 
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail> getCardTemplateListList() {
         if (CardTemplateListBuilder_ == null) {
@@ -980,7 +980,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public int getCardTemplateListCount() {
         if (CardTemplateListBuilder_ == null) {
@@ -990,7 +990,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail getCardTemplateList(int index) {
         if (CardTemplateListBuilder_ == null) {
@@ -1000,7 +1000,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder setCardTemplateList(
           int index, emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail value) {
@@ -1017,7 +1017,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder setCardTemplateList(
           int index, emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.Builder builderForValue) {
@@ -1031,7 +1031,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder addCardTemplateList(emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail value) {
         if (CardTemplateListBuilder_ == null) {
@@ -1047,7 +1047,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder addCardTemplateList(
           int index, emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail value) {
@@ -1064,7 +1064,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder addCardTemplateList(
           emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.Builder builderForValue) {
@@ -1078,7 +1078,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder addCardTemplateList(
           int index, emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.Builder builderForValue) {
@@ -1092,7 +1092,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder addAllCardTemplateList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail> values) {
@@ -1107,7 +1107,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder clearCardTemplateList() {
         if (CardTemplateListBuilder_ == null) {
@@ -1120,7 +1120,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public Builder removeCardTemplateList(int index) {
         if (CardTemplateListBuilder_ == null) {
@@ -1133,14 +1133,14 @@ public final class _LanternRiteV6CardInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.Builder getCardTemplateListBuilder(
           int index) {
         return getCardTemplateListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetailOrBuilder getCardTemplateListOrBuilder(
           int index) {
@@ -1150,7 +1150,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetailOrBuilder> 
            getCardTemplateListOrBuilderList() {
@@ -1161,14 +1161,14 @@ public final class _LanternRiteV6CardInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.Builder addCardTemplateListBuilder() {
         return getCardTemplateListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.getDefaultInstance());
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.Builder addCardTemplateListBuilder(
           int index) {
@@ -1176,7 +1176,7 @@ public final class _LanternRiteV6CardInfoOuterClass {
             index, emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.getDefaultInstance());
       }
       /**
-       * <code>repeated ._LanV6CardDetail _card_template_list = 3;</code>
+       * <code>repeated ._LanV6CardDetail _card_template_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._LanV6CardDetailOuterClass._LanV6CardDetail.Builder> 
            getCardTemplateListBuilderList() {
@@ -1266,9 +1266,9 @@ public final class _LanternRiteV6CardInfoOuterClass {
       "\n\034_LanternRiteV6CardInfo.proto\032\026_LanV6Ca" +
       "rdDetail.proto\032\035_LanV6LanternGiftDetail." +
       "proto\"\226\001\n\026_LanternRiteV6CardInfo\022\031\n\021_cla" +
-      "imed_gift_num\030\n \001(\r\0221\n\017_card_gift_list\030\t" +
+      "imed_gift_num\030\004 \001(\r\0221\n\017_card_gift_list\030\t" +
       " \003(\0132\030._LanV6LanternGiftDetail\022.\n\023_card_" +
-      "template_list\030\003 \003(\0132\021._LanV6CardDetailB=" +
+      "template_list\030\007 \003(\0132\021._LanV6CardDetailB=" +
       "\n\031emu.grasscutter.net.protoB _LanternRit" +
       "eV6CardInfoOuterClassb\006proto3"
     };

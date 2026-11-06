@@ -19,37 +19,37 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 event_id = 13;</code>
+     * <code>uint32 event_id = 11;</code>
      * @return The eventId.
      */
     int getEventId();
 
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getItemListList();
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index);
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     int getItemListCount();
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
         int index);
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -101,7 +101,12 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
+            case 16: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
@@ -110,14 +115,9 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
-            case 104: {
+            case 88: {
 
               eventId_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -155,10 +155,10 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
               emu.grasscutter.net.proto.HomeAvatarRewardEventGetRspOuterClass.HomeAvatarRewardEventGetRsp.class, emu.grasscutter.net.proto.HomeAvatarRewardEventGetRspOuterClass.HomeAvatarRewardEventGetRsp.Builder.class);
     }
 
-    public static final int EVENT_ID_FIELD_NUMBER = 13;
+    public static final int EVENT_ID_FIELD_NUMBER = 11;
     private int eventId_;
     /**
-     * <code>uint32 event_id = 13;</code>
+     * <code>uint32 event_id = 11;</code>
      * @return The eventId.
      */
     @java.lang.Override
@@ -166,17 +166,17 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
       return eventId_;
     }
 
-    public static final int ITEM_LIST_FIELD_NUMBER = 6;
+    public static final int ITEM_LIST_FIELD_NUMBER = 10;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_;
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -184,21 +184,21 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     @java.lang.Override
     public int getItemListCount() {
       return itemList_.size();
     }
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
       return itemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam item_list = 6;</code>
+     * <code>repeated .ItemParam item_list = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
@@ -206,10 +206,10 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
       return itemList_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -231,14 +231,14 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (retcode_ != 0) {
+        output.writeInt32(2, retcode_);
+      }
       for (int i = 0; i < itemList_.size(); i++) {
-        output.writeMessage(6, itemList_.get(i));
+        output.writeMessage(10, itemList_.get(i));
       }
       if (eventId_ != 0) {
-        output.writeUInt32(13, eventId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeUInt32(11, eventId_);
       }
       unknownFields.writeTo(output);
     }
@@ -249,17 +249,17 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, retcode_);
+      }
       for (int i = 0; i < itemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, itemList_.get(i));
+          .computeMessageSize(10, itemList_.get(i));
       }
       if (eventId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, eventId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeUInt32Size(11, eventId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -595,7 +595,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
 
       private int eventId_ ;
       /**
-       * <code>uint32 event_id = 13;</code>
+       * <code>uint32 event_id = 11;</code>
        * @return The eventId.
        */
       @java.lang.Override
@@ -603,7 +603,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return eventId_;
       }
       /**
-       * <code>uint32 event_id = 13;</code>
+       * <code>uint32 event_id = 11;</code>
        * @param value The eventId to set.
        * @return This builder for chaining.
        */
@@ -614,7 +614,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 event_id = 13;</code>
+       * <code>uint32 event_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventId() {
@@ -637,7 +637,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
         if (itemListBuilder_ == null) {
@@ -647,7 +647,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public int getItemListCount() {
         if (itemListBuilder_ == null) {
@@ -657,7 +657,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -667,7 +667,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -684,7 +684,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -698,7 +698,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder addItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (itemListBuilder_ == null) {
@@ -714,7 +714,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -731,7 +731,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder addItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -745,7 +745,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -759,7 +759,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder addAllItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -774,7 +774,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder clearItemList() {
         if (itemListBuilder_ == null) {
@@ -787,7 +787,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public Builder removeItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -800,14 +800,14 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemListBuilder(
           int index) {
         return getItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
           int index) {
@@ -817,7 +817,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getItemListOrBuilderList() {
@@ -828,14 +828,14 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder() {
         return getItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder(
           int index) {
@@ -843,7 +843,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 6;</code>
+       * <code>repeated .ItemParam item_list = 10;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getItemListBuilderList() {
@@ -866,7 +866,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -874,7 +874,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -885,7 +885,7 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -963,8 +963,8 @@ public final class HomeAvatarRewardEventGetRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n!HomeAvatarRewardEventGetRsp.proto\032\017Ite" +
       "mParam.proto\"_\n\033HomeAvatarRewardEventGet" +
-      "Rsp\022\020\n\010event_id\030\r \001(\r\022\035\n\titem_list\030\006 \003(\013" +
-      "2\n.ItemParam\022\017\n\007retcode\030\017 \001(\005BB\n\031emu.gra" +
+      "Rsp\022\020\n\010event_id\030\013 \001(\r\022\035\n\titem_list\030\n \003(\013" +
+      "2\n.ItemParam\022\017\n\007retcode\030\002 \001(\005BB\n\031emu.gra" +
       "sscutter.net.protoB%HomeAvatarRewardEven" +
       "tGetRspOuterClassb\006proto3"
     };

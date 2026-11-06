@@ -19,40 +19,40 @@ public final class _DiversityBattleLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+     * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
      * @return Whether the recordSocialBrief field is set.
      */
     boolean hasRecordSocialBrief();
     /**
-     * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+     * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
      * @return The recordSocialBrief.
      */
     emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief getRecordSocialBrief();
     /**
-     * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+     * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
      */
     emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBriefOrBuilder getRecordSocialBriefOrBuilder();
 
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB> 
         getTeamListList();
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB getTeamList(int index);
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     int getTeamListCount();
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIBOrBuilder> 
         getTeamListOrBuilderList();
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIBOrBuilder getTeamListOrBuilder(
         int index);
@@ -104,7 +104,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 58: {
               emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief.Builder subBuilder = null;
               if (RecordSocialBrief_ != null) {
                 subBuilder = RecordSocialBrief_.toBuilder();
@@ -117,7 +117,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
 
               break;
             }
-            case 82: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 teamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB>();
                 mutable_bitField0_ |= 0x00000001;
@@ -161,10 +161,10 @@ public final class _DiversityBattleLevelInfoOuterClass {
               emu.grasscutter.net.proto._DiversityBattleLevelInfoOuterClass._DiversityBattleLevelInfo.class, emu.grasscutter.net.proto._DiversityBattleLevelInfoOuterClass._DiversityBattleLevelInfo.Builder.class);
     }
 
-    public static final int _RECORD_SOCIAL_BRIEF_FIELD_NUMBER = 3;
+    public static final int _RECORD_SOCIAL_BRIEF_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief RecordSocialBrief_;
     /**
-     * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+     * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
      * @return Whether the recordSocialBrief field is set.
      */
     @java.lang.Override
@@ -172,7 +172,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
       return RecordSocialBrief_ != null;
     }
     /**
-     * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+     * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
      * @return The recordSocialBrief.
      */
     @java.lang.Override
@@ -180,24 +180,24 @@ public final class _DiversityBattleLevelInfoOuterClass {
       return RecordSocialBrief_ == null ? emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief.getDefaultInstance() : RecordSocialBrief_;
     }
     /**
-     * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+     * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBriefOrBuilder getRecordSocialBriefOrBuilder() {
       return getRecordSocialBrief();
     }
 
-    public static final int TEAM_LIST_FIELD_NUMBER = 10;
+    public static final int TEAM_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB> teamList_;
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB> getTeamListList() {
       return teamList_;
     }
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIBOrBuilder> 
@@ -205,21 +205,21 @@ public final class _DiversityBattleLevelInfoOuterClass {
       return teamList_;
     }
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     @java.lang.Override
     public int getTeamListCount() {
       return teamList_.size();
     }
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB getTeamList(int index) {
       return teamList_.get(index);
     }
     /**
-     * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+     * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIBOrBuilder getTeamListOrBuilder(
@@ -242,10 +242,10 @@ public final class _DiversityBattleLevelInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (RecordSocialBrief_ != null) {
-        output.writeMessage(3, getRecordSocialBrief());
+        output.writeMessage(7, getRecordSocialBrief());
       }
       for (int i = 0; i < teamList_.size(); i++) {
-        output.writeMessage(10, teamList_.get(i));
+        output.writeMessage(13, teamList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -258,11 +258,11 @@ public final class _DiversityBattleLevelInfoOuterClass {
       size = 0;
       if (RecordSocialBrief_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getRecordSocialBrief());
+          .computeMessageSize(7, getRecordSocialBrief());
       }
       for (int i = 0; i < teamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, teamList_.get(i));
+          .computeMessageSize(13, teamList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -603,14 +603,14 @@ public final class _DiversityBattleLevelInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief, emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief.Builder, emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBriefOrBuilder> RecordSocialBriefBuilder_;
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        * @return Whether the recordSocialBrief field is set.
        */
       public boolean hasRecordSocialBrief() {
         return RecordSocialBriefBuilder_ != null || RecordSocialBrief_ != null;
       }
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        * @return The recordSocialBrief.
        */
       public emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief getRecordSocialBrief() {
@@ -621,7 +621,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        */
       public Builder setRecordSocialBrief(emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief value) {
         if (RecordSocialBriefBuilder_ == null) {
@@ -637,7 +637,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        */
       public Builder setRecordSocialBrief(
           emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief.Builder builderForValue) {
@@ -651,7 +651,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        */
       public Builder mergeRecordSocialBrief(emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief value) {
         if (RecordSocialBriefBuilder_ == null) {
@@ -669,7 +669,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        */
       public Builder clearRecordSocialBrief() {
         if (RecordSocialBriefBuilder_ == null) {
@@ -683,7 +683,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        */
       public emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief.Builder getRecordSocialBriefBuilder() {
         
@@ -691,7 +691,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return getRecordSocialBriefFieldBuilder().getBuilder();
       }
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        */
       public emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBriefOrBuilder getRecordSocialBriefOrBuilder() {
         if (RecordSocialBriefBuilder_ != null) {
@@ -702,7 +702,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>._DiversityBattleSocialBrief _record_social_brief = 3;</code>
+       * <code>._DiversityBattleSocialBrief _record_social_brief = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief, emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBrief.Builder, emu.grasscutter.net.proto._DiversityBattleSocialBriefOuterClass._DiversityBattleSocialBriefOrBuilder> 
@@ -731,7 +731,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
           emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB, emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder, emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIBOrBuilder> teamListBuilder_;
 
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB> getTeamListList() {
         if (teamListBuilder_ == null) {
@@ -741,7 +741,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public int getTeamListCount() {
         if (teamListBuilder_ == null) {
@@ -751,7 +751,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB getTeamList(int index) {
         if (teamListBuilder_ == null) {
@@ -761,7 +761,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder setTeamList(
           int index, emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB value) {
@@ -778,7 +778,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder setTeamList(
           int index, emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder builderForValue) {
@@ -792,7 +792,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder addTeamList(emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB value) {
         if (teamListBuilder_ == null) {
@@ -808,7 +808,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder addTeamList(
           int index, emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB value) {
@@ -825,7 +825,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder addTeamList(
           emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder builderForValue) {
@@ -839,7 +839,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder addTeamList(
           int index, emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder builderForValue) {
@@ -853,7 +853,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder addAllTeamList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB> values) {
@@ -868,7 +868,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder clearTeamList() {
         if (teamListBuilder_ == null) {
@@ -881,7 +881,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public Builder removeTeamList(int index) {
         if (teamListBuilder_ == null) {
@@ -894,14 +894,14 @@ public final class _DiversityBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder getTeamListBuilder(
           int index) {
         return getTeamListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIBOrBuilder getTeamListOrBuilder(
           int index) {
@@ -911,7 +911,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIBOrBuilder> 
            getTeamListOrBuilderList() {
@@ -922,14 +922,14 @@ public final class _DiversityBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder addTeamListBuilder() {
         return getTeamListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.getDefaultInstance());
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder addTeamListBuilder(
           int index) {
@@ -937,7 +937,7 @@ public final class _DiversityBattleLevelInfoOuterClass {
             index, emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.getDefaultInstance());
       }
       /**
-       * <code>repeated .FPFLLDHMCIB team_list = 10;</code>
+       * <code>repeated .FPFLLDHMCIB team_list = 13;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FPFLLDHMCIBOuterClass.FPFLLDHMCIB.Builder> 
            getTeamListBuilderList() {
@@ -1027,8 +1027,8 @@ public final class _DiversityBattleLevelInfoOuterClass {
       "\n\037_DiversityBattleLevelInfo.proto\032\021FPFLL" +
       "DHMCIB.proto\032!_DiversityBattleSocialBrie" +
       "f.proto\"x\n\031_DiversityBattleLevelInfo\022:\n\024" +
-      "_record_social_brief\030\003 \001(\0132\034._DiversityB" +
-      "attleSocialBrief\022\037\n\tteam_list\030\n \003(\0132\014.FP" +
+      "_record_social_brief\030\007 \001(\0132\034._DiversityB" +
+      "attleSocialBrief\022\037\n\tteam_list\030\r \003(\0132\014.FP" +
       "FLLDHMCIBB@\n\031emu.grasscutter.net.protoB#" +
       "_DiversityBattleLevelInfoOuterClassb\006pro" +
       "to3"

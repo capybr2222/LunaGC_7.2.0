@@ -43,25 +43,25 @@ public final class LostSamachurlDetailInfoOuterClass {
         int index);
 
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG> 
         getFffjlckmddfList();
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG getFffjlckmddf(int index);
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     int getFffjlckmddfCount();
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNGOrBuilder> 
         getFffjlckmddfOrBuilderList();
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNGOrBuilder getFffjlckmddfOrBuilder(
         int index);
@@ -114,15 +114,6 @@ public final class LostSamachurlDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 122: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                fffjlckmddf_ = new java.util.ArrayList<emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG>();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              fffjlckmddf_.add(
-                  input.readMessage(emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.parser(), extensionRegistry));
-              break;
-            }
             case 400002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 dacllbeooic_ = new java.util.ArrayList<emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN>();
@@ -130,6 +121,15 @@ public final class LostSamachurlDetailInfoOuterClass {
               }
               dacllbeooic_.add(
                   input.readMessage(emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN.parser(), extensionRegistry));
+              break;
+            }
+            case 400010: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                fffjlckmddf_ = new java.util.ArrayList<emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              fffjlckmddf_.add(
+                  input.readMessage(emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -147,11 +147,11 @@ public final class LostSamachurlDetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          fffjlckmddf_ = java.util.Collections.unmodifiableList(fffjlckmddf_);
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           dacllbeooic_ = java.util.Collections.unmodifiableList(dacllbeooic_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          fffjlckmddf_ = java.util.Collections.unmodifiableList(fffjlckmddf_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -210,17 +210,17 @@ public final class LostSamachurlDetailInfoOuterClass {
       return dacllbeooic_.get(index);
     }
 
-    public static final int FFFJLCKMDDF_FIELD_NUMBER = 15;
+    public static final int FFFJLCKMDDF_FIELD_NUMBER = 50001;
     private java.util.List<emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG> fffjlckmddf_;
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG> getFffjlckmddfList() {
       return fffjlckmddf_;
     }
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNGOrBuilder> 
@@ -228,21 +228,21 @@ public final class LostSamachurlDetailInfoOuterClass {
       return fffjlckmddf_;
     }
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     @java.lang.Override
     public int getFffjlckmddfCount() {
       return fffjlckmddf_.size();
     }
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG getFffjlckmddf(int index) {
       return fffjlckmddf_.get(index);
     }
     /**
-     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+     * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNGOrBuilder getFffjlckmddfOrBuilder(
@@ -264,11 +264,11 @@ public final class LostSamachurlDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < fffjlckmddf_.size(); i++) {
-        output.writeMessage(15, fffjlckmddf_.get(i));
-      }
       for (int i = 0; i < dacllbeooic_.size(); i++) {
         output.writeMessage(50000, dacllbeooic_.get(i));
+      }
+      for (int i = 0; i < fffjlckmddf_.size(); i++) {
+        output.writeMessage(50001, fffjlckmddf_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -279,13 +279,13 @@ public final class LostSamachurlDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < fffjlckmddf_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, fffjlckmddf_.get(i));
-      }
       for (int i = 0; i < dacllbeooic_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(50000, dacllbeooic_.get(i));
+      }
+      for (int i = 0; i < fffjlckmddf_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(50001, fffjlckmddf_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -900,7 +900,7 @@ public final class LostSamachurlDetailInfoOuterClass {
           emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG, emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder, emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNGOrBuilder> fffjlckmddfBuilder_;
 
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG> getFffjlckmddfList() {
         if (fffjlckmddfBuilder_ == null) {
@@ -910,7 +910,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public int getFffjlckmddfCount() {
         if (fffjlckmddfBuilder_ == null) {
@@ -920,7 +920,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG getFffjlckmddf(int index) {
         if (fffjlckmddfBuilder_ == null) {
@@ -930,7 +930,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder setFffjlckmddf(
           int index, emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG value) {
@@ -947,7 +947,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder setFffjlckmddf(
           int index, emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder builderForValue) {
@@ -961,7 +961,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder addFffjlckmddf(emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG value) {
         if (fffjlckmddfBuilder_ == null) {
@@ -977,7 +977,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder addFffjlckmddf(
           int index, emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG value) {
@@ -994,7 +994,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder addFffjlckmddf(
           emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder builderForValue) {
@@ -1008,7 +1008,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder addFffjlckmddf(
           int index, emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder builderForValue) {
@@ -1022,7 +1022,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder addAllFffjlckmddf(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG> values) {
@@ -1037,7 +1037,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder clearFffjlckmddf() {
         if (fffjlckmddfBuilder_ == null) {
@@ -1050,7 +1050,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public Builder removeFffjlckmddf(int index) {
         if (fffjlckmddfBuilder_ == null) {
@@ -1063,14 +1063,14 @@ public final class LostSamachurlDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder getFffjlckmddfBuilder(
           int index) {
         return getFffjlckmddfFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNGOrBuilder getFffjlckmddfOrBuilder(
           int index) {
@@ -1080,7 +1080,7 @@ public final class LostSamachurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNGOrBuilder> 
            getFffjlckmddfOrBuilderList() {
@@ -1091,14 +1091,14 @@ public final class LostSamachurlDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder addFffjlckmddfBuilder() {
         return getFffjlckmddfFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.getDefaultInstance());
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder addFffjlckmddfBuilder(
           int index) {
@@ -1106,7 +1106,7 @@ public final class LostSamachurlDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.getDefaultInstance());
       }
       /**
-       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 15;</code>
+       * <code>repeated .GMBMFLHFBNG fffjlckmddf = 50001;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder> 
            getFffjlckmddfBuilderList() {
@@ -1194,11 +1194,12 @@ public final class LostSamachurlDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035LostSamachurlDetailInfo.proto\032\021EKCCNKG" +
-      "EJPN.proto\032\021GMBMFLHFBNG.proto\"a\n\027LostSam" +
+      "EJPN.proto\032\021GMBMFLHFBNG.proto\"c\n\027LostSam" +
       "achurlDetailInfo\022#\n\013dacllbeooic\030\320\206\003 \003(\0132" +
-      "\014.EKCCNKGEJPN\022!\n\013fffjlckmddf\030\017 \003(\0132\014.GMB" +
-      "MFLHFBNGB>\n\031emu.grasscutter.net.protoB!L" +
-      "ostSamachurlDetailInfoOuterClassb\006proto3"
+      "\014.EKCCNKGEJPN\022#\n\013fffjlckmddf\030\321\206\003 \003(\0132\014.G" +
+      "MBMFLHFBNGB>\n\031emu.grasscutter.net.protoB" +
+      "!LostSamachurlDetailInfoOuterClassb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

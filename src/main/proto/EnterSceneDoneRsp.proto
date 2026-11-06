@@ -6,7 +6,7 @@ option java_outer_classname = "EnterSceneDoneRspOuterClass";
 import "GFFKODENHJA.proto";
 
 message EnterSceneDoneRsp {
-	GFFKODENHJA PPKIKFGEINK = 15;
-	uint32 enter_scene_token = 6;
-	int32 retcode = 10;
+	GFFKODENHJA PPKIKFGEINK = 20000;
+	uint32 enter_scene_token = 4;
+	int32 retcode = 6;
 }

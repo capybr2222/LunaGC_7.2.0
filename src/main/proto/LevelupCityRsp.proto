@@ -6,8 +6,8 @@ option java_outer_classname = "LevelupCityRspOuterClass";
 import "CityInfo.proto";
 
 message LevelupCityRsp {
-	uint32 area_id = 3;
-	int32 retcode = 6;
-	uint32 scene_id = 1;
-	CityInfo city_info = 5;
+	uint32 area_id = 10;
+	int32 retcode = 9;
+	uint32 scene_id = 7;
+	CityInfo city_info = 6;
 }

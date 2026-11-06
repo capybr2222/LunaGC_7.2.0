@@ -34,96 +34,96 @@ public final class FairyTalesDetailInfoOuterClass {
     emu.grasscutter.net.proto.BMFHLLPLCNAOuterClass.BMFHLLPLCNAOrBuilder getCeicakkfgkoOrBuilder();
 
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM> 
         getICALMLAHAALList();
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM getICALMLAHAAL(int index);
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     int getICALMLAHAALCount();
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPMOrBuilder> 
         getICALMLAHAALOrBuilderList();
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPMOrBuilder getICALMLAHAALOrBuilder(
         int index);
 
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     java.util.List<emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC> 
         getHIIIBLGMMLFList();
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC getHIIIBLGMMLF(int index);
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     int getHIIIBLGMMLFCount();
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCCOrBuilder> 
         getHIIIBLGMMLFOrBuilderList();
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCCOrBuilder getHIIIBLGMMLFOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint32 oegakdnmcjb = 9;</code>
+     * <code>repeated uint32 oegakdnmcjb = 5;</code>
      * @return A list containing the oegakdnmcjb.
      */
     java.util.List<java.lang.Integer> getOegakdnmcjbList();
     /**
-     * <code>repeated uint32 oegakdnmcjb = 9;</code>
+     * <code>repeated uint32 oegakdnmcjb = 5;</code>
      * @return The count of oegakdnmcjb.
      */
     int getOegakdnmcjbCount();
     /**
-     * <code>repeated uint32 oegakdnmcjb = 9;</code>
+     * <code>repeated uint32 oegakdnmcjb = 5;</code>
      * @param index The index of the element to return.
      * @return The oegakdnmcjb at the given index.
      */
     int getOegakdnmcjb(int index);
 
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     java.util.List<emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE> 
         getPKAOIMANLKCList();
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE getPKAOIMANLKC(int index);
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     int getPKAOIMANLKCCount();
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOEOrBuilder> 
         getPKAOIMANLKCOrBuilderList();
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOEOrBuilder getPKAOIMANLKCOrBuilder(
         int index);
 
     /**
-     * <code>bool ajdnblagkok = 4;</code>
+     * <code>bool ajdnblagkok = 6;</code>
      * @return The ajdnblagkok.
      */
     boolean getAjdnblagkok();
@@ -178,21 +178,7 @@ public final class FairyTalesDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                iCALMLAHAAL_ = new java.util.ArrayList<emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              iCALMLAHAAL_.add(
-                  input.readMessage(emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.parser(), extensionRegistry));
-              break;
-            }
-            case 32: {
-
-              ajdnblagkok_ = input.readBool();
-              break;
-            }
-            case 72: {
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 oegakdnmcjb_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
@@ -200,7 +186,7 @@ public final class FairyTalesDetailInfoOuterClass {
               oegakdnmcjb_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
@@ -211,6 +197,11 @@ public final class FairyTalesDetailInfoOuterClass {
                 oegakdnmcjb_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 48: {
+
+              ajdnblagkok_ = input.readBool();
               break;
             }
             case 400002: {
@@ -227,6 +218,15 @@ public final class FairyTalesDetailInfoOuterClass {
               break;
             }
             case 400010: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                iCALMLAHAAL_ = new java.util.ArrayList<emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              iCALMLAHAAL_.add(
+                  input.readMessage(emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.parser(), extensionRegistry));
+              break;
+            }
+            case 400018: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 hIIIBLGMMLF_ = new java.util.ArrayList<emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC>();
                 mutable_bitField0_ |= 0x00000002;
@@ -235,7 +235,7 @@ public final class FairyTalesDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.parser(), extensionRegistry));
               break;
             }
-            case 400018: {
+            case 400026: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 pKAOIMANLKC_ = new java.util.ArrayList<emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE>();
                 mutable_bitField0_ |= 0x00000008;
@@ -259,11 +259,11 @@ public final class FairyTalesDetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          iCALMLAHAAL_ = java.util.Collections.unmodifiableList(iCALMLAHAAL_);
-        }
         if (((mutable_bitField0_ & 0x00000004) != 0)) {
           oegakdnmcjb_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          iCALMLAHAAL_ = java.util.Collections.unmodifiableList(iCALMLAHAAL_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           hIIIBLGMMLF_ = java.util.Collections.unmodifiableList(hIIIBLGMMLF_);
@@ -314,17 +314,17 @@ public final class FairyTalesDetailInfoOuterClass {
       return getCeicakkfgko();
     }
 
-    public static final int ICALMLAHAAL_FIELD_NUMBER = 1;
+    public static final int ICALMLAHAAL_FIELD_NUMBER = 50001;
     private java.util.List<emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM> iCALMLAHAAL_;
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM> getICALMLAHAALList() {
       return iCALMLAHAAL_;
     }
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPMOrBuilder> 
@@ -332,21 +332,21 @@ public final class FairyTalesDetailInfoOuterClass {
       return iCALMLAHAAL_;
     }
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     @java.lang.Override
     public int getICALMLAHAALCount() {
       return iCALMLAHAAL_.size();
     }
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM getICALMLAHAAL(int index) {
       return iCALMLAHAAL_.get(index);
     }
     /**
-     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+     * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPMOrBuilder getICALMLAHAALOrBuilder(
@@ -354,17 +354,17 @@ public final class FairyTalesDetailInfoOuterClass {
       return iCALMLAHAAL_.get(index);
     }
 
-    public static final int HIIIBLGMMLF_FIELD_NUMBER = 50001;
+    public static final int HIIIBLGMMLF_FIELD_NUMBER = 50002;
     private java.util.List<emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC> hIIIBLGMMLF_;
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC> getHIIIBLGMMLFList() {
       return hIIIBLGMMLF_;
     }
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCCOrBuilder> 
@@ -372,21 +372,21 @@ public final class FairyTalesDetailInfoOuterClass {
       return hIIIBLGMMLF_;
     }
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     @java.lang.Override
     public int getHIIIBLGMMLFCount() {
       return hIIIBLGMMLF_.size();
     }
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC getHIIIBLGMMLF(int index) {
       return hIIIBLGMMLF_.get(index);
     }
     /**
-     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+     * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCCOrBuilder getHIIIBLGMMLFOrBuilder(
@@ -394,10 +394,10 @@ public final class FairyTalesDetailInfoOuterClass {
       return hIIIBLGMMLF_.get(index);
     }
 
-    public static final int OEGAKDNMCJB_FIELD_NUMBER = 9;
+    public static final int OEGAKDNMCJB_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList oegakdnmcjb_;
     /**
-     * <code>repeated uint32 oegakdnmcjb = 9;</code>
+     * <code>repeated uint32 oegakdnmcjb = 5;</code>
      * @return A list containing the oegakdnmcjb.
      */
     @java.lang.Override
@@ -406,14 +406,14 @@ public final class FairyTalesDetailInfoOuterClass {
       return oegakdnmcjb_;
     }
     /**
-     * <code>repeated uint32 oegakdnmcjb = 9;</code>
+     * <code>repeated uint32 oegakdnmcjb = 5;</code>
      * @return The count of oegakdnmcjb.
      */
     public int getOegakdnmcjbCount() {
       return oegakdnmcjb_.size();
     }
     /**
-     * <code>repeated uint32 oegakdnmcjb = 9;</code>
+     * <code>repeated uint32 oegakdnmcjb = 5;</code>
      * @param index The index of the element to return.
      * @return The oegakdnmcjb at the given index.
      */
@@ -422,17 +422,17 @@ public final class FairyTalesDetailInfoOuterClass {
     }
     private int oegakdnmcjbMemoizedSerializedSize = -1;
 
-    public static final int PKAOIMANLKC_FIELD_NUMBER = 50002;
+    public static final int PKAOIMANLKC_FIELD_NUMBER = 50003;
     private java.util.List<emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE> pKAOIMANLKC_;
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE> getPKAOIMANLKCList() {
       return pKAOIMANLKC_;
     }
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOEOrBuilder> 
@@ -440,21 +440,21 @@ public final class FairyTalesDetailInfoOuterClass {
       return pKAOIMANLKC_;
     }
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     @java.lang.Override
     public int getPKAOIMANLKCCount() {
       return pKAOIMANLKC_.size();
     }
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE getPKAOIMANLKC(int index) {
       return pKAOIMANLKC_.get(index);
     }
     /**
-     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+     * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOEOrBuilder getPKAOIMANLKCOrBuilder(
@@ -462,10 +462,10 @@ public final class FairyTalesDetailInfoOuterClass {
       return pKAOIMANLKC_.get(index);
     }
 
-    public static final int AJDNBLAGKOK_FIELD_NUMBER = 4;
+    public static final int AJDNBLAGKOK_FIELD_NUMBER = 6;
     private boolean ajdnblagkok_;
     /**
-     * <code>bool ajdnblagkok = 4;</code>
+     * <code>bool ajdnblagkok = 6;</code>
      * @return The ajdnblagkok.
      */
     @java.lang.Override
@@ -488,27 +488,27 @@ public final class FairyTalesDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      for (int i = 0; i < iCALMLAHAAL_.size(); i++) {
-        output.writeMessage(1, iCALMLAHAAL_.get(i));
-      }
-      if (ajdnblagkok_ != false) {
-        output.writeBool(4, ajdnblagkok_);
-      }
       if (getOegakdnmcjbList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(oegakdnmcjbMemoizedSerializedSize);
       }
       for (int i = 0; i < oegakdnmcjb_.size(); i++) {
         output.writeUInt32NoTag(oegakdnmcjb_.getInt(i));
       }
+      if (ajdnblagkok_ != false) {
+        output.writeBool(6, ajdnblagkok_);
+      }
       if (ceicakkfgko_ != null) {
         output.writeMessage(50000, getCeicakkfgko());
       }
+      for (int i = 0; i < iCALMLAHAAL_.size(); i++) {
+        output.writeMessage(50001, iCALMLAHAAL_.get(i));
+      }
       for (int i = 0; i < hIIIBLGMMLF_.size(); i++) {
-        output.writeMessage(50001, hIIIBLGMMLF_.get(i));
+        output.writeMessage(50002, hIIIBLGMMLF_.get(i));
       }
       for (int i = 0; i < pKAOIMANLKC_.size(); i++) {
-        output.writeMessage(50002, pKAOIMANLKC_.get(i));
+        output.writeMessage(50003, pKAOIMANLKC_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -519,14 +519,6 @@ public final class FairyTalesDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < iCALMLAHAAL_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, iCALMLAHAAL_.get(i));
-      }
-      if (ajdnblagkok_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, ajdnblagkok_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < oegakdnmcjb_.size(); i++) {
@@ -541,17 +533,25 @@ public final class FairyTalesDetailInfoOuterClass {
         }
         oegakdnmcjbMemoizedSerializedSize = dataSize;
       }
+      if (ajdnblagkok_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, ajdnblagkok_);
+      }
       if (ceicakkfgko_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(50000, getCeicakkfgko());
       }
+      for (int i = 0; i < iCALMLAHAAL_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(50001, iCALMLAHAAL_.get(i));
+      }
       for (int i = 0; i < hIIIBLGMMLF_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(50001, hIIIBLGMMLF_.get(i));
+          .computeMessageSize(50002, hIIIBLGMMLF_.get(i));
       }
       for (int i = 0; i < pKAOIMANLKC_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(50002, pKAOIMANLKC_.get(i));
+          .computeMessageSize(50003, pKAOIMANLKC_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1150,7 +1150,7 @@ public final class FairyTalesDetailInfoOuterClass {
           emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM, emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.Builder, emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPMOrBuilder> iCALMLAHAALBuilder_;
 
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM> getICALMLAHAALList() {
         if (iCALMLAHAALBuilder_ == null) {
@@ -1160,7 +1160,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public int getICALMLAHAALCount() {
         if (iCALMLAHAALBuilder_ == null) {
@@ -1170,7 +1170,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM getICALMLAHAAL(int index) {
         if (iCALMLAHAALBuilder_ == null) {
@@ -1180,7 +1180,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder setICALMLAHAAL(
           int index, emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM value) {
@@ -1197,7 +1197,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder setICALMLAHAAL(
           int index, emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.Builder builderForValue) {
@@ -1211,7 +1211,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder addICALMLAHAAL(emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM value) {
         if (iCALMLAHAALBuilder_ == null) {
@@ -1227,7 +1227,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder addICALMLAHAAL(
           int index, emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM value) {
@@ -1244,7 +1244,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder addICALMLAHAAL(
           emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.Builder builderForValue) {
@@ -1258,7 +1258,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder addICALMLAHAAL(
           int index, emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.Builder builderForValue) {
@@ -1272,7 +1272,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder addAllICALMLAHAAL(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM> values) {
@@ -1287,7 +1287,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder clearICALMLAHAAL() {
         if (iCALMLAHAALBuilder_ == null) {
@@ -1300,7 +1300,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public Builder removeICALMLAHAAL(int index) {
         if (iCALMLAHAALBuilder_ == null) {
@@ -1313,14 +1313,14 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.Builder getICALMLAHAALBuilder(
           int index) {
         return getICALMLAHAALFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPMOrBuilder getICALMLAHAALOrBuilder(
           int index) {
@@ -1330,7 +1330,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPMOrBuilder> 
            getICALMLAHAALOrBuilderList() {
@@ -1341,14 +1341,14 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.Builder addICALMLAHAALBuilder() {
         return getICALMLAHAALFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.getDefaultInstance());
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.Builder addICALMLAHAALBuilder(
           int index) {
@@ -1356,7 +1356,7 @@ public final class FairyTalesDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.getDefaultInstance());
       }
       /**
-       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 1;</code>
+       * <code>repeated .JIEHJMIEHPM ICALMLAHAAL = 50001;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JIEHJMIEHPMOuterClass.JIEHJMIEHPM.Builder> 
            getICALMLAHAALBuilderList() {
@@ -1390,7 +1390,7 @@ public final class FairyTalesDetailInfoOuterClass {
           emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC, emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.Builder, emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCCOrBuilder> hIIIBLGMMLFBuilder_;
 
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC> getHIIIBLGMMLFList() {
         if (hIIIBLGMMLFBuilder_ == null) {
@@ -1400,7 +1400,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public int getHIIIBLGMMLFCount() {
         if (hIIIBLGMMLFBuilder_ == null) {
@@ -1410,7 +1410,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC getHIIIBLGMMLF(int index) {
         if (hIIIBLGMMLFBuilder_ == null) {
@@ -1420,7 +1420,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder setHIIIBLGMMLF(
           int index, emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC value) {
@@ -1437,7 +1437,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder setHIIIBLGMMLF(
           int index, emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.Builder builderForValue) {
@@ -1451,7 +1451,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder addHIIIBLGMMLF(emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC value) {
         if (hIIIBLGMMLFBuilder_ == null) {
@@ -1467,7 +1467,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder addHIIIBLGMMLF(
           int index, emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC value) {
@@ -1484,7 +1484,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder addHIIIBLGMMLF(
           emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.Builder builderForValue) {
@@ -1498,7 +1498,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder addHIIIBLGMMLF(
           int index, emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.Builder builderForValue) {
@@ -1512,7 +1512,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder addAllHIIIBLGMMLF(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC> values) {
@@ -1527,7 +1527,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder clearHIIIBLGMMLF() {
         if (hIIIBLGMMLFBuilder_ == null) {
@@ -1540,7 +1540,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public Builder removeHIIIBLGMMLF(int index) {
         if (hIIIBLGMMLFBuilder_ == null) {
@@ -1553,14 +1553,14 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.Builder getHIIIBLGMMLFBuilder(
           int index) {
         return getHIIIBLGMMLFFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCCOrBuilder getHIIIBLGMMLFOrBuilder(
           int index) {
@@ -1570,7 +1570,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCCOrBuilder> 
            getHIIIBLGMMLFOrBuilderList() {
@@ -1581,14 +1581,14 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.Builder addHIIIBLGMMLFBuilder() {
         return getHIIIBLGMMLFFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.getDefaultInstance());
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.Builder addHIIIBLGMMLFBuilder(
           int index) {
@@ -1596,7 +1596,7 @@ public final class FairyTalesDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.getDefaultInstance());
       }
       /**
-       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50001;</code>
+       * <code>repeated .OICBFHCJGCC HIIIBLGMMLF = 50002;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.OICBFHCJGCCOuterClass.OICBFHCJGCC.Builder> 
            getHIIIBLGMMLFBuilderList() {
@@ -1625,7 +1625,7 @@ public final class FairyTalesDetailInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 oegakdnmcjb = 9;</code>
+       * <code>repeated uint32 oegakdnmcjb = 5;</code>
        * @return A list containing the oegakdnmcjb.
        */
       public java.util.List<java.lang.Integer>
@@ -1634,14 +1634,14 @@ public final class FairyTalesDetailInfoOuterClass {
                  java.util.Collections.unmodifiableList(oegakdnmcjb_) : oegakdnmcjb_;
       }
       /**
-       * <code>repeated uint32 oegakdnmcjb = 9;</code>
+       * <code>repeated uint32 oegakdnmcjb = 5;</code>
        * @return The count of oegakdnmcjb.
        */
       public int getOegakdnmcjbCount() {
         return oegakdnmcjb_.size();
       }
       /**
-       * <code>repeated uint32 oegakdnmcjb = 9;</code>
+       * <code>repeated uint32 oegakdnmcjb = 5;</code>
        * @param index The index of the element to return.
        * @return The oegakdnmcjb at the given index.
        */
@@ -1649,7 +1649,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return oegakdnmcjb_.getInt(index);
       }
       /**
-       * <code>repeated uint32 oegakdnmcjb = 9;</code>
+       * <code>repeated uint32 oegakdnmcjb = 5;</code>
        * @param index The index to set the value at.
        * @param value The oegakdnmcjb to set.
        * @return This builder for chaining.
@@ -1662,7 +1662,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 oegakdnmcjb = 9;</code>
+       * <code>repeated uint32 oegakdnmcjb = 5;</code>
        * @param value The oegakdnmcjb to add.
        * @return This builder for chaining.
        */
@@ -1673,7 +1673,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 oegakdnmcjb = 9;</code>
+       * <code>repeated uint32 oegakdnmcjb = 5;</code>
        * @param values The oegakdnmcjb to add.
        * @return This builder for chaining.
        */
@@ -1686,7 +1686,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 oegakdnmcjb = 9;</code>
+       * <code>repeated uint32 oegakdnmcjb = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearOegakdnmcjb() {
@@ -1709,7 +1709,7 @@ public final class FairyTalesDetailInfoOuterClass {
           emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE, emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.Builder, emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOEOrBuilder> pKAOIMANLKCBuilder_;
 
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE> getPKAOIMANLKCList() {
         if (pKAOIMANLKCBuilder_ == null) {
@@ -1719,7 +1719,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public int getPKAOIMANLKCCount() {
         if (pKAOIMANLKCBuilder_ == null) {
@@ -1729,7 +1729,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE getPKAOIMANLKC(int index) {
         if (pKAOIMANLKCBuilder_ == null) {
@@ -1739,7 +1739,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder setPKAOIMANLKC(
           int index, emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE value) {
@@ -1756,7 +1756,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder setPKAOIMANLKC(
           int index, emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.Builder builderForValue) {
@@ -1770,7 +1770,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder addPKAOIMANLKC(emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE value) {
         if (pKAOIMANLKCBuilder_ == null) {
@@ -1786,7 +1786,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder addPKAOIMANLKC(
           int index, emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE value) {
@@ -1803,7 +1803,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder addPKAOIMANLKC(
           emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.Builder builderForValue) {
@@ -1817,7 +1817,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder addPKAOIMANLKC(
           int index, emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.Builder builderForValue) {
@@ -1831,7 +1831,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder addAllPKAOIMANLKC(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE> values) {
@@ -1846,7 +1846,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder clearPKAOIMANLKC() {
         if (pKAOIMANLKCBuilder_ == null) {
@@ -1859,7 +1859,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public Builder removePKAOIMANLKC(int index) {
         if (pKAOIMANLKCBuilder_ == null) {
@@ -1872,14 +1872,14 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.Builder getPKAOIMANLKCBuilder(
           int index) {
         return getPKAOIMANLKCFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOEOrBuilder getPKAOIMANLKCOrBuilder(
           int index) {
@@ -1889,7 +1889,7 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOEOrBuilder> 
            getPKAOIMANLKCOrBuilderList() {
@@ -1900,14 +1900,14 @@ public final class FairyTalesDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.Builder addPKAOIMANLKCBuilder() {
         return getPKAOIMANLKCFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.getDefaultInstance());
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.Builder addPKAOIMANLKCBuilder(
           int index) {
@@ -1915,7 +1915,7 @@ public final class FairyTalesDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.getDefaultInstance());
       }
       /**
-       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50002;</code>
+       * <code>repeated .MABDPGLBMOE PKAOIMANLKC = 50003;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.MABDPGLBMOEOuterClass.MABDPGLBMOE.Builder> 
            getPKAOIMANLKCBuilderList() {
@@ -1938,7 +1938,7 @@ public final class FairyTalesDetailInfoOuterClass {
 
       private boolean ajdnblagkok_ ;
       /**
-       * <code>bool ajdnblagkok = 4;</code>
+       * <code>bool ajdnblagkok = 6;</code>
        * @return The ajdnblagkok.
        */
       @java.lang.Override
@@ -1946,7 +1946,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return ajdnblagkok_;
       }
       /**
-       * <code>bool ajdnblagkok = 4;</code>
+       * <code>bool ajdnblagkok = 6;</code>
        * @param value The ajdnblagkok to set.
        * @return This builder for chaining.
        */
@@ -1957,7 +1957,7 @@ public final class FairyTalesDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool ajdnblagkok = 4;</code>
+       * <code>bool ajdnblagkok = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearAjdnblagkok() {
@@ -2035,14 +2035,14 @@ public final class FairyTalesDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032FairyTalesDetailInfo.proto\032\021BMFHLLPLCN" +
       "A.proto\032\021JIEHJMIEHPM.proto\032\021MABDPGLBMOE." +
-      "proto\032\021OICBFHCJGCC.proto\"\322\001\n\024FairyTalesD" +
+      "proto\032\021OICBFHCJGCC.proto\"\324\001\n\024FairyTalesD" +
       "etailInfo\022#\n\013ceicakkfgko\030\320\206\003 \001(\0132\014.BMFHL" +
-      "LPLCNA\022!\n\013ICALMLAHAAL\030\001 \003(\0132\014.JIEHJMIEHP" +
-      "M\022#\n\013HIIIBLGMMLF\030\321\206\003 \003(\0132\014.OICBFHCJGCC\022\023" +
-      "\n\013oegakdnmcjb\030\t \003(\r\022#\n\013PKAOIMANLKC\030\322\206\003 \003" +
-      "(\0132\014.MABDPGLBMOE\022\023\n\013ajdnblagkok\030\004 \001(\010B;\n" +
-      "\031emu.grasscutter.net.protoB\036FairyTalesDe" +
-      "tailInfoOuterClassb\006proto3"
+      "LPLCNA\022#\n\013ICALMLAHAAL\030\321\206\003 \003(\0132\014.JIEHJMIE" +
+      "HPM\022#\n\013HIIIBLGMMLF\030\322\206\003 \003(\0132\014.OICBFHCJGCC" +
+      "\022\023\n\013oegakdnmcjb\030\005 \003(\r\022#\n\013PKAOIMANLKC\030\323\206\003" +
+      " \003(\0132\014.MABDPGLBMOE\022\023\n\013ajdnblagkok\030\006 \001(\010B" +
+      ";\n\031emu.grasscutter.net.protoB\036FairyTales" +
+      "DetailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

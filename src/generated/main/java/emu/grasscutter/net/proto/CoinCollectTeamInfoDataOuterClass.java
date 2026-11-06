@@ -19,7 +19,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_host = 8;</code>
+     * <code>bool is_host = 4;</code>
      * @return The isHost.
      */
     boolean getIsHost();
@@ -31,57 +31,57 @@ public final class CoinCollectTeamInfoDataOuterClass {
     int getChooseSkillNo();
 
     /**
-     * <code>repeated uint32 avatar_id_list = 5;</code>
+     * <code>repeated uint32 avatar_id_list = 2;</code>
      * @return A list containing the avatarIdList.
      */
     java.util.List<java.lang.Integer> getAvatarIdListList();
     /**
-     * <code>repeated uint32 avatar_id_list = 5;</code>
+     * <code>repeated uint32 avatar_id_list = 2;</code>
      * @return The count of avatarIdList.
      */
     int getAvatarIdListCount();
     /**
-     * <code>repeated uint32 avatar_id_list = 5;</code>
+     * <code>repeated uint32 avatar_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The avatarIdList at the given index.
      */
     int getAvatarIdList(int index);
 
     /**
-     * <code>uint32 player_uid = 12;</code>
+     * <code>uint32 player_uid = 5;</code>
      * @return The playerUid.
      */
     int getPlayerUid();
 
     /**
-     * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+     * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
      * @return A list containing the gKOLDEDJJDO.
      */
     java.util.List<java.lang.Integer> getGKOLDEDJJDOList();
     /**
-     * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+     * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
      * @return The count of gKOLDEDJJDO.
      */
     int getGKOLDEDJJDOCount();
     /**
-     * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+     * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
      * @param index The index of the element to return.
      * @return The gKOLDEDJJDO at the given index.
      */
     int getGKOLDEDJJDO(int index);
 
     /**
-     * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+     * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
      * @return A list containing the hJPAFNAACNO.
      */
     java.util.List<java.lang.Integer> getHJPAFNAACNOList();
     /**
-     * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+     * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
      * @return The count of hJPAFNAACNO.
      */
     int getHJPAFNAACNOCount();
     /**
-     * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+     * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
      * @param index The index of the element to return.
      * @return The hJPAFNAACNO at the given index.
      */
@@ -141,7 +141,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
               chooseSkillNo_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 16: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -149,7 +149,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
               avatarIdList_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -162,17 +162,17 @@ public final class CoinCollectTeamInfoDataOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 64: {
+            case 32: {
 
               isHost_ = input.readBool();
               break;
             }
-            case 96: {
+            case 40: {
 
               playerUid_ = input.readUInt32();
               break;
             }
-            case 400000: {
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 gKOLDEDJJDO_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -180,7 +180,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
               gKOLDEDJJDO_.addInt(input.readUInt32());
               break;
             }
-            case 400002: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -193,7 +193,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 400008: {
+            case 160008: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 hJPAFNAACNO_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
@@ -201,7 +201,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
               hJPAFNAACNO_.addInt(input.readUInt32());
               break;
             }
-            case 400010: {
+            case 160010: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
@@ -255,10 +255,10 @@ public final class CoinCollectTeamInfoDataOuterClass {
               emu.grasscutter.net.proto.CoinCollectTeamInfoDataOuterClass.CoinCollectTeamInfoData.class, emu.grasscutter.net.proto.CoinCollectTeamInfoDataOuterClass.CoinCollectTeamInfoData.Builder.class);
     }
 
-    public static final int IS_HOST_FIELD_NUMBER = 8;
+    public static final int IS_HOST_FIELD_NUMBER = 4;
     private boolean isHost_;
     /**
-     * <code>bool is_host = 8;</code>
+     * <code>bool is_host = 4;</code>
      * @return The isHost.
      */
     @java.lang.Override
@@ -277,10 +277,10 @@ public final class CoinCollectTeamInfoDataOuterClass {
       return chooseSkillNo_;
     }
 
-    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 5;
+    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList avatarIdList_;
     /**
-     * <code>repeated uint32 avatar_id_list = 5;</code>
+     * <code>repeated uint32 avatar_id_list = 2;</code>
      * @return A list containing the avatarIdList.
      */
     @java.lang.Override
@@ -289,14 +289,14 @@ public final class CoinCollectTeamInfoDataOuterClass {
       return avatarIdList_;
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 5;</code>
+     * <code>repeated uint32 avatar_id_list = 2;</code>
      * @return The count of avatarIdList.
      */
     public int getAvatarIdListCount() {
       return avatarIdList_.size();
     }
     /**
-     * <code>repeated uint32 avatar_id_list = 5;</code>
+     * <code>repeated uint32 avatar_id_list = 2;</code>
      * @param index The index of the element to return.
      * @return The avatarIdList at the given index.
      */
@@ -305,10 +305,10 @@ public final class CoinCollectTeamInfoDataOuterClass {
     }
     private int avatarIdListMemoizedSerializedSize = -1;
 
-    public static final int PLAYER_UID_FIELD_NUMBER = 12;
+    public static final int PLAYER_UID_FIELD_NUMBER = 5;
     private int playerUid_;
     /**
-     * <code>uint32 player_uid = 12;</code>
+     * <code>uint32 player_uid = 5;</code>
      * @return The playerUid.
      */
     @java.lang.Override
@@ -316,10 +316,10 @@ public final class CoinCollectTeamInfoDataOuterClass {
       return playerUid_;
     }
 
-    public static final int GKOLDEDJJDO_FIELD_NUMBER = 50000;
+    public static final int GKOLDEDJJDO_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList gKOLDEDJJDO_;
     /**
-     * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+     * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
      * @return A list containing the gKOLDEDJJDO.
      */
     @java.lang.Override
@@ -328,14 +328,14 @@ public final class CoinCollectTeamInfoDataOuterClass {
       return gKOLDEDJJDO_;
     }
     /**
-     * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+     * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
      * @return The count of gKOLDEDJJDO.
      */
     public int getGKOLDEDJJDOCount() {
       return gKOLDEDJJDO_.size();
     }
     /**
-     * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+     * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
      * @param index The index of the element to return.
      * @return The gKOLDEDJJDO at the given index.
      */
@@ -344,10 +344,10 @@ public final class CoinCollectTeamInfoDataOuterClass {
     }
     private int gKOLDEDJJDOMemoizedSerializedSize = -1;
 
-    public static final int HJPAFNAACNO_FIELD_NUMBER = 50001;
+    public static final int HJPAFNAACNO_FIELD_NUMBER = 20001;
     private com.google.protobuf.Internal.IntList hJPAFNAACNO_;
     /**
-     * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+     * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
      * @return A list containing the hJPAFNAACNO.
      */
     @java.lang.Override
@@ -356,14 +356,14 @@ public final class CoinCollectTeamInfoDataOuterClass {
       return hJPAFNAACNO_;
     }
     /**
-     * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+     * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
      * @return The count of hJPAFNAACNO.
      */
     public int getHJPAFNAACNOCount() {
       return hJPAFNAACNO_.size();
     }
     /**
-     * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+     * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
      * @param index The index of the element to return.
      * @return The hJPAFNAACNO at the given index.
      */
@@ -391,27 +391,27 @@ public final class CoinCollectTeamInfoDataOuterClass {
         output.writeUInt32(1, chooseSkillNo_);
       }
       if (getAvatarIdListList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(avatarIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarIdList_.size(); i++) {
         output.writeUInt32NoTag(avatarIdList_.getInt(i));
       }
       if (isHost_ != false) {
-        output.writeBool(8, isHost_);
+        output.writeBool(4, isHost_);
       }
       if (playerUid_ != 0) {
-        output.writeUInt32(12, playerUid_);
+        output.writeUInt32(5, playerUid_);
       }
       if (getGKOLDEDJJDOList().size() > 0) {
-        output.writeUInt32NoTag(400002);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(gKOLDEDJJDOMemoizedSerializedSize);
       }
       for (int i = 0; i < gKOLDEDJJDO_.size(); i++) {
         output.writeUInt32NoTag(gKOLDEDJJDO_.getInt(i));
       }
       if (getHJPAFNAACNOList().size() > 0) {
-        output.writeUInt32NoTag(400010);
+        output.writeUInt32NoTag(160010);
         output.writeUInt32NoTag(hJPAFNAACNOMemoizedSerializedSize);
       }
       for (int i = 0; i < hJPAFNAACNO_.size(); i++) {
@@ -446,11 +446,11 @@ public final class CoinCollectTeamInfoDataOuterClass {
       }
       if (isHost_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isHost_);
+          .computeBoolSize(4, isHost_);
       }
       if (playerUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, playerUid_);
+          .computeUInt32Size(5, playerUid_);
       }
       {
         int dataSize = 0;
@@ -846,7 +846,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
 
       private boolean isHost_ ;
       /**
-       * <code>bool is_host = 8;</code>
+       * <code>bool is_host = 4;</code>
        * @return The isHost.
        */
       @java.lang.Override
@@ -854,7 +854,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return isHost_;
       }
       /**
-       * <code>bool is_host = 8;</code>
+       * <code>bool is_host = 4;</code>
        * @param value The isHost to set.
        * @return This builder for chaining.
        */
@@ -865,7 +865,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_host = 8;</code>
+       * <code>bool is_host = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHost() {
@@ -914,7 +914,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 5;</code>
+       * <code>repeated uint32 avatar_id_list = 2;</code>
        * @return A list containing the avatarIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -923,14 +923,14 @@ public final class CoinCollectTeamInfoDataOuterClass {
                  java.util.Collections.unmodifiableList(avatarIdList_) : avatarIdList_;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 5;</code>
+       * <code>repeated uint32 avatar_id_list = 2;</code>
        * @return The count of avatarIdList.
        */
       public int getAvatarIdListCount() {
         return avatarIdList_.size();
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 5;</code>
+       * <code>repeated uint32 avatar_id_list = 2;</code>
        * @param index The index of the element to return.
        * @return The avatarIdList at the given index.
        */
@@ -938,7 +938,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return avatarIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 5;</code>
+       * <code>repeated uint32 avatar_id_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The avatarIdList to set.
        * @return This builder for chaining.
@@ -951,7 +951,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 5;</code>
+       * <code>repeated uint32 avatar_id_list = 2;</code>
        * @param value The avatarIdList to add.
        * @return This builder for chaining.
        */
@@ -962,7 +962,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 5;</code>
+       * <code>repeated uint32 avatar_id_list = 2;</code>
        * @param values The avatarIdList to add.
        * @return This builder for chaining.
        */
@@ -975,7 +975,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 avatar_id_list = 5;</code>
+       * <code>repeated uint32 avatar_id_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarIdList() {
@@ -987,7 +987,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
 
       private int playerUid_ ;
       /**
-       * <code>uint32 player_uid = 12;</code>
+       * <code>uint32 player_uid = 5;</code>
        * @return The playerUid.
        */
       @java.lang.Override
@@ -995,7 +995,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return playerUid_;
       }
       /**
-       * <code>uint32 player_uid = 12;</code>
+       * <code>uint32 player_uid = 5;</code>
        * @param value The playerUid to set.
        * @return This builder for chaining.
        */
@@ -1006,7 +1006,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 player_uid = 12;</code>
+       * <code>uint32 player_uid = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayerUid() {
@@ -1024,7 +1024,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+       * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
        * @return A list containing the gKOLDEDJJDO.
        */
       public java.util.List<java.lang.Integer>
@@ -1033,14 +1033,14 @@ public final class CoinCollectTeamInfoDataOuterClass {
                  java.util.Collections.unmodifiableList(gKOLDEDJJDO_) : gKOLDEDJJDO_;
       }
       /**
-       * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+       * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
        * @return The count of gKOLDEDJJDO.
        */
       public int getGKOLDEDJJDOCount() {
         return gKOLDEDJJDO_.size();
       }
       /**
-       * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+       * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
        * @param index The index of the element to return.
        * @return The gKOLDEDJJDO at the given index.
        */
@@ -1048,7 +1048,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return gKOLDEDJJDO_.getInt(index);
       }
       /**
-       * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+       * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
        * @param index The index to set the value at.
        * @param value The gKOLDEDJJDO to set.
        * @return This builder for chaining.
@@ -1061,7 +1061,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+       * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
        * @param value The gKOLDEDJJDO to add.
        * @return This builder for chaining.
        */
@@ -1072,7 +1072,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+       * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
        * @param values The gKOLDEDJJDO to add.
        * @return This builder for chaining.
        */
@@ -1085,7 +1085,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 GKOLDEDJJDO = 50000;</code>
+       * <code>repeated uint32 GKOLDEDJJDO = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearGKOLDEDJJDO() {
@@ -1103,7 +1103,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+       * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
        * @return A list containing the hJPAFNAACNO.
        */
       public java.util.List<java.lang.Integer>
@@ -1112,14 +1112,14 @@ public final class CoinCollectTeamInfoDataOuterClass {
                  java.util.Collections.unmodifiableList(hJPAFNAACNO_) : hJPAFNAACNO_;
       }
       /**
-       * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+       * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
        * @return The count of hJPAFNAACNO.
        */
       public int getHJPAFNAACNOCount() {
         return hJPAFNAACNO_.size();
       }
       /**
-       * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+       * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
        * @param index The index of the element to return.
        * @return The hJPAFNAACNO at the given index.
        */
@@ -1127,7 +1127,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return hJPAFNAACNO_.getInt(index);
       }
       /**
-       * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+       * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
        * @param index The index to set the value at.
        * @param value The hJPAFNAACNO to set.
        * @return This builder for chaining.
@@ -1140,7 +1140,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+       * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
        * @param value The hJPAFNAACNO to add.
        * @return This builder for chaining.
        */
@@ -1151,7 +1151,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+       * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
        * @param values The hJPAFNAACNO to add.
        * @return This builder for chaining.
        */
@@ -1164,7 +1164,7 @@ public final class CoinCollectTeamInfoDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 HJPAFNAACNO = 50001;</code>
+       * <code>repeated uint32 HJPAFNAACNO = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearHJPAFNAACNO() {
@@ -1241,10 +1241,10 @@ public final class CoinCollectTeamInfoDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035CoinCollectTeamInfoData.proto\"\235\001\n\027Coin" +
-      "CollectTeamInfoData\022\017\n\007is_host\030\010 \001(\010\022\027\n\017" +
+      "CollectTeamInfoData\022\017\n\007is_host\030\004 \001(\010\022\027\n\017" +
       "choose_skill_no\030\001 \001(\r\022\026\n\016avatar_id_list\030" +
-      "\005 \003(\r\022\022\n\nplayer_uid\030\014 \001(\r\022\025\n\013GKOLDEDJJDO" +
-      "\030\320\206\003 \003(\r\022\025\n\013HJPAFNAACNO\030\321\206\003 \003(\rB>\n\031emu.g" +
+      "\002 \003(\r\022\022\n\nplayer_uid\030\005 \001(\r\022\025\n\013GKOLDEDJJDO" +
+      "\030\240\234\001 \003(\r\022\025\n\013HJPAFNAACNO\030\241\234\001 \003(\rB>\n\031emu.g" +
       "rasscutter.net.protoB!CoinCollectTeamInf" +
       "oDataOuterClassb\006proto3"
     };

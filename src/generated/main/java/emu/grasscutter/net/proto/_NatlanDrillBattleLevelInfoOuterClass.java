@@ -19,52 +19,52 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 KECOPPMCKBN = 50000;</code>
+     * <code>uint32 KECOPPMCKBN = 20004;</code>
      * @return The kECOPPMCKBN.
      */
     int getKECOPPMCKBN();
 
     /**
-     * <code>uint32 MOLLHFILBFO = 50001;</code>
+     * <code>uint32 MOLLHFILBFO = 20001;</code>
      * @return The mOLLHFILBFO.
      */
     int getMOLLHFILBFO();
 
     /**
-     * <code>uint32 DHIFGDJPNCH = 50002;</code>
+     * <code>uint32 DHIFGDJPNCH = 20003;</code>
      * @return The dHIFGDJPNCH.
      */
     int getDHIFGDJPNCH();
 
     /**
-     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
      * @return Whether the iANMIFHGOMJ field is set.
      */
     boolean hasIANMIFHGOMJ();
     /**
-     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
      * @return The iANMIFHGOMJ.
      */
     emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH getIANMIFHGOMJ();
     /**
-     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
      */
     emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGHOrBuilder getIANMIFHGOMJOrBuilder();
 
     /**
-     * <code>uint32 DEADDOKKEHM = 9;</code>
+     * <code>uint32 DEADDOKKEHM = 7;</code>
      * @return The dEADDOKKEHM.
      */
     int getDEADDOKKEHM();
 
     /**
-     * <code>bool is_finished = 3;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
 
     /**
-     * <code>uint32 LGKKNHDOBHE = 50004;</code>
+     * <code>uint32 LGKKNHDOBHE = 20005;</code>
      * @return The lGKKNHDOBHE.
      */
     int getLGKKNHDOBHE();
@@ -114,32 +114,17 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
               isFinished_ = input.readBool();
               break;
             }
-            case 72: {
+            case 56: {
 
               dEADDOKKEHM_ = input.readUInt32();
               break;
             }
-            case 400000: {
-
-              kECOPPMCKBN_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              mOLLHFILBFO_ = input.readUInt32();
-              break;
-            }
-            case 400016: {
-
-              dHIFGDJPNCH_ = input.readUInt32();
-              break;
-            }
-            case 400026: {
+            case 160002: {
               emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH.Builder subBuilder = null;
               if (iANMIFHGOMJ_ != null) {
                 subBuilder = iANMIFHGOMJ_.toBuilder();
@@ -152,7 +137,22 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
 
               break;
             }
-            case 400032: {
+            case 160008: {
+
+              mOLLHFILBFO_ = input.readUInt32();
+              break;
+            }
+            case 160024: {
+
+              dHIFGDJPNCH_ = input.readUInt32();
+              break;
+            }
+            case 160032: {
+
+              kECOPPMCKBN_ = input.readUInt32();
+              break;
+            }
+            case 160040: {
 
               lGKKNHDOBHE_ = input.readUInt32();
               break;
@@ -189,10 +189,10 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
               emu.grasscutter.net.proto._NatlanDrillBattleLevelInfoOuterClass._NatlanDrillBattleLevelInfo.class, emu.grasscutter.net.proto._NatlanDrillBattleLevelInfoOuterClass._NatlanDrillBattleLevelInfo.Builder.class);
     }
 
-    public static final int KECOPPMCKBN_FIELD_NUMBER = 50000;
+    public static final int KECOPPMCKBN_FIELD_NUMBER = 20004;
     private int kECOPPMCKBN_;
     /**
-     * <code>uint32 KECOPPMCKBN = 50000;</code>
+     * <code>uint32 KECOPPMCKBN = 20004;</code>
      * @return The kECOPPMCKBN.
      */
     @java.lang.Override
@@ -200,10 +200,10 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       return kECOPPMCKBN_;
     }
 
-    public static final int MOLLHFILBFO_FIELD_NUMBER = 50001;
+    public static final int MOLLHFILBFO_FIELD_NUMBER = 20001;
     private int mOLLHFILBFO_;
     /**
-     * <code>uint32 MOLLHFILBFO = 50001;</code>
+     * <code>uint32 MOLLHFILBFO = 20001;</code>
      * @return The mOLLHFILBFO.
      */
     @java.lang.Override
@@ -211,10 +211,10 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       return mOLLHFILBFO_;
     }
 
-    public static final int DHIFGDJPNCH_FIELD_NUMBER = 50002;
+    public static final int DHIFGDJPNCH_FIELD_NUMBER = 20003;
     private int dHIFGDJPNCH_;
     /**
-     * <code>uint32 DHIFGDJPNCH = 50002;</code>
+     * <code>uint32 DHIFGDJPNCH = 20003;</code>
      * @return The dHIFGDJPNCH.
      */
     @java.lang.Override
@@ -222,10 +222,10 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       return dHIFGDJPNCH_;
     }
 
-    public static final int IANMIFHGOMJ_FIELD_NUMBER = 50003;
+    public static final int IANMIFHGOMJ_FIELD_NUMBER = 20000;
     private emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH iANMIFHGOMJ_;
     /**
-     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
      * @return Whether the iANMIFHGOMJ field is set.
      */
     @java.lang.Override
@@ -233,7 +233,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       return iANMIFHGOMJ_ != null;
     }
     /**
-     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
      * @return The iANMIFHGOMJ.
      */
     @java.lang.Override
@@ -241,17 +241,17 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       return iANMIFHGOMJ_ == null ? emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH.getDefaultInstance() : iANMIFHGOMJ_;
     }
     /**
-     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+     * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGHOrBuilder getIANMIFHGOMJOrBuilder() {
       return getIANMIFHGOMJ();
     }
 
-    public static final int DEADDOKKEHM_FIELD_NUMBER = 9;
+    public static final int DEADDOKKEHM_FIELD_NUMBER = 7;
     private int dEADDOKKEHM_;
     /**
-     * <code>uint32 DEADDOKKEHM = 9;</code>
+     * <code>uint32 DEADDOKKEHM = 7;</code>
      * @return The dEADDOKKEHM.
      */
     @java.lang.Override
@@ -259,10 +259,10 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       return dEADDOKKEHM_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 3;
+    public static final int IS_FINISHED_FIELD_NUMBER = 4;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 3;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -270,10 +270,10 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       return isFinished_;
     }
 
-    public static final int LGKKNHDOBHE_FIELD_NUMBER = 50004;
+    public static final int LGKKNHDOBHE_FIELD_NUMBER = 20005;
     private int lGKKNHDOBHE_;
     /**
-     * <code>uint32 LGKKNHDOBHE = 50004;</code>
+     * <code>uint32 LGKKNHDOBHE = 20005;</code>
      * @return The lGKKNHDOBHE.
      */
     @java.lang.Override
@@ -296,25 +296,25 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isFinished_ != false) {
-        output.writeBool(3, isFinished_);
+        output.writeBool(4, isFinished_);
       }
       if (dEADDOKKEHM_ != 0) {
-        output.writeUInt32(9, dEADDOKKEHM_);
-      }
-      if (kECOPPMCKBN_ != 0) {
-        output.writeUInt32(50000, kECOPPMCKBN_);
-      }
-      if (mOLLHFILBFO_ != 0) {
-        output.writeUInt32(50001, mOLLHFILBFO_);
-      }
-      if (dHIFGDJPNCH_ != 0) {
-        output.writeUInt32(50002, dHIFGDJPNCH_);
+        output.writeUInt32(7, dEADDOKKEHM_);
       }
       if (iANMIFHGOMJ_ != null) {
-        output.writeMessage(50003, getIANMIFHGOMJ());
+        output.writeMessage(20000, getIANMIFHGOMJ());
+      }
+      if (mOLLHFILBFO_ != 0) {
+        output.writeUInt32(20001, mOLLHFILBFO_);
+      }
+      if (dHIFGDJPNCH_ != 0) {
+        output.writeUInt32(20003, dHIFGDJPNCH_);
+      }
+      if (kECOPPMCKBN_ != 0) {
+        output.writeUInt32(20004, kECOPPMCKBN_);
       }
       if (lGKKNHDOBHE_ != 0) {
-        output.writeUInt32(50004, lGKKNHDOBHE_);
+        output.writeUInt32(20005, lGKKNHDOBHE_);
       }
       unknownFields.writeTo(output);
     }
@@ -327,31 +327,31 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       size = 0;
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isFinished_);
+          .computeBoolSize(4, isFinished_);
       }
       if (dEADDOKKEHM_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, dEADDOKKEHM_);
-      }
-      if (kECOPPMCKBN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, kECOPPMCKBN_);
-      }
-      if (mOLLHFILBFO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, mOLLHFILBFO_);
-      }
-      if (dHIFGDJPNCH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50002, dHIFGDJPNCH_);
+          .computeUInt32Size(7, dEADDOKKEHM_);
       }
       if (iANMIFHGOMJ_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(50003, getIANMIFHGOMJ());
+          .computeMessageSize(20000, getIANMIFHGOMJ());
+      }
+      if (mOLLHFILBFO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20001, mOLLHFILBFO_);
+      }
+      if (dHIFGDJPNCH_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20003, dHIFGDJPNCH_);
+      }
+      if (kECOPPMCKBN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20004, kECOPPMCKBN_);
       }
       if (lGKKNHDOBHE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50004, lGKKNHDOBHE_);
+          .computeUInt32Size(20005, lGKKNHDOBHE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -701,7 +701,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
 
       private int kECOPPMCKBN_ ;
       /**
-       * <code>uint32 KECOPPMCKBN = 50000;</code>
+       * <code>uint32 KECOPPMCKBN = 20004;</code>
        * @return The kECOPPMCKBN.
        */
       @java.lang.Override
@@ -709,7 +709,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return kECOPPMCKBN_;
       }
       /**
-       * <code>uint32 KECOPPMCKBN = 50000;</code>
+       * <code>uint32 KECOPPMCKBN = 20004;</code>
        * @param value The kECOPPMCKBN to set.
        * @return This builder for chaining.
        */
@@ -720,7 +720,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 KECOPPMCKBN = 50000;</code>
+       * <code>uint32 KECOPPMCKBN = 20004;</code>
        * @return This builder for chaining.
        */
       public Builder clearKECOPPMCKBN() {
@@ -732,7 +732,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
 
       private int mOLLHFILBFO_ ;
       /**
-       * <code>uint32 MOLLHFILBFO = 50001;</code>
+       * <code>uint32 MOLLHFILBFO = 20001;</code>
        * @return The mOLLHFILBFO.
        */
       @java.lang.Override
@@ -740,7 +740,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return mOLLHFILBFO_;
       }
       /**
-       * <code>uint32 MOLLHFILBFO = 50001;</code>
+       * <code>uint32 MOLLHFILBFO = 20001;</code>
        * @param value The mOLLHFILBFO to set.
        * @return This builder for chaining.
        */
@@ -751,7 +751,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 MOLLHFILBFO = 50001;</code>
+       * <code>uint32 MOLLHFILBFO = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearMOLLHFILBFO() {
@@ -763,7 +763,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
 
       private int dHIFGDJPNCH_ ;
       /**
-       * <code>uint32 DHIFGDJPNCH = 50002;</code>
+       * <code>uint32 DHIFGDJPNCH = 20003;</code>
        * @return The dHIFGDJPNCH.
        */
       @java.lang.Override
@@ -771,7 +771,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return dHIFGDJPNCH_;
       }
       /**
-       * <code>uint32 DHIFGDJPNCH = 50002;</code>
+       * <code>uint32 DHIFGDJPNCH = 20003;</code>
        * @param value The dHIFGDJPNCH to set.
        * @return This builder for chaining.
        */
@@ -782,7 +782,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 DHIFGDJPNCH = 50002;</code>
+       * <code>uint32 DHIFGDJPNCH = 20003;</code>
        * @return This builder for chaining.
        */
       public Builder clearDHIFGDJPNCH() {
@@ -796,14 +796,14 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH, emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH.Builder, emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGHOrBuilder> iANMIFHGOMJBuilder_;
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        * @return Whether the iANMIFHGOMJ field is set.
        */
       public boolean hasIANMIFHGOMJ() {
         return iANMIFHGOMJBuilder_ != null || iANMIFHGOMJ_ != null;
       }
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        * @return The iANMIFHGOMJ.
        */
       public emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH getIANMIFHGOMJ() {
@@ -814,7 +814,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        */
       public Builder setIANMIFHGOMJ(emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH value) {
         if (iANMIFHGOMJBuilder_ == null) {
@@ -830,7 +830,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        */
       public Builder setIANMIFHGOMJ(
           emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH.Builder builderForValue) {
@@ -844,7 +844,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        */
       public Builder mergeIANMIFHGOMJ(emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH value) {
         if (iANMIFHGOMJBuilder_ == null) {
@@ -862,7 +862,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        */
       public Builder clearIANMIFHGOMJ() {
         if (iANMIFHGOMJBuilder_ == null) {
@@ -876,7 +876,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        */
       public emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH.Builder getIANMIFHGOMJBuilder() {
         
@@ -884,7 +884,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return getIANMIFHGOMJFieldBuilder().getBuilder();
       }
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        */
       public emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGHOrBuilder getIANMIFHGOMJOrBuilder() {
         if (iANMIFHGOMJBuilder_ != null) {
@@ -895,7 +895,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         }
       }
       /**
-       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 50003;</code>
+       * <code>.IPHFKFLNBGH IANMIFHGOMJ = 20000;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH, emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGH.Builder, emu.grasscutter.net.proto.IPHFKFLNBGHOuterClass.IPHFKFLNBGHOrBuilder> 
@@ -913,7 +913,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
 
       private int dEADDOKKEHM_ ;
       /**
-       * <code>uint32 DEADDOKKEHM = 9;</code>
+       * <code>uint32 DEADDOKKEHM = 7;</code>
        * @return The dEADDOKKEHM.
        */
       @java.lang.Override
@@ -921,7 +921,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return dEADDOKKEHM_;
       }
       /**
-       * <code>uint32 DEADDOKKEHM = 9;</code>
+       * <code>uint32 DEADDOKKEHM = 7;</code>
        * @param value The dEADDOKKEHM to set.
        * @return This builder for chaining.
        */
@@ -932,7 +932,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 DEADDOKKEHM = 9;</code>
+       * <code>uint32 DEADDOKKEHM = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearDEADDOKKEHM() {
@@ -944,7 +944,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 3;</code>
+       * <code>bool is_finished = 4;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -952,7 +952,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 3;</code>
+       * <code>bool is_finished = 4;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -963,7 +963,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 3;</code>
+       * <code>bool is_finished = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -975,7 +975,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
 
       private int lGKKNHDOBHE_ ;
       /**
-       * <code>uint32 LGKKNHDOBHE = 50004;</code>
+       * <code>uint32 LGKKNHDOBHE = 20005;</code>
        * @return The lGKKNHDOBHE.
        */
       @java.lang.Override
@@ -983,7 +983,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return lGKKNHDOBHE_;
       }
       /**
-       * <code>uint32 LGKKNHDOBHE = 50004;</code>
+       * <code>uint32 LGKKNHDOBHE = 20005;</code>
        * @param value The lGKKNHDOBHE to set.
        * @return This builder for chaining.
        */
@@ -994,7 +994,7 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LGKKNHDOBHE = 50004;</code>
+       * <code>uint32 LGKKNHDOBHE = 20005;</code>
        * @return This builder for chaining.
        */
       public Builder clearLGKKNHDOBHE() {
@@ -1072,11 +1072,11 @@ public final class _NatlanDrillBattleLevelInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n!_NatlanDrillBattleLevelInfo.proto\032\021IPH" +
       "FKFLNBGH.proto\"\310\001\n\033_NatlanDrillBattleLev" +
-      "elInfo\022\025\n\013KECOPPMCKBN\030\320\206\003 \001(\r\022\025\n\013MOLLHFI" +
-      "LBFO\030\321\206\003 \001(\r\022\025\n\013DHIFGDJPNCH\030\322\206\003 \001(\r\022#\n\013I" +
-      "ANMIFHGOMJ\030\323\206\003 \001(\0132\014.IPHFKFLNBGH\022\023\n\013DEAD" +
-      "DOKKEHM\030\t \001(\r\022\023\n\013is_finished\030\003 \001(\010\022\025\n\013LG" +
-      "KKNHDOBHE\030\324\206\003 \001(\rBB\n\031emu.grasscutter.net" +
+      "elInfo\022\025\n\013KECOPPMCKBN\030\244\234\001 \001(\r\022\025\n\013MOLLHFI" +
+      "LBFO\030\241\234\001 \001(\r\022\025\n\013DHIFGDJPNCH\030\243\234\001 \001(\r\022#\n\013I" +
+      "ANMIFHGOMJ\030\240\234\001 \001(\0132\014.IPHFKFLNBGH\022\023\n\013DEAD" +
+      "DOKKEHM\030\007 \001(\r\022\023\n\013is_finished\030\004 \001(\010\022\025\n\013LG" +
+      "KKNHDOBHE\030\245\234\001 \001(\rBB\n\031emu.grasscutter.net" +
       ".protoB%_NatlanDrillBattleLevelInfoOuter" +
       "Classb\006proto3"
     };

@@ -19,12 +19,12 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+     * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
      * @return The enum numeric value on the wire for jCEIDIDBFHM.
      */
     int getJCEIDIDBFHMValue();
     /**
-     * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+     * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
      * @return The jCEIDIDBFHM.
      */
     emu.grasscutter.net.proto._BydPlayerDetailOnlineInfoOuterClass._BydPlayerDetailOnlineInfo.HHKELHAFBIE getJCEIDIDBFHM();
@@ -135,12 +135,6 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-              int rawValue = input.readEnum();
-
-              jCEIDIDBFHM_ = rawValue;
-              break;
-            }
             case 16: {
 
               isInTeam_ = input.readBool();
@@ -190,6 +184,12 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
             case 64: {
 
               hPLGJAAJOGG_ = input.readUInt64();
+              break;
+            }
+            case 160000: {
+              int rawValue = input.readEnum();
+
+              jCEIDIDBFHM_ = rawValue;
               break;
             }
             default: {
@@ -350,17 +350,17 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
       // @@protoc_insertion_point(enum_scope:_BydPlayerDetailOnlineInfo.HHKELHAFBIE)
     }
 
-    public static final int JCEIDIDBFHM_FIELD_NUMBER = 1;
+    public static final int JCEIDIDBFHM_FIELD_NUMBER = 20000;
     private int jCEIDIDBFHM_;
     /**
-     * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+     * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
      * @return The enum numeric value on the wire for jCEIDIDBFHM.
      */
     @java.lang.Override public int getJCEIDIDBFHMValue() {
       return jCEIDIDBFHM_;
     }
     /**
-     * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+     * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
      * @return The jCEIDIDBFHM.
      */
     @java.lang.Override public emu.grasscutter.net.proto._BydPlayerDetailOnlineInfoOuterClass._BydPlayerDetailOnlineInfo.HHKELHAFBIE getJCEIDIDBFHM() {
@@ -490,9 +490,6 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (jCEIDIDBFHM_ != emu.grasscutter.net.proto._BydPlayerDetailOnlineInfoOuterClass._BydPlayerDetailOnlineInfo.HHKELHAFBIE.HHKELHAFBIE_NONE.getNumber()) {
-        output.writeEnum(1, jCEIDIDBFHM_);
-      }
       if (isInTeam_ != false) {
         output.writeBool(2, isInTeam_);
       }
@@ -514,6 +511,9 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
       if (hPLGJAAJOGG_ != 0L) {
         output.writeUInt64(8, hPLGJAAJOGG_);
       }
+      if (jCEIDIDBFHM_ != emu.grasscutter.net.proto._BydPlayerDetailOnlineInfoOuterClass._BydPlayerDetailOnlineInfo.HHKELHAFBIE.HHKELHAFBIE_NONE.getNumber()) {
+        output.writeEnum(20000, jCEIDIDBFHM_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -523,10 +523,6 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (jCEIDIDBFHM_ != emu.grasscutter.net.proto._BydPlayerDetailOnlineInfoOuterClass._BydPlayerDetailOnlineInfo.HHKELHAFBIE.HHKELHAFBIE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, jCEIDIDBFHM_);
-      }
       if (isInTeam_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isInTeam_);
@@ -554,6 +550,10 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
       if (hPLGJAAJOGG_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(8, hPLGJAAJOGG_);
+      }
+      if (jCEIDIDBFHM_ != emu.grasscutter.net.proto._BydPlayerDetailOnlineInfoOuterClass._BydPlayerDetailOnlineInfo.HHKELHAFBIE.HHKELHAFBIE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(20000, jCEIDIDBFHM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -929,14 +929,14 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
 
       private int jCEIDIDBFHM_ = 0;
       /**
-       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
        * @return The enum numeric value on the wire for jCEIDIDBFHM.
        */
       @java.lang.Override public int getJCEIDIDBFHMValue() {
         return jCEIDIDBFHM_;
       }
       /**
-       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
        * @param value The enum numeric value on the wire for jCEIDIDBFHM to set.
        * @return This builder for chaining.
        */
@@ -947,7 +947,7 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
         return this;
       }
       /**
-       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
        * @return The jCEIDIDBFHM.
        */
       @java.lang.Override
@@ -957,7 +957,7 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto._BydPlayerDetailOnlineInfoOuterClass._BydPlayerDetailOnlineInfo.HHKELHAFBIE.UNRECOGNIZED : result;
       }
       /**
-       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
        * @param value The jCEIDIDBFHM to set.
        * @return This builder for chaining.
        */
@@ -971,7 +971,7 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
         return this;
       }
       /**
-       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 1;</code>
+       * <code>._BydPlayerDetailOnlineInfo.HHKELHAFBIE JCEIDIDBFHM = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearJCEIDIDBFHM() {
@@ -1441,18 +1441,19 @@ public final class _BydPlayerDetailOnlineInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n _BydPlayerDetailOnlineInfo.proto\032\021DEDH" +
-      "CCHNKEO.proto\032\021KFMCDDAIOML.proto\"\362\002\n\032_By" +
-      "dPlayerDetailOnlineInfo\022<\n\013JCEIDIDBFHM\030\001" +
-      " \001(\0162\'._BydPlayerDetailOnlineInfo.HHKELH" +
-      "AFBIE\022\022\n\nis_in_team\030\002 \001(\010\022!\n\013JGJNGLBJLJO" +
-      "\030\003 \001(\0132\014.KFMCDDAIOML\022\023\n\013LBFGNBPFNIH\030\004 \001(" +
-      "\004\022\023\n\013LEGKLKCNKJB\030\005 \001(\010\022!\n\013MKODMDPGDHK\030\006 " +
-      "\001(\0132\014.DEDHCCHNKEO\022\023\n\013JKBOBLJFKBP\030\007 \001(\004\022\023" +
-      "\n\013HPLGJAAJOGG\030\010 \001(\004\"h\n\013HHKELHAFBIE\022\024\n\020HH" +
-      "KELHAFBIE_NONE\020\000\022\024\n\020HHKELHAFBIE_HALL\020\001\022\027" +
-      "\n\023HHKELHAFBIE_DUNGEON\020\002\022\024\n\020HHKELHAFBIE_E" +
-      "DIT\020\003BA\n\031emu.grasscutter.net.protoB$_Byd" +
-      "PlayerDetailOnlineInfoOuterClassb\006proto3"
+      "CCHNKEO.proto\032\021KFMCDDAIOML.proto\"\364\002\n\032_By" +
+      "dPlayerDetailOnlineInfo\022>\n\013JCEIDIDBFHM\030\240" +
+      "\234\001 \001(\0162\'._BydPlayerDetailOnlineInfo.HHKE" +
+      "LHAFBIE\022\022\n\nis_in_team\030\002 \001(\010\022!\n\013JGJNGLBJL" +
+      "JO\030\003 \001(\0132\014.KFMCDDAIOML\022\023\n\013LBFGNBPFNIH\030\004 " +
+      "\001(\004\022\023\n\013LEGKLKCNKJB\030\005 \001(\010\022!\n\013MKODMDPGDHK\030" +
+      "\006 \001(\0132\014.DEDHCCHNKEO\022\023\n\013JKBOBLJFKBP\030\007 \001(\004" +
+      "\022\023\n\013HPLGJAAJOGG\030\010 \001(\004\"h\n\013HHKELHAFBIE\022\024\n\020" +
+      "HHKELHAFBIE_NONE\020\000\022\024\n\020HHKELHAFBIE_HALL\020\001" +
+      "\022\027\n\023HHKELHAFBIE_DUNGEON\020\002\022\024\n\020HHKELHAFBIE" +
+      "_EDIT\020\003BA\n\031emu.grasscutter.net.protoB$_B" +
+      "ydPlayerDetailOnlineInfoOuterClassb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

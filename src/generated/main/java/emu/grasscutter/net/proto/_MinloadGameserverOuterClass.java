@@ -19,12 +19,12 @@ public final class _MinloadGameserverOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+     * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
      * @return The enum numeric value on the wire for bEOALGIPDPJ.
      */
     int getBEOALGIPDPJValue();
     /**
-     * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+     * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
      * @return The bEOALGIPDPJ.
      */
     emu.grasscutter.net.proto.MMPPAHOHHBJOuterClass.MMPPAHOHHBJ getBEOALGIPDPJ();
@@ -75,7 +75,7 @@ public final class _MinloadGameserverOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 160000: {
               int rawValue = input.readEnum();
 
               bEOALGIPDPJ_ = rawValue;
@@ -113,17 +113,17 @@ public final class _MinloadGameserverOuterClass {
               emu.grasscutter.net.proto._MinloadGameserverOuterClass._MinloadGameserver.class, emu.grasscutter.net.proto._MinloadGameserverOuterClass._MinloadGameserver.Builder.class);
     }
 
-    public static final int BEOALGIPDPJ_FIELD_NUMBER = 1;
+    public static final int BEOALGIPDPJ_FIELD_NUMBER = 20000;
     private int bEOALGIPDPJ_;
     /**
-     * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+     * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
      * @return The enum numeric value on the wire for bEOALGIPDPJ.
      */
     @java.lang.Override public int getBEOALGIPDPJValue() {
       return bEOALGIPDPJ_;
     }
     /**
-     * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+     * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
      * @return The bEOALGIPDPJ.
      */
     @java.lang.Override public emu.grasscutter.net.proto.MMPPAHOHHBJOuterClass.MMPPAHOHHBJ getBEOALGIPDPJ() {
@@ -147,7 +147,7 @@ public final class _MinloadGameserverOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bEOALGIPDPJ_ != emu.grasscutter.net.proto.MMPPAHOHHBJOuterClass.MMPPAHOHHBJ.MMPPAHOHHBJ_GAME_PROCESS_NORMAL.getNumber()) {
-        output.writeEnum(1, bEOALGIPDPJ_);
+        output.writeEnum(20000, bEOALGIPDPJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -160,7 +160,7 @@ public final class _MinloadGameserverOuterClass {
       size = 0;
       if (bEOALGIPDPJ_ != emu.grasscutter.net.proto.MMPPAHOHHBJOuterClass.MMPPAHOHHBJ.MMPPAHOHHBJ_GAME_PROCESS_NORMAL.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, bEOALGIPDPJ_);
+          .computeEnumSize(20000, bEOALGIPDPJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -435,14 +435,14 @@ public final class _MinloadGameserverOuterClass {
 
       private int bEOALGIPDPJ_ = 0;
       /**
-       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
        * @return The enum numeric value on the wire for bEOALGIPDPJ.
        */
       @java.lang.Override public int getBEOALGIPDPJValue() {
         return bEOALGIPDPJ_;
       }
       /**
-       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
        * @param value The enum numeric value on the wire for bEOALGIPDPJ to set.
        * @return This builder for chaining.
        */
@@ -453,7 +453,7 @@ public final class _MinloadGameserverOuterClass {
         return this;
       }
       /**
-       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
        * @return The bEOALGIPDPJ.
        */
       @java.lang.Override
@@ -463,7 +463,7 @@ public final class _MinloadGameserverOuterClass {
         return result == null ? emu.grasscutter.net.proto.MMPPAHOHHBJOuterClass.MMPPAHOHHBJ.UNRECOGNIZED : result;
       }
       /**
-       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
        * @param value The bEOALGIPDPJ to set.
        * @return This builder for chaining.
        */
@@ -477,7 +477,7 @@ public final class _MinloadGameserverOuterClass {
         return this;
       }
       /**
-       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 1;</code>
+       * <code>.MMPPAHOHHBJ BEOALGIPDPJ = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearBEOALGIPDPJ() {
@@ -554,10 +554,10 @@ public final class _MinloadGameserverOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030_MinloadGameserver.proto\032\021MMPPAHOHHBJ." +
-      "proto\"7\n\022_MinloadGameserver\022!\n\013BEOALGIPD" +
-      "PJ\030\001 \001(\0162\014.MMPPAHOHHBJB9\n\031emu.grasscutte" +
-      "r.net.protoB\034_MinloadGameserverOuterClas" +
-      "sb\006proto3"
+      "proto\"9\n\022_MinloadGameserver\022#\n\013BEOALGIPD" +
+      "PJ\030\240\234\001 \001(\0162\014.MMPPAHOHHBJB9\n\031emu.grasscut" +
+      "ter.net.protoB\034_MinloadGameserverOuterCl" +
+      "assb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

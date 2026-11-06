@@ -6,5 +6,5 @@ option java_outer_classname = "QuestGlobalVarNotifyOuterClass";
 import "QuestGlobalVar.proto";
 
 message QuestGlobalVarNotify {
-	repeated QuestGlobalVar var_list = 2;
+	repeated QuestGlobalVar var_list = 14;
 }

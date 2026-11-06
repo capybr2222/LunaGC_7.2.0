@@ -4,12 +4,12 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "PingReqOuterClass";
 
 message PingReq {
-	uint32 client_time = 7;
-	float ue_time = 2;
-	uint32 _cur_fps = 8;
-	double total_tick_time = 15;
-	bytes MCCPJDKDNMJ = 50000;
 	uint64 akgpfdhngbo = 1;
-	bytes BLOPFLFBDAE = 50001;
-	uint32 seq = 12;
+	uint32 _cur_fps = 2;
+	bytes MCCPJDKDNMJ = 20001;
+	double total_tick_time = 5;
+	bytes BLOPFLFBDAE = 20000;
+	float ue_time = 10;
+	uint32 client_time = 13;
+	uint32 seq = 14;
 }

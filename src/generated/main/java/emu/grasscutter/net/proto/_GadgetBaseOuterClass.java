@@ -25,25 +25,25 @@ public final class _GadgetBaseOuterClass {
     int getGACKKCOFACA();
 
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     java.util.List<emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD> 
         getFAHAJIEGCEPList();
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD getFAHAJIEGCEP(int index);
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     int getFAHAJIEGCEPCount();
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPDOrBuilder> 
         getFAHAJIEGCEPOrBuilderList();
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPDOrBuilder getFAHAJIEGCEPOrBuilder(
         int index);
@@ -64,17 +64,17 @@ public final class _GadgetBaseOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getOLIPGCONBJCOrBuilder();
 
     /**
-     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
      * @return Whether the jPIGMAONIDJ field is set.
      */
     boolean hasJPIGMAONIDJ();
     /**
-     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
      * @return The jPIGMAONIDJ.
      */
     emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF getJPIGMAONIDJ();
     /**
-     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
      */
     emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEFOrBuilder getJPIGMAONIDJOrBuilder();
   }
@@ -130,15 +130,6 @@ public final class _GadgetBaseOuterClass {
               gACKKCOFACA_ = input.readUInt32();
               break;
             }
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fAHAJIEGCEP_ = new java.util.ArrayList<emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              fAHAJIEGCEP_.add(
-                  input.readMessage(emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.parser(), extensionRegistry));
-              break;
-            }
             case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (oLIPGCONBJC_ != null) {
@@ -152,7 +143,16 @@ public final class _GadgetBaseOuterClass {
 
               break;
             }
-            case 34: {
+            case 160010: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                fAHAJIEGCEP_ = new java.util.ArrayList<emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              fAHAJIEGCEP_.add(
+                  input.readMessage(emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.parser(), extensionRegistry));
+              break;
+            }
+            case 160018: {
               emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF.Builder subBuilder = null;
               if (jPIGMAONIDJ_ != null) {
                 subBuilder = jPIGMAONIDJ_.toBuilder();
@@ -211,17 +211,17 @@ public final class _GadgetBaseOuterClass {
       return gACKKCOFACA_;
     }
 
-    public static final int FAHAJIEGCEP_FIELD_NUMBER = 2;
+    public static final int FAHAJIEGCEP_FIELD_NUMBER = 20001;
     private java.util.List<emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD> fAHAJIEGCEP_;
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD> getFAHAJIEGCEPList() {
       return fAHAJIEGCEP_;
     }
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPDOrBuilder> 
@@ -229,21 +229,21 @@ public final class _GadgetBaseOuterClass {
       return fAHAJIEGCEP_;
     }
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     @java.lang.Override
     public int getFAHAJIEGCEPCount() {
       return fAHAJIEGCEP_.size();
     }
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD getFAHAJIEGCEP(int index) {
       return fAHAJIEGCEP_.get(index);
     }
     /**
-     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+     * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPDOrBuilder getFAHAJIEGCEPOrBuilder(
@@ -277,10 +277,10 @@ public final class _GadgetBaseOuterClass {
       return getOLIPGCONBJC();
     }
 
-    public static final int JPIGMAONIDJ_FIELD_NUMBER = 4;
+    public static final int JPIGMAONIDJ_FIELD_NUMBER = 20002;
     private emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF jPIGMAONIDJ_;
     /**
-     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
      * @return Whether the jPIGMAONIDJ field is set.
      */
     @java.lang.Override
@@ -288,7 +288,7 @@ public final class _GadgetBaseOuterClass {
       return jPIGMAONIDJ_ != null;
     }
     /**
-     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
      * @return The jPIGMAONIDJ.
      */
     @java.lang.Override
@@ -296,7 +296,7 @@ public final class _GadgetBaseOuterClass {
       return jPIGMAONIDJ_ == null ? emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF.getDefaultInstance() : jPIGMAONIDJ_;
     }
     /**
-     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+     * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEFOrBuilder getJPIGMAONIDJOrBuilder() {
@@ -320,14 +320,14 @@ public final class _GadgetBaseOuterClass {
       if (gACKKCOFACA_ != 0) {
         output.writeUInt32(1, gACKKCOFACA_);
       }
-      for (int i = 0; i < fAHAJIEGCEP_.size(); i++) {
-        output.writeMessage(2, fAHAJIEGCEP_.get(i));
-      }
       if (oLIPGCONBJC_ != null) {
         output.writeMessage(3, getOLIPGCONBJC());
       }
+      for (int i = 0; i < fAHAJIEGCEP_.size(); i++) {
+        output.writeMessage(20001, fAHAJIEGCEP_.get(i));
+      }
       if (jPIGMAONIDJ_ != null) {
-        output.writeMessage(4, getJPIGMAONIDJ());
+        output.writeMessage(20002, getJPIGMAONIDJ());
       }
       unknownFields.writeTo(output);
     }
@@ -342,17 +342,17 @@ public final class _GadgetBaseOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, gACKKCOFACA_);
       }
-      for (int i = 0; i < fAHAJIEGCEP_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, fAHAJIEGCEP_.get(i));
-      }
       if (oLIPGCONBJC_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getOLIPGCONBJC());
       }
+      for (int i = 0; i < fAHAJIEGCEP_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20001, fAHAJIEGCEP_.get(i));
+      }
       if (jPIGMAONIDJ_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getJPIGMAONIDJ());
+          .computeMessageSize(20002, getJPIGMAONIDJ());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -766,7 +766,7 @@ public final class _GadgetBaseOuterClass {
           emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD, emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.Builder, emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPDOrBuilder> fAHAJIEGCEPBuilder_;
 
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD> getFAHAJIEGCEPList() {
         if (fAHAJIEGCEPBuilder_ == null) {
@@ -776,7 +776,7 @@ public final class _GadgetBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public int getFAHAJIEGCEPCount() {
         if (fAHAJIEGCEPBuilder_ == null) {
@@ -786,7 +786,7 @@ public final class _GadgetBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD getFAHAJIEGCEP(int index) {
         if (fAHAJIEGCEPBuilder_ == null) {
@@ -796,7 +796,7 @@ public final class _GadgetBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder setFAHAJIEGCEP(
           int index, emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD value) {
@@ -813,7 +813,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder setFAHAJIEGCEP(
           int index, emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.Builder builderForValue) {
@@ -827,7 +827,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder addFAHAJIEGCEP(emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD value) {
         if (fAHAJIEGCEPBuilder_ == null) {
@@ -843,7 +843,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder addFAHAJIEGCEP(
           int index, emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD value) {
@@ -860,7 +860,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder addFAHAJIEGCEP(
           emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.Builder builderForValue) {
@@ -874,7 +874,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder addFAHAJIEGCEP(
           int index, emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.Builder builderForValue) {
@@ -888,7 +888,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder addAllFAHAJIEGCEP(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD> values) {
@@ -903,7 +903,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder clearFAHAJIEGCEP() {
         if (fAHAJIEGCEPBuilder_ == null) {
@@ -916,7 +916,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public Builder removeFAHAJIEGCEP(int index) {
         if (fAHAJIEGCEPBuilder_ == null) {
@@ -929,14 +929,14 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.Builder getFAHAJIEGCEPBuilder(
           int index) {
         return getFAHAJIEGCEPFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPDOrBuilder getFAHAJIEGCEPOrBuilder(
           int index) {
@@ -946,7 +946,7 @@ public final class _GadgetBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPDOrBuilder> 
            getFAHAJIEGCEPOrBuilderList() {
@@ -957,14 +957,14 @@ public final class _GadgetBaseOuterClass {
         }
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.Builder addFAHAJIEGCEPBuilder() {
         return getFAHAJIEGCEPFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.getDefaultInstance());
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.Builder addFAHAJIEGCEPBuilder(
           int index) {
@@ -972,7 +972,7 @@ public final class _GadgetBaseOuterClass {
             index, emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.getDefaultInstance());
       }
       /**
-       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 2;</code>
+       * <code>repeated .JGFGJGJGLPD FAHAJIEGCEP = 20001;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.JGFGJGJGLPDOuterClass.JGFGJGJGLPD.Builder> 
            getFAHAJIEGCEPBuilderList() {
@@ -1116,14 +1116,14 @@ public final class _GadgetBaseOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF, emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF.Builder, emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEFOrBuilder> jPIGMAONIDJBuilder_;
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        * @return Whether the jPIGMAONIDJ field is set.
        */
       public boolean hasJPIGMAONIDJ() {
         return jPIGMAONIDJBuilder_ != null || jPIGMAONIDJ_ != null;
       }
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        * @return The jPIGMAONIDJ.
        */
       public emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF getJPIGMAONIDJ() {
@@ -1134,7 +1134,7 @@ public final class _GadgetBaseOuterClass {
         }
       }
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        */
       public Builder setJPIGMAONIDJ(emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF value) {
         if (jPIGMAONIDJBuilder_ == null) {
@@ -1150,7 +1150,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        */
       public Builder setJPIGMAONIDJ(
           emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF.Builder builderForValue) {
@@ -1164,7 +1164,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        */
       public Builder mergeJPIGMAONIDJ(emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF value) {
         if (jPIGMAONIDJBuilder_ == null) {
@@ -1182,7 +1182,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        */
       public Builder clearJPIGMAONIDJ() {
         if (jPIGMAONIDJBuilder_ == null) {
@@ -1196,7 +1196,7 @@ public final class _GadgetBaseOuterClass {
         return this;
       }
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        */
       public emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF.Builder getJPIGMAONIDJBuilder() {
         
@@ -1204,7 +1204,7 @@ public final class _GadgetBaseOuterClass {
         return getJPIGMAONIDJFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        */
       public emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEFOrBuilder getJPIGMAONIDJOrBuilder() {
         if (jPIGMAONIDJBuilder_ != null) {
@@ -1215,7 +1215,7 @@ public final class _GadgetBaseOuterClass {
         }
       }
       /**
-       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 4;</code>
+       * <code>.MDGFOMDDDEF JPIGMAONIDJ = 20002;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF, emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEF.Builder, emu.grasscutter.net.proto.MDGFOMDDDEFOuterClass.MDGFOMDDDEFOrBuilder> 
@@ -1298,12 +1298,12 @@ public final class _GadgetBaseOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021_GadgetBase.proto\032\021JGFGJGJGLPD.proto\032\021" +
-      "MDGFOMDDDEF.proto\032\014Vector.proto\"\206\001\n\013_Gad" +
-      "getBase\022\023\n\013GACKKCOFACA\030\001 \001(\r\022!\n\013FAHAJIEG" +
-      "CEP\030\002 \003(\0132\014.JGFGJGJGLPD\022\034\n\013OLIPGCONBJC\030\003" +
-      " \001(\0132\007.Vector\022!\n\013JPIGMAONIDJ\030\004 \001(\0132\014.MDG" +
-      "FOMDDDEFB2\n\031emu.grasscutter.net.protoB\025_" +
-      "GadgetBaseOuterClassb\006proto3"
+      "MDGFOMDDDEF.proto\032\014Vector.proto\"\212\001\n\013_Gad" +
+      "getBase\022\023\n\013GACKKCOFACA\030\001 \001(\r\022#\n\013FAHAJIEG" +
+      "CEP\030\241\234\001 \003(\0132\014.JGFGJGJGLPD\022\034\n\013OLIPGCONBJC" +
+      "\030\003 \001(\0132\007.Vector\022#\n\013JPIGMAONIDJ\030\242\234\001 \001(\0132\014" +
+      ".MDGFOMDDDEFB2\n\031emu.grasscutter.net.prot" +
+      "oB\025_GadgetBaseOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

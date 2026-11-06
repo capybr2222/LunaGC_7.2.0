@@ -9,13 +9,13 @@ import "AsterMidDetailInfo.proto";
 import "AsterProgressDetailInfo.proto";
 
 message AsterActivityDetailInfo {
-	AsterLittleDetailInfo aster_little = 2;
-	uint32 BGHKDINALDB = 50000;
-	bool is_special_reward_taken = 7;
-	AsterMidDetailInfo aster_mid = 12;
-	uint32 content_close_time = 13;
-	uint32 DGBIKMCIGLN = 50001;
-	AsterLargeDetailInfo aster_large = 6;
-	bool is_content_closed = 11;
-	AsterProgressDetailInfo aster_progress = 15;
+	AsterLittleDetailInfo aster_little = 1;
+	uint32 BGHKDINALDB = 20001;
+	bool is_special_reward_taken = 8;
+	AsterMidDetailInfo aster_mid = 2;
+	uint32 content_close_time = 10;
+	uint32 DGBIKMCIGLN = 20000;
+	AsterLargeDetailInfo aster_large = 3;
+	bool is_content_closed = 9;
+	AsterProgressDetailInfo aster_progress = 5;
 }

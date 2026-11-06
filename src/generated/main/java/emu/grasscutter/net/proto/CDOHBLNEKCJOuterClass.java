@@ -25,7 +25,7 @@ public final class CDOHBLNEKCJOuterClass {
     int getNpcId();
 
     /**
-     * <code>uint32 LLMNLCGAFNF = 50000;</code>
+     * <code>uint32 LLMNLCGAFNF = 6;</code>
      * @return The lLMNLCGAFNF.
      */
     int getLLMNLCGAFNF();
@@ -61,12 +61,12 @@ public final class CDOHBLNEKCJOuterClass {
     int getFLGHAOCLOAJ();
 
     /**
-     * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+     * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
      * @return The enum numeric value on the wire for mHHNHHHDGDE.
      */
     int getMHHNHHHDGDEValue();
     /**
-     * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+     * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
      * @return The mHHNHHHDGDE.
      */
     emu.grasscutter.net.proto.DOCGOEBMIOHOuterClass.DOCGOEBMIOH getMHHNHHHDGDE();
@@ -93,7 +93,7 @@ public final class CDOHBLNEKCJOuterClass {
     boolean getLKIIDNBEBIM();
 
     /**
-     * <code>uint32 KPDEJEOKNGK = 50002;</code>
+     * <code>uint32 KPDEJEOKNGK = 11;</code>
      * @return The kPDEJEOKNGK.
      */
     int getKPDEJEOKNGK();
@@ -181,6 +181,11 @@ public final class CDOHBLNEKCJOuterClass {
 
               break;
             }
+            case 48: {
+
+              lLMNLCGAFNF_ = input.readUInt32();
+              break;
+            }
             case 56: {
 
               lKIIDNBEBIM_ = input.readBool();
@@ -195,6 +200,17 @@ public final class CDOHBLNEKCJOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.PJFELCMPMKJOuterClass.PJFELCMPMKJ.parser(), extensionRegistry));
               break;
             }
+            case 88: {
+
+              kPDEJEOKNGK_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+              int rawValue = input.readEnum();
+
+              mHHNHHHDGDE_ = rawValue;
+              break;
+            }
             case 104: {
 
               npcId_ = input.readUInt32();
@@ -203,22 +219,6 @@ public final class CDOHBLNEKCJOuterClass {
             case 120: {
 
               id_ = input.readUInt32();
-              break;
-            }
-            case 400000: {
-
-              lLMNLCGAFNF_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-              int rawValue = input.readEnum();
-
-              mHHNHHHDGDE_ = rawValue;
-              break;
-            }
-            case 400016: {
-
-              kPDEJEOKNGK_ = input.readUInt32();
               break;
             }
             default: {
@@ -267,10 +267,10 @@ public final class CDOHBLNEKCJOuterClass {
       return npcId_;
     }
 
-    public static final int LLMNLCGAFNF_FIELD_NUMBER = 50000;
+    public static final int LLMNLCGAFNF_FIELD_NUMBER = 6;
     private int lLMNLCGAFNF_;
     /**
-     * <code>uint32 LLMNLCGAFNF = 50000;</code>
+     * <code>uint32 LLMNLCGAFNF = 6;</code>
      * @return The lLMNLCGAFNF.
      */
     @java.lang.Override
@@ -329,17 +329,17 @@ public final class CDOHBLNEKCJOuterClass {
       return fLGHAOCLOAJ_;
     }
 
-    public static final int MHHNHHHDGDE_FIELD_NUMBER = 50001;
+    public static final int MHHNHHHDGDE_FIELD_NUMBER = 12;
     private int mHHNHHHDGDE_;
     /**
-     * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+     * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
      * @return The enum numeric value on the wire for mHHNHHHDGDE.
      */
     @java.lang.Override public int getMHHNHHHDGDEValue() {
       return mHHNHHHDGDE_;
     }
     /**
-     * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+     * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
      * @return The mHHNHHHDGDE.
      */
     @java.lang.Override public emu.grasscutter.net.proto.DOCGOEBMIOHOuterClass.DOCGOEBMIOH getMHHNHHHDGDE() {
@@ -385,10 +385,10 @@ public final class CDOHBLNEKCJOuterClass {
       return lKIIDNBEBIM_;
     }
 
-    public static final int KPDEJEOKNGK_FIELD_NUMBER = 50002;
+    public static final int KPDEJEOKNGK_FIELD_NUMBER = 11;
     private int kPDEJEOKNGK_;
     /**
-     * <code>uint32 KPDEJEOKNGK = 50002;</code>
+     * <code>uint32 KPDEJEOKNGK = 11;</code>
      * @return The kPDEJEOKNGK.
      */
     @java.lang.Override
@@ -441,26 +441,26 @@ public final class CDOHBLNEKCJOuterClass {
       if (gLHMFLEIGFA_ != null) {
         output.writeMessage(5, getGLHMFLEIGFA());
       }
+      if (lLMNLCGAFNF_ != 0) {
+        output.writeUInt32(6, lLMNLCGAFNF_);
+      }
       if (lKIIDNBEBIM_ != false) {
         output.writeBool(7, lKIIDNBEBIM_);
       }
       for (int i = 0; i < gPHLIKMIIKI_.size(); i++) {
         output.writeMessage(10, gPHLIKMIIKI_.get(i));
       }
+      if (kPDEJEOKNGK_ != 0) {
+        output.writeUInt32(11, kPDEJEOKNGK_);
+      }
+      if (mHHNHHHDGDE_ != emu.grasscutter.net.proto.DOCGOEBMIOHOuterClass.DOCGOEBMIOH.DOCGOEBMIOH_NONE.getNumber()) {
+        output.writeEnum(12, mHHNHHHDGDE_);
+      }
       if (npcId_ != 0) {
         output.writeUInt32(13, npcId_);
       }
       if (id_ != 0) {
         output.writeUInt32(15, id_);
-      }
-      if (lLMNLCGAFNF_ != 0) {
-        output.writeUInt32(50000, lLMNLCGAFNF_);
-      }
-      if (mHHNHHHDGDE_ != emu.grasscutter.net.proto.DOCGOEBMIOHOuterClass.DOCGOEBMIOH.DOCGOEBMIOH_NONE.getNumber()) {
-        output.writeEnum(50001, mHHNHHHDGDE_);
-      }
-      if (kPDEJEOKNGK_ != 0) {
-        output.writeUInt32(50002, kPDEJEOKNGK_);
       }
       unknownFields.writeTo(output);
     }
@@ -483,6 +483,10 @@ public final class CDOHBLNEKCJOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getGLHMFLEIGFA());
       }
+      if (lLMNLCGAFNF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, lLMNLCGAFNF_);
+      }
       if (lKIIDNBEBIM_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(7, lKIIDNBEBIM_);
@@ -491,6 +495,14 @@ public final class CDOHBLNEKCJOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(10, gPHLIKMIIKI_.get(i));
       }
+      if (kPDEJEOKNGK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, kPDEJEOKNGK_);
+      }
+      if (mHHNHHHDGDE_ != emu.grasscutter.net.proto.DOCGOEBMIOHOuterClass.DOCGOEBMIOH.DOCGOEBMIOH_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(12, mHHNHHHDGDE_);
+      }
       if (npcId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(13, npcId_);
@@ -498,18 +510,6 @@ public final class CDOHBLNEKCJOuterClass {
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, id_);
-      }
-      if (lLMNLCGAFNF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, lLMNLCGAFNF_);
-      }
-      if (mHHNHHHDGDE_ != emu.grasscutter.net.proto.DOCGOEBMIOHOuterClass.DOCGOEBMIOH.DOCGOEBMIOH_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(50001, mHHNHHHDGDE_);
-      }
-      if (kPDEJEOKNGK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50002, kPDEJEOKNGK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -960,7 +960,7 @@ public final class CDOHBLNEKCJOuterClass {
 
       private int lLMNLCGAFNF_ ;
       /**
-       * <code>uint32 LLMNLCGAFNF = 50000;</code>
+       * <code>uint32 LLMNLCGAFNF = 6;</code>
        * @return The lLMNLCGAFNF.
        */
       @java.lang.Override
@@ -968,7 +968,7 @@ public final class CDOHBLNEKCJOuterClass {
         return lLMNLCGAFNF_;
       }
       /**
-       * <code>uint32 LLMNLCGAFNF = 50000;</code>
+       * <code>uint32 LLMNLCGAFNF = 6;</code>
        * @param value The lLMNLCGAFNF to set.
        * @return This builder for chaining.
        */
@@ -979,7 +979,7 @@ public final class CDOHBLNEKCJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LLMNLCGAFNF = 50000;</code>
+       * <code>uint32 LLMNLCGAFNF = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearLLMNLCGAFNF() {
@@ -1262,14 +1262,14 @@ public final class CDOHBLNEKCJOuterClass {
 
       private int mHHNHHHDGDE_ = 0;
       /**
-       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
        * @return The enum numeric value on the wire for mHHNHHHDGDE.
        */
       @java.lang.Override public int getMHHNHHHDGDEValue() {
         return mHHNHHHDGDE_;
       }
       /**
-       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
        * @param value The enum numeric value on the wire for mHHNHHHDGDE to set.
        * @return This builder for chaining.
        */
@@ -1280,7 +1280,7 @@ public final class CDOHBLNEKCJOuterClass {
         return this;
       }
       /**
-       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
        * @return The mHHNHHHDGDE.
        */
       @java.lang.Override
@@ -1290,7 +1290,7 @@ public final class CDOHBLNEKCJOuterClass {
         return result == null ? emu.grasscutter.net.proto.DOCGOEBMIOHOuterClass.DOCGOEBMIOH.UNRECOGNIZED : result;
       }
       /**
-       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
        * @param value The mHHNHHHDGDE to set.
        * @return This builder for chaining.
        */
@@ -1304,7 +1304,7 @@ public final class CDOHBLNEKCJOuterClass {
         return this;
       }
       /**
-       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 50001;</code>
+       * <code>.DOCGOEBMIOH MHHNHHHDGDE = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearMHHNHHHDGDE() {
@@ -1466,7 +1466,7 @@ public final class CDOHBLNEKCJOuterClass {
 
       private int kPDEJEOKNGK_ ;
       /**
-       * <code>uint32 KPDEJEOKNGK = 50002;</code>
+       * <code>uint32 KPDEJEOKNGK = 11;</code>
        * @return The kPDEJEOKNGK.
        */
       @java.lang.Override
@@ -1474,7 +1474,7 @@ public final class CDOHBLNEKCJOuterClass {
         return kPDEJEOKNGK_;
       }
       /**
-       * <code>uint32 KPDEJEOKNGK = 50002;</code>
+       * <code>uint32 KPDEJEOKNGK = 11;</code>
        * @param value The kPDEJEOKNGK to set.
        * @return This builder for chaining.
        */
@@ -1485,7 +1485,7 @@ public final class CDOHBLNEKCJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 KPDEJEOKNGK = 50002;</code>
+       * <code>uint32 KPDEJEOKNGK = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearKPDEJEOKNGK() {
@@ -1624,15 +1624,15 @@ public final class CDOHBLNEKCJOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021CDOHBLNEKCJ.proto\032\021DOCGOEBMIOH.proto\032\021" +
-      "PJFELCMPMKJ.proto\"\201\002\n\013CDOHBLNEKCJ\022\016\n\006npc" +
-      "_id\030\r \001(\r\022\025\n\013LLMNLCGAFNF\030\320\206\003 \001(\r\022!\n\013GPHL" +
-      "IKMIIKI\030\n \003(\0132\014.PJFELCMPMKJ\022\023\n\013FLGHAOCLO" +
-      "AJ\030\004 \001(\r\022#\n\013MHHNHHHDGDE\030\321\206\003 \001(\0162\014.DOCGOE" +
-      "BMIOH\022!\n\013GLHMFLEIGFA\030\005 \001(\0132\014.PJFELCMPMKJ" +
-      "\022\023\n\013LKIIDNBEBIM\030\007 \001(\010\022\025\n\013KPDEJEOKNGK\030\322\206\003" +
-      " \001(\r\022\n\n\002id\030\017 \001(\r\022\023\n\013DDEFOMCJOCJ\030\002 \001(\010B2\n" +
-      "\031emu.grasscutter.net.protoB\025CDOHBLNEKCJO" +
-      "uterClassb\006proto3"
+      "PJFELCMPMKJ.proto\"\373\001\n\013CDOHBLNEKCJ\022\016\n\006npc" +
+      "_id\030\r \001(\r\022\023\n\013LLMNLCGAFNF\030\006 \001(\r\022!\n\013GPHLIK" +
+      "MIIKI\030\n \003(\0132\014.PJFELCMPMKJ\022\023\n\013FLGHAOCLOAJ" +
+      "\030\004 \001(\r\022!\n\013MHHNHHHDGDE\030\014 \001(\0162\014.DOCGOEBMIO" +
+      "H\022!\n\013GLHMFLEIGFA\030\005 \001(\0132\014.PJFELCMPMKJ\022\023\n\013" +
+      "LKIIDNBEBIM\030\007 \001(\010\022\023\n\013KPDEJEOKNGK\030\013 \001(\r\022\n" +
+      "\n\002id\030\017 \001(\r\022\023\n\013DDEFOMCJOCJ\030\002 \001(\010B2\n\031emu.g" +
+      "rasscutter.net.protoB\025CDOHBLNEKCJOuterCl" +
+      "assb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,13 +19,13 @@ public final class _TradeShowTdSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 3;</code>
+     * <code>bool is_new_record = 13;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 OOEGJHCJDKI = 4;</code>
+     * <code>uint32 OOEGJHCJDKI = 9;</code>
      * @return The oOEGJHCJDKI.
      */
     int getOOEGJHCJDKI();
@@ -81,14 +81,14 @@ public final class _TradeShowTdSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 32: {
+            case 72: {
 
               oOEGJHCJDKI_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isNewRecord_ = input.readBool();
               break;
             }
             case 120: {
@@ -128,10 +128,10 @@ public final class _TradeShowTdSettleInfoOuterClass {
               emu.grasscutter.net.proto._TradeShowTdSettleInfoOuterClass._TradeShowTdSettleInfo.class, emu.grasscutter.net.proto._TradeShowTdSettleInfoOuterClass._TradeShowTdSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 3;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 13;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 3;</code>
+     * <code>bool is_new_record = 13;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class _TradeShowTdSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int OOEGJHCJDKI_FIELD_NUMBER = 4;
+    public static final int OOEGJHCJDKI_FIELD_NUMBER = 9;
     private int oOEGJHCJDKI_;
     /**
-     * <code>uint32 OOEGJHCJDKI = 4;</code>
+     * <code>uint32 OOEGJHCJDKI = 9;</code>
      * @return The oOEGJHCJDKI.
      */
     @java.lang.Override
@@ -175,11 +175,11 @@ public final class _TradeShowTdSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isNewRecord_ != false) {
-        output.writeBool(3, isNewRecord_);
-      }
       if (oOEGJHCJDKI_ != 0) {
-        output.writeUInt32(4, oOEGJHCJDKI_);
+        output.writeUInt32(9, oOEGJHCJDKI_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(13, isNewRecord_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(15, levelId_);
@@ -193,13 +193,13 @@ public final class _TradeShowTdSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewRecord_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isNewRecord_);
-      }
       if (oOEGJHCJDKI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, oOEGJHCJDKI_);
+          .computeUInt32Size(9, oOEGJHCJDKI_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isNewRecord_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -500,7 +500,7 @@ public final class _TradeShowTdSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <code>bool is_new_record = 13;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -508,7 +508,7 @@ public final class _TradeShowTdSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <code>bool is_new_record = 13;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -519,7 +519,7 @@ public final class _TradeShowTdSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 3;</code>
+       * <code>bool is_new_record = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -531,7 +531,7 @@ public final class _TradeShowTdSettleInfoOuterClass {
 
       private int oOEGJHCJDKI_ ;
       /**
-       * <code>uint32 OOEGJHCJDKI = 4;</code>
+       * <code>uint32 OOEGJHCJDKI = 9;</code>
        * @return The oOEGJHCJDKI.
        */
       @java.lang.Override
@@ -539,7 +539,7 @@ public final class _TradeShowTdSettleInfoOuterClass {
         return oOEGJHCJDKI_;
       }
       /**
-       * <code>uint32 OOEGJHCJDKI = 4;</code>
+       * <code>uint32 OOEGJHCJDKI = 9;</code>
        * @param value The oOEGJHCJDKI to set.
        * @return This builder for chaining.
        */
@@ -550,7 +550,7 @@ public final class _TradeShowTdSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 OOEGJHCJDKI = 4;</code>
+       * <code>uint32 OOEGJHCJDKI = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearOOEGJHCJDKI() {
@@ -658,8 +658,8 @@ public final class _TradeShowTdSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034_TradeShowTdSettleInfo.proto\"V\n\026_Trade" +
-      "ShowTdSettleInfo\022\025\n\ris_new_record\030\003 \001(\010\022" +
-      "\023\n\013OOEGJHCJDKI\030\004 \001(\r\022\020\n\010level_id\030\017 \001(\rB=" +
+      "ShowTdSettleInfo\022\025\n\ris_new_record\030\r \001(\010\022" +
+      "\023\n\013OOEGJHCJDKI\030\t \001(\r\022\020\n\010level_id\030\017 \001(\rB=" +
       "\n\031emu.grasscutter.net.protoB _TradeShowT" +
       "dSettleInfoOuterClassb\006proto3"
     };

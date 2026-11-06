@@ -9,7 +9,7 @@ message CoopPoint {
 		STATE_STARTED = 1;
 		STATE_FINISHED = 2;
 	}
-	State state = 15;
-	uint32 self_confidence = 13;
-	uint32 id = 14;
+	State state = 14;
+	uint32 self_confidence = 10;
+	uint32 id = 13;
 }

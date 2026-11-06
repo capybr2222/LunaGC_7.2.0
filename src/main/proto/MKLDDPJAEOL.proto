@@ -4,8 +4,8 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "MKLDDPJAEOLOuterClass";
 
 message MKLDDPJAEOL {
-	uint32 best_score = 2;
-	uint32 level_id = 4;
+	uint32 best_score = 14;
+	uint32 level_id = 9;
 	bool is_finish = 10;
-	bool is_open = 12;
+	bool is_open = 7;
 }

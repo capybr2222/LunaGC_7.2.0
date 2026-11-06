@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "SetOpenStateRspOuterClass";
 
 message SetOpenStateRsp {
-	uint32 key = 14;
-	int32 retcode = 2;
-	uint32 value = 4;
+	uint32 key = 6;
+	int32 retcode = 1;
+	uint32 value = 11;
 }

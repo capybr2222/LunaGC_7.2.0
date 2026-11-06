@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "TakePlayerLevelRewardRspOuterClass";
 
 message TakePlayerLevelRewardRsp {
-	int32 retcode = 3;
-	uint32 reward_id = 7;
-	uint32 level = 10;
+	int32 retcode = 12;
+	uint32 reward_id = 2;
+	uint32 level = 8;
 }

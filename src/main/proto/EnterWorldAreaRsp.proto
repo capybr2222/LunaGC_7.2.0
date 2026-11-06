@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "EnterWorldAreaRspOuterClass";
 
 message EnterWorldAreaRsp {
-	uint32 area_type = 2;
-	int32 retcode = 5;
-	uint32 area_id = 3;
+	uint32 area_type = 5;
+	int32 retcode = 3;
+	uint32 area_id = 12;
 }

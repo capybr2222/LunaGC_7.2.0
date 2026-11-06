@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "BackMyWorldRspOuterClass";
 
 message BackMyWorldRsp {
-	int32 retcode = 7;
+	int32 retcode = 14;
 }

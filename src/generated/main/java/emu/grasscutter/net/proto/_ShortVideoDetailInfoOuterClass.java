@@ -19,49 +19,49 @@ public final class _ShortVideoDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord> 
         getVoteRecordListList();
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord getVoteRecordList(int index);
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     int getVoteRecordListCount();
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecordOrBuilder> 
         getVoteRecordListOrBuilderList();
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecordOrBuilder getVoteRecordListOrBuilder(
         int index);
 
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData> 
         getLevelDataListList();
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData getLevelDataList(int index);
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     int getLevelDataListCount();
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelDataOrBuilder> 
         getLevelDataListOrBuilderList();
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelDataOrBuilder getLevelDataListOrBuilder(
         int index);
@@ -114,22 +114,22 @@ public final class _ShortVideoDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                VoteRecordList_ = new java.util.ArrayList<emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              VoteRecordList_.add(
-                  input.readMessage(emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.parser(), extensionRegistry));
-              break;
-            }
-            case 82: {
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 levelDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData>();
                 mutable_bitField0_ |= 0x00000002;
               }
               levelDataList_.add(
                   input.readMessage(emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.parser(), extensionRegistry));
+              break;
+            }
+            case 122: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                VoteRecordList_ = new java.util.ArrayList<emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              VoteRecordList_.add(
+                  input.readMessage(emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -147,11 +147,11 @@ public final class _ShortVideoDetailInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          VoteRecordList_ = java.util.Collections.unmodifiableList(VoteRecordList_);
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           levelDataList_ = java.util.Collections.unmodifiableList(levelDataList_);
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          VoteRecordList_ = java.util.Collections.unmodifiableList(VoteRecordList_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -170,17 +170,17 @@ public final class _ShortVideoDetailInfoOuterClass {
               emu.grasscutter.net.proto._ShortVideoDetailInfoOuterClass._ShortVideoDetailInfo.class, emu.grasscutter.net.proto._ShortVideoDetailInfoOuterClass._ShortVideoDetailInfo.Builder.class);
     }
 
-    public static final int _VOTE_RECORD_LIST_FIELD_NUMBER = 1;
+    public static final int _VOTE_RECORD_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord> VoteRecordList_;
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord> getVoteRecordListList() {
       return VoteRecordList_;
     }
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecordOrBuilder> 
@@ -188,21 +188,21 @@ public final class _ShortVideoDetailInfoOuterClass {
       return VoteRecordList_;
     }
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     @java.lang.Override
     public int getVoteRecordListCount() {
       return VoteRecordList_.size();
     }
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord getVoteRecordList(int index) {
       return VoteRecordList_.get(index);
     }
     /**
-     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+     * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecordOrBuilder getVoteRecordListOrBuilder(
@@ -210,17 +210,17 @@ public final class _ShortVideoDetailInfoOuterClass {
       return VoteRecordList_.get(index);
     }
 
-    public static final int LEVEL_DATA_LIST_FIELD_NUMBER = 10;
+    public static final int LEVEL_DATA_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData> levelDataList_;
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData> getLevelDataListList() {
       return levelDataList_;
     }
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelDataOrBuilder> 
@@ -228,21 +228,21 @@ public final class _ShortVideoDetailInfoOuterClass {
       return levelDataList_;
     }
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     @java.lang.Override
     public int getLevelDataListCount() {
       return levelDataList_.size();
     }
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData getLevelDataList(int index) {
       return levelDataList_.get(index);
     }
     /**
-     * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+     * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelDataOrBuilder getLevelDataListOrBuilder(
@@ -264,11 +264,11 @@ public final class _ShortVideoDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < VoteRecordList_.size(); i++) {
-        output.writeMessage(1, VoteRecordList_.get(i));
-      }
       for (int i = 0; i < levelDataList_.size(); i++) {
-        output.writeMessage(10, levelDataList_.get(i));
+        output.writeMessage(8, levelDataList_.get(i));
+      }
+      for (int i = 0; i < VoteRecordList_.size(); i++) {
+        output.writeMessage(15, VoteRecordList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -279,13 +279,13 @@ public final class _ShortVideoDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < VoteRecordList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, VoteRecordList_.get(i));
-      }
       for (int i = 0; i < levelDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, levelDataList_.get(i));
+          .computeMessageSize(8, levelDataList_.get(i));
+      }
+      for (int i = 0; i < VoteRecordList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, VoteRecordList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -660,7 +660,7 @@ public final class _ShortVideoDetailInfoOuterClass {
           emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord, emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder, emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecordOrBuilder> VoteRecordListBuilder_;
 
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord> getVoteRecordListList() {
         if (VoteRecordListBuilder_ == null) {
@@ -670,7 +670,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public int getVoteRecordListCount() {
         if (VoteRecordListBuilder_ == null) {
@@ -680,7 +680,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord getVoteRecordList(int index) {
         if (VoteRecordListBuilder_ == null) {
@@ -690,7 +690,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder setVoteRecordList(
           int index, emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord value) {
@@ -707,7 +707,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder setVoteRecordList(
           int index, emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder builderForValue) {
@@ -721,7 +721,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder addVoteRecordList(emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord value) {
         if (VoteRecordListBuilder_ == null) {
@@ -737,7 +737,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder addVoteRecordList(
           int index, emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord value) {
@@ -754,7 +754,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder addVoteRecordList(
           emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder builderForValue) {
@@ -768,7 +768,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder addVoteRecordList(
           int index, emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder builderForValue) {
@@ -782,7 +782,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder addAllVoteRecordList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord> values) {
@@ -797,7 +797,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder clearVoteRecordList() {
         if (VoteRecordListBuilder_ == null) {
@@ -810,7 +810,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public Builder removeVoteRecordList(int index) {
         if (VoteRecordListBuilder_ == null) {
@@ -823,14 +823,14 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder getVoteRecordListBuilder(
           int index) {
         return getVoteRecordListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecordOrBuilder getVoteRecordListOrBuilder(
           int index) {
@@ -840,7 +840,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecordOrBuilder> 
            getVoteRecordListOrBuilderList() {
@@ -851,14 +851,14 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder addVoteRecordListBuilder() {
         return getVoteRecordListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder addVoteRecordListBuilder(
           int index) {
@@ -866,7 +866,7 @@ public final class _ShortVideoDetailInfoOuterClass {
             index, emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 1;</code>
+       * <code>repeated ._ShortVideoVoteRecord _vote_record_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ShortVideoVoteRecordOuterClass._ShortVideoVoteRecord.Builder> 
            getVoteRecordListBuilderList() {
@@ -900,7 +900,7 @@ public final class _ShortVideoDetailInfoOuterClass {
           emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData, emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.Builder, emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelDataOrBuilder> levelDataListBuilder_;
 
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData> getLevelDataListList() {
         if (levelDataListBuilder_ == null) {
@@ -910,7 +910,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public int getLevelDataListCount() {
         if (levelDataListBuilder_ == null) {
@@ -920,7 +920,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData getLevelDataList(int index) {
         if (levelDataListBuilder_ == null) {
@@ -930,7 +930,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder setLevelDataList(
           int index, emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData value) {
@@ -947,7 +947,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder setLevelDataList(
           int index, emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.Builder builderForValue) {
@@ -961,7 +961,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder addLevelDataList(emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData value) {
         if (levelDataListBuilder_ == null) {
@@ -977,7 +977,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder addLevelDataList(
           int index, emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData value) {
@@ -994,7 +994,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder addLevelDataList(
           emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.Builder builderForValue) {
@@ -1008,7 +1008,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder addLevelDataList(
           int index, emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.Builder builderForValue) {
@@ -1022,7 +1022,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder addAllLevelDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData> values) {
@@ -1037,7 +1037,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder clearLevelDataList() {
         if (levelDataListBuilder_ == null) {
@@ -1050,7 +1050,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public Builder removeLevelDataList(int index) {
         if (levelDataListBuilder_ == null) {
@@ -1063,14 +1063,14 @@ public final class _ShortVideoDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.Builder getLevelDataListBuilder(
           int index) {
         return getLevelDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelDataOrBuilder getLevelDataListOrBuilder(
           int index) {
@@ -1080,7 +1080,7 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelDataOrBuilder> 
            getLevelDataListOrBuilderList() {
@@ -1091,14 +1091,14 @@ public final class _ShortVideoDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.Builder addLevelDataListBuilder() {
         return getLevelDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.Builder addLevelDataListBuilder(
           int index) {
@@ -1106,7 +1106,7 @@ public final class _ShortVideoDetailInfoOuterClass {
             index, emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ShortVideoLevelData level_data_list = 10;</code>
+       * <code>repeated ._ShortVideoLevelData level_data_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ShortVideoLevelDataOuterClass._ShortVideoLevelData.Builder> 
            getLevelDataListBuilderList() {
@@ -1196,8 +1196,8 @@ public final class _ShortVideoDetailInfoOuterClass {
       "\n\033_ShortVideoDetailInfo.proto\032\032_ShortVid" +
       "eoLevelData.proto\032\033_ShortVideoVoteRecord" +
       ".proto\"z\n\025_ShortVideoDetailInfo\0221\n\021_vote" +
-      "_record_list\030\001 \003(\0132\026._ShortVideoVoteReco" +
-      "rd\022.\n\017level_data_list\030\n \003(\0132\025._ShortVide" +
+      "_record_list\030\017 \003(\0132\026._ShortVideoVoteReco" +
+      "rd\022.\n\017level_data_list\030\010 \003(\0132\025._ShortVide" +
       "oLevelDataB<\n\031emu.grasscutter.net.protoB" +
       "\037_ShortVideoDetailInfoOuterClassb\006proto3"
     };

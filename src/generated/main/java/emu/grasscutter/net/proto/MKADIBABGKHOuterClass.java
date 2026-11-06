@@ -19,41 +19,41 @@ public final class MKADIBABGKHOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+     * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
      * @return A list containing the cKPHABNPOOH.
      */
     java.util.List<java.lang.Integer> getCKPHABNPOOHList();
     /**
-     * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+     * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
      * @return The count of cKPHABNPOOH.
      */
     int getCKPHABNPOOHCount();
     /**
-     * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+     * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
      * @param index The index of the element to return.
      * @return The cKPHABNPOOH at the given index.
      */
     int getCKPHABNPOOH(int index);
 
     /**
-     * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+     * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
      * @return A list containing the ePOIJJBNCAI.
      */
     java.util.List<java.lang.Integer> getEPOIJJBNCAIList();
     /**
-     * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+     * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
      * @return The count of ePOIJJBNCAI.
      */
     int getEPOIJJBNCAICount();
     /**
-     * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+     * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
      * @param index The index of the element to return.
      * @return The ePOIJJBNCAI at the given index.
      */
     int getEPOIJJBNCAI(int index);
 
     /**
-     * <code>uint32 difficulty = 8;</code>
+     * <code>uint32 difficulty = 6;</code>
      * @return The difficulty.
      */
     int getDifficulty();
@@ -106,33 +106,12 @@ public final class MKADIBABGKHOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 48: {
 
               difficulty_ = input.readUInt32();
               break;
             }
-            case 400000: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                cKPHABNPOOH_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              cKPHABNPOOH_.addInt(input.readUInt32());
-              break;
-            }
-            case 400002: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                cKPHABNPOOH_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                cKPHABNPOOH_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 400008: {
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 ePOIJJBNCAI_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -140,7 +119,7 @@ public final class MKADIBABGKHOuterClass {
               ePOIJJBNCAI_.addInt(input.readUInt32());
               break;
             }
-            case 400010: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -149,6 +128,27 @@ public final class MKADIBABGKHOuterClass {
               }
               while (input.getBytesUntilLimit() > 0) {
                 ePOIJJBNCAI_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 160008: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                cKPHABNPOOH_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              cKPHABNPOOH_.addInt(input.readUInt32());
+              break;
+            }
+            case 160010: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                cKPHABNPOOH_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                cKPHABNPOOH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -168,11 +168,11 @@ public final class MKADIBABGKHOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          cKPHABNPOOH_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           ePOIJJBNCAI_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          cKPHABNPOOH_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -191,10 +191,10 @@ public final class MKADIBABGKHOuterClass {
               emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.class, emu.grasscutter.net.proto.MKADIBABGKHOuterClass.MKADIBABGKH.Builder.class);
     }
 
-    public static final int CKPHABNPOOH_FIELD_NUMBER = 50000;
+    public static final int CKPHABNPOOH_FIELD_NUMBER = 20001;
     private com.google.protobuf.Internal.IntList cKPHABNPOOH_;
     /**
-     * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+     * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
      * @return A list containing the cKPHABNPOOH.
      */
     @java.lang.Override
@@ -203,14 +203,14 @@ public final class MKADIBABGKHOuterClass {
       return cKPHABNPOOH_;
     }
     /**
-     * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+     * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
      * @return The count of cKPHABNPOOH.
      */
     public int getCKPHABNPOOHCount() {
       return cKPHABNPOOH_.size();
     }
     /**
-     * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+     * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
      * @param index The index of the element to return.
      * @return The cKPHABNPOOH at the given index.
      */
@@ -219,10 +219,10 @@ public final class MKADIBABGKHOuterClass {
     }
     private int cKPHABNPOOHMemoizedSerializedSize = -1;
 
-    public static final int EPOIJJBNCAI_FIELD_NUMBER = 50001;
+    public static final int EPOIJJBNCAI_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList ePOIJJBNCAI_;
     /**
-     * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+     * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
      * @return A list containing the ePOIJJBNCAI.
      */
     @java.lang.Override
@@ -231,14 +231,14 @@ public final class MKADIBABGKHOuterClass {
       return ePOIJJBNCAI_;
     }
     /**
-     * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+     * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
      * @return The count of ePOIJJBNCAI.
      */
     public int getEPOIJJBNCAICount() {
       return ePOIJJBNCAI_.size();
     }
     /**
-     * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+     * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
      * @param index The index of the element to return.
      * @return The ePOIJJBNCAI at the given index.
      */
@@ -247,10 +247,10 @@ public final class MKADIBABGKHOuterClass {
     }
     private int ePOIJJBNCAIMemoizedSerializedSize = -1;
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 8;
+    public static final int DIFFICULTY_FIELD_NUMBER = 6;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 8;</code>
+     * <code>uint32 difficulty = 6;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -274,21 +274,21 @@ public final class MKADIBABGKHOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (difficulty_ != 0) {
-        output.writeUInt32(8, difficulty_);
-      }
-      if (getCKPHABNPOOHList().size() > 0) {
-        output.writeUInt32NoTag(400002);
-        output.writeUInt32NoTag(cKPHABNPOOHMemoizedSerializedSize);
-      }
-      for (int i = 0; i < cKPHABNPOOH_.size(); i++) {
-        output.writeUInt32NoTag(cKPHABNPOOH_.getInt(i));
+        output.writeUInt32(6, difficulty_);
       }
       if (getEPOIJJBNCAIList().size() > 0) {
-        output.writeUInt32NoTag(400010);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(ePOIJJBNCAIMemoizedSerializedSize);
       }
       for (int i = 0; i < ePOIJJBNCAI_.size(); i++) {
         output.writeUInt32NoTag(ePOIJJBNCAI_.getInt(i));
+      }
+      if (getCKPHABNPOOHList().size() > 0) {
+        output.writeUInt32NoTag(160010);
+        output.writeUInt32NoTag(cKPHABNPOOHMemoizedSerializedSize);
+      }
+      for (int i = 0; i < cKPHABNPOOH_.size(); i++) {
+        output.writeUInt32NoTag(cKPHABNPOOH_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -301,21 +301,7 @@ public final class MKADIBABGKHOuterClass {
       size = 0;
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, difficulty_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < cKPHABNPOOH_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(cKPHABNPOOH_.getInt(i));
-        }
-        size += dataSize;
-        if (!getCKPHABNPOOHList().isEmpty()) {
-          size += 3;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        cKPHABNPOOHMemoizedSerializedSize = dataSize;
+          .computeUInt32Size(6, difficulty_);
       }
       {
         int dataSize = 0;
@@ -330,6 +316,20 @@ public final class MKADIBABGKHOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         ePOIJJBNCAIMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < cKPHABNPOOH_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(cKPHABNPOOH_.getInt(i));
+        }
+        size += dataSize;
+        if (!getCKPHABNPOOHList().isEmpty()) {
+          size += 3;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        cKPHABNPOOHMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -659,7 +659,7 @@ public final class MKADIBABGKHOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+       * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
        * @return A list containing the cKPHABNPOOH.
        */
       public java.util.List<java.lang.Integer>
@@ -668,14 +668,14 @@ public final class MKADIBABGKHOuterClass {
                  java.util.Collections.unmodifiableList(cKPHABNPOOH_) : cKPHABNPOOH_;
       }
       /**
-       * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+       * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
        * @return The count of cKPHABNPOOH.
        */
       public int getCKPHABNPOOHCount() {
         return cKPHABNPOOH_.size();
       }
       /**
-       * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+       * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
        * @param index The index of the element to return.
        * @return The cKPHABNPOOH at the given index.
        */
@@ -683,7 +683,7 @@ public final class MKADIBABGKHOuterClass {
         return cKPHABNPOOH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+       * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
        * @param index The index to set the value at.
        * @param value The cKPHABNPOOH to set.
        * @return This builder for chaining.
@@ -696,7 +696,7 @@ public final class MKADIBABGKHOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+       * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
        * @param value The cKPHABNPOOH to add.
        * @return This builder for chaining.
        */
@@ -707,7 +707,7 @@ public final class MKADIBABGKHOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+       * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
        * @param values The cKPHABNPOOH to add.
        * @return This builder for chaining.
        */
@@ -720,7 +720,7 @@ public final class MKADIBABGKHOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 CKPHABNPOOH = 50000;</code>
+       * <code>repeated uint32 CKPHABNPOOH = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearCKPHABNPOOH() {
@@ -738,7 +738,7 @@ public final class MKADIBABGKHOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+       * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
        * @return A list containing the ePOIJJBNCAI.
        */
       public java.util.List<java.lang.Integer>
@@ -747,14 +747,14 @@ public final class MKADIBABGKHOuterClass {
                  java.util.Collections.unmodifiableList(ePOIJJBNCAI_) : ePOIJJBNCAI_;
       }
       /**
-       * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+       * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
        * @return The count of ePOIJJBNCAI.
        */
       public int getEPOIJJBNCAICount() {
         return ePOIJJBNCAI_.size();
       }
       /**
-       * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+       * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
        * @param index The index of the element to return.
        * @return The ePOIJJBNCAI at the given index.
        */
@@ -762,7 +762,7 @@ public final class MKADIBABGKHOuterClass {
         return ePOIJJBNCAI_.getInt(index);
       }
       /**
-       * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+       * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
        * @param index The index to set the value at.
        * @param value The ePOIJJBNCAI to set.
        * @return This builder for chaining.
@@ -775,7 +775,7 @@ public final class MKADIBABGKHOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+       * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
        * @param value The ePOIJJBNCAI to add.
        * @return This builder for chaining.
        */
@@ -786,7 +786,7 @@ public final class MKADIBABGKHOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+       * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
        * @param values The ePOIJJBNCAI to add.
        * @return This builder for chaining.
        */
@@ -799,7 +799,7 @@ public final class MKADIBABGKHOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EPOIJJBNCAI = 50001;</code>
+       * <code>repeated uint32 EPOIJJBNCAI = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearEPOIJJBNCAI() {
@@ -811,7 +811,7 @@ public final class MKADIBABGKHOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 8;</code>
+       * <code>uint32 difficulty = 6;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -819,7 +819,7 @@ public final class MKADIBABGKHOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 8;</code>
+       * <code>uint32 difficulty = 6;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -830,7 +830,7 @@ public final class MKADIBABGKHOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 8;</code>
+       * <code>uint32 difficulty = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -907,8 +907,8 @@ public final class MKADIBABGKHOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021MKADIBABGKH.proto\"O\n\013MKADIBABGKH\022\025\n\013CK" +
-      "PHABNPOOH\030\320\206\003 \003(\r\022\025\n\013EPOIJJBNCAI\030\321\206\003 \003(\r" +
-      "\022\022\n\ndifficulty\030\010 \001(\rB2\n\031emu.grasscutter." +
+      "PHABNPOOH\030\241\234\001 \003(\r\022\025\n\013EPOIJJBNCAI\030\240\234\001 \003(\r" +
+      "\022\022\n\ndifficulty\030\006 \001(\rB2\n\031emu.grasscutter." +
       "net.protoB\025MKADIBABGKHOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -6,5 +6,5 @@ option java_outer_classname = "PDKKLGIEJCNOuterClass";
 import "IDDCIPCLJIM.proto";
 
 message PDKKLGIEJCN {
-	repeated IDDCIPCLJIM level_info_list = 7;
+	repeated IDDCIPCLJIM level_info_list = 9;
 }

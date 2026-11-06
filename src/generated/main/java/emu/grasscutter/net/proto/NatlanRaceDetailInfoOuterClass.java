@@ -25,25 +25,25 @@ public final class NatlanRaceDetailInfoOuterClass {
     boolean getIsSpecialRewardTaken();
 
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN> 
         getLevelInfoListList();
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN getLevelInfoList(int index);
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMNOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMNOrBuilder getLevelInfoListOrBuilder(
         int index);
@@ -100,7 +100,7 @@ public final class NatlanRaceDetailInfoOuterClass {
               isSpecialRewardTaken_ = input.readBool();
               break;
             }
-            case 114: {
+            case 74: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN>();
                 mutable_bitField0_ |= 0x00000001;
@@ -155,17 +155,17 @@ public final class NatlanRaceDetailInfoOuterClass {
       return isSpecialRewardTaken_;
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 14;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 9;
     private java.util.List<emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN> levelInfoList_;
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMNOrBuilder> 
@@ -173,21 +173,21 @@ public final class NatlanRaceDetailInfoOuterClass {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+     * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMNOrBuilder getLevelInfoListOrBuilder(
@@ -213,7 +213,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         output.writeBool(1, isSpecialRewardTaken_);
       }
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(14, levelInfoList_.get(i));
+        output.writeMessage(9, levelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -230,7 +230,7 @@ public final class NatlanRaceDetailInfoOuterClass {
       }
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, levelInfoList_.get(i));
+          .computeMessageSize(9, levelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -599,7 +599,7 @@ public final class NatlanRaceDetailInfoOuterClass {
           emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN, emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder, emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMNOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
@@ -609,7 +609,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -619,7 +619,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -629,7 +629,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN value) {
@@ -646,7 +646,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder builderForValue) {
@@ -660,7 +660,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN value) {
         if (levelInfoListBuilder_ == null) {
@@ -676,7 +676,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN value) {
@@ -693,7 +693,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
           emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder builderForValue) {
@@ -707,7 +707,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder builderForValue) {
@@ -721,7 +721,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder addAllLevelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN> values) {
@@ -736,7 +736,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -749,7 +749,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -762,14 +762,14 @@ public final class NatlanRaceDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMNOrBuilder getLevelInfoListOrBuilder(
           int index) {
@@ -779,7 +779,7 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMNOrBuilder> 
            getLevelInfoListOrBuilderList() {
@@ -790,14 +790,14 @@ public final class NatlanRaceDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.getDefaultInstance());
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder addLevelInfoListBuilder(
           int index) {
@@ -805,7 +805,7 @@ public final class NatlanRaceDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.getDefaultInstance());
       }
       /**
-       * <code>repeated .GMBNGIKAPMN level_info_list = 14;</code>
+       * <code>repeated .GMBNGIKAPMN level_info_list = 9;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GMBNGIKAPMNOuterClass.GMBNGIKAPMN.Builder> 
            getLevelInfoListBuilderList() {
@@ -895,7 +895,7 @@ public final class NatlanRaceDetailInfoOuterClass {
       "\n\032NatlanRaceDetailInfo.proto\032\021GMBNGIKAPM" +
       "N.proto\"^\n\024NatlanRaceDetailInfo\022\037\n\027is_sp" +
       "ecial_reward_taken\030\001 \001(\010\022%\n\017level_info_l" +
-      "ist\030\016 \003(\0132\014.GMBNGIKAPMNB;\n\031emu.grasscutt" +
+      "ist\030\t \003(\0132\014.GMBNGIKAPMNB;\n\031emu.grasscutt" +
       "er.net.protoB\036NatlanRaceDetailInfoOuterC" +
       "lassb\006proto3"
     };

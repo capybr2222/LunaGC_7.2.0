@@ -6,8 +6,8 @@ option java_outer_classname = "BattlePassRewardTagOuterClass";
 import "BattlePassUnlockStatus.proto";
 
 message BattlePassRewardTag {
-	BattlePassUnlockStatus unlock_status = 4;
-	uint32 reward_id = 8;
-	uint32 gamkmjljind = 14;
-	uint32 level = 13;
+	BattlePassUnlockStatus unlock_status = 12;
+	uint32 reward_id = 9;
+	uint32 gamkmjljind = 3;
+	uint32 level = 6;
 }

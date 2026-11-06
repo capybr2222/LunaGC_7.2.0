@@ -4,9 +4,9 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "DoGachaReqOuterClass";
 
 message DoGachaReq {
-	uint32 gacha_times = 12;
-	string gacha_tag = 5;
-	uint32 gacha_schedule_id = 13;
-	uint32 gacha_type = 6;
-	uint32 gacha_random = 2;
+	uint32 gacha_times = 4;
+	string gacha_tag = 12;
+	uint32 gacha_schedule_id = 7;
+	uint32 gacha_type = 5;
+	uint32 gacha_random = 8;
 }

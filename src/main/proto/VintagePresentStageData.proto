@@ -7,8 +7,8 @@ import "VintagePresentLevelData.proto";
 
 message VintagePresentStageData {
 	uint32 stage_id = 1;
-	map<uint32, VintagePresentLevelData> present_level_map = 9;
-	bool is_finish = 4;
-	bool is_open = 6;
-	uint32 open_time = 14;
+	map<uint32, VintagePresentLevelData> present_level_map = 4;
+	bool is_finish = 3;
+	bool is_open = 2;
+	uint32 open_time = 5;
 }

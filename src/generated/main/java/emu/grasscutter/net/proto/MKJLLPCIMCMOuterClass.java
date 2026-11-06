@@ -19,25 +19,25 @@ public final class MKJLLPCIMCMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 BMFLNENJCCJ = 50000;</code>
+     * <code>uint32 BMFLNENJCCJ = 8;</code>
      * @return The bMFLNENJCCJ.
      */
     int getBMFLNENJCCJ();
 
     /**
-     * <code>uint32 GLNPCFFJOMK = 50001;</code>
+     * <code>uint32 GLNPCFFJOMK = 10;</code>
      * @return The gLNPCFFJOMK.
      */
     int getGLNPCFFJOMK();
 
     /**
-     * <code>uint32 PABCOFFLFMF = 50002;</code>
+     * <code>uint32 PABCOFFLFMF = 7;</code>
      * @return The pABCOFFLFMF.
      */
     int getPABCOFFLFMF();
 
     /**
-     * <code>uint32 PFGKLKDGKNI = 50003;</code>
+     * <code>uint32 PFGKLKDGKNI = 5;</code>
      * @return The pFGKLKDGKNI.
      */
     int getPFGKLKDGKNI();
@@ -67,7 +67,7 @@ public final class MKJLLPCIMCMOuterClass {
         int index);
 
     /**
-     * <code>uint32 CPLCJCLPOPH = 50004;</code>
+     * <code>uint32 CPLCJCLPOPH = 12;</code>
      * @return The cPLCJCLPOPH.
      */
     int getCPLCJCLPOPH();
@@ -88,13 +88,13 @@ public final class MKJLLPCIMCMOuterClass {
     emu.grasscutter.net.proto.AHKBALPHAABOuterClass.AHKBALPHAABOrBuilder getELKDIMBAEPJOrBuilder();
 
     /**
-     * <code>uint32 OICBPFABKFM = 50005;</code>
+     * <code>uint32 OICBPFABKFM = 2;</code>
      * @return The oICBPFABKFM.
      */
     int getOICBPFABKFM();
 
     /**
-     * <code>uint32 ACJECNOJOBP = 50006;</code>
+     * <code>uint32 ACJECNOJOBP = 13;</code>
      * @return The aCJECNOJOBP.
      */
     int getACJECNOJOBP();
@@ -186,9 +186,29 @@ public final class MKJLLPCIMCMOuterClass {
 
               break;
             }
+            case 16: {
+
+              oICBPFABKFM_ = input.readUInt32();
+              break;
+            }
             case 24: {
 
               iDBAEDDIAGI_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              pFGKLKDGKNI_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              pABCOFFLFMF_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              bMFLNENJCCJ_ = input.readUInt32();
               break;
             }
             case 74: {
@@ -204,6 +224,11 @@ public final class MKJLLPCIMCMOuterClass {
 
               break;
             }
+            case 80: {
+
+              gLNPCFFJOMK_ = input.readUInt32();
+              break;
+            }
             case 90: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 nFCHLDDOALL_ = new java.util.ArrayList<emu.grasscutter.net.proto._TemplatePotionInfoOuterClass._TemplatePotionInfo>();
@@ -213,44 +238,19 @@ public final class MKJLLPCIMCMOuterClass {
                   input.readMessage(emu.grasscutter.net.proto._TemplatePotionInfoOuterClass._TemplatePotionInfo.parser(), extensionRegistry));
               break;
             }
-            case 120: {
-
-              gHEDNNPDEMO_ = input.readBool();
-              break;
-            }
-            case 400000: {
-
-              bMFLNENJCCJ_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              gLNPCFFJOMK_ = input.readUInt32();
-              break;
-            }
-            case 400016: {
-
-              pABCOFFLFMF_ = input.readUInt32();
-              break;
-            }
-            case 400024: {
-
-              pFGKLKDGKNI_ = input.readUInt32();
-              break;
-            }
-            case 400032: {
+            case 96: {
 
               cPLCJCLPOPH_ = input.readUInt32();
               break;
             }
-            case 400040: {
-
-              oICBPFABKFM_ = input.readUInt32();
-              break;
-            }
-            case 400048: {
+            case 104: {
 
               aCJECNOJOBP_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              gHEDNNPDEMO_ = input.readBool();
               break;
             }
             default: {
@@ -288,10 +288,10 @@ public final class MKJLLPCIMCMOuterClass {
               emu.grasscutter.net.proto.MKJLLPCIMCMOuterClass.MKJLLPCIMCM.class, emu.grasscutter.net.proto.MKJLLPCIMCMOuterClass.MKJLLPCIMCM.Builder.class);
     }
 
-    public static final int BMFLNENJCCJ_FIELD_NUMBER = 50000;
+    public static final int BMFLNENJCCJ_FIELD_NUMBER = 8;
     private int bMFLNENJCCJ_;
     /**
-     * <code>uint32 BMFLNENJCCJ = 50000;</code>
+     * <code>uint32 BMFLNENJCCJ = 8;</code>
      * @return The bMFLNENJCCJ.
      */
     @java.lang.Override
@@ -299,10 +299,10 @@ public final class MKJLLPCIMCMOuterClass {
       return bMFLNENJCCJ_;
     }
 
-    public static final int GLNPCFFJOMK_FIELD_NUMBER = 50001;
+    public static final int GLNPCFFJOMK_FIELD_NUMBER = 10;
     private int gLNPCFFJOMK_;
     /**
-     * <code>uint32 GLNPCFFJOMK = 50001;</code>
+     * <code>uint32 GLNPCFFJOMK = 10;</code>
      * @return The gLNPCFFJOMK.
      */
     @java.lang.Override
@@ -310,10 +310,10 @@ public final class MKJLLPCIMCMOuterClass {
       return gLNPCFFJOMK_;
     }
 
-    public static final int PABCOFFLFMF_FIELD_NUMBER = 50002;
+    public static final int PABCOFFLFMF_FIELD_NUMBER = 7;
     private int pABCOFFLFMF_;
     /**
-     * <code>uint32 PABCOFFLFMF = 50002;</code>
+     * <code>uint32 PABCOFFLFMF = 7;</code>
      * @return The pABCOFFLFMF.
      */
     @java.lang.Override
@@ -321,10 +321,10 @@ public final class MKJLLPCIMCMOuterClass {
       return pABCOFFLFMF_;
     }
 
-    public static final int PFGKLKDGKNI_FIELD_NUMBER = 50003;
+    public static final int PFGKLKDGKNI_FIELD_NUMBER = 5;
     private int pFGKLKDGKNI_;
     /**
-     * <code>uint32 PFGKLKDGKNI = 50003;</code>
+     * <code>uint32 PFGKLKDGKNI = 5;</code>
      * @return The pFGKLKDGKNI.
      */
     @java.lang.Override
@@ -372,10 +372,10 @@ public final class MKJLLPCIMCMOuterClass {
       return nFCHLDDOALL_.get(index);
     }
 
-    public static final int CPLCJCLPOPH_FIELD_NUMBER = 50004;
+    public static final int CPLCJCLPOPH_FIELD_NUMBER = 12;
     private int cPLCJCLPOPH_;
     /**
-     * <code>uint32 CPLCJCLPOPH = 50004;</code>
+     * <code>uint32 CPLCJCLPOPH = 12;</code>
      * @return The cPLCJCLPOPH.
      */
     @java.lang.Override
@@ -409,10 +409,10 @@ public final class MKJLLPCIMCMOuterClass {
       return getELKDIMBAEPJ();
     }
 
-    public static final int OICBPFABKFM_FIELD_NUMBER = 50005;
+    public static final int OICBPFABKFM_FIELD_NUMBER = 2;
     private int oICBPFABKFM_;
     /**
-     * <code>uint32 OICBPFABKFM = 50005;</code>
+     * <code>uint32 OICBPFABKFM = 2;</code>
      * @return The oICBPFABKFM.
      */
     @java.lang.Override
@@ -420,10 +420,10 @@ public final class MKJLLPCIMCMOuterClass {
       return oICBPFABKFM_;
     }
 
-    public static final int ACJECNOJOBP_FIELD_NUMBER = 50006;
+    public static final int ACJECNOJOBP_FIELD_NUMBER = 13;
     private int aCJECNOJOBP_;
     /**
-     * <code>uint32 ACJECNOJOBP = 50006;</code>
+     * <code>uint32 ACJECNOJOBP = 13;</code>
      * @return The aCJECNOJOBP.
      */
     @java.lang.Override
@@ -496,38 +496,38 @@ public final class MKJLLPCIMCMOuterClass {
       if (eLKDIMBAEPJ_ != null) {
         output.writeMessage(1, getELKDIMBAEPJ());
       }
+      if (oICBPFABKFM_ != 0) {
+        output.writeUInt32(2, oICBPFABKFM_);
+      }
       if (iDBAEDDIAGI_ != 0) {
         output.writeUInt32(3, iDBAEDDIAGI_);
+      }
+      if (pFGKLKDGKNI_ != 0) {
+        output.writeUInt32(5, pFGKLKDGKNI_);
+      }
+      if (pABCOFFLFMF_ != 0) {
+        output.writeUInt32(7, pABCOFFLFMF_);
+      }
+      if (bMFLNENJCCJ_ != 0) {
+        output.writeUInt32(8, bMFLNENJCCJ_);
       }
       if (bNDLHOBBABM_ != null) {
         output.writeMessage(9, getBNDLHOBBABM());
       }
+      if (gLNPCFFJOMK_ != 0) {
+        output.writeUInt32(10, gLNPCFFJOMK_);
+      }
       for (int i = 0; i < nFCHLDDOALL_.size(); i++) {
         output.writeMessage(11, nFCHLDDOALL_.get(i));
       }
-      if (gHEDNNPDEMO_ != false) {
-        output.writeBool(15, gHEDNNPDEMO_);
-      }
-      if (bMFLNENJCCJ_ != 0) {
-        output.writeUInt32(50000, bMFLNENJCCJ_);
-      }
-      if (gLNPCFFJOMK_ != 0) {
-        output.writeUInt32(50001, gLNPCFFJOMK_);
-      }
-      if (pABCOFFLFMF_ != 0) {
-        output.writeUInt32(50002, pABCOFFLFMF_);
-      }
-      if (pFGKLKDGKNI_ != 0) {
-        output.writeUInt32(50003, pFGKLKDGKNI_);
-      }
       if (cPLCJCLPOPH_ != 0) {
-        output.writeUInt32(50004, cPLCJCLPOPH_);
-      }
-      if (oICBPFABKFM_ != 0) {
-        output.writeUInt32(50005, oICBPFABKFM_);
+        output.writeUInt32(12, cPLCJCLPOPH_);
       }
       if (aCJECNOJOBP_ != 0) {
-        output.writeUInt32(50006, aCJECNOJOBP_);
+        output.writeUInt32(13, aCJECNOJOBP_);
+      }
+      if (gHEDNNPDEMO_ != false) {
+        output.writeBool(15, gHEDNNPDEMO_);
       }
       unknownFields.writeTo(output);
     }
@@ -542,49 +542,49 @@ public final class MKJLLPCIMCMOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getELKDIMBAEPJ());
       }
+      if (oICBPFABKFM_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, oICBPFABKFM_);
+      }
       if (iDBAEDDIAGI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, iDBAEDDIAGI_);
+      }
+      if (pFGKLKDGKNI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, pFGKLKDGKNI_);
+      }
+      if (pABCOFFLFMF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, pABCOFFLFMF_);
+      }
+      if (bMFLNENJCCJ_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, bMFLNENJCCJ_);
       }
       if (bNDLHOBBABM_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(9, getBNDLHOBBABM());
       }
+      if (gLNPCFFJOMK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, gLNPCFFJOMK_);
+      }
       for (int i = 0; i < nFCHLDDOALL_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(11, nFCHLDDOALL_.get(i));
       }
-      if (gHEDNNPDEMO_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, gHEDNNPDEMO_);
-      }
-      if (bMFLNENJCCJ_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, bMFLNENJCCJ_);
-      }
-      if (gLNPCFFJOMK_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, gLNPCFFJOMK_);
-      }
-      if (pABCOFFLFMF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50002, pABCOFFLFMF_);
-      }
-      if (pFGKLKDGKNI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50003, pFGKLKDGKNI_);
-      }
       if (cPLCJCLPOPH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50004, cPLCJCLPOPH_);
-      }
-      if (oICBPFABKFM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50005, oICBPFABKFM_);
+          .computeUInt32Size(12, cPLCJCLPOPH_);
       }
       if (aCJECNOJOBP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50006, aCJECNOJOBP_);
+          .computeUInt32Size(13, aCJECNOJOBP_);
+      }
+      if (gHEDNNPDEMO_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, gHEDNNPDEMO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1037,7 +1037,7 @@ public final class MKJLLPCIMCMOuterClass {
 
       private int bMFLNENJCCJ_ ;
       /**
-       * <code>uint32 BMFLNENJCCJ = 50000;</code>
+       * <code>uint32 BMFLNENJCCJ = 8;</code>
        * @return The bMFLNENJCCJ.
        */
       @java.lang.Override
@@ -1045,7 +1045,7 @@ public final class MKJLLPCIMCMOuterClass {
         return bMFLNENJCCJ_;
       }
       /**
-       * <code>uint32 BMFLNENJCCJ = 50000;</code>
+       * <code>uint32 BMFLNENJCCJ = 8;</code>
        * @param value The bMFLNENJCCJ to set.
        * @return This builder for chaining.
        */
@@ -1056,7 +1056,7 @@ public final class MKJLLPCIMCMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BMFLNENJCCJ = 50000;</code>
+       * <code>uint32 BMFLNENJCCJ = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBMFLNENJCCJ() {
@@ -1068,7 +1068,7 @@ public final class MKJLLPCIMCMOuterClass {
 
       private int gLNPCFFJOMK_ ;
       /**
-       * <code>uint32 GLNPCFFJOMK = 50001;</code>
+       * <code>uint32 GLNPCFFJOMK = 10;</code>
        * @return The gLNPCFFJOMK.
        */
       @java.lang.Override
@@ -1076,7 +1076,7 @@ public final class MKJLLPCIMCMOuterClass {
         return gLNPCFFJOMK_;
       }
       /**
-       * <code>uint32 GLNPCFFJOMK = 50001;</code>
+       * <code>uint32 GLNPCFFJOMK = 10;</code>
        * @param value The gLNPCFFJOMK to set.
        * @return This builder for chaining.
        */
@@ -1087,7 +1087,7 @@ public final class MKJLLPCIMCMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 GLNPCFFJOMK = 50001;</code>
+       * <code>uint32 GLNPCFFJOMK = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGLNPCFFJOMK() {
@@ -1099,7 +1099,7 @@ public final class MKJLLPCIMCMOuterClass {
 
       private int pABCOFFLFMF_ ;
       /**
-       * <code>uint32 PABCOFFLFMF = 50002;</code>
+       * <code>uint32 PABCOFFLFMF = 7;</code>
        * @return The pABCOFFLFMF.
        */
       @java.lang.Override
@@ -1107,7 +1107,7 @@ public final class MKJLLPCIMCMOuterClass {
         return pABCOFFLFMF_;
       }
       /**
-       * <code>uint32 PABCOFFLFMF = 50002;</code>
+       * <code>uint32 PABCOFFLFMF = 7;</code>
        * @param value The pABCOFFLFMF to set.
        * @return This builder for chaining.
        */
@@ -1118,7 +1118,7 @@ public final class MKJLLPCIMCMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 PABCOFFLFMF = 50002;</code>
+       * <code>uint32 PABCOFFLFMF = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearPABCOFFLFMF() {
@@ -1130,7 +1130,7 @@ public final class MKJLLPCIMCMOuterClass {
 
       private int pFGKLKDGKNI_ ;
       /**
-       * <code>uint32 PFGKLKDGKNI = 50003;</code>
+       * <code>uint32 PFGKLKDGKNI = 5;</code>
        * @return The pFGKLKDGKNI.
        */
       @java.lang.Override
@@ -1138,7 +1138,7 @@ public final class MKJLLPCIMCMOuterClass {
         return pFGKLKDGKNI_;
       }
       /**
-       * <code>uint32 PFGKLKDGKNI = 50003;</code>
+       * <code>uint32 PFGKLKDGKNI = 5;</code>
        * @param value The pFGKLKDGKNI to set.
        * @return This builder for chaining.
        */
@@ -1149,7 +1149,7 @@ public final class MKJLLPCIMCMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 PFGKLKDGKNI = 50003;</code>
+       * <code>uint32 PFGKLKDGKNI = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearPFGKLKDGKNI() {
@@ -1401,7 +1401,7 @@ public final class MKJLLPCIMCMOuterClass {
 
       private int cPLCJCLPOPH_ ;
       /**
-       * <code>uint32 CPLCJCLPOPH = 50004;</code>
+       * <code>uint32 CPLCJCLPOPH = 12;</code>
        * @return The cPLCJCLPOPH.
        */
       @java.lang.Override
@@ -1409,7 +1409,7 @@ public final class MKJLLPCIMCMOuterClass {
         return cPLCJCLPOPH_;
       }
       /**
-       * <code>uint32 CPLCJCLPOPH = 50004;</code>
+       * <code>uint32 CPLCJCLPOPH = 12;</code>
        * @param value The cPLCJCLPOPH to set.
        * @return This builder for chaining.
        */
@@ -1420,7 +1420,7 @@ public final class MKJLLPCIMCMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 CPLCJCLPOPH = 50004;</code>
+       * <code>uint32 CPLCJCLPOPH = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCPLCJCLPOPH() {
@@ -1551,7 +1551,7 @@ public final class MKJLLPCIMCMOuterClass {
 
       private int oICBPFABKFM_ ;
       /**
-       * <code>uint32 OICBPFABKFM = 50005;</code>
+       * <code>uint32 OICBPFABKFM = 2;</code>
        * @return The oICBPFABKFM.
        */
       @java.lang.Override
@@ -1559,7 +1559,7 @@ public final class MKJLLPCIMCMOuterClass {
         return oICBPFABKFM_;
       }
       /**
-       * <code>uint32 OICBPFABKFM = 50005;</code>
+       * <code>uint32 OICBPFABKFM = 2;</code>
        * @param value The oICBPFABKFM to set.
        * @return This builder for chaining.
        */
@@ -1570,7 +1570,7 @@ public final class MKJLLPCIMCMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 OICBPFABKFM = 50005;</code>
+       * <code>uint32 OICBPFABKFM = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOICBPFABKFM() {
@@ -1582,7 +1582,7 @@ public final class MKJLLPCIMCMOuterClass {
 
       private int aCJECNOJOBP_ ;
       /**
-       * <code>uint32 ACJECNOJOBP = 50006;</code>
+       * <code>uint32 ACJECNOJOBP = 13;</code>
        * @return The aCJECNOJOBP.
        */
       @java.lang.Override
@@ -1590,7 +1590,7 @@ public final class MKJLLPCIMCMOuterClass {
         return aCJECNOJOBP_;
       }
       /**
-       * <code>uint32 ACJECNOJOBP = 50006;</code>
+       * <code>uint32 ACJECNOJOBP = 13;</code>
        * @param value The aCJECNOJOBP to set.
        * @return This builder for chaining.
        */
@@ -1601,7 +1601,7 @@ public final class MKJLLPCIMCMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ACJECNOJOBP = 50006;</code>
+       * <code>uint32 ACJECNOJOBP = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearACJECNOJOBP() {
@@ -1859,17 +1859,17 @@ public final class MKJLLPCIMCMOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021MKJLLPCIMCM.proto\032\021AHKBALPHAAB.proto\032\031" +
-      "_TemplatePotionInfo.proto\"\321\002\n\013MKJLLPCIMC" +
-      "M\022\025\n\013BMFLNENJCCJ\030\320\206\003 \001(\r\022\025\n\013GLNPCFFJOMK\030" +
-      "\321\206\003 \001(\r\022\025\n\013PABCOFFLFMF\030\322\206\003 \001(\r\022\025\n\013PFGKLK" +
-      "DGKNI\030\323\206\003 \001(\r\022)\n\013NFCHLDDOALL\030\013 \003(\0132\024._Te" +
-      "mplatePotionInfo\022\025\n\013CPLCJCLPOPH\030\324\206\003 \001(\r\022" +
-      "!\n\013ELKDIMBAEPJ\030\001 \001(\0132\014.AHKBALPHAAB\022\025\n\013OI" +
-      "CBPFABKFM\030\325\206\003 \001(\r\022\025\n\013ACJECNOJOBP\030\326\206\003 \001(\r" +
-      "\022\023\n\013GHEDNNPDEMO\030\017 \001(\010\022)\n\013BNDLHOBBABM\030\t \001" +
-      "(\0132\024._TemplatePotionInfo\022\023\n\013IDBAEDDIAGI\030" +
-      "\003 \001(\rB2\n\031emu.grasscutter.net.protoB\025MKJL" +
-      "LPCIMCMOuterClassb\006proto3"
+      "_TemplatePotionInfo.proto\"\303\002\n\013MKJLLPCIMC" +
+      "M\022\023\n\013BMFLNENJCCJ\030\010 \001(\r\022\023\n\013GLNPCFFJOMK\030\n " +
+      "\001(\r\022\023\n\013PABCOFFLFMF\030\007 \001(\r\022\023\n\013PFGKLKDGKNI\030" +
+      "\005 \001(\r\022)\n\013NFCHLDDOALL\030\013 \003(\0132\024._TemplatePo" +
+      "tionInfo\022\023\n\013CPLCJCLPOPH\030\014 \001(\r\022!\n\013ELKDIMB" +
+      "AEPJ\030\001 \001(\0132\014.AHKBALPHAAB\022\023\n\013OICBPFABKFM\030" +
+      "\002 \001(\r\022\023\n\013ACJECNOJOBP\030\r \001(\r\022\023\n\013GHEDNNPDEM" +
+      "O\030\017 \001(\010\022)\n\013BNDLHOBBABM\030\t \001(\0132\024._Template" +
+      "PotionInfo\022\023\n\013IDBAEDDIAGI\030\003 \001(\rB2\n\031emu.g" +
+      "rasscutter.net.protoB\025MKJLLPCIMCMOuterCl" +
+      "assb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

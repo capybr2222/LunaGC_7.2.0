@@ -6,9 +6,9 @@ option java_outer_classname = "HideAndSeekActivityDetailInfoOuterClass";
 import "HideAndSeekMapInfo.proto";
 
 message HideAndSeekActivityDetailInfo {
-	repeated uint32 GAPPBPNNOAC = 50000;
-	repeated HideAndSeekMapInfo open_map_info_list = 2;
-	repeated uint32 MAHOBLCJGOP = 50001;
-	repeated uint32 GGFIPEHLFMA = 50002;
-	repeated uint32 ENKNJAAEBIO = 50003;
+	repeated uint32 GAPPBPNNOAC = 20003;
+	repeated HideAndSeekMapInfo open_map_info_list = 4;
+	repeated uint32 MAHOBLCJGOP = 20000;
+	repeated uint32 GGFIPEHLFMA = 20002;
+	repeated uint32 ENKNJAAEBIO = 20001;
 }

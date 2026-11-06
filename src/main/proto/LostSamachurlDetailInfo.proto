@@ -8,5 +8,5 @@ import "GMBMFLHFBNG.proto";
 
 message LostSamachurlDetailInfo {
 	repeated EKCCNKGEJPN dacllbeooic = 50000;
-	repeated GMBMFLHFBNG fffjlckmddf = 15;
+	repeated GMBMFLHFBNG fffjlckmddf = 50001;
 }

@@ -19,25 +19,25 @@ public final class QuestTransmitReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 point_id = 3;</code>
+     * <code>uint32 point_id = 11;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>uint32 _template_loading_id = 6;</code>
+     * <code>uint32 _template_loading_id = 2;</code>
      * @return The templateLoadingId.
      */
     int getTemplateLoadingId();
 
     /**
-     * <code>bool NCEIBFLFIPM = 9;</code>
+     * <code>bool NCEIBFLFIPM = 20000;</code>
      * @return The nCEIBFLFIPM.
      */
     boolean getNCEIBFLFIPM();
 
     /**
-     * <code>uint32 quest_id = 7;</code>
+     * <code>uint32 quest_id = 12;</code>
      * @return The questId.
      */
     int getQuestId();
@@ -87,22 +87,22 @@ public final class QuestTransmitReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              pointId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 16: {
 
               TemplateLoadingId_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 88: {
+
+              pointId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               questId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 160000: {
 
               nCEIBFLFIPM_ = input.readBool();
               break;
@@ -139,10 +139,10 @@ public final class QuestTransmitReqOuterClass {
               emu.grasscutter.net.proto.QuestTransmitReqOuterClass.QuestTransmitReq.class, emu.grasscutter.net.proto.QuestTransmitReqOuterClass.QuestTransmitReq.Builder.class);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 3;
+    public static final int POINT_ID_FIELD_NUMBER = 11;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 3;</code>
+     * <code>uint32 point_id = 11;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class QuestTransmitReqOuterClass {
       return pointId_;
     }
 
-    public static final int _TEMPLATE_LOADING_ID_FIELD_NUMBER = 6;
+    public static final int _TEMPLATE_LOADING_ID_FIELD_NUMBER = 2;
     private int TemplateLoadingId_;
     /**
-     * <code>uint32 _template_loading_id = 6;</code>
+     * <code>uint32 _template_loading_id = 2;</code>
      * @return The templateLoadingId.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class QuestTransmitReqOuterClass {
       return TemplateLoadingId_;
     }
 
-    public static final int NCEIBFLFIPM_FIELD_NUMBER = 9;
+    public static final int NCEIBFLFIPM_FIELD_NUMBER = 20000;
     private boolean nCEIBFLFIPM_;
     /**
-     * <code>bool NCEIBFLFIPM = 9;</code>
+     * <code>bool NCEIBFLFIPM = 20000;</code>
      * @return The nCEIBFLFIPM.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class QuestTransmitReqOuterClass {
       return nCEIBFLFIPM_;
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 7;
+    public static final int QUEST_ID_FIELD_NUMBER = 12;
     private int questId_;
     /**
-     * <code>uint32 quest_id = 7;</code>
+     * <code>uint32 quest_id = 12;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class QuestTransmitReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pointId_ != 0) {
-        output.writeUInt32(3, pointId_);
-      }
       if (TemplateLoadingId_ != 0) {
-        output.writeUInt32(6, TemplateLoadingId_);
+        output.writeUInt32(2, TemplateLoadingId_);
+      }
+      if (pointId_ != 0) {
+        output.writeUInt32(11, pointId_);
       }
       if (questId_ != 0) {
-        output.writeUInt32(7, questId_);
+        output.writeUInt32(12, questId_);
       }
       if (nCEIBFLFIPM_ != false) {
-        output.writeBool(9, nCEIBFLFIPM_);
+        output.writeBool(20000, nCEIBFLFIPM_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class QuestTransmitReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (pointId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, pointId_);
-      }
       if (TemplateLoadingId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, TemplateLoadingId_);
+          .computeUInt32Size(2, TemplateLoadingId_);
+      }
+      if (pointId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, pointId_);
       }
       if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, questId_);
+          .computeUInt32Size(12, questId_);
       }
       if (nCEIBFLFIPM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, nCEIBFLFIPM_);
+          .computeBoolSize(20000, nCEIBFLFIPM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class QuestTransmitReqOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 3;</code>
+       * <code>uint32 point_id = 11;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class QuestTransmitReqOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 3;</code>
+       * <code>uint32 point_id = 11;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class QuestTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 3;</code>
+       * <code>uint32 point_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -570,7 +570,7 @@ public final class QuestTransmitReqOuterClass {
 
       private int TemplateLoadingId_ ;
       /**
-       * <code>uint32 _template_loading_id = 6;</code>
+       * <code>uint32 _template_loading_id = 2;</code>
        * @return The templateLoadingId.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class QuestTransmitReqOuterClass {
         return TemplateLoadingId_;
       }
       /**
-       * <code>uint32 _template_loading_id = 6;</code>
+       * <code>uint32 _template_loading_id = 2;</code>
        * @param value The templateLoadingId to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class QuestTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 _template_loading_id = 6;</code>
+       * <code>uint32 _template_loading_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearTemplateLoadingId() {
@@ -601,7 +601,7 @@ public final class QuestTransmitReqOuterClass {
 
       private boolean nCEIBFLFIPM_ ;
       /**
-       * <code>bool NCEIBFLFIPM = 9;</code>
+       * <code>bool NCEIBFLFIPM = 20000;</code>
        * @return The nCEIBFLFIPM.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class QuestTransmitReqOuterClass {
         return nCEIBFLFIPM_;
       }
       /**
-       * <code>bool NCEIBFLFIPM = 9;</code>
+       * <code>bool NCEIBFLFIPM = 20000;</code>
        * @param value The nCEIBFLFIPM to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class QuestTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>bool NCEIBFLFIPM = 9;</code>
+       * <code>bool NCEIBFLFIPM = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearNCEIBFLFIPM() {
@@ -632,7 +632,7 @@ public final class QuestTransmitReqOuterClass {
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 7;</code>
+       * <code>uint32 quest_id = 12;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class QuestTransmitReqOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 7;</code>
+       * <code>uint32 quest_id = 12;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class QuestTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 7;</code>
+       * <code>uint32 quest_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
@@ -727,11 +727,11 @@ public final class QuestTransmitReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026QuestTransmitReq.proto\"i\n\020QuestTransmi" +
-      "tReq\022\020\n\010point_id\030\003 \001(\r\022\034\n\024_template_load" +
-      "ing_id\030\006 \001(\r\022\023\n\013NCEIBFLFIPM\030\t \001(\010\022\020\n\010que" +
-      "st_id\030\007 \001(\rB7\n\031emu.grasscutter.net.proto" +
-      "B\032QuestTransmitReqOuterClassb\006proto3"
+      "\n\026QuestTransmitReq.proto\"k\n\020QuestTransmi" +
+      "tReq\022\020\n\010point_id\030\013 \001(\r\022\034\n\024_template_load" +
+      "ing_id\030\002 \001(\r\022\025\n\013NCEIBFLFIPM\030\240\234\001 \001(\010\022\020\n\010q" +
+      "uest_id\030\014 \001(\rB7\n\031emu.grasscutter.net.pro" +
+      "toB\032QuestTransmitReqOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

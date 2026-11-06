@@ -19,25 +19,25 @@ public final class _Mvm2PveSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 6;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 6;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 use_time = 5;</code>
+     * <code>uint32 use_time = 7;</code>
      * @return The useTime.
      */
     int getUseTime();
 
     /**
-     * <code>uint32 progress = 12;</code>
+     * <code>uint32 progress = 2;</code>
      * @return The progress.
      */
     int getProgress();
@@ -87,24 +87,24 @@ public final class _Mvm2PveSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 16: {
 
-              useTime_ = input.readUInt32();
+              progress_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
               isNewRecord_ = input.readBool();
               break;
             }
-            case 96: {
+            case 56: {
 
-              progress_ = input.readUInt32();
+              useTime_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class _Mvm2PveSettleInfoOuterClass {
               emu.grasscutter.net.proto._Mvm2PveSettleInfoOuterClass._Mvm2PveSettleInfo.class, emu.grasscutter.net.proto._Mvm2PveSettleInfoOuterClass._Mvm2PveSettleInfo.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 6;
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 6;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _Mvm2PveSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 6;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 6;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _Mvm2PveSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int USE_TIME_FIELD_NUMBER = 5;
+    public static final int USE_TIME_FIELD_NUMBER = 7;
     private int useTime_;
     /**
-     * <code>uint32 use_time = 5;</code>
+     * <code>uint32 use_time = 7;</code>
      * @return The useTime.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _Mvm2PveSettleInfoOuterClass {
       return useTime_;
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 12;
+    public static final int PROGRESS_FIELD_NUMBER = 2;
     private int progress_;
     /**
-     * <code>uint32 progress = 12;</code>
+     * <code>uint32 progress = 2;</code>
      * @return The progress.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class _Mvm2PveSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (useTime_ != 0) {
-        output.writeUInt32(5, useTime_);
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(6, levelId_);
+      if (progress_ != 0) {
+        output.writeUInt32(2, progress_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+        output.writeBool(6, isNewRecord_);
       }
-      if (progress_ != 0) {
-        output.writeUInt32(12, progress_);
+      if (useTime_ != 0) {
+        output.writeUInt32(7, useTime_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class _Mvm2PveSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (useTime_ != 0) {
+      if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, useTime_);
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, levelId_);
+          .computeUInt32Size(2, progress_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeBoolSize(6, isNewRecord_);
       }
-      if (progress_ != 0) {
+      if (useTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, progress_);
+          .computeUInt32Size(7, useTime_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -570,7 +570,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 6;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 6;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -601,7 +601,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
 
       private int useTime_ ;
       /**
-       * <code>uint32 use_time = 5;</code>
+       * <code>uint32 use_time = 7;</code>
        * @return The useTime.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
         return useTime_;
       }
       /**
-       * <code>uint32 use_time = 5;</code>
+       * <code>uint32 use_time = 7;</code>
        * @param value The useTime to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 use_time = 5;</code>
+       * <code>uint32 use_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearUseTime() {
@@ -632,7 +632,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
 
       private int progress_ ;
       /**
-       * <code>uint32 progress = 12;</code>
+       * <code>uint32 progress = 2;</code>
        * @return The progress.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
         return progress_;
       }
       /**
-       * <code>uint32 progress = 12;</code>
+       * <code>uint32 progress = 2;</code>
        * @param value The progress to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class _Mvm2PveSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 progress = 12;</code>
+       * <code>uint32 progress = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearProgress() {
@@ -728,9 +728,9 @@ public final class _Mvm2PveSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030_Mvm2PveSettleInfo.proto\"a\n\022_Mvm2PveSe" +
-      "ttleInfo\022\020\n\010level_id\030\006 \001(\r\022\025\n\ris_new_rec" +
-      "ord\030\t \001(\010\022\020\n\010use_time\030\005 \001(\r\022\020\n\010progress\030" +
-      "\014 \001(\rB9\n\031emu.grasscutter.net.protoB\034_Mvm" +
+      "ttleInfo\022\020\n\010level_id\030\017 \001(\r\022\025\n\ris_new_rec" +
+      "ord\030\006 \001(\010\022\020\n\010use_time\030\007 \001(\r\022\020\n\010progress\030" +
+      "\002 \001(\rB9\n\031emu.grasscutter.net.protoB\034_Mvm" +
       "2PveSettleInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

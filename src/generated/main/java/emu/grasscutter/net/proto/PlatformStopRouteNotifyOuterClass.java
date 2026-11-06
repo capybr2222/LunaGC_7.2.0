@@ -19,13 +19,13 @@ public final class PlatformStopRouteNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 3;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 scene_time = 8;</code>
+     * <code>uint32 scene_time = 14;</code>
      * @return The sceneTime.
      */
     int getSceneTime();
@@ -90,14 +90,9 @@ public final class PlatformStopRouteNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
 
               entityId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              sceneTime_ = input.readUInt32();
               break;
             }
             case 98: {
@@ -111,6 +106,11 @@ public final class PlatformStopRouteNotifyOuterClass {
                 platform_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 112: {
+
+              sceneTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -145,10 +145,10 @@ public final class PlatformStopRouteNotifyOuterClass {
               emu.grasscutter.net.proto.PlatformStopRouteNotifyOuterClass.PlatformStopRouteNotify.class, emu.grasscutter.net.proto.PlatformStopRouteNotifyOuterClass.PlatformStopRouteNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 3;
+    public static final int ENTITY_ID_FIELD_NUMBER = 5;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 3;</code>
+     * <code>uint32 entity_id = 5;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -156,10 +156,10 @@ public final class PlatformStopRouteNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int SCENE_TIME_FIELD_NUMBER = 8;
+    public static final int SCENE_TIME_FIELD_NUMBER = 14;
     private int sceneTime_;
     /**
-     * <code>uint32 scene_time = 8;</code>
+     * <code>uint32 scene_time = 14;</code>
      * @return The sceneTime.
      */
     @java.lang.Override
@@ -208,13 +208,13 @@ public final class PlatformStopRouteNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(3, entityId_);
-      }
-      if (sceneTime_ != 0) {
-        output.writeUInt32(8, sceneTime_);
+        output.writeUInt32(5, entityId_);
       }
       if (platform_ != null) {
         output.writeMessage(12, getPlatform());
+      }
+      if (sceneTime_ != 0) {
+        output.writeUInt32(14, sceneTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,15 +227,15 @@ public final class PlatformStopRouteNotifyOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, entityId_);
-      }
-      if (sceneTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, sceneTime_);
+          .computeUInt32Size(5, entityId_);
       }
       if (platform_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, getPlatform());
+      }
+      if (sceneTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, sceneTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -544,7 +544,7 @@ public final class PlatformStopRouteNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 3;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -552,7 +552,7 @@ public final class PlatformStopRouteNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 3;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -563,7 +563,7 @@ public final class PlatformStopRouteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 3;</code>
+       * <code>uint32 entity_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -575,7 +575,7 @@ public final class PlatformStopRouteNotifyOuterClass {
 
       private int sceneTime_ ;
       /**
-       * <code>uint32 scene_time = 8;</code>
+       * <code>uint32 scene_time = 14;</code>
        * @return The sceneTime.
        */
       @java.lang.Override
@@ -583,7 +583,7 @@ public final class PlatformStopRouteNotifyOuterClass {
         return sceneTime_;
       }
       /**
-       * <code>uint32 scene_time = 8;</code>
+       * <code>uint32 scene_time = 14;</code>
        * @param value The sceneTime to set.
        * @return This builder for chaining.
        */
@@ -594,7 +594,7 @@ public final class PlatformStopRouteNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_time = 8;</code>
+       * <code>uint32 scene_time = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTime() {
@@ -791,7 +791,7 @@ public final class PlatformStopRouteNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035PlatformStopRouteNotify.proto\032\022Platfor" +
       "mInfo.proto\"a\n\027PlatformStopRouteNotify\022\021" +
-      "\n\tentity_id\030\003 \001(\r\022\022\n\nscene_time\030\010 \001(\r\022\037\n" +
+      "\n\tentity_id\030\005 \001(\r\022\022\n\nscene_time\030\016 \001(\r\022\037\n" +
       "\010platform\030\014 \001(\0132\r.PlatformInfoB>\n\031emu.gr" +
       "asscutter.net.protoB!PlatformStopRouteNo" +
       "tifyOuterClassb\006proto3"

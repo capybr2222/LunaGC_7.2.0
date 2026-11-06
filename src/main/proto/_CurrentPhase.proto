@@ -6,6 +6,6 @@ option java_outer_classname = "_CurrentPhaseOuterClass";
 import "DEGDFAOEICK.proto";
 
 message _CurrentPhase {
-	DEGDFAOEICK KKFBGJGDAJI = 1;
+	DEGDFAOEICK KKFBGJGDAJI = 20001;
 	uint32 EMBJNKGJLFN = 2;
 }

@@ -19,13 +19,13 @@ public final class CombineFormulaDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 combine_id = 6;</code>
+     * <code>uint32 combine_id = 2;</code>
      * @return The combineId.
      */
     int getCombineId();
 
     /**
-     * <code>bool is_locked = 4;</code>
+     * <code>bool is_locked = 12;</code>
      * @return The isLocked.
      */
     boolean getIsLocked();
@@ -75,14 +75,14 @@ public final class CombineFormulaDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              isLocked_ = input.readBool();
-              break;
-            }
-            case 48: {
+            case 16: {
 
               combineId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              isLocked_ = input.readBool();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class CombineFormulaDataNotifyOuterClass {
               emu.grasscutter.net.proto.CombineFormulaDataNotifyOuterClass.CombineFormulaDataNotify.class, emu.grasscutter.net.proto.CombineFormulaDataNotifyOuterClass.CombineFormulaDataNotify.Builder.class);
     }
 
-    public static final int COMBINE_ID_FIELD_NUMBER = 6;
+    public static final int COMBINE_ID_FIELD_NUMBER = 2;
     private int combineId_;
     /**
-     * <code>uint32 combine_id = 6;</code>
+     * <code>uint32 combine_id = 2;</code>
      * @return The combineId.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class CombineFormulaDataNotifyOuterClass {
       return combineId_;
     }
 
-    public static final int IS_LOCKED_FIELD_NUMBER = 4;
+    public static final int IS_LOCKED_FIELD_NUMBER = 12;
     private boolean isLocked_;
     /**
-     * <code>bool is_locked = 4;</code>
+     * <code>bool is_locked = 12;</code>
      * @return The isLocked.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class CombineFormulaDataNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isLocked_ != false) {
-        output.writeBool(4, isLocked_);
-      }
       if (combineId_ != 0) {
-        output.writeUInt32(6, combineId_);
+        output.writeUInt32(2, combineId_);
+      }
+      if (isLocked_ != false) {
+        output.writeBool(12, isLocked_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class CombineFormulaDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isLocked_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isLocked_);
-      }
       if (combineId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, combineId_);
+          .computeUInt32Size(2, combineId_);
+      }
+      if (isLocked_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(12, isLocked_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class CombineFormulaDataNotifyOuterClass {
 
       private int combineId_ ;
       /**
-       * <code>uint32 combine_id = 6;</code>
+       * <code>uint32 combine_id = 2;</code>
        * @return The combineId.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class CombineFormulaDataNotifyOuterClass {
         return combineId_;
       }
       /**
-       * <code>uint32 combine_id = 6;</code>
+       * <code>uint32 combine_id = 2;</code>
        * @param value The combineId to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class CombineFormulaDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 combine_id = 6;</code>
+       * <code>uint32 combine_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCombineId() {
@@ -492,7 +492,7 @@ public final class CombineFormulaDataNotifyOuterClass {
 
       private boolean isLocked_ ;
       /**
-       * <code>bool is_locked = 4;</code>
+       * <code>bool is_locked = 12;</code>
        * @return The isLocked.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class CombineFormulaDataNotifyOuterClass {
         return isLocked_;
       }
       /**
-       * <code>bool is_locked = 4;</code>
+       * <code>bool is_locked = 12;</code>
        * @param value The isLocked to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class CombineFormulaDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_locked = 4;</code>
+       * <code>bool is_locked = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLocked() {
@@ -588,8 +588,8 @@ public final class CombineFormulaDataNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036CombineFormulaDataNotify.proto\"A\n\030Comb" +
-      "ineFormulaDataNotify\022\022\n\ncombine_id\030\006 \001(\r" +
-      "\022\021\n\tis_locked\030\004 \001(\010B?\n\031emu.grasscutter.n" +
+      "ineFormulaDataNotify\022\022\n\ncombine_id\030\002 \001(\r" +
+      "\022\021\n\tis_locked\030\014 \001(\010B?\n\031emu.grasscutter.n" +
       "et.protoB\"CombineFormulaDataNotifyOuterC" +
       "lassb\006proto3"
     };

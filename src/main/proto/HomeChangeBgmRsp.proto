@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "HomeChangeBgmRspOuterClass";
 
 message HomeChangeBgmRsp {
-	int32 retcode = 13;
+	int32 retcode = 8;
 }

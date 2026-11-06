@@ -19,37 +19,37 @@ public final class MLLGCECGGMEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 5;</code>
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 KHJHFLNMNPC = 2;</code>
+     * <code>uint32 KHJHFLNMNPC = 5;</code>
      * @return The kHJHFLNMNPC.
      */
     int getKHJHFLNMNPC();
 
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO> 
         getIOEDAJLIHPCList();
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO getIOEDAJLIHPC(int index);
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     int getIOEDAJLIHPCCount();
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCOOrBuilder> 
         getIOEDAJLIHPCOrBuilderList();
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCOOrBuilder getIOEDAJLIHPCOrBuilder(
         int index);
@@ -101,17 +101,17 @@ public final class MLLGCECGGMEOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 40: {
 
               kHJHFLNMNPC_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 112: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 58: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 iOEDAJLIHPC_ = new java.util.ArrayList<emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO>();
                 mutable_bitField0_ |= 0x00000001;
@@ -155,10 +155,10 @@ public final class MLLGCECGGMEOuterClass {
               emu.grasscutter.net.proto.MLLGCECGGMEOuterClass.MLLGCECGGME.class, emu.grasscutter.net.proto.MLLGCECGGMEOuterClass.MLLGCECGGME.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 5;
+    public static final int IS_OPEN_FIELD_NUMBER = 14;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 5;</code>
+     * <code>bool is_open = 14;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -166,10 +166,10 @@ public final class MLLGCECGGMEOuterClass {
       return isOpen_;
     }
 
-    public static final int KHJHFLNMNPC_FIELD_NUMBER = 2;
+    public static final int KHJHFLNMNPC_FIELD_NUMBER = 5;
     private int kHJHFLNMNPC_;
     /**
-     * <code>uint32 KHJHFLNMNPC = 2;</code>
+     * <code>uint32 KHJHFLNMNPC = 5;</code>
      * @return The kHJHFLNMNPC.
      */
     @java.lang.Override
@@ -177,17 +177,17 @@ public final class MLLGCECGGMEOuterClass {
       return kHJHFLNMNPC_;
     }
 
-    public static final int IOEDAJLIHPC_FIELD_NUMBER = 7;
+    public static final int IOEDAJLIHPC_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO> iOEDAJLIHPC_;
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO> getIOEDAJLIHPCList() {
       return iOEDAJLIHPC_;
     }
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCOOrBuilder> 
@@ -195,21 +195,21 @@ public final class MLLGCECGGMEOuterClass {
       return iOEDAJLIHPC_;
     }
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     @java.lang.Override
     public int getIOEDAJLIHPCCount() {
       return iOEDAJLIHPC_.size();
     }
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO getIOEDAJLIHPC(int index) {
       return iOEDAJLIHPC_.get(index);
     }
     /**
-     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+     * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCOOrBuilder getIOEDAJLIHPCOrBuilder(
@@ -232,13 +232,13 @@ public final class MLLGCECGGMEOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (kHJHFLNMNPC_ != 0) {
-        output.writeUInt32(2, kHJHFLNMNPC_);
+        output.writeUInt32(5, kHJHFLNMNPC_);
       }
       if (isOpen_ != false) {
-        output.writeBool(5, isOpen_);
+        output.writeBool(14, isOpen_);
       }
       for (int i = 0; i < iOEDAJLIHPC_.size(); i++) {
-        output.writeMessage(7, iOEDAJLIHPC_.get(i));
+        output.writeMessage(20000, iOEDAJLIHPC_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -251,15 +251,15 @@ public final class MLLGCECGGMEOuterClass {
       size = 0;
       if (kHJHFLNMNPC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, kHJHFLNMNPC_);
+          .computeUInt32Size(5, kHJHFLNMNPC_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isOpen_);
+          .computeBoolSize(14, isOpen_);
       }
       for (int i = 0; i < iOEDAJLIHPC_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, iOEDAJLIHPC_.get(i));
+          .computeMessageSize(20000, iOEDAJLIHPC_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -596,7 +596,7 @@ public final class MLLGCECGGMEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 5;</code>
+       * <code>bool is_open = 14;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -604,7 +604,7 @@ public final class MLLGCECGGMEOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 5;</code>
+       * <code>bool is_open = 14;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -615,7 +615,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 5;</code>
+       * <code>bool is_open = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -627,7 +627,7 @@ public final class MLLGCECGGMEOuterClass {
 
       private int kHJHFLNMNPC_ ;
       /**
-       * <code>uint32 KHJHFLNMNPC = 2;</code>
+       * <code>uint32 KHJHFLNMNPC = 5;</code>
        * @return The kHJHFLNMNPC.
        */
       @java.lang.Override
@@ -635,7 +635,7 @@ public final class MLLGCECGGMEOuterClass {
         return kHJHFLNMNPC_;
       }
       /**
-       * <code>uint32 KHJHFLNMNPC = 2;</code>
+       * <code>uint32 KHJHFLNMNPC = 5;</code>
        * @param value The kHJHFLNMNPC to set.
        * @return This builder for chaining.
        */
@@ -646,7 +646,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 KHJHFLNMNPC = 2;</code>
+       * <code>uint32 KHJHFLNMNPC = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearKHJHFLNMNPC() {
@@ -669,7 +669,7 @@ public final class MLLGCECGGMEOuterClass {
           emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO, emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.Builder, emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCOOrBuilder> iOEDAJLIHPCBuilder_;
 
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO> getIOEDAJLIHPCList() {
         if (iOEDAJLIHPCBuilder_ == null) {
@@ -679,7 +679,7 @@ public final class MLLGCECGGMEOuterClass {
         }
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public int getIOEDAJLIHPCCount() {
         if (iOEDAJLIHPCBuilder_ == null) {
@@ -689,7 +689,7 @@ public final class MLLGCECGGMEOuterClass {
         }
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO getIOEDAJLIHPC(int index) {
         if (iOEDAJLIHPCBuilder_ == null) {
@@ -699,7 +699,7 @@ public final class MLLGCECGGMEOuterClass {
         }
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder setIOEDAJLIHPC(
           int index, emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO value) {
@@ -716,7 +716,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder setIOEDAJLIHPC(
           int index, emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.Builder builderForValue) {
@@ -730,7 +730,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder addIOEDAJLIHPC(emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO value) {
         if (iOEDAJLIHPCBuilder_ == null) {
@@ -746,7 +746,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder addIOEDAJLIHPC(
           int index, emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO value) {
@@ -763,7 +763,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder addIOEDAJLIHPC(
           emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.Builder builderForValue) {
@@ -777,7 +777,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder addIOEDAJLIHPC(
           int index, emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.Builder builderForValue) {
@@ -791,7 +791,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder addAllIOEDAJLIHPC(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO> values) {
@@ -806,7 +806,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder clearIOEDAJLIHPC() {
         if (iOEDAJLIHPCBuilder_ == null) {
@@ -819,7 +819,7 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public Builder removeIOEDAJLIHPC(int index) {
         if (iOEDAJLIHPCBuilder_ == null) {
@@ -832,14 +832,14 @@ public final class MLLGCECGGMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.Builder getIOEDAJLIHPCBuilder(
           int index) {
         return getIOEDAJLIHPCFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCOOrBuilder getIOEDAJLIHPCOrBuilder(
           int index) {
@@ -849,7 +849,7 @@ public final class MLLGCECGGMEOuterClass {
         }
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCOOrBuilder> 
            getIOEDAJLIHPCOrBuilderList() {
@@ -860,14 +860,14 @@ public final class MLLGCECGGMEOuterClass {
         }
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.Builder addIOEDAJLIHPCBuilder() {
         return getIOEDAJLIHPCFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.getDefaultInstance());
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.Builder addIOEDAJLIHPCBuilder(
           int index) {
@@ -875,7 +875,7 @@ public final class MLLGCECGGMEOuterClass {
             index, emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.getDefaultInstance());
       }
       /**
-       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 7;</code>
+       * <code>repeated .BHJLAGLDHCO IOEDAJLIHPC = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BHJLAGLDHCOOuterClass.BHJLAGLDHCO.Builder> 
            getIOEDAJLIHPCBuilderList() {
@@ -962,11 +962,11 @@ public final class MLLGCECGGMEOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MLLGCECGGME.proto\032\021BHJLAGLDHCO.proto\"V" +
-      "\n\013MLLGCECGGME\022\017\n\007is_open\030\005 \001(\010\022\023\n\013KHJHFL" +
-      "NMNPC\030\002 \001(\r\022!\n\013IOEDAJLIHPC\030\007 \003(\0132\014.BHJLA" +
-      "GLDHCOB2\n\031emu.grasscutter.net.protoB\025MLL" +
-      "GCECGGMEOuterClassb\006proto3"
+      "\n\021MLLGCECGGME.proto\032\021BHJLAGLDHCO.proto\"X" +
+      "\n\013MLLGCECGGME\022\017\n\007is_open\030\016 \001(\010\022\023\n\013KHJHFL" +
+      "NMNPC\030\005 \001(\r\022#\n\013IOEDAJLIHPC\030\240\234\001 \003(\0132\014.BHJ" +
+      "LAGLDHCOB2\n\031emu.grasscutter.net.protoB\025M" +
+      "LLGCECGGMEOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

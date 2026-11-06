@@ -19,25 +19,25 @@ public final class CEBBKEOIFGLOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 2;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 NICLGNCGADF = 9;</code>
+     * <code>uint32 NICLGNCGADF = 11;</code>
      * @return The nICLGNCGADF.
      */
     int getNICLGNCGADF();
 
     /**
-     * <code>uint32 min_finish_time = 11;</code>
+     * <code>uint32 min_finish_time = 3;</code>
      * @return The minFinishTime.
      */
     int getMinFinishTime();
@@ -89,22 +89,22 @@ public final class CEBBKEOIFGLOuterClass {
               break;
             case 16: {
 
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 32: {
-
               levelId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 24: {
 
-              nICLGNCGADF_ = input.readUInt32();
+              minFinishTime_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              isOpen_ = input.readBool();
               break;
             }
             case 88: {
 
-              minFinishTime_ = input.readUInt32();
+              nICLGNCGADF_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class CEBBKEOIFGLOuterClass {
               emu.grasscutter.net.proto.CEBBKEOIFGLOuterClass.CEBBKEOIFGL.class, emu.grasscutter.net.proto.CEBBKEOIFGLOuterClass.CEBBKEOIFGL.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 2;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 2;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class CEBBKEOIFGLOuterClass {
       return isOpen_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 4;
+    public static final int LEVEL_ID_FIELD_NUMBER = 2;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 4;</code>
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class CEBBKEOIFGLOuterClass {
       return levelId_;
     }
 
-    public static final int NICLGNCGADF_FIELD_NUMBER = 9;
+    public static final int NICLGNCGADF_FIELD_NUMBER = 11;
     private int nICLGNCGADF_;
     /**
-     * <code>uint32 NICLGNCGADF = 9;</code>
+     * <code>uint32 NICLGNCGADF = 11;</code>
      * @return The nICLGNCGADF.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class CEBBKEOIFGLOuterClass {
       return nICLGNCGADF_;
     }
 
-    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 11;
+    public static final int MIN_FINISH_TIME_FIELD_NUMBER = 3;
     private int minFinishTime_;
     /**
-     * <code>uint32 min_finish_time = 11;</code>
+     * <code>uint32 min_finish_time = 3;</code>
      * @return The minFinishTime.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class CEBBKEOIFGLOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(2, isOpen_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(4, levelId_);
-      }
-      if (nICLGNCGADF_ != 0) {
-        output.writeUInt32(9, nICLGNCGADF_);
+        output.writeUInt32(2, levelId_);
       }
       if (minFinishTime_ != 0) {
-        output.writeUInt32(11, minFinishTime_);
+        output.writeUInt32(3, minFinishTime_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(6, isOpen_);
+      }
+      if (nICLGNCGADF_ != 0) {
+        output.writeUInt32(11, nICLGNCGADF_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class CEBBKEOIFGLOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isOpen_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, levelId_);
-      }
-      if (nICLGNCGADF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, nICLGNCGADF_);
+          .computeUInt32Size(2, levelId_);
       }
       if (minFinishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, minFinishTime_);
+          .computeUInt32Size(3, minFinishTime_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, isOpen_);
+      }
+      if (nICLGNCGADF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, nICLGNCGADF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class CEBBKEOIFGLOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class CEBBKEOIFGLOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class CEBBKEOIFGLOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 2;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -570,7 +570,7 @@ public final class CEBBKEOIFGLOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class CEBBKEOIFGLOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 2;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class CEBBKEOIFGLOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 4;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -601,7 +601,7 @@ public final class CEBBKEOIFGLOuterClass {
 
       private int nICLGNCGADF_ ;
       /**
-       * <code>uint32 NICLGNCGADF = 9;</code>
+       * <code>uint32 NICLGNCGADF = 11;</code>
        * @return The nICLGNCGADF.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class CEBBKEOIFGLOuterClass {
         return nICLGNCGADF_;
       }
       /**
-       * <code>uint32 NICLGNCGADF = 9;</code>
+       * <code>uint32 NICLGNCGADF = 11;</code>
        * @param value The nICLGNCGADF to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class CEBBKEOIFGLOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NICLGNCGADF = 9;</code>
+       * <code>uint32 NICLGNCGADF = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearNICLGNCGADF() {
@@ -632,7 +632,7 @@ public final class CEBBKEOIFGLOuterClass {
 
       private int minFinishTime_ ;
       /**
-       * <code>uint32 min_finish_time = 11;</code>
+       * <code>uint32 min_finish_time = 3;</code>
        * @return The minFinishTime.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class CEBBKEOIFGLOuterClass {
         return minFinishTime_;
       }
       /**
-       * <code>uint32 min_finish_time = 11;</code>
+       * <code>uint32 min_finish_time = 3;</code>
        * @param value The minFinishTime to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class CEBBKEOIFGLOuterClass {
         return this;
       }
       /**
-       * <code>uint32 min_finish_time = 11;</code>
+       * <code>uint32 min_finish_time = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearMinFinishTime() {
@@ -728,8 +728,8 @@ public final class CEBBKEOIFGLOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021CEBBKEOIFGL.proto\"^\n\013CEBBKEOIFGL\022\017\n\007is" +
-      "_open\030\002 \001(\010\022\020\n\010level_id\030\004 \001(\r\022\023\n\013NICLGNC" +
-      "GADF\030\t \001(\r\022\027\n\017min_finish_time\030\013 \001(\rB2\n\031e" +
+      "_open\030\006 \001(\010\022\020\n\010level_id\030\002 \001(\r\022\023\n\013NICLGNC" +
+      "GADF\030\013 \001(\r\022\027\n\017min_finish_time\030\003 \001(\rB2\n\031e" +
       "mu.grasscutter.net.protoB\025CEBBKEOIFGLOut" +
       "erClassb\006proto3"
     };

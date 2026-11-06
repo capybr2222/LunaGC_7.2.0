@@ -19,40 +19,40 @@ public final class CADPEFKILCPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+     * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
      * @return A list containing the lEEFNCOJIGF.
      */
     java.util.List<java.lang.Integer> getLEEFNCOJIGFList();
     /**
-     * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+     * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
      * @return The count of lEEFNCOJIGF.
      */
     int getLEEFNCOJIGFCount();
     /**
-     * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+     * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
      * @param index The index of the element to return.
      * @return The lEEFNCOJIGF at the given index.
      */
     int getLEEFNCOJIGF(int index);
 
     /**
-     * <code>uint32 ACMCGGNFCPI = 5;</code>
+     * <code>uint32 ACMCGGNFCPI = 8;</code>
      * @return The aCMCGGNFCPI.
      */
     int getACMCGGNFCPI();
 
     /**
-     * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+     * <code>repeated uint32 JMHACMLMGCM = 7;</code>
      * @return A list containing the jMHACMLMGCM.
      */
     java.util.List<java.lang.Integer> getJMHACMLMGCMList();
     /**
-     * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+     * <code>repeated uint32 JMHACMLMGCM = 7;</code>
      * @return The count of jMHACMLMGCM.
      */
     int getJMHACMLMGCMCount();
     /**
-     * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+     * <code>repeated uint32 JMHACMLMGCM = 7;</code>
      * @param index The index of the element to return.
      * @return The jMHACMLMGCM at the given index.
      */
@@ -106,33 +106,7 @@ public final class CADPEFKILCPOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                lEEFNCOJIGF_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              lEEFNCOJIGF_.addInt(input.readUInt32());
-              break;
-            }
-            case 34: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                lEEFNCOJIGF_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                lEEFNCOJIGF_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 40: {
-
-              aCMCGGNFCPI_ = input.readUInt32();
-              break;
-            }
-            case 104: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 jMHACMLMGCM_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -140,7 +114,7 @@ public final class CADPEFKILCPOuterClass {
               jMHACMLMGCM_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -149,6 +123,32 @@ public final class CADPEFKILCPOuterClass {
               }
               while (input.getBytesUntilLimit() > 0) {
                 jMHACMLMGCM_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 64: {
+
+              aCMCGGNFCPI_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                lEEFNCOJIGF_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              lEEFNCOJIGF_.addInt(input.readUInt32());
+              break;
+            }
+            case 98: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                lEEFNCOJIGF_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                lEEFNCOJIGF_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -168,11 +168,11 @@ public final class CADPEFKILCPOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          lEEFNCOJIGF_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
           jMHACMLMGCM_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          lEEFNCOJIGF_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -191,10 +191,10 @@ public final class CADPEFKILCPOuterClass {
               emu.grasscutter.net.proto.CADPEFKILCPOuterClass.CADPEFKILCP.class, emu.grasscutter.net.proto.CADPEFKILCPOuterClass.CADPEFKILCP.Builder.class);
     }
 
-    public static final int LEEFNCOJIGF_FIELD_NUMBER = 4;
+    public static final int LEEFNCOJIGF_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList lEEFNCOJIGF_;
     /**
-     * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+     * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
      * @return A list containing the lEEFNCOJIGF.
      */
     @java.lang.Override
@@ -203,14 +203,14 @@ public final class CADPEFKILCPOuterClass {
       return lEEFNCOJIGF_;
     }
     /**
-     * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+     * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
      * @return The count of lEEFNCOJIGF.
      */
     public int getLEEFNCOJIGFCount() {
       return lEEFNCOJIGF_.size();
     }
     /**
-     * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+     * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
      * @param index The index of the element to return.
      * @return The lEEFNCOJIGF at the given index.
      */
@@ -219,10 +219,10 @@ public final class CADPEFKILCPOuterClass {
     }
     private int lEEFNCOJIGFMemoizedSerializedSize = -1;
 
-    public static final int ACMCGGNFCPI_FIELD_NUMBER = 5;
+    public static final int ACMCGGNFCPI_FIELD_NUMBER = 8;
     private int aCMCGGNFCPI_;
     /**
-     * <code>uint32 ACMCGGNFCPI = 5;</code>
+     * <code>uint32 ACMCGGNFCPI = 8;</code>
      * @return The aCMCGGNFCPI.
      */
     @java.lang.Override
@@ -230,10 +230,10 @@ public final class CADPEFKILCPOuterClass {
       return aCMCGGNFCPI_;
     }
 
-    public static final int JMHACMLMGCM_FIELD_NUMBER = 13;
+    public static final int JMHACMLMGCM_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList jMHACMLMGCM_;
     /**
-     * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+     * <code>repeated uint32 JMHACMLMGCM = 7;</code>
      * @return A list containing the jMHACMLMGCM.
      */
     @java.lang.Override
@@ -242,14 +242,14 @@ public final class CADPEFKILCPOuterClass {
       return jMHACMLMGCM_;
     }
     /**
-     * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+     * <code>repeated uint32 JMHACMLMGCM = 7;</code>
      * @return The count of jMHACMLMGCM.
      */
     public int getJMHACMLMGCMCount() {
       return jMHACMLMGCM_.size();
     }
     /**
-     * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+     * <code>repeated uint32 JMHACMLMGCM = 7;</code>
      * @param index The index of the element to return.
      * @return The jMHACMLMGCM at the given index.
      */
@@ -273,22 +273,22 @@ public final class CADPEFKILCPOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getLEEFNCOJIGFList().size() > 0) {
-        output.writeUInt32NoTag(34);
-        output.writeUInt32NoTag(lEEFNCOJIGFMemoizedSerializedSize);
-      }
-      for (int i = 0; i < lEEFNCOJIGF_.size(); i++) {
-        output.writeUInt32NoTag(lEEFNCOJIGF_.getInt(i));
-      }
-      if (aCMCGGNFCPI_ != 0) {
-        output.writeUInt32(5, aCMCGGNFCPI_);
-      }
       if (getJMHACMLMGCMList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(jMHACMLMGCMMemoizedSerializedSize);
       }
       for (int i = 0; i < jMHACMLMGCM_.size(); i++) {
         output.writeUInt32NoTag(jMHACMLMGCM_.getInt(i));
+      }
+      if (aCMCGGNFCPI_ != 0) {
+        output.writeUInt32(8, aCMCGGNFCPI_);
+      }
+      if (getLEEFNCOJIGFList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(lEEFNCOJIGFMemoizedSerializedSize);
+      }
+      for (int i = 0; i < lEEFNCOJIGF_.size(); i++) {
+        output.writeUInt32NoTag(lEEFNCOJIGF_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -299,24 +299,6 @@ public final class CADPEFKILCPOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < lEEFNCOJIGF_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(lEEFNCOJIGF_.getInt(i));
-        }
-        size += dataSize;
-        if (!getLEEFNCOJIGFList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        lEEFNCOJIGFMemoizedSerializedSize = dataSize;
-      }
-      if (aCMCGGNFCPI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, aCMCGGNFCPI_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < jMHACMLMGCM_.size(); i++) {
@@ -330,6 +312,24 @@ public final class CADPEFKILCPOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         jMHACMLMGCMMemoizedSerializedSize = dataSize;
+      }
+      if (aCMCGGNFCPI_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, aCMCGGNFCPI_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < lEEFNCOJIGF_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(lEEFNCOJIGF_.getInt(i));
+        }
+        size += dataSize;
+        if (!getLEEFNCOJIGFList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        lEEFNCOJIGFMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -659,7 +659,7 @@ public final class CADPEFKILCPOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+       * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
        * @return A list containing the lEEFNCOJIGF.
        */
       public java.util.List<java.lang.Integer>
@@ -668,14 +668,14 @@ public final class CADPEFKILCPOuterClass {
                  java.util.Collections.unmodifiableList(lEEFNCOJIGF_) : lEEFNCOJIGF_;
       }
       /**
-       * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+       * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
        * @return The count of lEEFNCOJIGF.
        */
       public int getLEEFNCOJIGFCount() {
         return lEEFNCOJIGF_.size();
       }
       /**
-       * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+       * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
        * @param index The index of the element to return.
        * @return The lEEFNCOJIGF at the given index.
        */
@@ -683,7 +683,7 @@ public final class CADPEFKILCPOuterClass {
         return lEEFNCOJIGF_.getInt(index);
       }
       /**
-       * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+       * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
        * @param index The index to set the value at.
        * @param value The lEEFNCOJIGF to set.
        * @return This builder for chaining.
@@ -696,7 +696,7 @@ public final class CADPEFKILCPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+       * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
        * @param value The lEEFNCOJIGF to add.
        * @return This builder for chaining.
        */
@@ -707,7 +707,7 @@ public final class CADPEFKILCPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+       * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
        * @param values The lEEFNCOJIGF to add.
        * @return This builder for chaining.
        */
@@ -720,7 +720,7 @@ public final class CADPEFKILCPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 LEEFNCOJIGF = 4;</code>
+       * <code>repeated uint32 LEEFNCOJIGF = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLEEFNCOJIGF() {
@@ -732,7 +732,7 @@ public final class CADPEFKILCPOuterClass {
 
       private int aCMCGGNFCPI_ ;
       /**
-       * <code>uint32 ACMCGGNFCPI = 5;</code>
+       * <code>uint32 ACMCGGNFCPI = 8;</code>
        * @return The aCMCGGNFCPI.
        */
       @java.lang.Override
@@ -740,7 +740,7 @@ public final class CADPEFKILCPOuterClass {
         return aCMCGGNFCPI_;
       }
       /**
-       * <code>uint32 ACMCGGNFCPI = 5;</code>
+       * <code>uint32 ACMCGGNFCPI = 8;</code>
        * @param value The aCMCGGNFCPI to set.
        * @return This builder for chaining.
        */
@@ -751,7 +751,7 @@ public final class CADPEFKILCPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 ACMCGGNFCPI = 5;</code>
+       * <code>uint32 ACMCGGNFCPI = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearACMCGGNFCPI() {
@@ -769,7 +769,7 @@ public final class CADPEFKILCPOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+       * <code>repeated uint32 JMHACMLMGCM = 7;</code>
        * @return A list containing the jMHACMLMGCM.
        */
       public java.util.List<java.lang.Integer>
@@ -778,14 +778,14 @@ public final class CADPEFKILCPOuterClass {
                  java.util.Collections.unmodifiableList(jMHACMLMGCM_) : jMHACMLMGCM_;
       }
       /**
-       * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+       * <code>repeated uint32 JMHACMLMGCM = 7;</code>
        * @return The count of jMHACMLMGCM.
        */
       public int getJMHACMLMGCMCount() {
         return jMHACMLMGCM_.size();
       }
       /**
-       * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+       * <code>repeated uint32 JMHACMLMGCM = 7;</code>
        * @param index The index of the element to return.
        * @return The jMHACMLMGCM at the given index.
        */
@@ -793,7 +793,7 @@ public final class CADPEFKILCPOuterClass {
         return jMHACMLMGCM_.getInt(index);
       }
       /**
-       * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+       * <code>repeated uint32 JMHACMLMGCM = 7;</code>
        * @param index The index to set the value at.
        * @param value The jMHACMLMGCM to set.
        * @return This builder for chaining.
@@ -806,7 +806,7 @@ public final class CADPEFKILCPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+       * <code>repeated uint32 JMHACMLMGCM = 7;</code>
        * @param value The jMHACMLMGCM to add.
        * @return This builder for chaining.
        */
@@ -817,7 +817,7 @@ public final class CADPEFKILCPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+       * <code>repeated uint32 JMHACMLMGCM = 7;</code>
        * @param values The jMHACMLMGCM to add.
        * @return This builder for chaining.
        */
@@ -830,7 +830,7 @@ public final class CADPEFKILCPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 JMHACMLMGCM = 13;</code>
+       * <code>repeated uint32 JMHACMLMGCM = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearJMHACMLMGCM() {
@@ -907,8 +907,8 @@ public final class CADPEFKILCPOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021CADPEFKILCP.proto\"L\n\013CADPEFKILCP\022\023\n\013LE" +
-      "EFNCOJIGF\030\004 \003(\r\022\023\n\013ACMCGGNFCPI\030\005 \001(\r\022\023\n\013" +
-      "JMHACMLMGCM\030\r \003(\rB2\n\031emu.grasscutter.net" +
+      "EFNCOJIGF\030\014 \003(\r\022\023\n\013ACMCGGNFCPI\030\010 \001(\r\022\023\n\013" +
+      "JMHACMLMGCM\030\007 \003(\rB2\n\031emu.grasscutter.net" +
       ".protoB\025CADPEFKILCPOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

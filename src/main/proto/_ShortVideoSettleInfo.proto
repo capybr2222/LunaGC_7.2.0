@@ -6,7 +6,7 @@ option java_outer_classname = "_ShortVideoSettleInfoOuterClass";
 import "GalleryStopReason.proto";
 
 message _ShortVideoSettleInfo {
-	uint32 use_time = 6;
+	uint32 use_time = 2;
 	GalleryStopReason reason = 15;
-	uint32 level_id = 4;
+	uint32 level_id = 6;
 }

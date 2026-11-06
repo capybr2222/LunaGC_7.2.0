@@ -25,63 +25,63 @@ public final class LFKPMBBOGDPOuterClass {
     boolean getIsFinish();
 
     /**
-     * <code>uint32 open_time = 7;</code>
+     * <code>uint32 open_time = 8;</code>
      * @return The openTime.
      */
     int getOpenTime();
 
     /**
-     * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+     * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
      * @return A list containing the gHGKAOABLFK.
      */
     java.util.List<java.lang.Integer> getGHGKAOABLFKList();
     /**
-     * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+     * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
      * @return The count of gHGKAOABLFK.
      */
     int getGHGKAOABLFKCount();
     /**
-     * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+     * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
      * @param index The index of the element to return.
      * @return The gHGKAOABLFK at the given index.
      */
     int getGHGKAOABLFK(int index);
 
     /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>.Vector region_center_pos = 10;</code>
+     * <code>.Vector region_center_pos = 5;</code>
      * @return Whether the regionCenterPos field is set.
      */
     boolean hasRegionCenterPos();
     /**
-     * <code>.Vector region_center_pos = 10;</code>
+     * <code>.Vector region_center_pos = 5;</code>
      * @return The regionCenterPos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRegionCenterPos();
     /**
-     * <code>.Vector region_center_pos = 10;</code>
+     * <code>.Vector region_center_pos = 5;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRegionCenterPosOrBuilder();
 
     /**
-     * <code>uint32 scene_id = 15;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>float region_radius = 1;</code>
+     * <code>float region_radius = 6;</code>
      * @return The regionRadius.
      */
     float getRegionRadius();
@@ -133,14 +133,14 @@ public final class LFKPMBBOGDPOuterClass {
             case 0:
               done = true;
               break;
-            case 13: {
+            case 8: {
 
-              regionRadius_ = input.readFloat();
+              levelId_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              levelId_ = input.readUInt32();
+              isOpen_ = input.readBool();
               break;
             }
             case 24: {
@@ -148,33 +148,7 @@ public final class LFKPMBBOGDPOuterClass {
               isFinish_ = input.readBool();
               break;
             }
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                gHGKAOABLFK_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              gHGKAOABLFK_.addInt(input.readUInt32());
-              break;
-            }
-            case 34: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                gHGKAOABLFK_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                gHGKAOABLFK_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 56: {
-
-              openTime_ = input.readUInt32();
-              break;
-            }
-            case 82: {
+            case 42: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (regionCenterPos_ != null) {
                 subBuilder = regionCenterPos_.toBuilder();
@@ -187,14 +161,40 @@ public final class LFKPMBBOGDPOuterClass {
 
               break;
             }
-            case 112: {
+            case 53: {
 
-              isOpen_ = input.readBool();
+              regionRadius_ = input.readFloat();
               break;
             }
-            case 120: {
+            case 56: {
 
               sceneId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              openTime_ = input.readUInt32();
+              break;
+            }
+            case 160000: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                gHGKAOABLFK_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              gHGKAOABLFK_.addInt(input.readUInt32());
+              break;
+            }
+            case 160002: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                gHGKAOABLFK_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                gHGKAOABLFK_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -243,10 +243,10 @@ public final class LFKPMBBOGDPOuterClass {
       return isFinish_;
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 7;
+    public static final int OPEN_TIME_FIELD_NUMBER = 8;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 7;</code>
+     * <code>uint32 open_time = 8;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -254,10 +254,10 @@ public final class LFKPMBBOGDPOuterClass {
       return openTime_;
     }
 
-    public static final int GHGKAOABLFK_FIELD_NUMBER = 4;
+    public static final int GHGKAOABLFK_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList gHGKAOABLFK_;
     /**
-     * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+     * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
      * @return A list containing the gHGKAOABLFK.
      */
     @java.lang.Override
@@ -266,14 +266,14 @@ public final class LFKPMBBOGDPOuterClass {
       return gHGKAOABLFK_;
     }
     /**
-     * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+     * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
      * @return The count of gHGKAOABLFK.
      */
     public int getGHGKAOABLFKCount() {
       return gHGKAOABLFK_.size();
     }
     /**
-     * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+     * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
      * @param index The index of the element to return.
      * @return The gHGKAOABLFK at the given index.
      */
@@ -282,10 +282,10 @@ public final class LFKPMBBOGDPOuterClass {
     }
     private int gHGKAOABLFKMemoizedSerializedSize = -1;
 
-    public static final int IS_OPEN_FIELD_NUMBER = 14;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -293,10 +293,10 @@ public final class LFKPMBBOGDPOuterClass {
       return isOpen_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 2;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -304,10 +304,10 @@ public final class LFKPMBBOGDPOuterClass {
       return levelId_;
     }
 
-    public static final int REGION_CENTER_POS_FIELD_NUMBER = 10;
+    public static final int REGION_CENTER_POS_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector regionCenterPos_;
     /**
-     * <code>.Vector region_center_pos = 10;</code>
+     * <code>.Vector region_center_pos = 5;</code>
      * @return Whether the regionCenterPos field is set.
      */
     @java.lang.Override
@@ -315,7 +315,7 @@ public final class LFKPMBBOGDPOuterClass {
       return regionCenterPos_ != null;
     }
     /**
-     * <code>.Vector region_center_pos = 10;</code>
+     * <code>.Vector region_center_pos = 5;</code>
      * @return The regionCenterPos.
      */
     @java.lang.Override
@@ -323,17 +323,17 @@ public final class LFKPMBBOGDPOuterClass {
       return regionCenterPos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : regionCenterPos_;
     }
     /**
-     * <code>.Vector region_center_pos = 10;</code>
+     * <code>.Vector region_center_pos = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRegionCenterPosOrBuilder() {
       return getRegionCenterPos();
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 15;
+    public static final int SCENE_ID_FIELD_NUMBER = 7;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 15;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -341,10 +341,10 @@ public final class LFKPMBBOGDPOuterClass {
       return sceneId_;
     }
 
-    public static final int REGION_RADIUS_FIELD_NUMBER = 1;
+    public static final int REGION_RADIUS_FIELD_NUMBER = 6;
     private float regionRadius_;
     /**
-     * <code>float region_radius = 1;</code>
+     * <code>float region_radius = 6;</code>
      * @return The regionRadius.
      */
     @java.lang.Override
@@ -367,33 +367,33 @@ public final class LFKPMBBOGDPOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (regionRadius_ != 0F) {
-        output.writeFloat(1, regionRadius_);
-      }
       if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
+        output.writeUInt32(1, levelId_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(2, isOpen_);
       }
       if (isFinish_ != false) {
         output.writeBool(3, isFinish_);
       }
+      if (regionCenterPos_ != null) {
+        output.writeMessage(5, getRegionCenterPos());
+      }
+      if (regionRadius_ != 0F) {
+        output.writeFloat(6, regionRadius_);
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(7, sceneId_);
+      }
+      if (openTime_ != 0) {
+        output.writeUInt32(8, openTime_);
+      }
       if (getGHGKAOABLFKList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(gHGKAOABLFKMemoizedSerializedSize);
       }
       for (int i = 0; i < gHGKAOABLFK_.size(); i++) {
         output.writeUInt32NoTag(gHGKAOABLFK_.getInt(i));
-      }
-      if (openTime_ != 0) {
-        output.writeUInt32(7, openTime_);
-      }
-      if (regionCenterPos_ != null) {
-        output.writeMessage(10, getRegionCenterPos());
-      }
-      if (isOpen_ != false) {
-        output.writeBool(14, isOpen_);
-      }
-      if (sceneId_ != 0) {
-        output.writeUInt32(15, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -404,17 +404,33 @@ public final class LFKPMBBOGDPOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (regionRadius_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(1, regionRadius_);
-      }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
+          .computeUInt32Size(1, levelId_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isOpen_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(3, isFinish_);
+      }
+      if (regionCenterPos_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, getRegionCenterPos());
+      }
+      if (regionRadius_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(6, regionRadius_);
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, sceneId_);
+      }
+      if (openTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, openTime_);
       }
       {
         int dataSize = 0;
@@ -424,27 +440,11 @@ public final class LFKPMBBOGDPOuterClass {
         }
         size += dataSize;
         if (!getGHGKAOABLFKList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
         gHGKAOABLFKMemoizedSerializedSize = dataSize;
-      }
-      if (openTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, openTime_);
-      }
-      if (regionCenterPos_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getRegionCenterPos());
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isOpen_);
-      }
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -853,7 +853,7 @@ public final class LFKPMBBOGDPOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 7;</code>
+       * <code>uint32 open_time = 8;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -861,7 +861,7 @@ public final class LFKPMBBOGDPOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 7;</code>
+       * <code>uint32 open_time = 8;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -872,7 +872,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 open_time = 7;</code>
+       * <code>uint32 open_time = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
@@ -890,7 +890,7 @@ public final class LFKPMBBOGDPOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+       * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
        * @return A list containing the gHGKAOABLFK.
        */
       public java.util.List<java.lang.Integer>
@@ -899,14 +899,14 @@ public final class LFKPMBBOGDPOuterClass {
                  java.util.Collections.unmodifiableList(gHGKAOABLFK_) : gHGKAOABLFK_;
       }
       /**
-       * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+       * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
        * @return The count of gHGKAOABLFK.
        */
       public int getGHGKAOABLFKCount() {
         return gHGKAOABLFK_.size();
       }
       /**
-       * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+       * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
        * @param index The index of the element to return.
        * @return The gHGKAOABLFK at the given index.
        */
@@ -914,7 +914,7 @@ public final class LFKPMBBOGDPOuterClass {
         return gHGKAOABLFK_.getInt(index);
       }
       /**
-       * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+       * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
        * @param index The index to set the value at.
        * @param value The gHGKAOABLFK to set.
        * @return This builder for chaining.
@@ -927,7 +927,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+       * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
        * @param value The gHGKAOABLFK to add.
        * @return This builder for chaining.
        */
@@ -938,7 +938,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+       * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
        * @param values The gHGKAOABLFK to add.
        * @return This builder for chaining.
        */
@@ -951,7 +951,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 GHGKAOABLFK = 4;</code>
+       * <code>repeated uint32 GHGKAOABLFK = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearGHGKAOABLFK() {
@@ -963,7 +963,7 @@ public final class LFKPMBBOGDPOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -971,7 +971,7 @@ public final class LFKPMBBOGDPOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -982,7 +982,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -994,7 +994,7 @@ public final class LFKPMBBOGDPOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -1002,7 +1002,7 @@ public final class LFKPMBBOGDPOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -1013,7 +1013,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 2;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -1027,14 +1027,14 @@ public final class LFKPMBBOGDPOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> regionCenterPosBuilder_;
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        * @return Whether the regionCenterPos field is set.
        */
       public boolean hasRegionCenterPos() {
         return regionCenterPosBuilder_ != null || regionCenterPos_ != null;
       }
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        * @return The regionCenterPos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRegionCenterPos() {
@@ -1045,7 +1045,7 @@ public final class LFKPMBBOGDPOuterClass {
         }
       }
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        */
       public Builder setRegionCenterPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (regionCenterPosBuilder_ == null) {
@@ -1061,7 +1061,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        */
       public Builder setRegionCenterPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -1075,7 +1075,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        */
       public Builder mergeRegionCenterPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (regionCenterPosBuilder_ == null) {
@@ -1093,7 +1093,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        */
       public Builder clearRegionCenterPos() {
         if (regionCenterPosBuilder_ == null) {
@@ -1107,7 +1107,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRegionCenterPosBuilder() {
         
@@ -1115,7 +1115,7 @@ public final class LFKPMBBOGDPOuterClass {
         return getRegionCenterPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRegionCenterPosOrBuilder() {
         if (regionCenterPosBuilder_ != null) {
@@ -1126,7 +1126,7 @@ public final class LFKPMBBOGDPOuterClass {
         }
       }
       /**
-       * <code>.Vector region_center_pos = 10;</code>
+       * <code>.Vector region_center_pos = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1144,7 +1144,7 @@ public final class LFKPMBBOGDPOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -1152,7 +1152,7 @@ public final class LFKPMBBOGDPOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -1163,7 +1163,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 15;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -1175,7 +1175,7 @@ public final class LFKPMBBOGDPOuterClass {
 
       private float regionRadius_ ;
       /**
-       * <code>float region_radius = 1;</code>
+       * <code>float region_radius = 6;</code>
        * @return The regionRadius.
        */
       @java.lang.Override
@@ -1183,7 +1183,7 @@ public final class LFKPMBBOGDPOuterClass {
         return regionRadius_;
       }
       /**
-       * <code>float region_radius = 1;</code>
+       * <code>float region_radius = 6;</code>
        * @param value The regionRadius to set.
        * @return This builder for chaining.
        */
@@ -1194,7 +1194,7 @@ public final class LFKPMBBOGDPOuterClass {
         return this;
       }
       /**
-       * <code>float region_radius = 1;</code>
+       * <code>float region_radius = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRegionRadius() {
@@ -1270,13 +1270,14 @@ public final class LFKPMBBOGDPOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021LFKPMBBOGDP.proto\032\014Vector.proto\"\270\001\n\013LF" +
+      "\n\021LFKPMBBOGDP.proto\032\014Vector.proto\"\272\001\n\013LF" +
       "KPMBBOGDP\022\021\n\tis_finish\030\003 \001(\010\022\021\n\topen_tim" +
-      "e\030\007 \001(\r\022\023\n\013GHGKAOABLFK\030\004 \003(\r\022\017\n\007is_open\030" +
-      "\016 \001(\010\022\020\n\010level_id\030\002 \001(\r\022\"\n\021region_center" +
-      "_pos\030\n \001(\0132\007.Vector\022\020\n\010scene_id\030\017 \001(\r\022\025\n" +
-      "\rregion_radius\030\001 \001(\002B2\n\031emu.grasscutter." +
-      "net.protoB\025LFKPMBBOGDPOuterClassb\006proto3"
+      "e\030\010 \001(\r\022\025\n\013GHGKAOABLFK\030\240\234\001 \003(\r\022\017\n\007is_ope" +
+      "n\030\002 \001(\010\022\020\n\010level_id\030\001 \001(\r\022\"\n\021region_cent" +
+      "er_pos\030\005 \001(\0132\007.Vector\022\020\n\010scene_id\030\007 \001(\r\022" +
+      "\025\n\rregion_radius\030\006 \001(\002B2\n\031emu.grasscutte" +
+      "r.net.protoB\025LFKPMBBOGDPOuterClassb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

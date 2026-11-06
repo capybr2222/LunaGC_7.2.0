@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "BCFOEMEOBNFOuterClass";
 
 message BCFOEMEOBNF {
-	repeated uint32 EJEKEJMIJKM = 13;
+	repeated uint32 EJEKEJMIJKM = 6;
 }

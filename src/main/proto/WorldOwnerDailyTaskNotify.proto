@@ -6,7 +6,7 @@ option java_outer_classname = "WorldOwnerDailyTaskNotifyOuterClass";
 import "DailyTaskInfo.proto";
 
 message WorldOwnerDailyTaskNotify {
-	repeated DailyTaskInfo task_list = 3;
-	uint32 filter_city_id = 15;
-	uint32 finished_daily_task_num = 5;
+	repeated DailyTaskInfo task_list = 6;
+	uint32 filter_city_id = 3;
+	uint32 finished_daily_task_num = 8;
 }

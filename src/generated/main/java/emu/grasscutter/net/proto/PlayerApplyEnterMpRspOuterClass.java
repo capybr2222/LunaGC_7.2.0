@@ -19,19 +19,19 @@ public final class PlayerApplyEnterMpRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 target_uid = 2;</code>
+     * <code>uint32 target_uid = 11;</code>
      * @return The targetUid.
      */
     int getTargetUid();
 
     /**
-     * <code>uint32 param = 10;</code>
+     * <code>uint32 param = 7;</code>
      * @return The param.
      */
     int getParam();
@@ -81,19 +81,19 @@ public final class PlayerApplyEnterMpRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              targetUid_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 56: {
 
               param_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 80: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 88: {
+
+              targetUid_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class PlayerApplyEnterMpRspOuterClass {
               emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp.class, emu.grasscutter.net.proto.PlayerApplyEnterMpRspOuterClass.PlayerApplyEnterMpRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 14;
+    public static final int RETCODE_FIELD_NUMBER = 10;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class PlayerApplyEnterMpRspOuterClass {
       return retcode_;
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 2;
+    public static final int TARGET_UID_FIELD_NUMBER = 11;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 2;</code>
+     * <code>uint32 target_uid = 11;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class PlayerApplyEnterMpRspOuterClass {
       return targetUid_;
     }
 
-    public static final int PARAM_FIELD_NUMBER = 10;
+    public static final int PARAM_FIELD_NUMBER = 7;
     private int param_;
     /**
-     * <code>uint32 param = 10;</code>
+     * <code>uint32 param = 7;</code>
      * @return The param.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class PlayerApplyEnterMpRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetUid_ != 0) {
-        output.writeUInt32(2, targetUid_);
-      }
       if (param_ != 0) {
-        output.writeUInt32(10, param_);
+        output.writeUInt32(7, param_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(14, retcode_);
+        output.writeInt32(10, retcode_);
+      }
+      if (targetUid_ != 0) {
+        output.writeUInt32(11, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class PlayerApplyEnterMpRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetUid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, targetUid_);
-      }
       if (param_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, param_);
+          .computeUInt32Size(7, param_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, retcode_);
+          .computeInt32Size(10, retcode_);
+      }
+      if (targetUid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -499,7 +499,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -530,7 +530,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 11;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -538,7 +538,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 11;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -549,7 +549,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 2;</code>
+       * <code>uint32 target_uid = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -561,7 +561,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
 
       private int param_ ;
       /**
-       * <code>uint32 param = 10;</code>
+       * <code>uint32 param = 7;</code>
        * @return The param.
        */
       @java.lang.Override
@@ -569,7 +569,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
         return param_;
       }
       /**
-       * <code>uint32 param = 10;</code>
+       * <code>uint32 param = 7;</code>
        * @param value The param to set.
        * @return This builder for chaining.
        */
@@ -580,7 +580,7 @@ public final class PlayerApplyEnterMpRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 param = 10;</code>
+       * <code>uint32 param = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearParam() {
@@ -657,8 +657,8 @@ public final class PlayerApplyEnterMpRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerApplyEnterMpRsp.proto\"K\n\025PlayerA" +
-      "pplyEnterMpRsp\022\017\n\007retcode\030\016 \001(\005\022\022\n\ntarge" +
-      "t_uid\030\002 \001(\r\022\r\n\005param\030\n \001(\rB<\n\031emu.grassc" +
+      "pplyEnterMpRsp\022\017\n\007retcode\030\n \001(\005\022\022\n\ntarge" +
+      "t_uid\030\013 \001(\r\022\r\n\005param\030\007 \001(\rB<\n\031emu.grassc" +
       "utter.net.protoB\037PlayerApplyEnterMpRspOu" +
       "terClassb\006proto3"
     };

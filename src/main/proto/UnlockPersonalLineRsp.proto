@@ -6,8 +6,8 @@ option java_outer_classname = "UnlockPersonalLineRspOuterClass";
 message UnlockPersonalLineRsp {
 	oneof param {
 		uint32 level = 9;
-		uint32 chapter_id = 11;
+		uint32 chapter_id = 1;
 	}
-	uint32 personal_line_id = 15;
-	int32 retcode = 3;
+	uint32 personal_line_id = 8;
+	int32 retcode = 5;
 }

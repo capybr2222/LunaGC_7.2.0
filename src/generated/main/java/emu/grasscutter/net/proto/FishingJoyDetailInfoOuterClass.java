@@ -19,19 +19,19 @@ public final class FishingJoyDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 jejkilgbcol = 2;</code>
+     * <code>uint32 jejkilgbcol = 7;</code>
      * @return The jejkilgbcol.
      */
     int getJejkilgbcol();
 
     /**
-     * <code>bool FPKBKGBKGEG = 15;</code>
+     * <code>bool FPKBKGBKGEG = 50000;</code>
      * @return The fPKBKGBKGEG.
      */
     boolean getFPKBKGBKGEG();
 
     /**
-     * <code>bool LBCGNOOJDIC = 12;</code>
+     * <code>bool LBCGNOOJDIC = 50001;</code>
      * @return The lBCGNOOJDIC.
      */
     boolean getLBCGNOOJDIC();
@@ -81,19 +81,19 @@ public final class FishingJoyDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 56: {
 
               jejkilgbcol_ = input.readUInt32();
               break;
             }
-            case 96: {
-
-              lBCGNOOJDIC_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 400000: {
 
               fPKBKGBKGEG_ = input.readBool();
+              break;
+            }
+            case 400008: {
+
+              lBCGNOOJDIC_ = input.readBool();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class FishingJoyDetailInfoOuterClass {
               emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo.class, emu.grasscutter.net.proto.FishingJoyDetailInfoOuterClass.FishingJoyDetailInfo.Builder.class);
     }
 
-    public static final int JEJKILGBCOL_FIELD_NUMBER = 2;
+    public static final int JEJKILGBCOL_FIELD_NUMBER = 7;
     private int jejkilgbcol_;
     /**
-     * <code>uint32 jejkilgbcol = 2;</code>
+     * <code>uint32 jejkilgbcol = 7;</code>
      * @return The jejkilgbcol.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class FishingJoyDetailInfoOuterClass {
       return jejkilgbcol_;
     }
 
-    public static final int FPKBKGBKGEG_FIELD_NUMBER = 15;
+    public static final int FPKBKGBKGEG_FIELD_NUMBER = 50000;
     private boolean fPKBKGBKGEG_;
     /**
-     * <code>bool FPKBKGBKGEG = 15;</code>
+     * <code>bool FPKBKGBKGEG = 50000;</code>
      * @return The fPKBKGBKGEG.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class FishingJoyDetailInfoOuterClass {
       return fPKBKGBKGEG_;
     }
 
-    public static final int LBCGNOOJDIC_FIELD_NUMBER = 12;
+    public static final int LBCGNOOJDIC_FIELD_NUMBER = 50001;
     private boolean lBCGNOOJDIC_;
     /**
-     * <code>bool LBCGNOOJDIC = 12;</code>
+     * <code>bool LBCGNOOJDIC = 50001;</code>
      * @return The lBCGNOOJDIC.
      */
     @java.lang.Override
@@ -176,13 +176,13 @@ public final class FishingJoyDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (jejkilgbcol_ != 0) {
-        output.writeUInt32(2, jejkilgbcol_);
-      }
-      if (lBCGNOOJDIC_ != false) {
-        output.writeBool(12, lBCGNOOJDIC_);
+        output.writeUInt32(7, jejkilgbcol_);
       }
       if (fPKBKGBKGEG_ != false) {
-        output.writeBool(15, fPKBKGBKGEG_);
+        output.writeBool(50000, fPKBKGBKGEG_);
+      }
+      if (lBCGNOOJDIC_ != false) {
+        output.writeBool(50001, lBCGNOOJDIC_);
       }
       unknownFields.writeTo(output);
     }
@@ -195,15 +195,15 @@ public final class FishingJoyDetailInfoOuterClass {
       size = 0;
       if (jejkilgbcol_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, jejkilgbcol_);
-      }
-      if (lBCGNOOJDIC_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, lBCGNOOJDIC_);
+          .computeUInt32Size(7, jejkilgbcol_);
       }
       if (fPKBKGBKGEG_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, fPKBKGBKGEG_);
+          .computeBoolSize(50000, fPKBKGBKGEG_);
+      }
+      if (lBCGNOOJDIC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(50001, lBCGNOOJDIC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -501,7 +501,7 @@ public final class FishingJoyDetailInfoOuterClass {
 
       private int jejkilgbcol_ ;
       /**
-       * <code>uint32 jejkilgbcol = 2;</code>
+       * <code>uint32 jejkilgbcol = 7;</code>
        * @return The jejkilgbcol.
        */
       @java.lang.Override
@@ -509,7 +509,7 @@ public final class FishingJoyDetailInfoOuterClass {
         return jejkilgbcol_;
       }
       /**
-       * <code>uint32 jejkilgbcol = 2;</code>
+       * <code>uint32 jejkilgbcol = 7;</code>
        * @param value The jejkilgbcol to set.
        * @return This builder for chaining.
        */
@@ -520,7 +520,7 @@ public final class FishingJoyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 jejkilgbcol = 2;</code>
+       * <code>uint32 jejkilgbcol = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearJejkilgbcol() {
@@ -532,7 +532,7 @@ public final class FishingJoyDetailInfoOuterClass {
 
       private boolean fPKBKGBKGEG_ ;
       /**
-       * <code>bool FPKBKGBKGEG = 15;</code>
+       * <code>bool FPKBKGBKGEG = 50000;</code>
        * @return The fPKBKGBKGEG.
        */
       @java.lang.Override
@@ -540,7 +540,7 @@ public final class FishingJoyDetailInfoOuterClass {
         return fPKBKGBKGEG_;
       }
       /**
-       * <code>bool FPKBKGBKGEG = 15;</code>
+       * <code>bool FPKBKGBKGEG = 50000;</code>
        * @param value The fPKBKGBKGEG to set.
        * @return This builder for chaining.
        */
@@ -551,7 +551,7 @@ public final class FishingJoyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool FPKBKGBKGEG = 15;</code>
+       * <code>bool FPKBKGBKGEG = 50000;</code>
        * @return This builder for chaining.
        */
       public Builder clearFPKBKGBKGEG() {
@@ -563,7 +563,7 @@ public final class FishingJoyDetailInfoOuterClass {
 
       private boolean lBCGNOOJDIC_ ;
       /**
-       * <code>bool LBCGNOOJDIC = 12;</code>
+       * <code>bool LBCGNOOJDIC = 50001;</code>
        * @return The lBCGNOOJDIC.
        */
       @java.lang.Override
@@ -571,7 +571,7 @@ public final class FishingJoyDetailInfoOuterClass {
         return lBCGNOOJDIC_;
       }
       /**
-       * <code>bool LBCGNOOJDIC = 12;</code>
+       * <code>bool LBCGNOOJDIC = 50001;</code>
        * @param value The lBCGNOOJDIC to set.
        * @return This builder for chaining.
        */
@@ -582,7 +582,7 @@ public final class FishingJoyDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool LBCGNOOJDIC = 12;</code>
+       * <code>bool LBCGNOOJDIC = 50001;</code>
        * @return This builder for chaining.
        */
       public Builder clearLBCGNOOJDIC() {
@@ -658,11 +658,11 @@ public final class FishingJoyDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032FishingJoyDetailInfo.proto\"U\n\024FishingJ" +
-      "oyDetailInfo\022\023\n\013jejkilgbcol\030\002 \001(\r\022\023\n\013FPK" +
-      "BKGBKGEG\030\017 \001(\010\022\023\n\013LBCGNOOJDIC\030\014 \001(\010B;\n\031e" +
-      "mu.grasscutter.net.protoB\036FishingJoyDeta" +
-      "ilInfoOuterClassb\006proto3"
+      "\n\032FishingJoyDetailInfo.proto\"Y\n\024FishingJ" +
+      "oyDetailInfo\022\023\n\013jejkilgbcol\030\007 \001(\r\022\025\n\013FPK" +
+      "BKGBKGEG\030\320\206\003 \001(\010\022\025\n\013LBCGNOOJDIC\030\321\206\003 \001(\010B" +
+      ";\n\031emu.grasscutter.net.protoB\036FishingJoy" +
+      "DetailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

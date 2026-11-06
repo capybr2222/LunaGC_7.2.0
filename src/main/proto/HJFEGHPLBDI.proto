@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "HJFEGHPLBDIOuterClass";
 
 message HJFEGHPLBDI {
-	bool LFOMNLDGLGM = 3;
-	bool EMGGNLEEBML = 9;
+	bool LFOMNLDGLGM = 6;
+	bool EMGGNLEEBML = 13;
 }

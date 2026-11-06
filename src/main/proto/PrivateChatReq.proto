@@ -8,9 +8,9 @@ message PrivateChatReq {
 		bytes FEPAFANMNLK = 7;
 	}
 	oneof content {
-		_BeyondCostumeShareCode beyond_costume_share_code = 14;
-		uint32 icon = 11;
-		string text = 4;
+		_BeyondCostumeShareCode beyond_costume_share_code = 13;
+		uint32 icon = 7;
+		string text = 5;
 	}
-	uint32 target_uid = 13;
+	uint32 target_uid = 6;
 }

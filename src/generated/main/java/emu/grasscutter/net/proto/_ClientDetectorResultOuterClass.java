@@ -19,24 +19,24 @@ public final class _ClientDetectorResultOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+     * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
      * @return A list containing the dCGOIJMIJMG.
      */
     java.util.List<java.lang.Integer> getDCGOIJMIJMGList();
     /**
-     * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+     * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
      * @return The count of dCGOIJMIJMG.
      */
     int getDCGOIJMIJMGCount();
     /**
-     * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+     * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
      * @param index The index of the element to return.
      * @return The dCGOIJMIJMG at the given index.
      */
     int getDCGOIJMIJMG(int index);
 
     /**
-     * <code>bool GJFFLCIHPIN = 15;</code>
+     * <code>bool GJFFLCIHPIN = 6;</code>
      * @return The gJFFLCIHPIN.
      */
     boolean getGJFFLCIHPIN();
@@ -88,7 +88,12 @@ public final class _ClientDetectorResultOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 48: {
+
+              gJFFLCIHPIN_ = input.readBool();
+              break;
+            }
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 dCGOIJMIJMG_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +101,7 @@ public final class _ClientDetectorResultOuterClass {
               dCGOIJMIJMG_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -107,11 +112,6 @@ public final class _ClientDetectorResultOuterClass {
                 dCGOIJMIJMG_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 120: {
-
-              gJFFLCIHPIN_ = input.readBool();
               break;
             }
             default: {
@@ -149,10 +149,10 @@ public final class _ClientDetectorResultOuterClass {
               emu.grasscutter.net.proto._ClientDetectorResultOuterClass._ClientDetectorResult.class, emu.grasscutter.net.proto._ClientDetectorResultOuterClass._ClientDetectorResult.Builder.class);
     }
 
-    public static final int DCGOIJMIJMG_FIELD_NUMBER = 3;
+    public static final int DCGOIJMIJMG_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList dCGOIJMIJMG_;
     /**
-     * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+     * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
      * @return A list containing the dCGOIJMIJMG.
      */
     @java.lang.Override
@@ -161,14 +161,14 @@ public final class _ClientDetectorResultOuterClass {
       return dCGOIJMIJMG_;
     }
     /**
-     * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+     * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
      * @return The count of dCGOIJMIJMG.
      */
     public int getDCGOIJMIJMGCount() {
       return dCGOIJMIJMG_.size();
     }
     /**
-     * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+     * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
      * @param index The index of the element to return.
      * @return The dCGOIJMIJMG at the given index.
      */
@@ -177,10 +177,10 @@ public final class _ClientDetectorResultOuterClass {
     }
     private int dCGOIJMIJMGMemoizedSerializedSize = -1;
 
-    public static final int GJFFLCIHPIN_FIELD_NUMBER = 15;
+    public static final int GJFFLCIHPIN_FIELD_NUMBER = 6;
     private boolean gJFFLCIHPIN_;
     /**
-     * <code>bool GJFFLCIHPIN = 15;</code>
+     * <code>bool GJFFLCIHPIN = 6;</code>
      * @return The gJFFLCIHPIN.
      */
     @java.lang.Override
@@ -203,15 +203,15 @@ public final class _ClientDetectorResultOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (gJFFLCIHPIN_ != false) {
+        output.writeBool(6, gJFFLCIHPIN_);
+      }
       if (getDCGOIJMIJMGList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(dCGOIJMIJMGMemoizedSerializedSize);
       }
       for (int i = 0; i < dCGOIJMIJMG_.size(); i++) {
         output.writeUInt32NoTag(dCGOIJMIJMG_.getInt(i));
-      }
-      if (gJFFLCIHPIN_ != false) {
-        output.writeBool(15, gJFFLCIHPIN_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,6 +222,10 @@ public final class _ClientDetectorResultOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (gJFFLCIHPIN_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, gJFFLCIHPIN_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < dCGOIJMIJMG_.size(); i++) {
@@ -230,15 +234,11 @@ public final class _ClientDetectorResultOuterClass {
         }
         size += dataSize;
         if (!getDCGOIJMIJMGList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
         dCGOIJMIJMGMemoizedSerializedSize = dataSize;
-      }
-      if (gJFFLCIHPIN_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, gJFFLCIHPIN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -546,7 +546,7 @@ public final class _ClientDetectorResultOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+       * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
        * @return A list containing the dCGOIJMIJMG.
        */
       public java.util.List<java.lang.Integer>
@@ -555,14 +555,14 @@ public final class _ClientDetectorResultOuterClass {
                  java.util.Collections.unmodifiableList(dCGOIJMIJMG_) : dCGOIJMIJMG_;
       }
       /**
-       * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+       * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
        * @return The count of dCGOIJMIJMG.
        */
       public int getDCGOIJMIJMGCount() {
         return dCGOIJMIJMG_.size();
       }
       /**
-       * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+       * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
        * @param index The index of the element to return.
        * @return The dCGOIJMIJMG at the given index.
        */
@@ -570,7 +570,7 @@ public final class _ClientDetectorResultOuterClass {
         return dCGOIJMIJMG_.getInt(index);
       }
       /**
-       * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+       * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
        * @param index The index to set the value at.
        * @param value The dCGOIJMIJMG to set.
        * @return This builder for chaining.
@@ -583,7 +583,7 @@ public final class _ClientDetectorResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+       * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
        * @param value The dCGOIJMIJMG to add.
        * @return This builder for chaining.
        */
@@ -594,7 +594,7 @@ public final class _ClientDetectorResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+       * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
        * @param values The dCGOIJMIJMG to add.
        * @return This builder for chaining.
        */
@@ -607,7 +607,7 @@ public final class _ClientDetectorResultOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DCGOIJMIJMG = 3;</code>
+       * <code>repeated uint32 DCGOIJMIJMG = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearDCGOIJMIJMG() {
@@ -619,7 +619,7 @@ public final class _ClientDetectorResultOuterClass {
 
       private boolean gJFFLCIHPIN_ ;
       /**
-       * <code>bool GJFFLCIHPIN = 15;</code>
+       * <code>bool GJFFLCIHPIN = 6;</code>
        * @return The gJFFLCIHPIN.
        */
       @java.lang.Override
@@ -627,7 +627,7 @@ public final class _ClientDetectorResultOuterClass {
         return gJFFLCIHPIN_;
       }
       /**
-       * <code>bool GJFFLCIHPIN = 15;</code>
+       * <code>bool GJFFLCIHPIN = 6;</code>
        * @param value The gJFFLCIHPIN to set.
        * @return This builder for chaining.
        */
@@ -638,7 +638,7 @@ public final class _ClientDetectorResultOuterClass {
         return this;
       }
       /**
-       * <code>bool GJFFLCIHPIN = 15;</code>
+       * <code>bool GJFFLCIHPIN = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGJFFLCIHPIN() {
@@ -714,11 +714,11 @@ public final class _ClientDetectorResultOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033_ClientDetectorResult.proto\"A\n\025_Client" +
-      "DetectorResult\022\023\n\013DCGOIJMIJMG\030\003 \003(\r\022\023\n\013G" +
-      "JFFLCIHPIN\030\017 \001(\010B<\n\031emu.grasscutter.net." +
-      "protoB\037_ClientDetectorResultOuterClassb\006" +
-      "proto3"
+      "\n\033_ClientDetectorResult.proto\"C\n\025_Client" +
+      "DetectorResult\022\025\n\013DCGOIJMIJMG\030\240\234\001 \003(\r\022\023\n" +
+      "\013GJFFLCIHPIN\030\006 \001(\010B<\n\031emu.grasscutter.ne" +
+      "t.protoB\037_ClientDetectorResultOuterClass" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

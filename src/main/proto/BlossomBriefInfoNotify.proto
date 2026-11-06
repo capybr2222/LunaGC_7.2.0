@@ -6,5 +6,5 @@ option java_outer_classname = "BlossomBriefInfoNotifyOuterClass";
 import "BlossomBriefInfo.proto";
 
 message BlossomBriefInfoNotify {
-	repeated BlossomBriefInfo brief_info_list = 13;
+	repeated BlossomBriefInfo brief_info_list = 5;
 }

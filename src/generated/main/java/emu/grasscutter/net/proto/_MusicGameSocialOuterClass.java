@@ -31,7 +31,7 @@ public final class _MusicGameSocialOuterClass {
     int getIILNHLANPGC();
 
     /**
-     * <code>uint32 like_num = 15;</code>
+     * <code>uint32 like_num = 12;</code>
      * @return The likeNum.
      */
     int getLikeNum();
@@ -43,7 +43,7 @@ public final class _MusicGameSocialOuterClass {
     int getGLEEDODENBP();
 
     /**
-     * <code>uint32 play_num = 50003;</code>
+     * <code>uint32 play_num = 13;</code>
      * @return The playNum.
      */
     int getPlayNum();
@@ -93,9 +93,14 @@ public final class _MusicGameSocialOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 96: {
 
               likeNum_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              playNum_ = input.readUInt32();
               break;
             }
             case 400000: {
@@ -111,11 +116,6 @@ public final class _MusicGameSocialOuterClass {
             case 400016: {
 
               gLEEDODENBP_ = input.readUInt32();
-              break;
-            }
-            case 400024: {
-
-              playNum_ = input.readUInt32();
               break;
             }
             default: {
@@ -172,10 +172,10 @@ public final class _MusicGameSocialOuterClass {
       return iILNHLANPGC_;
     }
 
-    public static final int LIKE_NUM_FIELD_NUMBER = 15;
+    public static final int LIKE_NUM_FIELD_NUMBER = 12;
     private int likeNum_;
     /**
-     * <code>uint32 like_num = 15;</code>
+     * <code>uint32 like_num = 12;</code>
      * @return The likeNum.
      */
     @java.lang.Override
@@ -194,10 +194,10 @@ public final class _MusicGameSocialOuterClass {
       return gLEEDODENBP_;
     }
 
-    public static final int PLAY_NUM_FIELD_NUMBER = 50003;
+    public static final int PLAY_NUM_FIELD_NUMBER = 13;
     private int playNum_;
     /**
-     * <code>uint32 play_num = 50003;</code>
+     * <code>uint32 play_num = 13;</code>
      * @return The playNum.
      */
     @java.lang.Override
@@ -220,7 +220,10 @@ public final class _MusicGameSocialOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (likeNum_ != 0) {
-        output.writeUInt32(15, likeNum_);
+        output.writeUInt32(12, likeNum_);
+      }
+      if (playNum_ != 0) {
+        output.writeUInt32(13, playNum_);
       }
       if (aAJNACIIKAD_ != 0) {
         output.writeUInt32(50000, aAJNACIIKAD_);
@@ -230,9 +233,6 @@ public final class _MusicGameSocialOuterClass {
       }
       if (gLEEDODENBP_ != 0) {
         output.writeUInt32(50002, gLEEDODENBP_);
-      }
-      if (playNum_ != 0) {
-        output.writeUInt32(50003, playNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -245,7 +245,11 @@ public final class _MusicGameSocialOuterClass {
       size = 0;
       if (likeNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, likeNum_);
+          .computeUInt32Size(12, likeNum_);
+      }
+      if (playNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, playNum_);
       }
       if (aAJNACIIKAD_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -258,10 +262,6 @@ public final class _MusicGameSocialOuterClass {
       if (gLEEDODENBP_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(50002, gLEEDODENBP_);
-      }
-      if (playNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50003, playNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -639,7 +639,7 @@ public final class _MusicGameSocialOuterClass {
 
       private int likeNum_ ;
       /**
-       * <code>uint32 like_num = 15;</code>
+       * <code>uint32 like_num = 12;</code>
        * @return The likeNum.
        */
       @java.lang.Override
@@ -647,7 +647,7 @@ public final class _MusicGameSocialOuterClass {
         return likeNum_;
       }
       /**
-       * <code>uint32 like_num = 15;</code>
+       * <code>uint32 like_num = 12;</code>
        * @param value The likeNum to set.
        * @return This builder for chaining.
        */
@@ -658,7 +658,7 @@ public final class _MusicGameSocialOuterClass {
         return this;
       }
       /**
-       * <code>uint32 like_num = 15;</code>
+       * <code>uint32 like_num = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearLikeNum() {
@@ -701,7 +701,7 @@ public final class _MusicGameSocialOuterClass {
 
       private int playNum_ ;
       /**
-       * <code>uint32 play_num = 50003;</code>
+       * <code>uint32 play_num = 13;</code>
        * @return The playNum.
        */
       @java.lang.Override
@@ -709,7 +709,7 @@ public final class _MusicGameSocialOuterClass {
         return playNum_;
       }
       /**
-       * <code>uint32 play_num = 50003;</code>
+       * <code>uint32 play_num = 13;</code>
        * @param value The playNum to set.
        * @return This builder for chaining.
        */
@@ -720,7 +720,7 @@ public final class _MusicGameSocialOuterClass {
         return this;
       }
       /**
-       * <code>uint32 play_num = 50003;</code>
+       * <code>uint32 play_num = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearPlayNum() {
@@ -796,12 +796,12 @@ public final class _MusicGameSocialOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026_MusicGameSocial.proto\"}\n\020_MusicGameSo" +
+      "\n\026_MusicGameSocial.proto\"{\n\020_MusicGameSo" +
       "cial\022\025\n\013AAJNACIIKAD\030\320\206\003 \001(\r\022\025\n\013IILNHLANP" +
-      "GC\030\321\206\003 \001(\r\022\020\n\010like_num\030\017 \001(\r\022\025\n\013GLEEDODE" +
-      "NBP\030\322\206\003 \001(\r\022\022\n\010play_num\030\323\206\003 \001(\rB7\n\031emu.g" +
-      "rasscutter.net.protoB\032_MusicGameSocialOu" +
-      "terClassb\006proto3"
+      "GC\030\321\206\003 \001(\r\022\020\n\010like_num\030\014 \001(\r\022\025\n\013GLEEDODE" +
+      "NBP\030\322\206\003 \001(\r\022\020\n\010play_num\030\r \001(\rB7\n\031emu.gra" +
+      "sscutter.net.protoB\032_MusicGameSocialOute" +
+      "rClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

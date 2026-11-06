@@ -6,8 +6,8 @@ option java_outer_classname = "_MonsterBaseOuterClass";
 import "DJNNMCLAEBL.proto";
 
 message _MonsterBase {
-	uint32 GNHNOINLCFC = 1;
-	uint32 NLACIAJDIGD = 2;
-	float NDAPJMNKOGL = 3;
-	repeated DJNNMCLAEBL EPPLNKCAPHJ = 4;
+	uint32 GNHNOINLCFC = 20002;
+	uint32 NLACIAJDIGD = 20001;
+	float NDAPJMNKOGL = 20003;
+	repeated DJNNMCLAEBL EPPLNKCAPHJ = 20000;
 }

@@ -10,5 +10,5 @@ message _FixedMoverInfo {
 	Vector OHMBANGLFIJ = 1;
 	Vector IMFDIHLBFEN = 2;
 	float LAIKIBMMJKD = 3;
-	MathQuaternion MGIHDBMCCPK = 4;
+	MathQuaternion MGIHDBMCCPK = 20001;
 }

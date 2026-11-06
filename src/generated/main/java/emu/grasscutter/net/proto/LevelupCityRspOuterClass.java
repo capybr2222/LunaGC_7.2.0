@@ -19,35 +19,35 @@ public final class LevelupCityRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 area_id = 3;</code>
+     * <code>uint32 area_id = 10;</code>
      * @return The areaId.
      */
     int getAreaId();
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 scene_id = 1;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>.CityInfo city_info = 5;</code>
+     * <code>.CityInfo city_info = 6;</code>
      * @return Whether the cityInfo field is set.
      */
     boolean hasCityInfo();
     /**
-     * <code>.CityInfo city_info = 5;</code>
+     * <code>.CityInfo city_info = 6;</code>
      * @return The cityInfo.
      */
     emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo getCityInfo();
     /**
-     * <code>.CityInfo city_info = 5;</code>
+     * <code>.CityInfo city_info = 6;</code>
      */
     emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoOrBuilder();
   }
@@ -96,17 +96,7 @@ public final class LevelupCityRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              areaId_ = input.readUInt32();
-              break;
-            }
-            case 42: {
+            case 50: {
               emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder subBuilder = null;
               if (cityInfo_ != null) {
                 subBuilder = cityInfo_.toBuilder();
@@ -119,9 +109,19 @@ public final class LevelupCityRspOuterClass {
 
               break;
             }
-            case 48: {
+            case 56: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 80: {
+
+              areaId_ = input.readUInt32();
               break;
             }
             default: {
@@ -156,10 +156,10 @@ public final class LevelupCityRspOuterClass {
               emu.grasscutter.net.proto.LevelupCityRspOuterClass.LevelupCityRsp.class, emu.grasscutter.net.proto.LevelupCityRspOuterClass.LevelupCityRsp.Builder.class);
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 3;
+    public static final int AREA_ID_FIELD_NUMBER = 10;
     private int areaId_;
     /**
-     * <code>uint32 area_id = 3;</code>
+     * <code>uint32 area_id = 10;</code>
      * @return The areaId.
      */
     @java.lang.Override
@@ -167,10 +167,10 @@ public final class LevelupCityRspOuterClass {
       return areaId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -178,10 +178,10 @@ public final class LevelupCityRspOuterClass {
       return retcode_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 1;
+    public static final int SCENE_ID_FIELD_NUMBER = 7;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 1;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -189,10 +189,10 @@ public final class LevelupCityRspOuterClass {
       return sceneId_;
     }
 
-    public static final int CITY_INFO_FIELD_NUMBER = 5;
+    public static final int CITY_INFO_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo cityInfo_;
     /**
-     * <code>.CityInfo city_info = 5;</code>
+     * <code>.CityInfo city_info = 6;</code>
      * @return Whether the cityInfo field is set.
      */
     @java.lang.Override
@@ -200,7 +200,7 @@ public final class LevelupCityRspOuterClass {
       return cityInfo_ != null;
     }
     /**
-     * <code>.CityInfo city_info = 5;</code>
+     * <code>.CityInfo city_info = 6;</code>
      * @return The cityInfo.
      */
     @java.lang.Override
@@ -208,7 +208,7 @@ public final class LevelupCityRspOuterClass {
       return cityInfo_ == null ? emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.getDefaultInstance() : cityInfo_;
     }
     /**
-     * <code>.CityInfo city_info = 5;</code>
+     * <code>.CityInfo city_info = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoOrBuilder() {
@@ -229,17 +229,17 @@ public final class LevelupCityRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneId_ != 0) {
-        output.writeUInt32(1, sceneId_);
-      }
-      if (areaId_ != 0) {
-        output.writeUInt32(3, areaId_);
-      }
       if (cityInfo_ != null) {
-        output.writeMessage(5, getCityInfo());
+        output.writeMessage(6, getCityInfo());
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(7, sceneId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+        output.writeInt32(9, retcode_);
+      }
+      if (areaId_ != 0) {
+        output.writeUInt32(10, areaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -250,21 +250,21 @@ public final class LevelupCityRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, sceneId_);
-      }
-      if (areaId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, areaId_);
-      }
       if (cityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getCityInfo());
+          .computeMessageSize(6, getCityInfo());
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, sceneId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeInt32Size(9, retcode_);
+      }
+      if (areaId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, areaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -583,7 +583,7 @@ public final class LevelupCityRspOuterClass {
 
       private int areaId_ ;
       /**
-       * <code>uint32 area_id = 3;</code>
+       * <code>uint32 area_id = 10;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -591,7 +591,7 @@ public final class LevelupCityRspOuterClass {
         return areaId_;
       }
       /**
-       * <code>uint32 area_id = 3;</code>
+       * <code>uint32 area_id = 10;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
@@ -602,7 +602,7 @@ public final class LevelupCityRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 area_id = 3;</code>
+       * <code>uint32 area_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
@@ -614,7 +614,7 @@ public final class LevelupCityRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -622,7 +622,7 @@ public final class LevelupCityRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -633,7 +633,7 @@ public final class LevelupCityRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -645,7 +645,7 @@ public final class LevelupCityRspOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -653,7 +653,7 @@ public final class LevelupCityRspOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -664,7 +664,7 @@ public final class LevelupCityRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -678,14 +678,14 @@ public final class LevelupCityRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> cityInfoBuilder_;
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        * @return Whether the cityInfo field is set.
        */
       public boolean hasCityInfo() {
         return cityInfoBuilder_ != null || cityInfo_ != null;
       }
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        * @return The cityInfo.
        */
       public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo getCityInfo() {
@@ -696,7 +696,7 @@ public final class LevelupCityRspOuterClass {
         }
       }
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        */
       public Builder setCityInfo(emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo value) {
         if (cityInfoBuilder_ == null) {
@@ -712,7 +712,7 @@ public final class LevelupCityRspOuterClass {
         return this;
       }
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        */
       public Builder setCityInfo(
           emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder builderForValue) {
@@ -726,7 +726,7 @@ public final class LevelupCityRspOuterClass {
         return this;
       }
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        */
       public Builder mergeCityInfo(emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo value) {
         if (cityInfoBuilder_ == null) {
@@ -744,7 +744,7 @@ public final class LevelupCityRspOuterClass {
         return this;
       }
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        */
       public Builder clearCityInfo() {
         if (cityInfoBuilder_ == null) {
@@ -758,7 +758,7 @@ public final class LevelupCityRspOuterClass {
         return this;
       }
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        */
       public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder getCityInfoBuilder() {
         
@@ -766,7 +766,7 @@ public final class LevelupCityRspOuterClass {
         return getCityInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        */
       public emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder getCityInfoOrBuilder() {
         if (cityInfoBuilder_ != null) {
@@ -777,7 +777,7 @@ public final class LevelupCityRspOuterClass {
         }
       }
       /**
-       * <code>.CityInfo city_info = 5;</code>
+       * <code>.CityInfo city_info = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfo.Builder, emu.grasscutter.net.proto.CityInfoOuterClass.CityInfoOrBuilder> 
@@ -860,9 +860,9 @@ public final class LevelupCityRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024LevelupCityRsp.proto\032\016CityInfo.proto\"b" +
-      "\n\016LevelupCityRsp\022\017\n\007area_id\030\003 \001(\r\022\017\n\007ret" +
-      "code\030\006 \001(\005\022\020\n\010scene_id\030\001 \001(\r\022\034\n\tcity_inf" +
-      "o\030\005 \001(\0132\t.CityInfoB5\n\031emu.grasscutter.ne" +
+      "\n\016LevelupCityRsp\022\017\n\007area_id\030\n \001(\r\022\017\n\007ret" +
+      "code\030\t \001(\005\022\020\n\010scene_id\030\007 \001(\r\022\034\n\tcity_inf" +
+      "o\030\006 \001(\0132\t.CityInfoB5\n\031emu.grasscutter.ne" +
       "t.protoB\030LevelupCityRspOuterClassb\006proto" +
       "3"
     };

@@ -6,10 +6,10 @@ option java_outer_classname = "HomeLimitedShopInfoOuterClass";
 import "Vector.proto";
 
 message HomeLimitedShopInfo {
-	fixed32 next_close_time = 50000;
-	uint32 uid = 9;
-	Vector djinn_pos = 4;
-	fixed32 next_open_time = 50001;
-	fixed32 next_guest_open_time = 50002;
-	Vector djinn_rot = 6;
+	fixed32 next_close_time = 3;
+	uint32 uid = 10;
+	Vector djinn_pos = 14;
+	fixed32 next_open_time = 5;
+	fixed32 next_guest_open_time = 1;
+	Vector djinn_rot = 7;
 }

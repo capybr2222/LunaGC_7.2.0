@@ -19,7 +19,7 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 NCIGAJNBCHN = 6;</code>
+     * <code>uint32 NCIGAJNBCHN = 20000;</code>
      * @return The nCIGAJNBCHN.
      */
     int getNCIGAJNBCHN();
@@ -69,7 +69,7 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 160000: {
 
               nCIGAJNBCHN_ = input.readUInt32();
               break;
@@ -106,10 +106,10 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
               emu.grasscutter.net.proto._SumeruAdventureTrainingDetailInfoOuterClass._SumeruAdventureTrainingDetailInfo.class, emu.grasscutter.net.proto._SumeruAdventureTrainingDetailInfoOuterClass._SumeruAdventureTrainingDetailInfo.Builder.class);
     }
 
-    public static final int NCIGAJNBCHN_FIELD_NUMBER = 6;
+    public static final int NCIGAJNBCHN_FIELD_NUMBER = 20000;
     private int nCIGAJNBCHN_;
     /**
-     * <code>uint32 NCIGAJNBCHN = 6;</code>
+     * <code>uint32 NCIGAJNBCHN = 20000;</code>
      * @return The nCIGAJNBCHN.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (nCIGAJNBCHN_ != 0) {
-        output.writeUInt32(6, nCIGAJNBCHN_);
+        output.writeUInt32(20000, nCIGAJNBCHN_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
       size = 0;
       if (nCIGAJNBCHN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, nCIGAJNBCHN_);
+          .computeUInt32Size(20000, nCIGAJNBCHN_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -421,7 +421,7 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
 
       private int nCIGAJNBCHN_ ;
       /**
-       * <code>uint32 NCIGAJNBCHN = 6;</code>
+       * <code>uint32 NCIGAJNBCHN = 20000;</code>
        * @return The nCIGAJNBCHN.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
         return nCIGAJNBCHN_;
       }
       /**
-       * <code>uint32 NCIGAJNBCHN = 6;</code>
+       * <code>uint32 NCIGAJNBCHN = 20000;</code>
        * @param value The nCIGAJNBCHN to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NCIGAJNBCHN = 6;</code>
+       * <code>uint32 NCIGAJNBCHN = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearNCIGAJNBCHN() {
@@ -517,10 +517,10 @@ public final class _SumeruAdventureTrainingDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n(_SumeruAdventureTrainingDetailInfo.pro" +
-      "to\"9\n\"_SumeruAdventureTrainingDetailInfo" +
-      "\022\023\n\013NCIGAJNBCHN\030\006 \001(\rBI\n\031emu.grasscutter" +
-      ".net.protoB,_SumeruAdventureTrainingDeta" +
-      "ilInfoOuterClassb\006proto3"
+      "to\";\n\"_SumeruAdventureTrainingDetailInfo" +
+      "\022\025\n\013NCIGAJNBCHN\030\240\234\001 \001(\rBI\n\031emu.grasscutt" +
+      "er.net.protoB,_SumeruAdventureTrainingDe" +
+      "tailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -11,6 +11,6 @@ message NNOLNLHNOIO {
 	bool is_unlocked = 12;
 	uint32 exp = 11;
 	bool GOEKPDMOLKD = 13;
-	uint32 PBBFBMDGOOH = 50000;
-	uint32 IKFHIPAAFEF = 50001;
+	uint32 PBBFBMDGOOH = 6;
+	uint32 IKFHIPAAFEF = 8;
 }

@@ -6,5 +6,5 @@ option java_outer_classname = "HomeBasicInfoNotifyOuterClass";
 import "HomeBasicInfo.proto";
 
 message HomeBasicInfoNotify {
-	HomeBasicInfo basic_info = 11;
+	HomeBasicInfo basic_info = 10;
 }

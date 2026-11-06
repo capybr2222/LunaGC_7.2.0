@@ -8,5 +8,5 @@ import "WidgetSlotOp.proto";
 
 message WidgetSlotChangeNotify {
 	WidgetSlotOp op = 3;
-	WidgetSlotData slot = 15;
+	WidgetSlotData slot = 8;
 }

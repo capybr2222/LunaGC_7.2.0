@@ -25,17 +25,17 @@ public final class AvatarWearFlycloakReqOuterClass {
     int getFlycloakId();
 
     /**
-     * <code>repeated uint64 avatar_guid_list = 2;</code>
+     * <code>repeated uint64 avatar_guid_list = 14;</code>
      * @return A list containing the avatarGuidList.
      */
     java.util.List<java.lang.Long> getAvatarGuidListList();
     /**
-     * <code>repeated uint64 avatar_guid_list = 2;</code>
+     * <code>repeated uint64 avatar_guid_list = 14;</code>
      * @return The count of avatarGuidList.
      */
     int getAvatarGuidListCount();
     /**
-     * <code>repeated uint64 avatar_guid_list = 2;</code>
+     * <code>repeated uint64 avatar_guid_list = 14;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
      */
@@ -88,7 +88,12 @@ public final class AvatarWearFlycloakReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 80: {
+
+              flycloakId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarGuidList_ = newLongList();
                 mutable_bitField0_ |= 0x00000001;
@@ -96,7 +101,7 @@ public final class AvatarWearFlycloakReqOuterClass {
               avatarGuidList_.addLong(input.readUInt64());
               break;
             }
-            case 18: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -107,11 +112,6 @@ public final class AvatarWearFlycloakReqOuterClass {
                 avatarGuidList_.addLong(input.readUInt64());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 80: {
-
-              flycloakId_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +160,10 @@ public final class AvatarWearFlycloakReqOuterClass {
       return flycloakId_;
     }
 
-    public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 2;
+    public static final int AVATAR_GUID_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.LongList avatarGuidList_;
     /**
-     * <code>repeated uint64 avatar_guid_list = 2;</code>
+     * <code>repeated uint64 avatar_guid_list = 14;</code>
      * @return A list containing the avatarGuidList.
      */
     @java.lang.Override
@@ -172,14 +172,14 @@ public final class AvatarWearFlycloakReqOuterClass {
       return avatarGuidList_;
     }
     /**
-     * <code>repeated uint64 avatar_guid_list = 2;</code>
+     * <code>repeated uint64 avatar_guid_list = 14;</code>
      * @return The count of avatarGuidList.
      */
     public int getAvatarGuidListCount() {
       return avatarGuidList_.size();
     }
     /**
-     * <code>repeated uint64 avatar_guid_list = 2;</code>
+     * <code>repeated uint64 avatar_guid_list = 14;</code>
      * @param index The index of the element to return.
      * @return The avatarGuidList at the given index.
      */
@@ -203,15 +203,15 @@ public final class AvatarWearFlycloakReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (flycloakId_ != 0) {
+        output.writeUInt32(10, flycloakId_);
+      }
       if (getAvatarGuidListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(avatarGuidListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarGuidList_.size(); i++) {
         output.writeUInt64NoTag(avatarGuidList_.getLong(i));
-      }
-      if (flycloakId_ != 0) {
-        output.writeUInt32(10, flycloakId_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,6 +222,10 @@ public final class AvatarWearFlycloakReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (flycloakId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, flycloakId_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < avatarGuidList_.size(); i++) {
@@ -235,10 +239,6 @@ public final class AvatarWearFlycloakReqOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         avatarGuidListMemoizedSerializedSize = dataSize;
-      }
-      if (flycloakId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, flycloakId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -576,7 +576,7 @@ public final class AvatarWearFlycloakReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 2;</code>
+       * <code>repeated uint64 avatar_guid_list = 14;</code>
        * @return A list containing the avatarGuidList.
        */
       public java.util.List<java.lang.Long>
@@ -585,14 +585,14 @@ public final class AvatarWearFlycloakReqOuterClass {
                  java.util.Collections.unmodifiableList(avatarGuidList_) : avatarGuidList_;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 2;</code>
+       * <code>repeated uint64 avatar_guid_list = 14;</code>
        * @return The count of avatarGuidList.
        */
       public int getAvatarGuidListCount() {
         return avatarGuidList_.size();
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 2;</code>
+       * <code>repeated uint64 avatar_guid_list = 14;</code>
        * @param index The index of the element to return.
        * @return The avatarGuidList at the given index.
        */
@@ -600,7 +600,7 @@ public final class AvatarWearFlycloakReqOuterClass {
         return avatarGuidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 2;</code>
+       * <code>repeated uint64 avatar_guid_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The avatarGuidList to set.
        * @return This builder for chaining.
@@ -613,7 +613,7 @@ public final class AvatarWearFlycloakReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 2;</code>
+       * <code>repeated uint64 avatar_guid_list = 14;</code>
        * @param value The avatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -624,7 +624,7 @@ public final class AvatarWearFlycloakReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 2;</code>
+       * <code>repeated uint64 avatar_guid_list = 14;</code>
        * @param values The avatarGuidList to add.
        * @return This builder for chaining.
        */
@@ -637,7 +637,7 @@ public final class AvatarWearFlycloakReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 avatar_guid_list = 2;</code>
+       * <code>repeated uint64 avatar_guid_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuidList() {
@@ -715,7 +715,7 @@ public final class AvatarWearFlycloakReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033AvatarWearFlycloakReq.proto\"F\n\025AvatarW" +
       "earFlycloakReq\022\023\n\013flycloak_id\030\n \001(\r\022\030\n\020a" +
-      "vatar_guid_list\030\002 \003(\004B<\n\031emu.grasscutter" +
+      "vatar_guid_list\030\016 \003(\004B<\n\031emu.grasscutter" +
       ".net.protoB\037AvatarWearFlycloakReqOuterCl" +
       "assb\006proto3"
     };

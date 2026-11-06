@@ -19,13 +19,13 @@ public final class _AvatarExtraLevelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 _extra_level = 1;</code>
+     * <code>uint32 _extra_level = 10;</code>
      * @return The extraLevel.
      */
     int getExtraLevel();
 
     /**
-     * <code>uint64 avatar_guid = 2;</code>
+     * <code>uint64 avatar_guid = 3;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
@@ -81,14 +81,14 @@ public final class _AvatarExtraLevelNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              ExtraLevel_ = input.readUInt32();
-              break;
-            }
-            case 16: {
+            case 24: {
 
               avatarGuid_ = input.readUInt64();
+              break;
+            }
+            case 80: {
+
+              ExtraLevel_ = input.readUInt32();
               break;
             }
             case 88: {
@@ -128,10 +128,10 @@ public final class _AvatarExtraLevelNotifyOuterClass {
               emu.grasscutter.net.proto._AvatarExtraLevelNotifyOuterClass._AvatarExtraLevelNotify.class, emu.grasscutter.net.proto._AvatarExtraLevelNotifyOuterClass._AvatarExtraLevelNotify.Builder.class);
     }
 
-    public static final int _EXTRA_LEVEL_FIELD_NUMBER = 1;
+    public static final int _EXTRA_LEVEL_FIELD_NUMBER = 10;
     private int ExtraLevel_;
     /**
-     * <code>uint32 _extra_level = 1;</code>
+     * <code>uint32 _extra_level = 10;</code>
      * @return The extraLevel.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class _AvatarExtraLevelNotifyOuterClass {
       return ExtraLevel_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 2;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 3;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 2;</code>
+     * <code>uint64 avatar_guid = 3;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -175,11 +175,11 @@ public final class _AvatarExtraLevelNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (ExtraLevel_ != 0) {
-        output.writeUInt32(1, ExtraLevel_);
-      }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(2, avatarGuid_);
+        output.writeUInt64(3, avatarGuid_);
+      }
+      if (ExtraLevel_ != 0) {
+        output.writeUInt32(10, ExtraLevel_);
       }
       if (entityId_ != 0) {
         output.writeUInt32(11, entityId_);
@@ -193,13 +193,13 @@ public final class _AvatarExtraLevelNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (ExtraLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, ExtraLevel_);
-      }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(2, avatarGuid_);
+          .computeUInt64Size(3, avatarGuid_);
+      }
+      if (ExtraLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, ExtraLevel_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -500,7 +500,7 @@ public final class _AvatarExtraLevelNotifyOuterClass {
 
       private int ExtraLevel_ ;
       /**
-       * <code>uint32 _extra_level = 1;</code>
+       * <code>uint32 _extra_level = 10;</code>
        * @return The extraLevel.
        */
       @java.lang.Override
@@ -508,7 +508,7 @@ public final class _AvatarExtraLevelNotifyOuterClass {
         return ExtraLevel_;
       }
       /**
-       * <code>uint32 _extra_level = 1;</code>
+       * <code>uint32 _extra_level = 10;</code>
        * @param value The extraLevel to set.
        * @return This builder for chaining.
        */
@@ -519,7 +519,7 @@ public final class _AvatarExtraLevelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 _extra_level = 1;</code>
+       * <code>uint32 _extra_level = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearExtraLevel() {
@@ -531,7 +531,7 @@ public final class _AvatarExtraLevelNotifyOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 2;</code>
+       * <code>uint64 avatar_guid = 3;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -539,7 +539,7 @@ public final class _AvatarExtraLevelNotifyOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 2;</code>
+       * <code>uint64 avatar_guid = 3;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -550,7 +550,7 @@ public final class _AvatarExtraLevelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 2;</code>
+       * <code>uint64 avatar_guid = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -658,8 +658,8 @@ public final class _AvatarExtraLevelNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035_AvatarExtraLevelNotify.proto\"W\n\027_Avat" +
-      "arExtraLevelNotify\022\024\n\014_extra_level\030\001 \001(\r" +
-      "\022\023\n\013avatar_guid\030\002 \001(\004\022\021\n\tentity_id\030\013 \001(\r" +
+      "arExtraLevelNotify\022\024\n\014_extra_level\030\n \001(\r" +
+      "\022\023\n\013avatar_guid\030\003 \001(\004\022\021\n\tentity_id\030\013 \001(\r" +
       "B>\n\031emu.grasscutter.net.protoB!_AvatarEx" +
       "traLevelNotifyOuterClassb\006proto3"
     };

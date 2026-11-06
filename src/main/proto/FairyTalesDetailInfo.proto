@@ -10,9 +10,9 @@ import "OICBFHCJGCC.proto";
 
 message FairyTalesDetailInfo {
 	BMFHLLPLCNA ceicakkfgko = 50000;
-	repeated JIEHJMIEHPM ICALMLAHAAL = 1;
-	repeated OICBFHCJGCC HIIIBLGMMLF = 50001;
-	repeated uint32 oegakdnmcjb = 9;
-	repeated MABDPGLBMOE PKAOIMANLKC = 50002;
-	bool ajdnblagkok = 4;
+	repeated JIEHJMIEHPM ICALMLAHAAL = 50001;
+	repeated OICBFHCJGCC HIIIBLGMMLF = 50002;
+	repeated uint32 oegakdnmcjb = 5;
+	repeated MABDPGLBMOE PKAOIMANLKC = 50003;
+	bool ajdnblagkok = 6;
 }

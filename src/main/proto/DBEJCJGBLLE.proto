@@ -6,9 +6,9 @@ option java_outer_classname = "DBEJCJGBLLEOuterClass";
 import "_TemplatePotionInfo.proto";
 
 message DBEJCJGBLLE {
-	uint32 BJNOEGFAPNE = 50000;
+	uint32 BJNOEGFAPNE = 3;
 	_TemplatePotionInfo NNADFEPJILG = 7;
-	uint32 HJIAHCGONMF = 50001;
+	uint32 HJIAHCGONMF = 9;
 	uint32 AJFHLGLOBLG = 4;
 	uint32 cost = 15;
 }

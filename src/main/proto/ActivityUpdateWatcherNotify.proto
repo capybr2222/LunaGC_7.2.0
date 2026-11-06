@@ -6,6 +6,6 @@ option java_outer_classname = "ActivityUpdateWatcherNotifyOuterClass";
 import "ActivityWatcherInfo.proto";
 
 message ActivityUpdateWatcherNotify {
-	uint32 activity_id = 2;
-	ActivityWatcherInfo watcher_info = 3;
+	uint32 activity_id = 3;
+	ActivityWatcherInfo watcher_info = 6;
 }

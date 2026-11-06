@@ -19,7 +19,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 1;</code>
+     * <code>bool is_new_record = 13;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
@@ -31,36 +31,36 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
     int getLevelId();
 
     /**
-     * <code>uint32 difficulty = 9;</code>
+     * <code>uint32 difficulty = 3;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>uint32 cost_time = 6;</code>
+     * <code>uint32 cost_time = 12;</code>
      * @return The costTime.
      */
     int getCostTime();
 
     /**
-     * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+     * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
      * @return A list containing the dLDAJAHOKNI.
      */
     java.util.List<java.lang.Integer> getDLDAJAHOKNIList();
     /**
-     * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+     * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
      * @return The count of dLDAJAHOKNI.
      */
     int getDLDAJAHOKNICount();
     /**
-     * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+     * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
      * @param index The index of the element to return.
      * @return The dLDAJAHOKNI at the given index.
      */
     int getDLDAJAHOKNI(int index);
 
     /**
-     * <code>uint32 CJNILLPKODC = 14;</code>
+     * <code>uint32 CJNILLPKODC = 20001;</code>
      * @return The cJNILLPKODC.
      */
     int getCJNILLPKODC();
@@ -112,14 +112,9 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 48: {
-
-              costTime_ = input.readUInt32();
+              difficulty_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -127,12 +122,17 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 96: {
 
-              difficulty_ = input.readUInt32();
+              costTime_ = input.readUInt32();
               break;
             }
             case 104: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 160000: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 dLDAJAHOKNI_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -140,7 +140,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
               dLDAJAHOKNI_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 160002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -153,7 +153,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 112: {
+            case 160008: {
 
               cJNILLPKODC_ = input.readUInt32();
               break;
@@ -193,10 +193,10 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
               emu.grasscutter.net.proto._NatlanDrillBattleSettleInfoOuterClass._NatlanDrillBattleSettleInfo.class, emu.grasscutter.net.proto._NatlanDrillBattleSettleInfoOuterClass._NatlanDrillBattleSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 1;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 13;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 1;</code>
+     * <code>bool is_new_record = 13;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -215,10 +215,10 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 9;
+    public static final int DIFFICULTY_FIELD_NUMBER = 3;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 9;</code>
+     * <code>uint32 difficulty = 3;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -226,10 +226,10 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int COST_TIME_FIELD_NUMBER = 6;
+    public static final int COST_TIME_FIELD_NUMBER = 12;
     private int costTime_;
     /**
-     * <code>uint32 cost_time = 6;</code>
+     * <code>uint32 cost_time = 12;</code>
      * @return The costTime.
      */
     @java.lang.Override
@@ -237,10 +237,10 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
       return costTime_;
     }
 
-    public static final int DLDAJAHOKNI_FIELD_NUMBER = 13;
+    public static final int DLDAJAHOKNI_FIELD_NUMBER = 20000;
     private com.google.protobuf.Internal.IntList dLDAJAHOKNI_;
     /**
-     * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+     * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
      * @return A list containing the dLDAJAHOKNI.
      */
     @java.lang.Override
@@ -249,14 +249,14 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
       return dLDAJAHOKNI_;
     }
     /**
-     * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+     * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
      * @return The count of dLDAJAHOKNI.
      */
     public int getDLDAJAHOKNICount() {
       return dLDAJAHOKNI_.size();
     }
     /**
-     * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+     * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
      * @param index The index of the element to return.
      * @return The dLDAJAHOKNI at the given index.
      */
@@ -265,10 +265,10 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
     }
     private int dLDAJAHOKNIMemoizedSerializedSize = -1;
 
-    public static final int CJNILLPKODC_FIELD_NUMBER = 14;
+    public static final int CJNILLPKODC_FIELD_NUMBER = 20001;
     private int cJNILLPKODC_;
     /**
-     * <code>uint32 CJNILLPKODC = 14;</code>
+     * <code>uint32 CJNILLPKODC = 20001;</code>
      * @return The cJNILLPKODC.
      */
     @java.lang.Override
@@ -291,27 +291,27 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isNewRecord_ != false) {
-        output.writeBool(1, isNewRecord_);
-      }
-      if (costTime_ != 0) {
-        output.writeUInt32(6, costTime_);
+      if (difficulty_ != 0) {
+        output.writeUInt32(3, difficulty_);
       }
       if (levelId_ != 0) {
         output.writeUInt32(8, levelId_);
       }
-      if (difficulty_ != 0) {
-        output.writeUInt32(9, difficulty_);
+      if (costTime_ != 0) {
+        output.writeUInt32(12, costTime_);
+      }
+      if (isNewRecord_ != false) {
+        output.writeBool(13, isNewRecord_);
       }
       if (getDLDAJAHOKNIList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(160002);
         output.writeUInt32NoTag(dLDAJAHOKNIMemoizedSerializedSize);
       }
       for (int i = 0; i < dLDAJAHOKNI_.size(); i++) {
         output.writeUInt32NoTag(dLDAJAHOKNI_.getInt(i));
       }
       if (cJNILLPKODC_ != 0) {
-        output.writeUInt32(14, cJNILLPKODC_);
+        output.writeUInt32(20001, cJNILLPKODC_);
       }
       unknownFields.writeTo(output);
     }
@@ -322,21 +322,21 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isNewRecord_ != false) {
+      if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isNewRecord_);
-      }
-      if (costTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, costTime_);
+          .computeUInt32Size(3, difficulty_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, levelId_);
       }
-      if (difficulty_ != 0) {
+      if (costTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, difficulty_);
+          .computeUInt32Size(12, costTime_);
+      }
+      if (isNewRecord_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isNewRecord_);
       }
       {
         int dataSize = 0;
@@ -346,7 +346,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         }
         size += dataSize;
         if (!getDLDAJAHOKNIList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
@@ -354,7 +354,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
       }
       if (cJNILLPKODC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, cJNILLPKODC_);
+          .computeUInt32Size(20001, cJNILLPKODC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -696,7 +696,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 1;</code>
+       * <code>bool is_new_record = 13;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -704,7 +704,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 1;</code>
+       * <code>bool is_new_record = 13;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -715,7 +715,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 1;</code>
+       * <code>bool is_new_record = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -758,7 +758,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 9;</code>
+       * <code>uint32 difficulty = 3;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -766,7 +766,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 9;</code>
+       * <code>uint32 difficulty = 3;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -777,7 +777,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 9;</code>
+       * <code>uint32 difficulty = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -789,7 +789,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
 
       private int costTime_ ;
       /**
-       * <code>uint32 cost_time = 6;</code>
+       * <code>uint32 cost_time = 12;</code>
        * @return The costTime.
        */
       @java.lang.Override
@@ -797,7 +797,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return costTime_;
       }
       /**
-       * <code>uint32 cost_time = 6;</code>
+       * <code>uint32 cost_time = 12;</code>
        * @param value The costTime to set.
        * @return This builder for chaining.
        */
@@ -808,7 +808,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cost_time = 6;</code>
+       * <code>uint32 cost_time = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCostTime() {
@@ -826,7 +826,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+       * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
        * @return A list containing the dLDAJAHOKNI.
        */
       public java.util.List<java.lang.Integer>
@@ -835,14 +835,14 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
                  java.util.Collections.unmodifiableList(dLDAJAHOKNI_) : dLDAJAHOKNI_;
       }
       /**
-       * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+       * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
        * @return The count of dLDAJAHOKNI.
        */
       public int getDLDAJAHOKNICount() {
         return dLDAJAHOKNI_.size();
       }
       /**
-       * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+       * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
        * @param index The index of the element to return.
        * @return The dLDAJAHOKNI at the given index.
        */
@@ -850,7 +850,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return dLDAJAHOKNI_.getInt(index);
       }
       /**
-       * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+       * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
        * @param index The index to set the value at.
        * @param value The dLDAJAHOKNI to set.
        * @return This builder for chaining.
@@ -863,7 +863,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+       * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
        * @param value The dLDAJAHOKNI to add.
        * @return This builder for chaining.
        */
@@ -874,7 +874,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+       * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
        * @param values The dLDAJAHOKNI to add.
        * @return This builder for chaining.
        */
@@ -887,7 +887,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 DLDAJAHOKNI = 13;</code>
+       * <code>repeated uint32 DLDAJAHOKNI = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearDLDAJAHOKNI() {
@@ -899,7 +899,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
 
       private int cJNILLPKODC_ ;
       /**
-       * <code>uint32 CJNILLPKODC = 14;</code>
+       * <code>uint32 CJNILLPKODC = 20001;</code>
        * @return The cJNILLPKODC.
        */
       @java.lang.Override
@@ -907,7 +907,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return cJNILLPKODC_;
       }
       /**
-       * <code>uint32 CJNILLPKODC = 14;</code>
+       * <code>uint32 CJNILLPKODC = 20001;</code>
        * @param value The cJNILLPKODC to set.
        * @return This builder for chaining.
        */
@@ -918,7 +918,7 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 CJNILLPKODC = 14;</code>
+       * <code>uint32 CJNILLPKODC = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearCJNILLPKODC() {
@@ -994,13 +994,13 @@ public final class _NatlanDrillBattleSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"_NatlanDrillBattleSettleInfo.proto\"\230\001\n" +
+      "\n\"_NatlanDrillBattleSettleInfo.proto\"\234\001\n" +
       "\034_NatlanDrillBattleSettleInfo\022\025\n\ris_new_" +
-      "record\030\001 \001(\010\022\020\n\010level_id\030\010 \001(\r\022\022\n\ndiffic" +
-      "ulty\030\t \001(\r\022\021\n\tcost_time\030\006 \001(\r\022\023\n\013DLDAJAH" +
-      "OKNI\030\r \003(\r\022\023\n\013CJNILLPKODC\030\016 \001(\rBC\n\031emu.g" +
-      "rasscutter.net.protoB&_NatlanDrillBattle" +
-      "SettleInfoOuterClassb\006proto3"
+      "record\030\r \001(\010\022\020\n\010level_id\030\010 \001(\r\022\022\n\ndiffic" +
+      "ulty\030\003 \001(\r\022\021\n\tcost_time\030\014 \001(\r\022\025\n\013DLDAJAH" +
+      "OKNI\030\240\234\001 \003(\r\022\025\n\013CJNILLPKODC\030\241\234\001 \001(\rBC\n\031e" +
+      "mu.grasscutter.net.protoB&_NatlanDrillBa" +
+      "ttleSettleInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

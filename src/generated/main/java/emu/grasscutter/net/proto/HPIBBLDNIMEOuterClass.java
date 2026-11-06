@@ -19,7 +19,7 @@ public final class HPIBBLDNIMEOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 OKBGFHDDKCJ = 15;</code>
+     * <code>uint32 OKBGFHDDKCJ = 20001;</code>
      * @return The oKBGFHDDKCJ.
      */
     int getOKBGFHDDKCJ();
@@ -31,49 +31,49 @@ public final class HPIBBLDNIMEOuterClass {
     int getBOAKDOGPPPG();
 
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> 
         getIHPPKPMKLHNList();
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getIHPPKPMKLHN(int index);
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     int getIHPPKPMKLHNCount();
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
         getIHPPKPMKLHNOrBuilderList();
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getIHPPKPMKLHNOrBuilder(
         int index);
 
     /**
-     * <code>bool is_open = 3;</code>
+     * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finish = 13;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 best_score = 12;</code>
+     * <code>uint32 best_score = 14;</code>
      * @return The bestScore.
      */
     int getBestScore();
 
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -125,7 +125,32 @@ public final class HPIBBLDNIMEOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 8: {
+
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 24: {
+
+              isFinish_ = input.readBool();
+              break;
+            }
+            case 40: {
+
+              bOAKDOGPPPG_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              bestScore_ = input.readUInt32();
+              break;
+            }
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 iHPPKPMKLHN_ = new java.util.ArrayList<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -134,32 +159,7 @@ public final class HPIBBLDNIMEOuterClass {
                   input.readMessage(emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.parser(), extensionRegistry));
               break;
             }
-            case 24: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 40: {
-
-              bOAKDOGPPPG_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              bestScore_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              isFinish_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 160008: {
 
               oKBGFHDDKCJ_ = input.readUInt32();
               break;
@@ -199,10 +199,10 @@ public final class HPIBBLDNIMEOuterClass {
               emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.class, emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder.class);
     }
 
-    public static final int OKBGFHDDKCJ_FIELD_NUMBER = 15;
+    public static final int OKBGFHDDKCJ_FIELD_NUMBER = 20001;
     private int oKBGFHDDKCJ_;
     /**
-     * <code>uint32 OKBGFHDDKCJ = 15;</code>
+     * <code>uint32 OKBGFHDDKCJ = 20001;</code>
      * @return The oKBGFHDDKCJ.
      */
     @java.lang.Override
@@ -221,17 +221,17 @@ public final class HPIBBLDNIMEOuterClass {
       return bOAKDOGPPPG_;
     }
 
-    public static final int IHPPKPMKLHN_FIELD_NUMBER = 1;
+    public static final int IHPPKPMKLHN_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> iHPPKPMKLHN_;
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> getIHPPKPMKLHNList() {
       return iHPPKPMKLHN_;
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
@@ -239,21 +239,21 @@ public final class HPIBBLDNIMEOuterClass {
       return iHPPKPMKLHN_;
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     @java.lang.Override
     public int getIHPPKPMKLHNCount() {
       return iHPPKPMKLHN_.size();
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getIHPPKPMKLHN(int index) {
       return iHPPKPMKLHN_.get(index);
     }
     /**
-     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+     * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getIHPPKPMKLHNOrBuilder(
@@ -261,10 +261,10 @@ public final class HPIBBLDNIMEOuterClass {
       return iHPPKPMKLHN_.get(index);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 3;
+    public static final int IS_OPEN_FIELD_NUMBER = 1;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 3;</code>
+     * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -272,10 +272,10 @@ public final class HPIBBLDNIMEOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 13;
+    public static final int IS_FINISH_FIELD_NUMBER = 3;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 13;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -283,10 +283,10 @@ public final class HPIBBLDNIMEOuterClass {
       return isFinish_;
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 12;
+    public static final int BEST_SCORE_FIELD_NUMBER = 14;
     private int bestScore_;
     /**
-     * <code>uint32 best_score = 12;</code>
+     * <code>uint32 best_score = 14;</code>
      * @return The bestScore.
      */
     @java.lang.Override
@@ -294,10 +294,10 @@ public final class HPIBBLDNIMEOuterClass {
       return bestScore_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    public static final int LEVEL_ID_FIELD_NUMBER = 11;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 11;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -319,26 +319,26 @@ public final class HPIBBLDNIMEOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < iHPPKPMKLHN_.size(); i++) {
-        output.writeMessage(1, iHPPKPMKLHN_.get(i));
-      }
       if (isOpen_ != false) {
-        output.writeBool(3, isOpen_);
+        output.writeBool(1, isOpen_);
+      }
+      if (isFinish_ != false) {
+        output.writeBool(3, isFinish_);
       }
       if (bOAKDOGPPPG_ != 0) {
         output.writeUInt32(5, bOAKDOGPPPG_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+        output.writeUInt32(11, levelId_);
       }
       if (bestScore_ != 0) {
-        output.writeUInt32(12, bestScore_);
+        output.writeUInt32(14, bestScore_);
       }
-      if (isFinish_ != false) {
-        output.writeBool(13, isFinish_);
+      for (int i = 0; i < iHPPKPMKLHN_.size(); i++) {
+        output.writeMessage(20000, iHPPKPMKLHN_.get(i));
       }
       if (oKBGFHDDKCJ_ != 0) {
-        output.writeUInt32(15, oKBGFHDDKCJ_);
+        output.writeUInt32(20001, oKBGFHDDKCJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -349,13 +349,13 @@ public final class HPIBBLDNIMEOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < iHPPKPMKLHN_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, iHPPKPMKLHN_.get(i));
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isOpen_);
+          .computeBoolSize(1, isOpen_);
+      }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isFinish_);
       }
       if (bOAKDOGPPPG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -363,19 +363,19 @@ public final class HPIBBLDNIMEOuterClass {
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeUInt32Size(11, levelId_);
       }
       if (bestScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, bestScore_);
+          .computeUInt32Size(14, bestScore_);
       }
-      if (isFinish_ != false) {
+      for (int i = 0; i < iHPPKPMKLHN_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isFinish_);
+          .computeMessageSize(20000, iHPPKPMKLHN_.get(i));
       }
       if (oKBGFHDDKCJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, oKBGFHDDKCJ_);
+          .computeUInt32Size(20001, oKBGFHDDKCJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -753,7 +753,7 @@ public final class HPIBBLDNIMEOuterClass {
 
       private int oKBGFHDDKCJ_ ;
       /**
-       * <code>uint32 OKBGFHDDKCJ = 15;</code>
+       * <code>uint32 OKBGFHDDKCJ = 20001;</code>
        * @return The oKBGFHDDKCJ.
        */
       @java.lang.Override
@@ -761,7 +761,7 @@ public final class HPIBBLDNIMEOuterClass {
         return oKBGFHDDKCJ_;
       }
       /**
-       * <code>uint32 OKBGFHDDKCJ = 15;</code>
+       * <code>uint32 OKBGFHDDKCJ = 20001;</code>
        * @param value The oKBGFHDDKCJ to set.
        * @return This builder for chaining.
        */
@@ -772,7 +772,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 OKBGFHDDKCJ = 15;</code>
+       * <code>uint32 OKBGFHDDKCJ = 20001;</code>
        * @return This builder for chaining.
        */
       public Builder clearOKBGFHDDKCJ() {
@@ -826,7 +826,7 @@ public final class HPIBBLDNIMEOuterClass {
           emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> iHPPKPMKLHNBuilder_;
 
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> getIHPPKPMKLHNList() {
         if (iHPPKPMKLHNBuilder_ == null) {
@@ -836,7 +836,7 @@ public final class HPIBBLDNIMEOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public int getIHPPKPMKLHNCount() {
         if (iHPPKPMKLHNBuilder_ == null) {
@@ -846,7 +846,7 @@ public final class HPIBBLDNIMEOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo getIHPPKPMKLHN(int index) {
         if (iHPPKPMKLHNBuilder_ == null) {
@@ -856,7 +856,7 @@ public final class HPIBBLDNIMEOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder setIHPPKPMKLHN(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
@@ -873,7 +873,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder setIHPPKPMKLHN(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -887,7 +887,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder addIHPPKPMKLHN(emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
         if (iHPPKPMKLHNBuilder_ == null) {
@@ -903,7 +903,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder addIHPPKPMKLHN(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo value) {
@@ -920,7 +920,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder addIHPPKPMKLHN(
           emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -934,7 +934,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder addIHPPKPMKLHN(
           int index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder builderForValue) {
@@ -948,7 +948,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder addAllIHPPKPMKLHN(
           java.lang.Iterable<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo> values) {
@@ -963,7 +963,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder clearIHPPKPMKLHN() {
         if (iHPPKPMKLHNBuilder_ == null) {
@@ -976,7 +976,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public Builder removeIHPPKPMKLHN(int index) {
         if (iHPPKPMKLHNBuilder_ == null) {
@@ -989,14 +989,14 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder getIHPPKPMKLHNBuilder(
           int index) {
         return getIHPPKPMKLHNFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder getIHPPKPMKLHNOrBuilder(
           int index) {
@@ -1006,7 +1006,7 @@ public final class HPIBBLDNIMEOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfoOrBuilder> 
            getIHPPKPMKLHNOrBuilderList() {
@@ -1017,14 +1017,14 @@ public final class HPIBBLDNIMEOuterClass {
         }
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder addIHPPKPMKLHNBuilder() {
         return getIHPPKPMKLHNFieldBuilder().addBuilder(
             emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder addIHPPKPMKLHNBuilder(
           int index) {
@@ -1032,7 +1032,7 @@ public final class HPIBBLDNIMEOuterClass {
             index, emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 1;</code>
+       * <code>repeated ._ActivityAvatarInfo IHPPKPMKLHN = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto._ActivityAvatarInfoOuterClass._ActivityAvatarInfo.Builder> 
            getIHPPKPMKLHNBuilderList() {
@@ -1055,7 +1055,7 @@ public final class HPIBBLDNIMEOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 3;</code>
+       * <code>bool is_open = 1;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -1063,7 +1063,7 @@ public final class HPIBBLDNIMEOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 3;</code>
+       * <code>bool is_open = 1;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -1074,7 +1074,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 3;</code>
+       * <code>bool is_open = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -1086,7 +1086,7 @@ public final class HPIBBLDNIMEOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 13;</code>
+       * <code>bool is_finish = 3;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -1094,7 +1094,7 @@ public final class HPIBBLDNIMEOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 13;</code>
+       * <code>bool is_finish = 3;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -1105,7 +1105,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 13;</code>
+       * <code>bool is_finish = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -1117,7 +1117,7 @@ public final class HPIBBLDNIMEOuterClass {
 
       private int bestScore_ ;
       /**
-       * <code>uint32 best_score = 12;</code>
+       * <code>uint32 best_score = 14;</code>
        * @return The bestScore.
        */
       @java.lang.Override
@@ -1125,7 +1125,7 @@ public final class HPIBBLDNIMEOuterClass {
         return bestScore_;
       }
       /**
-       * <code>uint32 best_score = 12;</code>
+       * <code>uint32 best_score = 14;</code>
        * @param value The bestScore to set.
        * @return This builder for chaining.
        */
@@ -1136,7 +1136,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_score = 12;</code>
+       * <code>uint32 best_score = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestScore() {
@@ -1148,7 +1148,7 @@ public final class HPIBBLDNIMEOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 11;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -1156,7 +1156,7 @@ public final class HPIBBLDNIMEOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 11;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -1167,7 +1167,7 @@ public final class HPIBBLDNIMEOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -1244,13 +1244,13 @@ public final class HPIBBLDNIMEOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021HPIBBLDNIME.proto\032\031_ActivityAvatarInfo" +
-      ".proto\"\254\001\n\013HPIBBLDNIME\022\023\n\013OKBGFHDDKCJ\030\017 " +
-      "\001(\r\022\023\n\013BOAKDOGPPPG\030\005 \001(\r\022)\n\013IHPPKPMKLHN\030" +
-      "\001 \003(\0132\024._ActivityAvatarInfo\022\017\n\007is_open\030\003" +
-      " \001(\010\022\021\n\tis_finish\030\r \001(\010\022\022\n\nbest_score\030\014 " +
-      "\001(\r\022\020\n\010level_id\030\010 \001(\rB2\n\031emu.grasscutter" +
-      ".net.protoB\025HPIBBLDNIMEOuterClassb\006proto" +
-      "3"
+      ".proto\"\260\001\n\013HPIBBLDNIME\022\025\n\013OKBGFHDDKCJ\030\241\234" +
+      "\001 \001(\r\022\023\n\013BOAKDOGPPPG\030\005 \001(\r\022+\n\013IHPPKPMKLH" +
+      "N\030\240\234\001 \003(\0132\024._ActivityAvatarInfo\022\017\n\007is_op" +
+      "en\030\001 \001(\010\022\021\n\tis_finish\030\003 \001(\010\022\022\n\nbest_scor" +
+      "e\030\016 \001(\r\022\020\n\010level_id\030\013 \001(\rB2\n\031emu.grasscu" +
+      "tter.net.protoB\025HPIBBLDNIMEOuterClassb\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

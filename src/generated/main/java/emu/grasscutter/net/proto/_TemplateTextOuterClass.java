@@ -19,25 +19,25 @@ public final class _TemplateTextOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM> 
         getAABINJFFLHEList();
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM getAABINJFFLHE(int index);
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     int getAABINJFFLHECount();
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJMOrBuilder> 
         getAABINJFFLHEOrBuilderList();
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJMOrBuilder getAABINJFFLHEOrBuilder(
         int index);
@@ -89,7 +89,7 @@ public final class _TemplateTextOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 aABINJFFLHE_ = new java.util.ArrayList<emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM>();
                 mutable_bitField0_ |= 0x00000001;
@@ -133,17 +133,17 @@ public final class _TemplateTextOuterClass {
               emu.grasscutter.net.proto._TemplateTextOuterClass._TemplateText.class, emu.grasscutter.net.proto._TemplateTextOuterClass._TemplateText.Builder.class);
     }
 
-    public static final int AABINJFFLHE_FIELD_NUMBER = 1;
+    public static final int AABINJFFLHE_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM> aABINJFFLHE_;
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM> getAABINJFFLHEList() {
       return aABINJFFLHE_;
     }
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJMOrBuilder> 
@@ -151,21 +151,21 @@ public final class _TemplateTextOuterClass {
       return aABINJFFLHE_;
     }
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     @java.lang.Override
     public int getAABINJFFLHECount() {
       return aABINJFFLHE_.size();
     }
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM getAABINJFFLHE(int index) {
       return aABINJFFLHE_.get(index);
     }
     /**
-     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+     * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJMOrBuilder getAABINJFFLHEOrBuilder(
@@ -188,7 +188,7 @@ public final class _TemplateTextOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < aABINJFFLHE_.size(); i++) {
-        output.writeMessage(1, aABINJFFLHE_.get(i));
+        output.writeMessage(20000, aABINJFFLHE_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -201,7 +201,7 @@ public final class _TemplateTextOuterClass {
       size = 0;
       for (int i = 0; i < aABINJFFLHE_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, aABINJFFLHE_.get(i));
+          .computeMessageSize(20000, aABINJFFLHE_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -528,7 +528,7 @@ public final class _TemplateTextOuterClass {
           emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM, emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.Builder, emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJMOrBuilder> aABINJFFLHEBuilder_;
 
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM> getAABINJFFLHEList() {
         if (aABINJFFLHEBuilder_ == null) {
@@ -538,7 +538,7 @@ public final class _TemplateTextOuterClass {
         }
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public int getAABINJFFLHECount() {
         if (aABINJFFLHEBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class _TemplateTextOuterClass {
         }
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM getAABINJFFLHE(int index) {
         if (aABINJFFLHEBuilder_ == null) {
@@ -558,7 +558,7 @@ public final class _TemplateTextOuterClass {
         }
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder setAABINJFFLHE(
           int index, emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM value) {
@@ -575,7 +575,7 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder setAABINJFFLHE(
           int index, emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.Builder builderForValue) {
@@ -589,7 +589,7 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder addAABINJFFLHE(emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM value) {
         if (aABINJFFLHEBuilder_ == null) {
@@ -605,7 +605,7 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder addAABINJFFLHE(
           int index, emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM value) {
@@ -622,7 +622,7 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder addAABINJFFLHE(
           emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.Builder builderForValue) {
@@ -636,7 +636,7 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder addAABINJFFLHE(
           int index, emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.Builder builderForValue) {
@@ -650,7 +650,7 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder addAllAABINJFFLHE(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM> values) {
@@ -665,7 +665,7 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder clearAABINJFFLHE() {
         if (aABINJFFLHEBuilder_ == null) {
@@ -678,7 +678,7 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public Builder removeAABINJFFLHE(int index) {
         if (aABINJFFLHEBuilder_ == null) {
@@ -691,14 +691,14 @@ public final class _TemplateTextOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.Builder getAABINJFFLHEBuilder(
           int index) {
         return getAABINJFFLHEFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJMOrBuilder getAABINJFFLHEOrBuilder(
           int index) {
@@ -708,7 +708,7 @@ public final class _TemplateTextOuterClass {
         }
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJMOrBuilder> 
            getAABINJFFLHEOrBuilderList() {
@@ -719,14 +719,14 @@ public final class _TemplateTextOuterClass {
         }
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.Builder addAABINJFFLHEBuilder() {
         return getAABINJFFLHEFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.getDefaultInstance());
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.Builder addAABINJFFLHEBuilder(
           int index) {
@@ -734,7 +734,7 @@ public final class _TemplateTextOuterClass {
             index, emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.getDefaultInstance());
       }
       /**
-       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 1;</code>
+       * <code>repeated .ODFACIIAFJM AABINJFFLHE = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ODFACIIAFJMOuterClass.ODFACIIAFJM.Builder> 
            getAABINJFFLHEBuilderList() {
@@ -822,9 +822,9 @@ public final class _TemplateTextOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023_TemplateText.proto\032\021ODFACIIAFJM.proto" +
-      "\"2\n\r_TemplateText\022!\n\013AABINJFFLHE\030\001 \003(\0132\014" +
-      ".ODFACIIAFJMB4\n\031emu.grasscutter.net.prot" +
-      "oB\027_TemplateTextOuterClassb\006proto3"
+      "\"4\n\r_TemplateText\022#\n\013AABINJFFLHE\030\240\234\001 \003(\013" +
+      "2\014.ODFACIIAFJMB4\n\031emu.grasscutter.net.pr" +
+      "otoB\027_TemplateTextOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

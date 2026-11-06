@@ -10,10 +10,10 @@ message MainCoop {
 		FINISHED = 2;
 	}
 	map<uint32, int32> HONMHLPABBF = 50000;
-	repeated uint32 save_point_id_list = 15;
-	uint32 self_confidence = 1;
-	uint32 id = 4;
+	repeated uint32 save_point_id_list = 1;
+	uint32 self_confidence = 4;
+	uint32 id = 9;
 	map<uint32, int32> KAFJENECJNC = 50001;
-	Status status = 5;
-	map<uint32, uint32> seen_ending_map = 9;
+	Status status = 13;
+	map<uint32, uint32> seen_ending_map = 8;
 }

@@ -19,31 +19,31 @@ public final class BlitzRushActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 content_close_time = 12;</code>
+     * <code>uint32 content_close_time = 2;</code>
      * @return The contentCloseTime.
      */
     int getContentCloseTime();
 
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo> 
         getParkourLevelInfoListList();
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo getParkourLevelInfoList(int index);
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     int getParkourLevelInfoListCount();
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfoOrBuilder> 
         getParkourLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfoOrBuilder getParkourLevelInfoListOrBuilder(
         int index);
@@ -73,7 +73,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         int index);
 
     /**
-     * <code>bool is_content_closed = 10;</code>
+     * <code>bool is_content_closed = 4;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
@@ -135,7 +135,12 @@ public final class BlitzRushActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.BlitzRushStageOuterClass.BlitzRushStage.parser(), extensionRegistry));
               break;
             }
-            case 18: {
+            case 16: {
+
+              contentCloseTime_ = input.readUInt32();
+              break;
+            }
+            case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 parkourLevelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -144,14 +149,9 @@ public final class BlitzRushActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.parser(), extensionRegistry));
               break;
             }
-            case 80: {
+            case 32: {
 
               isContentClosed_ = input.readBool();
-              break;
-            }
-            case 96: {
-
-              contentCloseTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -192,10 +192,10 @@ public final class BlitzRushActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.BlitzRushActivityDetailInfoOuterClass.BlitzRushActivityDetailInfo.class, emu.grasscutter.net.proto.BlitzRushActivityDetailInfoOuterClass.BlitzRushActivityDetailInfo.Builder.class);
     }
 
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 12;
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 2;
     private int contentCloseTime_;
     /**
-     * <code>uint32 content_close_time = 12;</code>
+     * <code>uint32 content_close_time = 2;</code>
      * @return The contentCloseTime.
      */
     @java.lang.Override
@@ -203,17 +203,17 @@ public final class BlitzRushActivityDetailInfoOuterClass {
       return contentCloseTime_;
     }
 
-    public static final int PARKOUR_LEVEL_INFO_LIST_FIELD_NUMBER = 2;
+    public static final int PARKOUR_LEVEL_INFO_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo> parkourLevelInfoList_;
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo> getParkourLevelInfoListList() {
       return parkourLevelInfoList_;
     }
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfoOrBuilder> 
@@ -221,21 +221,21 @@ public final class BlitzRushActivityDetailInfoOuterClass {
       return parkourLevelInfoList_;
     }
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     @java.lang.Override
     public int getParkourLevelInfoListCount() {
       return parkourLevelInfoList_.size();
     }
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo getParkourLevelInfoList(int index) {
       return parkourLevelInfoList_.get(index);
     }
     /**
-     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+     * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfoOrBuilder getParkourLevelInfoListOrBuilder(
@@ -283,10 +283,10 @@ public final class BlitzRushActivityDetailInfoOuterClass {
       return stageList_.get(index);
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 10;
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 4;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 10;</code>
+     * <code>bool is_content_closed = 4;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -311,14 +311,14 @@ public final class BlitzRushActivityDetailInfoOuterClass {
       for (int i = 0; i < stageList_.size(); i++) {
         output.writeMessage(1, stageList_.get(i));
       }
+      if (contentCloseTime_ != 0) {
+        output.writeUInt32(2, contentCloseTime_);
+      }
       for (int i = 0; i < parkourLevelInfoList_.size(); i++) {
-        output.writeMessage(2, parkourLevelInfoList_.get(i));
+        output.writeMessage(3, parkourLevelInfoList_.get(i));
       }
       if (isContentClosed_ != false) {
-        output.writeBool(10, isContentClosed_);
-      }
-      if (contentCloseTime_ != 0) {
-        output.writeUInt32(12, contentCloseTime_);
+        output.writeBool(4, isContentClosed_);
       }
       unknownFields.writeTo(output);
     }
@@ -333,17 +333,17 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, stageList_.get(i));
       }
+      if (contentCloseTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, contentCloseTime_);
+      }
       for (int i = 0; i < parkourLevelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, parkourLevelInfoList_.get(i));
+          .computeMessageSize(3, parkourLevelInfoList_.get(i));
       }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isContentClosed_);
-      }
-      if (contentCloseTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, contentCloseTime_);
+          .computeBoolSize(4, isContentClosed_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -728,7 +728,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
 
       private int contentCloseTime_ ;
       /**
-       * <code>uint32 content_close_time = 12;</code>
+       * <code>uint32 content_close_time = 2;</code>
        * @return The contentCloseTime.
        */
       @java.lang.Override
@@ -736,7 +736,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return contentCloseTime_;
       }
       /**
-       * <code>uint32 content_close_time = 12;</code>
+       * <code>uint32 content_close_time = 2;</code>
        * @param value The contentCloseTime to set.
        * @return This builder for chaining.
        */
@@ -747,7 +747,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 content_close_time = 12;</code>
+       * <code>uint32 content_close_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearContentCloseTime() {
@@ -770,7 +770,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
           emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo, emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder, emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfoOrBuilder> parkourLevelInfoListBuilder_;
 
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo> getParkourLevelInfoListList() {
         if (parkourLevelInfoListBuilder_ == null) {
@@ -780,7 +780,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public int getParkourLevelInfoListCount() {
         if (parkourLevelInfoListBuilder_ == null) {
@@ -790,7 +790,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo getParkourLevelInfoList(int index) {
         if (parkourLevelInfoListBuilder_ == null) {
@@ -800,7 +800,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder setParkourLevelInfoList(
           int index, emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo value) {
@@ -817,7 +817,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder setParkourLevelInfoList(
           int index, emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder builderForValue) {
@@ -831,7 +831,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder addParkourLevelInfoList(emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo value) {
         if (parkourLevelInfoListBuilder_ == null) {
@@ -847,7 +847,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder addParkourLevelInfoList(
           int index, emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo value) {
@@ -864,7 +864,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder addParkourLevelInfoList(
           emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder builderForValue) {
@@ -878,7 +878,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder addParkourLevelInfoList(
           int index, emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder builderForValue) {
@@ -892,7 +892,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder addAllParkourLevelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo> values) {
@@ -907,7 +907,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder clearParkourLevelInfoList() {
         if (parkourLevelInfoListBuilder_ == null) {
@@ -920,7 +920,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public Builder removeParkourLevelInfoList(int index) {
         if (parkourLevelInfoListBuilder_ == null) {
@@ -933,14 +933,14 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder getParkourLevelInfoListBuilder(
           int index) {
         return getParkourLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfoOrBuilder getParkourLevelInfoListOrBuilder(
           int index) {
@@ -950,7 +950,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfoOrBuilder> 
            getParkourLevelInfoListOrBuilderList() {
@@ -961,14 +961,14 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder addParkourLevelInfoListBuilder() {
         return getParkourLevelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder addParkourLevelInfoListBuilder(
           int index) {
@@ -976,7 +976,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 2;</code>
+       * <code>repeated .ParkourLevelInfo parkour_level_info_list = 3;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ParkourLevelInfoOuterClass.ParkourLevelInfo.Builder> 
            getParkourLevelInfoListBuilderList() {
@@ -1239,7 +1239,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
 
       private boolean isContentClosed_ ;
       /**
-       * <code>bool is_content_closed = 10;</code>
+       * <code>bool is_content_closed = 4;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -1247,7 +1247,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return isContentClosed_;
       }
       /**
-       * <code>bool is_content_closed = 10;</code>
+       * <code>bool is_content_closed = 4;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -1258,7 +1258,7 @@ public final class BlitzRushActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_content_closed = 10;</code>
+       * <code>bool is_content_closed = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
@@ -1337,10 +1337,10 @@ public final class BlitzRushActivityDetailInfoOuterClass {
       "\n!BlitzRushActivityDetailInfo.proto\032\024Bli" +
       "tzRushStage.proto\032\026ParkourLevelInfo.prot" +
       "o\"\255\001\n\033BlitzRushActivityDetailInfo\022\032\n\022con" +
-      "tent_close_time\030\014 \001(\r\0222\n\027parkour_level_i" +
-      "nfo_list\030\002 \003(\0132\021.ParkourLevelInfo\022#\n\nsta" +
+      "tent_close_time\030\002 \001(\r\0222\n\027parkour_level_i" +
+      "nfo_list\030\003 \003(\0132\021.ParkourLevelInfo\022#\n\nsta" +
       "ge_list\030\001 \003(\0132\017.BlitzRushStage\022\031\n\021is_con" +
-      "tent_closed\030\n \001(\010BB\n\031emu.grasscutter.net" +
+      "tent_closed\030\004 \001(\010BB\n\031emu.grasscutter.net" +
       ".protoB%BlitzRushActivityDetailInfoOuter" +
       "Classb\006proto3"
     };

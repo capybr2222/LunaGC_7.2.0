@@ -25,12 +25,12 @@ public final class _LevelStateMachineCompOuterClass {
     int getBIFLHAOJNJO();
 
     /**
-     * <code>string GACOKFFCBJO = 2;</code>
+     * <code>string GACOKFFCBJO = 20000;</code>
      * @return The gACOKFFCBJO.
      */
     java.lang.String getGACOKFFCBJO();
     /**
-     * <code>string GACOKFFCBJO = 2;</code>
+     * <code>string GACOKFFCBJO = 20000;</code>
      * @return The bytes for gACOKFFCBJO.
      */
     com.google.protobuf.ByteString
@@ -87,7 +87,7 @@ public final class _LevelStateMachineCompOuterClass {
               bIFLHAOJNJO_ = input.readInt32();
               break;
             }
-            case 18: {
+            case 160002: {
               java.lang.String s = input.readStringRequireUtf8();
 
               gACOKFFCBJO_ = s;
@@ -136,10 +136,10 @@ public final class _LevelStateMachineCompOuterClass {
       return bIFLHAOJNJO_;
     }
 
-    public static final int GACOKFFCBJO_FIELD_NUMBER = 2;
+    public static final int GACOKFFCBJO_FIELD_NUMBER = 20000;
     private volatile java.lang.Object gACOKFFCBJO_;
     /**
-     * <code>string GACOKFFCBJO = 2;</code>
+     * <code>string GACOKFFCBJO = 20000;</code>
      * @return The gACOKFFCBJO.
      */
     @java.lang.Override
@@ -156,7 +156,7 @@ public final class _LevelStateMachineCompOuterClass {
       }
     }
     /**
-     * <code>string GACOKFFCBJO = 2;</code>
+     * <code>string GACOKFFCBJO = 20000;</code>
      * @return The bytes for gACOKFFCBJO.
      */
     @java.lang.Override
@@ -192,7 +192,7 @@ public final class _LevelStateMachineCompOuterClass {
         output.writeInt32(1, bIFLHAOJNJO_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gACOKFFCBJO_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, gACOKFFCBJO_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 20000, gACOKFFCBJO_);
       }
       unknownFields.writeTo(output);
     }
@@ -208,7 +208,7 @@ public final class _LevelStateMachineCompOuterClass {
           .computeInt32Size(1, bIFLHAOJNJO_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gACOKFFCBJO_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, gACOKFFCBJO_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(20000, gACOKFFCBJO_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -526,7 +526,7 @@ public final class _LevelStateMachineCompOuterClass {
 
       private java.lang.Object gACOKFFCBJO_ = "";
       /**
-       * <code>string GACOKFFCBJO = 2;</code>
+       * <code>string GACOKFFCBJO = 20000;</code>
        * @return The gACOKFFCBJO.
        */
       public java.lang.String getGACOKFFCBJO() {
@@ -542,7 +542,7 @@ public final class _LevelStateMachineCompOuterClass {
         }
       }
       /**
-       * <code>string GACOKFFCBJO = 2;</code>
+       * <code>string GACOKFFCBJO = 20000;</code>
        * @return The bytes for gACOKFFCBJO.
        */
       public com.google.protobuf.ByteString
@@ -559,7 +559,7 @@ public final class _LevelStateMachineCompOuterClass {
         }
       }
       /**
-       * <code>string GACOKFFCBJO = 2;</code>
+       * <code>string GACOKFFCBJO = 20000;</code>
        * @param value The gACOKFFCBJO to set.
        * @return This builder for chaining.
        */
@@ -574,7 +574,7 @@ public final class _LevelStateMachineCompOuterClass {
         return this;
       }
       /**
-       * <code>string GACOKFFCBJO = 2;</code>
+       * <code>string GACOKFFCBJO = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearGACOKFFCBJO() {
@@ -584,7 +584,7 @@ public final class _LevelStateMachineCompOuterClass {
         return this;
       }
       /**
-       * <code>string GACOKFFCBJO = 2;</code>
+       * <code>string GACOKFFCBJO = 20000;</code>
        * @param value The bytes for gACOKFFCBJO to set.
        * @return This builder for chaining.
        */
@@ -666,11 +666,11 @@ public final class _LevelStateMachineCompOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034_LevelStateMachineComp.proto\"B\n\026_Level" +
-      "StateMachineComp\022\023\n\013BIFLHAOJNJO\030\001 \001(\005\022\023\n" +
-      "\013GACOKFFCBJO\030\002 \001(\tB=\n\031emu.grasscutter.ne" +
-      "t.protoB _LevelStateMachineCompOuterClas" +
-      "sb\006proto3"
+      "\n\034_LevelStateMachineComp.proto\"D\n\026_Level" +
+      "StateMachineComp\022\023\n\013BIFLHAOJNJO\030\001 \001(\005\022\025\n" +
+      "\013GACOKFFCBJO\030\240\234\001 \001(\tB=\n\031emu.grasscutter." +
+      "net.protoB _LevelStateMachineCompOuterCl" +
+      "assb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

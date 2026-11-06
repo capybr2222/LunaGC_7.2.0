@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "FurnitureMakeMakeInfoOuterClass";
 
 message FurnitureMakeMakeInfo {
-	uint32 furniture_id = 3;
-	uint32 make_count = 15;
+	uint32 furniture_id = 2;
+	uint32 make_count = 5;
 }

@@ -32,10 +32,8 @@ public class PacketSceneTeamUpdateNotify extends BasePacket {
                                 .addAllTpsWeaponList(
                                         TpsWeaponSystem.getSceneWeaponInfos(entityAvatar.getAvatar()));
 
-                if (player.getWorld().isMultiplayer()) {
-                    avatarProto.setAvatarInfo(entityAvatar.getAvatar().toProto());
-                    avatarProto.setSceneAvatarInfo(entityAvatar.getSceneAvatarInfo());
-                }
+                avatarProto.setAvatarInfo(entityAvatar.getAvatar().toProto());
+                avatarProto.setSceneAvatarInfo(entityAvatar.getSceneAvatarInfo());
 
                 proto.addSceneTeamAvatarList(avatarProto);
             }

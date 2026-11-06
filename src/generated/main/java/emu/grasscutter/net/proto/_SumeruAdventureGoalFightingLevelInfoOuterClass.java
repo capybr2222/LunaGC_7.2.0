@@ -19,22 +19,22 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
      * @return Whether the mFJAFOAHPDA field is set.
      */
     boolean hasMFJAFOAHPDA();
     /**
-     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
      * @return The mFJAFOAHPDA.
      */
     emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ getMFJAFOAHPDA();
     /**
-     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
      */
     emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJOrBuilder getMFJAFOAHPDAOrBuilder();
 
     /**
-     * <code>uint32 LLGCHCADBJF = 3;</code>
+     * <code>uint32 LLGCHCADBJF = 14;</code>
      * @return The lLGCHCADBJF.
      */
     int getLLGCHCADBJF();
@@ -84,12 +84,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              lLGCHCADBJF_ = input.readUInt32();
-              break;
-            }
-            case 34: {
+            case 90: {
               emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ.Builder subBuilder = null;
               if (mFJAFOAHPDA_ != null) {
                 subBuilder = mFJAFOAHPDA_.toBuilder();
@@ -100,6 +95,11 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
                 mFJAFOAHPDA_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 112: {
+
+              lLGCHCADBJF_ = input.readUInt32();
               break;
             }
             default: {
@@ -134,10 +134,10 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
               emu.grasscutter.net.proto._SumeruAdventureGoalFightingLevelInfoOuterClass._SumeruAdventureGoalFightingLevelInfo.class, emu.grasscutter.net.proto._SumeruAdventureGoalFightingLevelInfoOuterClass._SumeruAdventureGoalFightingLevelInfo.Builder.class);
     }
 
-    public static final int MFJAFOAHPDA_FIELD_NUMBER = 4;
+    public static final int MFJAFOAHPDA_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ mFJAFOAHPDA_;
     /**
-     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
      * @return Whether the mFJAFOAHPDA field is set.
      */
     @java.lang.Override
@@ -145,7 +145,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
       return mFJAFOAHPDA_ != null;
     }
     /**
-     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
      * @return The mFJAFOAHPDA.
      */
     @java.lang.Override
@@ -153,17 +153,17 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
       return mFJAFOAHPDA_ == null ? emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ.getDefaultInstance() : mFJAFOAHPDA_;
     }
     /**
-     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+     * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJOrBuilder getMFJAFOAHPDAOrBuilder() {
       return getMFJAFOAHPDA();
     }
 
-    public static final int LLGCHCADBJF_FIELD_NUMBER = 3;
+    public static final int LLGCHCADBJF_FIELD_NUMBER = 14;
     private int lLGCHCADBJF_;
     /**
-     * <code>uint32 LLGCHCADBJF = 3;</code>
+     * <code>uint32 LLGCHCADBJF = 14;</code>
      * @return The lLGCHCADBJF.
      */
     @java.lang.Override
@@ -185,11 +185,11 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (lLGCHCADBJF_ != 0) {
-        output.writeUInt32(3, lLGCHCADBJF_);
-      }
       if (mFJAFOAHPDA_ != null) {
-        output.writeMessage(4, getMFJAFOAHPDA());
+        output.writeMessage(11, getMFJAFOAHPDA());
+      }
+      if (lLGCHCADBJF_ != 0) {
+        output.writeUInt32(14, lLGCHCADBJF_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +200,13 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (lLGCHCADBJF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, lLGCHCADBJF_);
-      }
       if (mFJAFOAHPDA_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getMFJAFOAHPDA());
+          .computeMessageSize(11, getMFJAFOAHPDA());
+      }
+      if (lLGCHCADBJF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, lLGCHCADBJF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -507,14 +507,14 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ, emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ.Builder, emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJOrBuilder> mFJAFOAHPDABuilder_;
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        * @return Whether the mFJAFOAHPDA field is set.
        */
       public boolean hasMFJAFOAHPDA() {
         return mFJAFOAHPDABuilder_ != null || mFJAFOAHPDA_ != null;
       }
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        * @return The mFJAFOAHPDA.
        */
       public emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ getMFJAFOAHPDA() {
@@ -525,7 +525,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         }
       }
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        */
       public Builder setMFJAFOAHPDA(emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ value) {
         if (mFJAFOAHPDABuilder_ == null) {
@@ -541,7 +541,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        */
       public Builder setMFJAFOAHPDA(
           emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ.Builder builderForValue) {
@@ -555,7 +555,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        */
       public Builder mergeMFJAFOAHPDA(emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ value) {
         if (mFJAFOAHPDABuilder_ == null) {
@@ -573,7 +573,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        */
       public Builder clearMFJAFOAHPDA() {
         if (mFJAFOAHPDABuilder_ == null) {
@@ -587,7 +587,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        */
       public emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ.Builder getMFJAFOAHPDABuilder() {
         
@@ -595,7 +595,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         return getMFJAFOAHPDAFieldBuilder().getBuilder();
       }
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        */
       public emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJOrBuilder getMFJAFOAHPDAOrBuilder() {
         if (mFJAFOAHPDABuilder_ != null) {
@@ -606,7 +606,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         }
       }
       /**
-       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 4;</code>
+       * <code>.NOJCFCNEIMJ MFJAFOAHPDA = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ, emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJ.Builder, emu.grasscutter.net.proto.NOJCFCNEIMJOuterClass.NOJCFCNEIMJOrBuilder> 
@@ -624,7 +624,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
 
       private int lLGCHCADBJF_ ;
       /**
-       * <code>uint32 LLGCHCADBJF = 3;</code>
+       * <code>uint32 LLGCHCADBJF = 14;</code>
        * @return The lLGCHCADBJF.
        */
       @java.lang.Override
@@ -632,7 +632,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         return lLGCHCADBJF_;
       }
       /**
-       * <code>uint32 LLGCHCADBJF = 3;</code>
+       * <code>uint32 LLGCHCADBJF = 14;</code>
        * @param value The lLGCHCADBJF to set.
        * @return This builder for chaining.
        */
@@ -643,7 +643,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LLGCHCADBJF = 3;</code>
+       * <code>uint32 LLGCHCADBJF = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLLGCHCADBJF() {
@@ -722,7 +722,7 @@ public final class _SumeruAdventureGoalFightingLevelInfoOuterClass {
       "\n+_SumeruAdventureGoalFightingLevelInfo." +
       "proto\032\021NOJCFCNEIMJ.proto\"_\n%_SumeruAdven" +
       "tureGoalFightingLevelInfo\022!\n\013MFJAFOAHPDA" +
-      "\030\004 \001(\0132\014.NOJCFCNEIMJ\022\023\n\013LLGCHCADBJF\030\003 \001(" +
+      "\030\013 \001(\0132\014.NOJCFCNEIMJ\022\023\n\013LLGCHCADBJF\030\016 \001(" +
       "\rBL\n\031emu.grasscutter.net.protoB/_SumeruA" +
       "dventureGoalFightingLevelInfoOuterClassb" +
       "\006proto3"

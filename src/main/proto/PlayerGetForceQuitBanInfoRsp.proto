@@ -5,6 +5,6 @@ option java_outer_classname = "PlayerGetForceQuitBanInfoRspOuterClass";
 
 message PlayerGetForceQuitBanInfoRsp {
 	uint32 expire_time = 11;
-	uint32 match_id = 8;
-	int32 retcode = 12;
+	uint32 match_id = 7;
+	int32 retcode = 6;
 }

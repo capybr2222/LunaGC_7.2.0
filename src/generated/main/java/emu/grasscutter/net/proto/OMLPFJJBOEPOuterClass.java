@@ -19,7 +19,7 @@ public final class OMLPFJJBOEPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_level_open = 8;</code>
+     * <code>bool is_level_open = 3;</code>
      * @return The isLevelOpen.
      */
     boolean getIsLevelOpen();
@@ -31,7 +31,7 @@ public final class OMLPFJJBOEPOuterClass {
     int getLevelId();
 
     /**
-     * <code>uint32 NHEFNKONPEI = 11;</code>
+     * <code>uint32 NHEFNKONPEI = 2;</code>
      * @return The nHEFNKONPEI.
      */
     int getNHEFNKONPEI();
@@ -86,14 +86,14 @@ public final class OMLPFJJBOEPOuterClass {
               levelId_ = input.readUInt32();
               break;
             }
-            case 64: {
-
-              isLevelOpen_ = input.readBool();
-              break;
-            }
-            case 88: {
+            case 16: {
 
               nHEFNKONPEI_ = input.readUInt32();
+              break;
+            }
+            case 24: {
+
+              isLevelOpen_ = input.readBool();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class OMLPFJJBOEPOuterClass {
               emu.grasscutter.net.proto.OMLPFJJBOEPOuterClass.OMLPFJJBOEP.class, emu.grasscutter.net.proto.OMLPFJJBOEPOuterClass.OMLPFJJBOEP.Builder.class);
     }
 
-    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 8;
+    public static final int IS_LEVEL_OPEN_FIELD_NUMBER = 3;
     private boolean isLevelOpen_;
     /**
-     * <code>bool is_level_open = 8;</code>
+     * <code>bool is_level_open = 3;</code>
      * @return The isLevelOpen.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class OMLPFJJBOEPOuterClass {
       return levelId_;
     }
 
-    public static final int NHEFNKONPEI_FIELD_NUMBER = 11;
+    public static final int NHEFNKONPEI_FIELD_NUMBER = 2;
     private int nHEFNKONPEI_;
     /**
-     * <code>uint32 NHEFNKONPEI = 11;</code>
+     * <code>uint32 NHEFNKONPEI = 2;</code>
      * @return The nHEFNKONPEI.
      */
     @java.lang.Override
@@ -178,11 +178,11 @@ public final class OMLPFJJBOEPOuterClass {
       if (levelId_ != 0) {
         output.writeUInt32(1, levelId_);
       }
-      if (isLevelOpen_ != false) {
-        output.writeBool(8, isLevelOpen_);
-      }
       if (nHEFNKONPEI_ != 0) {
-        output.writeUInt32(11, nHEFNKONPEI_);
+        output.writeUInt32(2, nHEFNKONPEI_);
+      }
+      if (isLevelOpen_ != false) {
+        output.writeBool(3, isLevelOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,13 +197,13 @@ public final class OMLPFJJBOEPOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, levelId_);
       }
-      if (isLevelOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isLevelOpen_);
-      }
       if (nHEFNKONPEI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, nHEFNKONPEI_);
+          .computeUInt32Size(2, nHEFNKONPEI_);
+      }
+      if (isLevelOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, isLevelOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -500,7 +500,7 @@ public final class OMLPFJJBOEPOuterClass {
 
       private boolean isLevelOpen_ ;
       /**
-       * <code>bool is_level_open = 8;</code>
+       * <code>bool is_level_open = 3;</code>
        * @return The isLevelOpen.
        */
       @java.lang.Override
@@ -508,7 +508,7 @@ public final class OMLPFJJBOEPOuterClass {
         return isLevelOpen_;
       }
       /**
-       * <code>bool is_level_open = 8;</code>
+       * <code>bool is_level_open = 3;</code>
        * @param value The isLevelOpen to set.
        * @return This builder for chaining.
        */
@@ -519,7 +519,7 @@ public final class OMLPFJJBOEPOuterClass {
         return this;
       }
       /**
-       * <code>bool is_level_open = 8;</code>
+       * <code>bool is_level_open = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLevelOpen() {
@@ -562,7 +562,7 @@ public final class OMLPFJJBOEPOuterClass {
 
       private int nHEFNKONPEI_ ;
       /**
-       * <code>uint32 NHEFNKONPEI = 11;</code>
+       * <code>uint32 NHEFNKONPEI = 2;</code>
        * @return The nHEFNKONPEI.
        */
       @java.lang.Override
@@ -570,7 +570,7 @@ public final class OMLPFJJBOEPOuterClass {
         return nHEFNKONPEI_;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 11;</code>
+       * <code>uint32 NHEFNKONPEI = 2;</code>
        * @param value The nHEFNKONPEI to set.
        * @return This builder for chaining.
        */
@@ -581,7 +581,7 @@ public final class OMLPFJJBOEPOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 11;</code>
+       * <code>uint32 NHEFNKONPEI = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearNHEFNKONPEI() {
@@ -658,8 +658,8 @@ public final class OMLPFJJBOEPOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021OMLPFJJBOEP.proto\"K\n\013OMLPFJJBOEP\022\025\n\ris" +
-      "_level_open\030\010 \001(\010\022\020\n\010level_id\030\001 \001(\r\022\023\n\013N" +
-      "HEFNKONPEI\030\013 \001(\rB2\n\031emu.grasscutter.net." +
+      "_level_open\030\003 \001(\010\022\020\n\010level_id\030\001 \001(\r\022\023\n\013N" +
+      "HEFNKONPEI\030\002 \001(\rB2\n\031emu.grasscutter.net." +
       "protoB\025OMLPFJJBOEPOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

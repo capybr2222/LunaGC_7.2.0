@@ -19,17 +19,17 @@ public final class TakeAchievementGoalRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 id_list = 13;</code>
+     * <code>repeated uint32 id_list = 14;</code>
      * @return A list containing the idList.
      */
     java.util.List<java.lang.Integer> getIdListList();
     /**
-     * <code>repeated uint32 id_list = 13;</code>
+     * <code>repeated uint32 id_list = 14;</code>
      * @return The count of idList.
      */
     int getIdListCount();
     /**
-     * <code>repeated uint32 id_list = 13;</code>
+     * <code>repeated uint32 id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The idList at the given index.
      */
@@ -82,7 +82,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 idList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -90,7 +90,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
               idList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -138,10 +138,10 @@ public final class TakeAchievementGoalRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeAchievementGoalRewardReqOuterClass.TakeAchievementGoalRewardReq.class, emu.grasscutter.net.proto.TakeAchievementGoalRewardReqOuterClass.TakeAchievementGoalRewardReq.Builder.class);
     }
 
-    public static final int ID_LIST_FIELD_NUMBER = 13;
+    public static final int ID_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList idList_;
     /**
-     * <code>repeated uint32 id_list = 13;</code>
+     * <code>repeated uint32 id_list = 14;</code>
      * @return A list containing the idList.
      */
     @java.lang.Override
@@ -150,14 +150,14 @@ public final class TakeAchievementGoalRewardReqOuterClass {
       return idList_;
     }
     /**
-     * <code>repeated uint32 id_list = 13;</code>
+     * <code>repeated uint32 id_list = 14;</code>
      * @return The count of idList.
      */
     public int getIdListCount() {
       return idList_.size();
     }
     /**
-     * <code>repeated uint32 id_list = 13;</code>
+     * <code>repeated uint32 id_list = 14;</code>
      * @param index The index of the element to return.
      * @return The idList at the given index.
      */
@@ -182,7 +182,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(idListMemoizedSerializedSize);
       }
       for (int i = 0; i < idList_.size(); i++) {
@@ -506,7 +506,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 id_list = 13;</code>
+       * <code>repeated uint32 id_list = 14;</code>
        * @return A list containing the idList.
        */
       public java.util.List<java.lang.Integer>
@@ -515,14 +515,14 @@ public final class TakeAchievementGoalRewardReqOuterClass {
                  java.util.Collections.unmodifiableList(idList_) : idList_;
       }
       /**
-       * <code>repeated uint32 id_list = 13;</code>
+       * <code>repeated uint32 id_list = 14;</code>
        * @return The count of idList.
        */
       public int getIdListCount() {
         return idList_.size();
       }
       /**
-       * <code>repeated uint32 id_list = 13;</code>
+       * <code>repeated uint32 id_list = 14;</code>
        * @param index The index of the element to return.
        * @return The idList at the given index.
        */
@@ -530,7 +530,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
         return idList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 id_list = 13;</code>
+       * <code>repeated uint32 id_list = 14;</code>
        * @param index The index to set the value at.
        * @param value The idList to set.
        * @return This builder for chaining.
@@ -543,7 +543,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 id_list = 13;</code>
+       * <code>repeated uint32 id_list = 14;</code>
        * @param value The idList to add.
        * @return This builder for chaining.
        */
@@ -554,7 +554,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 id_list = 13;</code>
+       * <code>repeated uint32 id_list = 14;</code>
        * @param values The idList to add.
        * @return This builder for chaining.
        */
@@ -567,7 +567,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 id_list = 13;</code>
+       * <code>repeated uint32 id_list = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIdList() {
@@ -645,7 +645,7 @@ public final class TakeAchievementGoalRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"TakeAchievementGoalRewardReq.proto\"/\n\034" +
       "TakeAchievementGoalRewardReq\022\017\n\007id_list\030" +
-      "\r \003(\rBC\n\031emu.grasscutter.net.protoB&Take" +
+      "\016 \003(\rBC\n\031emu.grasscutter.net.protoB&Take" +
       "AchievementGoalRewardReqOuterClassb\006prot" +
       "o3"
     };

@@ -31,13 +31,13 @@ public final class RogueDiaryDungeonRecordOuterClass {
     int getMaxRound();
 
     /**
-     * <code>uint32 finish_time = 6;</code>
+     * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
     int getFinishTime();
 
     /**
-     * <code>bool is_finish = 9;</code>
+     * <code>bool is_finish = 2;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
@@ -92,19 +92,19 @@ public final class RogueDiaryDungeonRecordOuterClass {
               difficulty_ = input.readUInt32();
               break;
             }
+            case 16: {
+
+              isFinish_ = input.readBool();
+              break;
+            }
             case 24: {
 
               maxRound_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 32: {
 
               finishTime_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              isFinish_ = input.readBool();
               break;
             }
             default: {
@@ -161,10 +161,10 @@ public final class RogueDiaryDungeonRecordOuterClass {
       return maxRound_;
     }
 
-    public static final int FINISH_TIME_FIELD_NUMBER = 6;
+    public static final int FINISH_TIME_FIELD_NUMBER = 4;
     private int finishTime_;
     /**
-     * <code>uint32 finish_time = 6;</code>
+     * <code>uint32 finish_time = 4;</code>
      * @return The finishTime.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class RogueDiaryDungeonRecordOuterClass {
       return finishTime_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 9;
+    public static final int IS_FINISH_FIELD_NUMBER = 2;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 9;</code>
+     * <code>bool is_finish = 2;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -200,14 +200,14 @@ public final class RogueDiaryDungeonRecordOuterClass {
       if (difficulty_ != 0) {
         output.writeUInt32(1, difficulty_);
       }
+      if (isFinish_ != false) {
+        output.writeBool(2, isFinish_);
+      }
       if (maxRound_ != 0) {
         output.writeUInt32(3, maxRound_);
       }
       if (finishTime_ != 0) {
-        output.writeUInt32(6, finishTime_);
-      }
-      if (isFinish_ != false) {
-        output.writeBool(9, isFinish_);
+        output.writeUInt32(4, finishTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,17 +222,17 @@ public final class RogueDiaryDungeonRecordOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, difficulty_);
       }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isFinish_);
+      }
       if (maxRound_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, maxRound_);
       }
       if (finishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, finishTime_);
-      }
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isFinish_);
+          .computeUInt32Size(4, finishTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -601,7 +601,7 @@ public final class RogueDiaryDungeonRecordOuterClass {
 
       private int finishTime_ ;
       /**
-       * <code>uint32 finish_time = 6;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @return The finishTime.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class RogueDiaryDungeonRecordOuterClass {
         return finishTime_;
       }
       /**
-       * <code>uint32 finish_time = 6;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @param value The finishTime to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class RogueDiaryDungeonRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finish_time = 6;</code>
+       * <code>uint32 finish_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishTime() {
@@ -632,7 +632,7 @@ public final class RogueDiaryDungeonRecordOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 9;</code>
+       * <code>bool is_finish = 2;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class RogueDiaryDungeonRecordOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 9;</code>
+       * <code>bool is_finish = 2;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class RogueDiaryDungeonRecordOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 9;</code>
+       * <code>bool is_finish = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -729,8 +729,8 @@ public final class RogueDiaryDungeonRecordOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035RogueDiaryDungeonRecord.proto\"h\n\027Rogue" +
       "DiaryDungeonRecord\022\022\n\ndifficulty\030\001 \001(\r\022\021" +
-      "\n\tmax_round\030\003 \001(\r\022\023\n\013finish_time\030\006 \001(\r\022\021" +
-      "\n\tis_finish\030\t \001(\010B>\n\031emu.grasscutter.net" +
+      "\n\tmax_round\030\003 \001(\r\022\023\n\013finish_time\030\004 \001(\r\022\021" +
+      "\n\tis_finish\030\002 \001(\010B>\n\031emu.grasscutter.net" +
       ".protoB!RogueDiaryDungeonRecordOuterClas" +
       "sb\006proto3"
     };

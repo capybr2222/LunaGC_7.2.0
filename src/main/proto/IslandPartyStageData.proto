@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "IslandPartyStageDataOuterClass";
 
 message IslandPartyStageData {
-	uint32 best_score = 12;
-	bool is_open = 8;
-	uint32 stage_id = 4;
+	uint32 best_score = 3;
+	bool is_open = 2;
+	uint32 stage_id = 1;
 }

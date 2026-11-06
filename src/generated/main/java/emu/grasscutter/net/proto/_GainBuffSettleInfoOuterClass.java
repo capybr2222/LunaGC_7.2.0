@@ -19,25 +19,25 @@ public final class _GainBuffSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 difficulty = 13;</code>
+     * <code>uint32 difficulty = 14;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 11;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 12;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -87,22 +87,22 @@ public final class _GainBuffSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 24: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 88: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 80: {
+            case 96: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 112: {
 
               difficulty_ = input.readUInt32();
               break;
@@ -139,10 +139,10 @@ public final class _GainBuffSettleInfoOuterClass {
               emu.grasscutter.net.proto._GainBuffSettleInfoOuterClass._GainBuffSettleInfo.class, emu.grasscutter.net.proto._GainBuffSettleInfoOuterClass._GainBuffSettleInfo.Builder.class);
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 13;
+    public static final int DIFFICULTY_FIELD_NUMBER = 14;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 13;</code>
+     * <code>uint32 difficulty = 14;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _GainBuffSettleInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 11;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 11;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _GainBuffSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 10;
+    public static final int SCORE_FIELD_NUMBER = 12;
     private int score_;
     /**
-     * <code>uint32 score = 10;</code>
+     * <code>uint32 score = 12;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _GainBuffSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 8;
+    public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 8;</code>
+     * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -198,16 +198,16 @@ public final class _GainBuffSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(8, levelId_);
+        output.writeUInt32(3, levelId_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+        output.writeBool(11, isNewRecord_);
       }
       if (score_ != 0) {
-        output.writeUInt32(10, score_);
+        output.writeUInt32(12, score_);
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(13, difficulty_);
+        output.writeUInt32(14, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,19 +220,19 @@ public final class _GainBuffSettleInfoOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, levelId_);
+          .computeUInt32Size(3, levelId_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeBoolSize(11, isNewRecord_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, score_);
+          .computeUInt32Size(12, score_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, difficulty_);
+          .computeUInt32Size(14, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class _GainBuffSettleInfoOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 13;</code>
+       * <code>uint32 difficulty = 14;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class _GainBuffSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 13;</code>
+       * <code>uint32 difficulty = 14;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class _GainBuffSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 13;</code>
+       * <code>uint32 difficulty = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -570,7 +570,7 @@ public final class _GainBuffSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 11;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class _GainBuffSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 11;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class _GainBuffSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -601,7 +601,7 @@ public final class _GainBuffSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 12;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class _GainBuffSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 12;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class _GainBuffSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 10;</code>
+       * <code>uint32 score = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -632,7 +632,7 @@ public final class _GainBuffSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class _GainBuffSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class _GainBuffSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 8;</code>
+       * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -728,9 +728,9 @@ public final class _GainBuffSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031_GainBuffSettleInfo.proto\"a\n\023_GainBuff" +
-      "SettleInfo\022\022\n\ndifficulty\030\r \001(\r\022\025\n\ris_new" +
-      "_record\030\t \001(\010\022\r\n\005score\030\n \001(\r\022\020\n\010level_id" +
-      "\030\010 \001(\rB:\n\031emu.grasscutter.net.protoB\035_Ga" +
+      "SettleInfo\022\022\n\ndifficulty\030\016 \001(\r\022\025\n\ris_new" +
+      "_record\030\013 \001(\010\022\r\n\005score\030\014 \001(\r\022\020\n\010level_id" +
+      "\030\003 \001(\rB:\n\031emu.grasscutter.net.protoB\035_Ga" +
       "inBuffSettleInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -6,6 +6,6 @@ option java_outer_classname = "GetShopRspOuterClass";
 import "Shop.proto";
 
 message GetShopRsp {
-	int32 retcode = 2;
-	Shop shop = 9;
+	int32 retcode = 3;
+	Shop shop = 15;
 }

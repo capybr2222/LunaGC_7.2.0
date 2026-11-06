@@ -6,7 +6,7 @@ option java_outer_classname = "TakeCompoundOutputRspOuterClass";
 import "ItemParam.proto";
 
 message TakeCompoundOutputRsp {
-	repeated int32 ANAMNOCEICO = 3;
-	repeated ItemParam item_list = 11;
-	int32 retcode = 2;
+	repeated int32 ANAMNOCEICO = 11;
+	repeated ItemParam item_list = 5;
+	int32 retcode = 8;
 }

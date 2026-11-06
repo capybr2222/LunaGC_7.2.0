@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "_BeyondWorldInfoOuterClass";
 
 message _BeyondWorldInfo {
-	uint32 OBONBLEEHBK = 1;
+	uint32 OBONBLEEHBK = 20001;
 	repeated uint64 AIFEJOGBAKK = 2;
 }

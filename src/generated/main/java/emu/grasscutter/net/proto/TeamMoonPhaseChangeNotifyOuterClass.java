@@ -31,7 +31,7 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
     int getMoonPhaseLevel();
 
     /**
-     * <code>bool _is_activate_damselette_free_moon_phase = 3;</code>
+     * <code>bool _is_activate_damselette_free_moon_phase = 6;</code>
      * @return The isActivateDamseletteFreeMoonPhase.
      */
     boolean getIsActivateDamseletteFreeMoonPhase();
@@ -43,7 +43,7 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
     int getMoonPhaseType();
 
     /**
-     * <code>uint64 LHLFHFACGNL = 8;</code>
+     * <code>uint64 LHLFHFACGNL = 9;</code>
      * @return The lHLFHFACGNL.
      */
     long getLHLFHFACGNL();
@@ -93,12 +93,12 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 48: {
 
               IsActivateDamseletteFreeMoonPhase_ = input.readBool();
               break;
             }
-            case 64: {
+            case 72: {
 
               lHLFHFACGNL_ = input.readUInt64();
               break;
@@ -172,10 +172,10 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
       return MoonPhaseLevel_;
     }
 
-    public static final int _IS_ACTIVATE_DAMSELETTE_FREE_MOON_PHASE_FIELD_NUMBER = 3;
+    public static final int _IS_ACTIVATE_DAMSELETTE_FREE_MOON_PHASE_FIELD_NUMBER = 6;
     private boolean IsActivateDamseletteFreeMoonPhase_;
     /**
-     * <code>bool _is_activate_damselette_free_moon_phase = 3;</code>
+     * <code>bool _is_activate_damselette_free_moon_phase = 6;</code>
      * @return The isActivateDamseletteFreeMoonPhase.
      */
     @java.lang.Override
@@ -194,10 +194,10 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
       return MoonPhaseType_;
     }
 
-    public static final int LHLFHFACGNL_FIELD_NUMBER = 8;
+    public static final int LHLFHFACGNL_FIELD_NUMBER = 9;
     private long lHLFHFACGNL_;
     /**
-     * <code>uint64 LHLFHFACGNL = 8;</code>
+     * <code>uint64 LHLFHFACGNL = 9;</code>
      * @return The lHLFHFACGNL.
      */
     @java.lang.Override
@@ -220,10 +220,10 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (IsActivateDamseletteFreeMoonPhase_ != false) {
-        output.writeBool(3, IsActivateDamseletteFreeMoonPhase_);
+        output.writeBool(6, IsActivateDamseletteFreeMoonPhase_);
       }
       if (lHLFHFACGNL_ != 0L) {
-        output.writeUInt64(8, lHLFHFACGNL_);
+        output.writeUInt64(9, lHLFHFACGNL_);
       }
       if (lIAGEGINEPH_ != 0) {
         output.writeUInt32(50000, lIAGEGINEPH_);
@@ -245,11 +245,11 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
       size = 0;
       if (IsActivateDamseletteFreeMoonPhase_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, IsActivateDamseletteFreeMoonPhase_);
+          .computeBoolSize(6, IsActivateDamseletteFreeMoonPhase_);
       }
       if (lHLFHFACGNL_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(8, lHLFHFACGNL_);
+          .computeUInt64Size(9, lHLFHFACGNL_);
       }
       if (lIAGEGINEPH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -641,7 +641,7 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
 
       private boolean IsActivateDamseletteFreeMoonPhase_ ;
       /**
-       * <code>bool _is_activate_damselette_free_moon_phase = 3;</code>
+       * <code>bool _is_activate_damselette_free_moon_phase = 6;</code>
        * @return The isActivateDamseletteFreeMoonPhase.
        */
       @java.lang.Override
@@ -649,7 +649,7 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
         return IsActivateDamseletteFreeMoonPhase_;
       }
       /**
-       * <code>bool _is_activate_damselette_free_moon_phase = 3;</code>
+       * <code>bool _is_activate_damselette_free_moon_phase = 6;</code>
        * @param value The isActivateDamseletteFreeMoonPhase to set.
        * @return This builder for chaining.
        */
@@ -660,7 +660,7 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool _is_activate_damselette_free_moon_phase = 3;</code>
+       * <code>bool _is_activate_damselette_free_moon_phase = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsActivateDamseletteFreeMoonPhase() {
@@ -703,7 +703,7 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
 
       private long lHLFHFACGNL_ ;
       /**
-       * <code>uint64 LHLFHFACGNL = 8;</code>
+       * <code>uint64 LHLFHFACGNL = 9;</code>
        * @return The lHLFHFACGNL.
        */
       @java.lang.Override
@@ -711,7 +711,7 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
         return lHLFHFACGNL_;
       }
       /**
-       * <code>uint64 LHLFHFACGNL = 8;</code>
+       * <code>uint64 LHLFHFACGNL = 9;</code>
        * @param value The lHLFHFACGNL to set.
        * @return This builder for chaining.
        */
@@ -722,7 +722,7 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 LHLFHFACGNL = 8;</code>
+       * <code>uint64 LHLFHFACGNL = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearLHLFHFACGNL() {
@@ -801,9 +801,9 @@ public final class TeamMoonPhaseChangeNotifyOuterClass {
       "\n\037TeamMoonPhaseChangeNotify.proto\"\261\001\n\031Te" +
       "amMoonPhaseChangeNotify\022\025\n\013LIAGEGINEPH\030\320" +
       "\206\003 \001(\r\022\033\n\021_moon_phase_level\030\321\206\003 \001(\r\022/\n\'_" +
-      "is_activate_damselette_free_moon_phase\030\003" +
+      "is_activate_damselette_free_moon_phase\030\006" +
       " \001(\010\022\032\n\020_moon_phase_type\030\322\206\003 \001(\r\022\023\n\013LHLF" +
-      "HFACGNL\030\010 \001(\004B@\n\031emu.grasscutter.net.pro" +
+      "HFACGNL\030\t \001(\004B@\n\031emu.grasscutter.net.pro" +
       "toB#TeamMoonPhaseChangeNotifyOuterClassb" +
       "\006proto3"
     };

@@ -4,6 +4,6 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "MoonfinTrialLevelInfoOuterClass";
 
 message MoonfinTrialLevelInfo {
-	uint32 best_record = 5;
-	uint32 open_time = 7;
+	uint32 best_record = 1;
+	uint32 open_time = 2;
 }

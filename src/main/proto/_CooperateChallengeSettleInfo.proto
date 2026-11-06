@@ -28,10 +28,10 @@ message _CooperateChallengeSettleInfo {
 		string nickname = 14;
 		repeated ExhibitionDisplayInfo card_list = 11;
 	}
-	uint32 IKLNEBCKENF = 4;
-	uint32 difficulty_id = 13;
-	repeated JOPDICINNLJ _settle_list = 2;
-	repeated FGCJMIDEKMB GMNBBBOLHDH = 3;
-	repeated uint32 MIFCBDAIKNH = 5;
-	EACPNCPOKGE EBGPHJCLGKC = 14;
+	uint32 IKLNEBCKENF = 3;
+	uint32 difficulty_id = 6;
+	repeated JOPDICINNLJ _settle_list = 5;
+	repeated FGCJMIDEKMB GMNBBBOLHDH = 20000;
+	repeated uint32 MIFCBDAIKNH = 8;
+	EACPNCPOKGE EBGPHJCLGKC = 20002;
 }

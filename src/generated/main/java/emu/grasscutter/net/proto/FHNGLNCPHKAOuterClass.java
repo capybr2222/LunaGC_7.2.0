@@ -53,7 +53,7 @@ public final class FHNGLNCPHKAOuterClass {
         int key);
 
     /**
-     * <code>uint32 BOJCAOCOAJB = 50000;</code>
+     * <code>uint32 BOJCAOCOAJB = 7;</code>
      * @return The bOJCAOCOAJB.
      */
     int getBOJCAOCOAJB();
@@ -83,7 +83,7 @@ public final class FHNGLNCPHKAOuterClass {
         int index);
 
     /**
-     * <code>uint32 FMMKKONOKML = 50001;</code>
+     * <code>uint32 FMMKKONOKML = 9;</code>
      * @return The fMMKKONOKML.
      */
     int getFMMKKONOKML();
@@ -159,6 +159,16 @@ public final class FHNGLNCPHKAOuterClass {
                   bMPLOGFCMLG__.getKey(), bMPLOGFCMLG__.getValue());
               break;
             }
+            case 56: {
+
+              bOJCAOCOAJB_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              fMMKKONOKML_ = input.readUInt32();
+              break;
+            }
             case 82: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 aEIFJINONJF_ = new java.util.ArrayList<emu.grasscutter.net.proto.INJNJCALJGDOuterClass.INJNJCALJGD>();
@@ -166,16 +176,6 @@ public final class FHNGLNCPHKAOuterClass {
               }
               aEIFJINONJF_.add(
                   input.readMessage(emu.grasscutter.net.proto.INJNJCALJGDOuterClass.INJNJCALJGD.parser(), extensionRegistry));
-              break;
-            }
-            case 400000: {
-
-              bOJCAOCOAJB_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              fMMKKONOKML_ = input.readUInt32();
               break;
             }
             default: {
@@ -306,10 +306,10 @@ public final class FHNGLNCPHKAOuterClass {
       return map.get(key);
     }
 
-    public static final int BOJCAOCOAJB_FIELD_NUMBER = 50000;
+    public static final int BOJCAOCOAJB_FIELD_NUMBER = 7;
     private int bOJCAOCOAJB_;
     /**
-     * <code>uint32 BOJCAOCOAJB = 50000;</code>
+     * <code>uint32 BOJCAOCOAJB = 7;</code>
      * @return The bOJCAOCOAJB.
      */
     @java.lang.Override
@@ -357,10 +357,10 @@ public final class FHNGLNCPHKAOuterClass {
       return aEIFJINONJF_.get(index);
     }
 
-    public static final int FMMKKONOKML_FIELD_NUMBER = 50001;
+    public static final int FMMKKONOKML_FIELD_NUMBER = 9;
     private int fMMKKONOKML_;
     /**
-     * <code>uint32 FMMKKONOKML = 50001;</code>
+     * <code>uint32 FMMKKONOKML = 9;</code>
      * @return The fMMKKONOKML.
      */
     @java.lang.Override
@@ -402,14 +402,14 @@ public final class FHNGLNCPHKAOuterClass {
           internalGetBMPLOGFCMLG(),
           BMPLOGFCMLGDefaultEntryHolder.defaultEntry,
           5);
-      for (int i = 0; i < aEIFJINONJF_.size(); i++) {
-        output.writeMessage(10, aEIFJINONJF_.get(i));
-      }
       if (bOJCAOCOAJB_ != 0) {
-        output.writeUInt32(50000, bOJCAOCOAJB_);
+        output.writeUInt32(7, bOJCAOCOAJB_);
       }
       if (fMMKKONOKML_ != 0) {
-        output.writeUInt32(50001, fMMKKONOKML_);
+        output.writeUInt32(9, fMMKKONOKML_);
+      }
+      for (int i = 0; i < aEIFJINONJF_.size(); i++) {
+        output.writeMessage(10, aEIFJINONJF_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -434,17 +434,17 @@ public final class FHNGLNCPHKAOuterClass {
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(5, bMPLOGFCMLG__);
       }
-      for (int i = 0; i < aEIFJINONJF_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, aEIFJINONJF_.get(i));
-      }
       if (bOJCAOCOAJB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, bOJCAOCOAJB_);
+          .computeUInt32Size(7, bOJCAOCOAJB_);
       }
       if (fMMKKONOKML_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, fMMKKONOKML_);
+          .computeUInt32Size(9, fMMKKONOKML_);
+      }
+      for (int i = 0; i < aEIFJINONJF_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, aEIFJINONJF_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -951,7 +951,7 @@ public final class FHNGLNCPHKAOuterClass {
 
       private int bOJCAOCOAJB_ ;
       /**
-       * <code>uint32 BOJCAOCOAJB = 50000;</code>
+       * <code>uint32 BOJCAOCOAJB = 7;</code>
        * @return The bOJCAOCOAJB.
        */
       @java.lang.Override
@@ -959,7 +959,7 @@ public final class FHNGLNCPHKAOuterClass {
         return bOJCAOCOAJB_;
       }
       /**
-       * <code>uint32 BOJCAOCOAJB = 50000;</code>
+       * <code>uint32 BOJCAOCOAJB = 7;</code>
        * @param value The bOJCAOCOAJB to set.
        * @return This builder for chaining.
        */
@@ -970,7 +970,7 @@ public final class FHNGLNCPHKAOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BOJCAOCOAJB = 50000;</code>
+       * <code>uint32 BOJCAOCOAJB = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearBOJCAOCOAJB() {
@@ -1222,7 +1222,7 @@ public final class FHNGLNCPHKAOuterClass {
 
       private int fMMKKONOKML_ ;
       /**
-       * <code>uint32 FMMKKONOKML = 50001;</code>
+       * <code>uint32 FMMKKONOKML = 9;</code>
        * @return The fMMKKONOKML.
        */
       @java.lang.Override
@@ -1230,7 +1230,7 @@ public final class FHNGLNCPHKAOuterClass {
         return fMMKKONOKML_;
       }
       /**
-       * <code>uint32 FMMKKONOKML = 50001;</code>
+       * <code>uint32 FMMKKONOKML = 9;</code>
        * @param value The fMMKKONOKML to set.
        * @return This builder for chaining.
        */
@@ -1241,7 +1241,7 @@ public final class FHNGLNCPHKAOuterClass {
         return this;
       }
       /**
-       * <code>uint32 FMMKKONOKML = 50001;</code>
+       * <code>uint32 FMMKKONOKML = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearFMMKKONOKML() {
@@ -1353,14 +1353,14 @@ public final class FHNGLNCPHKAOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021FHNGLNCPHKA.proto\032\021INJNJCALJGD.proto\"\333" +
+      "\n\021FHNGLNCPHKA.proto\032\021INJNJCALJGD.proto\"\327" +
       "\001\n\013FHNGLNCPHKA\0222\n\013BMPLOGFCMLG\030\005 \003(\0132\035.FH" +
-      "NGLNCPHKA.BMPLOGFCMLGEntry\022\025\n\013BOJCAOCOAJ" +
-      "B\030\320\206\003 \001(\r\022!\n\013AEIFJINONJF\030\n \003(\0132\014.INJNJCA" +
-      "LJGD\022\025\n\013FMMKKONOKML\030\321\206\003 \001(\r\022\023\n\013NEPACBNDB" +
-      "OI\030\003 \001(\r\0322\n\020BMPLOGFCMLGEntry\022\013\n\003key\030\001 \001(" +
-      "\r\022\r\n\005value\030\002 \001(\r:\0028\001B2\n\031emu.grasscutter." +
-      "net.protoB\025FHNGLNCPHKAOuterClassb\006proto3"
+      "NGLNCPHKA.BMPLOGFCMLGEntry\022\023\n\013BOJCAOCOAJ" +
+      "B\030\007 \001(\r\022!\n\013AEIFJINONJF\030\n \003(\0132\014.INJNJCALJ" +
+      "GD\022\023\n\013FMMKKONOKML\030\t \001(\r\022\023\n\013NEPACBNDBOI\030\003" +
+      " \001(\r\0322\n\020BMPLOGFCMLGEntry\022\013\n\003key\030\001 \001(\r\022\r\n" +
+      "\005value\030\002 \001(\r:\0028\001B2\n\031emu.grasscutter.net." +
+      "protoB\025FHNGLNCPHKAOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

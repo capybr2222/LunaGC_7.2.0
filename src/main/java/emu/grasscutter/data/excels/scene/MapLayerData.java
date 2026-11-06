@@ -10,7 +10,9 @@ public final class MapLayerData extends GameResource {
     @Getter(onMethod_ = @Override)
     private int id;
 
-    @SerializedName(value = "BDPONBHJAHL", alternate = {"AFHDCMCENLN", "JBACHLCJFPA"})
+    @SerializedName(
+            value = "BDPONBHJAHL",
+            alternate = {"AFHDCMCENLN", "JBACHLCJFPA", "FIKANFFDGGJ"})
     private int idk1;
 
     @SerializedName(value = "HNHPONNDEHO", alternate = "MHIONMOOBAA")

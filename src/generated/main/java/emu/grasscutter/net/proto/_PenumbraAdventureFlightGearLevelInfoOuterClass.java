@@ -19,25 +19,25 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 max_score = 10;</code>
+     * <code>uint32 max_score = 2;</code>
      * @return The maxScore.
      */
     int getMaxScore();
 
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finish = 6;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -87,24 +87,24 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
 
-              isFinish_ = input.readBool();
+              levelId_ = input.readUInt32();
               break;
             }
-            case 72: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 80: {
+            case 16: {
 
               maxScore_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 24: {
 
-              levelId_ = input.readUInt32();
+              isFinish_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
               emu.grasscutter.net.proto._PenumbraAdventureFlightGearLevelInfoOuterClass._PenumbraAdventureFlightGearLevelInfo.class, emu.grasscutter.net.proto._PenumbraAdventureFlightGearLevelInfoOuterClass._PenumbraAdventureFlightGearLevelInfo.Builder.class);
     }
 
-    public static final int MAX_SCORE_FIELD_NUMBER = 10;
+    public static final int MAX_SCORE_FIELD_NUMBER = 2;
     private int maxScore_;
     /**
-     * <code>uint32 max_score = 10;</code>
+     * <code>uint32 max_score = 2;</code>
      * @return The maxScore.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
       return maxScore_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
+    public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 4;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 6;
+    public static final int IS_FINISH_FIELD_NUMBER = 3;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 6;</code>
+     * <code>bool is_finish = 3;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
       return isFinish_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinish_ != false) {
-        output.writeBool(6, isFinish_);
-      }
-      if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
+      if (levelId_ != 0) {
+        output.writeUInt32(1, levelId_);
       }
       if (maxScore_ != 0) {
-        output.writeUInt32(10, maxScore_);
+        output.writeUInt32(2, maxScore_);
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+      if (isFinish_ != false) {
+        output.writeBool(3, isFinish_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(4, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinish_ != false) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isFinish_);
-      }
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
+          .computeUInt32Size(1, levelId_);
       }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, maxScore_);
+          .computeUInt32Size(2, maxScore_);
       }
-      if (levelId_ != 0) {
+      if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeBoolSize(3, isFinish_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,7 +540,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
 
       private int maxScore_ ;
       /**
-       * <code>uint32 max_score = 10;</code>
+       * <code>uint32 max_score = 2;</code>
        * @return The maxScore.
        */
       @java.lang.Override
@@ -548,7 +548,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
         return maxScore_;
       }
       /**
-       * <code>uint32 max_score = 10;</code>
+       * <code>uint32 max_score = 2;</code>
        * @param value The maxScore to set.
        * @return This builder for chaining.
        */
@@ -559,7 +559,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_score = 10;</code>
+       * <code>uint32 max_score = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxScore() {
@@ -571,7 +571,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 4;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 4;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -602,7 +602,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 3;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 3;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -633,7 +633,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -730,8 +730,8 @@ public final class _PenumbraAdventureFlightGearLevelInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n+_PenumbraAdventureFlightGearLevelInfo." +
       "proto\"p\n%_PenumbraAdventureFlightGearLev" +
-      "elInfo\022\021\n\tmax_score\030\n \001(\r\022\017\n\007is_open\030\t \001" +
-      "(\010\022\021\n\tis_finish\030\006 \001(\010\022\020\n\010level_id\030\017 \001(\rB" +
+      "elInfo\022\021\n\tmax_score\030\002 \001(\r\022\017\n\007is_open\030\004 \001" +
+      "(\010\022\021\n\tis_finish\030\003 \001(\010\022\020\n\010level_id\030\001 \001(\rB" +
       "L\n\031emu.grasscutter.net.protoB/_PenumbraA" +
       "dventureFlightGearLevelInfoOuterClassb\006p" +
       "roto3"

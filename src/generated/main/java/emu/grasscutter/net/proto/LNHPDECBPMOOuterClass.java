@@ -25,19 +25,19 @@ public final class LNHPDECBPMOOuterClass {
     long getPFAKLCNHFBM();
 
     /**
-     * <code>uint32 CKKDALGPNAC = 50000;</code>
+     * <code>uint32 CKKDALGPNAC = 12;</code>
      * @return The cKKDALGPNAC.
      */
     int getCKKDALGPNAC();
 
     /**
-     * <code>uint32 KFCEFONLBEO = 50001;</code>
+     * <code>uint32 KFCEFONLBEO = 8;</code>
      * @return The kFCEFONLBEO.
      */
     int getKFCEFONLBEO();
 
     /**
-     * <code>uint32 BMCALLFEGGA = 50002;</code>
+     * <code>uint32 BMCALLFEGGA = 4;</code>
      * @return The bMCALLFEGGA.
      */
     int getBMCALLFEGGA();
@@ -87,24 +87,24 @@ public final class LNHPDECBPMOOuterClass {
             case 0:
               done = true;
               break;
+            case 32: {
+
+              bMCALLFEGGA_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              kFCEFONLBEO_ = input.readUInt32();
+              break;
+            }
             case 80: {
 
               pFAKLCNHFBM_ = input.readUInt64();
               break;
             }
-            case 400000: {
+            case 96: {
 
               cKKDALGPNAC_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              kFCEFONLBEO_ = input.readUInt32();
-              break;
-            }
-            case 400016: {
-
-              bMCALLFEGGA_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,10 +150,10 @@ public final class LNHPDECBPMOOuterClass {
       return pFAKLCNHFBM_;
     }
 
-    public static final int CKKDALGPNAC_FIELD_NUMBER = 50000;
+    public static final int CKKDALGPNAC_FIELD_NUMBER = 12;
     private int cKKDALGPNAC_;
     /**
-     * <code>uint32 CKKDALGPNAC = 50000;</code>
+     * <code>uint32 CKKDALGPNAC = 12;</code>
      * @return The cKKDALGPNAC.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class LNHPDECBPMOOuterClass {
       return cKKDALGPNAC_;
     }
 
-    public static final int KFCEFONLBEO_FIELD_NUMBER = 50001;
+    public static final int KFCEFONLBEO_FIELD_NUMBER = 8;
     private int kFCEFONLBEO_;
     /**
-     * <code>uint32 KFCEFONLBEO = 50001;</code>
+     * <code>uint32 KFCEFONLBEO = 8;</code>
      * @return The kFCEFONLBEO.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class LNHPDECBPMOOuterClass {
       return kFCEFONLBEO_;
     }
 
-    public static final int BMCALLFEGGA_FIELD_NUMBER = 50002;
+    public static final int BMCALLFEGGA_FIELD_NUMBER = 4;
     private int bMCALLFEGGA_;
     /**
-     * <code>uint32 BMCALLFEGGA = 50002;</code>
+     * <code>uint32 BMCALLFEGGA = 4;</code>
      * @return The bMCALLFEGGA.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class LNHPDECBPMOOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (bMCALLFEGGA_ != 0) {
+        output.writeUInt32(4, bMCALLFEGGA_);
+      }
+      if (kFCEFONLBEO_ != 0) {
+        output.writeUInt32(8, kFCEFONLBEO_);
+      }
       if (pFAKLCNHFBM_ != 0L) {
         output.writeUInt64(10, pFAKLCNHFBM_);
       }
       if (cKKDALGPNAC_ != 0) {
-        output.writeUInt32(50000, cKKDALGPNAC_);
-      }
-      if (kFCEFONLBEO_ != 0) {
-        output.writeUInt32(50001, kFCEFONLBEO_);
-      }
-      if (bMCALLFEGGA_ != 0) {
-        output.writeUInt32(50002, bMCALLFEGGA_);
+        output.writeUInt32(12, cKKDALGPNAC_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class LNHPDECBPMOOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (bMCALLFEGGA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, bMCALLFEGGA_);
+      }
+      if (kFCEFONLBEO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, kFCEFONLBEO_);
+      }
       if (pFAKLCNHFBM_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(10, pFAKLCNHFBM_);
       }
       if (cKKDALGPNAC_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, cKKDALGPNAC_);
-      }
-      if (kFCEFONLBEO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, kFCEFONLBEO_);
-      }
-      if (bMCALLFEGGA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50002, bMCALLFEGGA_);
+          .computeUInt32Size(12, cKKDALGPNAC_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -570,7 +570,7 @@ public final class LNHPDECBPMOOuterClass {
 
       private int cKKDALGPNAC_ ;
       /**
-       * <code>uint32 CKKDALGPNAC = 50000;</code>
+       * <code>uint32 CKKDALGPNAC = 12;</code>
        * @return The cKKDALGPNAC.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class LNHPDECBPMOOuterClass {
         return cKKDALGPNAC_;
       }
       /**
-       * <code>uint32 CKKDALGPNAC = 50000;</code>
+       * <code>uint32 CKKDALGPNAC = 12;</code>
        * @param value The cKKDALGPNAC to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class LNHPDECBPMOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 CKKDALGPNAC = 50000;</code>
+       * <code>uint32 CKKDALGPNAC = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCKKDALGPNAC() {
@@ -601,7 +601,7 @@ public final class LNHPDECBPMOOuterClass {
 
       private int kFCEFONLBEO_ ;
       /**
-       * <code>uint32 KFCEFONLBEO = 50001;</code>
+       * <code>uint32 KFCEFONLBEO = 8;</code>
        * @return The kFCEFONLBEO.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class LNHPDECBPMOOuterClass {
         return kFCEFONLBEO_;
       }
       /**
-       * <code>uint32 KFCEFONLBEO = 50001;</code>
+       * <code>uint32 KFCEFONLBEO = 8;</code>
        * @param value The kFCEFONLBEO to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class LNHPDECBPMOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 KFCEFONLBEO = 50001;</code>
+       * <code>uint32 KFCEFONLBEO = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearKFCEFONLBEO() {
@@ -632,7 +632,7 @@ public final class LNHPDECBPMOOuterClass {
 
       private int bMCALLFEGGA_ ;
       /**
-       * <code>uint32 BMCALLFEGGA = 50002;</code>
+       * <code>uint32 BMCALLFEGGA = 4;</code>
        * @return The bMCALLFEGGA.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class LNHPDECBPMOOuterClass {
         return bMCALLFEGGA_;
       }
       /**
-       * <code>uint32 BMCALLFEGGA = 50002;</code>
+       * <code>uint32 BMCALLFEGGA = 4;</code>
        * @param value The bMCALLFEGGA to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class LNHPDECBPMOOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BMCALLFEGGA = 50002;</code>
+       * <code>uint32 BMCALLFEGGA = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearBMCALLFEGGA() {
@@ -727,11 +727,11 @@ public final class LNHPDECBPMOOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021LNHPDECBPMO.proto\"g\n\013LNHPDECBPMO\022\023\n\013PF" +
-      "AKLCNHFBM\030\n \001(\004\022\025\n\013CKKDALGPNAC\030\320\206\003 \001(\r\022\025" +
-      "\n\013KFCEFONLBEO\030\321\206\003 \001(\r\022\025\n\013BMCALLFEGGA\030\322\206\003" +
-      " \001(\rB2\n\031emu.grasscutter.net.protoB\025LNHPD" +
-      "ECBPMOOuterClassb\006proto3"
+      "\n\021LNHPDECBPMO.proto\"a\n\013LNHPDECBPMO\022\023\n\013PF" +
+      "AKLCNHFBM\030\n \001(\004\022\023\n\013CKKDALGPNAC\030\014 \001(\r\022\023\n\013" +
+      "KFCEFONLBEO\030\010 \001(\r\022\023\n\013BMCALLFEGGA\030\004 \001(\rB2" +
+      "\n\031emu.grasscutter.net.protoB\025LNHPDECBPMO" +
+      "OuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

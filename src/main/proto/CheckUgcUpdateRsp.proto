@@ -6,7 +6,7 @@ option java_outer_classname = "CheckUgcUpdateRspOuterClass";
 import "UgcType.proto";
 
 message CheckUgcUpdateRsp {
-	UgcType ugc_type = 3;
-	int32 retcode = 11;
-	repeated uint64 update_ugc_guid_list = 1;
+	UgcType ugc_type = 7;
+	int32 retcode = 12;
+	repeated uint64 update_ugc_guid_list = 13;
 }

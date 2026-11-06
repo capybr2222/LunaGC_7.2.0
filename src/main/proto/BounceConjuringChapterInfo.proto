@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "BounceConjuringChapterInfoOuterClass";
 
 message BounceConjuringChapterInfo {
-	uint32 open_time = 7;
-	uint32 best_score = 9;
-	uint32 chapter_id = 5;
+	uint32 open_time = 3;
+	uint32 best_score = 2;
+	uint32 chapter_id = 1;
 }

@@ -7,6 +7,6 @@ import "HEEIDHNNCDM.proto";
 import "LBGHHNDLACN.proto";
 
 message RainbowPrinceDetailInfo {
-	repeated LBGHHNDLACN HGNLKDCGLBO = 15;
-	repeated HEEIDHNNCDM NBALJIPCLAF = 3;
+	repeated LBGHHNDLACN HGNLKDCGLBO = 50000;
+	repeated HEEIDHNNCDM NBALJIPCLAF = 50001;
 }

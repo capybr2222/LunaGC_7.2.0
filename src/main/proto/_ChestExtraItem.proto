@@ -6,6 +6,6 @@ option java_outer_classname = "_ChestExtraItemOuterClass";
 import "Item.proto";
 
 message _ChestExtraItem {
-	Item item = 10;
-	uint32 reason = 2;
+	Item item = 12;
+	uint32 reason = 15;
 }

@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "CooperateChallengeDetailInfoOuterClass";
 
 message CooperateChallengeDetailInfo {
-	uint32 difficulty_id = 14;
-	bool MNGLBAEBKDA = 9;
-	bool LBCGNOOJDIC = 1;
+	uint32 difficulty_id = 7;
+	bool MNGLBAEBKDA = 50000;
+	bool LBCGNOOJDIC = 50001;
 }

@@ -19,31 +19,31 @@ public final class GainBuffDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME> 
         getLevelInfoListList();
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME getLevelInfoList(int index);
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     int getLevelInfoListCount();
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIMEOrBuilder> 
         getLevelInfoListOrBuilderList();
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIMEOrBuilder getLevelInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 difficulty = 15;</code>
+     * <code>uint32 difficulty = 8;</code>
      * @return The difficulty.
      */
     int getDifficulty();
@@ -95,7 +95,7 @@ public final class GainBuffDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 levelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME>();
                 mutable_bitField0_ |= 0x00000001;
@@ -104,7 +104,7 @@ public final class GainBuffDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.parser(), extensionRegistry));
               break;
             }
-            case 120: {
+            case 64: {
 
               difficulty_ = input.readUInt32();
               break;
@@ -144,17 +144,17 @@ public final class GainBuffDetailInfoOuterClass {
               emu.grasscutter.net.proto.GainBuffDetailInfoOuterClass.GainBuffDetailInfo.class, emu.grasscutter.net.proto.GainBuffDetailInfoOuterClass.GainBuffDetailInfo.Builder.class);
     }
 
-    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 3;
+    public static final int LEVEL_INFO_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME> levelInfoList_;
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME> getLevelInfoListList() {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIMEOrBuilder> 
@@ -162,21 +162,21 @@ public final class GainBuffDetailInfoOuterClass {
       return levelInfoList_;
     }
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     @java.lang.Override
     public int getLevelInfoListCount() {
       return levelInfoList_.size();
     }
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME getLevelInfoList(int index) {
       return levelInfoList_.get(index);
     }
     /**
-     * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+     * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIMEOrBuilder getLevelInfoListOrBuilder(
@@ -184,10 +184,10 @@ public final class GainBuffDetailInfoOuterClass {
       return levelInfoList_.get(index);
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 15;
+    public static final int DIFFICULTY_FIELD_NUMBER = 8;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 15;</code>
+     * <code>uint32 difficulty = 8;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -210,10 +210,10 @@ public final class GainBuffDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < levelInfoList_.size(); i++) {
-        output.writeMessage(3, levelInfoList_.get(i));
+        output.writeMessage(5, levelInfoList_.get(i));
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(15, difficulty_);
+        output.writeUInt32(8, difficulty_);
       }
       unknownFields.writeTo(output);
     }
@@ -226,11 +226,11 @@ public final class GainBuffDetailInfoOuterClass {
       size = 0;
       for (int i = 0; i < levelInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, levelInfoList_.get(i));
+          .computeMessageSize(5, levelInfoList_.get(i));
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, difficulty_);
+          .computeUInt32Size(8, difficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -567,7 +567,7 @@ public final class GainBuffDetailInfoOuterClass {
           emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME, emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder, emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIMEOrBuilder> levelInfoListBuilder_;
 
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME> getLevelInfoListList() {
         if (levelInfoListBuilder_ == null) {
@@ -577,7 +577,7 @@ public final class GainBuffDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public int getLevelInfoListCount() {
         if (levelInfoListBuilder_ == null) {
@@ -587,7 +587,7 @@ public final class GainBuffDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME getLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -597,7 +597,7 @@ public final class GainBuffDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME value) {
@@ -614,7 +614,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder setLevelInfoList(
           int index, emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder builderForValue) {
@@ -628,7 +628,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder addLevelInfoList(emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME value) {
         if (levelInfoListBuilder_ == null) {
@@ -644,7 +644,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME value) {
@@ -661,7 +661,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder addLevelInfoList(
           emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder builderForValue) {
@@ -675,7 +675,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder addLevelInfoList(
           int index, emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder builderForValue) {
@@ -689,7 +689,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder addAllLevelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME> values) {
@@ -704,7 +704,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder clearLevelInfoList() {
         if (levelInfoListBuilder_ == null) {
@@ -717,7 +717,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public Builder removeLevelInfoList(int index) {
         if (levelInfoListBuilder_ == null) {
@@ -730,14 +730,14 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder getLevelInfoListBuilder(
           int index) {
         return getLevelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIMEOrBuilder getLevelInfoListOrBuilder(
           int index) {
@@ -747,7 +747,7 @@ public final class GainBuffDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIMEOrBuilder> 
            getLevelInfoListOrBuilderList() {
@@ -758,14 +758,14 @@ public final class GainBuffDetailInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder addLevelInfoListBuilder() {
         return getLevelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.getDefaultInstance());
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder addLevelInfoListBuilder(
           int index) {
@@ -773,7 +773,7 @@ public final class GainBuffDetailInfoOuterClass {
             index, emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.getDefaultInstance());
       }
       /**
-       * <code>repeated .HPIBBLDNIME level_info_list = 3;</code>
+       * <code>repeated .HPIBBLDNIME level_info_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.HPIBBLDNIMEOuterClass.HPIBBLDNIME.Builder> 
            getLevelInfoListBuilderList() {
@@ -796,7 +796,7 @@ public final class GainBuffDetailInfoOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 15;</code>
+       * <code>uint32 difficulty = 8;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -804,7 +804,7 @@ public final class GainBuffDetailInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 15;</code>
+       * <code>uint32 difficulty = 8;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -815,7 +815,7 @@ public final class GainBuffDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 15;</code>
+       * <code>uint32 difficulty = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -893,8 +893,8 @@ public final class GainBuffDetailInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030GainBuffDetailInfo.proto\032\021HPIBBLDNIME." +
       "proto\"O\n\022GainBuffDetailInfo\022%\n\017level_inf" +
-      "o_list\030\003 \003(\0132\014.HPIBBLDNIME\022\022\n\ndifficulty" +
-      "\030\017 \001(\rB9\n\031emu.grasscutter.net.protoB\034Gai" +
+      "o_list\030\005 \003(\0132\014.HPIBBLDNIME\022\022\n\ndifficulty" +
+      "\030\010 \001(\rB9\n\031emu.grasscutter.net.protoB\034Gai" +
       "nBuffDetailInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

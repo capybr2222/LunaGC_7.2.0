@@ -6,6 +6,6 @@ option java_outer_classname = "GetWidgetSlotRspOuterClass";
 import "WidgetSlotData.proto";
 
 message GetWidgetSlotRsp {
-	int32 retcode = 8;
-	repeated WidgetSlotData slot_list = 3;
+	int32 retcode = 4;
+	repeated WidgetSlotData slot_list = 13;
 }

@@ -19,49 +19,49 @@ public final class CCINMGMEJBNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     java.util.List<emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE> 
         getNBFDAIOLGFIList();
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE getNBFDAIOLGFI(int index);
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     int getNBFDAIOLGFICount();
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFEOrBuilder> 
         getNBFDAIOLGFIOrBuilderList();
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFEOrBuilder getNBFDAIOLGFIOrBuilder(
         int index);
 
     /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finish = 3;</code>
+     * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 stage_id = 12;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 best_score = 9;</code>
+     * <code>uint32 best_score = 3;</code>
      * @return The bestScore.
      */
     int getBestScore();
@@ -113,33 +113,33 @@ public final class CCINMGMEJBNOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
-              isFinish_ = input.readBool();
+              stageId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 16: {
+
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 24: {
 
               bestScore_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 32: {
+
+              isFinish_ = input.readBool();
+              break;
+            }
+            case 160002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 nBFDAIOLGFI_ = new java.util.ArrayList<emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE>();
                 mutable_bitField0_ |= 0x00000001;
               }
               nBFDAIOLGFI_.add(
                   input.readMessage(emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.parser(), extensionRegistry));
-              break;
-            }
-            case 96: {
-
-              stageId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
-
-              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -177,17 +177,17 @@ public final class CCINMGMEJBNOuterClass {
               emu.grasscutter.net.proto.CCINMGMEJBNOuterClass.CCINMGMEJBN.class, emu.grasscutter.net.proto.CCINMGMEJBNOuterClass.CCINMGMEJBN.Builder.class);
     }
 
-    public static final int NBFDAIOLGFI_FIELD_NUMBER = 10;
+    public static final int NBFDAIOLGFI_FIELD_NUMBER = 20000;
     private java.util.List<emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE> nBFDAIOLGFI_;
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE> getNBFDAIOLGFIList() {
       return nBFDAIOLGFI_;
     }
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFEOrBuilder> 
@@ -195,21 +195,21 @@ public final class CCINMGMEJBNOuterClass {
       return nBFDAIOLGFI_;
     }
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     @java.lang.Override
     public int getNBFDAIOLGFICount() {
       return nBFDAIOLGFI_.size();
     }
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE getNBFDAIOLGFI(int index) {
       return nBFDAIOLGFI_.get(index);
     }
     /**
-     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+     * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFEOrBuilder getNBFDAIOLGFIOrBuilder(
@@ -217,10 +217,10 @@ public final class CCINMGMEJBNOuterClass {
       return nBFDAIOLGFI_.get(index);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 14;
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 14;</code>
+     * <code>bool is_open = 2;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -228,10 +228,10 @@ public final class CCINMGMEJBNOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 3;
+    public static final int IS_FINISH_FIELD_NUMBER = 4;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 3;</code>
+     * <code>bool is_finish = 4;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -239,10 +239,10 @@ public final class CCINMGMEJBNOuterClass {
       return isFinish_;
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 12;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 12;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -250,10 +250,10 @@ public final class CCINMGMEJBNOuterClass {
       return stageId_;
     }
 
-    public static final int BEST_SCORE_FIELD_NUMBER = 9;
+    public static final int BEST_SCORE_FIELD_NUMBER = 3;
     private int bestScore_;
     /**
-     * <code>uint32 best_score = 9;</code>
+     * <code>uint32 best_score = 3;</code>
      * @return The bestScore.
      */
     @java.lang.Override
@@ -275,20 +275,20 @@ public final class CCINMGMEJBNOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isFinish_ != false) {
-        output.writeBool(3, isFinish_);
-      }
-      if (bestScore_ != 0) {
-        output.writeUInt32(9, bestScore_);
-      }
-      for (int i = 0; i < nBFDAIOLGFI_.size(); i++) {
-        output.writeMessage(10, nBFDAIOLGFI_.get(i));
-      }
       if (stageId_ != 0) {
-        output.writeUInt32(12, stageId_);
+        output.writeUInt32(1, stageId_);
       }
       if (isOpen_ != false) {
-        output.writeBool(14, isOpen_);
+        output.writeBool(2, isOpen_);
+      }
+      if (bestScore_ != 0) {
+        output.writeUInt32(3, bestScore_);
+      }
+      if (isFinish_ != false) {
+        output.writeBool(4, isFinish_);
+      }
+      for (int i = 0; i < nBFDAIOLGFI_.size(); i++) {
+        output.writeMessage(20000, nBFDAIOLGFI_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -299,25 +299,25 @@ public final class CCINMGMEJBNOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isFinish_);
-      }
-      if (bestScore_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, bestScore_);
-      }
-      for (int i = 0; i < nBFDAIOLGFI_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, nBFDAIOLGFI_.get(i));
-      }
       if (stageId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, stageId_);
+          .computeUInt32Size(1, stageId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isOpen_);
+          .computeBoolSize(2, isOpen_);
+      }
+      if (bestScore_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, bestScore_);
+      }
+      if (isFinish_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(4, isFinish_);
+      }
+      for (int i = 0; i < nBFDAIOLGFI_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(20000, nBFDAIOLGFI_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -686,7 +686,7 @@ public final class CCINMGMEJBNOuterClass {
           emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE, emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.Builder, emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFEOrBuilder> nBFDAIOLGFIBuilder_;
 
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE> getNBFDAIOLGFIList() {
         if (nBFDAIOLGFIBuilder_ == null) {
@@ -696,7 +696,7 @@ public final class CCINMGMEJBNOuterClass {
         }
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public int getNBFDAIOLGFICount() {
         if (nBFDAIOLGFIBuilder_ == null) {
@@ -706,7 +706,7 @@ public final class CCINMGMEJBNOuterClass {
         }
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE getNBFDAIOLGFI(int index) {
         if (nBFDAIOLGFIBuilder_ == null) {
@@ -716,7 +716,7 @@ public final class CCINMGMEJBNOuterClass {
         }
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder setNBFDAIOLGFI(
           int index, emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE value) {
@@ -733,7 +733,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder setNBFDAIOLGFI(
           int index, emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.Builder builderForValue) {
@@ -747,7 +747,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder addNBFDAIOLGFI(emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE value) {
         if (nBFDAIOLGFIBuilder_ == null) {
@@ -763,7 +763,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder addNBFDAIOLGFI(
           int index, emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE value) {
@@ -780,7 +780,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder addNBFDAIOLGFI(
           emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.Builder builderForValue) {
@@ -794,7 +794,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder addNBFDAIOLGFI(
           int index, emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.Builder builderForValue) {
@@ -808,7 +808,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder addAllNBFDAIOLGFI(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE> values) {
@@ -823,7 +823,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder clearNBFDAIOLGFI() {
         if (nBFDAIOLGFIBuilder_ == null) {
@@ -836,7 +836,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public Builder removeNBFDAIOLGFI(int index) {
         if (nBFDAIOLGFIBuilder_ == null) {
@@ -849,14 +849,14 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.Builder getNBFDAIOLGFIBuilder(
           int index) {
         return getNBFDAIOLGFIFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFEOrBuilder getNBFDAIOLGFIOrBuilder(
           int index) {
@@ -866,7 +866,7 @@ public final class CCINMGMEJBNOuterClass {
         }
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFEOrBuilder> 
            getNBFDAIOLGFIOrBuilderList() {
@@ -877,14 +877,14 @@ public final class CCINMGMEJBNOuterClass {
         }
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.Builder addNBFDAIOLGFIBuilder() {
         return getNBFDAIOLGFIFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.getDefaultInstance());
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.Builder addNBFDAIOLGFIBuilder(
           int index) {
@@ -892,7 +892,7 @@ public final class CCINMGMEJBNOuterClass {
             index, emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.getDefaultInstance());
       }
       /**
-       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 10;</code>
+       * <code>repeated .GBLGAGAPIFE NBFDAIOLGFI = 20000;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.GBLGAGAPIFEOuterClass.GBLGAGAPIFE.Builder> 
            getNBFDAIOLGFIBuilderList() {
@@ -915,7 +915,7 @@ public final class CCINMGMEJBNOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 2;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -923,7 +923,7 @@ public final class CCINMGMEJBNOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 2;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -934,7 +934,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 14;</code>
+       * <code>bool is_open = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -946,7 +946,7 @@ public final class CCINMGMEJBNOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 3;</code>
+       * <code>bool is_finish = 4;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -954,7 +954,7 @@ public final class CCINMGMEJBNOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 3;</code>
+       * <code>bool is_finish = 4;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -965,7 +965,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 3;</code>
+       * <code>bool is_finish = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -977,7 +977,7 @@ public final class CCINMGMEJBNOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 12;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -985,7 +985,7 @@ public final class CCINMGMEJBNOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 12;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -996,7 +996,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 12;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -1008,7 +1008,7 @@ public final class CCINMGMEJBNOuterClass {
 
       private int bestScore_ ;
       /**
-       * <code>uint32 best_score = 9;</code>
+       * <code>uint32 best_score = 3;</code>
        * @return The bestScore.
        */
       @java.lang.Override
@@ -1016,7 +1016,7 @@ public final class CCINMGMEJBNOuterClass {
         return bestScore_;
       }
       /**
-       * <code>uint32 best_score = 9;</code>
+       * <code>uint32 best_score = 3;</code>
        * @param value The bestScore to set.
        * @return This builder for chaining.
        */
@@ -1027,7 +1027,7 @@ public final class CCINMGMEJBNOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_score = 9;</code>
+       * <code>uint32 best_score = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestScore() {
@@ -1103,12 +1103,12 @@ public final class CCINMGMEJBNOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021CCINMGMEJBN.proto\032\021GBLGAGAPIFE.proto\"z" +
-      "\n\013CCINMGMEJBN\022!\n\013NBFDAIOLGFI\030\n \003(\0132\014.GBL" +
-      "GAGAPIFE\022\017\n\007is_open\030\016 \001(\010\022\021\n\tis_finish\030\003" +
-      " \001(\010\022\020\n\010stage_id\030\014 \001(\r\022\022\n\nbest_score\030\t \001" +
-      "(\rB2\n\031emu.grasscutter.net.protoB\025CCINMGM" +
-      "EJBNOuterClassb\006proto3"
+      "\n\021CCINMGMEJBN.proto\032\021GBLGAGAPIFE.proto\"|" +
+      "\n\013CCINMGMEJBN\022#\n\013NBFDAIOLGFI\030\240\234\001 \003(\0132\014.G" +
+      "BLGAGAPIFE\022\017\n\007is_open\030\002 \001(\010\022\021\n\tis_finish" +
+      "\030\004 \001(\010\022\020\n\010stage_id\030\001 \001(\r\022\022\n\nbest_score\030\003" +
+      " \001(\rB2\n\031emu.grasscutter.net.protoB\025CCINM" +
+      "GMEJBNOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

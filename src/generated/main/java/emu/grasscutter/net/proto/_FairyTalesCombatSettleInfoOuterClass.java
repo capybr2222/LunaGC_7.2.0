@@ -19,41 +19,41 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 2;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 difficulty = 11;</code>
+     * <code>uint32 difficulty = 3;</code>
      * @return The difficulty.
      */
     int getDifficulty();
 
     /**
-     * <code>uint32 total_score = 13;</code>
+     * <code>uint32 total_score = 4;</code>
      * @return The totalScore.
      */
     int getTotalScore();
 
     /**
-     * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+     * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
      * @return Whether the iEAJFKDOABH field is set.
      */
     boolean hasIEAJFKDOABH();
     /**
-     * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+     * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
      * @return The iEAJFKDOABH.
      */
     emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB getIEAJFKDOABH();
     /**
-     * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+     * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
      */
     emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOBOrBuilder getIEAJFKDOABHOrBuilder();
   }
@@ -102,7 +102,27 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 8: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
+              isNewRecord_ = input.readBool();
+              break;
+            }
+            case 24: {
+
+              difficulty_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              totalScore_ = input.readUInt32();
+              break;
+            }
+            case 160002: {
               emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB.Builder subBuilder = null;
               if (iEAJFKDOABH_ != null) {
                 subBuilder = iEAJFKDOABH_.toBuilder();
@@ -113,26 +133,6 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
                 iEAJFKDOABH_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 72: {
-
-              isNewRecord_ = input.readBool();
-              break;
-            }
-            case 88: {
-
-              difficulty_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              totalScore_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -167,10 +167,10 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
               emu.grasscutter.net.proto._FairyTalesCombatSettleInfoOuterClass._FairyTalesCombatSettleInfo.class, emu.grasscutter.net.proto._FairyTalesCombatSettleInfoOuterClass._FairyTalesCombatSettleInfo.Builder.class);
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 9;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 2;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 9;</code>
+     * <code>bool is_new_record = 2;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -178,10 +178,10 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    public static final int LEVEL_ID_FIELD_NUMBER = 1;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 1;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -189,10 +189,10 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int DIFFICULTY_FIELD_NUMBER = 11;
+    public static final int DIFFICULTY_FIELD_NUMBER = 3;
     private int difficulty_;
     /**
-     * <code>uint32 difficulty = 11;</code>
+     * <code>uint32 difficulty = 3;</code>
      * @return The difficulty.
      */
     @java.lang.Override
@@ -200,10 +200,10 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       return difficulty_;
     }
 
-    public static final int TOTAL_SCORE_FIELD_NUMBER = 13;
+    public static final int TOTAL_SCORE_FIELD_NUMBER = 4;
     private int totalScore_;
     /**
-     * <code>uint32 total_score = 13;</code>
+     * <code>uint32 total_score = 4;</code>
      * @return The totalScore.
      */
     @java.lang.Override
@@ -211,10 +211,10 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       return totalScore_;
     }
 
-    public static final int IEAJFKDOABH_FIELD_NUMBER = 2;
+    public static final int IEAJFKDOABH_FIELD_NUMBER = 20000;
     private emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB iEAJFKDOABH_;
     /**
-     * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+     * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
      * @return Whether the iEAJFKDOABH field is set.
      */
     @java.lang.Override
@@ -222,7 +222,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       return iEAJFKDOABH_ != null;
     }
     /**
-     * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+     * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
      * @return The iEAJFKDOABH.
      */
     @java.lang.Override
@@ -230,7 +230,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       return iEAJFKDOABH_ == null ? emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB.getDefaultInstance() : iEAJFKDOABH_;
     }
     /**
-     * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+     * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOBOrBuilder getIEAJFKDOABHOrBuilder() {
@@ -251,20 +251,20 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (iEAJFKDOABH_ != null) {
-        output.writeMessage(2, getIEAJFKDOABH());
+      if (levelId_ != 0) {
+        output.writeUInt32(1, levelId_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(9, isNewRecord_);
+        output.writeBool(2, isNewRecord_);
       }
       if (difficulty_ != 0) {
-        output.writeUInt32(11, difficulty_);
+        output.writeUInt32(3, difficulty_);
       }
       if (totalScore_ != 0) {
-        output.writeUInt32(13, totalScore_);
+        output.writeUInt32(4, totalScore_);
       }
-      if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+      if (iEAJFKDOABH_ != null) {
+        output.writeMessage(20000, getIEAJFKDOABH());
       }
       unknownFields.writeTo(output);
     }
@@ -275,25 +275,25 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (iEAJFKDOABH_ != null) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getIEAJFKDOABH());
+          .computeUInt32Size(1, levelId_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isNewRecord_);
+          .computeBoolSize(2, isNewRecord_);
       }
       if (difficulty_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, difficulty_);
+          .computeUInt32Size(3, difficulty_);
       }
       if (totalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, totalScore_);
+          .computeUInt32Size(4, totalScore_);
       }
-      if (levelId_ != 0) {
+      if (iEAJFKDOABH_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeMessageSize(20000, getIEAJFKDOABH());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -623,7 +623,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 2;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -631,7 +631,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 2;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -642,7 +642,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 9;</code>
+       * <code>bool is_new_record = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -654,7 +654,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -662,7 +662,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -673,7 +673,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -685,7 +685,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
 
       private int difficulty_ ;
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <code>uint32 difficulty = 3;</code>
        * @return The difficulty.
        */
       @java.lang.Override
@@ -693,7 +693,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return difficulty_;
       }
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <code>uint32 difficulty = 3;</code>
        * @param value The difficulty to set.
        * @return This builder for chaining.
        */
@@ -704,7 +704,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty = 11;</code>
+       * <code>uint32 difficulty = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficulty() {
@@ -716,7 +716,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
 
       private int totalScore_ ;
       /**
-       * <code>uint32 total_score = 13;</code>
+       * <code>uint32 total_score = 4;</code>
        * @return The totalScore.
        */
       @java.lang.Override
@@ -724,7 +724,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return totalScore_;
       }
       /**
-       * <code>uint32 total_score = 13;</code>
+       * <code>uint32 total_score = 4;</code>
        * @param value The totalScore to set.
        * @return This builder for chaining.
        */
@@ -735,7 +735,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_score = 13;</code>
+       * <code>uint32 total_score = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalScore() {
@@ -749,14 +749,14 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB, emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB.Builder, emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOBOrBuilder> iEAJFKDOABHBuilder_;
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        * @return Whether the iEAJFKDOABH field is set.
        */
       public boolean hasIEAJFKDOABH() {
         return iEAJFKDOABHBuilder_ != null || iEAJFKDOABH_ != null;
       }
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        * @return The iEAJFKDOABH.
        */
       public emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB getIEAJFKDOABH() {
@@ -767,7 +767,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        */
       public Builder setIEAJFKDOABH(emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB value) {
         if (iEAJFKDOABHBuilder_ == null) {
@@ -783,7 +783,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        */
       public Builder setIEAJFKDOABH(
           emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB.Builder builderForValue) {
@@ -797,7 +797,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        */
       public Builder mergeIEAJFKDOABH(emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB value) {
         if (iEAJFKDOABHBuilder_ == null) {
@@ -815,7 +815,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        */
       public Builder clearIEAJFKDOABH() {
         if (iEAJFKDOABHBuilder_ == null) {
@@ -829,7 +829,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        */
       public emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB.Builder getIEAJFKDOABHBuilder() {
         
@@ -837,7 +837,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         return getIEAJFKDOABHFieldBuilder().getBuilder();
       }
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        */
       public emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOBOrBuilder getIEAJFKDOABHOrBuilder() {
         if (iEAJFKDOABHBuilder_ != null) {
@@ -848,7 +848,7 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
         }
       }
       /**
-       * <code>.NMBMNBEAFOB IEAJFKDOABH = 2;</code>
+       * <code>.NMBMNBEAFOB IEAJFKDOABH = 20000;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB, emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOB.Builder, emu.grasscutter.net.proto.NMBMNBEAFOBOuterClass.NMBMNBEAFOBOrBuilder> 
@@ -931,12 +931,13 @@ public final class _FairyTalesCombatSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!_FairyTalesCombatSettleInfo.proto\032\021NMB" +
-      "MNBEAFOB.proto\"\222\001\n\033_FairyTalesCombatSett" +
-      "leInfo\022\025\n\ris_new_record\030\t \001(\010\022\020\n\010level_i" +
-      "d\030\017 \001(\r\022\022\n\ndifficulty\030\013 \001(\r\022\023\n\013total_sco" +
-      "re\030\r \001(\r\022!\n\013IEAJFKDOABH\030\002 \001(\0132\014.NMBMNBEA" +
-      "FOBBB\n\031emu.grasscutter.net.protoB%_Fairy" +
-      "TalesCombatSettleInfoOuterClassb\006proto3"
+      "MNBEAFOB.proto\"\224\001\n\033_FairyTalesCombatSett" +
+      "leInfo\022\025\n\ris_new_record\030\002 \001(\010\022\020\n\010level_i" +
+      "d\030\001 \001(\r\022\022\n\ndifficulty\030\003 \001(\r\022\023\n\013total_sco" +
+      "re\030\004 \001(\r\022#\n\013IEAJFKDOABH\030\240\234\001 \001(\0132\014.NMBMNB" +
+      "EAFOBBB\n\031emu.grasscutter.net.protoB%_Fai" +
+      "ryTalesCombatSettleInfoOuterClassb\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

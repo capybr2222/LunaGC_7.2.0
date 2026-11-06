@@ -4,10 +4,10 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "UseItemReqOuterClass";
 
 message UseItemReq {
-	uint32 option_idx = 15;
+	uint32 option_idx = 4;
 	uint32 count = 9;
-	uint64 target_guid = 14;
-	uint64 guid = 3;
-	bool is_enter_mp_dungeon_team = 1;
-	repeated uint32 _option_idx_list = 7;
+	uint64 target_guid = 15;
+	uint64 guid = 6;
+	bool is_enter_mp_dungeon_team = 2;
+	repeated uint32 _option_idx_list = 1;
 }

@@ -6,5 +6,5 @@ option java_outer_classname = "_SubSwitchCompOuterClass";
 import "EMMIEIAAMJM.proto";
 
 message _SubSwitchComp {
-	repeated EMMIEIAAMJM GFIDKBINAGH = 1;
+	repeated EMMIEIAAMJM GFIDKBINAGH = 20000;
 }

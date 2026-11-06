@@ -6,5 +6,5 @@ option java_outer_classname = "QuestListNotifyOuterClass";
 import "Quest.proto";
 
 message QuestListNotify {
-	repeated Quest quest_list = 15;
+	repeated Quest quest_list = 7;
 }

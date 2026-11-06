@@ -4,5 +4,5 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ReceivedTrialAvatarActivityRewardReqOuterClass";
 
 message ReceivedTrialAvatarActivityRewardReq {
-	uint32 trial_avatar_index_id = 4;
+	uint32 trial_avatar_index_id = 2;
 }

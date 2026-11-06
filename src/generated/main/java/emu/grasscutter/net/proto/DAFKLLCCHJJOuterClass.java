@@ -19,13 +19,13 @@ public final class DAFKLLCCHJJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 LDIIGMAACGI = 4;</code>
+     * <code>uint32 LDIIGMAACGI = 7;</code>
      * @return The lDIIGMAACGI.
      */
     int getLDIIGMAACGI();
 
     /**
-     * <code>uint32 BLKBLMKAABE = 15;</code>
+     * <code>uint32 BLKBLMKAABE = 8;</code>
      * @return The bLKBLMKAABE.
      */
     int getBLKBLMKAABE();
@@ -75,12 +75,12 @@ public final class DAFKLLCCHJJOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 56: {
 
               lDIIGMAACGI_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
               bLKBLMKAABE_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class DAFKLLCCHJJOuterClass {
               emu.grasscutter.net.proto.DAFKLLCCHJJOuterClass.DAFKLLCCHJJ.class, emu.grasscutter.net.proto.DAFKLLCCHJJOuterClass.DAFKLLCCHJJ.Builder.class);
     }
 
-    public static final int LDIIGMAACGI_FIELD_NUMBER = 4;
+    public static final int LDIIGMAACGI_FIELD_NUMBER = 7;
     private int lDIIGMAACGI_;
     /**
-     * <code>uint32 LDIIGMAACGI = 4;</code>
+     * <code>uint32 LDIIGMAACGI = 7;</code>
      * @return The lDIIGMAACGI.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class DAFKLLCCHJJOuterClass {
       return lDIIGMAACGI_;
     }
 
-    public static final int BLKBLMKAABE_FIELD_NUMBER = 15;
+    public static final int BLKBLMKAABE_FIELD_NUMBER = 8;
     private int bLKBLMKAABE_;
     /**
-     * <code>uint32 BLKBLMKAABE = 15;</code>
+     * <code>uint32 BLKBLMKAABE = 8;</code>
      * @return The bLKBLMKAABE.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class DAFKLLCCHJJOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (lDIIGMAACGI_ != 0) {
-        output.writeUInt32(4, lDIIGMAACGI_);
+        output.writeUInt32(7, lDIIGMAACGI_);
       }
       if (bLKBLMKAABE_ != 0) {
-        output.writeUInt32(15, bLKBLMKAABE_);
+        output.writeUInt32(8, bLKBLMKAABE_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class DAFKLLCCHJJOuterClass {
       size = 0;
       if (lDIIGMAACGI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, lDIIGMAACGI_);
+          .computeUInt32Size(7, lDIIGMAACGI_);
       }
       if (bLKBLMKAABE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, bLKBLMKAABE_);
+          .computeUInt32Size(8, bLKBLMKAABE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class DAFKLLCCHJJOuterClass {
 
       private int lDIIGMAACGI_ ;
       /**
-       * <code>uint32 LDIIGMAACGI = 4;</code>
+       * <code>uint32 LDIIGMAACGI = 7;</code>
        * @return The lDIIGMAACGI.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class DAFKLLCCHJJOuterClass {
         return lDIIGMAACGI_;
       }
       /**
-       * <code>uint32 LDIIGMAACGI = 4;</code>
+       * <code>uint32 LDIIGMAACGI = 7;</code>
        * @param value The lDIIGMAACGI to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class DAFKLLCCHJJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 LDIIGMAACGI = 4;</code>
+       * <code>uint32 LDIIGMAACGI = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLDIIGMAACGI() {
@@ -491,7 +491,7 @@ public final class DAFKLLCCHJJOuterClass {
 
       private int bLKBLMKAABE_ ;
       /**
-       * <code>uint32 BLKBLMKAABE = 15;</code>
+       * <code>uint32 BLKBLMKAABE = 8;</code>
        * @return The bLKBLMKAABE.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class DAFKLLCCHJJOuterClass {
         return bLKBLMKAABE_;
       }
       /**
-       * <code>uint32 BLKBLMKAABE = 15;</code>
+       * <code>uint32 BLKBLMKAABE = 8;</code>
        * @param value The bLKBLMKAABE to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class DAFKLLCCHJJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 BLKBLMKAABE = 15;</code>
+       * <code>uint32 BLKBLMKAABE = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearBLKBLMKAABE() {
@@ -587,7 +587,7 @@ public final class DAFKLLCCHJJOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021DAFKLLCCHJJ.proto\"7\n\013DAFKLLCCHJJ\022\023\n\013LD" +
-      "IIGMAACGI\030\004 \001(\r\022\023\n\013BLKBLMKAABE\030\017 \001(\rB2\n\031" +
+      "IIGMAACGI\030\007 \001(\r\022\023\n\013BLKBLMKAABE\030\010 \001(\rB2\n\031" +
       "emu.grasscutter.net.protoB\025DAFKLLCCHJJOu" +
       "terClassb\006proto3"
     };

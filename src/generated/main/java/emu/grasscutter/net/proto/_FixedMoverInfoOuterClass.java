@@ -55,17 +55,17 @@ public final class _FixedMoverInfoOuterClass {
     float getLAIKIBMMJKD();
 
     /**
-     * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+     * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
      * @return Whether the mGIHDBMCCPK field is set.
      */
     boolean hasMGIHDBMCCPK();
     /**
-     * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+     * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
      * @return The mGIHDBMCCPK.
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getMGIHDBMCCPK();
     /**
-     * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+     * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
      */
     emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getMGIHDBMCCPKOrBuilder();
   }
@@ -145,7 +145,7 @@ public final class _FixedMoverInfoOuterClass {
               lAIKIBMMJKD_ = input.readFloat();
               break;
             }
-            case 34: {
+            case 160010: {
               emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder subBuilder = null;
               if (mGIHDBMCCPK_ != null) {
                 subBuilder = mGIHDBMCCPK_.toBuilder();
@@ -253,10 +253,10 @@ public final class _FixedMoverInfoOuterClass {
       return lAIKIBMMJKD_;
     }
 
-    public static final int MGIHDBMCCPK_FIELD_NUMBER = 4;
+    public static final int MGIHDBMCCPK_FIELD_NUMBER = 20001;
     private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion mGIHDBMCCPK_;
     /**
-     * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+     * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
      * @return Whether the mGIHDBMCCPK field is set.
      */
     @java.lang.Override
@@ -264,7 +264,7 @@ public final class _FixedMoverInfoOuterClass {
       return mGIHDBMCCPK_ != null;
     }
     /**
-     * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+     * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
      * @return The mGIHDBMCCPK.
      */
     @java.lang.Override
@@ -272,7 +272,7 @@ public final class _FixedMoverInfoOuterClass {
       return mGIHDBMCCPK_ == null ? emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.getDefaultInstance() : mGIHDBMCCPK_;
     }
     /**
-     * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+     * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getMGIHDBMCCPKOrBuilder() {
@@ -303,7 +303,7 @@ public final class _FixedMoverInfoOuterClass {
         output.writeFloat(3, lAIKIBMMJKD_);
       }
       if (mGIHDBMCCPK_ != null) {
-        output.writeMessage(4, getMGIHDBMCCPK());
+        output.writeMessage(20001, getMGIHDBMCCPK());
       }
       unknownFields.writeTo(output);
     }
@@ -328,7 +328,7 @@ public final class _FixedMoverInfoOuterClass {
       }
       if (mGIHDBMCCPK_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getMGIHDBMCCPK());
+          .computeMessageSize(20001, getMGIHDBMCCPK());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -946,14 +946,14 @@ public final class _FixedMoverInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> mGIHDBMCCPKBuilder_;
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        * @return Whether the mGIHDBMCCPK field is set.
        */
       public boolean hasMGIHDBMCCPK() {
         return mGIHDBMCCPKBuilder_ != null || mGIHDBMCCPK_ != null;
       }
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        * @return The mGIHDBMCCPK.
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion getMGIHDBMCCPK() {
@@ -964,7 +964,7 @@ public final class _FixedMoverInfoOuterClass {
         }
       }
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        */
       public Builder setMGIHDBMCCPK(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
         if (mGIHDBMCCPKBuilder_ == null) {
@@ -980,7 +980,7 @@ public final class _FixedMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        */
       public Builder setMGIHDBMCCPK(
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder builderForValue) {
@@ -994,7 +994,7 @@ public final class _FixedMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        */
       public Builder mergeMGIHDBMCCPK(emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion value) {
         if (mGIHDBMCCPKBuilder_ == null) {
@@ -1012,7 +1012,7 @@ public final class _FixedMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        */
       public Builder clearMGIHDBMCCPK() {
         if (mGIHDBMCCPKBuilder_ == null) {
@@ -1026,7 +1026,7 @@ public final class _FixedMoverInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder getMGIHDBMCCPKBuilder() {
         
@@ -1034,7 +1034,7 @@ public final class _FixedMoverInfoOuterClass {
         return getMGIHDBMCCPKFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        */
       public emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder getMGIHDBMCCPKOrBuilder() {
         if (mGIHDBMCCPKBuilder_ != null) {
@@ -1045,7 +1045,7 @@ public final class _FixedMoverInfoOuterClass {
         }
       }
       /**
-       * <code>.MathQuaternion MGIHDBMCCPK = 4;</code>
+       * <code>.MathQuaternion MGIHDBMCCPK = 20001;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder, emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternionOrBuilder> 
@@ -1128,12 +1128,12 @@ public final class _FixedMoverInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025_FixedMoverInfo.proto\032\024MathQuaternion." +
-      "proto\032\014Vector.proto\"\210\001\n\017_FixedMoverInfo\022" +
+      "proto\032\014Vector.proto\"\212\001\n\017_FixedMoverInfo\022" +
       "\034\n\013OHMBANGLFIJ\030\001 \001(\0132\007.Vector\022\034\n\013IMFDIHL" +
       "BFEN\030\002 \001(\0132\007.Vector\022\023\n\013LAIKIBMMJKD\030\003 \001(\002" +
-      "\022$\n\013MGIHDBMCCPK\030\004 \001(\0132\017.MathQuaternionB6" +
-      "\n\031emu.grasscutter.net.protoB\031_FixedMover" +
-      "InfoOuterClassb\006proto3"
+      "\022&\n\013MGIHDBMCCPK\030\241\234\001 \001(\0132\017.MathQuaternion" +
+      "B6\n\031emu.grasscutter.net.protoB\031_FixedMov" +
+      "erInfoOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

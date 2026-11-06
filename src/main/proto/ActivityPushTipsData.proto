@@ -7,5 +7,5 @@ import "ActivityPushTipsState.proto";
 
 message ActivityPushTipsData {
 	ActivityPushTipsState state = 11;
-	uint32 activity_push_tips_id = 3;
+	uint32 activity_push_tips_id = 14;
 }

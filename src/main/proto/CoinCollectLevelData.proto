@@ -6,16 +6,16 @@ option java_outer_classname = "CoinCollectLevelDataOuterClass";
 import "CoinCollectTeamInfoData.proto";
 
 message CoinCollectLevelData {
-	bool DEELGNJPPHJ = 50000;
-	bool MHKPMMIOIFO = 50001;
-	CoinCollectTeamInfoData single_best_team_info = 12;
-	uint32 level_id = 10;
-	uint32 CLLFHBFHJFB = 50002;
-	uint32 FIJFFHDFDLI = 50003;
+	bool DEELGNJPPHJ = 20002;
+	bool MHKPMMIOIFO = 20004;
+	CoinCollectTeamInfoData single_best_team_info = 6;
+	uint32 level_id = 1;
+	uint32 CLLFHBFHJFB = 20005;
+	uint32 FIJFFHDFDLI = 20000;
 	bool njjlelknfpl = 50004;
 	uint32 oidegdjmaah = 50005;
 	uint32 nobhhoiapmm = 50006;
-	bool is_level_open = 8;
-	repeated CoinCollectTeamInfoData double_best_team_info_list = 5;
-	uint32 MCGGMMLPIJP = 50007;
+	bool is_level_open = 2;
+	repeated CoinCollectTeamInfoData double_best_team_info_list = 9;
+	uint32 MCGGMMLPIJP = 20006;
 }

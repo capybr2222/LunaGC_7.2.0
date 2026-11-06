@@ -4,8 +4,8 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "AGFKCCEPCELOuterClass";
 
 message AGFKCCEPCEL {
-	repeated uint32 DKEHHBCDOFM = 2;
+	repeated uint32 DKEHHBCDOFM = 11;
 	uint32 level_id = 4;
-	uint32 IGDLJCFLAMD = 9;
-	repeated uint32 OEEJKPILPFI = 12;
+	uint32 IGDLJCFLAMD = 6;
+	repeated uint32 OEEJKPILPFI = 10;
 }

@@ -6,6 +6,6 @@ option java_outer_classname = "MarkMapRspOuterClass";
 import "MapMarkPoint.proto";
 
 message MarkMapRsp {
-	repeated MapMarkPoint mark_list = 4;
-	int32 retcode = 10;
+	repeated MapMarkPoint mark_list = 10;
+	int32 retcode = 5;
 }

@@ -19,42 +19,42 @@ public final class AvatarFetterLevelRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 _reward_id_list = 4;</code>
+     * <code>repeated uint32 _reward_id_list = 9;</code>
      * @return A list containing the rewardIdList.
      */
     java.util.List<java.lang.Integer> getRewardIdListList();
     /**
-     * <code>repeated uint32 _reward_id_list = 4;</code>
+     * <code>repeated uint32 _reward_id_list = 9;</code>
      * @return The count of rewardIdList.
      */
     int getRewardIdListCount();
     /**
-     * <code>repeated uint32 _reward_id_list = 4;</code>
+     * <code>repeated uint32 _reward_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The rewardIdList at the given index.
      */
     int getRewardIdList(int index);
 
     /**
-     * <code>uint32 fetter_level = 14;</code>
+     * <code>uint32 fetter_level = 8;</code>
      * @return The fetterLevel.
      */
     int getFetterLevel();
 
     /**
-     * <code>uint32 reward_id = 3;</code>
+     * <code>uint32 reward_id = 12;</code>
      * @return The rewardId.
      */
     int getRewardId();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint64 avatar_guid = 6;</code>
+     * <code>uint64 avatar_guid = 1;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
@@ -106,12 +106,22 @@ public final class AvatarFetterLevelRewardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
-              rewardId_ = input.readUInt32();
+              avatarGuid_ = input.readUInt64();
               break;
             }
-            case 32: {
+            case 24: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 64: {
+
+              fetterLevel_ = input.readUInt32();
+              break;
+            }
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 RewardIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -119,7 +129,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
               RewardIdList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -132,19 +142,9 @@ public final class AvatarFetterLevelRewardRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 40: {
+            case 96: {
 
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 48: {
-
-              avatarGuid_ = input.readUInt64();
-              break;
-            }
-            case 112: {
-
-              fetterLevel_ = input.readUInt32();
+              rewardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -182,10 +182,10 @@ public final class AvatarFetterLevelRewardRspOuterClass {
               emu.grasscutter.net.proto.AvatarFetterLevelRewardRspOuterClass.AvatarFetterLevelRewardRsp.class, emu.grasscutter.net.proto.AvatarFetterLevelRewardRspOuterClass.AvatarFetterLevelRewardRsp.Builder.class);
     }
 
-    public static final int _REWARD_ID_LIST_FIELD_NUMBER = 4;
+    public static final int _REWARD_ID_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList RewardIdList_;
     /**
-     * <code>repeated uint32 _reward_id_list = 4;</code>
+     * <code>repeated uint32 _reward_id_list = 9;</code>
      * @return A list containing the rewardIdList.
      */
     @java.lang.Override
@@ -194,14 +194,14 @@ public final class AvatarFetterLevelRewardRspOuterClass {
       return RewardIdList_;
     }
     /**
-     * <code>repeated uint32 _reward_id_list = 4;</code>
+     * <code>repeated uint32 _reward_id_list = 9;</code>
      * @return The count of rewardIdList.
      */
     public int getRewardIdListCount() {
       return RewardIdList_.size();
     }
     /**
-     * <code>repeated uint32 _reward_id_list = 4;</code>
+     * <code>repeated uint32 _reward_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The rewardIdList at the given index.
      */
@@ -210,10 +210,10 @@ public final class AvatarFetterLevelRewardRspOuterClass {
     }
     private int RewardIdListMemoizedSerializedSize = -1;
 
-    public static final int FETTER_LEVEL_FIELD_NUMBER = 14;
+    public static final int FETTER_LEVEL_FIELD_NUMBER = 8;
     private int fetterLevel_;
     /**
-     * <code>uint32 fetter_level = 14;</code>
+     * <code>uint32 fetter_level = 8;</code>
      * @return The fetterLevel.
      */
     @java.lang.Override
@@ -221,10 +221,10 @@ public final class AvatarFetterLevelRewardRspOuterClass {
       return fetterLevel_;
     }
 
-    public static final int REWARD_ID_FIELD_NUMBER = 3;
+    public static final int REWARD_ID_FIELD_NUMBER = 12;
     private int rewardId_;
     /**
-     * <code>uint32 reward_id = 3;</code>
+     * <code>uint32 reward_id = 12;</code>
      * @return The rewardId.
      */
     @java.lang.Override
@@ -232,10 +232,10 @@ public final class AvatarFetterLevelRewardRspOuterClass {
       return rewardId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -243,10 +243,10 @@ public final class AvatarFetterLevelRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 6;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 1;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 6;</code>
+     * <code>uint64 avatar_guid = 1;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -269,24 +269,24 @@ public final class AvatarFetterLevelRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (rewardId_ != 0) {
-        output.writeUInt32(3, rewardId_);
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(1, avatarGuid_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
+      }
+      if (fetterLevel_ != 0) {
+        output.writeUInt32(8, fetterLevel_);
       }
       if (getRewardIdListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(RewardIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < RewardIdList_.size(); i++) {
         output.writeUInt32NoTag(RewardIdList_.getInt(i));
       }
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
-      if (avatarGuid_ != 0L) {
-        output.writeUInt64(6, avatarGuid_);
-      }
-      if (fetterLevel_ != 0) {
-        output.writeUInt32(14, fetterLevel_);
+      if (rewardId_ != 0) {
+        output.writeUInt32(12, rewardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -297,9 +297,17 @@ public final class AvatarFetterLevelRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (rewardId_ != 0) {
+      if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, rewardId_);
+          .computeUInt64Size(1, avatarGuid_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, retcode_);
+      }
+      if (fetterLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, fetterLevel_);
       }
       {
         int dataSize = 0;
@@ -315,17 +323,9 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         }
         RewardIdListMemoizedSerializedSize = dataSize;
       }
-      if (retcode_ != 0) {
+      if (rewardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
-      if (avatarGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(6, avatarGuid_);
-      }
-      if (fetterLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, fetterLevel_);
+          .computeUInt32Size(12, rewardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -663,7 +663,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 _reward_id_list = 4;</code>
+       * <code>repeated uint32 _reward_id_list = 9;</code>
        * @return A list containing the rewardIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -672,14 +672,14 @@ public final class AvatarFetterLevelRewardRspOuterClass {
                  java.util.Collections.unmodifiableList(RewardIdList_) : RewardIdList_;
       }
       /**
-       * <code>repeated uint32 _reward_id_list = 4;</code>
+       * <code>repeated uint32 _reward_id_list = 9;</code>
        * @return The count of rewardIdList.
        */
       public int getRewardIdListCount() {
         return RewardIdList_.size();
       }
       /**
-       * <code>repeated uint32 _reward_id_list = 4;</code>
+       * <code>repeated uint32 _reward_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The rewardIdList at the given index.
        */
@@ -687,7 +687,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return RewardIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 _reward_id_list = 4;</code>
+       * <code>repeated uint32 _reward_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The rewardIdList to set.
        * @return This builder for chaining.
@@ -700,7 +700,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 _reward_id_list = 4;</code>
+       * <code>repeated uint32 _reward_id_list = 9;</code>
        * @param value The rewardIdList to add.
        * @return This builder for chaining.
        */
@@ -711,7 +711,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 _reward_id_list = 4;</code>
+       * <code>repeated uint32 _reward_id_list = 9;</code>
        * @param values The rewardIdList to add.
        * @return This builder for chaining.
        */
@@ -724,7 +724,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 _reward_id_list = 4;</code>
+       * <code>repeated uint32 _reward_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardIdList() {
@@ -736,7 +736,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
 
       private int fetterLevel_ ;
       /**
-       * <code>uint32 fetter_level = 14;</code>
+       * <code>uint32 fetter_level = 8;</code>
        * @return The fetterLevel.
        */
       @java.lang.Override
@@ -744,7 +744,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return fetterLevel_;
       }
       /**
-       * <code>uint32 fetter_level = 14;</code>
+       * <code>uint32 fetter_level = 8;</code>
        * @param value The fetterLevel to set.
        * @return This builder for chaining.
        */
@@ -755,7 +755,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 fetter_level = 14;</code>
+       * <code>uint32 fetter_level = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearFetterLevel() {
@@ -767,7 +767,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
 
       private int rewardId_ ;
       /**
-       * <code>uint32 reward_id = 3;</code>
+       * <code>uint32 reward_id = 12;</code>
        * @return The rewardId.
        */
       @java.lang.Override
@@ -775,7 +775,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return rewardId_;
       }
       /**
-       * <code>uint32 reward_id = 3;</code>
+       * <code>uint32 reward_id = 12;</code>
        * @param value The rewardId to set.
        * @return This builder for chaining.
        */
@@ -786,7 +786,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reward_id = 3;</code>
+       * <code>uint32 reward_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRewardId() {
@@ -798,7 +798,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -806,7 +806,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -817,7 +817,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -829,7 +829,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 6;</code>
+       * <code>uint64 avatar_guid = 1;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -837,7 +837,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 6;</code>
+       * <code>uint64 avatar_guid = 1;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -848,7 +848,7 @@ public final class AvatarFetterLevelRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 6;</code>
+       * <code>uint64 avatar_guid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -926,9 +926,9 @@ public final class AvatarFetterLevelRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n AvatarFetterLevelRewardRsp.proto\"\204\001\n\032A" +
       "vatarFetterLevelRewardRsp\022\027\n\017_reward_id_" +
-      "list\030\004 \003(\r\022\024\n\014fetter_level\030\016 \001(\r\022\021\n\trewa" +
-      "rd_id\030\003 \001(\r\022\017\n\007retcode\030\005 \001(\005\022\023\n\013avatar_g" +
-      "uid\030\006 \001(\004BA\n\031emu.grasscutter.net.protoB$" +
+      "list\030\t \003(\r\022\024\n\014fetter_level\030\010 \001(\r\022\021\n\trewa" +
+      "rd_id\030\014 \001(\r\022\017\n\007retcode\030\003 \001(\005\022\023\n\013avatar_g" +
+      "uid\030\001 \001(\004BA\n\031emu.grasscutter.net.protoB$" +
       "AvatarFetterLevelRewardRspOuterClassb\006pr" +
       "oto3"
     };

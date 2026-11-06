@@ -19,19 +19,19 @@ public final class _MonsterSnapSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 score = 8;</code>
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     int getScore();
 
     /**
-     * <code>uint32 level_id = 6;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>bool is_new_record = 13;</code>
+     * <code>bool is_new_record = 10;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
@@ -81,19 +81,19 @@ public final class _MonsterSnapSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 40: {
 
               score_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 80: {
 
               isNewRecord_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +128,10 @@ public final class _MonsterSnapSettleInfoOuterClass {
               emu.grasscutter.net.proto._MonsterSnapSettleInfoOuterClass._MonsterSnapSettleInfo.class, emu.grasscutter.net.proto._MonsterSnapSettleInfoOuterClass._MonsterSnapSettleInfo.Builder.class);
     }
 
-    public static final int SCORE_FIELD_NUMBER = 8;
+    public static final int SCORE_FIELD_NUMBER = 5;
     private int score_;
     /**
-     * <code>uint32 score = 8;</code>
+     * <code>uint32 score = 5;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class _MonsterSnapSettleInfoOuterClass {
       return score_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 6;
+    public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 6;</code>
+     * <code>uint32 level_id = 15;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _MonsterSnapSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 13;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 10;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 13;</code>
+     * <code>bool is_new_record = 10;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -175,14 +175,14 @@ public final class _MonsterSnapSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(6, levelId_);
-      }
       if (score_ != 0) {
-        output.writeUInt32(8, score_);
+        output.writeUInt32(5, score_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(13, isNewRecord_);
+        output.writeBool(10, isNewRecord_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +193,17 @@ public final class _MonsterSnapSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, levelId_);
-      }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, score_);
+          .computeUInt32Size(5, score_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isNewRecord_);
+          .computeBoolSize(10, isNewRecord_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -500,7 +500,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 5;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -508,7 +508,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 5;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -519,7 +519,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 8;</code>
+       * <code>uint32 score = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -531,7 +531,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -539,7 +539,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 15;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -550,7 +550,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 6;</code>
+       * <code>uint32 level_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -562,7 +562,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 13;</code>
+       * <code>bool is_new_record = 10;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -570,7 +570,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 13;</code>
+       * <code>bool is_new_record = 10;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -581,7 +581,7 @@ public final class _MonsterSnapSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 13;</code>
+       * <code>bool is_new_record = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -658,8 +658,8 @@ public final class _MonsterSnapSettleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034_MonsterSnapSettleInfo.proto\"P\n\026_Monst" +
-      "erSnapSettleInfo\022\r\n\005score\030\010 \001(\r\022\020\n\010level" +
-      "_id\030\006 \001(\r\022\025\n\ris_new_record\030\r \001(\010B=\n\031emu." +
+      "erSnapSettleInfo\022\r\n\005score\030\005 \001(\r\022\020\n\010level" +
+      "_id\030\017 \001(\r\022\025\n\ris_new_record\030\n \001(\010B=\n\031emu." +
       "grasscutter.net.protoB _MonsterSnapSettl" +
       "eInfoOuterClassb\006proto3"
     };

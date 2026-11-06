@@ -19,17 +19,17 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 event_id_list = 12;</code>
+     * <code>repeated uint32 event_id_list = 1;</code>
      * @return A list containing the eventIdList.
      */
     java.util.List<java.lang.Integer> getEventIdListList();
     /**
-     * <code>repeated uint32 event_id_list = 12;</code>
+     * <code>repeated uint32 event_id_list = 1;</code>
      * @return The count of eventIdList.
      */
     int getEventIdListCount();
     /**
-     * <code>repeated uint32 event_id_list = 12;</code>
+     * <code>repeated uint32 event_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The eventIdList at the given index.
      */
@@ -82,7 +82,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 8: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 eventIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -90,7 +90,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
               eventIdList_.addInt(input.readUInt32());
               break;
             }
-            case 98: {
+            case 10: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -138,10 +138,10 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
               emu.grasscutter.net.proto.HomeAvatarAllFinishRewardNotifyOuterClass.HomeAvatarAllFinishRewardNotify.class, emu.grasscutter.net.proto.HomeAvatarAllFinishRewardNotifyOuterClass.HomeAvatarAllFinishRewardNotify.Builder.class);
     }
 
-    public static final int EVENT_ID_LIST_FIELD_NUMBER = 12;
+    public static final int EVENT_ID_LIST_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList eventIdList_;
     /**
-     * <code>repeated uint32 event_id_list = 12;</code>
+     * <code>repeated uint32 event_id_list = 1;</code>
      * @return A list containing the eventIdList.
      */
     @java.lang.Override
@@ -150,14 +150,14 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
       return eventIdList_;
     }
     /**
-     * <code>repeated uint32 event_id_list = 12;</code>
+     * <code>repeated uint32 event_id_list = 1;</code>
      * @return The count of eventIdList.
      */
     public int getEventIdListCount() {
       return eventIdList_.size();
     }
     /**
-     * <code>repeated uint32 event_id_list = 12;</code>
+     * <code>repeated uint32 event_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The eventIdList at the given index.
      */
@@ -182,7 +182,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getEventIdListList().size() > 0) {
-        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(10);
         output.writeUInt32NoTag(eventIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < eventIdList_.size(); i++) {
@@ -506,7 +506,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 event_id_list = 12;</code>
+       * <code>repeated uint32 event_id_list = 1;</code>
        * @return A list containing the eventIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -515,14 +515,14 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
                  java.util.Collections.unmodifiableList(eventIdList_) : eventIdList_;
       }
       /**
-       * <code>repeated uint32 event_id_list = 12;</code>
+       * <code>repeated uint32 event_id_list = 1;</code>
        * @return The count of eventIdList.
        */
       public int getEventIdListCount() {
         return eventIdList_.size();
       }
       /**
-       * <code>repeated uint32 event_id_list = 12;</code>
+       * <code>repeated uint32 event_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The eventIdList at the given index.
        */
@@ -530,7 +530,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
         return eventIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 event_id_list = 12;</code>
+       * <code>repeated uint32 event_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The eventIdList to set.
        * @return This builder for chaining.
@@ -543,7 +543,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 event_id_list = 12;</code>
+       * <code>repeated uint32 event_id_list = 1;</code>
        * @param value The eventIdList to add.
        * @return This builder for chaining.
        */
@@ -554,7 +554,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 event_id_list = 12;</code>
+       * <code>repeated uint32 event_id_list = 1;</code>
        * @param values The eventIdList to add.
        * @return This builder for chaining.
        */
@@ -567,7 +567,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 event_id_list = 12;</code>
+       * <code>repeated uint32 event_id_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventIdList() {
@@ -645,7 +645,7 @@ public final class HomeAvatarAllFinishRewardNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n%HomeAvatarAllFinishRewardNotify.proto\"" +
       "8\n\037HomeAvatarAllFinishRewardNotify\022\025\n\rev" +
-      "ent_id_list\030\014 \003(\rBF\n\031emu.grasscutter.net" +
+      "ent_id_list\030\001 \003(\rBF\n\031emu.grasscutter.net" +
       ".protoB)HomeAvatarAllFinishRewardNotifyO" +
       "uterClassb\006proto3"
     };

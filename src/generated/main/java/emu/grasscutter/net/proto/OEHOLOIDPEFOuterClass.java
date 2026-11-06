@@ -136,13 +136,13 @@ public final class OEHOLOIDPEFOuterClass {
     int getLevel();
 
     /**
-     * <code>uint32 JCACGOEHBOA = 50000;</code>
+     * <code>uint32 JCACGOEHBOA = 5;</code>
      * @return The jCACGOEHBOA.
      */
     int getJCACGOEHBOA();
 
     /**
-     * <code>uint32 NNPEIMCDGIP = 50001;</code>
+     * <code>uint32 NNPEIMCDGIP = 6;</code>
      * @return The nNPEIMCDGIP.
      */
     int getNNPEIMCDGIP();
@@ -200,6 +200,16 @@ public final class OEHOLOIDPEFOuterClass {
             case 0:
               done = true;
               break;
+            case 40: {
+
+              jCACGOEHBOA_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              nNPEIMCDGIP_ = input.readUInt32();
+              break;
+            }
             case 72: {
 
               level_ = input.readUInt32();
@@ -311,16 +321,6 @@ public final class OEHOLOIDPEFOuterClass {
                 detail_ = subBuilder.buildPartial();
               }
               detailCase_ = 1319;
-              break;
-            }
-            case 400000: {
-
-              jCACGOEHBOA_ = input.readUInt32();
-              break;
-            }
-            case 400008: {
-
-              nNPEIMCDGIP_ = input.readUInt32();
               break;
             }
             default: {
@@ -645,10 +645,10 @@ public final class OEHOLOIDPEFOuterClass {
       return level_;
     }
 
-    public static final int JCACGOEHBOA_FIELD_NUMBER = 50000;
+    public static final int JCACGOEHBOA_FIELD_NUMBER = 5;
     private int jCACGOEHBOA_;
     /**
-     * <code>uint32 JCACGOEHBOA = 50000;</code>
+     * <code>uint32 JCACGOEHBOA = 5;</code>
      * @return The jCACGOEHBOA.
      */
     @java.lang.Override
@@ -656,10 +656,10 @@ public final class OEHOLOIDPEFOuterClass {
       return jCACGOEHBOA_;
     }
 
-    public static final int NNPEIMCDGIP_FIELD_NUMBER = 50001;
+    public static final int NNPEIMCDGIP_FIELD_NUMBER = 6;
     private int nNPEIMCDGIP_;
     /**
-     * <code>uint32 NNPEIMCDGIP = 50001;</code>
+     * <code>uint32 NNPEIMCDGIP = 6;</code>
      * @return The nNPEIMCDGIP.
      */
     @java.lang.Override
@@ -692,6 +692,12 @@ public final class OEHOLOIDPEFOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (jCACGOEHBOA_ != 0) {
+        output.writeUInt32(5, jCACGOEHBOA_);
+      }
+      if (nNPEIMCDGIP_ != 0) {
+        output.writeUInt32(6, nNPEIMCDGIP_);
+      }
       if (level_ != 0) {
         output.writeUInt32(9, level_);
       }
@@ -722,12 +728,6 @@ public final class OEHOLOIDPEFOuterClass {
       if (detailCase_ == 1319) {
         output.writeMessage(1319, (emu.grasscutter.net.proto._ExpandToReduceUpgradeCostBuffInfoOuterClass._ExpandToReduceUpgradeCostBuffInfo) detail_);
       }
-      if (jCACGOEHBOA_ != 0) {
-        output.writeUInt32(50000, jCACGOEHBOA_);
-      }
-      if (nNPEIMCDGIP_ != 0) {
-        output.writeUInt32(50001, nNPEIMCDGIP_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -737,6 +737,14 @@ public final class OEHOLOIDPEFOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (jCACGOEHBOA_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, jCACGOEHBOA_);
+      }
+      if (nNPEIMCDGIP_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, nNPEIMCDGIP_);
+      }
       if (level_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, level_);
@@ -776,14 +784,6 @@ public final class OEHOLOIDPEFOuterClass {
       if (detailCase_ == 1319) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1319, (emu.grasscutter.net.proto._ExpandToReduceUpgradeCostBuffInfoOuterClass._ExpandToReduceUpgradeCostBuffInfo) detail_);
-      }
-      if (jCACGOEHBOA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50000, jCACGOEHBOA_);
-      }
-      if (nNPEIMCDGIP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(50001, nNPEIMCDGIP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2313,7 +2313,7 @@ public final class OEHOLOIDPEFOuterClass {
 
       private int jCACGOEHBOA_ ;
       /**
-       * <code>uint32 JCACGOEHBOA = 50000;</code>
+       * <code>uint32 JCACGOEHBOA = 5;</code>
        * @return The jCACGOEHBOA.
        */
       @java.lang.Override
@@ -2321,7 +2321,7 @@ public final class OEHOLOIDPEFOuterClass {
         return jCACGOEHBOA_;
       }
       /**
-       * <code>uint32 JCACGOEHBOA = 50000;</code>
+       * <code>uint32 JCACGOEHBOA = 5;</code>
        * @param value The jCACGOEHBOA to set.
        * @return This builder for chaining.
        */
@@ -2332,7 +2332,7 @@ public final class OEHOLOIDPEFOuterClass {
         return this;
       }
       /**
-       * <code>uint32 JCACGOEHBOA = 50000;</code>
+       * <code>uint32 JCACGOEHBOA = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearJCACGOEHBOA() {
@@ -2344,7 +2344,7 @@ public final class OEHOLOIDPEFOuterClass {
 
       private int nNPEIMCDGIP_ ;
       /**
-       * <code>uint32 NNPEIMCDGIP = 50001;</code>
+       * <code>uint32 NNPEIMCDGIP = 6;</code>
        * @return The nNPEIMCDGIP.
        */
       @java.lang.Override
@@ -2352,7 +2352,7 @@ public final class OEHOLOIDPEFOuterClass {
         return nNPEIMCDGIP_;
       }
       /**
-       * <code>uint32 NNPEIMCDGIP = 50001;</code>
+       * <code>uint32 NNPEIMCDGIP = 6;</code>
        * @param value The nNPEIMCDGIP to set.
        * @return This builder for chaining.
        */
@@ -2363,7 +2363,7 @@ public final class OEHOLOIDPEFOuterClass {
         return this;
       }
       /**
-       * <code>uint32 NNPEIMCDGIP = 50001;</code>
+       * <code>uint32 NNPEIMCDGIP = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearNNPEIMCDGIP() {
@@ -2477,7 +2477,7 @@ public final class OEHOLOIDPEFOuterClass {
       "adeBuffInfo.proto\032,_NoQuestApCostAfterQu" +
       "estFinishBuffInfo.proto\032\033_RevenueBonusBu" +
       "ffInfo.proto\032,_UpgradeToBonusFacilityRev" +
-      "enueBuffInfo.proto\"\301\005\n\013OEHOLOIDPEF\022C\n\034hi" +
+      "enueBuffInfo.proto\"\275\005\n\013OEHOLOIDPEF\022C\n\034hi" +
       "re_level_upgrade_buff_info\030\240\t \001(\0132\032._Hir" +
       "eLevelUpgradeBuffInfoH\000\022:\n\027revenue_bonus" +
       "_buff_info\030\342\004 \001(\0132\026._RevenueBonusBuffInf" +
@@ -2493,10 +2493,10 @@ public final class OEHOLOIDPEFOuterClass {
       "oCostBuffInfoH\000\022W\n\'expand_to_reduce_upgr" +
       "ade_cost_buff_info\030\247\n \001(\0132#._ExpandToRed" +
       "uceUpgradeCostBuffInfoH\000\022\014\n\004guid\030\017 \001(\r\022\r" +
-      "\n\005level\030\t \001(\r\022\025\n\013JCACGOEHBOA\030\320\206\003 \001(\r\022\025\n\013" +
-      "NNPEIMCDGIP\030\321\206\003 \001(\r\022\017\n\007buff_id\030\013 \001(\rB\010\n\006" +
-      "detailB2\n\031emu.grasscutter.net.protoB\025OEH" +
-      "OLOIDPEFOuterClassb\006proto3"
+      "\n\005level\030\t \001(\r\022\023\n\013JCACGOEHBOA\030\005 \001(\r\022\023\n\013NN" +
+      "PEIMCDGIP\030\006 \001(\r\022\017\n\007buff_id\030\013 \001(\rB\010\n\006deta" +
+      "ilB2\n\031emu.grasscutter.net.protoB\025OEHOLOI" +
+      "DPEFOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

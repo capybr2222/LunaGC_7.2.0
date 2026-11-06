@@ -19,13 +19,13 @@ public final class HomeAvatarSummonEventReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 suit_id = 7;</code>
+     * <code>uint32 suit_id = 3;</code>
      * @return The suitId.
      */
     int getSuitId();
 
     /**
-     * <code>uint32 avatar_id = 6;</code>
+     * <code>uint32 avatar_id = 5;</code>
      * @return The avatarId.
      */
     int getAvatarId();
@@ -81,14 +81,14 @@ public final class HomeAvatarSummonEventReqOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 24: {
 
               suitId_ = input.readUInt32();
+              break;
+            }
+            case 40: {
+
+              avatarId_ = input.readUInt32();
               break;
             }
             case 88: {
@@ -128,10 +128,10 @@ public final class HomeAvatarSummonEventReqOuterClass {
               emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq.class, emu.grasscutter.net.proto.HomeAvatarSummonEventReqOuterClass.HomeAvatarSummonEventReq.Builder.class);
     }
 
-    public static final int SUIT_ID_FIELD_NUMBER = 7;
+    public static final int SUIT_ID_FIELD_NUMBER = 3;
     private int suitId_;
     /**
-     * <code>uint32 suit_id = 7;</code>
+     * <code>uint32 suit_id = 3;</code>
      * @return The suitId.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class HomeAvatarSummonEventReqOuterClass {
       return suitId_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 6;
+    public static final int AVATAR_ID_FIELD_NUMBER = 5;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 6;</code>
+     * <code>uint32 avatar_id = 5;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -175,11 +175,11 @@ public final class HomeAvatarSummonEventReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarId_ != 0) {
-        output.writeUInt32(6, avatarId_);
-      }
       if (suitId_ != 0) {
-        output.writeUInt32(7, suitId_);
+        output.writeUInt32(3, suitId_);
+      }
+      if (avatarId_ != 0) {
+        output.writeUInt32(5, avatarId_);
       }
       if (guid_ != 0) {
         output.writeUInt32(11, guid_);
@@ -193,13 +193,13 @@ public final class HomeAvatarSummonEventReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, avatarId_);
-      }
       if (suitId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, suitId_);
+          .computeUInt32Size(3, suitId_);
+      }
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, avatarId_);
       }
       if (guid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -499,7 +499,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
 
       private int suitId_ ;
       /**
-       * <code>uint32 suit_id = 7;</code>
+       * <code>uint32 suit_id = 3;</code>
        * @return The suitId.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
         return suitId_;
       }
       /**
-       * <code>uint32 suit_id = 7;</code>
+       * <code>uint32 suit_id = 3;</code>
        * @param value The suitId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 suit_id = 7;</code>
+       * <code>uint32 suit_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSuitId() {
@@ -530,7 +530,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -538,7 +538,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -549,7 +549,7 @@ public final class HomeAvatarSummonEventReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 6;</code>
+       * <code>uint32 avatar_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -657,8 +657,8 @@ public final class HomeAvatarSummonEventReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036HomeAvatarSummonEventReq.proto\"L\n\030Home" +
-      "AvatarSummonEventReq\022\017\n\007suit_id\030\007 \001(\r\022\021\n" +
-      "\tavatar_id\030\006 \001(\r\022\014\n\004guid\030\013 \001(\rB?\n\031emu.gr" +
+      "AvatarSummonEventReq\022\017\n\007suit_id\030\003 \001(\r\022\021\n" +
+      "\tavatar_id\030\005 \001(\r\022\014\n\004guid\030\013 \001(\rB?\n\031emu.gr" +
       "asscutter.net.protoB\"HomeAvatarSummonEve" +
       "ntReqOuterClassb\006proto3"
     };

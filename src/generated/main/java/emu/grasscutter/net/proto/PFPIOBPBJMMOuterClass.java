@@ -19,13 +19,13 @@ public final class PFPIOBPBJMMOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_id = 14;</code>
+     * <code>uint32 avatar_id = 1;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>bool is_trial_avatar = 9;</code>
+     * <code>bool is_trial_avatar = 2;</code>
      * @return The isTrialAvatar.
      */
     boolean getIsTrialAvatar();
@@ -75,14 +75,14 @@ public final class PFPIOBPBJMMOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
-
-              isTrialAvatar_ = input.readBool();
-              break;
-            }
-            case 112: {
+            case 8: {
 
               avatarId_ = input.readUInt32();
+              break;
+            }
+            case 16: {
+
+              isTrialAvatar_ = input.readBool();
               break;
             }
             default: {
@@ -117,10 +117,10 @@ public final class PFPIOBPBJMMOuterClass {
               emu.grasscutter.net.proto.PFPIOBPBJMMOuterClass.PFPIOBPBJMM.class, emu.grasscutter.net.proto.PFPIOBPBJMMOuterClass.PFPIOBPBJMM.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 14;
+    public static final int AVATAR_ID_FIELD_NUMBER = 1;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 14;</code>
+     * <code>uint32 avatar_id = 1;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class PFPIOBPBJMMOuterClass {
       return avatarId_;
     }
 
-    public static final int IS_TRIAL_AVATAR_FIELD_NUMBER = 9;
+    public static final int IS_TRIAL_AVATAR_FIELD_NUMBER = 2;
     private boolean isTrialAvatar_;
     /**
-     * <code>bool is_trial_avatar = 9;</code>
+     * <code>bool is_trial_avatar = 2;</code>
      * @return The isTrialAvatar.
      */
     @java.lang.Override
@@ -153,11 +153,11 @@ public final class PFPIOBPBJMMOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isTrialAvatar_ != false) {
-        output.writeBool(9, isTrialAvatar_);
-      }
       if (avatarId_ != 0) {
-        output.writeUInt32(14, avatarId_);
+        output.writeUInt32(1, avatarId_);
+      }
+      if (isTrialAvatar_ != false) {
+        output.writeBool(2, isTrialAvatar_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class PFPIOBPBJMMOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isTrialAvatar_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isTrialAvatar_);
-      }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, avatarId_);
+          .computeUInt32Size(1, avatarId_);
+      }
+      if (isTrialAvatar_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, isTrialAvatar_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class PFPIOBPBJMMOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 14;</code>
+       * <code>uint32 avatar_id = 1;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class PFPIOBPBJMMOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 14;</code>
+       * <code>uint32 avatar_id = 1;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class PFPIOBPBJMMOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 14;</code>
+       * <code>uint32 avatar_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -492,7 +492,7 @@ public final class PFPIOBPBJMMOuterClass {
 
       private boolean isTrialAvatar_ ;
       /**
-       * <code>bool is_trial_avatar = 9;</code>
+       * <code>bool is_trial_avatar = 2;</code>
        * @return The isTrialAvatar.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class PFPIOBPBJMMOuterClass {
         return isTrialAvatar_;
       }
       /**
-       * <code>bool is_trial_avatar = 9;</code>
+       * <code>bool is_trial_avatar = 2;</code>
        * @param value The isTrialAvatar to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class PFPIOBPBJMMOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial_avatar = 9;</code>
+       * <code>bool is_trial_avatar = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrialAvatar() {
@@ -588,7 +588,7 @@ public final class PFPIOBPBJMMOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021PFPIOBPBJMM.proto\"9\n\013PFPIOBPBJMM\022\021\n\tav" +
-      "atar_id\030\016 \001(\r\022\027\n\017is_trial_avatar\030\t \001(\010B2" +
+      "atar_id\030\001 \001(\r\022\027\n\017is_trial_avatar\030\002 \001(\010B2" +
       "\n\031emu.grasscutter.net.protoB\025PFPIOBPBJMM" +
       "OuterClassb\006proto3"
     };

@@ -6,12 +6,12 @@ option java_outer_classname = "DailyDungeonEntryInfoOuterClass";
 import "DungeonEntryInfo.proto";
 
 message DailyDungeonEntryInfo {
-	bool EDEOIILGGJC = 50000;
-	bool is_quick_open = 5;
-	uint32 recommend_dungeon_id = 7;
-	DungeonEntryInfo recommend_dungeon_entry_info = 14;
-	bool AKNPDDFHEKO = 50001;
-	uint32 dungeon_entry_id = 6;
-	uint32 dungeon_entry_config_id = 13;
-	repeated uint32 haoiogcmaim = 2;
+	bool EDEOIILGGJC = 20001;
+	bool is_quick_open = 7;
+	uint32 recommend_dungeon_id = 5;
+	DungeonEntryInfo recommend_dungeon_entry_info = 3;
+	bool AKNPDDFHEKO = 20002;
+	uint32 dungeon_entry_id = 15;
+	uint32 dungeon_entry_config_id = 14;
+	repeated uint32 haoiogcmaim = 1;
 }

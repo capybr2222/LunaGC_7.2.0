@@ -4,7 +4,7 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "FishingJoyDetailInfoOuterClass";
 
 message FishingJoyDetailInfo {
-	uint32 jejkilgbcol = 2;
-	bool FPKBKGBKGEG = 15;
-	bool LBCGNOOJDIC = 12;
+	uint32 jejkilgbcol = 7;
+	bool FPKBKGBKGEG = 50000;
+	bool LBCGNOOJDIC = 50001;
 }

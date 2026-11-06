@@ -6,7 +6,7 @@ option java_outer_classname = "_UpgradeToBonusFacilityRevenueBuffInfoOuterClass"
 import "Uint32Pair.proto";
 
 message _UpgradeToBonusFacilityRevenueBuffInfo {
-	uint32 MPPNKBJHBOK = 2;
-	bool NHLOILJDDIP = 3;
-	repeated Uint32Pair ICLJFFNOEHF = 14;
+	uint32 MPPNKBJHBOK = 7;
+	bool NHLOILJDDIP = 9;
+	repeated Uint32Pair ICLJFFNOEHF = 20000;
 }

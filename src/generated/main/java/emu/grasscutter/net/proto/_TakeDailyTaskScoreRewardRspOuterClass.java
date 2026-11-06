@@ -19,37 +19,37 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
         getItemListList();
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index);
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     int getItemListCount();
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
         getItemListOrBuilderList();
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
         int index);
 
     /**
-     * <code>bool _is_claim_daily_attendance = 3;</code>
+     * <code>bool _is_claim_daily_attendance = 6;</code>
      * @return The isClaimDailyAttendance.
      */
     boolean getIsClaimDailyAttendance();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -139,15 +139,15 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
               break;
             case 24: {
 
-              IsClaimDailyAttendance_ = input.readBool();
-              break;
-            }
-            case 64: {
-
               retcode_ = input.readInt32();
               break;
             }
-            case 82: {
+            case 48: {
+
+              IsClaimDailyAttendance_ = input.readBool();
+              break;
+            }
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 itemList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam>();
                 mutable_bitField0_ |= 0x00000001;
@@ -239,17 +239,17 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
               emu.grasscutter.net.proto._TakeDailyTaskScoreRewardRspOuterClass._TakeDailyTaskScoreRewardRsp.class, emu.grasscutter.net.proto._TakeDailyTaskScoreRewardRspOuterClass._TakeDailyTaskScoreRewardRsp.Builder.class);
     }
 
-    public static final int ITEM_LIST_FIELD_NUMBER = 10;
+    public static final int ITEM_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> itemList_;
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -257,21 +257,21 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
       return itemList_;
     }
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     @java.lang.Override
     public int getItemListCount() {
       return itemList_.size();
     }
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
       return itemList_.get(index);
     }
     /**
-     * <code>repeated .ItemParam item_list = 10;</code>
+     * <code>repeated .ItemParam item_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
@@ -279,10 +279,10 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
       return itemList_.get(index);
     }
 
-    public static final int _IS_CLAIM_DAILY_ATTENDANCE_FIELD_NUMBER = 3;
+    public static final int _IS_CLAIM_DAILY_ATTENDANCE_FIELD_NUMBER = 6;
     private boolean IsClaimDailyAttendance_;
     /**
-     * <code>bool _is_claim_daily_attendance = 3;</code>
+     * <code>bool _is_claim_daily_attendance = 6;</code>
      * @return The isClaimDailyAttendance.
      */
     @java.lang.Override
@@ -290,10 +290,10 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
       return IsClaimDailyAttendance_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -372,14 +372,14 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (IsClaimDailyAttendance_ != false) {
-        output.writeBool(3, IsClaimDailyAttendance_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(3, retcode_);
+      }
+      if (IsClaimDailyAttendance_ != false) {
+        output.writeBool(6, IsClaimDailyAttendance_);
       }
       for (int i = 0; i < itemList_.size(); i++) {
-        output.writeMessage(10, itemList_.get(i));
+        output.writeMessage(12, itemList_.get(i));
       }
       if (getAOABLDACGEBList().size() > 0) {
         output.writeUInt32NoTag(400002);
@@ -404,17 +404,17 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (IsClaimDailyAttendance_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, IsClaimDailyAttendance_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(3, retcode_);
+      }
+      if (IsClaimDailyAttendance_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, IsClaimDailyAttendance_);
       }
       for (int i = 0; i < itemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, itemList_.get(i));
+          .computeMessageSize(12, itemList_.get(i));
       }
       {
         int dataSize = 0;
@@ -836,7 +836,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> itemListBuilder_;
 
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getItemListList() {
         if (itemListBuilder_ == null) {
@@ -846,7 +846,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public int getItemListCount() {
         if (itemListBuilder_ == null) {
@@ -856,7 +856,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -866,7 +866,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -883,7 +883,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder setItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -897,7 +897,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder addItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
         if (itemListBuilder_ == null) {
@@ -913,7 +913,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -930,7 +930,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder addItemList(
           emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -944,7 +944,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder addItemList(
           int index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder builderForValue) {
@@ -958,7 +958,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder addAllItemList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> values) {
@@ -973,7 +973,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder clearItemList() {
         if (itemListBuilder_ == null) {
@@ -986,7 +986,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public Builder removeItemList(int index) {
         if (itemListBuilder_ == null) {
@@ -999,14 +999,14 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getItemListBuilder(
           int index) {
         return getItemListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getItemListOrBuilder(
           int index) {
@@ -1016,7 +1016,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
            getItemListOrBuilderList() {
@@ -1027,14 +1027,14 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         }
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder() {
         return getItemListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addItemListBuilder(
           int index) {
@@ -1042,7 +1042,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
             index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
       }
       /**
-       * <code>repeated .ItemParam item_list = 10;</code>
+       * <code>repeated .ItemParam item_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
            getItemListBuilderList() {
@@ -1065,7 +1065,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
 
       private boolean IsClaimDailyAttendance_ ;
       /**
-       * <code>bool _is_claim_daily_attendance = 3;</code>
+       * <code>bool _is_claim_daily_attendance = 6;</code>
        * @return The isClaimDailyAttendance.
        */
       @java.lang.Override
@@ -1073,7 +1073,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return IsClaimDailyAttendance_;
       }
       /**
-       * <code>bool _is_claim_daily_attendance = 3;</code>
+       * <code>bool _is_claim_daily_attendance = 6;</code>
        * @param value The isClaimDailyAttendance to set.
        * @return This builder for chaining.
        */
@@ -1084,7 +1084,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>bool _is_claim_daily_attendance = 3;</code>
+       * <code>bool _is_claim_daily_attendance = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsClaimDailyAttendance() {
@@ -1096,7 +1096,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1104,7 +1104,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1115,7 +1115,7 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1351,9 +1351,9 @@ public final class _TakeDailyTaskScoreRewardRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\"_TakeDailyTaskScoreRewardRsp.proto\032\017It" +
       "emParam.proto\"\240\001\n\034_TakeDailyTaskScoreRew" +
-      "ardRsp\022\035\n\titem_list\030\n \003(\0132\n.ItemParam\022\"\n" +
-      "\032_is_claim_daily_attendance\030\003 \001(\010\022\017\n\007ret" +
-      "code\030\010 \001(\005\022\025\n\013AOABLDACGEB\030\320\206\003 \003(\r\022\025\n\013HCD" +
+      "ardRsp\022\035\n\titem_list\030\014 \003(\0132\n.ItemParam\022\"\n" +
+      "\032_is_claim_daily_attendance\030\006 \001(\010\022\017\n\007ret" +
+      "code\030\003 \001(\005\022\025\n\013AOABLDACGEB\030\320\206\003 \003(\r\022\025\n\013HCD" +
       "BMIBOAJA\030\321\206\003 \003(\rBC\n\031emu.grasscutter.net." +
       "protoB&_TakeDailyTaskScoreRewardRspOuter" +
       "Classb\006proto3"

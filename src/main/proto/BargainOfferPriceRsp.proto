@@ -7,7 +7,7 @@ import "BargainResultType.proto";
 
 message BargainOfferPriceRsp {
 	int32 retcode = 12;
-	uint32 result_param = 7;
-	int32 cur_mood = 6;
-	BargainResultType bargain_result = 5;
+	uint32 result_param = 10;
+	int32 cur_mood = 14;
+	BargainResultType bargain_result = 3;
 }

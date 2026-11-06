@@ -7,5 +7,5 @@ import "GMBNGIKAPMN.proto";
 
 message NatlanRaceDetailInfo {
 	bool is_special_reward_taken = 1;
-	repeated GMBNGIKAPMN level_info_list = 14;
+	repeated GMBNGIKAPMN level_info_list = 9;
 }

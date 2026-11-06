@@ -6,6 +6,6 @@ option java_outer_classname = "WeekendDjinnInfoOuterClass";
 import "Vector.proto";
 
 message WeekendDjinnInfo {
-	Vector pos = 4;
-	Vector rot = 11;
+	Vector pos = 14;
+	Vector rot = 5;
 }

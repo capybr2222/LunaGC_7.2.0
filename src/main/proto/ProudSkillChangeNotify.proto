@@ -4,8 +4,8 @@ option java_package = "emu.grasscutter.net.proto";
 option java_outer_classname = "ProudSkillChangeNotifyOuterClass";
 
 message ProudSkillChangeNotify {
-	uint64 avatar_guid = 11;
-	uint32 entity_id = 6;
-	uint32 skill_depot_id = 4;
-	repeated uint32 proud_skill_list = 2;
+	uint64 avatar_guid = 5;
+	uint32 entity_id = 2;
+	uint32 skill_depot_id = 14;
+	repeated uint32 proud_skill_list = 9;
 }

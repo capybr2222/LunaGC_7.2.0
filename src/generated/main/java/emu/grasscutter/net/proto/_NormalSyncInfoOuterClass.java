@@ -19,17 +19,17 @@ public final class _NormalSyncInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+     * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
      * @return Whether the bFKACDGIBAI field is set.
      */
     boolean hasBFKACDGIBAI();
     /**
-     * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+     * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
      * @return The bFKACDGIBAI.
      */
     emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF getBFKACDGIBAI();
     /**
-     * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+     * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
      */
     emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder getBFKACDGIBAIOrBuilder();
   }
@@ -78,7 +78,7 @@ public final class _NormalSyncInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 160002: {
               emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder subBuilder = null;
               if (bFKACDGIBAI_ != null) {
                 subBuilder = bFKACDGIBAI_.toBuilder();
@@ -123,10 +123,10 @@ public final class _NormalSyncInfoOuterClass {
               emu.grasscutter.net.proto._NormalSyncInfoOuterClass._NormalSyncInfo.class, emu.grasscutter.net.proto._NormalSyncInfoOuterClass._NormalSyncInfo.Builder.class);
     }
 
-    public static final int BFKACDGIBAI_FIELD_NUMBER = 1;
+    public static final int BFKACDGIBAI_FIELD_NUMBER = 20000;
     private emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF bFKACDGIBAI_;
     /**
-     * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+     * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
      * @return Whether the bFKACDGIBAI field is set.
      */
     @java.lang.Override
@@ -134,7 +134,7 @@ public final class _NormalSyncInfoOuterClass {
       return bFKACDGIBAI_ != null;
     }
     /**
-     * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+     * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
      * @return The bFKACDGIBAI.
      */
     @java.lang.Override
@@ -142,7 +142,7 @@ public final class _NormalSyncInfoOuterClass {
       return bFKACDGIBAI_ == null ? emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.getDefaultInstance() : bFKACDGIBAI_;
     }
     /**
-     * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+     * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder getBFKACDGIBAIOrBuilder() {
@@ -164,7 +164,7 @@ public final class _NormalSyncInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bFKACDGIBAI_ != null) {
-        output.writeMessage(1, getBFKACDGIBAI());
+        output.writeMessage(20000, getBFKACDGIBAI());
       }
       unknownFields.writeTo(output);
     }
@@ -177,7 +177,7 @@ public final class _NormalSyncInfoOuterClass {
       size = 0;
       if (bFKACDGIBAI_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getBFKACDGIBAI());
+          .computeMessageSize(20000, getBFKACDGIBAI());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -468,14 +468,14 @@ public final class _NormalSyncInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder> bFKACDGIBAIBuilder_;
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        * @return Whether the bFKACDGIBAI field is set.
        */
       public boolean hasBFKACDGIBAI() {
         return bFKACDGIBAIBuilder_ != null || bFKACDGIBAI_ != null;
       }
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        * @return The bFKACDGIBAI.
        */
       public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF getBFKACDGIBAI() {
@@ -486,7 +486,7 @@ public final class _NormalSyncInfoOuterClass {
         }
       }
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        */
       public Builder setBFKACDGIBAI(emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF value) {
         if (bFKACDGIBAIBuilder_ == null) {
@@ -502,7 +502,7 @@ public final class _NormalSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        */
       public Builder setBFKACDGIBAI(
           emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder builderForValue) {
@@ -516,7 +516,7 @@ public final class _NormalSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        */
       public Builder mergeBFKACDGIBAI(emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF value) {
         if (bFKACDGIBAIBuilder_ == null) {
@@ -534,7 +534,7 @@ public final class _NormalSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        */
       public Builder clearBFKACDGIBAI() {
         if (bFKACDGIBAIBuilder_ == null) {
@@ -548,7 +548,7 @@ public final class _NormalSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        */
       public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder getBFKACDGIBAIBuilder() {
         
@@ -556,7 +556,7 @@ public final class _NormalSyncInfoOuterClass {
         return getBFKACDGIBAIFieldBuilder().getBuilder();
       }
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        */
       public emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder getBFKACDGIBAIOrBuilder() {
         if (bFKACDGIBAIBuilder_ != null) {
@@ -567,7 +567,7 @@ public final class _NormalSyncInfoOuterClass {
         }
       }
       /**
-       * <code>.IHPAJHCDDIF BFKACDGIBAI = 1;</code>
+       * <code>.IHPAJHCDDIF BFKACDGIBAI = 20000;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIF.Builder, emu.grasscutter.net.proto.IHPAJHCDDIFOuterClass.IHPAJHCDDIFOrBuilder> 
@@ -650,9 +650,10 @@ public final class _NormalSyncInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025_NormalSyncInfo.proto\032\021IHPAJHCDDIF.pro" +
-      "to\"4\n\017_NormalSyncInfo\022!\n\013BFKACDGIBAI\030\001 \001" +
-      "(\0132\014.IHPAJHCDDIFB6\n\031emu.grasscutter.net." +
-      "protoB\031_NormalSyncInfoOuterClassb\006proto3"
+      "to\"6\n\017_NormalSyncInfo\022#\n\013BFKACDGIBAI\030\240\234\001" +
+      " \001(\0132\014.IHPAJHCDDIFB6\n\031emu.grasscutter.ne" +
+      "t.protoB\031_NormalSyncInfoOuterClassb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

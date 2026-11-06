@@ -25,34 +25,34 @@ public final class JJAAPEINGACOuterClass {
     int getNMKGLEHEEIN();
 
     /**
-     * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+     * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
      * @return A list containing the aJJGPPPBOAB.
      */
     java.util.List<java.lang.Integer> getAJJGPPPBOABList();
     /**
-     * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+     * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
      * @return The count of aJJGPPPBOAB.
      */
     int getAJJGPPPBOABCount();
     /**
-     * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+     * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
      * @param index The index of the element to return.
      * @return The aJJGPPPBOAB at the given index.
      */
     int getAJJGPPPBOAB(int index);
 
     /**
-     * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+     * <code>repeated uint32 EGLADOIBKMG = 1;</code>
      * @return A list containing the eGLADOIBKMG.
      */
     java.util.List<java.lang.Integer> getEGLADOIBKMGList();
     /**
-     * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+     * <code>repeated uint32 EGLADOIBKMG = 1;</code>
      * @return The count of eGLADOIBKMG.
      */
     int getEGLADOIBKMGCount();
     /**
-     * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+     * <code>repeated uint32 EGLADOIBKMG = 1;</code>
      * @param index The index of the element to return.
      * @return The eGLADOIBKMG at the given index.
      */
@@ -137,6 +137,48 @@ public final class JJAAPEINGACOuterClass {
             case 0:
               done = true;
               break;
+            case 8: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                eGLADOIBKMG_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              eGLADOIBKMG_.addInt(input.readUInt32());
+              break;
+            }
+            case 10: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                eGLADOIBKMG_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                eGLADOIBKMG_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 16: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                aJJGPPPBOAB_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              aJJGPPPBOAB_.addInt(input.readUInt32());
+              break;
+            }
+            case 18: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                aJJGPPPBOAB_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                aJJGPPPBOAB_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
             case 24: {
 
               nMKGLEHEEIN_ = input.readUInt32();
@@ -156,48 +198,6 @@ public final class JJAAPEINGACOuterClass {
               fHJEAPIGJLG_ = input.readUInt32();
               break;
             }
-            case 400000: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                aJJGPPPBOAB_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              aJJGPPPBOAB_.addInt(input.readUInt32());
-              break;
-            }
-            case 400002: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                aJJGPPPBOAB_ = newIntList();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                aJJGPPPBOAB_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 400008: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                eGLADOIBKMG_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              eGLADOIBKMG_.addInt(input.readUInt32());
-              break;
-            }
-            case 400010: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                eGLADOIBKMG_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                eGLADOIBKMG_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -213,14 +213,14 @@ public final class JJAAPEINGACOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          mNIGABGNNBK_ = java.util.Collections.unmodifiableList(mNIGABGNNBK_);
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          eGLADOIBKMG_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           aJJGPPPBOAB_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          eGLADOIBKMG_.makeImmutable(); // C
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+          mNIGABGNNBK_ = java.util.Collections.unmodifiableList(mNIGABGNNBK_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -250,10 +250,10 @@ public final class JJAAPEINGACOuterClass {
       return nMKGLEHEEIN_;
     }
 
-    public static final int AJJGPPPBOAB_FIELD_NUMBER = 50000;
+    public static final int AJJGPPPBOAB_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList aJJGPPPBOAB_;
     /**
-     * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+     * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
      * @return A list containing the aJJGPPPBOAB.
      */
     @java.lang.Override
@@ -262,14 +262,14 @@ public final class JJAAPEINGACOuterClass {
       return aJJGPPPBOAB_;
     }
     /**
-     * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+     * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
      * @return The count of aJJGPPPBOAB.
      */
     public int getAJJGPPPBOABCount() {
       return aJJGPPPBOAB_.size();
     }
     /**
-     * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+     * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
      * @param index The index of the element to return.
      * @return The aJJGPPPBOAB at the given index.
      */
@@ -278,10 +278,10 @@ public final class JJAAPEINGACOuterClass {
     }
     private int aJJGPPPBOABMemoizedSerializedSize = -1;
 
-    public static final int EGLADOIBKMG_FIELD_NUMBER = 50001;
+    public static final int EGLADOIBKMG_FIELD_NUMBER = 1;
     private com.google.protobuf.Internal.IntList eGLADOIBKMG_;
     /**
-     * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+     * <code>repeated uint32 EGLADOIBKMG = 1;</code>
      * @return A list containing the eGLADOIBKMG.
      */
     @java.lang.Override
@@ -290,14 +290,14 @@ public final class JJAAPEINGACOuterClass {
       return eGLADOIBKMG_;
     }
     /**
-     * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+     * <code>repeated uint32 EGLADOIBKMG = 1;</code>
      * @return The count of eGLADOIBKMG.
      */
     public int getEGLADOIBKMGCount() {
       return eGLADOIBKMG_.size();
     }
     /**
-     * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+     * <code>repeated uint32 EGLADOIBKMG = 1;</code>
      * @param index The index of the element to return.
      * @return The eGLADOIBKMG at the given index.
      */
@@ -372,6 +372,20 @@ public final class JJAAPEINGACOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (getEGLADOIBKMGList().size() > 0) {
+        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(eGLADOIBKMGMemoizedSerializedSize);
+      }
+      for (int i = 0; i < eGLADOIBKMG_.size(); i++) {
+        output.writeUInt32NoTag(eGLADOIBKMG_.getInt(i));
+      }
+      if (getAJJGPPPBOABList().size() > 0) {
+        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(aJJGPPPBOABMemoizedSerializedSize);
+      }
+      for (int i = 0; i < aJJGPPPBOAB_.size(); i++) {
+        output.writeUInt32NoTag(aJJGPPPBOAB_.getInt(i));
+      }
       if (nMKGLEHEEIN_ != 0) {
         output.writeUInt32(3, nMKGLEHEEIN_);
       }
@@ -380,20 +394,6 @@ public final class JJAAPEINGACOuterClass {
       }
       if (fHJEAPIGJLG_ != 0) {
         output.writeUInt32(12, fHJEAPIGJLG_);
-      }
-      if (getAJJGPPPBOABList().size() > 0) {
-        output.writeUInt32NoTag(400002);
-        output.writeUInt32NoTag(aJJGPPPBOABMemoizedSerializedSize);
-      }
-      for (int i = 0; i < aJJGPPPBOAB_.size(); i++) {
-        output.writeUInt32NoTag(aJJGPPPBOAB_.getInt(i));
-      }
-      if (getEGLADOIBKMGList().size() > 0) {
-        output.writeUInt32NoTag(400010);
-        output.writeUInt32NoTag(eGLADOIBKMGMemoizedSerializedSize);
-      }
-      for (int i = 0; i < eGLADOIBKMG_.size(); i++) {
-        output.writeUInt32NoTag(eGLADOIBKMG_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -404,6 +404,34 @@ public final class JJAAPEINGACOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < eGLADOIBKMG_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(eGLADOIBKMG_.getInt(i));
+        }
+        size += dataSize;
+        if (!getEGLADOIBKMGList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        eGLADOIBKMGMemoizedSerializedSize = dataSize;
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < aJJGPPPBOAB_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(aJJGPPPBOAB_.getInt(i));
+        }
+        size += dataSize;
+        if (!getAJJGPPPBOABList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        aJJGPPPBOABMemoizedSerializedSize = dataSize;
+      }
       if (nMKGLEHEEIN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, nMKGLEHEEIN_);
@@ -415,34 +443,6 @@ public final class JJAAPEINGACOuterClass {
       if (fHJEAPIGJLG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, fHJEAPIGJLG_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < aJJGPPPBOAB_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(aJJGPPPBOAB_.getInt(i));
-        }
-        size += dataSize;
-        if (!getAJJGPPPBOABList().isEmpty()) {
-          size += 3;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        aJJGPPPBOABMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < eGLADOIBKMG_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(eGLADOIBKMG_.getInt(i));
-        }
-        size += dataSize;
-        if (!getEGLADOIBKMGList().isEmpty()) {
-          size += 3;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        eGLADOIBKMGMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -861,7 +861,7 @@ public final class JJAAPEINGACOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+       * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
        * @return A list containing the aJJGPPPBOAB.
        */
       public java.util.List<java.lang.Integer>
@@ -870,14 +870,14 @@ public final class JJAAPEINGACOuterClass {
                  java.util.Collections.unmodifiableList(aJJGPPPBOAB_) : aJJGPPPBOAB_;
       }
       /**
-       * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+       * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
        * @return The count of aJJGPPPBOAB.
        */
       public int getAJJGPPPBOABCount() {
         return aJJGPPPBOAB_.size();
       }
       /**
-       * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+       * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
        * @param index The index of the element to return.
        * @return The aJJGPPPBOAB at the given index.
        */
@@ -885,7 +885,7 @@ public final class JJAAPEINGACOuterClass {
         return aJJGPPPBOAB_.getInt(index);
       }
       /**
-       * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+       * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
        * @param index The index to set the value at.
        * @param value The aJJGPPPBOAB to set.
        * @return This builder for chaining.
@@ -898,7 +898,7 @@ public final class JJAAPEINGACOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+       * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
        * @param value The aJJGPPPBOAB to add.
        * @return This builder for chaining.
        */
@@ -909,7 +909,7 @@ public final class JJAAPEINGACOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+       * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
        * @param values The aJJGPPPBOAB to add.
        * @return This builder for chaining.
        */
@@ -922,7 +922,7 @@ public final class JJAAPEINGACOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 AJJGPPPBOAB = 50000;</code>
+       * <code>repeated uint32 AJJGPPPBOAB = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAJJGPPPBOAB() {
@@ -940,7 +940,7 @@ public final class JJAAPEINGACOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+       * <code>repeated uint32 EGLADOIBKMG = 1;</code>
        * @return A list containing the eGLADOIBKMG.
        */
       public java.util.List<java.lang.Integer>
@@ -949,14 +949,14 @@ public final class JJAAPEINGACOuterClass {
                  java.util.Collections.unmodifiableList(eGLADOIBKMG_) : eGLADOIBKMG_;
       }
       /**
-       * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+       * <code>repeated uint32 EGLADOIBKMG = 1;</code>
        * @return The count of eGLADOIBKMG.
        */
       public int getEGLADOIBKMGCount() {
         return eGLADOIBKMG_.size();
       }
       /**
-       * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+       * <code>repeated uint32 EGLADOIBKMG = 1;</code>
        * @param index The index of the element to return.
        * @return The eGLADOIBKMG at the given index.
        */
@@ -964,7 +964,7 @@ public final class JJAAPEINGACOuterClass {
         return eGLADOIBKMG_.getInt(index);
       }
       /**
-       * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+       * <code>repeated uint32 EGLADOIBKMG = 1;</code>
        * @param index The index to set the value at.
        * @param value The eGLADOIBKMG to set.
        * @return This builder for chaining.
@@ -977,7 +977,7 @@ public final class JJAAPEINGACOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+       * <code>repeated uint32 EGLADOIBKMG = 1;</code>
        * @param value The eGLADOIBKMG to add.
        * @return This builder for chaining.
        */
@@ -988,7 +988,7 @@ public final class JJAAPEINGACOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+       * <code>repeated uint32 EGLADOIBKMG = 1;</code>
        * @param values The eGLADOIBKMG to add.
        * @return This builder for chaining.
        */
@@ -1001,7 +1001,7 @@ public final class JJAAPEINGACOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 EGLADOIBKMG = 50001;</code>
+       * <code>repeated uint32 EGLADOIBKMG = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearEGLADOIBKMG() {
@@ -1349,12 +1349,12 @@ public final class JJAAPEINGACOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021JJAAPEINGAC.proto\032\031GCGPlayCardCostInfo" +
-      ".proto\"\220\001\n\013JJAAPEINGAC\022\023\n\013NMKGLEHEEIN\030\003 " +
-      "\001(\r\022\025\n\013AJJGPPPBOAB\030\320\206\003 \003(\r\022\025\n\013EGLADOIBKM" +
-      "G\030\321\206\003 \003(\r\022\023\n\013FHJEAPIGJLG\030\014 \001(\r\022)\n\013MNIGAB" +
-      "GNNBK\030\010 \003(\0132\024.GCGPlayCardCostInfoB2\n\031emu" +
-      ".grasscutter.net.protoB\025JJAAPEINGACOuter" +
-      "Classb\006proto3"
+      ".proto\"\214\001\n\013JJAAPEINGAC\022\023\n\013NMKGLEHEEIN\030\003 " +
+      "\001(\r\022\023\n\013AJJGPPPBOAB\030\002 \003(\r\022\023\n\013EGLADOIBKMG\030" +
+      "\001 \003(\r\022\023\n\013FHJEAPIGJLG\030\014 \001(\r\022)\n\013MNIGABGNNB" +
+      "K\030\010 \003(\0132\024.GCGPlayCardCostInfoB2\n\031emu.gra" +
+      "sscutter.net.protoB\025JJAAPEINGACOuterClas" +
+      "sb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,13 +19,13 @@ public final class HomeAvatarTalkReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_id = 5;</code>
+     * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
     int getAvatarId();
 
     /**
-     * <code>uint32 talk_id = 4;</code>
+     * <code>uint32 talk_id = 1;</code>
      * @return The talkId.
      */
     int getTalkId();
@@ -75,12 +75,12 @@ public final class HomeAvatarTalkReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               talkId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 64: {
 
               avatarId_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class HomeAvatarTalkReqOuterClass {
               emu.grasscutter.net.proto.HomeAvatarTalkReqOuterClass.HomeAvatarTalkReq.class, emu.grasscutter.net.proto.HomeAvatarTalkReqOuterClass.HomeAvatarTalkReq.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 5;
+    public static final int AVATAR_ID_FIELD_NUMBER = 8;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 5;</code>
+     * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class HomeAvatarTalkReqOuterClass {
       return avatarId_;
     }
 
-    public static final int TALK_ID_FIELD_NUMBER = 4;
+    public static final int TALK_ID_FIELD_NUMBER = 1;
     private int talkId_;
     /**
-     * <code>uint32 talk_id = 4;</code>
+     * <code>uint32 talk_id = 1;</code>
      * @return The talkId.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class HomeAvatarTalkReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (talkId_ != 0) {
-        output.writeUInt32(4, talkId_);
+        output.writeUInt32(1, talkId_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(5, avatarId_);
+        output.writeUInt32(8, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class HomeAvatarTalkReqOuterClass {
       size = 0;
       if (talkId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, talkId_);
+          .computeUInt32Size(1, talkId_);
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, avatarId_);
+          .computeUInt32Size(8, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class HomeAvatarTalkReqOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 5;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -491,7 +491,7 @@ public final class HomeAvatarTalkReqOuterClass {
 
       private int talkId_ ;
       /**
-       * <code>uint32 talk_id = 4;</code>
+       * <code>uint32 talk_id = 1;</code>
        * @return The talkId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return talkId_;
       }
       /**
-       * <code>uint32 talk_id = 4;</code>
+       * <code>uint32 talk_id = 1;</code>
        * @param value The talkId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 talk_id = 4;</code>
+       * <code>uint32 talk_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearTalkId() {
@@ -587,7 +587,7 @@ public final class HomeAvatarTalkReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027HomeAvatarTalkReq.proto\"7\n\021HomeAvatarT" +
-      "alkReq\022\021\n\tavatar_id\030\005 \001(\r\022\017\n\007talk_id\030\004 \001" +
+      "alkReq\022\021\n\tavatar_id\030\010 \001(\r\022\017\n\007talk_id\030\001 \001" +
       "(\rB8\n\031emu.grasscutter.net.protoB\033HomeAva" +
       "tarTalkReqOuterClassb\006proto3"
     };

@@ -7,5 +7,5 @@ import "IrodoriMasterLevelDetailInfo.proto";
 
 message IrodoriMasterLevelInfo {
 	uint32 level_id = 1;
-	repeated IrodoriMasterLevelDetailInfo detail_info = 7;
+	repeated IrodoriMasterLevelDetailInfo detail_info = 2;
 }

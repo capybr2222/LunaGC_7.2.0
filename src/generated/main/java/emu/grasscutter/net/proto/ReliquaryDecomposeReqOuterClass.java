@@ -19,29 +19,29 @@ public final class ReliquaryDecomposeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_count = 15;</code>
+     * <code>uint32 target_count = 11;</code>
      * @return The targetCount.
      */
     int getTargetCount();
 
     /**
-     * <code>uint32 config_id = 2;</code>
+     * <code>uint32 config_id = 14;</code>
      * @return The configId.
      */
     int getConfigId();
 
     /**
-     * <code>repeated uint64 guid_list = 14;</code>
+     * <code>repeated uint64 guid_list = 2;</code>
      * @return A list containing the guidList.
      */
     java.util.List<java.lang.Long> getGuidListList();
     /**
-     * <code>repeated uint64 guid_list = 14;</code>
+     * <code>repeated uint64 guid_list = 2;</code>
      * @return The count of guidList.
      */
     int getGuidListCount();
     /**
-     * <code>repeated uint64 guid_list = 14;</code>
+     * <code>repeated uint64 guid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The guidList at the given index.
      */
@@ -95,11 +95,6 @@ public final class ReliquaryDecomposeReqOuterClass {
               done = true;
               break;
             case 16: {
-
-              configId_ = input.readUInt32();
-              break;
-            }
-            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 guidList_ = newLongList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +102,7 @@ public final class ReliquaryDecomposeReqOuterClass {
               guidList_.addLong(input.readUInt64());
               break;
             }
-            case 114: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -120,9 +115,14 @@ public final class ReliquaryDecomposeReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 120: {
+            case 88: {
 
               targetCount_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              configId_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +160,10 @@ public final class ReliquaryDecomposeReqOuterClass {
               emu.grasscutter.net.proto.ReliquaryDecomposeReqOuterClass.ReliquaryDecomposeReq.class, emu.grasscutter.net.proto.ReliquaryDecomposeReqOuterClass.ReliquaryDecomposeReq.Builder.class);
     }
 
-    public static final int TARGET_COUNT_FIELD_NUMBER = 15;
+    public static final int TARGET_COUNT_FIELD_NUMBER = 11;
     private int targetCount_;
     /**
-     * <code>uint32 target_count = 15;</code>
+     * <code>uint32 target_count = 11;</code>
      * @return The targetCount.
      */
     @java.lang.Override
@@ -171,10 +171,10 @@ public final class ReliquaryDecomposeReqOuterClass {
       return targetCount_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 2;
+    public static final int CONFIG_ID_FIELD_NUMBER = 14;
     private int configId_;
     /**
-     * <code>uint32 config_id = 2;</code>
+     * <code>uint32 config_id = 14;</code>
      * @return The configId.
      */
     @java.lang.Override
@@ -182,10 +182,10 @@ public final class ReliquaryDecomposeReqOuterClass {
       return configId_;
     }
 
-    public static final int GUID_LIST_FIELD_NUMBER = 14;
+    public static final int GUID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.LongList guidList_;
     /**
-     * <code>repeated uint64 guid_list = 14;</code>
+     * <code>repeated uint64 guid_list = 2;</code>
      * @return A list containing the guidList.
      */
     @java.lang.Override
@@ -194,14 +194,14 @@ public final class ReliquaryDecomposeReqOuterClass {
       return guidList_;
     }
     /**
-     * <code>repeated uint64 guid_list = 14;</code>
+     * <code>repeated uint64 guid_list = 2;</code>
      * @return The count of guidList.
      */
     public int getGuidListCount() {
       return guidList_.size();
     }
     /**
-     * <code>repeated uint64 guid_list = 14;</code>
+     * <code>repeated uint64 guid_list = 2;</code>
      * @param index The index of the element to return.
      * @return The guidList at the given index.
      */
@@ -225,18 +225,18 @@ public final class ReliquaryDecomposeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (configId_ != 0) {
-        output.writeUInt32(2, configId_);
-      }
       if (getGuidListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(guidListMemoizedSerializedSize);
       }
       for (int i = 0; i < guidList_.size(); i++) {
         output.writeUInt64NoTag(guidList_.getLong(i));
       }
       if (targetCount_ != 0) {
-        output.writeUInt32(15, targetCount_);
+        output.writeUInt32(11, targetCount_);
+      }
+      if (configId_ != 0) {
+        output.writeUInt32(14, configId_);
       }
       unknownFields.writeTo(output);
     }
@@ -247,10 +247,6 @@ public final class ReliquaryDecomposeReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (configId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, configId_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < guidList_.size(); i++) {
@@ -267,7 +263,11 @@ public final class ReliquaryDecomposeReqOuterClass {
       }
       if (targetCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, targetCount_);
+          .computeUInt32Size(11, targetCount_);
+      }
+      if (configId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, configId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -578,7 +578,7 @@ public final class ReliquaryDecomposeReqOuterClass {
 
       private int targetCount_ ;
       /**
-       * <code>uint32 target_count = 15;</code>
+       * <code>uint32 target_count = 11;</code>
        * @return The targetCount.
        */
       @java.lang.Override
@@ -586,7 +586,7 @@ public final class ReliquaryDecomposeReqOuterClass {
         return targetCount_;
       }
       /**
-       * <code>uint32 target_count = 15;</code>
+       * <code>uint32 target_count = 11;</code>
        * @param value The targetCount to set.
        * @return This builder for chaining.
        */
@@ -597,7 +597,7 @@ public final class ReliquaryDecomposeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_count = 15;</code>
+       * <code>uint32 target_count = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetCount() {
@@ -609,7 +609,7 @@ public final class ReliquaryDecomposeReqOuterClass {
 
       private int configId_ ;
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 config_id = 14;</code>
        * @return The configId.
        */
       @java.lang.Override
@@ -617,7 +617,7 @@ public final class ReliquaryDecomposeReqOuterClass {
         return configId_;
       }
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 config_id = 14;</code>
        * @param value The configId to set.
        * @return This builder for chaining.
        */
@@ -628,7 +628,7 @@ public final class ReliquaryDecomposeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 config_id = 2;</code>
+       * <code>uint32 config_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearConfigId() {
@@ -646,7 +646,7 @@ public final class ReliquaryDecomposeReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint64 guid_list = 14;</code>
+       * <code>repeated uint64 guid_list = 2;</code>
        * @return A list containing the guidList.
        */
       public java.util.List<java.lang.Long>
@@ -655,14 +655,14 @@ public final class ReliquaryDecomposeReqOuterClass {
                  java.util.Collections.unmodifiableList(guidList_) : guidList_;
       }
       /**
-       * <code>repeated uint64 guid_list = 14;</code>
+       * <code>repeated uint64 guid_list = 2;</code>
        * @return The count of guidList.
        */
       public int getGuidListCount() {
         return guidList_.size();
       }
       /**
-       * <code>repeated uint64 guid_list = 14;</code>
+       * <code>repeated uint64 guid_list = 2;</code>
        * @param index The index of the element to return.
        * @return The guidList at the given index.
        */
@@ -670,7 +670,7 @@ public final class ReliquaryDecomposeReqOuterClass {
         return guidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 guid_list = 14;</code>
+       * <code>repeated uint64 guid_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The guidList to set.
        * @return This builder for chaining.
@@ -683,7 +683,7 @@ public final class ReliquaryDecomposeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 guid_list = 14;</code>
+       * <code>repeated uint64 guid_list = 2;</code>
        * @param value The guidList to add.
        * @return This builder for chaining.
        */
@@ -694,7 +694,7 @@ public final class ReliquaryDecomposeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 guid_list = 14;</code>
+       * <code>repeated uint64 guid_list = 2;</code>
        * @param values The guidList to add.
        * @return This builder for chaining.
        */
@@ -707,7 +707,7 @@ public final class ReliquaryDecomposeReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 guid_list = 14;</code>
+       * <code>repeated uint64 guid_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuidList() {
@@ -784,8 +784,8 @@ public final class ReliquaryDecomposeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ReliquaryDecomposeReq.proto\"S\n\025Reliqua" +
-      "ryDecomposeReq\022\024\n\014target_count\030\017 \001(\r\022\021\n\t" +
-      "config_id\030\002 \001(\r\022\021\n\tguid_list\030\016 \003(\004B<\n\031em" +
+      "ryDecomposeReq\022\024\n\014target_count\030\013 \001(\r\022\021\n\t" +
+      "config_id\030\016 \001(\r\022\021\n\tguid_list\030\002 \003(\004B<\n\031em" +
       "u.grasscutter.net.protoB\037ReliquaryDecomp" +
       "oseReqOuterClassb\006proto3"
     };

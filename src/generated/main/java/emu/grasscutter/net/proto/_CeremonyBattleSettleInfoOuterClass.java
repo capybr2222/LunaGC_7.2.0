@@ -19,25 +19,25 @@ public final class _CeremonyBattleSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 AKINHLAMEHF = 6;</code>
+     * <code>uint32 AKINHLAMEHF = 20000;</code>
      * @return The aKINHLAMEHF.
      */
     int getAKINHLAMEHF();
 
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 8;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
 
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 score = 13;</code>
+     * <code>uint32 score = 12;</code>
      * @return The score.
      */
     int getScore();
@@ -87,24 +87,24 @@ public final class _CeremonyBattleSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 56: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 48: {
-
-              aKINHLAMEHF_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 64: {
 
               isNewRecord_ = input.readBool();
               break;
             }
-            case 104: {
+            case 96: {
 
               score_ = input.readUInt32();
+              break;
+            }
+            case 160000: {
+
+              aKINHLAMEHF_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class _CeremonyBattleSettleInfoOuterClass {
               emu.grasscutter.net.proto._CeremonyBattleSettleInfoOuterClass._CeremonyBattleSettleInfo.class, emu.grasscutter.net.proto._CeremonyBattleSettleInfoOuterClass._CeremonyBattleSettleInfo.Builder.class);
     }
 
-    public static final int AKINHLAMEHF_FIELD_NUMBER = 6;
+    public static final int AKINHLAMEHF_FIELD_NUMBER = 20000;
     private int aKINHLAMEHF_;
     /**
-     * <code>uint32 AKINHLAMEHF = 6;</code>
+     * <code>uint32 AKINHLAMEHF = 20000;</code>
      * @return The aKINHLAMEHF.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class _CeremonyBattleSettleInfoOuterClass {
       return aKINHLAMEHF_;
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 7;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 8;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 7;</code>
+     * <code>bool is_new_record = 8;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class _CeremonyBattleSettleInfoOuterClass {
       return isNewRecord_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 5;
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 5;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class _CeremonyBattleSettleInfoOuterClass {
       return levelId_;
     }
 
-    public static final int SCORE_FIELD_NUMBER = 13;
+    public static final int SCORE_FIELD_NUMBER = 12;
     private int score_;
     /**
-     * <code>uint32 score = 13;</code>
+     * <code>uint32 score = 12;</code>
      * @return The score.
      */
     @java.lang.Override
@@ -198,16 +198,16 @@ public final class _CeremonyBattleSettleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(5, levelId_);
-      }
-      if (aKINHLAMEHF_ != 0) {
-        output.writeUInt32(6, aKINHLAMEHF_);
+        output.writeUInt32(7, levelId_);
       }
       if (isNewRecord_ != false) {
-        output.writeBool(7, isNewRecord_);
+        output.writeBool(8, isNewRecord_);
       }
       if (score_ != 0) {
-        output.writeUInt32(13, score_);
+        output.writeUInt32(12, score_);
+      }
+      if (aKINHLAMEHF_ != 0) {
+        output.writeUInt32(20000, aKINHLAMEHF_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,19 +220,19 @@ public final class _CeremonyBattleSettleInfoOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, levelId_);
-      }
-      if (aKINHLAMEHF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, aKINHLAMEHF_);
+          .computeUInt32Size(7, levelId_);
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isNewRecord_);
+          .computeBoolSize(8, isNewRecord_);
       }
       if (score_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, score_);
+          .computeUInt32Size(12, score_);
+      }
+      if (aKINHLAMEHF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(20000, aKINHLAMEHF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -539,7 +539,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
 
       private int aKINHLAMEHF_ ;
       /**
-       * <code>uint32 AKINHLAMEHF = 6;</code>
+       * <code>uint32 AKINHLAMEHF = 20000;</code>
        * @return The aKINHLAMEHF.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
         return aKINHLAMEHF_;
       }
       /**
-       * <code>uint32 AKINHLAMEHF = 6;</code>
+       * <code>uint32 AKINHLAMEHF = 20000;</code>
        * @param value The aKINHLAMEHF to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 AKINHLAMEHF = 6;</code>
+       * <code>uint32 AKINHLAMEHF = 20000;</code>
        * @return This builder for chaining.
        */
       public Builder clearAKINHLAMEHF() {
@@ -570,7 +570,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 8;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -578,7 +578,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 8;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -589,7 +589,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 7;</code>
+       * <code>bool is_new_record = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -601,7 +601,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -609,7 +609,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 7;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -620,7 +620,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 5;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -632,7 +632,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
 
       private int score_ ;
       /**
-       * <code>uint32 score = 13;</code>
+       * <code>uint32 score = 12;</code>
        * @return The score.
        */
       @java.lang.Override
@@ -640,7 +640,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
         return score_;
       }
       /**
-       * <code>uint32 score = 13;</code>
+       * <code>uint32 score = 12;</code>
        * @param value The score to set.
        * @return This builder for chaining.
        */
@@ -651,7 +651,7 @@ public final class _CeremonyBattleSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 score = 13;</code>
+       * <code>uint32 score = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearScore() {
@@ -727,12 +727,12 @@ public final class _CeremonyBattleSettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\037_CeremonyBattleSettleInfo.proto\"h\n\031_Ce" +
-      "remonyBattleSettleInfo\022\023\n\013AKINHLAMEHF\030\006 " +
-      "\001(\r\022\025\n\ris_new_record\030\007 \001(\010\022\020\n\010level_id\030\005" +
-      " \001(\r\022\r\n\005score\030\r \001(\rB@\n\031emu.grasscutter.n" +
-      "et.protoB#_CeremonyBattleSettleInfoOuter" +
-      "Classb\006proto3"
+      "\n\037_CeremonyBattleSettleInfo.proto\"j\n\031_Ce" +
+      "remonyBattleSettleInfo\022\025\n\013AKINHLAMEHF\030\240\234" +
+      "\001 \001(\r\022\025\n\ris_new_record\030\010 \001(\010\022\020\n\010level_id" +
+      "\030\007 \001(\r\022\r\n\005score\030\014 \001(\rB@\n\031emu.grasscutter" +
+      ".net.protoB#_CeremonyBattleSettleInfoOut" +
+      "erClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

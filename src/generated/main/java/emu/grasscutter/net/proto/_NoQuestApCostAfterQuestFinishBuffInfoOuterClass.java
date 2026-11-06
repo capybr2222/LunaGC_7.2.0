@@ -19,13 +19,13 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool NHLOILJDDIP = 13;</code>
+     * <code>bool NHLOILJDDIP = 6;</code>
      * @return The nHLOILJDDIP.
      */
     boolean getNHLOILJDDIP();
 
     /**
-     * <code>uint32 progress = 10;</code>
+     * <code>uint32 progress = 5;</code>
      * @return The progress.
      */
     int getProgress();
@@ -75,12 +75,12 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 40: {
 
               progress_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 48: {
 
               nHLOILJDDIP_ = input.readBool();
               break;
@@ -117,10 +117,10 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
               emu.grasscutter.net.proto._NoQuestApCostAfterQuestFinishBuffInfoOuterClass._NoQuestApCostAfterQuestFinishBuffInfo.class, emu.grasscutter.net.proto._NoQuestApCostAfterQuestFinishBuffInfoOuterClass._NoQuestApCostAfterQuestFinishBuffInfo.Builder.class);
     }
 
-    public static final int NHLOILJDDIP_FIELD_NUMBER = 13;
+    public static final int NHLOILJDDIP_FIELD_NUMBER = 6;
     private boolean nHLOILJDDIP_;
     /**
-     * <code>bool NHLOILJDDIP = 13;</code>
+     * <code>bool NHLOILJDDIP = 6;</code>
      * @return The nHLOILJDDIP.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
       return nHLOILJDDIP_;
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 10;
+    public static final int PROGRESS_FIELD_NUMBER = 5;
     private int progress_;
     /**
-     * <code>uint32 progress = 10;</code>
+     * <code>uint32 progress = 5;</code>
      * @return The progress.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (progress_ != 0) {
-        output.writeUInt32(10, progress_);
+        output.writeUInt32(5, progress_);
       }
       if (nHLOILJDDIP_ != false) {
-        output.writeBool(13, nHLOILJDDIP_);
+        output.writeBool(6, nHLOILJDDIP_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
       size = 0;
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, progress_);
+          .computeUInt32Size(5, progress_);
       }
       if (nHLOILJDDIP_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, nHLOILJDDIP_);
+          .computeBoolSize(6, nHLOILJDDIP_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
 
       private boolean nHLOILJDDIP_ ;
       /**
-       * <code>bool NHLOILJDDIP = 13;</code>
+       * <code>bool NHLOILJDDIP = 6;</code>
        * @return The nHLOILJDDIP.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
         return nHLOILJDDIP_;
       }
       /**
-       * <code>bool NHLOILJDDIP = 13;</code>
+       * <code>bool NHLOILJDDIP = 6;</code>
        * @param value The nHLOILJDDIP to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool NHLOILJDDIP = 13;</code>
+       * <code>bool NHLOILJDDIP = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearNHLOILJDDIP() {
@@ -492,7 +492,7 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
 
       private int progress_ ;
       /**
-       * <code>uint32 progress = 10;</code>
+       * <code>uint32 progress = 5;</code>
        * @return The progress.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
         return progress_;
       }
       /**
-       * <code>uint32 progress = 10;</code>
+       * <code>uint32 progress = 5;</code>
        * @param value The progress to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 progress = 10;</code>
+       * <code>uint32 progress = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearProgress() {
@@ -589,8 +589,8 @@ public final class _NoQuestApCostAfterQuestFinishBuffInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n,_NoQuestApCostAfterQuestFinishBuffInfo" +
       ".proto\"O\n&_NoQuestApCostAfterQuestFinish" +
-      "BuffInfo\022\023\n\013NHLOILJDDIP\030\r \001(\010\022\020\n\010progres" +
-      "s\030\n \001(\rBM\n\031emu.grasscutter.net.protoB0_N" +
+      "BuffInfo\022\023\n\013NHLOILJDDIP\030\006 \001(\010\022\020\n\010progres" +
+      "s\030\005 \001(\rBM\n\031emu.grasscutter.net.protoB0_N" +
       "oQuestApCostAfterQuestFinishBuffInfoOute" +
       "rClassb\006proto3"
     };
