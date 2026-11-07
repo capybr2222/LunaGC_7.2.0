@@ -6,9 +6,12 @@ import static emu.grasscutter.command.CommandHelpers.*;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.command.*;
 import emu.grasscutter.data.*;
+import emu.grasscutter.data.common.ItemParamData;
 import emu.grasscutter.data.excels.ItemData;
-import emu.grasscutter.data.excels.avatar.AvatarData;
+import emu.grasscutter.data.excels.ProudSkillData;
+import emu.grasscutter.data.excels.avatar.*;
 import emu.grasscutter.data.excels.reliquary.*;
+import emu.grasscutter.data.excels.weapon.WeaponPromoteData;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.Player;
@@ -16,9 +19,11 @@ import emu.grasscutter.game.props.*;
 import emu.grasscutter.game.world.*;
 import emu.grasscutter.server.packet.send.PacketAvatarPropNotify;
 import emu.grasscutter.server.packet.send.PacketSceneEntityAppearNotify;
+import it.unimi.dsi.fastutil.ints.*;
 import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.regex.Pattern;
+import java.util.stream.*;
 import lombok.Setter;
 
 @Command(
@@ -32,6 +37,16 @@ import lombok.Setter;
         permissionTargeted = "player.give.others",
         threading = true)
 public final class GiveCommand implements CommandHandler {
+    private static final int GIVE_ALL_AVATAR_LEVEL = 1;
+    private static final int GIVE_ALL_WEAPON_LEVEL = 90;
+    private static final int GIVE_ALL_CONSTELLATION = 0;
+    private static final int MAX_CONSTELLATION = 6;
+    private static final int GIVE_ALL_WEAPON_COPIES = 6;
+    private static final int GIVE_ALL_MORA = 1_000_000_000;
+    private static final int FIRST_WEAPON_ID = 11100;
+    private static final int LAST_WEAPON_ID = 16000;
+    private static final int ITEMS_PER_PACKET = 100;
+
     private static final Map<Pattern, BiConsumer<GiveItemParameters, Integer>> intCommandHandlers =
             Map.ofEntries(
                     Map.entry(lvlRegex, GiveItemParameters::setLvl),
@@ -98,46 +113,110 @@ public final class GiveCommand implements CommandHandler {
         }
     }
 
+    private static boolean isGiveAllAvatar(AvatarData avatarData) {
+        return "AVATAR_FORMAL".equals(avatarData.getUseType())
+                && GameData.getFetterDataEntries().containsKey(avatarData.getId());
+    }
+
+    private static boolean isOtherTraveler(Player player, AvatarData avatarData) {
+        return avatarData.getCandSkillDepotIds() != null
+                && !avatarData.getCandSkillDepotIds().isEmpty()
+                && avatarData.getId() != player.getMainCharacterId();
+    }
+
+    private static boolean isGiveAllWeapon(ItemData itemData) {
+        int id = itemData.getId();
+        return id >= FIRST_WEAPON_ID
+                && id <= LAST_WEAPON_ID
+                && !ILLEGAL_WEAPONS.contains(id)
+                && itemData.isEquip()
+                && itemData.getItemType() == ItemType.ITEM_WEAPON;
+    }
+
+    private static boolean isExperienceMaterial(ItemData itemData) {
+        return itemData.getMaterialType() == MaterialType.MATERIAL_EXP_FRUIT
+                || itemData.getMaterialType() == MaterialType.MATERIAL_WEAPON_EXP_STONE;
+    }
+
+    private static List<AvatarSkillDepotData> skillDepots(AvatarData avatarData) {
+        List<Integer> depotIds = avatarData.getCandSkillDepotIds();
+        if (depotIds == null || depotIds.isEmpty()) depotIds = List.of(avatarData.getSkillDepotId());
+        return depotIds.stream()
+                .map(depotId -> GameData.getAvatarSkillDepotDataMap().get((int) depotId))
+                .filter(Objects::nonNull)
+                .toList();
+    }
+
+    private static void countLockedConstellationItems(
+            Avatar avatar, AvatarData avatarData, Int2IntMap itemCounts) {
+        for (AvatarSkillDepotData depot : skillDepots(avatarData)) {
+            if (depot.getTalents() == null) continue;
+            for (int talentId : depot.getTalents()) {
+                if (avatar.hasTalent(talentId)) continue;
+                AvatarTalentData talent = GameData.getAvatarTalentDataMap().get(talentId);
+                if (talent == null || talent.getMainCostItemId() == 0) continue;
+                itemCounts.mergeInt(
+                        talent.getMainCostItemId(), talent.getMainCostItemCount(), Integer::sum);
+            }
+        }
+    }
+
+    private static void topUpItems(Player player, Int2IntMap targetCounts) {
+        Inventory inventory = player.getInventory();
+        List<GameItem> items = new ArrayList<>();
+        for (Int2IntMap.Entry target : targetCounts.int2IntEntrySet()) {
+            ItemData data = GameData.getItemDataMap().get(target.getIntKey());
+            if (data == null || data.getItemType() != ItemType.ITEM_MATERIAL) continue;
+            int targetCount = Math.min(target.getIntValue(), data.getStackLimit());
+            int missingCount = targetCount - inventory.getItemCountById(data.getId());
+            if (missingCount > 0) items.add(new GameItem(data, missingCount));
+        }
+        addItemsChunked(player, items, ITEMS_PER_PACKET);
+    }
+
     private static void giveAllAvatars(Player player, GiveItemParameters param) {
         int granted = 0, updated = 0, failed = 0;
-        int promoteLevel = Avatar.getMinPromoteLevel(param.lvl);
-        if (param.constellation < 0 || param.constellation > 6)
-            param.constellation =
-                    6;
+        int level = param.lvlGiven ? param.lvl : GIVE_ALL_AVATAR_LEVEL;
+        int promoteLevel = Avatar.getMinPromoteLevel(level);
+        int constellation =
+                param.constellationGiven
+                        ? Math.max(0, Math.min(param.constellation, MAX_CONSTELLATION))
+                        : GIVE_ALL_CONSTELLATION;
+        Int2IntMap constellationItems = new Int2IntOpenHashMap();
+
         for (AvatarData avatarData : GameData.getAvatarDataMap().values()) {
+            if (!isGiveAllAvatar(avatarData) || isOtherTraveler(player, avatarData)) continue;
             int id = avatarData.getId();
-            if (!"AVATAR_FORMAL".equals(avatarData.getUseType())) continue;
-            if (!GameData.getFetterDataEntries().containsKey(id)) continue;
-            if (avatarData.getCandSkillDepotIds() != null
-                    && !avatarData.getCandSkillDepotIds().isEmpty()
-                    && id != player.getMainCharacterId()) continue;
             try {
-                Avatar owned = player.getAvatars().getAvatarById(id);
-                if (owned != null) {
-                    updateAvatar(player, owned, param);
+                Avatar avatar = player.getAvatars().getAvatarById(id);
+                if (avatar != null) {
+                    if (!param.lvlGiven && avatar.getLevel() < level) {
+                        avatar.setLevel(level);
+                        avatar.setPromoteLevel(Math.max(avatar.getPromoteLevel(), promoteLevel));
+                    }
+                    updateAvatar(player, avatar, param);
                     updated++;
-                    continue;
+                } else {
+                    avatar = makeAvatar(avatarData, level, promoteLevel, constellation, param.skillLevel);
+                    player.addAvatar(avatar, false);
+                    granted++;
                 }
-                player.addAvatar(
-                        makeAvatar(avatarData, param.lvl, promoteLevel, param.constellation, param.skillLevel),
-                        false);
-                granted++;
+                countLockedConstellationItems(avatar, avatarData, constellationItems);
             } catch (Exception e) {
                 failed++;
                 Grasscutter.getLogger().warn("Could not grant avatar {}", id, e);
             }
         }
+
+        topUpItems(player, constellationItems);
         Grasscutter.getLogger()
                 .info("give avatars: {} granted, {} updated, {} failed", granted, updated, failed);
     }
 
     private static List<GameItem> makeUnstackableItems(GiveItemParameters param) {
         int promoteLevel = GameItem.getMinPromoteLevel(param.lvl);
-        int totalExp = 0;
-        if (param.data.getItemType() == ItemType.ITEM_WEAPON) {
-            int rankLevel = param.data.getRankLevel();
-            for (int i = 1; i < param.lvl; i++) totalExp += GameData.getWeaponExpRequired(rankLevel, i);
-        }
+        int totalExp =
+                param.data.getItemType() == ItemType.ITEM_WEAPON ? totalWeaponExp(param.data, param.lvl) : 0;
 
         List<GameItem> items = new ArrayList<>(param.amount);
         for (int i = 0; i < param.amount; i++) {
@@ -261,45 +340,124 @@ public final class GiveCommand implements CommandHandler {
         }
     }
 
-    private static void giveAllMats(Player player, GiveItemParameters param) {
-        List<GameItem> itemList = new ArrayList<>();
-        for (ItemData itemdata : GameData.getItemDataMap().values()) {
-            int id = itemdata.getId();
-            if (id < 100_000) continue;
-            if (ILLEGAL_ITEMS.contains(id)) continue;
-            if (itemdata.isEquip()) continue;
+    private static void addCosts(IntSet itemIds, Collection<ItemParamData> costs) {
+        if (costs == null) return;
+        for (ItemParamData cost : costs) {
+            if (cost.getId() > 0) itemIds.add(cost.getId());
+        }
+    }
 
-            GameItem item = new GameItem(itemdata);
-            item.setCount(param.amount);
-            itemList.add(item);
+    private static Stream<AvatarPromoteData> avatarPromotions(AvatarData avatarData) {
+        return IntStream.iterate(0, promoteLevel -> promoteLevel + 1)
+                .mapToObj(
+                        promoteLevel ->
+                                GameData.getAvatarPromoteData(avatarData.getAvatarPromoteId(), promoteLevel))
+                .takeWhile(Objects::nonNull);
+    }
+
+    private static Stream<WeaponPromoteData> weaponPromotions(ItemData weaponData) {
+        return IntStream.iterate(0, promoteLevel -> promoteLevel + 1)
+                .mapToObj(
+                        promoteLevel ->
+                                GameData.getWeaponPromoteData(weaponData.getWeaponPromoteId(), promoteLevel))
+                .takeWhile(Objects::nonNull);
+    }
+
+    private static IntSet talentProudSkillGroupIds(AvatarData avatarData) {
+        IntSet groupIds = new IntOpenHashSet();
+        for (AvatarSkillDepotData depot : skillDepots(avatarData)) {
+            depot.getSkillsAndEnergySkill()
+                    .mapToObj(skillId -> GameData.getAvatarSkillDataMap().get(skillId))
+                    .filter(Objects::nonNull)
+                    .mapToInt(AvatarSkillData::getProudSkillGroupId)
+                    .filter(groupId -> groupId > 0)
+                    .forEach(groupIds::add);
+        }
+        return groupIds;
+    }
+
+    private static IntSet levelingMaterialIds() {
+        IntSet itemIds = new IntOpenHashSet();
+        IntSet talentGroupIds = new IntOpenHashSet();
+
+        for (AvatarData avatarData : GameData.getAvatarDataMap().values()) {
+            if (!isGiveAllAvatar(avatarData)) continue;
+            avatarPromotions(avatarData)
+                    .forEach(promote -> addCosts(itemIds, Arrays.asList(promote.getCostItems())));
+            talentGroupIds.addAll(talentProudSkillGroupIds(avatarData));
         }
 
-        addItemsChunked(player, itemList, 100);
+        for (ProudSkillData proudSkill : GameData.getProudSkillDataMap().values()) {
+            if (talentGroupIds.contains(proudSkill.getProudSkillGroupId()))
+                addCosts(itemIds, proudSkill.getCostItems());
+        }
+
+        for (ItemData itemData : GameData.getItemDataMap().values()) {
+            if (isGiveAllWeapon(itemData)) {
+                weaponPromotions(itemData)
+                        .forEach(promote -> addCosts(itemIds, Arrays.asList(promote.getCostItems())));
+                if (itemData.getAwakenMaterial() > 0) itemIds.add(itemData.getAwakenMaterial());
+            } else if (isExperienceMaterial(itemData)) {
+                itemIds.add(itemData.getId());
+            }
+        }
+        return itemIds;
+    }
+
+    private static void giveAllMats(Player player, GiveItemParameters param) {
+        Int2IntMap targetCounts = new Int2IntOpenHashMap();
+        for (int itemId : levelingMaterialIds()) {
+            ItemData data = GameData.getItemDataMap().get(itemId);
+            if (data == null) continue;
+            targetCounts.put(itemId, param.amountGiven ? param.amount : data.getStackLimit());
+        }
+        topUpItems(player, targetCounts);
+
+        if (player.getMora() < GIVE_ALL_MORA) player.setMora(GIVE_ALL_MORA);
+    }
+
+    private static int maxWeaponLevel(ItemData weaponData) {
+        return weaponPromotions(weaponData)
+                .mapToInt(WeaponPromoteData::getUnlockMaxLevel)
+                .max()
+                .orElse(GIVE_ALL_WEAPON_LEVEL);
+    }
+
+    private static int totalWeaponExp(ItemData weaponData, int level) {
+        return IntStream.range(1, level)
+                .map(fromLevel -> GameData.getWeaponExpRequired(weaponData.getRankLevel(), fromLevel))
+                .sum();
     }
 
     private static void giveAllWeapons(Player player, GiveItemParameters param) {
-        int promoteLevel = GameItem.getMinPromoteLevel(param.lvl);
-        int quantity = Math.min(param.amount, 5);
+        int level = param.lvlGiven ? param.lvl : GIVE_ALL_WEAPON_LEVEL;
+        int copies =
+                param.amountGiven
+                        ? Math.min(param.amount, GIVE_ALL_WEAPON_COPIES)
+                        : GIVE_ALL_WEAPON_COPIES;
         int refinement = param.refinement - 1;
+        Inventory inventory = player.getInventory();
 
         List<GameItem> itemList = new ArrayList<>();
         for (ItemData itemdata : GameData.getItemDataMap().values()) {
-            int id = itemdata.getId();
-            if (id < 11100 || id > 16000) continue;
-            if (ILLEGAL_WEAPONS.contains(id)) continue;
-            if (!itemdata.isEquip()) continue;
-            if (itemdata.getItemType() != ItemType.ITEM_WEAPON) continue;
+            if (!isGiveAllWeapon(itemdata)) continue;
+            int missingCopies = copies - inventory.getItemCountById(itemdata.getId());
+            if (missingCopies <= 0) continue;
 
-            for (int i = 0; i < quantity; i++) {
+            int weaponLevel = Math.min(level, maxWeaponLevel(itemdata));
+            int promoteLevel = GameItem.getMinPromoteLevel(weaponLevel);
+            int totalExp = totalWeaponExp(itemdata, weaponLevel);
+            for (int i = 0; i < missingCopies; i++) {
                 GameItem item = new GameItem(itemdata);
-                item.setLevel(param.lvl);
+                item.setLevel(weaponLevel);
                 item.setPromoteLevel(promoteLevel);
+                item.setTotalExp(totalExp);
                 item.setRefinement(refinement);
                 itemList.add(item);
             }
         }
 
-        addItemsChunked(player, itemList, 100);
+        addItemsChunked(player, itemList, ITEMS_PER_PACKET);
     }
 
     private static void giveAll(Player player, GiveItemParameters param) {
@@ -522,7 +680,7 @@ public final class GiveCommand implements CommandHandler {
     private static class GiveItemParameters {
         public int id;
         public int lvl = 0;
-        @Setter public int amount = 1;
+        public int amount = 1;
         @Setter public int refinement = 1;
         public int constellation = -1;
         public int skillLevel = 1;
@@ -534,7 +692,12 @@ public final class GiveCommand implements CommandHandler {
         public AvatarData avatarData;
         public GiveAllType giveAllType = GiveAllType.NONE;
 
-        public boolean lvlGiven, constellationGiven, skillLevelGiven;
+        public boolean lvlGiven, amountGiven, constellationGiven, skillLevelGiven;
+
+        public void setAmount(int amount) {
+            this.amount = amount;
+            this.amountGiven = true;
+        }
 
         public void setLvl(int lvl) {
             this.lvl = lvl;

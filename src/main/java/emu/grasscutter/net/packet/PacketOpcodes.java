@@ -283,7 +283,7 @@ public final class PacketOpcodes {
     public static final int EntityAnimatorPairValueInfoNotify = -109;
     public static final int WeaponAwakenReq = 21900;
     public static final int WeaponAwakenRsp = 6841;
-    public static final int AvatarPromoteReq = -111;
+    public static final int AvatarPromoteReq = 6528;
     public static final int AvatarPromoteRsp = 6321;
     public static final int AvatarPromotionLevelReq = -113;
     public static final int AvatarPromotionLevelRsp = -114;

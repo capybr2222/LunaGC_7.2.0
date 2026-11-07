@@ -42,6 +42,7 @@ public class GameMainQuest {
     public GameMainQuest() {}
 
     public GameMainQuest(Player player, int parentQuestId) {
+        this.id = new ObjectId();
         this.owner = player;
         this.ownerUid = player.getUid();
         this.questManager = player.getQuestManager();

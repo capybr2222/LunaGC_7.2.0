@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels.avatar;
 
+import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import emu.grasscutter.data.ResourceType.LoadPriority;
 import emu.grasscutter.data.common.FightPropData;
@@ -16,6 +17,9 @@ public class AvatarTalentData extends GameResource {
     private String openConfig;
     private FightPropData[] addProps;
     private float[] paramList;
+
+    @SerializedName("KCHDANFBCGD")
+    private int shiftedMainCostItemId;
 
     @Override
     public int getId() {
@@ -54,8 +58,17 @@ public class AvatarTalentData extends GameResource {
         return paramList;
     }
 
+    private boolean hasShiftedCostFields() {
+        return this.shiftedMainCostItemId > 0;
+    }
+
     @Override
     public void onLoad() {
+        if (this.hasShiftedCostFields()) {
+            this.prevTalent = this.mainCostItemId;
+            this.mainCostItemId = this.shiftedMainCostItemId;
+        }
+
         ArrayList<FightPropData> parsed = new ArrayList<FightPropData>(getAddProps().length);
         for (FightPropData prop : getAddProps()) {
             if (prop.getPropType() != null || prop.getValue() == 0f) {

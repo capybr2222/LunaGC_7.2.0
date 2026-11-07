@@ -115,6 +115,7 @@ public class Avatar {
     public Avatar(AvatarData data) {
         this();
 
+        this.id = new ObjectId();
         this.avatarId = data.getId();
         this.nameCardRewardId = data.getNameCardRewardId();
         this.nameCardId = data.getNameCardId();
@@ -407,6 +408,10 @@ public class Avatar {
             talents.removeIf(id -> !this.talentIdList.contains(id));
             return talents;
         } else return new IntOpenHashSet();
+    }
+
+    public boolean hasTalent(int talentId) {
+        return this.talentIdList.contains(talentId);
     }
 
     public int getCoreProudSkillLevel() {
@@ -969,7 +974,8 @@ public class Avatar {
     }
 
     public void save() {
-        if (this.trialAvatarId > 0) return;
+        boolean hasOwner = this.ownerId > 0;
+        if (this.trialAvatarId > 0 || !hasOwner) return;
         DatabaseHelper.saveAvatar(this);
     }
 

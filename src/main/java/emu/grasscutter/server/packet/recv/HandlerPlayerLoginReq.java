@@ -38,7 +38,7 @@ public class HandlerPlayerLoginReq extends PacketHandler {
                             notifyCmdId > 0 ? notifyCmdId : "unsent");
 
             session.send(new PacketPlayerLoginRsp(session));
-            if (notifyCmdId <= 0) this.scheduleFallback(session, player);
+            this.scheduleFallback(session, player);
             return;
         }
 
