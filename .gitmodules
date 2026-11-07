@@ -7,3 +7,4 @@
 [submodule "patch"]
 	path = patch
 	url = https://codeberg.org/CapyTeam/animegamepatch
+	branch = master

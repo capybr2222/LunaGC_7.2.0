@@ -238,11 +238,11 @@ public class ConfigContainer {
         public NewAccountIntro newAccountIntro = new NewAccountIntro();
 
         public static class NewAccountIntro {
-            public boolean enabled = false;
+            public boolean enabled = true;
             public int doSetPlayerBornDataNotify = 0;
             public int setPlayerBornDataRsp = 0;
 
-            public int fallbackSeconds = 15;
+            public int fallbackSeconds = 600;
             public boolean meetPaimon = true;
         }
 
