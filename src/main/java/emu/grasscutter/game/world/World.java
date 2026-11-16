@@ -60,6 +60,8 @@ public class World implements Iterable<Player> {
     @Getter private boolean timeLocked;
 
     private long lastUpdateTime;
+    private long runningTime;
+    private long lastRunningUpdate = System.currentTimeMillis();
     @Getter protected int tickCount = 0;
     private long lastTimeSync = 0;
     private long lastTimeStore = 0;
@@ -595,10 +597,20 @@ public class World implements Iterable<Player> {
         return this.getWorldTime() / 1000;
     }
 
+    public long getRunningTime() {
+        var now = System.currentTimeMillis();
+        if (!this.isPaused) {
+            this.runningTime += now - this.lastRunningUpdate;
+        }
+        this.lastRunningUpdate = now;
+        return this.runningTime;
+    }
+
     public void setPaused(boolean paused) {
         if (this.isMultiplayer) return;
 
         this.getWorldTime();
+        this.getRunningTime();
         this.updateTime();
 
         if (this.isPaused != paused && !paused) {

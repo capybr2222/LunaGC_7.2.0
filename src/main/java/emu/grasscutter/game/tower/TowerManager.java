@@ -7,20 +7,18 @@ import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.tower.TowerLevelData;
 import emu.grasscutter.game.dungeons.*;
 import emu.grasscutter.game.entity.EntityGadget;
+import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.entity.EntityMonster;
 import emu.grasscutter.game.entity.gadget.GadgetWorktop;
 import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.player.*;
 import emu.grasscutter.game.props.ActionReason;
-import emu.grasscutter.game.props.EnterReason;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.game.world.Position;
 import emu.grasscutter.game.world.Scene;
-import emu.grasscutter.game.world.data.TeleportProperties;
-import emu.grasscutter.net.proto.EnterTypeOuterClass.EnterType;
+import emu.grasscutter.scripts.data.SceneGroup;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
 import emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType;
-import emu.grasscutter.server.event.player.PlayerTeleportEvent.TeleportType;
 import emu.grasscutter.server.packet.send.*;
 import java.util.*;
 import lombok.*;
@@ -29,7 +27,7 @@ public class TowerManager extends BasePlayerManager {
     private static final List<DungeonSettleListener> towerDungeonSettleListener =
             List.of(new TowerDungeonSettleListener());
 
-    private static final Set<Integer> TOWER_START_KEY_GADGET_IDS = Set.of(70360010, 70350023);
+    private static final Set<Integer> TOWER_START_KEY_GADGET_IDS = Set.of(70360010, 70360367, 70350023);
 
     private static final int LEVELS_PER_FLOOR = 3;
     private static final int STARS_PER_LEVEL = 3;
@@ -42,15 +40,13 @@ public class TowerManager extends BasePlayerManager {
             new Position(1638.7793f, 195.0458f, -2659.1758f);
     private static final Position ABYSS_ENTRANCE_ROTATION = new Position(0f, 181.4546f, 0f);
 
-    private static final Position DEFAULT_CHAMBER_POS = new Position(0f, -0.102f, 15.011f);
-
-    private static final Position DEFAULT_CHAMBER_ROT = new Position(0f, 180f, 0f);
+    private static final int FULL_HP_PERCENT = 100;
 
     private int currentPossibleStars = 0;
+    private int guardHpPercent = FULL_HP_PERCENT;
 
     private final Set<Integer> alertedMonsterIds = new HashSet<>();
     @Getter private boolean inProgress;
-    @Getter private int currentTimeLimit;
 
     private boolean upperHalf = true;
 
@@ -87,6 +83,7 @@ public class TowerManager extends BasePlayerManager {
         if (challenge == null || !challenge.inProgress()) return;
 
         alertNewChamberMonsters();
+        trackGuardHp();
 
         int stars = getCurLevelStars();
         while (stars < currentPossibleStars) {
@@ -103,9 +100,8 @@ public class TowerManager extends BasePlayerManager {
 
     public void onBegin() {
         var scene = player.getScene();
-        var challenge = scene != null ? scene.getChallenge() : null;
         inProgress = true;
-        currentTimeLimit = challenge != null ? challenge.getTimeLimit() : 0;
+        if (scene != null) loadWholeChamber(scene);
 
         notifyCurLevelRecordChange();
 
@@ -114,8 +110,32 @@ public class TowerManager extends BasePlayerManager {
         player.sendPacket(new PacketCanUseSkillNotify(true));
 
         alertedMonsterIds.clear();
+    }
 
-        this.fillTeamEnergy();
+    private void trackGuardHp() {
+        var levelData = getCurrentTowerLevelDataMap();
+        var scene = player.getScene();
+        if (levelData == null || scene == null) return;
+
+        for (int star = 0; star < STARS_PER_LEVEL; star++) {
+            if (levelData.getCondType(star)
+                    != TowerLevelData.TowerCondType.TOWER_COND_LEFT_HP_GREATER_THAN) {
+                continue;
+            }
+
+            var params = levelData.getHpCond(star);
+            if (params == null) continue;
+
+            var guard = scene.getEntityByConfigId(params.getConfigId(), params.getGroupId());
+            if (guard == null) return;
+
+            float maxHp = guard.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
+            if (maxHp <= 0f) return;
+
+            float curHp = guard.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
+            guardHpPercent = (int) (curHp * FULL_HP_PERCENT / maxHp);
+            return;
+        }
     }
 
     private void alertNewChamberMonsters() {
@@ -193,14 +213,111 @@ public class TowerManager extends BasePlayerManager {
         inProgress = false;
     }
 
+    public boolean surrender() {
+        var scene = player.getScene();
+        var dungeonManager = scene != null ? scene.getDungeonManager() : null;
+        if (dungeonManager == null || !dungeonManager.isTowerDungeon()) return false;
+
+        var challenge = scene.getChallenge();
+        if (challenge != null && challenge.inProgress()) {
+            challenge.fail();
+        } else {
+            dungeonManager.failDungeon();
+        }
+        return true;
+    }
+
     public Map<Integer, TowerLevelRecord> getRecordMap() {
         Map<Integer, TowerLevelRecord> recordMap = getTowerData().recordMap;
         if (recordMap == null) {
             recordMap = new HashMap<>();
             getTowerData().recordMap = recordMap;
         }
+        startNewRotation(recordMap);
         grantEntranceFloors(recordMap);
+        unlockFloorsAfterCleared(recordMap);
         return recordMap;
+    }
+
+    private void unlockFloorsAfterCleared(Map<Integer, TowerLevelRecord> recordMap) {
+        var towerSystem = player.getServer().getTowerSystem();
+        for (int floorId : towerSystem.getAllFloors()) {
+            var record = recordMap.get(floorId);
+            if (record == null || !isFloorCleared(floorId, record)) continue;
+
+            int nextFloorId = towerSystem.getNextFloorId(floorId);
+            if (nextFloorId > 0) {
+                recordMap.computeIfAbsent(nextFloorId, TowerLevelRecord::new);
+            }
+        }
+    }
+
+    private static boolean isFloorCleared(int floorId, TowerLevelRecord record) {
+        int firstLevelId = getFirstLevelId(floorId);
+        if (firstLevelId == 0 || record.getPassedLevelMap() == null) return false;
+
+        for (int i = 0; i < LEVELS_PER_FLOOR; i++) {
+            if (record.getLevelStars(firstLevelId + i) <= 0) return false;
+        }
+        return true;
+    }
+
+    private void startNewRotation(Map<Integer, TowerLevelRecord> recordMap) {
+        var schedule = player.getServer().getTowerSystem().getCurrentTowerScheduleData();
+        if (schedule == null) return;
+
+        var data = getTowerData();
+        int scheduleId = schedule.getScheduleId();
+        if (data.scheduleId == scheduleId) return;
+
+        if (data.scheduleId != 0) {
+            var entranceFloors = schedule.getEntranceFloorId();
+            var spireFloors =
+                    recordMap.keySet().stream()
+                            .filter(floorId -> entranceFloors == null || !entranceFloors.contains(floorId))
+                            .toList();
+            data.lastBrief = briefOf(data.scheduleId, recordMap, spireFloors);
+            spireFloors.forEach(recordMap::remove);
+        }
+        data.scheduleId = scheduleId;
+    }
+
+    private static TowerBrief briefOf(
+            int scheduleId, Map<Integer, TowerLevelRecord> recordMap, Collection<Integer> floorIds) {
+        int bestFloor = 0;
+        int bestLevel = 0;
+        int stars = 0;
+        for (int floorId : floorIds) {
+            var record = recordMap.get(floorId);
+            var floorData = GameData.getTowerFloorDataMap().get(floorId);
+            if (record == null || record.getPassedLevelMap() == null || floorData == null) continue;
+
+            stars += record.getStarCount();
+            for (var entry : record.getPassedLevelMap().entrySet()) {
+                var levelData = GameData.getTowerLevelDataMap().get(entry.getKey().intValue());
+                if (levelData == null || entry.getValue() == null || entry.getValue() <= 0) continue;
+
+                int floorIndex = floorData.getFloorIndex();
+                int levelIndex = levelData.getLevelIndex();
+                if (floorIndex > bestFloor || (floorIndex == bestFloor && levelIndex > bestLevel)) {
+                    bestFloor = floorIndex;
+                    bestLevel = levelIndex;
+                }
+            }
+        }
+        return new TowerBrief(scheduleId, bestFloor, bestLevel, stars);
+    }
+
+    public TowerBrief getCurrentBrief() {
+        var recordMap = getRecordMap();
+        return briefOf(
+                getTowerData().scheduleId,
+                recordMap,
+                player.getServer().getTowerSystem().getScheduleFloors());
+    }
+
+    public TowerBrief getLastBrief() {
+        return getTowerData().lastBrief;
     }
 
     private void grantEntranceFloors(Map<Integer, TowerLevelRecord> recordMap) {
@@ -369,7 +486,8 @@ public class TowerManager extends BasePlayerManager {
         }
 
         var dungeonId = levelData.getDungeonId();
-        if (!restartFloor && isAlreadyInChamber(dungeonId)) {
+        boolean sameChamber = isAlreadyInChamber(dungeonId);
+        if (!restartFloor && sameChamber) {
 
             notifyCurLevelRecordChange();
             return;
@@ -377,19 +495,24 @@ public class TowerManager extends BasePlayerManager {
 
         upperHalf = true;
         currentPossibleStars = STARS_PER_LEVEL;
+        guardHpPercent = FULL_HP_PERCENT;
         notifyCurLevelRecordChange();
 
         player.getTeamManager().setCurrentCharacterIndex(0);
         player.getTeamManager().useTemporaryTeam(0);
         player.getTeamManager().forceActiveCharacter(0);
 
-        player
-                .getServer()
-                .getDungeonSystem()
-                .handoffDungeon(player, dungeonId, towerDungeonSettleListener);
+        if (sameChamber) {
+            player.getServer().getDungeonSystem().restartDungeon(player);
+        } else {
+            player
+                    .getServer()
+                    .getDungeonSystem()
+                    .handoffDungeon(player, dungeonId, towerDungeonSettleListener);
 
-        player.getScene().setPrevScene(getTowerData().entryScene);
-        player.getScene().setPrevScenePoint(enterPointId);
+            player.getScene().setPrevScene(getTowerData().entryScene);
+            player.getScene().setPrevScenePoint(enterPointId);
+        }
 
         var buffOfferings = rollCurrentChamberBuffs();
         player
@@ -413,10 +536,34 @@ public class TowerManager extends BasePlayerManager {
         var scene = player.getScene();
         if (scene == null || !isInAbyssScene(scene.getId())) return;
 
+        loadWholeChamber(scene);
         resendStartKeyOptions();
         placePartyAtChamberEntrance(scene);
 
         player.sendPacket(new PacketCanUseSkillNotify(true));
+
+        this.fillTeamEnergy();
+    }
+
+    private static void loadWholeChamber(Scene scene) {
+        var scriptManager = scene.getScriptManager();
+        if (scriptManager == null || !scriptManager.isInit() || scriptManager.getBlocks() == null) return;
+
+        var groups = new ArrayList<SceneGroup>();
+        for (var block : scriptManager.getBlocks().values()) {
+            scene.loadBlock(block);
+            if (block.groups == null) continue;
+
+            for (var group : block.groups.values()) {
+                if (group.dynamic_load) continue;
+                group.dontUnload = true;
+                if (!scene.getLoadedGroups().contains(group)) groups.add(group);
+            }
+        }
+        if (groups.isEmpty()) return;
+
+        scene.onLoadGroup(groups);
+        scene.onRegisterGroups();
     }
 
     public void notifyCurLevelRecordChange() {
@@ -460,8 +607,7 @@ public class TowerManager extends BasePlayerManager {
                 }
             } else if (cond == TowerLevelData.TowerCondType.TOWER_COND_LEFT_HP_GREATER_THAN) {
                 var params = levelData.getHpCond(star);
-                if (params != null
-                        && challenge.getGuardEntityHpPercent() >= params.getMinimumHpPercentage()) {
+                if (params != null && guardHpPercent >= params.getMinimumHpPercentage()) {
                     break;
                 }
             } else {
@@ -556,6 +702,7 @@ public class TowerManager extends BasePlayerManager {
         inProgress = false;
         upperHalf = true;
         currentPossibleStars = 0;
+        guardHpPercent = FULL_HP_PERCENT;
     }
 
     public boolean isInAbyssScene(int sceneId) {
@@ -644,40 +791,11 @@ public class TowerManager extends BasePlayerManager {
     public void mirrorTeamSetUp(int teamId) {
         if (teamId < 0) return;
 
+        player.sendPacket(new PacketTowerMiddleLevelChangeTeamNotify());
         upperHalf = false;
         notifyCurLevelRecordChange();
 
         applyMidHalfTeamSwap(teamId, player.getSceneId());
-
-        queueSecondHalfEntry();
-    }
-
-    private void queueSecondHalfEntry() {
-        var scene = player.getScene();
-        if (scene == null || !isInAbyssScene(scene.getId())) return;
-
-        var config = scene.getScriptManager() != null ? scene.getScriptManager().getConfig() : null;
-        var teleportProperties =
-                TeleportProperties.builder()
-                        .sceneId(scene.getId())
-                        .teleportType(TeleportType.INTERNAL)
-                        .enterType(EnterType.EnterType_ENTER_DUNGEON)
-                        .enterReason(EnterReason.DungeonEnter)
-                        .teleportTo(
-                                config != null && config.born_pos != null
-                                        ? config.born_pos
-                                        : DEFAULT_CHAMBER_POS)
-                        .teleportRot(
-                                config != null && config.born_rot != null
-                                        ? config.born_rot
-                                        : DEFAULT_CHAMBER_ROT);
-
-        var dungeonManager = scene.getDungeonManager();
-        if (dungeonManager != null && dungeonManager.getDungeonData() != null) {
-            teleportProperties.dungeonId(dungeonManager.getDungeonData().getId());
-        }
-
-        player.getWorld().queueTransferPlayerToScene(player, teleportProperties.build(), 300);
     }
 
     private void applyMidHalfTeamSwap(int teamId, int expectedSceneId) {
@@ -696,6 +814,7 @@ public class TowerManager extends BasePlayerManager {
             return;
         }
 
+        clearFieldGadgets(scene);
         teamManager.setCurrentCharacterIndex(0);
         teamManager.useTemporaryTeam(teamId);
         teamManager.forceActiveCharacter(0);
@@ -706,12 +825,24 @@ public class TowerManager extends BasePlayerManager {
         notifyCurLevelRecordChange();
     }
 
+    private void clearFieldGadgets(Scene scene) {
+        var gadgets = player.getTeamManager().getGadgets();
+        if (gadgets.isEmpty()) return;
+
+        scene.removeEntities(new ArrayList<GameEntity>(gadgets), VisionType.VisionType_VISION_REMOVE);
+        gadgets.clear();
+    }
+
     private void placePartyAtChamberEntrance(Scene scene) {
         var config = scene.getScriptManager() != null ? scene.getScriptManager().getConfig() : null;
-        var pos =
-                config != null && config.born_pos != null ? config.born_pos : DEFAULT_CHAMBER_POS;
-        var rot =
-                config != null && config.born_rot != null ? config.born_rot : DEFAULT_CHAMBER_ROT;
+        if (config == null || config.born_pos == null) {
+            Grasscutter.getLogger()
+                    .warn("Abyss scene {} has no born position, leaving the party where it is", scene.getId());
+            return;
+        }
+
+        var pos = config.born_pos;
+        var rot = config.born_rot != null ? config.born_rot : player.getRotation();
 
         player.getPosition().set(pos);
         player.getRotation().set(rot);

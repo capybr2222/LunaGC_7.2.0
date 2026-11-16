@@ -35,7 +35,7 @@ public class PacketTowerAllDataRsp extends BasePacket {
                                                         .anyMatch(stars -> stars > 0))
                                 .count();
 
-        var proto =
+        var builder =
                 TowerAllDataRsp.newBuilder()
                         .setTowerScheduleId(schedule != null ? schedule.getScheduleId() : 0)
                         .addAllTowerFloorRecordList(recordList)
@@ -46,8 +46,13 @@ public class PacketTowerAllDataRsp extends BasePacket {
                         .putAllFloorOpenTimeMap(openTimeMap)
                         .setValidTowerRecordNum(validRecordCount)
                         .setIsFinishedEntranceFloor(towerManager.canEnterScheduleFloor())
-                        .build();
+                        .setMonthlyBrief(towerManager.getCurrentBrief().toProto());
 
-        this.setData(proto);
+        var lastBrief = towerManager.getLastBrief();
+        if (lastBrief != null) {
+            builder.setLastScheduleMonthlyBrief(lastBrief.toProto());
+        }
+
+        this.setData(builder.build());
     }
 }

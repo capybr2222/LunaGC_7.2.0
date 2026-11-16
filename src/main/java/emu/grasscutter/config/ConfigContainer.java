@@ -283,6 +283,8 @@ public class ConfigContainer {
             public int rotationPool = 12;
 
             public boolean skipEntranceFloors = true;
+
+            public String timeZone = "";
         }
 
         public static class ResinOptions {

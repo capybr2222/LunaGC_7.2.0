@@ -14,6 +14,10 @@ public class TowerData {
 
     Map<Integer, TowerLevelRecord> recordMap;
 
+    int scheduleId;
+
+    TowerBrief lastBrief;
+
     @Transient int entryScene;
 
     @Transient List<Integer> currentBuffOfferings = new ArrayList<>();

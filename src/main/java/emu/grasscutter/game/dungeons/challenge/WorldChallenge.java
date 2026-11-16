@@ -109,7 +109,7 @@ public class WorldChallenge {
         var challengeSuccess =
                 scriptManager.callEvent(
                         new ScriptArgs(this.getGroup().id, EventType.EVENT_CHALLENGE_SUCCESS)
-                                .setParam2(finishedTime)
+                                .setParam2(this.timeLimit > 0 ? this.getRemainingTime() : this.finishedTime)
                                 .setEventSource(this.getChallengeIndex()));
 
         if (dungeonManager != null && dungeonManager.isTowerDungeon() && challengeSuccess != null) {
@@ -149,6 +149,10 @@ public class WorldChallenge {
         getScene().getScriptManager().removeMonstersInGroup(group);
 
         getScene().broadcastPacket(new PacketDungeonChallengeFinishNotify(this));
+    }
+
+    public int getRemainingTime() {
+        return Math.max(0, this.timeLimit - this.finishedTime);
     }
 
     public int increaseScore() {

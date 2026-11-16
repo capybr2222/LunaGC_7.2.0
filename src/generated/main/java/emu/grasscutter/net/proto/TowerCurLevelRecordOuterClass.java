@@ -36,7 +36,7 @@ public final class TowerCurLevelRecordOuterClass {
     int getBuffIdList(int index);
 
     /**
-     * <code>uint32 cur_floor_id = 20001;</code>
+     * <code>uint32 cur_floor_id = 8;</code>
      * @return The curFloorId.
      */
     int getCurFloorId();
@@ -77,7 +77,7 @@ public final class TowerCurLevelRecordOuterClass {
     boolean getIsUpperPart();
 
     /**
-     * <code>uint32 cur_level_index = 20000;</code>
+     * <code>uint32 cur_level_index = 3;</code>
      * @return The curLevelIndex.
      */
     int getCurLevelIndex();
@@ -150,9 +150,19 @@ public final class TowerCurLevelRecordOuterClass {
               isUpperPart_ = input.readBool();
               break;
             }
+            case 24: {
+
+              curLevelIndex_ = input.readUInt32();
+              break;
+            }
             case 56: {
 
               isEmpty_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              curFloorId_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -174,16 +184,6 @@ public final class TowerCurLevelRecordOuterClass {
                 buffIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 160000: {
-
-              curLevelIndex_ = input.readUInt32();
-              break;
-            }
-            case 160008: {
-
-              curFloorId_ = input.readUInt32();
               break;
             }
             default: {
@@ -253,10 +253,10 @@ public final class TowerCurLevelRecordOuterClass {
     }
     private int buffIdListMemoizedSerializedSize = -1;
 
-    public static final int CUR_FLOOR_ID_FIELD_NUMBER = 20001;
+    public static final int CUR_FLOOR_ID_FIELD_NUMBER = 8;
     private int curFloorId_;
     /**
-     * <code>uint32 cur_floor_id = 20001;</code>
+     * <code>uint32 cur_floor_id = 8;</code>
      * @return The curFloorId.
      */
     @java.lang.Override
@@ -323,10 +323,10 @@ public final class TowerCurLevelRecordOuterClass {
       return isUpperPart_;
     }
 
-    public static final int CUR_LEVEL_INDEX_FIELD_NUMBER = 20000;
+    public static final int CUR_LEVEL_INDEX_FIELD_NUMBER = 3;
     private int curLevelIndex_;
     /**
-     * <code>uint32 cur_level_index = 20000;</code>
+     * <code>uint32 cur_level_index = 3;</code>
      * @return The curLevelIndex.
      */
     @java.lang.Override
@@ -366,8 +366,14 @@ public final class TowerCurLevelRecordOuterClass {
       if (((bitField0_ & 0x00000001) != 0)) {
         output.writeBool(2, isUpperPart_);
       }
+      if (curLevelIndex_ != 0) {
+        output.writeUInt32(3, curLevelIndex_);
+      }
       if (isEmpty_ != false) {
         output.writeBool(7, isEmpty_);
+      }
+      if (curFloorId_ != 0) {
+        output.writeUInt32(8, curFloorId_);
       }
       if (getBuffIdListList().size() > 0) {
         output.writeUInt32NoTag(74);
@@ -375,12 +381,6 @@ public final class TowerCurLevelRecordOuterClass {
       }
       for (int i = 0; i < buffIdList_.size(); i++) {
         output.writeUInt32NoTag(buffIdList_.getInt(i));
-      }
-      if (curLevelIndex_ != 0) {
-        output.writeUInt32(20000, curLevelIndex_);
-      }
-      if (curFloorId_ != 0) {
-        output.writeUInt32(20001, curFloorId_);
       }
       unknownFields.writeTo(output);
     }
@@ -399,9 +399,17 @@ public final class TowerCurLevelRecordOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isUpperPart_);
       }
+      if (curLevelIndex_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, curLevelIndex_);
+      }
       if (isEmpty_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(7, isEmpty_);
+      }
+      if (curFloorId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, curFloorId_);
       }
       {
         int dataSize = 0;
@@ -416,14 +424,6 @@ public final class TowerCurLevelRecordOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         buffIdListMemoizedSerializedSize = dataSize;
-      }
-      if (curLevelIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(20000, curLevelIndex_);
-      }
-      if (curFloorId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(20001, curFloorId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -893,7 +893,7 @@ public final class TowerCurLevelRecordOuterClass {
 
       private int curFloorId_ ;
       /**
-       * <code>uint32 cur_floor_id = 20001;</code>
+       * <code>uint32 cur_floor_id = 8;</code>
        * @return The curFloorId.
        */
       @java.lang.Override
@@ -901,7 +901,7 @@ public final class TowerCurLevelRecordOuterClass {
         return curFloorId_;
       }
       /**
-       * <code>uint32 cur_floor_id = 20001;</code>
+       * <code>uint32 cur_floor_id = 8;</code>
        * @param value The curFloorId to set.
        * @return This builder for chaining.
        */
@@ -912,7 +912,7 @@ public final class TowerCurLevelRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_floor_id = 20001;</code>
+       * <code>uint32 cur_floor_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurFloorId() {
@@ -1203,7 +1203,7 @@ public final class TowerCurLevelRecordOuterClass {
 
       private int curLevelIndex_ ;
       /**
-       * <code>uint32 cur_level_index = 20000;</code>
+       * <code>uint32 cur_level_index = 3;</code>
        * @return The curLevelIndex.
        */
       @java.lang.Override
@@ -1211,7 +1211,7 @@ public final class TowerCurLevelRecordOuterClass {
         return curLevelIndex_;
       }
       /**
-       * <code>uint32 cur_level_index = 20000;</code>
+       * <code>uint32 cur_level_index = 3;</code>
        * @param value The curLevelIndex to set.
        * @return This builder for chaining.
        */
@@ -1222,7 +1222,7 @@ public final class TowerCurLevelRecordOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_level_index = 20000;</code>
+       * <code>uint32 cur_level_index = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurLevelIndex() {
@@ -1330,13 +1330,13 @@ public final class TowerCurLevelRecordOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031TowerCurLevelRecord.proto\032\017TowerTeam.p" +
-      "roto\"\303\001\n\023TowerCurLevelRecord\022\024\n\014buff_id_" +
-      "list\030\t \003(\r\022\026\n\014cur_floor_id\030\241\234\001 \001(\r\022#\n\017to" +
-      "wer_team_list\030\001 \003(\0132\n.TowerTeam\022\032\n\ris_up" +
-      "per_part\030\002 \001(\010H\000\210\001\001\022\031\n\017cur_level_index\030\240" +
-      "\234\001 \001(\r\022\020\n\010is_empty\030\007 \001(\010B\020\n\016_is_upper_pa" +
-      "rtB:\n\031emu.grasscutter.net.protoB\035TowerCu" +
-      "rLevelRecordOuterClassb\006proto3"
+      "roto\"\277\001\n\023TowerCurLevelRecord\022\024\n\014buff_id_" +
+      "list\030\t \003(\r\022\024\n\014cur_floor_id\030\010 \001(\r\022#\n\017towe" +
+      "r_team_list\030\001 \003(\0132\n.TowerTeam\022\032\n\ris_uppe" +
+      "r_part\030\002 \001(\010H\000\210\001\001\022\027\n\017cur_level_index\030\003 \001" +
+      "(\r\022\020\n\010is_empty\030\007 \001(\010B\020\n\016_is_upper_partB:" +
+      "\n\031emu.grasscutter.net.protoB\035TowerCurLev" +
+      "elRecordOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

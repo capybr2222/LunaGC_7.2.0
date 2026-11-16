@@ -40,12 +40,12 @@ public class TowerLevelData extends GameResource {
 
     @Getter
     public class TowerCondHpParams {
-        private int sceneId;
+        private int groupId;
         private int configId;
         private int minimumHpPercentage;
 
-        public TowerCondHpParams(int sceneId, int configId, int minimumHpPercentage) {
-            this.sceneId = sceneId;
+        public TowerCondHpParams(int groupId, int configId, int minimumHpPercentage) {
+            this.groupId = groupId;
             this.configId = configId;
             this.minimumHpPercentage = minimumHpPercentage;
         }

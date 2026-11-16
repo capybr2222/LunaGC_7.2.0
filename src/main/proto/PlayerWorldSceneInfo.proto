@@ -7,9 +7,9 @@ import "MapLayerInfo.proto";
 import "_LimitedRegionInfo.proto";
 
 message PlayerWorldSceneInfo {
-	MapLayerInfo _map_layer_info = 3;
+	MapLayerInfo _map_layer_info = 9;
 	uint32 scene_id = 8;
-	_LimitedRegionInfo _limited_region_info = 9;
+	_LimitedRegionInfo _limited_region_info = 3;
 	bool is_locked = 7;
 	repeated uint32 scene_tag_id_list = 11;
 }

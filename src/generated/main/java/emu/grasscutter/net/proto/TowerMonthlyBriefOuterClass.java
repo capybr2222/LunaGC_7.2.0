@@ -19,19 +19,19 @@ public final class TowerMonthlyBriefOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 best_floor_index = 8;</code>
+     * <code>uint32 best_floor_index = 7;</code>
      * @return The bestFloorIndex.
      */
     int getBestFloorIndex();
 
     /**
-     * <code>uint32 best_level_index = 7;</code>
+     * <code>uint32 best_level_index = 14;</code>
      * @return The bestLevelIndex.
      */
     int getBestLevelIndex();
 
     /**
-     * <code>uint32 total_star_count = 14;</code>
+     * <code>uint32 total_star_count = 8;</code>
      * @return The totalStarCount.
      */
     int getTotalStarCount();
@@ -89,12 +89,12 @@ public final class TowerMonthlyBriefOuterClass {
               break;
             case 56: {
 
-              bestLevelIndex_ = input.readUInt32();
+              bestFloorIndex_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              bestFloorIndex_ = input.readUInt32();
+              totalStarCount_ = input.readUInt32();
               break;
             }
             case 88: {
@@ -104,7 +104,7 @@ public final class TowerMonthlyBriefOuterClass {
             }
             case 112: {
 
-              totalStarCount_ = input.readUInt32();
+              bestLevelIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +139,10 @@ public final class TowerMonthlyBriefOuterClass {
               emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.class, emu.grasscutter.net.proto.TowerMonthlyBriefOuterClass.TowerMonthlyBrief.Builder.class);
     }
 
-    public static final int BEST_FLOOR_INDEX_FIELD_NUMBER = 8;
+    public static final int BEST_FLOOR_INDEX_FIELD_NUMBER = 7;
     private int bestFloorIndex_;
     /**
-     * <code>uint32 best_floor_index = 8;</code>
+     * <code>uint32 best_floor_index = 7;</code>
      * @return The bestFloorIndex.
      */
     @java.lang.Override
@@ -150,10 +150,10 @@ public final class TowerMonthlyBriefOuterClass {
       return bestFloorIndex_;
     }
 
-    public static final int BEST_LEVEL_INDEX_FIELD_NUMBER = 7;
+    public static final int BEST_LEVEL_INDEX_FIELD_NUMBER = 14;
     private int bestLevelIndex_;
     /**
-     * <code>uint32 best_level_index = 7;</code>
+     * <code>uint32 best_level_index = 14;</code>
      * @return The bestLevelIndex.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class TowerMonthlyBriefOuterClass {
       return bestLevelIndex_;
     }
 
-    public static final int TOTAL_STAR_COUNT_FIELD_NUMBER = 14;
+    public static final int TOTAL_STAR_COUNT_FIELD_NUMBER = 8;
     private int totalStarCount_;
     /**
-     * <code>uint32 total_star_count = 14;</code>
+     * <code>uint32 total_star_count = 8;</code>
      * @return The totalStarCount.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class TowerMonthlyBriefOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bestLevelIndex_ != 0) {
-        output.writeUInt32(7, bestLevelIndex_);
-      }
       if (bestFloorIndex_ != 0) {
-        output.writeUInt32(8, bestFloorIndex_);
+        output.writeUInt32(7, bestFloorIndex_);
+      }
+      if (totalStarCount_ != 0) {
+        output.writeUInt32(8, totalStarCount_);
       }
       if (towerScheduleId_ != 0) {
         output.writeUInt32(11, towerScheduleId_);
       }
-      if (totalStarCount_ != 0) {
-        output.writeUInt32(14, totalStarCount_);
+      if (bestLevelIndex_ != 0) {
+        output.writeUInt32(14, bestLevelIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class TowerMonthlyBriefOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bestLevelIndex_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, bestLevelIndex_);
-      }
       if (bestFloorIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, bestFloorIndex_);
+          .computeUInt32Size(7, bestFloorIndex_);
+      }
+      if (totalStarCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, totalStarCount_);
       }
       if (towerScheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, towerScheduleId_);
       }
-      if (totalStarCount_ != 0) {
+      if (bestLevelIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, totalStarCount_);
+          .computeUInt32Size(14, bestLevelIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -538,7 +538,7 @@ public final class TowerMonthlyBriefOuterClass {
 
       private int bestFloorIndex_ ;
       /**
-       * <code>uint32 best_floor_index = 8;</code>
+       * <code>uint32 best_floor_index = 7;</code>
        * @return The bestFloorIndex.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class TowerMonthlyBriefOuterClass {
         return bestFloorIndex_;
       }
       /**
-       * <code>uint32 best_floor_index = 8;</code>
+       * <code>uint32 best_floor_index = 7;</code>
        * @param value The bestFloorIndex to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class TowerMonthlyBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_floor_index = 8;</code>
+       * <code>uint32 best_floor_index = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestFloorIndex() {
@@ -569,7 +569,7 @@ public final class TowerMonthlyBriefOuterClass {
 
       private int bestLevelIndex_ ;
       /**
-       * <code>uint32 best_level_index = 7;</code>
+       * <code>uint32 best_level_index = 14;</code>
        * @return The bestLevelIndex.
        */
       @java.lang.Override
@@ -577,7 +577,7 @@ public final class TowerMonthlyBriefOuterClass {
         return bestLevelIndex_;
       }
       /**
-       * <code>uint32 best_level_index = 7;</code>
+       * <code>uint32 best_level_index = 14;</code>
        * @param value The bestLevelIndex to set.
        * @return This builder for chaining.
        */
@@ -588,7 +588,7 @@ public final class TowerMonthlyBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_level_index = 7;</code>
+       * <code>uint32 best_level_index = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestLevelIndex() {
@@ -600,7 +600,7 @@ public final class TowerMonthlyBriefOuterClass {
 
       private int totalStarCount_ ;
       /**
-       * <code>uint32 total_star_count = 14;</code>
+       * <code>uint32 total_star_count = 8;</code>
        * @return The totalStarCount.
        */
       @java.lang.Override
@@ -608,7 +608,7 @@ public final class TowerMonthlyBriefOuterClass {
         return totalStarCount_;
       }
       /**
-       * <code>uint32 total_star_count = 14;</code>
+       * <code>uint32 total_star_count = 8;</code>
        * @param value The totalStarCount to set.
        * @return This builder for chaining.
        */
@@ -619,7 +619,7 @@ public final class TowerMonthlyBriefOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_star_count = 14;</code>
+       * <code>uint32 total_star_count = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalStarCount() {
@@ -727,8 +727,8 @@ public final class TowerMonthlyBriefOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027TowerMonthlyBrief.proto\"|\n\021TowerMonthl" +
-      "yBrief\022\030\n\020best_floor_index\030\010 \001(\r\022\030\n\020best" +
-      "_level_index\030\007 \001(\r\022\030\n\020total_star_count\030\016" +
+      "yBrief\022\030\n\020best_floor_index\030\007 \001(\r\022\030\n\020best" +
+      "_level_index\030\016 \001(\r\022\030\n\020total_star_count\030\010" +
       " \001(\r\022\031\n\021tower_schedule_id\030\013 \001(\rB8\n\031emu.g" +
       "rasscutter.net.protoB\033TowerMonthlyBriefO" +
       "uterClassb\006proto3"

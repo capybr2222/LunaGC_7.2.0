@@ -19,17 +19,17 @@ public final class PlayerWorldSceneInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.MapLayerInfo _map_layer_info = 3;</code>
+     * <code>.MapLayerInfo _map_layer_info = 9;</code>
      * @return Whether the mapLayerInfo field is set.
      */
     boolean hasMapLayerInfo();
     /**
-     * <code>.MapLayerInfo _map_layer_info = 3;</code>
+     * <code>.MapLayerInfo _map_layer_info = 9;</code>
      * @return The mapLayerInfo.
      */
     emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo();
     /**
-     * <code>.MapLayerInfo _map_layer_info = 3;</code>
+     * <code>.MapLayerInfo _map_layer_info = 9;</code>
      */
     emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder();
 
@@ -40,17 +40,17 @@ public final class PlayerWorldSceneInfoOuterClass {
     int getSceneId();
 
     /**
-     * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+     * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
      * @return Whether the limitedRegionInfo field is set.
      */
     boolean hasLimitedRegionInfo();
     /**
-     * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+     * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
      * @return The limitedRegionInfo.
      */
     emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo getLimitedRegionInfo();
     /**
-     * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+     * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
      */
     emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder getLimitedRegionInfoOrBuilder();
 
@@ -125,14 +125,14 @@ public final class PlayerWorldSceneInfoOuterClass {
               done = true;
               break;
             case 26: {
-              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder subBuilder = null;
-              if (MapLayerInfo_ != null) {
-                subBuilder = MapLayerInfo_.toBuilder();
+              emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder subBuilder = null;
+              if (LimitedRegionInfo_ != null) {
+                subBuilder = LimitedRegionInfo_.toBuilder();
               }
-              MapLayerInfo_ = input.readMessage(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.parser(), extensionRegistry);
+              LimitedRegionInfo_ = input.readMessage(emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(MapLayerInfo_);
-                MapLayerInfo_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(LimitedRegionInfo_);
+                LimitedRegionInfo_ = subBuilder.buildPartial();
               }
 
               break;
@@ -148,14 +148,14 @@ public final class PlayerWorldSceneInfoOuterClass {
               break;
             }
             case 74: {
-              emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder subBuilder = null;
-              if (LimitedRegionInfo_ != null) {
-                subBuilder = LimitedRegionInfo_.toBuilder();
+              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder subBuilder = null;
+              if (MapLayerInfo_ != null) {
+                subBuilder = MapLayerInfo_.toBuilder();
               }
-              LimitedRegionInfo_ = input.readMessage(emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.parser(), extensionRegistry);
+              MapLayerInfo_ = input.readMessage(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(LimitedRegionInfo_);
-                LimitedRegionInfo_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(MapLayerInfo_);
+                MapLayerInfo_ = subBuilder.buildPartial();
               }
 
               break;
@@ -216,10 +216,10 @@ public final class PlayerWorldSceneInfoOuterClass {
               emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.class, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder.class);
     }
 
-    public static final int _MAP_LAYER_INFO_FIELD_NUMBER = 3;
+    public static final int _MAP_LAYER_INFO_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo MapLayerInfo_;
     /**
-     * <code>.MapLayerInfo _map_layer_info = 3;</code>
+     * <code>.MapLayerInfo _map_layer_info = 9;</code>
      * @return Whether the mapLayerInfo field is set.
      */
     @java.lang.Override
@@ -227,7 +227,7 @@ public final class PlayerWorldSceneInfoOuterClass {
       return MapLayerInfo_ != null;
     }
     /**
-     * <code>.MapLayerInfo _map_layer_info = 3;</code>
+     * <code>.MapLayerInfo _map_layer_info = 9;</code>
      * @return The mapLayerInfo.
      */
     @java.lang.Override
@@ -235,7 +235,7 @@ public final class PlayerWorldSceneInfoOuterClass {
       return MapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : MapLayerInfo_;
     }
     /**
-     * <code>.MapLayerInfo _map_layer_info = 3;</code>
+     * <code>.MapLayerInfo _map_layer_info = 9;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
@@ -253,10 +253,10 @@ public final class PlayerWorldSceneInfoOuterClass {
       return sceneId_;
     }
 
-    public static final int _LIMITED_REGION_INFO_FIELD_NUMBER = 9;
+    public static final int _LIMITED_REGION_INFO_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo LimitedRegionInfo_;
     /**
-     * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+     * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
      * @return Whether the limitedRegionInfo field is set.
      */
     @java.lang.Override
@@ -264,7 +264,7 @@ public final class PlayerWorldSceneInfoOuterClass {
       return LimitedRegionInfo_ != null;
     }
     /**
-     * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+     * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
      * @return The limitedRegionInfo.
      */
     @java.lang.Override
@@ -272,7 +272,7 @@ public final class PlayerWorldSceneInfoOuterClass {
       return LimitedRegionInfo_ == null ? emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.getDefaultInstance() : LimitedRegionInfo_;
     }
     /**
-     * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+     * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder getLimitedRegionInfoOrBuilder() {
@@ -333,8 +333,8 @@ public final class PlayerWorldSceneInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (MapLayerInfo_ != null) {
-        output.writeMessage(3, getMapLayerInfo());
+      if (LimitedRegionInfo_ != null) {
+        output.writeMessage(3, getLimitedRegionInfo());
       }
       if (isLocked_ != false) {
         output.writeBool(7, isLocked_);
@@ -342,8 +342,8 @@ public final class PlayerWorldSceneInfoOuterClass {
       if (sceneId_ != 0) {
         output.writeUInt32(8, sceneId_);
       }
-      if (LimitedRegionInfo_ != null) {
-        output.writeMessage(9, getLimitedRegionInfo());
+      if (MapLayerInfo_ != null) {
+        output.writeMessage(9, getMapLayerInfo());
       }
       if (getSceneTagIdListList().size() > 0) {
         output.writeUInt32NoTag(90);
@@ -361,9 +361,9 @@ public final class PlayerWorldSceneInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (MapLayerInfo_ != null) {
+      if (LimitedRegionInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getMapLayerInfo());
+          .computeMessageSize(3, getLimitedRegionInfo());
       }
       if (isLocked_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -373,9 +373,9 @@ public final class PlayerWorldSceneInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, sceneId_);
       }
-      if (LimitedRegionInfo_ != null) {
+      if (MapLayerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getLimitedRegionInfo());
+          .computeMessageSize(9, getMapLayerInfo());
       }
       {
         int dataSize = 0;
@@ -749,14 +749,14 @@ public final class PlayerWorldSceneInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> MapLayerInfoBuilder_;
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        * @return Whether the mapLayerInfo field is set.
        */
       public boolean hasMapLayerInfo() {
         return MapLayerInfoBuilder_ != null || MapLayerInfo_ != null;
       }
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        * @return The mapLayerInfo.
        */
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo() {
@@ -767,7 +767,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         }
       }
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        */
       public Builder setMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
         if (MapLayerInfoBuilder_ == null) {
@@ -783,7 +783,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        */
       public Builder setMapLayerInfo(
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder builderForValue) {
@@ -797,7 +797,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        */
       public Builder mergeMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
         if (MapLayerInfoBuilder_ == null) {
@@ -815,7 +815,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        */
       public Builder clearMapLayerInfo() {
         if (MapLayerInfoBuilder_ == null) {
@@ -829,7 +829,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        */
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder getMapLayerInfoBuilder() {
         
@@ -837,7 +837,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return getMapLayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        */
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
         if (MapLayerInfoBuilder_ != null) {
@@ -848,7 +848,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         }
       }
       /**
-       * <code>.MapLayerInfo _map_layer_info = 3;</code>
+       * <code>.MapLayerInfo _map_layer_info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> 
@@ -899,14 +899,14 @@ public final class PlayerWorldSceneInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder> LimitedRegionInfoBuilder_;
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        * @return Whether the limitedRegionInfo field is set.
        */
       public boolean hasLimitedRegionInfo() {
         return LimitedRegionInfoBuilder_ != null || LimitedRegionInfo_ != null;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        * @return The limitedRegionInfo.
        */
       public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo getLimitedRegionInfo() {
@@ -917,7 +917,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         }
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        */
       public Builder setLimitedRegionInfo(emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo value) {
         if (LimitedRegionInfoBuilder_ == null) {
@@ -933,7 +933,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        */
       public Builder setLimitedRegionInfo(
           emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder builderForValue) {
@@ -947,7 +947,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        */
       public Builder mergeLimitedRegionInfo(emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo value) {
         if (LimitedRegionInfoBuilder_ == null) {
@@ -965,7 +965,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        */
       public Builder clearLimitedRegionInfo() {
         if (LimitedRegionInfoBuilder_ == null) {
@@ -979,7 +979,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        */
       public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder getLimitedRegionInfoBuilder() {
         
@@ -987,7 +987,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return getLimitedRegionInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        */
       public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder getLimitedRegionInfoOrBuilder() {
         if (LimitedRegionInfoBuilder_ != null) {
@@ -998,7 +998,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         }
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 9;</code>
+       * <code>._LimitedRegionInfo _limited_region_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder> 
@@ -1192,9 +1192,9 @@ public final class PlayerWorldSceneInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032PlayerWorldSceneInfo.proto\032\022MapLayerIn" +
       "fo.proto\032\030_LimitedRegionInfo.proto\"\261\001\n\024P" +
-      "layerWorldSceneInfo\022&\n\017_map_layer_info\030\003" +
+      "layerWorldSceneInfo\022&\n\017_map_layer_info\030\t" +
       " \001(\0132\r.MapLayerInfo\022\020\n\010scene_id\030\010 \001(\r\0221\n" +
-      "\024_limited_region_info\030\t \001(\0132\023._LimitedRe" +
+      "\024_limited_region_info\030\003 \001(\0132\023._LimitedRe" +
       "gionInfo\022\021\n\tis_locked\030\007 \001(\010\022\031\n\021scene_tag" +
       "_id_list\030\013 \003(\rB;\n\031emu.grasscutter.net.pr" +
       "otoB\036PlayerWorldSceneInfoOuterClassb\006pro" +

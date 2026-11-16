@@ -31,7 +31,7 @@ public final class DungeonEntryInfoOuterClass {
     boolean getIsPassed();
 
     /**
-     * <code>uint32 boss_chest_num = 20001;</code>
+     * <code>uint32 boss_chest_num = 15;</code>
      * @return The bossChestNum.
      */
     int getBossChestNum();
@@ -52,7 +52,7 @@ public final class DungeonEntryInfoOuterClass {
     emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfoOrBuilder getWeeklyBossResinDiscountInfoOrBuilder();
 
     /**
-     * <code>uint32 max_boss_chest_num = 20000;</code>
+     * <code>uint32 max_boss_chest_num = 5;</code>
      * @return The maxBossChestNum.
      */
     int getMaxBossChestNum();
@@ -113,6 +113,11 @@ public final class DungeonEntryInfoOuterClass {
               dungeonId_ = input.readUInt32();
               break;
             }
+            case 40: {
+
+              maxBossChestNum_ = input.readUInt32();
+              break;
+            }
             case 58: {
               emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.WeeklyBossResinDiscountInfo.Builder subBuilder = null;
               if (weeklyBossResinDiscountInfo_ != null) {
@@ -136,12 +141,7 @@ public final class DungeonEntryInfoOuterClass {
               isPassed_ = input.readBool();
               break;
             }
-            case 160000: {
-
-              maxBossChestNum_ = input.readUInt32();
-              break;
-            }
-            case 160008: {
+            case 120: {
 
               bossChestNum_ = input.readUInt32();
               break;
@@ -200,10 +200,10 @@ public final class DungeonEntryInfoOuterClass {
       return isPassed_;
     }
 
-    public static final int BOSS_CHEST_NUM_FIELD_NUMBER = 20001;
+    public static final int BOSS_CHEST_NUM_FIELD_NUMBER = 15;
     private int bossChestNum_;
     /**
-     * <code>uint32 boss_chest_num = 20001;</code>
+     * <code>uint32 boss_chest_num = 15;</code>
      * @return The bossChestNum.
      */
     @java.lang.Override
@@ -237,10 +237,10 @@ public final class DungeonEntryInfoOuterClass {
       return getWeeklyBossResinDiscountInfo();
     }
 
-    public static final int MAX_BOSS_CHEST_NUM_FIELD_NUMBER = 20000;
+    public static final int MAX_BOSS_CHEST_NUM_FIELD_NUMBER = 5;
     private int maxBossChestNum_;
     /**
-     * <code>uint32 max_boss_chest_num = 20000;</code>
+     * <code>uint32 max_boss_chest_num = 5;</code>
      * @return The maxBossChestNum.
      */
     @java.lang.Override
@@ -276,6 +276,9 @@ public final class DungeonEntryInfoOuterClass {
       if (dungeonId_ != 0) {
         output.writeUInt32(1, dungeonId_);
       }
+      if (maxBossChestNum_ != 0) {
+        output.writeUInt32(5, maxBossChestNum_);
+      }
       if (weeklyBossResinDiscountInfo_ != null) {
         output.writeMessage(7, getWeeklyBossResinDiscountInfo());
       }
@@ -285,11 +288,8 @@ public final class DungeonEntryInfoOuterClass {
       if (isPassed_ != false) {
         output.writeBool(11, isPassed_);
       }
-      if (maxBossChestNum_ != 0) {
-        output.writeUInt32(20000, maxBossChestNum_);
-      }
       if (bossChestNum_ != 0) {
-        output.writeUInt32(20001, bossChestNum_);
+        output.writeUInt32(15, bossChestNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -304,6 +304,10 @@ public final class DungeonEntryInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, dungeonId_);
       }
+      if (maxBossChestNum_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, maxBossChestNum_);
+      }
       if (weeklyBossResinDiscountInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, getWeeklyBossResinDiscountInfo());
@@ -316,13 +320,9 @@ public final class DungeonEntryInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(11, isPassed_);
       }
-      if (maxBossChestNum_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(20000, maxBossChestNum_);
-      }
       if (bossChestNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(20001, bossChestNum_);
+          .computeUInt32Size(15, bossChestNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -724,7 +724,7 @@ public final class DungeonEntryInfoOuterClass {
 
       private int bossChestNum_ ;
       /**
-       * <code>uint32 boss_chest_num = 20001;</code>
+       * <code>uint32 boss_chest_num = 15;</code>
        * @return The bossChestNum.
        */
       @java.lang.Override
@@ -732,7 +732,7 @@ public final class DungeonEntryInfoOuterClass {
         return bossChestNum_;
       }
       /**
-       * <code>uint32 boss_chest_num = 20001;</code>
+       * <code>uint32 boss_chest_num = 15;</code>
        * @param value The bossChestNum to set.
        * @return This builder for chaining.
        */
@@ -743,7 +743,7 @@ public final class DungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 boss_chest_num = 20001;</code>
+       * <code>uint32 boss_chest_num = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearBossChestNum() {
@@ -874,7 +874,7 @@ public final class DungeonEntryInfoOuterClass {
 
       private int maxBossChestNum_ ;
       /**
-       * <code>uint32 max_boss_chest_num = 20000;</code>
+       * <code>uint32 max_boss_chest_num = 5;</code>
        * @return The maxBossChestNum.
        */
       @java.lang.Override
@@ -882,7 +882,7 @@ public final class DungeonEntryInfoOuterClass {
         return maxBossChestNum_;
       }
       /**
-       * <code>uint32 max_boss_chest_num = 20000;</code>
+       * <code>uint32 max_boss_chest_num = 5;</code>
        * @param value The maxBossChestNum to set.
        * @return This builder for chaining.
        */
@@ -893,7 +893,7 @@ public final class DungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 max_boss_chest_num = 20000;</code>
+       * <code>uint32 max_boss_chest_num = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearMaxBossChestNum() {
@@ -1001,14 +1001,14 @@ public final class DungeonEntryInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026DungeonEntryInfo.proto\032!WeeklyBossResi" +
-      "nDiscountInfo.proto\"\323\001\n\020DungeonEntryInfo" +
+      "nDiscountInfo.proto\"\317\001\n\020DungeonEntryInfo" +
       "\022\031\n\021next_refresh_time\030\t \001(\r\022\021\n\tis_passed" +
-      "\030\013 \001(\010\022\030\n\016boss_chest_num\030\241\234\001 \001(\r\022E\n\037week" +
-      "ly_boss_resin_discount_info\030\007 \001(\0132\034.Week" +
-      "lyBossResinDiscountInfo\022\034\n\022max_boss_ches" +
-      "t_num\030\240\234\001 \001(\r\022\022\n\ndungeon_id\030\001 \001(\rB7\n\031emu" +
-      ".grasscutter.net.protoB\032DungeonEntryInfo" +
-      "OuterClassb\006proto3"
+      "\030\013 \001(\010\022\026\n\016boss_chest_num\030\017 \001(\r\022E\n\037weekly" +
+      "_boss_resin_discount_info\030\007 \001(\0132\034.Weekly" +
+      "BossResinDiscountInfo\022\032\n\022max_boss_chest_" +
+      "num\030\005 \001(\r\022\022\n\ndungeon_id\030\001 \001(\rB7\n\031emu.gra" +
+      "sscutter.net.protoB\032DungeonEntryInfoOute" +
+      "rClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

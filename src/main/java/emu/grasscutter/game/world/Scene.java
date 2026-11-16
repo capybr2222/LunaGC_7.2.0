@@ -64,7 +64,7 @@ public class Scene {
     @Getter private final Set<SceneGroup> loadedGroups;
     @Getter private final BlossomManager blossomManager;
     private final HashSet<Integer> unlockedForces;
-    private final long startWorldTime;
+    private final long startRunningTime;
     @Getter @Setter DungeonManager dungeonManager;
     @Getter Int2ObjectMap<Route> sceneRoutes;
     private Set<SpawnDataEntry.GridBlockId> loadedGridBlocks;
@@ -98,7 +98,7 @@ public class Scene {
         this.prevScene = 3;
         this.sceneRoutes = GameData.getSceneRoutes(getId());
 
-        this.startWorldTime = world.getWorldTime();
+        this.startRunningTime = world.getRunningTime();
 
         this.spawnedEntities = ConcurrentHashMap.newKeySet();
         this.deadSpawnedEntities = ConcurrentHashMap.newKeySet();
@@ -185,7 +185,7 @@ public class Scene {
     }
 
     public int getSceneTime() {
-        return (int) (this.getWorld().getWorldTime() - this.startWorldTime);
+        return (int) (this.getWorld().getRunningTime() - this.startRunningTime);
     }
 
     public int getSceneTimeSeconds() {
@@ -197,7 +197,9 @@ public class Scene {
             dungeonSettleListeners = new ArrayList<>();
         }
 
-        dungeonSettleListeners.add(dungeonSettleListener);
+        if (!dungeonSettleListeners.contains(dungeonSettleListener)) {
+            dungeonSettleListeners.add(dungeonSettleListener);
+        }
     }
 
     public void triggerDungeonEvent(DungeonPassConditionType conditionType, int... params) {

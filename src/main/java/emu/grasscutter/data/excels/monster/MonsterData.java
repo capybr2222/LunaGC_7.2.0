@@ -74,6 +74,9 @@ public class MonsterData extends GameResource {
 
     @Override
     public void onLoad() {
+        if (this.affix == null) {
+            this.affix = List.of();
+        }
         for (int id : this.equips) {
             if (id == 0) {
                 continue;

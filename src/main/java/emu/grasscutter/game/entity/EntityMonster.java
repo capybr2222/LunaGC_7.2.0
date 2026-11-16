@@ -115,23 +115,22 @@ public class EntityMonster extends GameEntity {
     public void initAbilities() {
         var optionalGroup =
                 this.getScene().getLoadedGroups().stream().filter(g -> g.id == this.getGroupId()).findAny();
-        List<Integer> affixes = null;
+        List<Integer> affixes = new ArrayList<>();
         if (optionalGroup.isPresent()) {
             var group = optionalGroup.get();
 
             var monster = group.monsters.get(getConfigId());
-            if (monster != null) affixes = monster.affix;
+            if (monster != null && monster.affix != null) affixes.addAll(monster.affix);
         }
 
         if (monsterData != null) {
-            if (affixes == null) affixes = monsterData.getAffix();
-            else affixes.addAll(monsterData.getAffix());
+            affixes.addAll(monsterData.getAffix());
         }
 
-        if (affixes != null) {
+        if (!affixes.isEmpty()) {
             for (var affixId : affixes) {
                 var affix = GameData.getMonsterAffixDataMap().get(affixId.intValue());
-                if (!affix.isPreAdd()) continue;
+                if (affix == null || !affix.isPreAdd()) continue;
 
                 for (var name : affix.getAbilityName()) {
                     this.addConfigAbility(name);
@@ -162,7 +161,7 @@ public class EntityMonster extends GameEntity {
         if (affixes != null) {
             for (var affixId : affixes) {
                 var affix = GameData.getMonsterAffixDataMap().get(affixId.intValue());
-                if (affix.isPreAdd()) continue;
+                if (affix == null || affix.isPreAdd()) continue;
 
                 for (var name : affix.getAbilityName()) {
                     this.addConfigAbility(name);

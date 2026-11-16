@@ -49,7 +49,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
     boolean getDACBILBGHCK();
 
     /**
-     * <code>uint32 challenge_mode_difficulty = 20005;</code>
+     * <code>uint32 challenge_mode_difficulty = 4;</code>
      * @return The challengeModeDifficulty.
      */
     int getChallengeModeDifficulty();
@@ -99,6 +99,11 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
             case 0:
               done = true;
               break;
+            case 32: {
+
+              challengeModeDifficulty_ = input.readUInt32();
+              break;
+            }
             case 160000: {
 
               eEKKHPMNEJO_ = input.readUInt32();
@@ -122,11 +127,6 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
             case 160032: {
 
               cIKPIBCMPMB_ = input.readBool();
-              break;
-            }
-            case 160040: {
-
-              challengeModeDifficulty_ = input.readUInt32();
               break;
             }
             default: {
@@ -216,10 +216,10 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       return dACBILBGHCK_;
     }
 
-    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 20005;
+    public static final int CHALLENGE_MODE_DIFFICULTY_FIELD_NUMBER = 4;
     private int challengeModeDifficulty_;
     /**
-     * <code>uint32 challenge_mode_difficulty = 20005;</code>
+     * <code>uint32 challenge_mode_difficulty = 4;</code>
      * @return The challengeModeDifficulty.
      */
     @java.lang.Override
@@ -241,6 +241,9 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (challengeModeDifficulty_ != 0) {
+        output.writeUInt32(4, challengeModeDifficulty_);
+      }
       if (eEKKHPMNEJO_ != 0) {
         output.writeUInt32(20000, eEKKHPMNEJO_);
       }
@@ -256,9 +259,6 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       if (cIKPIBCMPMB_ != false) {
         output.writeBool(20004, cIKPIBCMPMB_);
       }
-      if (challengeModeDifficulty_ != 0) {
-        output.writeUInt32(20005, challengeModeDifficulty_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -268,6 +268,10 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (challengeModeDifficulty_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, challengeModeDifficulty_);
+      }
       if (eEKKHPMNEJO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(20000, eEKKHPMNEJO_);
@@ -287,10 +291,6 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       if (cIKPIBCMPMB_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(20004, cIKPIBCMPMB_);
-      }
-      if (challengeModeDifficulty_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(20005, challengeModeDifficulty_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -773,7 +773,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
 
       private int challengeModeDifficulty_ ;
       /**
-       * <code>uint32 challenge_mode_difficulty = 20005;</code>
+       * <code>uint32 challenge_mode_difficulty = 4;</code>
        * @return The challengeModeDifficulty.
        */
       @java.lang.Override
@@ -781,7 +781,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return challengeModeDifficulty_;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 20005;</code>
+       * <code>uint32 challenge_mode_difficulty = 4;</code>
        * @param value The challengeModeDifficulty to set.
        * @return This builder for chaining.
        */
@@ -792,7 +792,7 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 challenge_mode_difficulty = 20005;</code>
+       * <code>uint32 challenge_mode_difficulty = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearChallengeModeDifficulty() {
@@ -868,14 +868,14 @@ public final class EffigyChallengeV2SettleInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!EffigyChallengeV2SettleInfo.proto\"\265\001\n\033" +
+      "\n!EffigyChallengeV2SettleInfo.proto\"\263\001\n\033" +
       "EffigyChallengeV2SettleInfo\022\025\n\013CIKPIBCMP" +
       "MB\030\244\234\001 \001(\010\022\025\n\013EEKKHPMNEJO\030\240\234\001 \001(\r\022\025\n\013MMB" +
       "MGOKCLJI\030\242\234\001 \001(\r\022\025\n\013JGOODOMJLLJ\030\241\234\001 \001(\r\022" +
-      "\025\n\013DACBILBGHCK\030\243\234\001 \001(\010\022#\n\031challenge_mode" +
-      "_difficulty\030\245\234\001 \001(\rBB\n\031emu.grasscutter.n" +
-      "et.protoB%EffigyChallengeV2SettleInfoOut" +
-      "erClassb\006proto3"
+      "\025\n\013DACBILBGHCK\030\243\234\001 \001(\010\022!\n\031challenge_mode" +
+      "_difficulty\030\004 \001(\rBB\n\031emu.grasscutter.net" +
+      ".protoB%EffigyChallengeV2SettleInfoOuter" +
+      "Classb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

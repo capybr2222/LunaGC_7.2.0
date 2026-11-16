@@ -190,16 +190,6 @@ public class ScriptLib {
             return 0;
         }
 
-        var players = scene.getPlayers();
-        var towerManager = players.isEmpty() ? null : players.get(0).getTowerManager();
-        if (towerManager != null && towerManager.isInProgress() && towerManager.getCurrentTimeLimit() > 0) {
-
-            timeLimitOrGroupId = towerManager.getCurrentTimeLimit() - timeLimitOrGroupId;
-            if (timeLimitOrGroupId < 0) {
-                timeLimitOrGroupId = 0;
-            }
-        }
-
         var challenge = ChallengeFactory.getChallenge(
                 challengeId,
                 challengeIndex,

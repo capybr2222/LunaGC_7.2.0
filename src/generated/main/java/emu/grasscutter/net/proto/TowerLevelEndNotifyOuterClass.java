@@ -36,13 +36,13 @@ public final class TowerLevelEndNotifyOuterClass {
     int getFinishedStarCondList(int index);
 
     /**
-     * <code>uint32 next_floor_id = 20001;</code>
+     * <code>uint32 next_floor_id = 5;</code>
      * @return The nextFloorId.
      */
     int getNextFloorId();
 
     /**
-     * <code>uint32 continue_state = 20000;</code>
+     * <code>uint32 continue_state = 10;</code>
      * @return The continueState.
      */
     int getContinueState();
@@ -155,19 +155,19 @@ public final class TowerLevelEndNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
+            case 40: {
 
-              isSuccess_ = input.readBool();
+              nextFloorId_ = input.readUInt32();
               break;
             }
-            case 160000: {
+            case 80: {
 
               continueState_ = input.readUInt32();
               break;
             }
-            case 160008: {
+            case 88: {
 
-              nextFloorId_ = input.readUInt32();
+              isSuccess_ = input.readBool();
               break;
             }
             default: {
@@ -236,10 +236,10 @@ public final class TowerLevelEndNotifyOuterClass {
     }
     private int finishedStarCondListMemoizedSerializedSize = -1;
 
-    public static final int NEXT_FLOOR_ID_FIELD_NUMBER = 20001;
+    public static final int NEXT_FLOOR_ID_FIELD_NUMBER = 5;
     private int nextFloorId_;
     /**
-     * <code>uint32 next_floor_id = 20001;</code>
+     * <code>uint32 next_floor_id = 5;</code>
      * @return The nextFloorId.
      */
     @java.lang.Override
@@ -247,10 +247,10 @@ public final class TowerLevelEndNotifyOuterClass {
       return nextFloorId_;
     }
 
-    public static final int CONTINUE_STATE_FIELD_NUMBER = 20000;
+    public static final int CONTINUE_STATE_FIELD_NUMBER = 10;
     private int continueState_;
     /**
-     * <code>uint32 continue_state = 20000;</code>
+     * <code>uint32 continue_state = 10;</code>
      * @return The continueState.
      */
     @java.lang.Override
@@ -334,14 +334,14 @@ public final class TowerLevelEndNotifyOuterClass {
       for (int i = 0; i < finishedStarCondList_.size(); i++) {
         output.writeUInt32NoTag(finishedStarCondList_.getInt(i));
       }
-      if (isSuccess_ != false) {
-        output.writeBool(11, isSuccess_);
+      if (nextFloorId_ != 0) {
+        output.writeUInt32(5, nextFloorId_);
       }
       if (continueState_ != 0) {
-        output.writeUInt32(20000, continueState_);
+        output.writeUInt32(10, continueState_);
       }
-      if (nextFloorId_ != 0) {
-        output.writeUInt32(20001, nextFloorId_);
+      if (isSuccess_ != false) {
+        output.writeBool(11, isSuccess_);
       }
       unknownFields.writeTo(output);
     }
@@ -370,17 +370,17 @@ public final class TowerLevelEndNotifyOuterClass {
         }
         finishedStarCondListMemoizedSerializedSize = dataSize;
       }
-      if (isSuccess_ != false) {
+      if (nextFloorId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isSuccess_);
+          .computeUInt32Size(5, nextFloorId_);
       }
       if (continueState_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(20000, continueState_);
+          .computeUInt32Size(10, continueState_);
       }
-      if (nextFloorId_ != 0) {
+      if (isSuccess_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(20001, nextFloorId_);
+          .computeBoolSize(11, isSuccess_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -829,7 +829,7 @@ public final class TowerLevelEndNotifyOuterClass {
 
       private int nextFloorId_ ;
       /**
-       * <code>uint32 next_floor_id = 20001;</code>
+       * <code>uint32 next_floor_id = 5;</code>
        * @return The nextFloorId.
        */
       @java.lang.Override
@@ -837,7 +837,7 @@ public final class TowerLevelEndNotifyOuterClass {
         return nextFloorId_;
       }
       /**
-       * <code>uint32 next_floor_id = 20001;</code>
+       * <code>uint32 next_floor_id = 5;</code>
        * @param value The nextFloorId to set.
        * @return This builder for chaining.
        */
@@ -848,7 +848,7 @@ public final class TowerLevelEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 next_floor_id = 20001;</code>
+       * <code>uint32 next_floor_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearNextFloorId() {
@@ -860,7 +860,7 @@ public final class TowerLevelEndNotifyOuterClass {
 
       private int continueState_ ;
       /**
-       * <code>uint32 continue_state = 20000;</code>
+       * <code>uint32 continue_state = 10;</code>
        * @return The continueState.
        */
       @java.lang.Override
@@ -868,7 +868,7 @@ public final class TowerLevelEndNotifyOuterClass {
         return continueState_;
       }
       /**
-       * <code>uint32 continue_state = 20000;</code>
+       * <code>uint32 continue_state = 10;</code>
        * @param value The continueState to set.
        * @return This builder for chaining.
        */
@@ -879,7 +879,7 @@ public final class TowerLevelEndNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 continue_state = 20000;</code>
+       * <code>uint32 continue_state = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearContinueState() {
@@ -1227,12 +1227,12 @@ public final class TowerLevelEndNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031TowerLevelEndNotify.proto\032\017ItemParam.p" +
-      "roto\"\243\001\n\023TowerLevelEndNotify\022\037\n\027finished" +
-      "_star_cond_list\030\004 \003(\r\022\027\n\rnext_floor_id\030\241" +
-      "\234\001 \001(\r\022\030\n\016continue_state\030\240\234\001 \001(\r\022$\n\020rewa" +
-      "rd_item_list\030\001 \003(\0132\n.ItemParam\022\022\n\nis_suc" +
-      "cess\030\013 \001(\010B:\n\031emu.grasscutter.net.protoB" +
-      "\035TowerLevelEndNotifyOuterClassb\006proto3"
+      "roto\"\237\001\n\023TowerLevelEndNotify\022\037\n\027finished" +
+      "_star_cond_list\030\004 \003(\r\022\025\n\rnext_floor_id\030\005" +
+      " \001(\r\022\026\n\016continue_state\030\n \001(\r\022$\n\020reward_i" +
+      "tem_list\030\001 \003(\0132\n.ItemParam\022\022\n\nis_success" +
+      "\030\013 \001(\010B:\n\031emu.grasscutter.net.protoB\035Tow" +
+      "erLevelEndNotifyOuterClassb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

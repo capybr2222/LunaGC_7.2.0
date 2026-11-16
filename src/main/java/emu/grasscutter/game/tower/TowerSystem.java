@@ -10,12 +10,17 @@ import emu.grasscutter.server.game.*;
 import emu.grasscutter.utils.FileUtils;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.time.DateTimeException;
+import java.time.ZoneId;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class TowerSystem extends BaseGameSystem {
 
+    private static final int ROTATION_DAY = 16;
     private static final int ROTATION_HOUR = 4;
+    private static final long MONTHS_PER_YEAR = 12;
+    private static final long CLOSE_TO_NEXT_OPEN_MS = 1000;
 
     private TowerScheduleConfig towerScheduleConfig;
 
@@ -24,6 +29,8 @@ public class TowerSystem extends BaseGameSystem {
     private final Map<Integer, Boolean> scriptedScenes = new HashMap<>();
 
     private Set<Integer> towerSceneIds;
+
+    private ZoneId zone = ZoneId.systemDefault();
 
     public TowerSystem(GameServer server) {
         super(server);
@@ -35,6 +42,15 @@ public class TowerSystem extends BaseGameSystem {
             towerScheduleConfig = DataLoader.loadClass("TowerSchedule.json", TowerScheduleConfig.class);
         } catch (Exception e) {
             Grasscutter.getLogger().error("Unable to load tower schedule config.", e);
+        }
+
+        var zoneName = GAME_OPTIONS.tower.timeZone;
+        if (zoneName == null || zoneName.isBlank()) return;
+        try {
+            zone = ZoneId.of(zoneName);
+        } catch (DateTimeException e) {
+            Grasscutter.getLogger()
+                    .error("Spiral Abyss time zone {} is not valid, using {} instead.", zoneName, zone);
         }
     }
 
@@ -146,53 +162,74 @@ public class TowerSystem extends BaseGameSystem {
         return playable.isEmpty() ? 0 : playable.get(playable.size() - 1);
     }
 
-    private static Calendar periodStart(Date now) {
-        var calendar = Calendar.getInstance();
-        calendar.setTime(now);
+    private Calendar periodStart(Date now) {
+        var current = Calendar.getInstance(TimeZone.getTimeZone(zone));
+        current.setTime(now);
 
-        int day = calendar.get(Calendar.DAY_OF_MONTH);
-        if ((day == 1 || day == 16) && calendar.get(Calendar.HOUR_OF_DAY) < ROTATION_HOUR) {
-            calendar.add(Calendar.DAY_OF_MONTH, -1);
-            day = calendar.get(Calendar.DAY_OF_MONTH);
+        var start = (Calendar) current.clone();
+        start.set(Calendar.DAY_OF_MONTH, ROTATION_DAY);
+        start.set(Calendar.HOUR_OF_DAY, ROTATION_HOUR);
+        start.set(Calendar.MINUTE, 0);
+        start.set(Calendar.SECOND, 0);
+        start.set(Calendar.MILLISECOND, 0);
+        if (start.after(current)) {
+            start.add(Calendar.MONTH, -1);
         }
-
-        calendar.set(Calendar.DAY_OF_MONTH, day >= 16 ? 16 : 1);
-        calendar.set(Calendar.HOUR_OF_DAY, ROTATION_HOUR);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        calendar.set(Calendar.MILLISECOND, 0);
-        return calendar;
+        return start;
     }
 
     private static Calendar periodEnd(Calendar start) {
-        var calendar = (Calendar) start.clone();
-        if (calendar.get(Calendar.DAY_OF_MONTH) >= 16) {
-            calendar.set(Calendar.DAY_OF_MONTH, 1);
-            calendar.add(Calendar.MONTH, 1);
-        } else {
-            calendar.set(Calendar.DAY_OF_MONTH, 16);
-        }
-        return calendar;
+        var end = (Calendar) start.clone();
+        end.add(Calendar.MONTH, 1);
+        return end;
     }
 
     private static long periodOrdinal(Calendar start) {
-        return start.get(Calendar.YEAR) * 24L
-                + start.get(Calendar.MONTH) * 2L
-                + (start.get(Calendar.DAY_OF_MONTH) >= 16 ? 1 : 0);
+        return start.get(Calendar.YEAR) * MONTHS_PER_YEAR + start.get(Calendar.MONTH);
     }
 
     private static boolean isRotating() {
         return GAME_OPTIONS.tower.scheduleId <= 0 && GAME_OPTIONS.tower.rotate;
     }
 
+    private TowerScheduleData getLiveSchedule(Date now) {
+        return GameData.getTowerScheduleDataMap().values().stream()
+                .filter(schedule -> schedule.isOpenAt(now, zone))
+                .max(Comparator.comparingInt(TowerScheduleData::getScheduleId))
+                .orElse(null);
+    }
+
+    private TowerScheduleData getNewestPlayableOpenedBy(Date now) {
+        var playable = getPlayableSchedules();
+        for (int i = playable.size() - 1; i >= 0; i--) {
+            var schedule = GameData.getTowerScheduleDataMap().get(playable.get(i).intValue());
+            var opens = schedule != null ? schedule.getOpenTime(zone) : null;
+            if (schedule != null && (opens == null || !opens.after(now))) {
+                return schedule;
+            }
+        }
+        var newest = getNewestPlayable();
+        return newest > 0 ? GameData.getTowerScheduleDataMap().get(newest) : null;
+    }
+
+    private TowerScheduleData getCalendarWindow(Date now) {
+        if (isRotating()) return null;
+        var live = getLiveSchedule(now);
+        return live != null && live.getOpenTime(zone) != null && live.getCloseTime(zone) != null ? live : null;
+    }
+
     public Date getScheduleStartTime() {
-        if (!isRotating()) return towerScheduleConfig.getScheduleStartTime();
-        return periodStart(new Date()).getTime();
+        var now = new Date();
+        var live = getCalendarWindow(now);
+        if (live != null) return live.getOpenTime(zone);
+        return periodStart(now).getTime();
     }
 
     public Date getNextScheduleChangeTime() {
-        if (!isRotating()) return towerScheduleConfig.getNextScheduleChangeTime();
-        return periodEnd(periodStart(new Date())).getTime();
+        var now = new Date();
+        var live = getCalendarWindow(now);
+        if (live != null) return new Date(live.getCloseTime(zone).getTime() + CLOSE_TO_NEXT_OPEN_MS);
+        return periodEnd(periodStart(now)).getTime();
     }
 
     public TowerScheduleData getCurrentTowerScheduleData() {
@@ -204,19 +241,19 @@ public class TowerSystem extends BaseGameSystem {
                     .error("Spiral Abyss rotation {} does not exist; rotating instead.", pinned);
         }
 
+        var now = new Date();
         if (isRotating()) {
             var pool = getRotationPool();
             if (!pool.isEmpty()) {
-                int index = (int) Math.floorMod(periodOrdinal(periodStart(new Date())), pool.size());
+                int index = (int) Math.floorMod(periodOrdinal(periodStart(now)), pool.size());
                 var data = GameData.getTowerScheduleDataMap().get(pool.get(index).intValue());
                 if (data != null) return data;
             }
         } else {
-            var newest = getNewestPlayable();
-            if (newest > 0) {
-                var data = GameData.getTowerScheduleDataMap().get(newest);
-                if (data != null) return data;
-            }
+            var live = getLiveSchedule(now);
+            if (live != null && getPlayableSchedules().contains(live.getScheduleId())) return live;
+            var data = getNewestPlayableOpenedBy(now);
+            if (data != null) return data;
         }
 
         var fallback = GameData.getTowerScheduleDataMap().get(towerScheduleConfig.getScheduleId());

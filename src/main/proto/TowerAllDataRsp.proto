@@ -16,20 +16,20 @@ message TowerAllDataRsp {
 	}
 	uint32 tower_schedule_id = 6;
 	uint32 EFABCDDNIFA = 20001;
-	uint32 next_schedule_change_time = 257;
+	uint32 next_schedule_change_time = 5;
 	int32 retcode = 9;
 	TowerCurLevelRecord cur_level_record = 8;
-	uint32 commemorative_reward_id = 20000;
-	map<uint32, uint32> skip_floor_granted_reward_item_map = 2;
+	uint32 commemorative_reward_id = 15;
+	map<uint32, uint32> skip_floor_granted_reward_item_map = 3;
 	bool is_finished_entrance_floor = 7;
-	map<uint32, uint32> floor_open_time_map = 3;
+	map<uint32, uint32> floor_open_time_map = 2;
 	bool is_first_interact = 10;
-	uint32 valid_tower_record_num = 20002;
-	uint32 skip_to_floor_index = 20003;
+	uint32 valid_tower_record_num = 12;
+	uint32 skip_to_floor_index = 1;
 	repeated TowerFloorRecord tower_floor_record_list = 14;
 	uint32 GKIFECKDHKD = 20004;
 	TowerMonthlyBrief monthly_brief = 11;
 	_TowerSkipFloorState _tower_skip_floor_state = 662;
-	uint32 schedule_start_time = 5;
+	uint32 schedule_start_time = 257;
 	TowerMonthlyBrief last_schedule_monthly_brief = 1725;
 }

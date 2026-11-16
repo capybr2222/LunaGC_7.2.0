@@ -9,5 +9,5 @@ message EffigyChallengeV2SettleInfo {
 	uint32 MMBMGOKCLJI = 20002;
 	uint32 JGOODOMJLLJ = 20001;
 	bool DACBILBGHCK = 20003;
-	uint32 challenge_mode_difficulty = 20005;
+	uint32 challenge_mode_difficulty = 4;
 }
