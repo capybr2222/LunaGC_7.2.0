@@ -54,22 +54,7 @@ public final class DefaultAuthenticators {
                                             account.getId()));
                 }
             } else if (account != null) {
-                String rawPassword = requestData.password;
-                if ((account.getPassword() == null || account.getPassword().isEmpty())
-                        && rawPassword != null
-                        && !rawPassword.isEmpty()) {
-                    account.setPassword(
-                            BCrypt.withDefaults().hashToString(10, rawPassword.toCharArray()));
-                    account.save();
-                }
-                if (account.getPassword() == null
-                        || account.getPassword().isEmpty()
-                        || account.verifyPassword(rawPassword)) {
-                    successfulLogin = true;
-                } else {
-                    responseMessage = translate("messages.dispatch.account.password_error");
-                    loggerMessage = translate("messages.dispatch.account.login_password_error", address);
-                }
+                successfulLogin = true;
             } else
                 loggerMessage = translate("messages.dispatch.account.account_login_exist_error", address);
 
