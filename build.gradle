@@ -14,7 +14,7 @@ buildscript {
         maven { url 'https://plugins.gradle.org/m2/' }
     }
     dependencies {
-        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.18'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.9.4'
     }
 }
 
@@ -22,7 +22,7 @@ plugins {
     id 'java' // Apply the java plugin to add support for Java
     id 'java-library' // Apply the java-library plugin for API and implementation separation.
     id 'application' // Apply the application plugin to add support for building a CLI application
-    id 'com.google.protobuf' version '0.8.18' // Apply the protobuf auto generator
+    id 'com.google.protobuf' version '0.9.4' // Apply the protobuf auto generator
     id 'com.diffplug.spotless' version '6.11.0' // Apply the Spotless linter plugin.
 
     id 'eclipse' // Eclipse Support
@@ -61,13 +61,12 @@ compileJava {
 
 compileTestJava.options.encoding = 'UTF-8'
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
 group = 'io.grasscutter'
 version = '7.2.0'
 
 java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
     withJavadocJar()
     withSourcesJar()
 }
@@ -265,10 +264,6 @@ publishing {
     }
 }
 
-clean {
-    delete protobuf.generatedFilesBaseDir
-}
-
 protobuf {
     protoc {
         // The artifact spec for the Protobuf Compiler
@@ -280,16 +275,11 @@ protobuf {
 
 sourceSets {
     main {
-        proto {
-            // In addition to the default 'src/main/proto'
-            srcDir 'src/generated'
-        }
         java {
-            srcDir 'src/generated/main/java'
+            setSrcDirs(['src/generated/main/java'])
         }
     }
 }
-
 idea {
     module {
         // proto files and generated Java files are automatically added as
