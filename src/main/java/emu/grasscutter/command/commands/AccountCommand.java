@@ -2,7 +2,6 @@ package emu.grasscutter.command.commands;
 
 import static emu.grasscutter.utils.lang.Language.translate;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.command.*;
 import emu.grasscutter.config.Configuration;
@@ -82,7 +81,7 @@ public final class AccountCommand implements CommandHandler {
                     return;
                 } else {
                     if (Configuration.ACCOUNT.EXPERIMENTAL_RealPassword) {
-                        account.setPassword(BCrypt.withDefaults().hashToString(12, password.toCharArray()));
+                        account.setPassword(Account.hashPassword(password));
                     }
                     account.addPermission("*");
                     account.save();
@@ -130,7 +129,7 @@ public final class AccountCommand implements CommandHandler {
                 }
 
                 kickAccount(toUpdate);
-                toUpdate.setPassword(BCrypt.withDefaults().hashToString(12, args.get(2).toCharArray()));
+                toUpdate.setPassword(Account.hashPassword(args.get(2)));
                 toUpdate.save();
                 CommandHandler.sendMessage(sender, "Password Updated.");
             }

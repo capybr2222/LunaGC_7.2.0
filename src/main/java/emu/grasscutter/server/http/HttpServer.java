@@ -54,8 +54,8 @@ public final class HttpServer {
         this.javalin.exception(Exception.class, (exception, ctx) -> {
             ctx.status(500).result("Internal server error. %s"
                 .formatted(exception.getMessage()));
-            Grasscutter.getLogger().debug("Exception thrown: " +
-                exception.getMessage(), exception);
+            Grasscutter.getLogger().error("Unhandled exception on {} {}",
+                ctx.method(), ctx.path(), exception);
         });
     }
 

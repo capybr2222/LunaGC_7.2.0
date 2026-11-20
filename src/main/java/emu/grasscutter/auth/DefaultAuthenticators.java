@@ -3,7 +3,6 @@ package emu.grasscutter.auth;
 import static emu.grasscutter.config.Configuration.ACCOUNT;
 import static emu.grasscutter.utils.lang.Language.translate;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.Grasscutter.ServerRunMode;
 import emu.grasscutter.auth.AuthenticationSystem.AuthenticationRequest;
@@ -21,6 +20,18 @@ import java.util.concurrent.*;
 import javax.crypto.Cipher;
 
 public final class DefaultAuthenticators {
+
+    private static String resolvePassword(LoginAccountRequestJson request) {
+        if (!request.is_crypto) {
+            return request.password;
+        }
+
+        try {
+            return RSADecryptionUtil.decrypt(request.password);
+        } catch (Exception ignored) {
+            return null;
+        }
+    }
 
     public static class PasswordAuthenticator implements Authenticator<LoginResultJson> {
         @Override
@@ -54,17 +65,16 @@ public final class DefaultAuthenticators {
                                             account.getId()));
                 }
             } else if (account != null) {
-                String rawPassword = requestData.password;
-                if ((account.getPassword() == null || account.getPassword().isEmpty())
-                        && rawPassword != null
-                        && !rawPassword.isEmpty()) {
-                    account.setPassword(
-                            BCrypt.withDefaults().hashToString(10, rawPassword.toCharArray()));
-                    account.save();
+                String rawPassword = resolvePassword(requestData);
+                if (account.getPassword() == null || account.getPassword().isEmpty()) {
+                    String hashed = Account.hashPassword(rawPassword);
+                    if (hashed != null) {
+                        account.setPassword(hashed);
+                        account.save();
+                    }
                 }
-                if (account.getPassword() == null
-                        || account.getPassword().isEmpty()
-                        || account.verifyPassword(rawPassword)) {
+
+                if (account.verifyPassword(rawPassword)) {
                     successfulLogin = true;
                 } else {
                     responseMessage = translate("messages.dispatch.account.password_error");
@@ -123,24 +133,25 @@ public final class DefaultAuthenticators {
             }
 
             if (decryptedPassword == null) {
-                successfulLogin = false;
-                loggerMessage = translate("messages.dispatch.account.login_password_error", address);
-                responseMessage = translate("messages.dispatch.account.password_error");
+                response.retcode = -201;
+                response.message = translate("messages.dispatch.account.password_error");
+                Grasscutter.getLogger()
+                        .info(translate("messages.dispatch.account.login_password_error", address));
+                return response;
             }
 
             Account account = DatabaseHelper.getAccountByName(requestData.account);
             if (account == null && ACCOUNT.autoCreate) {
                 if (decryptedPassword.length() >= 8) {
                     account = DatabaseHelper.createAccountWithUid(requestData.account, 0);
-                    account.setPassword(
-                            BCrypt.withDefaults().hashToString(12, decryptedPassword.toCharArray()));
-                    account.save();
 
                     if (account == null) {
                         responseMessage = translate("messages.dispatch.account.username_create_error");
                         loggerMessage =
                                 translate("messages.dispatch.account.account_login_create_error", address);
                     } else {
+                        account.setPassword(Account.hashPassword(decryptedPassword));
+                        account.save();
                         successfulLogin = true;
 
                         Grasscutter.getLogger()
@@ -148,7 +159,7 @@ public final class DefaultAuthenticators {
                                         translate(
                                                 "messages.dispatch.account.account_login_create_success",
                                                 address,
-                                                response.data.account.uid));
+                                                account.getId()));
                     }
                 } else {
                     successfulLogin = false;
@@ -157,9 +168,7 @@ public final class DefaultAuthenticators {
                 }
             } else if (account != null) {
                 if (account.getPassword() != null && !account.getPassword().isEmpty()) {
-                    if (BCrypt.verifyer()
-                            .verify(decryptedPassword.toCharArray(), account.getPassword())
-                            .verified) {
+                    if (account.verifyPassword(decryptedPassword)) {
                         successfulLogin = true;
                     } else {
                         successfulLogin = false;
@@ -167,10 +176,9 @@ public final class DefaultAuthenticators {
                         responseMessage = translate("messages.dispatch.account.password_error");
                     }
                 } else {
-                    if (decryptedPassword != null && !decryptedPassword.isEmpty()) {
-                        account.setPassword(
-                                BCrypt.withDefaults()
-                                        .hashToString(12, decryptedPassword.toCharArray()));
+                    String hashed = Account.hashPassword(decryptedPassword);
+                    if (hashed != null) {
+                        account.setPassword(hashed);
                         account.save();
                         successfulLogin = true;
                     } else {

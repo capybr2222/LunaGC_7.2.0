@@ -1,6 +1,5 @@
 package emu.grasscutter.auth;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.Account;
@@ -10,10 +9,6 @@ import emu.grasscutter.utils.RSADecryptionUtil;
 import java.util.ArrayList;
 
 public class MaPassportAuthenticator {
-        private static String hashPassword(String password) {
-        return BCrypt.withDefaults().hashToString(10, password.toCharArray());
-    }
-
         public static LoginByPasswordResponseJson appLoginByPassword(LoginByPasswordRequestJson request) {
         Grasscutter.getLogger().debug("ma-passport login req detected");
 
@@ -56,11 +51,13 @@ public class MaPassportAuthenticator {
                 return createLoginErrorResponse(-101, "Account or password error");
             }
 
-            if ((account.getPassword() == null || account.getPassword().isEmpty())
-                    && password != null && !password.isEmpty()) {
-                account.setPassword(hashPassword(password));
-                account.save();
-                Grasscutter.getLogger().info("Password locked for account: " + username);
+            if (account.getPassword() == null || account.getPassword().isEmpty()) {
+                String hashed = Account.hashPassword(password);
+                if (hashed != null) {
+                    account.setPassword(hashed);
+                    account.save();
+                    Grasscutter.getLogger().info("Password locked for account: " + username);
+                }
             }
 
             if (!account.verifyPassword(password)) {

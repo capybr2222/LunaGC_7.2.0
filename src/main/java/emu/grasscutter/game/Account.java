@@ -13,6 +13,8 @@ import org.bson.Document;
 
 @Entity(value = "accounts", useDiscriminator = false)
 public class Account {
+    private static final int PASSWORD_HASH_COST = 12;
+
     @Id private String id;
 
     @Indexed(options = @IndexOptions(unique = true))
@@ -144,11 +146,27 @@ public class Account {
             return false;
         }
         if (this.password.startsWith("$2")) {
-            return BCrypt.verifyer()
-                    .verify(password.toCharArray(), this.password.toCharArray())
-                    .verified;
+            try {
+                return BCrypt.verifyer()
+                        .verify(password.toCharArray(), this.password.toCharArray())
+                        .verified;
+            } catch (IllegalArgumentException ignored) {
+                return false;
+            }
         }
         return this.password.equals(password);
+    }
+
+    public static String hashPassword(String password) {
+        if (password == null || password.isEmpty()) {
+            return null;
+        }
+
+        try {
+            return BCrypt.withDefaults().hashToString(PASSWORD_HASH_COST, password.toCharArray());
+        } catch (IllegalArgumentException ignored) {
+            return null;
+        }
     }
 
     public Locale getLocale() {
