@@ -128,11 +128,11 @@ public class LuaTableJacksonSerializer extends JsonSerializer<LuaTable> implemen
         }
         if (jsonNode.isArray()) {
             try {
-                Object o = objectMapper.treeToValue(jsonNode, collectionType);
-                if (o != null) {
-                    list = (ArrayList<T>) o;
+                List<T> converted = objectMapper.convertValue(jsonNode, collectionType);
+                if (converted != null) {
+                    list = new ArrayList<>(converted);
                 }
-            } catch (JsonProcessingException e) {
+            } catch (IllegalArgumentException e) {
                 e.printStackTrace();
             }
         } else if (jsonNode.isObject()) {
@@ -181,11 +181,12 @@ public class LuaTableJacksonSerializer extends JsonSerializer<LuaTable> implemen
                 .trace(
                         "[LuaTableToMap] className={},data={}", type.getCanonicalName(), jsonNode.toString());
         try {
-            Object o = objectMapper.treeToValue(jsonNode, mapStringType);
-            if (o != null) {
-                return (HashMap<String, T>) o;
+            Map<String, T> converted = objectMapper.convertValue(jsonNode, mapStringType);
+            if (converted != null) {
+                map.putAll(converted);
+                return map;
             }
-        } catch (JsonProcessingException e) {
+        } catch (IllegalArgumentException e) {
             e.printStackTrace();
         }
         return map;

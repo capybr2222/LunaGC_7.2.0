@@ -51,16 +51,8 @@ public class LuaSerializer implements Serializer {
 
                     if (keyValue.istable()) {
                         object = serialize(type, null, keyValue.checktable());
-                    } else if (keyValue.isint()) {
-                        object = (T) (Integer) keyValue.toint();
-                    } else if (keyValue.isnumber()) {
-                        object = (T) (Float) keyValue.tofloat();
-                    } else if (keyValue.isstring()) {
-                        object = (T) keyValue.tojstring();
-                    } else if (keyValue.isboolean()) {
-                        object = (T) (Boolean) keyValue.toboolean();
                     } else {
-                        object = (T) keyValue;
+                        object = convertValue(type, keyValue);
                     }
 
                     if (object != null) {
@@ -94,16 +86,8 @@ public class LuaSerializer implements Serializer {
 
                     if (keyValue.istable()) {
                         object = serialize(type, null, keyValue.checktable());
-                    } else if (keyValue.isint()) {
-                        object = (T) (Integer) keyValue.toint();
-                    } else if (keyValue.isnumber()) {
-                        object = (T) (Float) keyValue.tofloat();
-                    } else if (keyValue.isstring()) {
-                        object = (T) keyValue.tojstring();
-                    } else if (keyValue.isboolean()) {
-                        object = (T) (Boolean) keyValue.toboolean();
                     } else {
-                        object = (T) keyValue;
+                        object = convertValue(type, keyValue);
                     }
 
                     if (object != null) {
@@ -118,6 +102,30 @@ public class LuaSerializer implements Serializer {
         }
 
         return list;
+    }
+
+    private <T> T convertValue(Class<T> type, LuaValue value) {
+        Object converted;
+
+        if (type == int.class || type == Integer.class) {
+            converted = value.toint();
+        } else if (type == float.class || type == Float.class) {
+            converted = value.tofloat();
+        } else if (type == long.class || type == Long.class) {
+            converted = value.tolong();
+        } else if (type == double.class || type == Double.class) {
+            converted = value.todouble();
+        } else if (type == boolean.class || type == Boolean.class) {
+            converted = value.toboolean();
+        } else if (type == String.class) {
+            converted = value.tojstring();
+        } else if (value.istable()) {
+            converted = serialize(type, null, value.checktable());
+        } else {
+            converted = value.tojstring();
+        }
+
+        return converted == null ? null : type.cast(converted);
     }
 
     private Class<?> getListType(Class<?> type, @Nullable Field field) {
@@ -138,7 +146,7 @@ public class LuaSerializer implements Serializer {
         if (type == List.class) {
             try {
                 Class<?> listType = getListType(type, field);
-                return (T) serializeList(listType, table);
+                return type.cast(serializeList(listType, table));
             } catch (Exception e) {
                 e.printStackTrace();
                 return null;
@@ -152,7 +160,8 @@ public class LuaSerializer implements Serializer {
             var methodAccess = methodAccessCache.get(type);
             var fieldMetaMap = fieldMetaCache.get(type);
 
-            object = (T) constructorCache.get(type).newInstance();
+            Object instance = constructorCache.get(type).newInstance();
+            object = type.cast(instance);
 
             if (table == null) {
                 return object;

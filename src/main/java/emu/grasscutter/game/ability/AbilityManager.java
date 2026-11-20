@@ -759,7 +759,7 @@ public final class AbilityManager extends BasePlayerManager {
                                     .build()
                                     .toByteString())
                                 .build());
-                            ab.getAbilitySpecials().put(e.getKey(), e.getValue());
+                            ab.getAbilitySpecials().put(e.getKey(), e.getValue().floatValue());
                             matched = true;
                         }
                         if (matched) {
@@ -794,7 +794,8 @@ public final class AbilityManager extends BasePlayerManager {
         }
         final var finalAbility = resolvedAbility;
         if (finalAbility != null) {
-            computedVarOverrides.forEach((k, v) -> finalAbility.getAbilitySpecials().put(k, v));
+            computedVarOverrides.forEach(
+                    (k, v) -> finalAbility.getAbilitySpecials().put(k, v.floatValue()));
         }
     }
 
